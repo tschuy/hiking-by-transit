@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="post">
+  <h1 class="post-title">{{ page.title }}</h1>
+  <span class="post-date">{{ page.date | date_to_string }}</span>
+
+  <p class="message">
+    This hike has been rated {{ page.difficulty }}.
+  </p>
+
+  {% if page.served != "daily" %}
+  <p class="message">This trailhead is not served seven days a week. Check schedules before leaving.</p>
+  {% endif %}
+
+  <ul>
+    <li>Length: {{ page.length }}</li>
+    <li>Travel time: approximately {{ page.travel-time }} from {{ page.travel-time-from }}</li>
+    <li>Stop served: {{ page.served }}</li>
+    <li>Google Maps:
+        <ul>
+            <li><a href="{{ page.transit-stop-link }}">Transit stop</a></li>
+            <li><a href="{{ page.trailhead-link }}">Trailhead</a></li>
+        </ul>
+    </li>
+
+    <li><a href="{{ page.park-link }}">Park information</a></li>
+    <li><a href="{{ page.hike-link }}">Link to hike</a></li>
+  </ul>
+
+  {{ content }}
+
+  <img src="/assets/{{ page.image }}">
+</div>
