@@ -6,7 +6,7 @@
 <div class="sidebar" id="sidebar">
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
-
+    <a class="sidebar-nav-item{% if page.title == 'Trailhead Map' %} active{% endif %}" href="{{ '/map/' | absolute_url }}"><b>Trailhead Map</b></a>
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -20,5 +20,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+
+    <a class="sidebar-nav-item" href="https://gis.data.ca.gov/datasets/f73858e200634ca888b19ca8c78e3aed_0/explore?location=37.856492%2C-121.985920%2C11.00" target="_blank">California Public Lands map</a>
   </nav>
 </div>

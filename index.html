@@ -8,7 +8,7 @@ title: Home
 </div>
 
 <div class="posts">
-<h3>East Bay Hikes</h3>
+<h3><a href="/east-bay/">East Bay Hikes</a></h3>
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
@@ -19,6 +19,20 @@ title: Home
     {% endif %}
 {% endfor %}
 </ul>
+</div>
+
+<div class="posts">
+  <h3><a href="/marin/">Marin County Hikes</a></h3>
+  <ul>
+  {% assign pages_list = site.pages | sort:"url" %}
+  {% for node in pages_list %}
+      {% if node.title != null %}
+      {% if node.region == "marin" %}
+  <li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      {% endif %}
+      {% endif %}
+  {% endfor %}
+  </ul>
 </div>
 
 <div class="posts">
