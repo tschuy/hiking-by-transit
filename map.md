@@ -11,7 +11,7 @@ Bus routes are only counted where they run throughout the day. Services that run
 
 If you're on your phone, I recommend opening the link below, which will temporarily add the trailheads as a layer in your Google Maps app.
 
-<h3 style="text-align: center;"><a href="https://www.google.com/maps/d/edit?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE" target="_blank">Open map in new tab</a></h3>
+<h3 style="text-align: center;"><a href="https://www.google.com/maps/d/viewer?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE" target="_blank">Open in Google Maps</a></h3>
 
 <div class="map">
   <iframe width="100%" height="700px" src="https://www.google.com/maps/d/embed?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE&ehbc=2E312F"></iframe>
@@ -48,5 +48,3 @@ The next agencies I plan to look at are:
 * Santa Cruz Metro
 * Monterey-Salinas Transit
 * Amtrak buses
-
-and hopefully others! To help out, or for questions, please reach out! You can contact me at [*contact@hikingbytransit.com*](mailto:contact@hikingbytransit.com).
