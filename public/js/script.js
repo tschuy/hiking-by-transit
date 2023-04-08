@@ -2,8 +2,8 @@
 
   // hide sidebar if we're on mobile
   var checkbox = document.querySelector('#sidebar-checkbox');
-  const width = window. innerWidth;
-  if (width < 36 * parseFloat(getComputedStyle(document.documentElement).fontSize)) {
+  const width = window.innerWidth;
+  if (width / parseFloat(getComputedStyle(document.documentElement).fontSize) < 70) {
     checkbox.checked = false;
   }
 

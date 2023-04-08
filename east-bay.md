@@ -22,10 +22,4 @@ The heart of the Bay Area's transit system is indisputably BART, whose five line
 {% endfor %}
 </ul>
 
-<!-- 
-### Select park agencies and organizations in the East Bay 
-* [East Bay Regional Parks](https://www.ebparks.org/)
-* [East Bay Municipal Utility District](https://www.ebmud.com/recreation/east-bay/east-bay-trails)
-* [John Muir Land Trust](https://jmlt.org/)
-* [Walnut Creek Open Space](https://www.walnut-creek.org/departments/open-space)
--->
+<img src="/assets/mt-diablo.jpg">

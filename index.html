@@ -37,6 +37,20 @@ title: Home
 </div>
 
 <div class="posts">
+  <h3><a href="/south-bay/">South Bay Hikes</a></h3>
+  <ul>
+  {% assign pages_list = site.pages | sort:"url" %}
+  {% for node in pages_list %}
+      {% if node.title != null %}
+      {% if node.region == "south-bay" %}
+  <li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      {% endif %}
+      {% endif %}
+  {% endfor %}
+  </ul>
+</div>
+
+<div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">

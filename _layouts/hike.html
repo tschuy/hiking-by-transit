@@ -26,10 +26,10 @@ layout: default
     </li>
 
     <li><a href="{{ page.park-link }}">Park information</a></li>
-    <li><a href="{{ page.hike-link }}">Link to hike</a></li>
+    <li><a href="{{ page.hike-link }}">Hike route</a></li>
   </ul>
 
   {{ content }}
 
-  <img src="/assets/{{ page.image }}">
+  {% if page.image %}<img src="/assets/{{ page.image }}">{% endif %}
 </div>
