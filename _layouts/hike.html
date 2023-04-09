@@ -26,10 +26,13 @@ layout: default
     </li>
 
     <li><a href="{{ page.park-link }}">Park information</a></li>
-    <li><a href="{{ page.hike-link }}">Hike route</a></li>
+    {% if page.hike-link %}<li><a href="{{ page.hike-link }}">Hike route</a></li>{% endif %}
+    {% if page.gpx %}<li><a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a></li>{% endif %}
   </ul>
 
   {{ content }}
 
+  {% if page.gpx %}<div id="map" style="width: 100%; height: 500px;"></div>{% endif %}
+  <hr>
   {% if page.image %}<img src="/assets/{{ page.image }}">{% endif %}
 </div>
