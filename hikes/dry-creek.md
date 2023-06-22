@@ -2,7 +2,7 @@
 layout: hike
 title: "Garin/Dry Creek Regional Park: Pioneer Trail Loop"
 
-region: east-bay
+region: southeast-bay
 difficulty: easy
 length: 3.2mi
 

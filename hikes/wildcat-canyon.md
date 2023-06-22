@@ -2,7 +2,7 @@
 layout: hike
 title: "Wildcat Canyon Regional Park"
 
-region: east-bay
+region: inner-east-bay
 difficulty: easy to medium
 length: 6.2mi
 

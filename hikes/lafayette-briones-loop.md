@@ -2,7 +2,7 @@
 layout: hike
 title: "Briones: Walter Costa to Lafayette Ridge loop"
 
-region: east-bay
+region: inner-east-bay
 difficulty: hard
 length: 8.00mi
 

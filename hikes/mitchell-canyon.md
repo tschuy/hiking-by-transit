@@ -2,7 +2,7 @@
 layout: hike
 title: "Mount Diablo: Mitchell Canyon to Summit"
 
-region: east-bay
+region: outer-east-bay
 difficulty: hard
 length: 12.4mi (out and back)
 

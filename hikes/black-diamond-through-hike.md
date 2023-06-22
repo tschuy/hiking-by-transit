@@ -2,7 +2,7 @@
 layout: hike
 title: "Black Diamond Mines: Clayton to Antioch"
 
-region: east-bay
+region: outer-east-bay
 difficulty: hard
 length: 10.6mi
 

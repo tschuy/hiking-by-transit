@@ -2,7 +2,7 @@
 layout: hike
 title: "Harvey Ranch to Las Trampas / Moraga to Danville"
 
-region: east-bay
+region: inner-east-bay
 difficulty: hard
 length: 10.7mi
 

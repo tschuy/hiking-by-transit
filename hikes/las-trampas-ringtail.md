@@ -2,7 +2,7 @@
 layout: hike
 title: "Las Trampas: Ringtail Cat to Ridge to Del Amigo"
 
-region: east-bay
+region: outer-east-bay
 difficulty: medium
 length: 4.6mi
 

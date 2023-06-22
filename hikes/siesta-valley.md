@@ -2,7 +2,7 @@
 layout: hike
 title: "Siesta Valley & Claremont Canyon: Orinda to Berkeley"
 
-region: east-bay
+region: inner-east-bay
 difficulty: medium to hard
 length: 6.1mi
 
