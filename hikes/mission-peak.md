@@ -12,6 +12,7 @@ travel-time: 1h18min
 travel-time-from: MacArthur BART
 
 trailhead-link: "https://goo.gl/maps/kKNaqddr2XyxMHkS6"
+map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1582.0254289597422!2d-121.9115877!3d37.5302984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc7d85023d0cf%3A0x7b1c136fe16fbbd1!2sSpring%20Valley%20Trail!5e0!3m2!1sen!2sus!4v1687410259182!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/JAPL4UidoPkmdLkw5"
 

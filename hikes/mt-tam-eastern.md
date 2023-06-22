@@ -12,6 +12,7 @@ travel-time: 45min
 travel-time-from: Sausalito Ferry Terminal
 
 trailhead-link: "https://goo.gl/maps/aTpuzMT93Zz1z38Y9"
+map-embed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3147.060039746101!2d-122.53875000000001!3d37.9290278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU1JzQ0LjUiTiAxMjLCsDMyJzE5LjUiVw!5e0!3m2!1sen!2sus!4v1687410222755!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/TwM1cKxXvwb2t7cg6"
 

@@ -12,6 +12,7 @@ travel-time: 54min
 travel-time-from: MacArthur BART
 
 trailhead-link: "https://goo.gl/maps/PgjxXGAc1HuTNiMb8"
+map-embed: "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1573.0009889228115!2d-122.3239681!3d37.9537398!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU3JzE0LjAiTiAxMjLCsDE5JzI3LjQiVw!5e0!3m2!1sen!2sus!4v1687410081231!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/wBFEs3CgtdMwA5ug9"
 

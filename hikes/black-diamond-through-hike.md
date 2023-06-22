@@ -12,6 +12,7 @@ travel-time: 1h13min
 travel-time-from: MacArthur BART
 
 trailhead-link: "https://goo.gl/maps/VCRbHACCFSstp7bS9"
+map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d986.3613140097281!2d-121.9280579!3d37.9415651!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80855f14cdef006f%3A0xf69b7fe1d88b1a34!2sBlack%20Diamond%20Hiking%20Trail%20Near%20Oakhurst!5e1!3m2!1sen!2sus!4v1687410376794!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/eWUcZ6J8H9tqT3DJ6"
 

@@ -9,6 +9,11 @@ layout: default
   <p class="message">
     This hike has been rated {{ page.difficulty }}.
   </p>
+  {% if page.map-embed %}
+  <div style="float: right; width: 350px; height: 250px;">
+    <iframe src="{{ page.map-embed }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  {% endif %}
 
   {% if page.served != "daily" %}
   <p class="message">This trailhead is not served seven days a week. Check schedules before leaving.</p>

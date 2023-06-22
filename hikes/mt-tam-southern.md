@@ -12,6 +12,7 @@ travel-time: 45min
 travel-time-from: Sausalito Ferry Terminal
 
 trailhead-link: "https://www.google.com/maps/place/37%C2%B054'39.5%22N+122%C2%B034'38.6%22W/@37.9109601,-122.5786755,18z/data=!3m1!4b1!4m4!3m3!8m2!3d37.910958!4d-122.577388"
+map-embed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1573.916366506786!2d-122.57738889999999!3d37.910972199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU0JzM5LjUiTiAxMjLCsDM0JzM4LjYiVw!5e0!3m2!1sen!2sus!4v1687410201726!5m2!1sen!2sus"
 
 transit-stop-link: "https://www.google.com/maps/place/Panoramic+Hwy+%26+Edgewood+Av/@37.9104773,-122.5770122,18z/data=!4m6!3m5!1s0x808590542717f127:0xae16231db95ec5fb!8m2!3d37.910583!4d-122.576996!16s%2Fg%2F1q67vxl0b"
 

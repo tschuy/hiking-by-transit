@@ -12,6 +12,7 @@ travel-time: 52min
 travel-time-from: Second St & Santa Clara Ave
 
 trailhead-link: https://goo.gl/maps/QcMUuUMwNY7HVskBA
+map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3176.8609000082256!2d-121.7948816!3d37.2272769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e2fd221f83739%3A0x98e87c2cc2c31a6c!2sBernal-Gulnac-Joice%20Ranch!5e0!3m2!1sen!2sus!4v1687410153482!5m2!1sen!2sus"
 
 transit-stop-link: https://goo.gl/maps/33yrs9Akcx7DN35v9
 

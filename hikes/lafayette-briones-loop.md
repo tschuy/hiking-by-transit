@@ -12,6 +12,7 @@ travel-time: 13min
 travel-time-from: MacArthur BART
 
 trailhead-link: https://goo.gl/maps/xSHdvLJLfwK5DFeBA
+map-embed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3148.780998356957!2d-122.140198!3d37.88880399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUzJzE5LjciTiAxMjLCsDA4JzI0LjciVw!5e0!3m2!1sen!2sus!4v1687410302126!5m2!1sen!2sus"
 transit-stop-link: https://goo.gl/maps/WQGrtaYWTyYyfR1TA
 gpx: briones.gpx
 

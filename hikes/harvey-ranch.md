@@ -12,6 +12,7 @@ travel-time: 34min
 travel-time-from: MacArthur BART
 
 trailhead-link: https://goo.gl/maps/miZQ6LzGx8qkjLx78
+map-embed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3150.9866240976176!2d-122.10391399999999!3d37.837199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUwJzEzLjkiTiAxMjLCsDA2JzE0LjEiVw!5e0!3m2!1sen!2sus!4v1687410322079!5m2!1sen!2sus"
 transit-stop-link: https://goo.gl/maps/sB2K7Qe6c6D1nw7a6
 gpx: harvey_ranch.gpx
 

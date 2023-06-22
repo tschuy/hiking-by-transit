@@ -12,6 +12,7 @@ travel-time: 54min
 travel-time-from: MacArthur BART
 
 trailhead-link: "https://goo.gl/maps/zHbAW2SzANxqjD1Y7"
+map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1580.4127328646891!2d-122.0206486!3d37.6062665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f956b24dcd4a5%3A0x12bee43743399afc!2sDry%20Creek%20Staging%20Area!5e0!3m2!1sen!2sus!4v1687410341052!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/bFkKfdEetRZfbkz8A"
 

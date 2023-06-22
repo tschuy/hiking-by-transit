@@ -12,6 +12,7 @@ travel-time: 19min
 travel-time-from: Mountain View Caltrain
 
 trailhead-link: "https://goo.gl/maps/w6oDi8PkeKwP88Bb9"
+map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d50718.710834472324!2d-122.1426783!3d37.3917377!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb1af9e7361a9%3A0x285f3dd5daadee07!2sRhus%20Ridge%20Trailhead!5e0!3m2!1sen!2sus!4v1687410178922!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/6VezkdjaUm81DwqP7"
 

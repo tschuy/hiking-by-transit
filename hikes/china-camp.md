@@ -11,7 +11,8 @@ served: daily
 travel-time: 44min
 travel-time-from: San Rafael Transit Center
 
-trailhead-link: "https://maps.google.com/?cid=3455459884129007856"
+trailhead-link: "https://goo.gl/maps/bgJZw9Y8BSAcNuJ59"
+map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.7011408098247!2d-122.49626411244202!3d38.00743084190679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808599a908e0e695%3A0xa853ce9c31b0058e!2sShoreline%20Trailhead%2C%20Santa%20Venetia%2C%20CA%2094901!5e0!3m2!1sen!2sus!4v1687410419666!5m2!1sen!2sus"
 
 transit-stop-link: "https://goo.gl/maps/PjPnT21tStW56cKZ9"
 
