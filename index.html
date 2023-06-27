@@ -9,6 +9,17 @@ title: Home
 </div>
 
 <div class="posts">
+
+<div class="difficulty-selector">
+  <label for="cars">I want to see:</label>
+
+  <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
+    <option value="easy">Easy (3-5mi)</option>
+    <option value="moderate">Easy and Moderate (3-7mi)</option>
+    <option value="hard" selected>All Hikes</option>
+  </select>
+</div>
+
 <h3><a href="/east-bay/">East Bay Hikes</a></h3>
 <h4>Inner East Bay</h4>
 
@@ -17,7 +28,7 @@ title: Home
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "inner-east-bay" %}
-<li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -30,7 +41,7 @@ title: Home
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "outer-east-bay" %}
-<li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -43,7 +54,7 @@ title: Home
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "southeast-bay" %}
-<li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -57,7 +68,7 @@ title: Home
   {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.region == "marin" %}
-  <li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+  <li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {% endif %}
       {% endif %}
   {% endfor %}
@@ -71,7 +82,7 @@ title: Home
   {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.region == "south-bay" %}
-  <li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+  <li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {% endif %}
       {% endif %}
   {% endfor %}

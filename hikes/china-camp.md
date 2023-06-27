@@ -3,7 +3,8 @@ layout: hike
 title: "China Camp State Park: Back Ranch Meadows"
 
 region: marin
-difficulty: easy to hard
+difficulty-human: easy to hard
+difficulty: easy
 length: many options
 
 served: daily

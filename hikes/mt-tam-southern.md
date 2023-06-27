@@ -3,7 +3,7 @@ layout: hike
 title: "Mount Tamalpais: Panoramic Hwy to East Peak"
 
 region: marin
-difficulty: medium
+difficulty: moderate
 length: 4.0mi (out and back), 5.7mi (one way to Dawn Falls Trailhead)
 
 served: daily

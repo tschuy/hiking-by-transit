@@ -7,7 +7,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
 
   <p class="message">
-    This hike has been rated {{ page.difficulty }}.
+    This hike has been rated {% if page.difficulty-human %}{{ page.difficulty-human }}{% else %}{{ page.difficulty }}{% endif %}.
   </p>
   {% if page.map-embed %}
   <div style="float: right; width: 350px; height: 250px;">

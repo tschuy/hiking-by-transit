@@ -3,7 +3,7 @@ layout: hike
 title: "Santa Teresa: Bernal Loop"
 
 region: south-bay
-difficulty: medium
+difficulty: moderate
 length: 6.2mi (including walk to trailhead)
 
 served: daily

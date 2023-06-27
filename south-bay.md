@@ -11,12 +11,22 @@ The South Bay is an absolutely massive region, with the San José basin stretchi
 
 ### Selected Hikes
 
+<div class="difficulty-selector">
+  <label for="cars">I want to see:</label>
+
+  <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
+    <option value="easy">Easy (3-5mi)</option>
+    <option value="moderate">Easy and Moderate (3-7mi)</option>
+    <option value="hard" selected>All Hikes</option>
+  </select>
+</div>
+
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "south-bay" %}
-<li><a class="hike-difficulty-{{ node.difficulty }}" href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}

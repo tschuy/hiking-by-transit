@@ -3,7 +3,7 @@ layout: hike
 title: "Rancho San Antonio: Rhus Ridge"
 
 region: south-bay
-difficulty: medium
+difficulty: moderate
 length: 4.4mi
 
 served: daily

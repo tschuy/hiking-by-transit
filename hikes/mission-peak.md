@@ -3,7 +3,8 @@ layout: hike
 title: "Mission Peak: Ohlone College to Summit"
 
 region: southeast-bay
-difficulty: medium to hard
+difficulty-human: moderate to hard
+difficulty: moderate
 length: 3.3mi
 
 served: daily

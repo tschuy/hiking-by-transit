@@ -3,7 +3,8 @@ layout: hike
 title: "Coyote Valley: Arrowhead Loop"
 
 region: south-bay
-difficulty: easy-medium
+difficulty-human: easy-to-moderate
+difficulty: easy
 length: 5.3mi (including walk to trailhead)
 
 served: daily
