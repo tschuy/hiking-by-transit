@@ -97,4 +97,11 @@
 		controlElevation.load(opts.elevationControl.url);
 	</script>
   {% endif %}
+	<script>
+	promoValue = document.cookie.split("; ").find((row) => row.startsWith("promo="))?.split("=")[1];
+	if (promoValue != "false") {
+		promoDiv = document.getElementById("promo");
+		promoDiv.style.display = "block";
+	}
+	</script>
 </html>
