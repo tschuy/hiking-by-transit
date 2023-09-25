@@ -63,9 +63,8 @@ function difficultySelect() {
 }
 
 function dismissPromo(endtime) {
-  cookieText = 'promo=false; expires=' + endtime + '; path=/'
-  console.log(cookieText)
-  document.cookie = cookieText
+  cookieText = 'promo=false; expires=' + endtime + '; path=/';
+  document.cookie = cookieText;
   document.getElementById("promo").style.display = "none";
 }
   </script>
