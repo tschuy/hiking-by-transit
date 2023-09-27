@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: default
 title: Come celebrate the restoration of AC Transit 7 weekend service on August 20th!
+
+event_date: August 20th, 2023
 ---
 
 AC Transit is bringing back service on its Line 7, serving the East Bay hills along Arlington Blvd, connecting to the Rifle Ridge Road trailhead at Wildcat Canyon Regional Park.

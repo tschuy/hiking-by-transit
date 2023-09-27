@@ -11,7 +11,7 @@ author:
   name:              Evan Tschuy
   url:               https://twitter.com/dotTsch
 
-include: ['hikes']
+include: ['hikes', 'events']
 
 # Gems
 plugins:

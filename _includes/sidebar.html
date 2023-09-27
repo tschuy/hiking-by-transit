@@ -24,6 +24,7 @@
     {% endfor %}
 
     <hr>
+    <a class="sidebar-nav-item{% if page.title == 'Events' %} active{% endif %}" href="{{ '/events/' | absolute_url }}">Events</a>
     <a class="sidebar-nav-item{% if page.title == 'Resources' %} active{% endif %}" href="{{ '/resources/' | absolute_url }}">Resources</a>
   </nav>
 </div>
