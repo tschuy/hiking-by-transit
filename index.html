@@ -4,14 +4,14 @@ title: Home
 ---
 
 <div class="map">
-  <h3 style="text-align: center;" id="mobile-banner"><a href="https://www.google.com/maps/d/viewer?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE" target="_blank">Open in Google Maps</a></h3>
-  <iframe width="100%" height="450px" style="margin-bottom: 15px" src="https://www.google.com/maps/d/embed?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE&ehbc=2E312F"></iframe>
+  <h3 id="mobile-banner"><a href="https://www.google.com/maps/d/viewer?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE" target="_blank">Open in Google Maps</a></h3>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE&ehbc=2E312F"></iframe>
 </div>
 
 <div class="posts">
 
 <div class="difficulty-selector">
-  <label for="cars">I want to see:</label>
+  <label>I want to see:</label>
 
   <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
     <option value="easy">Easy (3-5mi)</option>
@@ -19,6 +19,16 @@ title: Home
     <option value="hard" selected>All Hikes</option>
   </select>
 </div>
+
+<!-- <div class="">
+  <label>My home BART station is:</label>
+
+  <select name="station" id="my-station" onchange="stationSelect()">
+    <option value="macarthur">MacArthur</option>
+    <option value="concord">Concord</option>
+    <option value="ashby" selected>Ashby</option>
+  </select>
+</div> -->
 
 <h3><a href="/east-bay/">East Bay Hikes</a></h3>
 <h4>Inner East Bay</h4>
@@ -28,7 +38,7 @@ title: Home
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "inner-east-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike-difficulty-{{ node.difficulty }}""><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}

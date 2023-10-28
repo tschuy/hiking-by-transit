@@ -19,7 +19,7 @@
         </div>
       </div>
 
-      <div class="container content" style="min-height: calc(100vh - 14rem);">
+      <div class="container content">
         {{ content }}
       </div>
 
@@ -45,63 +45,6 @@
 	<link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation@2.2.8/dist/leaflet-elevation.min.css" />
 	<script src="https://unpkg.com/@raruto/leaflet-elevation@2.2.8/dist/leaflet-elevation.min.js"></script>
 
-
-	<script>
-		let opts = {
-			map: {
-				fullscreenControl: false,
-				resizerControl: true,
-				preferCanvas: true,
-				rotate: true,
-				rotateControl: {
-					closeOnZeroBearing: true
-				},
-			},
-			elevationControl: {
-				url: "/assets/gpx/{{ page.gpx }}",
-				options: {
-					theme: "lightblue-theme",
-					collapsed: true,
-					autohide: false,
-					autofitBounds: true,
-					position: "bottomleft",
-					detached: true,
-					summary: "inline",
-					imperial: true,
-					// altitude: "disabled",
-					slope: "disabled",
-					speed: false,
-					acceleration: false,
-					time: "summary",
-					legend: true,
-					followMarker: true,
-					almostOver: true,
-					distanceMarkers: false,
-					hotline: false,
-				},
-			},
-			layersControl: {
-				options: {
-					collapsed: false,
-				},
-			},
-		};
-
-		let map = L.map('map', opts.map);
-
-		let controlElevation = L.control.elevation(opts.elevationControl.options).addTo(map);
-		let controlLayer = L.control.layers(null, null, opts.layersControl.options);
-
-		controlElevation.on('eledata_loaded', ({layer, name}) => controlLayer.addTo(map) && layer.eachLayer((trkseg) => trkseg.feature.geometry.type != "Point" && controlLayer.addOverlay(trkseg, trkseg.feature && trkseg.feature.properties && trkseg.feature.properties.name || name)));
-
-		controlElevation.load(opts.elevationControl.url);
-	</script>
-  {% endif %}
-	<script>
-	promoValue = document.cookie.split("; ").find((row) => row.startsWith("promo="))?.split("=")[1];
-	if (promoValue != "false") {
-		promoDiv = document.getElementById("promo");
-		promoDiv.style.display = "block";
-	}
-	</script>
+	<script src="{{ '/public/js/map.js' | absolute_url }}"></script>
+{% endif %}
 </html>

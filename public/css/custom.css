@@ -1,0 +1,75 @@
+.container.content {
+    min-height: calc(100vh - 14rem);
+}
+
+.posts {
+    margin-bottom: 15px;
+}
+
+#promo {
+    /* the promo bar is only revealed if no promo=false cookie is found */
+    display: none;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#promo-interior {
+    max-width: 46rem;
+    margin: auto;
+}
+
+#sidebar-toggle-phantom {
+    float: left;
+    width: 70px;
+    height: 55px;
+}
+
+#promo-dismiss {
+    text-align: right;
+    max-width: 46em;
+    margin: auto;
+}
+
+#promo-dismiss a {
+    color: white;
+    font-size: 0.8em;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+#map-embed {
+    float: right;
+    width: 350px;
+    height: 250px;
+}
+
+#map-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#mobile-banner {
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 15px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.masthead-title {
+    text-align: center;
+}
