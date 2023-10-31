@@ -10,7 +10,6 @@ let opts = {
     },
   },
   elevationControl: {
-    url: "/assets/gpx/{{ page.gpx }}",
     options: {
       theme: "lightblue-theme",
       collapsed: true,
@@ -39,6 +38,7 @@ let opts = {
   },
 };
 
+opts.elevationControl.options.url = "/assets/gpx/" + document.querySelector("#map").dataset.gpx;
 let map = L.map('map', opts.map);
 
 let controlElevation = L.control.elevation(opts.elevationControl.options).addTo(map);
@@ -46,5 +46,5 @@ let controlLayer = L.control.layers(null, null, opts.layersControl.options);
 
 controlElevation.on('eledata_loaded', ({layer, name}) => controlLayer.addTo(map) && layer.eachLayer((trkseg) => trkseg.feature.geometry.type != "Point" && controlLayer.addOverlay(trkseg, trkseg.feature && trkseg.feature.properties && trkseg.feature.properties.name || name)));
 
-controlElevation.load(opts.elevationControl.url);
+controlElevation.load(opts.elevationControl.options.url);
 

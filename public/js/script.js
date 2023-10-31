@@ -12,8 +12,6 @@
   if (banner && !/Mobi/.test(navigator.userAgent)) {
     banner.style.display = 'none';
   }
-  console.log(navigator.userAgent);
-
 })(document);
 
 
