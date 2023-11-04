@@ -60,6 +60,9 @@
 .masthead-title {
     text-align: center;
 }
+.region-image {
+    margin: auto;
+}
 
 @media (prefers-color-scheme: dark) {
     #promo-dismiss a {
