@@ -11,6 +11,12 @@ San Francisco is an urban hiker's dream. The city is dense, walkable, and has so
 
 What other major cities often lack that San Francisco has is large swathes of genuine nature tucked away in various parts of its park system. The Golden Gate National Recreation Area makes up a large chunk of the open land in the city, from the famous and touristy Presidio in the northwest to the quiet but windy Fort Funston in the southwest well known only to locals and hang-gliders.
 
+### Angel Island
+
+Angel Island is located in the middle of the San Francisco Bay, a short ride from the San Francisco Ferry Building. Its strategic location has meant that it has played an outsized role in the history of immigration and war. Since the end of World War II, nearly the whole island has become a state park, with only small sections remaining active Coast Guard uses. Apart from the historc remnants, the island is nearly entirely a nature preserve, with forests covering the sheltered northern side and grasses and classic Californian chapparal covering the windswept southern side.
+
+<a href="/hikes/angel-island">Read more »</a>
+
 ### The Crosstown Trail
 
 The best way to take in the widest swath of San Francisco's hidden trails, stairs, and gardens is the Crosstown Trail. This 17-mile trail is split up into different segments that cover some of the city's biggest and most scenic parks, including several of my favorites in the city: Glen Canyon Park, right off of Glen Park BART, is a particular favorite; McClaren Park is a low-traffic getaway right in the southeast of the city; and of course Lands End's rocky trails crumbling into the Pacific are spectacular enough to warrant a place in many tourist guides.
