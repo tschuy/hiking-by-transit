@@ -21,6 +21,8 @@ gpx: angel-island.gpx
 park-link: https://www.parks.ca.gov/?page_id=468
 
 image: angel-island.jpg
+
+blurb: Island hikes of varying lengths with fantastic views of San Francisco and the greater Bay Area, plus historic buildings.
 ---
 
 Angel Island is located in the middle of the San Francisco Bay, just off the end of the Tiburon peninsula. Its strategic location has meant that it has played an outsized role in the history of immigration and war. Since the end of World War II, nearly the whole island has become a state park, with only small sections remaining active Coast Guard uses.

@@ -19,6 +19,7 @@ gpx: sweeney-ridge.gpx
 park-link: https://www.nps.gov/goga/sweeney.htm
 
 image: sweeney-ridge.jpg
+blurb: Views over San Francisco's reservoirs and the Pacific Ocean from the top of a scenic ridge
 ---
 
 Sweeney Ridge hosts a former Nike missle site, and the site where the Portolá expedition first spotted the San Francisco Bay upon coming north up from where they'd landed their boat.

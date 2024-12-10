@@ -19,8 +19,9 @@ gpx: cull-canyon.gpx
 park-link: https://www.ebparks.org/parks/cull-canyon
 
 image: cull-canyon.jpg
+blurb: A short, calm hike up a canyon with bay laurels.
 ---
 
-Cull Canyon is a calm East Bay canyon brimming with shady deciduous trees. This hike follows the creek along the bottom of the canyon, past the recreation area (with a pool) and up into the quiet upper canyon. The trail goes from along the shoulder a bit above the creek to right against the creek, crossing it twice on its way, so the trail may not be fordable in the winter and spring. In summer, however, the proximity to water and the shade keeps it cooler than the surrounding areas.
+Cull Canyon is a calm East Bay canyon brimming with shady oak and bay laurel trees. This hike follows the creek along the bottom of the canyon, past the recreation area (with a pool) and up into the quiet upper canyon. The trail goes from along the shoulder a bit above the creek to right against the creek, crossing it twice on its way, so the trail may not be fordable in the winter and spring. In summer, however, the proximity to water and the shade keeps it cooler than the surrounding areas.
 
 For those interested in continuing further, the trail eventually turns up the hillside and connects all the way over the ridge to Lake Chabot, but the highlight of the park's trails is this 4-5 mile out-and-back to where the trail turns uphill provides a lovely and rewarding view of the creek, trees, and carved out sandstone banks.

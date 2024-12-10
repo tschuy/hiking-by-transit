@@ -21,6 +21,7 @@ gpx: leona_heights.gpx
 park-link: https://www.oaklandparks.org/leona-heights-park/
 
 image: leona-heights.jpg
+blurb: An off-the-beaten-path hike through redwoods and a mural-filled former quarry to a local college.
 ---
 
 Leona Heights is the site of a former quarry in the Oakland Hills. Today, the steep ravine leading up from the flats takes you through a redwood grove before leading you to the former route of a quarry tramway. Look around for the remains of the former quarry infrastructure, whose footings today form [the canvas of vibrant murals](https://www.kqed.org/news/11977305/hidden-in-the-oakland-hills-is-an-outdoor-gallery-of-murals) that make the park unique. Continuing up, you're treated to fantastic views of the Oakland and San Francisco skylines from a more southerly vantage than most of the popular viewpoints.

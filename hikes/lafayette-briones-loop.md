@@ -19,6 +19,7 @@ gpx: briones.gpx
 park-link: https://www.ebparks.org/parks/briones
 
 image: briones.jpg
+blurb: A steep trek with incredible panoramic views of the inner East Bay, Mt Diablo, and even Mt Tam.
 ---
 
 Lafayette is interesting. It's a town fiercely proud of its beautiful surroundings, and over the years has developed a pretty broad network of feeder trails leading into the parks surrounding it on either side.

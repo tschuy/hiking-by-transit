@@ -32,7 +32,26 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
 
+  {% if page.hasmap %}
+  <script>
+    /* unfortunately since the source of truth is markdown files managed by jekyll,
+       this is the simplest way to provide that information to the frontend in a programatic manner. */
+    let hikes_with_gpx = [
+    {% assign pages_list = site.pages | sort:"url" %}
+    {% for node in pages_list %}{% if node.title != null %}{% if node.gpx %}{
+      "title": "{{ node.title }}",
+      "url": "{{ node.url }}",
+      "gpx": "{{ node.gpx }}",
+      "blurb": "{{ node.blurb }}",
+      "length": "{{ node.length }}",
+      "difficulty": "{% if node.difficulty-human %}{{ node.difficulty-human }}{% else %}{{ node.difficulty }}{% endif %}"
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endif %}{% endif %}{% endfor %}
+  ]
+  </script>
   <script type="module" crossorigin src="{{ '/public/js/olmap.js' | absolute_url }}"></script>
   <link rel="stylesheet" crossorigin href="{{ '/public/css/olmap.css' | absolute_url }}">
+  {% endif %}
   <script src="{{ '/public/js/script.js' | absolute_url }}"></script>
 </head>

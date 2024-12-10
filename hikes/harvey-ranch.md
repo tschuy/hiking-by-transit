@@ -19,6 +19,7 @@ gpx: harvey_ranch.gpx
 park-link: https://jmlt.org/our-places/harvey-ranch/
 
 image: harvey-ranch.jpg
+blurb: From Moraga to Danville via some of the most remote parts of the East Bay
 ---
 
 When fundraising to purchase Harvey Ranch, the John Muir Land Trust called it a gateway. The property really is special in the connectivity and regionality it brings: Las Trampas has gone from tantalizingly close over a ridgeline to one hike away, bridging a critical gap in the regional trails network.

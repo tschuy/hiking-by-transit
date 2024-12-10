@@ -21,6 +21,7 @@ gpx: sausal-creek.gpx
 park-link: https://www.oaklandparks.org/dimond-park/
 
 image: sausal-creek.jpg
+blurb: A short but fun hike up a shady canyon via redwoods, featuring lots of community art.
 ---
 
 Dimond Canyon is perhaps my favorite way to quickly get "out of the city" when I'm in Oakland. The Dimond is fairly centrally located, with bus access from North Oakland (57), downtown (NL), Fruitvale (20/21/39), and Alameda (20/96) making getting to the park easy. In the Dimond, there are cafes, a fantastic bakery, and grocery options for any last minute pre-hike water and food needs.

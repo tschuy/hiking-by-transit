@@ -20,6 +20,7 @@ gpx: siesta-valley.gpx
 park-link: https://www.ebmud.com/recreation/east-bay/east-bay-trails
 
 image: siesta-valley.jpg
+blurb: A trek over the hills via wildflower territory and eucalyptus groves with views of the city, Berkeley, and inland.
 ---
 
 **Important: EBMUD trails require a Trail Use Permit ($3/day, $10/year). [Purchase online and print at home.](https://www.ebmud.com/recreation/550)**
