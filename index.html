@@ -12,7 +12,7 @@ hasmap: true
 
 <div id="popup" class="ol-popup">
   <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
-  <a href="#" id="popup-hike-link" class="ol-popup-link">Read more »</a>
+  <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
   <div id="popup-content"></div>
 </div>
@@ -64,11 +64,12 @@ hasmap: true
   </form>
 </div>
 
+<hr>
 
 <div class="posts">
 
 <div class="difficulty-selector">
-  <label>I want to see:</label>
+  <label>Filter hikes by difficulty:</label>
 
   <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
     <option value="easy">Easy (3-5mi)</option>
@@ -79,12 +80,15 @@ hasmap: true
 
 <h3><a href="/san-francisco/">San Francisco Hikes</a></h3>
 
-San Francisco offers fantastic urban hiking within the city limits, plus easy access to some of the great hikes in the inner Bay Area.
-Explore expansive city parks from one corner of the city clear across to the other on the Crosstown Trail, hop on a ferry to Angel Island, or check out one of the historic
-forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read more »</a>
+<p>San Francisco offers fantastic urban hiking within the city limits, plus easy access to some of the great hikes in the inner Bay Area. Explore expansive city parks from one corner of the city clear across to the other on the Crosstown Trail, hop on a ferry to Angel Island, or check out one of the historic forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read&nbsp;more&nbsp;»</a></p>
 
 <h3><a href="/east-bay/">East Bay Hikes</a></h3>
+
+<p>From marshy shorelines, up to the redwood and eucalyptus filled hills perched above the cities of Berkeley and Oakland, and out to the hilly oak grasslands further east, the East Bay is where the sheer variety of ecosystems and climates of the Bay Area show off their full strength. <a href="/east-bay/">Read&nbsp;more&nbsp;»</a></p>
+
 <h4>Inner East Bay</h4>
+
+<p>Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.</p>
 
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
@@ -100,6 +104,8 @@ forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read
 
 <h4>Outer East Bay</h4>
 
+<p>Hikes past Lamorinda, from Danville to Antioch.</p>
+
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
@@ -112,6 +118,8 @@ forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read
 </ul>
 
 <h4>Southern East Bay</h4>
+
+<p>Hikes in the hills around Hayward through Fremont.</p>
 
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
@@ -127,6 +135,7 @@ forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read
 
 <div class="posts">
   <h3><a href="/marin/">Marin County Hikes</a></h3>
+  <p>Marin County is perhaps the most popular outdoors destination in the Bay Area, and for good reason. A quick trip across the Bay from San Francisco drops you almost immediately in world-famous redwoods, atop mountains with 360° views of San Francisco, Oakland, and far beyond. <a href="/marin/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {% assign pages_list = site.pages | sort:"url" %}
   {% for node in pages_list %}
@@ -141,6 +150,7 @@ forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read
 
 <div class="posts">
   <h3><a href="/north-peninsula/">North Peninsula Hikes</a></h3>
+  <p>The north peninsula is perhaps most known to residents outside of the immediate area for the airport, the Serramonte Mall, and its graveyards. However, its hills hold some great high-altitude coastal preserves, with windswept views of the Bay, the Pacific, and even the Farallones. <a href="/north-peninsula/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {% assign pages_list = site.pages | sort:"url" %}
   {% for node in pages_list %}
@@ -155,6 +165,7 @@ forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read
 
 <div class="posts">
   <h3><a href="/south-bay/">South Bay Hikes</a></h3>
+  <p>The Valley of Heart's Delight was once famous for its fresh fruit, flowering trees, and scenic beauty. Today, the orchards are gone, but the hills remain, standing resolute above the traffic jams and sprawl. <a href="/south-bay/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {% assign pages_list = site.pages | sort:"url" %}
   {% for node in pages_list %}

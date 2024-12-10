@@ -20,7 +20,7 @@ If you're on your phone, I recommend opening the link below, which will temporar
 
 <div id="popup" class="ol-popup">
   <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
-  <a href="#" id="popup-hike-link" class="ol-popup-link">Read more »</a>
+  <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
   <div id="popup-content"></div>
 </div>

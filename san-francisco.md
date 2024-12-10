@@ -15,7 +15,7 @@ What other major cities often lack that San Francisco has is large swathes of ge
 
 Angel Island is located in the middle of the San Francisco Bay, a short ride from the San Francisco Ferry Building. Its strategic location has meant that it has played an outsized role in the history of immigration and war. Since the end of World War II, nearly the whole island has become a state park, with only small sections remaining active Coast Guard uses. Apart from the historc remnants, the island is nearly entirely a nature preserve, with forests covering the sheltered northern side and grasses and classic Californian chapparal covering the windswept southern side.
 
-<a href="/hikes/angel-island">Read more »</a>
+<a href="/hikes/angel-island">Read&nbsp;more&nbsp;»</a>
 
 ### The Crosstown Trail
 
