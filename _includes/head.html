@@ -45,9 +45,26 @@
       "length": "{{ node.length }}",
       "difficultyhuman": "{% if node.difficulty-human %}{{ node.difficulty-human }}{% else %}{{ node.difficulty }}{% endif %}",
       "difficulty": "{{ node.difficulty }}",
-    }
-    {% unless forloop.last %},{% endunless %}
+    },
     {% endif %}{% endif %}{% endfor %}
+    {
+      "title": "Crosstown Trail",
+      "url": "/san-francisco/#the-crosstown-trail",
+      "gpx": "crosstown.gpx",
+      "blurb": "The premier trail featuring segments through all of San Francisco's best hilltop parks",
+      "length": "Segments from 3-17mi",
+      "difficultyhuman": "as easy or hard as you want it to be!",
+      "difficulty": "easy"
+    },
+    {
+      "title": "Double Cross Trail",
+      "url": "/san-francisco/#the-double-cross-trail",
+      "gpx": "doublecross.gpx",
+      "blurb": "From quiet windswept Fort Funston to the dense inner city via the city's lesser-known southwest neighborhoods and hills.",
+      "length": "Segments up to 14mi",
+      "difficultyhuman": "as easy or hard as you want it to be!",
+      "difficulty": "easy"
+    },
   ]
   </script>
   <script type="module" crossorigin src="{{ '/public/js/olmap.js' | absolute_url }}"></script>
