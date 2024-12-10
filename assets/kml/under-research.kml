@@ -1,0 +1,81 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Transit-accessible trailheads in the Bay Area</name>
+    <description>Trailheads within a 30min walk of a transit stop, excluding school and commute routes.&lt;br&gt;&lt;br&gt;Current agencies I've surveyed include:&lt;br&gt;* Tri Delta&lt;br&gt;* AC Transit&lt;br&gt;* BART&lt;br&gt;* County Connection&lt;br&gt;* Wheels&lt;br&gt;* WestCAT&lt;br&gt;* Caltrain&lt;br&gt;* VTA&lt;br&gt;* Marguerite Shuttle&lt;br&gt;* SamTrans&lt;br&gt;* Sonoma County Transit&lt;br&gt;* FAST&lt;br&gt;* The Vine&lt;br&gt;* Marin Transit&lt;br&gt;* Petaluma Transit&lt;br&gt;* Golden Gate Transit&lt;br&gt;* Bear Transit&lt;br&gt;* Union City Transit&lt;br&gt;* SolTrans&lt;br&gt;&lt;br&gt;The next agencies I plan to look at are:&lt;br&gt;* Muni&lt;br&gt;* Lake Transit&lt;br&gt;* Mendocino Transit&lt;br&gt;* Santa Cruz Metro&lt;br&gt;* Monterey-Salinas Transit&lt;br&gt;* Amtrak buses&lt;br&gt;&lt;br&gt;and hopefully others!&lt;br&gt;&lt;br&gt;For comments, corrections, or inquiries please email me! contact@hikingbytransit.com</description>
+    <Style id="icon-1502-757575-labelson">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-0097A7-labelson">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1716-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1716-A52714-labelson">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1719-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1719-F57C00-labelson">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Under Research</name>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,378 @@
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Transit-accessible trailheads in the Bay Area</name>
+    <description>Trailheads within a 30min walk of a transit stop, excluding school and commute routes.&lt;br&gt;&lt;br&gt;Current agencies I've surveyed include:&lt;br&gt;* Tri Delta&lt;br&gt;* AC Transit&lt;br&gt;* BART&lt;br&gt;* County Connection&lt;br&gt;* Wheels&lt;br&gt;* WestCAT&lt;br&gt;* Caltrain&lt;br&gt;* VTA&lt;br&gt;* Marguerite Shuttle&lt;br&gt;* SamTrans&lt;br&gt;* Sonoma County Transit&lt;br&gt;* FAST&lt;br&gt;* The Vine&lt;br&gt;* Marin Transit&lt;br&gt;* Petaluma Transit&lt;br&gt;* Golden Gate Transit&lt;br&gt;* Bear Transit&lt;br&gt;* Union City Transit&lt;br&gt;* SolTrans&lt;br&gt;&lt;br&gt;The next agencies I plan to look at are:&lt;br&gt;* Muni&lt;br&gt;* Lake Transit&lt;br&gt;* Mendocino Transit&lt;br&gt;* Santa Cruz Metro&lt;br&gt;* Monterey-Salinas Transit&lt;br&gt;* Amtrak buses&lt;br&gt;&lt;br&gt;and hopefully others!&lt;br&gt;&lt;br&gt;For comments, corrections, or inquiries please email me! contact@hikingbytransit.com</description>
+    <Style id="icon-1502-757575-labelson">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-0097A7-labelson">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1532-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1716-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1716-A52714-labelson">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1719-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1719-F57C00-labelson">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name>Bus - Weekday Only</name>
+      <Placemark>
+        <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
+        <description>2min walk from AC Transit line 79 at Derby &amp; Claremont</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2440495,37.8625751,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Robinson Dr</name>
+        <description>0min walk from AC Transit line 39 at Joaquin Miller Rd &amp; Robinson Dr</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1835433,37.8095105,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tilden: Selby Trail (north)
+</name>
+        <description>3min walk from AC Transit 67 at Grizzly Peak &amp; Spruce</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2676233,37.9043683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tilden: Selby Trail (south)
+</name>
+        <description>4min walk from AC Transit 65 at Grizzly Peak Blvd &amp; Shasta Rd</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2491398,37.8912486,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mt Wanda: Riparian Trail
+</name>
+        <description>0min walk from County Connection 16 at Alhambra Ave &amp; Alhambra Valley Rd</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1267652,37.9842712,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chabot: Clyde Woolridge Staging</name>
+        <description>10min walk from AC Transit 46L at Golf Links Rd &amp; Grass Valley Sch</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1182058,37.753804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crockett Hills Trailhead</name>
+        <description>7min walk from WestCAT 11 at John Swett High School</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2212669,38.0470793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Carquinez Strait: Bull Valley Trail
+</name>
+        <description>17min walk from WestCAT 11 at John Swett High School</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2080357,38.0540812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Almaden Quicksilver Park: Mockingbird Hill
+</name>
+        <description>8min walk from VTA line 83 at McKean &amp; Almaden</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8374783,37.1937671,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rancho San Antonio: Hammond Snyder Loop Trail
+</name>
+        <description>7min from VTA Line 51 at Foothill &amp; Cristo Rey</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0748056,37.3320538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stevens Creek County Park: Rim Trail
+</name>
+        <description>22min walk to VTA Line 51 at Foothill &amp; Cupertino</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0721175,37.3076421,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Calero Creek Trail: Camden &amp; Harry</name>
+        <description>0min walk from VTA line 83 at Camden &amp; Harry&lt;br&gt;&lt;br&gt;Provides walking/biking access to Santa Teresa</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8243319,37.2070411,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Saratoga Quarry Park
+</name>
+        <description>28min walk from VTA line 51 at Saratoga &amp; Saratoga-Los Gatos&lt;br&gt;&lt;br&gt;WARNING: dangerous walk to trailhead and often minimal to no shoulder. Not for the faint of heart.</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0476422,37.2517796,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tilden Regional: Grizzly Peak Trail
+</name>
+        <description>6min walk from Bear Transit H line at SSL Lot</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2453321,37.8831882,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>UC Berkeley: Jordan Trail</name>
+        <description>2min walk from Bear Transit H Line at SSL Lot</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2432031,37.880243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Strawberry Canyon: Lower Fire Trail
+</name>
+        <description>5min walk to Bear Transit H Line at the Botanical Garden</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2413312,37.8726414,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Browns Valley Open Space
+</name>
+        <description>5min walk from City Coach 2 at Glen Eagle Way and Wrentham Dr</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.9839264,38.3895745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Skyline Wilderness Park
+</name>
+        <description>10min walk from Vine E at Camille Creek Community School</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2491687,38.2796237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Middletown Trailside Park</name>
+        <description>19min from Lake Transit 3 at Armstrong Rd.</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.6321894,38.7565095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boggs Mountain Demonstration State Forest
+</name>
+        <description>7min walk from Lake Transit 2 at Summit</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.7207473,38.8371053,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Black Forest</name>
+        <description>10min walk from Lake Transit 4a at Buckingham Country Club</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.7574896,38.9965969,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clear Lake State Park</name>
+        <description>24min walk from Lake Transit 4A at Soda Bay</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.8139383,39.0106312,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Briones Regional Park: Hayfield Trail
+</name>
+        <description>30min walk from County Connection 16 at Alhambra Ave and Rockridge Dr</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1174724,37.9647572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pinole Valley Park</name>
+        <description>0min walk to WestCAT 16 at Pinole Valley Rd and Simas Ave</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.26697,37.9814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pinole Open Space
+</name>
+        <description>7min walk from WestCAT 16 at Doidge Ave and Wright Ave</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2501927,37.9881989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hercules Open Space
+</name>
+        <description>0min walk from WestCAT 10 and 12 at Refugion Valley Rd &amp; Falcon Way/Redwood Rd</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2480832,37.996625,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coronado Canyon Trailhead</name>
+        <description>5min walk from WestCAT 12 at Armstrong St and Grissom St</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2354116,37.9998645,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Briones Regional Park: Hidden Pond Trail
+</name>
+        <description>30min walk from County Connection 16 at Alhambra Ave And Rockridge Dr / at Pleasant Hill Rd And Devon Ave</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1093052,37.9532621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    </Document>
+</kml>
