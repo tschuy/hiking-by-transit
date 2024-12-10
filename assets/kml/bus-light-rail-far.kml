@@ -845,6 +845,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>McCrea Memorial Park/Leona Heights: York Trail
+</name>
+        <description>23min from AC Transit 57/NL at MacArthur Blvd &amp; High St</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.182542,37.7919825,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

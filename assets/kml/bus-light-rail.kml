@@ -1303,6 +1303,49 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Garin: CSU East Bay / Harder Rd 
+</name>
+        <description>5min from AC Transit 60 at East Loop Rd &amp; CSU East Bay Recreation &amp; Wellness</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0505775,37.6512947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quarry Lakes Regional Park
+</name>
+        <description>11min walk from AC Transit 216 at Alvarado-Niles Rd &amp; Osprey Rd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0068352,37.5793317,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Willow Camp Fire Road
+</name>
+        <description>12min walk from Marin Transit 61 at 4813 Shoreline Hwy</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.642347,37.9045837,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
+        <description>2min walk from AC Transit line 79 at Derby &amp; Claremont</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2440495,37.8625751,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

@@ -77,16 +77,6 @@
     <Folder>
       <name>Bus - Weekday Only</name>
       <Placemark>
-        <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
-        <description>2min walk from AC Transit line 79 at Derby &amp; Claremont</description>
-        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.2440495,37.8625751,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Robinson Dr</name>
         <description>0min walk from AC Transit line 39 at Joaquin Miller Rd &amp; Robinson Dr</description>
         <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
