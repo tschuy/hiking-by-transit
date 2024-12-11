@@ -96,6 +96,12 @@ html {
     accent-color: #757575;
 }
 
+@media (max-width: 28em) {
+    .ol-attribution ul {
+        font-size: 10px !important;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #promo-dismiss a {
        color: black;
