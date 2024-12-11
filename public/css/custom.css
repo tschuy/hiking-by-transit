@@ -6,7 +6,7 @@ html {
     font-family: "Open Sans", sans-serif;
 }
 .container.content {
-    min-height: calc(100vh - 14rem);
+    min-height: calc(100vh - 18rem);
 }
 .posts {
     margin-bottom: 15px;
