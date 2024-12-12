@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="https://openlayers.org/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+   let hikes_with_gpx = [{
+      "title": "Double Cross Trail",
+      "url": "#",
+      "gpx": "doublecross.gpx",
+      "blurb": "From quiet windswept Fort Funston to the dense inner city via the city's lesser-known southwest neighborhoods and hills.",
+      "length": "Segments up to 14mi",
+      "difficultyhuman": "as easy or hard as you want it to be!",
+      "difficulty": "easy"
+    }]
+    </script>
+    <title>OpenLayers Map</title>
+  </head>
+  <body>
+    <div id="ol-map">
+      <div id="info"></div>
+    </div>
+    
+    <div id="popup" class="ol-popup">
+      <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
+      <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
+      <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+      <div id="popup-content"></div>
+    </div>
+    
+    <div id="filter">
+      Filter Trailheads:
+      <form id="filter-form" autocomplete="off">
+      <ul>
+        <li>
+          <input type="checkbox" id="bus-light-rail" name="bus-light-rail" checked />
+          <label for="bus-light-rail">Bus & Light Rail</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="bus-light-rail-far" name="bus-light-rail-far" checked />
+          <label for="bus-light-rail-far">Bus & Light Rail (15+min walk)</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="bus-weekday-only" name="bus-weekday-only" checked />
+          <label for="bus-weekday-only">Bus (Weekday only)</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="rail-ferry" name="rail-ferry" checked />
+          <label for="rail-ferry">Rail & Ferry</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="rail-ferry-far" name="rail-ferry-far" checked />
+          <label for="rail-ferry-far">Rail & Ferry (20+min walk)</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="bart" name="bart" checked />
+          <label for="bart">BART</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="bart-far" name="bart-far" checked />
+          <label for="bart-far">BART (20+min walk)</label>
+        </li>
+    
+        <li>
+          <input type="checkbox" id="shuttles" name="shuttles" checked />
+          <label for="shuttles">Park Shuttles</label>
+        </li>
+      </ul>
+      </form>
+    </div>
+    
+    <script type="module" src="./main.js"></script>
+    
+  </body>
+</html>

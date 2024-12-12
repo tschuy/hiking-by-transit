@@ -1,0 +1,16 @@
+{
+  "name": "olmap",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "build-and-deploy": "vite build && mv dist/assets/index-*.js ../public/js/olmap.js && mv dist/assets/index-*.css ../public/css/olmap.css",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "ol": "latest"
+  }
+}
