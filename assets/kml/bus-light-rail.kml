@@ -1368,6 +1368,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Coyote Hills: Tuibun Trail
+</name>
+        <description>7min to AC Transit 232 at Ardenwood Blvd &amp; Commerce Dr</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0677568,37.555739,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
