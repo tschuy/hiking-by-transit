@@ -2,8 +2,7 @@
 
   // hide sidebar if we're on mobile
   var checkbox = document.querySelector('#sidebar-checkbox');
-  const width = window.innerWidth;
-  if (width / parseFloat(getComputedStyle(document.documentElement).fontSize) < 70) {
+  if (window.innerWidth < 1200) {
     checkbox.checked = false;
   }
 
@@ -12,11 +11,17 @@
   if (banner && !/Mobi/.test(navigator.userAgent)) {
     banner.style.display = 'none';
   }
-})(document);
 
+  addEventListener("resize", (event) => {
+    if (window.innerWidth > 1200) {
+      checkbox.checked = true;
+    }
+  });
+})(document);
 
 // filter hikes by difficulty
 function difficultySelect() {
+  // filter hikes displayed in the lists
   let e = document.getElementById("hike-difficulty");
   let moderate = "none";
   let hard = "none";
@@ -33,6 +38,14 @@ function difficultySelect() {
   document.querySelectorAll('.hike-difficulty-hard').forEach(function(el) {
     el.style.display = hard;
   });
+
+  // if there's an embedded map, filter hikes on the map
+  if (document.getElementById("ol-map") !== undefined) {
+    let shownLayers = ["easy"];
+    if (e.value == "moderate") shownLayers = ["easy", "moderate"];
+    if (e.value == "hard") shownLayers = ["easy", "moderate", "hard"];
+    showLayersByDifficulty(shownLayers);
+  }
 }
 
 // check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
@@ -50,3 +63,24 @@ function dismissPromo(endtime) {
   document.cookie = cookieText;
   document.getElementById("promo").style.display = "none";
 }
+
+// const localStation = "Ashby";
+// document.querySelectorAll(".hike-tr").forEach(function(r) {
+//   if (r.dataset.travel) {
+//     const travel = JSON.parse(r.dataset.travel);
+//     const travelTime = stationTimeLookup(localStation, travel.station) + travel.bustime + travel.walktime;
+//     const cell = r.insertCell(-1);
+//     cell.innerHTML = `${travelTime}min`;
+//   }
+// });
+
+// const redLine = ["Richmond", "El Cerrito del Norte", "El Cerrito Plaza", "North Berkeley", "Downtown Berkeley", "Ashby"];
+// const blueLine = ["Dublin/Pleasanton", "West Dublin/Pleasanton", "Castro Valley"];
+// const greenLine = ["Berryessa/North San Jose", "Milpitas", "Warm Springs/South Fremont", "Fremont", "Union City", "South Hayward", "Hayward"];
+// const yellowLine = ["Rockridge", "Orinda", "Lafayette", "Walnut Creek", "Pleasant Hill", "Concord", "North Concord", "Pittsburg/Bay Point", "Pittsburg Center", "Antioch"];
+
+
+// function stationTimeLookup(localStation, destinationStation) {
+  
+//   return stationTravelTimeMatrix[localStation][destinationStation];
+// }

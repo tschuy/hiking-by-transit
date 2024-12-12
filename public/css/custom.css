@@ -102,6 +102,15 @@ html {
     }
 }
 
+@media (min-width: 1200px) {
+    #sidebar-checkbox-label {
+        display: none;
+    }
+    .container {
+        margin-left: 16rem;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     #promo-dismiss a {
        color: black;
