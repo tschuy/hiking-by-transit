@@ -9,9 +9,10 @@ permalink:           pretty
 # About/contact
 author:
   name:              Evan Tschuy
-  url:               https://twitter.com/dotTsch
+  url:               https://bsky.app/profile/tsch.uy
 
 include: ['hikes', 'events']
+exclude: ['olmap']
 
 # Gems
 plugins:
