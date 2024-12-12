@@ -94,14 +94,22 @@ const trails = hikes_with_gpx.map((e) => new VectorLayer({
   properties: {...e, ...{"type": "gpx"}},
 }));
 
+const prodOSM = new OSM({
+  attributions: [
+    'Maps ©<a href="https://www.thunderforest.com">Thunderforest</a>',
+    'Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+  ],
+  url:'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=d2ba8afb4a84444f878b429697465850'
+});
+
+const devOSM = new OSM({
+  attributions: ['Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'],
+});
+
+const osm = location.hostname === "localhost" ? devOSM : prodOSM;
+
 const base = new TileLayer({
-  source: new OSM({
-    attributions: [
-      'Maps ©<a href="https://www.thunderforest.com">Thunderforest</a>',
-      'Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-    ],
-    url:'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=d2ba8afb4a84444f878b429697465850'
-    }),
+  source: osm,
 });
 
 const map = new Map({
