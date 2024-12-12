@@ -12,7 +12,7 @@ author:
   url:               https://bsky.app/profile/tsch.uy
 
 include: ['hikes', 'events']
-exclude: ['olmap']
+exclude: ['olmap', 'scripts']
 
 # Gems
 plugins:

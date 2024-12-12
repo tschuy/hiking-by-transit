@@ -1,0 +1,11 @@
+{
+    "Bus / Light Rail - w/ Weekend": "bus-light-rail",
+    "Bus / Light Rail - w/ Weekend - 15min+ walk": "bus-light-rail-far",
+    "Bus - Weekday Only": "bus-weekday-only",
+	"Amtrak / SMART / Ferry": "rail-ferry",
+	"Amtrak / SMART / Ferry - 20min+ walk": "rail-ferry-far",
+	"BART": "bart",
+	"BART - 20min+ walk": "bart-far",
+	"Park Shuttles": "shuttles",
+	"Under Research": "under-research"
+}
