@@ -1346,6 +1346,28 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Big Break Regional Shoreline
+</name>
+        <description>10min from TriDelta 383/391 at Main St &amp; Big Break Rd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.7321532,38.0087251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alameda Creek: Stables Staging Area
+</name>
+        <description>6min from Union City Transit 1 at Union City Blvd at Rocklin Dr</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0701513,37.5663311,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
