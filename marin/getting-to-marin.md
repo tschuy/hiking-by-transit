@@ -165,7 +165,11 @@ This section will be updated when the Muir Woods Shuttle schedule for 2025 is re
 
 ### Marin Transit 61
 
-Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not directly connect. Depending on the particular departure, there are several options for which bus is best to take to transfer between them; on weekends, there's generally a decent transfer via the Golden Gate Transit 150 bus.
+Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not directly connect. Depending on the particular departure, there are several options for which bus is best to take to transfer between them; on weekends, there's generally a decent transfer via the Golden Gate Transit 150 bus at Marin City.
+
+* Golden Gate Transit 150: transfer at Marin City\*
+* Marin Transit 17: transfer at Almonte Blvd & Rosemont Ave
+* Marin Transit 71: transfer at Marin City
 
 **Weekday transfers**
 
@@ -175,21 +179,19 @@ Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not 
 | 10:36am | 11:16am | GGT 150 at 11:45am | 12:10pm |
 | 11:36am | 12:16pm | GGT 150 at 12:45pm | 1:10pm |
 | 1:36pm | 2:16pm | GGT 150 at 2:45pm | 3:10pm |
-| 3:36pm | 4:16pm | Marin Transit 17 at 4:29pm* | 5:01pm |
-| 5:36pm | 6:16pm | Marin Transit 17 at 6:29pm* | 7:01pm |
-
-\**When taking the Marin Transit 17 to transfer, transfer at Almonte Blvd & Rosemont Ave.*
+| 3:36pm | 4:16pm | Marin Transit 17 at 4:29pm | 5:01pm |
+| 5:36pm | 6:16pm | Marin Transit 17 at 6:29pm | 7:01pm |
 
 **Weekend transfers**
 
-| Del Norte departure | 580 arrival at San Rafael | via 150 at | Marin Transit 61 departure |
+| Del Norte departure | 580 arrival at San Rafael | via | Marin Transit 61 departure |
 |---------------------------|------------|----------------------------|
-| 6:36am | 7:10am | 7:45am | 8:15am |
-| 8:36am | 9:17am | 9:45am* | 10:00am |
-| 10:36am | 11:20am | 11:45am |12:05pm |
-| 11:36am | 12:20pm | 12:45pm | 1:05pm |
-| 12:36pm | 1:20pm | 1:45pm* | 2:00pm |
-| 1:36pm | 2:20pm | 2:45pm | 3:25pm |
-| 3:36pm | 4:20pm | 4:45pm | 5:10pm |
+| 6:36am | 7:10am | GGT 150 at 7:45am | 8:15am |
+| 8:36am | 9:17am | GGT 150 at 9:45am* | 10:00am |
+| 10:36am | 11:20am | GGT 150 at 11:45am |12:05pm |
+| 11:36am | 12:20pm | GGT 150 at 12:45pm | 1:05pm |
+| 12:36pm* | 1:20pm* | GGT 150 at 1:45pm* | 2:00pm* |
+| 1:36pm | 2:20pm | GGT 150 at 2:45pm | 3:25pm |
+| 3:36pm | 4:20pm | GGT 150 at 4:45pm | 5:10pm |
 
-\**Due to a short transfer for the 10:00am/2:00pm Marin Transit 61, transfer at the Manzanita Park and Ride/Shoreline Hwy & Pohono St.*
+\**Due to a short transfer for the 10:00am and 2:00pm Marin Transit 61, transfer at the Manzanita Park and Ride/Shoreline Hwy & Pohono St.*
