@@ -9,7 +9,7 @@ title: Getting to Marin
 To get outdoors in Marin, it can feel like you have to become a transit planner. Transit in the Bay Area generally does a very good job at having timetables and real-time data on Google Maps, Apple Maps, and the Transit app, so simply using those apps to determine how to get to a specific trailhead is perfectly doable. However, if you know which buses serve the trailheads you are considering, you can understand how many transfers and how long it might take to get to a given park more easily.
 
 <p class="message">
-    There are several hikes in Marin that are easy to get to from San Francisco without making a transfer. Check out <a href="/hikes/angel-island">Angel Island</a> for world-class views from an island one quick ferry away, or go hiking in the Headlands along the ridge above Sausalito on <a href="https://www.parksconservancy.org/trails/sca-trail">the SCA Trail</a>!
+    There are several hikes in Marin that are easy to get to from San Francisco without making a transfer. Check out <a href="/hikes/angel-island">Angel Island</a> for world-class views from an island one quick ferry away, or go hiking in the Headlands along the ridge above Sausalito on <a href="/hikes/headlands-marin-city">the SCA Trail</a>!
 </p>
 
 ---
