@@ -12,7 +12,7 @@ Thanks to its restrained development patterns and aggressive preservation campai
 Marin Transit maintains its own up-to-date list of transit routes to parks, including their own set of featured parks: [check their website for more inspiration](https://marintransit.org/transit-to-parks)!
 
 <p class="message">
-  Traveling from San Francisco or the East Bay? Check the <a href="/marin/getting-to-marin">Getting to Marin</a> guide for information on the easiest ways to get into and around the county from outside.
+  Traveling from San Francisco or the East Bay? Check the <a href="/marin/getting-to-marin">Getting to Marin</a> guide for information on the easiest ways to get into and around the county »
 </p>
 
 ### Selected Hikes

@@ -23,6 +23,7 @@ park-link: https://www.parks.ca.gov/?page_id=468
 image: angel-island.jpg
 
 blurb: Island hikes of varying lengths with fantastic views of San Francisco and the greater Bay Area, plus historic buildings.
+getting-there: Golden Gate Ferry runs several ferries a day directly from the San Francisco Ferry Building to the island. <a href="https://www.goldengate.org/ferry/angel-island-ferry/">Learn more about the ferry at Golden Gate Ferry's website »</a>
 ---
 
 Angel Island is located in the middle of the San Francisco Bay, just off the end of the Tiburon peninsula. Its strategic location has meant that it has played an outsized role in the history of immigration and war. Since the end of World War II, nearly the whole island has become a state park, with only small sections remaining active Coast Guard uses.

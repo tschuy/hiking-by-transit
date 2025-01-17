@@ -21,9 +21,10 @@ park-link: https://www.parks.ca.gov/?page_id=471
 
 image: mt-tam.jpg
 blurb: An out-and-back hike up a nicely-graded rail trail to the highest peak in Marin with stunning views of the surrounding mountains and the San Francisco skyline.
+getting-there: Marin Transit 61 stops at Pantoll Ranger Station. For more information on catching Route 61 from San Francisco or the East Bay, see the <a href="/marin/getting-to-marin">Getting to Marin guide »</a>
 ---
 
-Marin Transit 61 drops off right at Pantoll, an important node in southern Marin County's trail network. From here, you can go north along the coastal ridge, south and down into Muir Woods and Stinson Beach, or continue up to the peak of Mount Tamalpais, the tallest mountain in the county.
+Pantoll Ranger Station an important node in southern Marin County's trail network. From here, you can go north along the coastal ridge, south and down into Muir Woods and Stinson Beach, or continue up to the peak of Mount Tamalpais, the tallest mountain in the county.
 
 Mount Tamalpais -- Mt Tam between friends -- needs no introduction to Bay Area hikers. The views from the top are stunning panoramic views of nearly the entire northern half of the Bay Area. The easiest transit-accessible hike up starts here at Pantoll, where you can immediately get on the Old Stage Road, remnant of the once mighty ["Crookedest Railroad in the World"](https://www.friendsofmttam.org/railroad/history.html). By virtue of being a grade built for a railroad, it's an even, steady uphill without much in the way of steep slope. Continuing up past the historic West Point Inn (a great place to stop for a picnic), an old railroad hotel and still an active non-profit inn today, turning up to continue onto the main Old Railroad Grade to the top. The hike starts out in redwood, but quickly ascends above and into shrubby chaparral – bring sunscreen!
 

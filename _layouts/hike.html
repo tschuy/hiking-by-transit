@@ -36,6 +36,8 @@ layout: default
     {% if page.gpx %}<li><a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a></li>{% endif %}
   </ul>
 
+  {% if page.getting-there %}<p class="message">{{ page.getting-there }}</p>{% endif %}
+
   {{ content }}
 
   {% if page.gpx %}<div id="map" data-gpx="{{ page.gpx }}"></div>{% endif %}

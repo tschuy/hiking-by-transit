@@ -22,9 +22,10 @@ hike-link: https://www.google.com/maps/dir/38.0084326,-122.4947678/38.0071778,-1
 park-link: https://www.parks.ca.gov/?page_id=466
 
 image: china-camp.jpg
+
+getting-there: Marin Transit 233 serves this stop every day of the week. Catch it in downtown San Rafael. See the <a href="/marin/getting-to-marin">Getting to Marin guide</a> for how best to get to San Rafael Transit Center.
 ---
 
-Marin Transit 233 serves this stop every day of the week. Catch it in downtown San Rafael, transferring from either the Golden Gate Transit 101 from San Francisco or the Golden Gate Transit 580 from the East Bay.
 
 China Camp State Park is located where a ridgeline juts out into the Bay, forming part of the strait between the San Francisco and San Pablo Bays. The park is named for the historic Chinese shrimp-fishing village whose remnants remain at the park's beach, but the park also features wide views from its ridge, calm forests, and plenty of estuary lands.
 
