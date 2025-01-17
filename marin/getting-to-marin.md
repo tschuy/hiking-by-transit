@@ -3,14 +3,18 @@ layout: default
 title: Getting to Marin
 ---
 
-# Getting to Marin
-
-
-To get outdoors in Marin, it can feel like you have to become a transit planner. Transit in the Bay Area generally does a very good job at having timetables and real-time data on Google Maps, Apple Maps, and the Transit app, so simply using those apps to determine how to get to a specific trailhead is perfectly doable. However, if you know which buses serve the trailheads you are considering, you can understand how many transfers and how long it might take to get to a given park more easily.
+<h1>Getting to Marin</h1>
 
 <p class="message">
     There are several hikes in Marin that are easy to get to from San Francisco without making a transfer. Check out <a href="/hikes/angel-island">Angel Island</a> for world-class views from an island one quick ferry away, or go hiking in the Headlands along the ridge above Sausalito on <a href="/hikes/headlands-marin-city">the SCA Trail</a>!
 </p>
+
+To get outdoors in Marin, it can feel like you have to become a transit planner. Transit in the Bay Area generally does a very good job at having timetables and real-time data on Google Maps, Apple Maps, and the Transit app, so simply using those apps to determine how to get to a specific trailhead is perfectly doable. However, if you know which buses serve the trailheads you are considering, you can understand how many transfers and how long it might take to get to a given park more easily.
+
+When riding Golden Gate Transit and Marin Transit bues, it's important to tag on when you board and tag off when you get off. The buses charge distance-based fares, and forgetting to tag off can result in a much higher fare than expected. If you forget to tag off, you can contact Clipper customer sevice for a refund of the excess.
+
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 
@@ -35,6 +39,8 @@ Route 68 serves Samuel P. Taylor State Park, Tomales Bay State Park, and Point R
 ## From San Francisco
 
 If the ferry schedule lines up with your plans, it is by far the most alluring way to go hiking. For hiking directly off the ferry, Angel Island cannot be bested; Old St. Hilary's Preserve and the Morning Sun Trailhead in the Headlands are just over a half-hour walk from the Tiburon and Sausalito ferry terminals respectively, but otherwise you will need to transfer to a bus, in which case it's almost certainly better to take a Golden Gate Transit bus from San Francisco across the Golden Gate Bridge. Golden Gate Transit runs buses half-hourly or better for most most of the day seven days a week, but not all routes serve all transit centers.
+
+[Read more about the 101, 130, and 150 buses on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/santa-rosa-san-francisco-101/)
 
 ### Muir Woods Shuttle
 
@@ -131,6 +137,8 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 
 East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus across the Richmond-San Rafael Bridge, or by heading into San Francisco and taking buses from the Salesforce Transit Center. The following charts describe connections from buses heading westbound across the Richmond-San Rafael Bridge.
 
+[Read more about the 580 bus on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/del-norte-bart-station-san-rafael-580/)
+
 ### Muir Woods Shuttle
 
 This section will be updated when the Muir Woods Shuttle schedule for 2025 is released.
@@ -187,7 +195,7 @@ Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not 
 | Del Norte departure | 580 arrival at San Rafael | via | Marin Transit 61 departure |
 |---------------------------|------------|----------------------------|
 | 6:36am | 7:10am | GGT 150 at 7:45am | 8:15am |
-| 8:36am | 9:17am | GGT 150 at 9:45am* | 10:00am |
+| 8:36am* | 9:17am* | GGT 150 at 9:45am* | 10:00am* |
 | 10:36am | 11:20am | GGT 150 at 11:45am |12:05pm |
 | 11:36am | 12:20pm | GGT 150 at 12:45pm | 1:05pm |
 | 12:36pm* | 1:20pm* | GGT 150 at 1:45pm* | 2:00pm* |
