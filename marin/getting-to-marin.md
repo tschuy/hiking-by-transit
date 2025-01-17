@@ -11,7 +11,7 @@ title: Getting to Marin
 
 To get outdoors in Marin, it can feel like you have to become a transit planner. Transit in the Bay Area generally does a very good job at having timetables and real-time data on Google Maps, Apple Maps, and the Transit app, so simply using those apps to determine how to get to a specific trailhead is perfectly doable. However, if you know which buses serve the trailheads you are considering, you can understand how many transfers and how long it might take to get to a given park more easily.
 
-When riding Golden Gate Transit and Marin Transit bues, it's important to tag on when you board and tag off when you get off. The buses charge distance-based fares, and forgetting to tag off can result in a much higher fare than expected. If you forget to tag off, you can contact Clipper customer sevice for a refund of the excess.
+**When riding Golden Gate Transit and Marin Transit buses, it's important to tag on when you board and tag off when you get off.** The buses charge distance-based fares, and forgetting to tag off can result in a much higher fare than expected. If you forget to tag off, you can contact Clipper customer sevice for a refund of the excess.
 
 * Do not remove this line (it will not be displayed)
 {:toc}
