@@ -24,7 +24,7 @@ There are parks everywhere in Marin. The most famous, however, are mainly locate
 
 ### Muir Woods Shuttle
 
-The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs from the Larkspur ferry terminal to the central Muir Woods Visitor Center. 
+The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs from the Larkspur ferry terminal to the central Muir Woods Visitor Center.
 
 ### Marin Transit 61
 
@@ -38,7 +38,7 @@ Route 68 serves Samuel P. Taylor State Park, Tomales Bay State Park, and Point R
 
 ## From San Francisco
 
-If the ferry schedule lines up with your plans, it is by far the most alluring way to go hiking. For hiking directly off the ferry, Angel Island cannot be bested; Old St. Hilary's Preserve and the Morning Sun Trailhead in the Headlands are just over a half-hour walk from the Tiburon and Sausalito ferry terminals respectively, but otherwise you will need to transfer to a bus, in which case it's almost certainly better to take a Golden Gate Transit bus from San Francisco across the Golden Gate Bridge. Golden Gate Transit runs buses half-hourly or better for most most of the day seven days a week, but not all routes serve all transit centers.
+If the ferry schedule lines up with your plans, it is by far the most alluring way to go hiking. For hiking directly off the ferry, Angel Island cannot be bested; Old St. Hilary's Preserve and the Morning Sun Trailhead in the Headlands are just over a half-hour walk from the Tiburon and Sausalito ferry terminals respectively, but otherwise you will need to transfer to a bus, in which case it's almost certainly better to take a Golden Gate Transit bus from San Francisco across the Golden Gate Bridge. Golden Gate Transit runs buses half-hourly or better for most most of the day seven days a week, but not all routes serve all transit centers in Marin. All San Francisco departures below are the time of departure from the Salesforce Transit Center.
 
 [Read more about the 101, 130, and 150 buses on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/santa-rosa-san-francisco-101/)
 
@@ -135,7 +135,7 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 
 ## From the East Bay
 
-East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus across the Richmond-San Rafael Bridge, or by heading into San Francisco and taking buses from the Salesforce Transit Center. The following charts describe connections from buses heading westbound across the Richmond-San Rafael Bridge.
+East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus across the Richmond-San Rafael Bridge, or by heading into San Francisco and taking a bus across the Golden Gate Bridge: Golden Gate Transit 101, 130, and 150 buses can be caught on the northeast corner of Larkin & Grove. The following charts describe connections from buses heading westbound across the Richmond-San Rafael Bridge on the 580 bus.
 
 [Read more about the 580 bus on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/del-norte-bart-station-san-rafael-580/)
 
