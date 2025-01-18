@@ -139,6 +139,11 @@ East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus
 
 [Read more about the 580 bus on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/del-norte-bart-station-san-rafael-580/)
 
+Like to ride your bike? There are secure bicycle lockers available at San Rafael Transit Center on Tamalpais Ave just north of 4th St for $0.05/hour through the BikeLink app. It's around 11.6mi one way from the Richmond BART station to the bike lockers in San Rafael, and you can ride one way and bring your bike on the bus the other way.
+
+* [Learn how to use BikeLink »](https://www.bikelink.org/get_access/show)
+* [Learn how to take your bicycle on Golden Gate Transit »](https://www.goldengate.org/bus/riding-the-bus/bringing-your-bike/)
+
 ### Muir Woods Shuttle
 
 This section will be updated when the Muir Woods Shuttle schedule for 2025 is released.

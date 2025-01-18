@@ -23,7 +23,7 @@ park-link: https://www.parks.ca.gov/?page_id=466
 
 image: china-camp.jpg
 
-getting-there: Marin Transit 233 serves this stop every day of the week. Catch it in downtown San Rafael. See the <a href="/marin/getting-to-marin">Getting to Marin guide</a> for how best to get to San Rafael Transit Center.
+getting-there: Marin Transit 233 serves this stop every day of the week; <a href="https://marintransit.org/routes/233" target="_blank" rel="noopener noreferrer">see Marin Transit website for timetable</a>. From San Francisco, Golden Gate Transit 130 provides the best transfer, arriving 20 minutes before each 233. From the East Bay, transfers are poor in each direction (two weekday transfers and no weekend transfers under 40 minutes).
 ---
 
 
