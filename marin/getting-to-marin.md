@@ -135,7 +135,7 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 
 ## From the East Bay
 
-East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus across the Richmond-San Rafael Bridge, or by heading into San Francisco and taking a bus across the Golden Gate Bridge: Golden Gate Transit 101, 130, and 150 buses can be caught on the northeast corner of Larkin & Grove. The following charts describe connections from buses heading westbound across the Richmond-San Rafael Bridge on the 580 bus.
+East Bay to Marin transit is possible either via the Golden Gate Transit 580 bus across the Richmond-San Rafael Bridge, or by heading into San Francisco and taking a bus across the Golden Gate Bridge: transfer at Civic Center BART to Golden Gate Transit 101, 130, and 150 buses one block away at the northeast corner of Larkin & Grove. The following charts describe connections from buses heading westbound across the Richmond-San Rafael Bridge on the 580 bus.
 
 [Read more about the 580 bus on Golden Gate Transit's website »](https://www.goldengate.org/bus/route-schedule/del-norte-bart-station-san-rafael-580/)
 
