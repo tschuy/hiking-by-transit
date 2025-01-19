@@ -7,9 +7,6 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% if page.image %}<img class="region-image" src="/assets/{{ page.image }}"><hr>{% endif %}
 
-  <p class="message">
-    This hike has been rated {% if page.difficulty-human %}{{ page.difficulty-human }}{% else %}{{ page.difficulty }}{% endif %}.
-  </p>
   {% if page.map-embed %}
   <div id="map-embed">
     <iframe src="{{ page.map-embed }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -20,21 +17,19 @@ layout: default
   <p class="message">This trailhead is not served seven days a week. Check schedules before leaving.</p>
   {% endif %}
 
-  <ul>
-    <li>Length: {{ page.length }}</li>
-    <li>Travel time: approximately {{ page.travel-time }} from {{ page.travel-time-from }}</li>
-    <li>Stop served: {{ page.served }}</li>
-    <li>Google Maps:
-        <ul>
-            <li><a href="{{ page.transit-stop-link }}">Transit stop</a></li>
-            <li><a href="{{ page.trailhead-link }}">Trailhead</a></li>
-        </ul>
-    </li>
+  <div class="infobox">
+    <p class="message">
+      This hike has been rated {% if page.difficulty-human %}{{ page.difficulty-human }}{% else %}{{ page.difficulty }}{% endif %}.
+    </p>
 
-    <li><a href="{{ page.park-link }}">Park information</a></li>
-    {% if page.hike-link %}<li><a href="{{ page.hike-link }}">Hike route</a></li>{% endif %}
-    {% if page.gpx %}<li><a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a></li>{% endif %}
-  </ul>
+    <div class="infobox-child"><a href="{{ page.park-link }}">Park Information</a></div>
+    <div class="infobox-child"><span class="infobox-title">Distance</span><br><span class="infobox-value">{{ page.length }}</span></div>
+    <div class="infobox-child"><span class="infobox-title">Travel time</span><br><span class="infobox-value">{{ page.travel-time }} from {{ page.travel-time-from }}</span></div>
+    <div class="infobox-child"><span class="infobox-title">Transit stop served</span>: <span class="infobox-value">{{ page.served }}</span></div>
+    <div class="infobox-child"><span class="infobox-title">Transit stop</span>: <span class="infobox-child"><a href="{{ page.transit-stop-link }}">Open in Maps</a></span></div>
+    <div class="infobox-child"><span class="infobox-title">Trailhead</span>: <span class="infobox-child"><a href="{{ page.trailhead-link }}">Open in maps</a></span></div>
+    <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-child">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Google Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
+  </div>
 
   {% if page.getting-there %}<p class="message">{{ page.getting-there }}</p>{% endif %}
 

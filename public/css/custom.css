@@ -44,8 +44,7 @@ html {
     height: 500px;
 }
 #map-embed {
-    float: right;
-    width: 350px;
+    width: 100%;
     height: 250px;
 }
 #map-embed iframe {
@@ -96,6 +95,14 @@ html {
     accent-color: #757575;
 }
 
+.infobox-title {
+    font-weight: bold;
+}
+
+.infobox-child {
+    padding-bottom: 10px;
+}
+
 @media (max-width: 28em) {
     .ol-attribution ul {
         font-size: 10px !important;
@@ -109,6 +116,43 @@ html {
     .container {
         margin-left: 16rem;
     }
+
+    #map-embed {
+        float: right;
+        width: 350px;
+        height: 250px;
+    }
+
+    #sidebar-checkbox:checked ~ .sidebar,
+    #sidebar-checkbox:checked ~ .wrap,
+    #sidebar-checkbox:checked ~ .sidebar-toggle {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+        left: 0rem;
+    }
+
+    .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        left: 14rem;
+      }
+
+    .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+    }
+    
+    .infobox {
+        top: 100px;
+        width: 300px;
+        left: 1200px;
+        position: fixed;
+        padding: 5px;
+        display: grid;
+ }
 }
 
 @media (prefers-color-scheme: dark) {
