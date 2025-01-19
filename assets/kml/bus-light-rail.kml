@@ -1409,6 +1409,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>San Pedro Mountain: Corkscrew Trail
+</name>
+        <description>5min walk from Marin Transit 233 at Vendola Dr &amp; Estancia Way</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.506385138335,38.0126508057111,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

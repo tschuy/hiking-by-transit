@@ -856,6 +856,38 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>San Pedro Mountain Preserve: Mountain View Ave
+</name>
+        <description>21min walk from Marin Transit 57 &amp; 233 at Grand Av &amp; Mountain View Av</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.509552,37.9919238,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harry Barbier Memorial Park: Mountain View Ave
+</name>
+        <description>20min walk from Marin Transit 57 &amp; 233 at Grand Av &amp; Mountain View Av</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.509012,37.990898,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Harry Barbier Memorial Park: Gold Hill Fire Road</name>
+        <description>18min walk from Marin Transit 57 &amp; 233 at Grand Av &amp; Mountain View Av</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.505201,37.982979,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
