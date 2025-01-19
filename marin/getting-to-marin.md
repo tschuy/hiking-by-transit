@@ -208,3 +208,7 @@ Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not 
 | 3:36pm | 4:20pm | GGT 150 at 4:45pm | 5:10pm |
 
 \**Due to a short transfer for the 10:00am and 2:00pm Marin Transit 61, transfer at the Manzanita Park and Ride/Shoreline Hwy & Pohono St.*
+
+---
+
+This page was last updated on January 18th, 2025 using the latest timetables available from [Marin Transit](https://marintransit.org/routes), [Golden Gate Transit](https://www.goldengate.org/bus/schedules-maps/), and [Golden Gate Ferry](https://www.goldengate.org/ferry/schedules-maps/). Verify timetables before leaving; in general, agencies update their timetables twice annually in January and in August.
