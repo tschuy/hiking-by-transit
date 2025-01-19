@@ -1,7 +1,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Transit-accessible trailheads in the Bay Area</name>
-    <description>Trailheads within a 30min walk of a transit stop, excluding school and commute routes.&lt;br&gt;&lt;br&gt;Current agencies I've surveyed include:&lt;br&gt;* Tri Delta&lt;br&gt;* AC Transit&lt;br&gt;* BART&lt;br&gt;* County Connection&lt;br&gt;* Wheels&lt;br&gt;* WestCAT&lt;br&gt;* Caltrain&lt;br&gt;* VTA&lt;br&gt;* Marguerite Shuttle&lt;br&gt;* SamTrans&lt;br&gt;* Sonoma County Transit&lt;br&gt;* FAST&lt;br&gt;* The Vine&lt;br&gt;* Marin Transit&lt;br&gt;* Petaluma Transit&lt;br&gt;* Golden Gate Transit&lt;br&gt;* Bear Transit&lt;br&gt;* Union City Transit&lt;br&gt;* SolTrans&lt;br&gt;&lt;br&gt;The next agencies I plan to look at are:&lt;br&gt;* Muni&lt;br&gt;* Lake Transit&lt;br&gt;* Mendocino Transit&lt;br&gt;* Santa Cruz Metro&lt;br&gt;* Monterey-Salinas Transit&lt;br&gt;* Amtrak buses&lt;br&gt;&lt;br&gt;and hopefully others!&lt;br&gt;&lt;br&gt;For comments, corrections, or inquiries please email me! contact@hikingbytransit.com</description>
+    <description>Trailheads in the San Francisco Bay Area within a 30min walk of a transit stop, excluding school and commute routes.&lt;br&gt;&lt;br&gt;For more information and hike suggestions, visit https://hikingbytransit.com!</description>
     <Style id="icon-1502-757575-labelson">
       <IconStyle>
         <color>ff757575</color>
@@ -111,7 +111,7 @@
       <Placemark>
         <name>Black Diamond Mines Regional Park: River View Loop Trail
 </name>
-        <description>28min from Tri Delta 380/394 at Donlon &amp; Gentrytown Blvd</description>
+        <description>28min from Tri Delta 380 at Donlon &amp; Gentrytown Blvd</description>
         <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
         <Point>
           <coordinates>
