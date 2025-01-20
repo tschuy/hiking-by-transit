@@ -1391,7 +1391,7 @@
       </Placemark>
       <Placemark>
         <name>Black Diamond Mines Regional Preserve: Frederickson Ln</name>
-        <description>9min from Tri MyRide dial-a-ride service zone; walk to Noakes Dr to requiest a bus.</description>
+        <description>9min from Tri MyRide dial-a-ride service zone; walk to Noakes Dr to request a bus.</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1417,6 +1417,27 @@
         <Point>
           <coordinates>
             -122.506385138335,38.0126508057111,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orchard Trailhead</name>
+        <description>4min from Marin Transit 17 at Drake Av &amp; Cole Dr&lt;br&gt;10min from Golden Gate Transit 130, 150, Marin Transit 61 at Marin City Hub</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.5098264,37.8668617,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pacheco Fire Road
+</name>
+        <description>4min from Marin Transit 17 at Drake Ave &amp; Pacheco St&lt;br&gt;10min&#160;from Golden Gate Transit 130, 150, Marin Transit 61 at Marin City Hub</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.5148894,37.869854,0
           </coordinates>
         </Point>
       </Placemark>
