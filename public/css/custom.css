@@ -11,6 +11,10 @@ html {
 .posts {
     margin-bottom: 15px;
 }
+.map {
+    width: 100%;
+    height: 500px;
+}
 #promo {
    /* the promo bar is only revealed if no promo=false cookie is found */
     display: none;
@@ -38,10 +42,6 @@ html {
 #promo-dismiss a {
     color: white;
     font-size: 0.8em;
-}
-#map {
-    width: 100%;
-    height: 500px;
 }
 #map-embed {
     width: 100%;
