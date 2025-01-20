@@ -1441,6 +1441,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>SCA Trail
+</name>
+        <description>11min walk from Golden Gate Transit 130 at US-101 Off-Ramp/Sausalito Lateral Rd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4823853,37.8321963,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
