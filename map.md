@@ -26,49 +26,31 @@ If you're on your phone, I recommend opening the link below, which will temporar
 </div>
 
 <div id="filter" class="infobox infobox-filter map-page">
-  Filter Trailheads:
+  <b>Filter Trailheads</b>
   <form id="filter-form" autocomplete="off">
-  <ul>
-    <li>
       <input type="checkbox" id="bus-light-rail" name="bus-light-rail" checked />
       <label for="bus-light-rail">Bus & Light Rail</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="bus-light-rail-far" name="bus-light-rail-far" checked />
       <label for="bus-light-rail-far">Bus & Light Rail (15+min walk)</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="bus-weekday-only" name="bus-weekday-only" checked />
       <label for="bus-weekday-only">Bus (Weekday only)</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="rail-ferry" name="rail-ferry" checked />
       <label for="rail-ferry">Rail & Ferry</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="rail-ferry-far" name="rail-ferry-far" checked />
       <label for="rail-ferry-far">Rail & Ferry (20+min walk)</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="bart" name="bart" checked />
       <label for="bart">BART</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="bart-far" name="bart-far" checked />
       <label for="bart-far">BART (20+min walk)</label>
-    </li>
-
-    <li>
+      <br>
       <input type="checkbox" id="shuttles" name="shuttles" checked />
       <label for="shuttles">Park Shuttles</label>
-    </li>
-  </ul>
   </form>
 </div>
 
@@ -76,7 +58,7 @@ If you're on your phone, I recommend opening the link below, which will temporar
 
 I've surveyed most of the Bay Area's transit agencies so far; the most notable exception is Muni, which serves plenty of great hiking options inside San Francisco, plus San Bruno Mountain. I've left Muni off of the map as San Francisco's parks are not quite natural spaces in the sense of large uninterrupted spaces with few roads and little development; the city also has tons of great parks covering the place. For the best of San Francisco hiking, I've left that in the more capable hands of the Crosstown Trail, a project by the fantastic SF Parks Alliance.
 
-I try to keep up with agency route changes, but inevitably will miss some. If you see a trailhead that's accessible by transit that I've missed, or a bus I claim goes somewhere no longer does or no longer does on weekends when I say it does, **please** contact me at the email address below.
+I try to keep up with agency route changes, but inevitably will miss some. If you see a trailhead that's accessible by transit that I've missed, or a bus I claim goes somewhere it no longer does or no longer does on weekends when I say it does, **please** contact me at the email address below.
 
 Current agencies I've surveyed include:
 * Tri Delta
