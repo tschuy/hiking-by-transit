@@ -39,4 +39,4 @@ For information on the trails in the Presidio, [visit their website at Presidio.
 
 Starting in quaint Cole Valley, this hike goes through Mount Sutro's eucalyptus forest before heading up to Twin Peaks, arguably the best bang-for-your-buck view of downtown San Francisco, the Golden Gate Bridge, and more. From there, it heads down one of the city's wildest remaining spaces reminiscent of what the city looked like before urbanization in Glen Canyon, ending at Glen Park BART. <a href="/hikes/sutro-glen-canyon">Read&nbsp;more&nbsp;»</a>
 
-<img src="/assets/san-francisco.jpg">
+<img class="region-image infobox" src="/assets/san-francisco.jpg">

@@ -26,7 +26,7 @@ Marin Transit maintains its own up-to-date list of transit routes to parks, incl
     <option value="hard" selected>All Hikes</option>
   </select>
 </div>
-
+<p></p>
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
@@ -38,4 +38,4 @@ Marin Transit maintains its own up-to-date list of transit routes to parks, incl
 {% endfor %}
 </ul>
 
-<img src="/assets/mt-tam.jpg">
+<img class="infobox region-image" src="/assets/mt-tam.jpg">

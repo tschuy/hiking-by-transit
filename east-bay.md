@@ -66,4 +66,4 @@ Hikes in the hills around Hayward through Fremont.
 {% endfor %}
 </ul>
 
-<img src="/assets/mt-diablo.jpg">
+<img class="infobox region-image" src="/assets/mt-diablo.jpg">

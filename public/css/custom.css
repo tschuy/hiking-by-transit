@@ -46,6 +46,7 @@ html {
 #map-embed {
     width: 100%;
     height: 250px;
+    padding: 10px;
 }
 #map-embed iframe {
     width: 100%;
@@ -122,7 +123,9 @@ html {
         width: 350px;
         height: 250px;
     }
+}
 
+@media (min-width: 1400px) {
     #sidebar-checkbox:checked ~ .sidebar,
     #sidebar-checkbox:checked ~ .wrap,
     #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -148,11 +151,25 @@ html {
     .infobox {
         top: 100px;
         width: 300px;
-        left: 1200px;
+        left: 1175px;
         position: fixed;
         padding: 5px;
         display: grid;
- }
+    }
+
+    .infobox-filter {
+        position: absolute;
+        width: auto;
+    }
+
+    .infobox.region-image {
+        width: auto;
+        max-width: min(calc(100% - 13rem - 56rem - 10rem), 700px);
+    }
+
+    .infobox.map-page {
+        top: 450px;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -25,7 +25,7 @@ If you're on your phone, I recommend opening the link below, which will temporar
   <div id="popup-content"></div>
 </div>
 
-<div id="filter">
+<div id="filter" class="infobox infobox-filter map-page">
   Filter Trailheads:
   <form id="filter-form" autocomplete="off">
   <ul>
@@ -71,6 +71,8 @@ If you're on your phone, I recommend opening the link below, which will temporar
   </ul>
   </form>
 </div>
+
+<hr>
 
 I've surveyed most of the Bay Area's transit agencies so far; the most notable exception is Muni, which serves plenty of great hiking options inside San Francisco, plus San Bruno Mountain. I've left Muni off of the map as San Francisco's parks are not quite natural spaces in the sense of large uninterrupted spaces with few roads and little development; the city also has tons of great parks covering the place. For the best of San Francisco hiking, I've left that in the more capable hands of the Crosstown Trail, a project by the fantastic SF Parks Alliance.
 

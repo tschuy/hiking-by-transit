@@ -21,6 +21,7 @@ The South Bay is an absolutely massive region, with the San José basin stretchi
   </select>
 </div>
 
+<p></p>
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}

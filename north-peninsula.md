@@ -21,6 +21,7 @@ Northern San Mateo County is split in two by the northern tip of the Santa Cruz 
   </select>
 </div>
 
+<p></p>
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
@@ -32,4 +33,4 @@ Northern San Mateo County is split in two by the northern tip of the Santa Cruz 
 {% endfor %}
 </ul>
 
-<img class="region-image" src="/assets/sweeney-ridge.jpg">
+<img class="infobox region-image" src="/assets/sweeney-ridge.jpg">
