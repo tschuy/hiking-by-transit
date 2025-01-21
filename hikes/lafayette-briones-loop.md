@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Briones: Walter Costa to Lafayette Ridge loop"
+tags: oak grassland hills wildflowers
 
 region: inner-east-bay
 difficulty: hard

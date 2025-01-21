@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Rancho San Antonio: Rhus Ridge"
+tags: oak grassland hills wildflowers
 
 region: south-bay
 difficulty: moderate

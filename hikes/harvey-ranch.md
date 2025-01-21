@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Harvey Ranch to Las Trampas / Moraga to Danville"
+tags: oak grassland hills wildflowers chaparral
 
 region: inner-east-bay
 difficulty: hard
@@ -26,6 +27,6 @@ When fundraising to purchase Harvey Ranch, the John Muir Land Trust called it a 
 
 This hike starts at St Mary's College at the observatory path, and follows the ridgeline over and beyond into Carr Ranch, the other of the Trust's gateway properties. Along the way, panoramic views of the northern section of Bollinger Canyon Rd and Lamorinda greet you if you turn around, and in front of you, the valley of Carr Ranch will suddenly appear.
 
-From there, the hike follows EBMUD's Rocky Ridge Trail up (steeply up) to Las Trampas, where Diablo will suddenly loom in the distance. Following the paved radio tower access road down, and the trails up the ridge on the other side, crossing Las Trampas the short way gives beautiful views of its rocky outcroppings, grassy fields, and chapparal, joined by oak forest on the descent into Danville / Alamo.
+From there, the hike follows EBMUD's Rocky Ridge Trail up (steeply up) to Las Trampas, where Diablo will suddenly loom in the distance. Following the paved radio tower access road down, and the trails up the ridge on the other side, crossing Las Trampas the short way gives beautiful views of its rocky outcroppings, grassy fields, and chaparral, joined by oak forest on the descent into Danville / Alamo.
 
 Las Trampas is one of my favorite East Bay Parks, and this hike -- though challenging -- is a very rewarding way to see it. Note the EBMUD permit requirements; permits can be purchased on [their website](https://www.ebmud.com/recreation/buy-trail-permit) or in person at locations listed on their website.

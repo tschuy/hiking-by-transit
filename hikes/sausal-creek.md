@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Dimond Canyon / Sausal Creek to Montclair"
+tags: creek canyon hills historic redwoods forest
 
 region: inner-east-bay
 difficulty-human: moderate

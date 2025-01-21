@@ -1,6 +1,7 @@
 ---
 layout: hike
-title: "Wildcat Canyon Regional Park"
+title: Wildcat Canyon Regional Park
+tags: forest grassland hills wildflowers
 
 region: inner-east-bay
 difficulty-human: easy to moderate

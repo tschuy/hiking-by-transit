@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Cull Canyon: Along Cull Creek"
+tags: forest
 
 region: inner-east-bay
 difficulty: easy

@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Siesta Valley & Claremont Canyon: Orinda to Berkeley"
+tags: forest oak grassland hills eucalyptus wildflowers
 
 region: inner-east-bay
 difficulty-human: moderate to hard

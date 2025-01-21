@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Mount Diablo: Mitchell Canyon to Summit"
+tags: oak grassland hills historic wildflowers chaparral
 
 region: outer-east-bay
 difficulty: hard
@@ -25,4 +26,4 @@ image: mt-diablo.jpg
 
 County Connection buses 10 (weekday) and 310 (weekend) serve this trailhead. Transfer at Concord BART.
 
-Mount Diablo State Park is the crown jewel of the East Bay. On a clear day, from the summit, 40 of California's 58 counties can be seen, from the Golden Gate Bridge to the Sentinel Dome of Yosemite Valley (provided you have good binoculars). On the way up, you'll pass classic East Bay chapparal and grasslands.
+Mount Diablo State Park is the crown jewel of the East Bay. On a clear day, from the summit, 40 of California's 58 counties can be seen, from the Golden Gate Bridge to the Sentinel Dome of Yosemite Valley (provided you have good binoculars). On the way up, you'll pass classic East Bay chaparral and grasslands.

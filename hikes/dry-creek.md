@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Garin/Dry Creek Regional Park: Pioneer Trail Loop"
+tags: oak grassland hills wildflowers
 
 region: southeast-bay
 difficulty: easy

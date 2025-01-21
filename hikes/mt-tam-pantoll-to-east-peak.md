@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Mount Tamalpais: Pantoll to East Peak"
+tags: grassland hills historic wildflowers chaparral
 
 region: marin
 difficulty: hard

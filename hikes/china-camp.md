@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "China Camp State Park: Back Ranch Meadows"
+tags: oak coastal historic
 
 region: marin
 difficulty-human: easy to hard

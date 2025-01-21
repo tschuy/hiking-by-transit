@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Mount Sutro, Twin Peaks, and Glen Canyon"
+tags: grassland hills historic wildflowers eucalyptus
 
 region: san-francisco
 difficulty: moderate

@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Mission Peak: Ohlone College to Summit"
+tags: grassland hills historic wildflowers
 
 region: southeast-bay
 difficulty-human: moderate to hard

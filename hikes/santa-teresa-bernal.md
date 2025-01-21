@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Santa Teresa: Bernal Loop"
+tags: oak grassland hills wildflowers
 
 region: south-bay
 difficulty: moderate

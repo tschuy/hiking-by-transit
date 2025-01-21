@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Alum Rock: Penintencia Creek Trail"
+tags: creek canyon historic
 
 region: south-bay
 difficulty: easy

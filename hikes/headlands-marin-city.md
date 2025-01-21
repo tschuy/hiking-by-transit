@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Marin Headlands: Ridge to Marin City"
+tags: coastal hills historic wildflowers
 
 region: marin
 difficulty: easy

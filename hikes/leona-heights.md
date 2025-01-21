@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Leona Heights: Laurel to Merritt College"
+tags: oak redwoods hills art forest
 
 region: inner-east-bay
 difficulty-human: easy to moderate

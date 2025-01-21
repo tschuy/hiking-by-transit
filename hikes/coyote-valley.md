@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Coyote Valley: Arrowhead Loop"
+tags: oak grassland forest wildflowers
 
 region: south-bay
 difficulty-human: easy-to-moderate

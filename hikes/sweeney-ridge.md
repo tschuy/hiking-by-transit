@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "San Bruno: Sweeney Ridge"
+tags: grassland hills wildflowers lake
 
 region: north-peninsula
 difficulty: moderate

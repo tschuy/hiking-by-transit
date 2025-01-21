@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Angel Island State Park"
+tags: eucalyptus hills coastal historic
 
 region: marin
 difficulty-human: moderate to hard

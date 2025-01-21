@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Black Diamond Mines: Clayton to Antioch"
+tags: oak grassland hills historic wildflowers
 
 region: outer-east-bay
 difficulty: hard

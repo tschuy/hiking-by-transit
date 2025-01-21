@@ -1,6 +1,7 @@
 ---
 layout: hike
 title: "Las Trampas: Ringtail Cat to Ridge to Del Amigo"
+tags: oak grassland hills wildflowers
 
 region: outer-east-bay
 difficulty: moderate
