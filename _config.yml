@@ -3,7 +3,7 @@ title:               Hiking by Transit
 description:         'A collection of useful information for hiking by transit in the Bay Area.'
 url:                 https://hikingbytransit.com
 baseurl:             ''
-paginate:            5
+paginate:            10
 permalink:           pretty
 
 # About/contact
