@@ -17,7 +17,67 @@
       checkbox.checked = true;
     }
   });
+
+  setupFilters();
 })(document);
+
+function setupFilters() {
+  let tags = [];
+  document.querySelectorAll('.hike').forEach(h => {
+    tags = [...tags, ...h.dataset.tags.split(" ")];
+  });
+  tags = tags.filter((item, pos) => tags.indexOf(item) === pos);
+
+  const selector = document.getElementById("tag-selector");
+  for (const t of tags) {
+    const tlink = document.createElement('a');
+    tlink.classList = ["tag-link"];
+    const spacer = document.createTextNode(' ');
+    tlink.innerHTML = t;
+    tlink.onclick = function() { toggle(selectedTags, t, tlink) };
+    selector.appendChild(tlink);
+    selector.appendChild(spacer);
+  }
+
+  const difficultyDisplay = {"easy": "Easy (3-5mi)", "moderate": "Moderate (5-7mi)", "hard": "Hard (6+mi)"}
+  const difficultySelector = document.getElementById("difficulty-selector");
+  for (let d of Object.keys(difficultyDisplay)) {
+    if (!difficultySelector) continue;
+    const dlink = document.createElement('a');
+    dlink.classList = ["tag-link tag-highlighted"];
+    const spacer = document.createTextNode(' ');
+    dlink.innerHTML = difficultyDisplay[d];
+    dlink.onclick = function() { toggle(selectedDifficulties, d, dlink) };
+    difficultySelector.appendChild(dlink);
+    difficultySelector.appendChild(spacer);
+  }
+}
+
+var selectedTags = [];
+var selectedDifficulties = ["easy", "moderate", "hard"];
+function toggle(selected, tag, tlink) {
+  console.log('test');
+  console.log(selected);
+  index = selected.indexOf(tag);
+  if (index !== -1) {
+    selected.splice(index, 1);
+    tlink.classList.remove("tag-highlighted");
+  } else {
+    selected.push(tag);
+    tlink.classList.add("tag-highlighted");
+  }
+
+  document.querySelectorAll('.hike').forEach(h => {
+    console.log(h);
+    const hikeTags = h.dataset.tags.split(" ");
+    const hikeDifficulty = h.dataset.difficulty;
+    if(!selectedTags.every(val => hikeTags.includes(val)) || !selectedDifficulties.includes(hikeDifficulty)) {
+      h.style.display = "none";
+    } else {
+      h.style.display = null;
+    }
+  });
+}
 
 // filter hikes by difficulty
 function difficultySelect() {
@@ -63,24 +123,3 @@ function dismissPromo(endtime) {
   document.cookie = cookieText;
   document.getElementById("promo").style.display = "none";
 }
-
-// const localStation = "Ashby";
-// document.querySelectorAll(".hike-tr").forEach(function(r) {
-//   if (r.dataset.travel) {
-//     const travel = JSON.parse(r.dataset.travel);
-//     const travelTime = stationTimeLookup(localStation, travel.station) + travel.bustime + travel.walktime;
-//     const cell = r.insertCell(-1);
-//     cell.innerHTML = `${travelTime}min`;
-//   }
-// });
-
-// const redLine = ["Richmond", "El Cerrito del Norte", "El Cerrito Plaza", "North Berkeley", "Downtown Berkeley", "Ashby"];
-// const blueLine = ["Dublin/Pleasanton", "West Dublin/Pleasanton", "Castro Valley"];
-// const greenLine = ["Berryessa/North San Jose", "Milpitas", "Warm Springs/South Fremont", "Fremont", "Union City", "South Hayward", "Hayward"];
-// const yellowLine = ["Rockridge", "Orinda", "Lafayette", "Walnut Creek", "Pleasant Hill", "Concord", "North Concord", "Pittsburg/Bay Point", "Pittsburg Center", "Antioch"];
-
-
-// function stationTimeLookup(localStation, destinationStation) {
-  
-//   return stationTravelTimeMatrix[localStation][destinationStation];
-// }

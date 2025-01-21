@@ -11,15 +11,14 @@ The heart of the Bay Area's transit system is indisputably BART, whose five line
 
 ## Selected Hikes
 
-<div class="difficulty-selector">
-  <label for="cars">I want to see:</label>
+Filter by difficulty
+<div class="message" id="difficulty-selector"></div>
+<p></p>
 
-  <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
-    <option value="easy">Easy (3-5mi)</option>
-    <option value="moderate">Easy and Moderate (3-7mi)</option>
-    <option value="hard" selected>All Hikes</option>
-  </select>
-</div>
+Filter by tag
+<div class="message" id="tag-selector"></div>
+
+<hr>
 
 ### Inner East Bay
 
@@ -30,7 +29,7 @@ Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "inner-east-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -45,7 +44,7 @@ Hikes past Lamorinda, from Danville to Antioch.
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "outer-east-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -60,7 +59,7 @@ Hikes in the hills around Hayward through Fremont.
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "southeast-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}

@@ -11,23 +11,21 @@ Northern San Mateo County is split in two by the northern tip of the Santa Cruz 
 
 ### Selected Hikes
 
-<div class="difficulty-selector">
-  <label for="cars">I want to see:</label>
-
-  <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
-    <option value="easy">Easy (3-5mi)</option>
-    <option value="moderate">Easy and Moderate (3-7mi)</option>
-    <option value="hard" selected>All Hikes</option>
-  </select>
-</div>
-
+Filter by difficulty
+<div class="message" id="difficulty-selector"></div>
 <p></p>
+
+Filter by tag
+<div class="message" id="tag-selector"></div>
+
+<hr>
+
 <ul>
 {% assign pages_list = site.pages | sort:"url" %}
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "north-peninsula" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}

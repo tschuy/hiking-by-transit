@@ -50,15 +50,14 @@ hasmap: true
 
 <div class="posts">
 
-<div class="difficulty-selector">
-  <label>Filter hikes by difficulty:</label>
+Filter by difficulty
+<div class="message" id="difficulty-selector"></div>
+<p></p>
 
-  <select name="difficulty" id="hike-difficulty" onchange="difficultySelect()">
-    <option value="easy">Easy (3-5mi)</option>
-    <option value="moderate">Easy and Moderate (3-7mi)</option>
-    <option value="hard" selected>All Hikes</option>
-  </select>
-</div>
+Filter by tag
+<div class="message" id="tag-selector"></div>
+
+<hr>
 
 <h3><a href="/trips/">Hiking Trips</a></h3>
 
@@ -81,8 +80,7 @@ hasmap: true
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "inner-east-bay" %}
-    <!-- <li class="hike-difficulty-{{ node.difficulty }} data-nearest-station="{{ node.nearest-station }}" data-nearest-station-travel-time="{{ node.nearest-station-travel-time }}" data-nearest-station-connection-frequency="{{ node.nearest-station-connection-frequency }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a><span> ()</span></li> -->
-    <li class="hike-difficulty-{{ node.difficulty }}""><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -97,7 +95,7 @@ hasmap: true
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "outer-east-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -112,7 +110,7 @@ hasmap: true
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "southeast-bay" %}
-<li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {% endif %}
     {% endif %}
 {% endfor %}
@@ -127,7 +125,7 @@ hasmap: true
   {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.region == "marin" %}
-  <li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {% endif %}
       {% endif %}
   {% endfor %}
@@ -142,7 +140,7 @@ hasmap: true
   {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.region == "north-peninsula" %}
-  <li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {% endif %}
       {% endif %}
   {% endfor %}
@@ -157,7 +155,7 @@ hasmap: true
   {% for node in pages_list %}
       {% if node.title != null %}
       {% if node.region == "south-bay" %}
-  <li class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+      <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {% endif %}
       {% endif %}
   {% endfor %}
