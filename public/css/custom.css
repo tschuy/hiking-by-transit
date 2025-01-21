@@ -2,6 +2,12 @@
 	font-family: 'Open Sans';
 	src: url('/public/fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
 }
+
+/* override the sidebar toggle animation until page is fully loaded to prevent flashing, as the sidebar is programmatically displayed/hidden based on screen size */
+.wrap, .sidebar-toggle, .sidebar {
+    display: none;
+}
+
 html {
     font-family: "Open Sans", sans-serif;
 }

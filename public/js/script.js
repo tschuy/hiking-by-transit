@@ -1,13 +1,12 @@
 (function(document) {
-
   // hide sidebar if we're on mobile
-  var checkbox = document.querySelector('#sidebar-checkbox');
+  let checkbox = document.querySelector('#sidebar-checkbox');
   if (window.innerWidth < 1200) {
     checkbox.checked = false;
   }
 
   // if we're on mobile, show the app text
-  var banner = document.querySelector("#mobile-banner");
+  let banner = document.querySelector("#mobile-banner");
   if (banner && !/Mobi/.test(navigator.userAgent)) {
     banner.style.display = 'none';
   }
@@ -16,6 +15,15 @@
     if (window.innerWidth > 1200) {
       checkbox.checked = true;
     }
+  });
+
+  // restore default styles to elements hidden during load to prevent flashing
+  document.querySelectorAll('.wrap, .sidebar').forEach(e => {
+    e.style.display = "block";
+  });
+
+  document.querySelectorAll('.sidebar-toggle').forEach(e => {
+    e.style.display = "flex";
   });
 
   setupFilters();
