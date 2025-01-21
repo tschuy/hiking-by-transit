@@ -10,16 +10,16 @@
   <meta property="og:type" content="website">
 
   <title>
-    {% if page.title == "Home" %}
+    {%- if page.title == "Home" -%}
       {{ site.title }}
-    {% else %}
+    {%- else -%}
       {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {%- endif -%}
   </title>
 
-  {% if page.url and site.baseurl %}
+  {%- if page.url and site.baseurl -%}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
+  {%- endif -%}
 
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">
@@ -31,13 +31,13 @@
 
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ '/atom.xml' | absolute_url }}">
 
-  {% if page.hasmap %}
+  {%- if page.hasmap -%}
   <script>
     /* unfortunately since the source of truth is markdown files managed by jekyll,
        this is the simplest way to provide that information to the frontend in a programatic manner. */
     let hikes_with_gpx = [
-    {% assign pages_list = site.pages | sort:"url" %}
-    {% for node in pages_list %}{% if node.title != null %}{% if node.gpx %}{
+    {%- assign pages_list = site.pages | sort:"url" -%}
+    {%- for node in pages_list -%}{%- if node.title != null -%}{%- if node.gpx -%}{
       "title": "{{ node.title }}",
       "url": "{{ node.url }}",
       "gpx": "{{ node.gpx }}",
@@ -46,7 +46,7 @@
       "difficultyhuman": "{% if node.difficulty-human %}{{ node.difficulty-human }}{% else %}{{ node.difficulty }}{% endif %}",
       "difficulty": "{{ node.difficulty }}",
     },
-    {% endif %}{% endif %}{% endfor %}
+    {%- endif -%}{%- endif -%}{%- endfor -%}
     {
       "title": "Crosstown Trail",
       "url": "/san-francisco/#the-crosstown-trail",

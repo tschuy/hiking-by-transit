@@ -25,14 +25,14 @@ Filter by tag
 Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "inner-east-bay" %}
 <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 
 ### Outer East Bay
@@ -40,14 +40,14 @@ Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.
 Hikes past Lamorinda, from Danville to Antioch.
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "outer-east-bay" %}
 <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 
 ### Southern East Bay
@@ -55,14 +55,14 @@ Hikes past Lamorinda, from Danville to Antioch.
 Hikes in the hills around Hayward through Fremont.
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "southeast-bay" %}
 <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 
 <img class="infobox region-image" src="/assets/mt-diablo.jpg">

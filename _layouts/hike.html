@@ -7,15 +7,15 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% if page.image %}<img class="region-image" src="/assets/{{ page.image }}"><hr>{% endif %}
 
-  {% if page.map-embed %}
+  {% if page.map-embed -%}
   <div id="map-embed">
     <iframe src="{{ page.map-embed }}" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   {% endif %}
 
-  {% if page.served != "daily" %}
+  {%- if page.served != "daily" -%}
   <p class="message">This trailhead is not served seven days a week. Check schedules before leaving.</p>
-  {% endif %}
+  {%- endif -%}
 
   <div class="infobox">
     <p class="message">
@@ -31,10 +31,10 @@ layout: default
     <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-child">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Google Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
   </div>
 
-  {% if page.getting-there %}<p class="message">{{ page.getting-there }}</p>{% endif %}
+  {%- if page.getting-there -%}<p class="message">{{ page.getting-there }}</p>{%- endif -%}
 
   {{ content }}
 
-  {% if page.gpx %}<div class="map" data-gpx="{{ page.gpx }}"></div>{% endif %}
+  {%- if page.gpx -%}<div class="map" data-gpx="{{ page.gpx }}"></div>{%- endif -%}
   <hr>
 </div>

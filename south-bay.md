@@ -21,12 +21,12 @@ Filter by tag
 <hr>
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "south-bay" %}
     <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>

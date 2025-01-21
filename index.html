@@ -76,14 +76,14 @@ Filter by tag
 <p>Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.</p>
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "inner-east-bay" %}
     <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 
 <h4>Outer East Bay</h4>
@@ -91,14 +91,14 @@ Filter by tag
 <p>Hikes past Lamorinda, from Danville to Antioch.</p>
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "outer-east-bay" %}
     <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 
 <h4>Southern East Bay</h4>
@@ -106,14 +106,14 @@ Filter by tag
 <p>Hikes in the hills around Hayward through Fremont.</p>
 
 <ul>
-{% assign pages_list = site.pages | sort:"url" %}
-{% for node in pages_list %}
-    {% if node.title != null %}
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+    {%- if node.title != null -%}
     {% if node.region == "southeast-bay" %}
     <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-    {% endif %}
-    {% endif %}
-{% endfor %}
+    {%- endif -%}
+    {%- endif -%}
+{%- endfor %}
 </ul>
 </div>
 
@@ -121,29 +121,29 @@ Filter by tag
   <h3><a href="/marin/">Marin County Hikes</a></h3>
   <p>Marin County is perhaps the most popular outdoors destination in the Bay Area, and for good reason. A quick trip across the Bay from San Francisco drops you almost immediately in world-famous redwoods, atop mountains with 360° views of San Francisco, Oakland, and far beyond. <a href="/marin/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
-  {% assign pages_list = site.pages | sort:"url" %}
-  {% for node in pages_list %}
-      {% if node.title != null %}
-      {% if node.region == "marin" %}
-      <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-      {% endif %}
-      {% endif %}
-  {% endfor %}
-  </ul>
+    {%- assign pages_list = site.pages | sort:"url" -%}
+    {%- for node in pages_list -%}
+        {%- if node.title != null -%}
+        {% if node.region == "marin" %}
+        <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+        {%- endif -%}
+        {%- endif -%}
+    {%- endfor %}
+    </ul>
 </div>
 
 <div class="posts">
   <h3><a href="/north-peninsula/">North Peninsula Hikes</a></h3>
   <p>The north peninsula is perhaps most known to residents outside of the immediate area for the airport, the Serramonte Mall, and its graveyards. However, its hills hold some great high-altitude coastal preserves, with windswept views of the Bay, the Pacific, and even the Farallones. <a href="/north-peninsula/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
-  {% assign pages_list = site.pages | sort:"url" %}
-  {% for node in pages_list %}
-      {% if node.title != null %}
+  {%- assign pages_list = site.pages | sort:"url" -%}
+  {%- for node in pages_list -%}
+      {%- if node.title != null -%}
       {% if node.region == "north-peninsula" %}
       <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-      {% endif %}
-      {% endif %}
-  {% endfor %}
+      {%- endif -%}
+      {%- endif -%}
+  {%- endfor %}
   </ul>
 </div>
 
@@ -151,48 +151,41 @@ Filter by tag
   <h3><a href="/south-bay/">South Bay Hikes</a></h3>
   <p>The Valley of Heart's Delight was once famous for its fresh fruit, flowering trees, and scenic beauty. Today, the orchards are gone, but the hills remain, standing resolute above the traffic jams and sprawl. <a href="/south-bay/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
-  {% assign pages_list = site.pages | sort:"url" %}
-  {% for node in pages_list %}
-      {% if node.title != null %}
+  {%- assign pages_list = site.pages | sort:"url" -%}
+  {%- for node in pages_list -%}
+      {%- if node.title != null -%}
       {% if node.region == "south-bay" %}
       <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
-      {% endif %}
-      {% endif %}
-  {% endfor %}
+      {%- endif -%}
+      {%- endif -%}
+  {%- endfor %}
   </ul>
 </div>
-
 <hr>
 
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url | absolute_url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
+    <h1 class="post-title"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    {{ post.excerpt }}
   </div>
-  {% endfor %}
+  {%- endfor -%}
 </div>
 
 <div class="pagination">
-  {% if paginator.next_page %}
+  {%- if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
-  {% else %}
+  {%- else %}
     <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
+  {%- endif %}
+  {%- if paginator.previous_page %}
+    {%- if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
-    {% else %}
+    {%- else %}
       <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
-    {% endif %}
-  {% else %}
+    {%- endif %}
+  {%- else %}
     <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  {%- endif %}
 </div>

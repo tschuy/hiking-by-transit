@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="sidebar-overlay theme-base-0f">
+<body class="sidebar-overlay theme-base-0f">
 
-	{% include promo.html %}
-    {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h2 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-          </h3>
-        </div>
-      </div>
-
-      <div class="container content">
-        {{ content }}
-      </div>
-
-      <div class="container">
-        {% include footer.html %}
-      </div>
+{% include promo.html %}
+{% include sidebar.html %}
+<div class="wrap">
+  <div class="masthead">
+    <div class="container">
+      <h2 class="masthead-title">
+        <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+      </h3>
     </div>
+  </div>
 
-    <label id="sidebar-checkbox-label" for="sidebar-checkbox" class="sidebar-toggle"></label>
+  <div class="container content">
+    {{ content }}
+  </div>
 
+  <div class="container">
+    {% include footer.html %}
+  </div>
+</div>
 
-    <script src='{{ site.baseurl }}/public/js/script.js'></script>
-  </body>
+<label id="sidebar-checkbox-label" for="sidebar-checkbox" class="sidebar-toggle"></label>
+<script src='{{ site.baseurl }}/public/js/script.js'></script>
+</body>
 
-  {% if page.gpx %}
+  {%- if page.gpx -%}
   <!-- following script is GPLv3 from https://github.com/Raruto/leaflet-elevation -->
-
 	<!-- leaflet-ui -->
 	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 	<script src="https://unpkg.com/leaflet-ui@0.5.9/dist/leaflet-ui.js"></script>
@@ -46,5 +40,5 @@
 	<script src="https://unpkg.com/@raruto/leaflet-elevation@2.2.8/dist/leaflet-elevation.min.js"></script>
 
 	<script src="{{ '/public/js/map.js' | absolute_url }}"></script>
-{% endif %}
+{%- endif -%}
 </html>
