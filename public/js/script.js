@@ -46,7 +46,7 @@ function setupFilters() {
     appendFilterable(tagContainer, t, t, "tag", false);
   }
 
-  const difficultyDisplay = {"easy": "Easy (3-5mi)", "moderate": "Moderate (5-7mi)", "hard": "Hard (6+mi)"}
+  const difficultyDisplay = {"easy": "Easy\xa0(3-5mi)", "moderate": "Moderate\xa0(5-7mi)", "hard": "Hard\xa0(6+mi)"}
   const difficultyContainer = document.getElementById("difficulty-selector");
   for (let d of Object.keys(difficultyDisplay)) {
     if (!difficultyContainer) continue;
