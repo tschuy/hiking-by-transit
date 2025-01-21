@@ -31,7 +31,7 @@ Filter by tag
 {%- for node in pages_list -%}
     {%- if node.title != null -%}
     {% if node.region == "marin" %}
-    <li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    <li class="hike" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endif -%}
     {%- endif -%}
 {%- endfor %}

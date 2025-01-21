@@ -10,7 +10,7 @@ California is famous for its redwood forests, its alpine lakes, and its towering
 {% for node in pages_list %}
     {% if node.title != null %}
     {% if node.region == "trip" %}
-<h3 class="hike-difficulty-{{ node.difficulty }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></h3>
+<h3><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></h3>
 <p>{{ node.blurb }} <a href="{{ node.url | absolute_url }}">Read&nbsp;more&nbsp;»</a></p>
     {% endif %}
     {% endif %}

@@ -29,7 +29,7 @@ Hikes in the Berkeley and Oakland Hills, and the Lamorinda area.
 {%- for node in pages_list -%}
     {%- if node.title != null -%}
     {% if node.region == "inner-east-bay" %}
-<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endif -%}
     {%- endif -%}
 {%- endfor %}
@@ -44,7 +44,7 @@ Hikes past Lamorinda, from Danville to Antioch.
 {%- for node in pages_list -%}
     {%- if node.title != null -%}
     {% if node.region == "outer-east-bay" %}
-<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endif -%}
     {%- endif -%}
 {%- endfor %}
@@ -59,7 +59,7 @@ Hikes in the hills around Hayward through Fremont.
 {%- for node in pages_list -%}
     {%- if node.title != null -%}
     {% if node.region == "southeast-bay" %}
-<li class="hike hike-difficulty-{{ node.difficulty }}" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+<li class="hike" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
     {%- endif -%}
     {%- endif -%}
 {%- endfor %}
