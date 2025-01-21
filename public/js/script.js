@@ -21,6 +21,19 @@
   setupFilters();
 })(document);
 
+// add an <a> element with the proper classes and onclicks for filtering
+function appendFilterable(selectorContainer, displayText, key, type, highlighted) {
+  const link = document.createElement('a');
+  link.classList = ["tag-link"];
+  if (highlighted) link.classList.add("tag-highlighted");
+  const spacer = document.createTextNode(' ');
+  link.innerHTML = displayText;
+  link.onclick = function() { toggle(type, key, link) };
+  selectorContainer.appendChild(link);
+  selectorContainer.appendChild(spacer);
+}
+
+// prime the tag and difficulty filters
 function setupFilters() {
   let tags = [];
   document.querySelectorAll('.hike').forEach(h => {
@@ -28,36 +41,32 @@ function setupFilters() {
   });
   tags = tags.filter((item, pos) => tags.indexOf(item) === pos);
 
-  const selector = document.getElementById("tag-selector");
+  const tagContainer = document.getElementById("tag-selector");
   for (const t of tags) {
-    const tlink = document.createElement('a');
-    tlink.classList = ["tag-link"];
-    const spacer = document.createTextNode(' ');
-    tlink.innerHTML = t;
-    tlink.onclick = function() { toggle(selectedTags, t, tlink) };
-    selector.appendChild(tlink);
-    selector.appendChild(spacer);
+    appendFilterable(tagContainer, t, t, "tag", false);
   }
 
   const difficultyDisplay = {"easy": "Easy (3-5mi)", "moderate": "Moderate (5-7mi)", "hard": "Hard (6+mi)"}
-  const difficultySelector = document.getElementById("difficulty-selector");
+  const difficultyContainer = document.getElementById("difficulty-selector");
   for (let d of Object.keys(difficultyDisplay)) {
-    if (!difficultySelector) continue;
-    const dlink = document.createElement('a');
-    dlink.classList = ["tag-link tag-highlighted"];
-    const spacer = document.createTextNode(' ');
-    dlink.innerHTML = difficultyDisplay[d];
-    dlink.onclick = function() { toggle(selectedDifficulties, d, dlink) };
-    difficultySelector.appendChild(dlink);
-    difficultySelector.appendChild(spacer);
+    if (!difficultyContainer) continue;
+    appendFilterable(difficultyContainer, difficultyDisplay[d], d, "difficulty", true);
   }
 }
 
+// start with no tags selected
 var selectedTags = [];
+// start with all difficulty levels selected
 var selectedDifficulties = ["easy", "moderate", "hard"];
-function toggle(selected, tag, tlink) {
-  console.log('test');
-  console.log(selected);
+function toggle(type, tag, tlink) {
+  let selected;
+  if (type === "tag") {
+    selected = selectedTags;
+  } else {
+    selected = selectedDifficulties;
+  }
+
+  // check if we're toggling on or off
   index = selected.indexOf(tag);
   if (index !== -1) {
     selected.splice(index, 1);
@@ -67,45 +76,17 @@ function toggle(selected, tag, tlink) {
     tlink.classList.add("tag-highlighted");
   }
 
+  // refilter all hikes
   document.querySelectorAll('.hike').forEach(h => {
-    console.log(h);
     const hikeTags = h.dataset.tags.split(" ");
     const hikeDifficulty = h.dataset.difficulty;
+    // note that .every() means that if selectedTags is empty, all pass the test, which is desired behavior
     if(!selectedTags.every(val => hikeTags.includes(val)) || !selectedDifficulties.includes(hikeDifficulty)) {
       h.style.display = "none";
     } else {
       h.style.display = null;
     }
   });
-}
-
-// filter hikes by difficulty
-function difficultySelect() {
-  // filter hikes displayed in the lists
-  let e = document.getElementById("hike-difficulty");
-  let moderate = "none";
-  let hard = "none";
-  if (e.value == "moderate") {
-    moderate = null;
-  } else if (e.value == "hard") {
-    moderate = null;
-    hard = null;
-  }
-
-  document.querySelectorAll('.hike-difficulty-moderate').forEach(function(el) {
-    el.style.display = moderate;
-  });
-  document.querySelectorAll('.hike-difficulty-hard').forEach(function(el) {
-    el.style.display = hard;
-  });
-
-  // if there's an embedded map, filter hikes on the map
-  if (document.getElementById("ol-map") !== undefined) {
-    let shownLayers = ["easy"];
-    if (e.value == "moderate") shownLayers = ["easy", "moderate"];
-    if (e.value == "hard") shownLayers = ["easy", "moderate", "hard"];
-    showLayersByDifficulty(shownLayers);
-  }
 }
 
 // check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
