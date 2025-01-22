@@ -124,6 +124,14 @@ html {
     display: block;
 }
 
+.filter-container {
+    position: sticky;
+    bottom: 0px;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
+
 @media (max-width: 28em) {
     .ol-attribution ul {
         font-size: 10px !important;
@@ -194,13 +202,6 @@ html {
 
     .infobox > div {
         max-width: 300px;
-    }
-
-    .filter-container {
-        position: sticky;
-        bottom: 0px;
-        background-color: #fff;
-        padding-top: 10px;
     }
 
     .filter-container > div {
