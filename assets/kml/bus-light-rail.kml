@@ -469,16 +469,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>San Bruno Mountain: Juncus Ravine Trail</name>
-        <description>4min walk from South City Shuttle Blue Line at Chestnut &amp; Hillside&lt;br&gt;18min walk from SamTrans 130 at Grand Ave &amp; Chestnut Ave</description>
-        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.4250187,37.6681001,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Mount Wanda: Main Fire trail
 </name>
         <description>Weekends: consider using trailhead on Canyon Way&lt;br&gt;&lt;br&gt;3min walk from County Connection 16 at Alhambra Ave &amp; Alhambra Way&#160; (cross with light and walk on western shoulder)&lt;br&gt;4min walk from County Connection 316 at Alhambra Ave &amp; Walnut Ave (dangerous crossing; check Street View for options)</description>
@@ -971,7 +961,7 @@
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.574453,37.906198,0
+            -122.5731924,37.9054954,0
           </coordinates>
         </Point>
       </Placemark>
@@ -1449,6 +1439,37 @@
         <Point>
           <coordinates>
             -122.4823853,37.8321963,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Panoramic Trail
+</name>
+        <description>0min from Marin Transit 61 at Panoramic Hwy &amp; Ridge Av</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.567703,37.901028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Baquiano Trailhead</name>
+        <description>8min walk from SamTrans 110 at Crespi Dr &amp; Fassler Ave</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4786584,37.5994629,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sign Hill Trailhead</name>
+        <description>12min from SamTrans 130, South City Shuttle Blue, South City Shuttle Green at Grand Ave &amp; Magnolia Ave</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4198116,37.662436,0
           </coordinates>
         </Point>
       </Placemark>

@@ -888,6 +888,26 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>South San Francisco Sign Hill Trailhead</name>
+        <description>12min from South City Shuttle Blue Line at Chestnut &amp; Hillside (weekday only)&lt;br&gt;28min walk from SamTrans 130 at Grand Ave &amp; Chestnut Ave</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4220188,37.6651212,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Bruno Mountain: Juncus Ravine Trail</name>
+        <description>4min walk from South City Shuttle Blue Line at Chestnut &amp; Hillside&lt;br&gt;18min walk from SamTrans 130 at Grand Ave &amp; Chestnut Ave</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4250187,37.6681001,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
