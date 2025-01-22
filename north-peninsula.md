@@ -11,14 +11,19 @@ Northern San Mateo County is split in two by the northern tip of the Santa Cruz 
 
 ### Selected Hikes
 
-Filter by difficulty
-<div class="message" id="difficulty-selector"></div>
-<p></p>
+<div class="infobox">
+  <div>
+  <b>Filter by difficulty</b>
+  <div class="message" id="difficulty-selector"></div>
+  </div>
 
-Filter by tag
-<div class="message" id="tag-selector"></div>
+  <div>
+  <b>Filter by tag</b>
+  <div class="message" id="tag-selector"></div>
+  </div>
 
-<hr>
+  <img class="sidebar-image" src="/assets/sweeney-ridge.jpg">
+</div>
 
 <ul>
 {%- assign pages_list = site.pages | sort:"url" -%}
@@ -31,4 +36,4 @@ Filter by tag
 {%- endfor %}
 </ul>
 
-<img class="infobox region-image" src="/assets/sweeney-ridge.jpg">
+<img class="footer-image" src="/assets/sweeney-ridge.jpg">

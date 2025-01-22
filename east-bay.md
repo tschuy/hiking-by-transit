@@ -11,14 +11,19 @@ The heart of the Bay Area's transit system is indisputably BART, whose five line
 
 ## Selected Hikes
 
-Filter by difficulty
-<div class="message" id="difficulty-selector"></div>
-<p></p>
+<div class="infobox">
+  <div>
+  <b>Filter by difficulty</b>
+  <div class="message" id="difficulty-selector"></div>
+  </div>
 
-Filter by tag
-<div class="message" id="tag-selector"></div>
+  <div>
+  <b>Filter by tag</b>
+  <div class="message" id="tag-selector"></div>
+  </div>
 
-<hr>
+  <img class="sidebar-image" src="/assets/mt-diablo.jpg">
+</div>
 
 ### Inner East Bay
 
@@ -65,4 +70,4 @@ Hikes in the hills around Hayward through Fremont.
 {%- endfor %}
 </ul>
 
-<img class="infobox region-image" src="/assets/mt-diablo.jpg">
+<img class="footer-image" src="/assets/mt-diablo.jpg">

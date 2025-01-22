@@ -11,14 +11,19 @@ The South Bay is an absolutely massive region, with the San José basin stretchi
 
 ### Selected Hikes
 
-Filter by difficulty
-<div class="message" id="difficulty-selector"></div>
-<p></p>
-
-Filter by tag
-<div class="message" id="tag-selector"></div>
-
 <hr>
+
+<div class="infobox">
+  <div>
+  <b>Filter by difficulty</b>
+  <div class="message" id="difficulty-selector"></div>
+  </div>
+
+  <div>
+  <b>Filter by tag</b>
+  <div class="message" id="tag-selector"></div>
+  </div>
+</div>
 
 <ul>
 {%- assign pages_list = site.pages | sort:"url" -%}

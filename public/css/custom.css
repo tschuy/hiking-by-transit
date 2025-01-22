@@ -116,6 +116,14 @@ html {
     padding-bottom: 10px;
 }
 
+.sidebar-image {
+    display: none;
+}
+
+.footer-image {
+    display: block;
+}
+
 @media (max-width: 28em) {
     .ol-attribution ul {
         font-size: 10px !important;
@@ -170,23 +178,55 @@ html {
                 transform: none;
     }
     
+    #difficulty-selector > a {
+        display: block;
+    }
+
     .infobox {
         top: 100px;
-        width: 300px;
+        max-width: 600px;
         left: 1175px;
         position: fixed;
         padding: 5px;
+        padding-right: 10px;
         display: grid;
+    }
+
+    .infobox > div {
+        max-width: 300px;
+    }
+
+    .filter-container {
+        position: sticky;
+        bottom: 0px;
+        background-color: #130904;
+        padding-top: 10px;
+    }
+
+    .filter-container > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .filter-narrow {
+        width: 30%;
+    }
+
+    .filter-wide {
+        width: 68%;
+    }
+
+    .sidebar-image {
+        display: block;
+    }
+
+    .footer-image {
+        display: none;
     }
 
     .infobox-filter {
         position: absolute;
         width: auto;
-    }
-
-    .infobox.region-image {
-        width: auto;
-        max-width: min(calc(100% - 13rem - 56rem - 10rem), 700px);
     }
 
     .infobox.map-page {

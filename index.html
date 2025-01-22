@@ -50,15 +50,6 @@ hasmap: true
 
 <div class="posts">
 
-Filter by difficulty
-<div class="message" id="difficulty-selector"></div>
-<p></p>
-
-Filter by tag
-<div class="message" id="tag-selector"></div>
-
-<hr>
-
 <h3><a href="/trips/">Hiking Trips</a></h3>
 
 <p>Want to go on a longer trip, and want to explore California's destination parks? Several of our best state and national parks are transit-accessible, including the Redwoods State and National Parks on the North Coast, Yosemite National Park, and Big Basin State Park. <a href="/trips/">Read&nbsp;more&nbsp;»</a></p>
@@ -66,6 +57,9 @@ Filter by tag
 <h3><a href="/san-francisco/">San Francisco Hikes</a></h3>
 
 <p>San Francisco offers fantastic urban hiking within the city limits, plus easy access to some of the great hikes in the inner Bay Area. Explore expansive city parks from one corner of the city clear across to the other on the Crosstown Trail, hop on a ferry to Angel Island, or check out one of the historic forts in the Golden Gate National Recreation area. <a href="/san-francisco">Read&nbsp;more&nbsp;»</a></p>
+</div>
+
+<div class="posts">
 
 <h3><a href="/east-bay/">East Bay Hikes</a></h3>
 
@@ -115,10 +109,8 @@ Filter by tag
     {%- endif -%}
 {%- endfor %}
 </ul>
-</div>
 
-<div class="posts">
-  <h3><a href="/marin/">Marin County Hikes</a></h3>
+<h3><a href="/marin/">Marin County Hikes</a></h3>
   <p>Marin County is perhaps the most popular outdoors destination in the Bay Area, and for good reason. A quick trip across the Bay from San Francisco drops you almost immediately in world-famous redwoods, atop mountains with 360° views of San Francisco, Oakland, and far beyond. <a href="/marin/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
     {%- assign pages_list = site.pages | sort:"url" -%}
@@ -130,10 +122,8 @@ Filter by tag
         {%- endif -%}
     {%- endfor %}
     </ul>
-</div>
 
-<div class="posts">
-  <h3><a href="/north-peninsula/">North Peninsula Hikes</a></h3>
+<h3><a href="/north-peninsula/">North Peninsula Hikes</a></h3>
   <p>The north peninsula is perhaps most known to residents outside of the immediate area for the airport, the Serramonte Mall, and its graveyards. However, its hills hold some great high-altitude coastal preserves, with windswept views of the Bay, the Pacific, and even the Farallones. <a href="/north-peninsula/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {%- assign pages_list = site.pages | sort:"url" -%}
@@ -145,10 +135,8 @@ Filter by tag
       {%- endif -%}
   {%- endfor %}
   </ul>
-</div>
 
-<div class="posts">
-  <h3><a href="/south-bay/">South Bay Hikes</a></h3>
+ <h3><a href="/south-bay/">South Bay Hikes</a></h3>
   <p>The Valley of Heart's Delight was once famous for its fresh fruit, flowering trees, and scenic beauty. Today, the orchards are gone, but the hills remain, standing resolute above the traffic jams and sprawl. <a href="/south-bay/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {%- assign pages_list = site.pages | sort:"url" -%}
@@ -160,6 +148,19 @@ Filter by tag
       {%- endif -%}
   {%- endfor %}
   </ul>
+
+<div class="filter-container">
+  <div class="filter-narrow">
+  <b>Filter by difficulty</b>
+  <div class="message" id="difficulty-selector"></div>
+  </div>
+
+  <div class="filter-wide">
+  <b>Filter by tag</b>
+  <div class="message" id="tag-selector"></div>
+  </div>
+</div>
+
 </div>
 <hr>
 
