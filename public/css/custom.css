@@ -199,7 +199,7 @@ html {
     .filter-container {
         position: sticky;
         bottom: 0px;
-        background-color: #130904;
+        background-color: #fff;
         padding-top: 10px;
     }
 
@@ -402,4 +402,7 @@ html {
     a.pagination-item:hover {
        background-color: #0a0a0a;
    }
+   .filter-container {
+        background-color: #130904;
+    }
 }
