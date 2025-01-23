@@ -363,6 +363,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Alhambra Hills Open Space
+</name>
+        <description>3min from County Connection 16 at Alhambra Ave &amp; Wildcroft Dr&lt;br&gt;&lt;br&gt;Park opens Feb 1, 2025. Narrow shoulder and heavy traffic on Alhambra Ave, USE CAUTION.</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1070947,37.9717146,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

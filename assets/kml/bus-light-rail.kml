@@ -1473,6 +1473,26 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Alviso Marina County Park</name>
+        <description>8min walk from VTA 59 at Gold &amp; Taylor</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.9794782,37.4304232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Faber-Laumeister Trail</name>
+        <description>6min from SamTrans 280 at Pulgas Ave &amp; Garden St</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1265483,37.4686322,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
