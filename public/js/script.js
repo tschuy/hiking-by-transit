@@ -26,6 +26,10 @@
     e.style.display = "flex";
   });
 
+  if (document.getElementById('osmMapUrl')) {
+    document.getElementById('osmMapUrl').value = decodeURIComponent(localStorage.getItem("osmmapurl"));
+  }
+
   setupFilters();
 })(document);
 
@@ -95,6 +99,16 @@ function toggle(type, tag, tlink) {
       h.style.display = null;
     }
   });
+}
+
+function updateOsmMapUrl() {
+  const url = document.getElementById('osmMapUrl').value;
+  if (!url) {
+    // delete if we've unset the url
+    localStorage.removeItem('osmmapurl');
+  } else {
+    localStorage.setItem('osmmapurl', encodeURIComponent(url));
+  }
 }
 
 // check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
