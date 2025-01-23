@@ -5,7 +5,7 @@ tags: oak grassland hills historic wildflowers
 
 region: outer-east-bay
 difficulty: hard
-length: 10.6mi
+length: 10.4mi
 
 served: daily
 
@@ -17,15 +17,20 @@ map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d986.36131400972
 
 transit-stop-link: "https://maps.app.goo.gl/KcnQcsLQX5z6TccE6"
 
-hike-link: https://www.google.com/maps/dir/Clayton+Library+-+Contra+Costa+County+Library,+6125+Clayton+Rd,+Clayton,+CA+94517/Gentrytown+Drive+%26+James+Donlon+Boulevard,+Antioch,+CA/@37.9625325,-121.9272952,14492m/data=!3m1!1e3!4m14!4m13!1m5!1m1!1s0x80855f120e0a32c9:0x8d3bedd8d701c960!2m2!1d-121.9355213!2d37.9425367!1m5!1m1!1s0x8085584a281b5f19:0x2acb934673fa9e96!2m2!1d-121.8356377!2d37.9831093!3e2
-
 park-link: https://www.ebparks.org/parks/black-diamond
 
+gpx: black-diamond.gpx
 image: black-diamond.jpg
+
+getting-there: County Connection buses 10 (weekday, only every other run) and 310 (weekend) serve the western trailhead. Transfer at Concord BART. To get back, use Tri Delta's on-demand <a href="https://trideltatransit.com/tri-myride/">Tri MyRide</a> service from Noakes Dr directly back to BART.
 ---
 
-County Connection buses 10 (weekday) and 310 (weekend) serve the western trailhead. Transfer at Concord BART.
+Black Diamond Mines is perhaps my favorite part of the entire East Bay parks system. Isolated valleys, each with their own strong identity, make up the park, with windswept grassland, woodland, chaparral, and even evergreen forest, a relative rarity outside of the redwoods out west in the wetter parts of the Bay. The park also contains little-known 19th century history, being home to innumerable remains small and large from over a century of coal and sand mining operations.
 
-Tri Delta 380 serves the eastern trailhead. Transfer at Pittsburg/Bay Point BART.
+This hike starts in Clayton, where restrooms and a last chance to resupply are available. After departing Clayton, the trail winds slowly up a valley, before heading up to the saddle where the park property, and the historical sites, begin. An old mining air shaft and the mysterious Jim's Place are before the top of Coal Canyon Trail, which winds steeply down into the former townsite of Nortonville, one of the coal mining settlements that make up the property today – tailing piles and cuts all that remain.
 
-Black Diamond Mines is perhaps my favorite part of the entire East Bay parks system. A few main valleys make up the bulk of it, with each possible hike taking you from one to the other across the ridges that separate them. This hike enters in Clayton a few blocks from Mt Diablo State Park's Mitchell Canyon entrance, and takes you all the way to Antioch. Along the way you'll pass closed off 20th century coal mines -- black diamond -- along with a 200ft long prospect tunnel you can explore, a crumbling cemetery, and Diablo, Carquinez, and Delta views.
+Continuing east, make sure to explore the Rose Hill Cemetery, the cemetery shared between the various settlements of the area now left in a state of arrested decay. Water and restrooms are available in the valley floor below, with the Greathouse Visitor Center located in an underground chamber excavated in the 1920s open Friday through Sunday.
+
+Stewartville Trail runs from the visitor center up to the ridge, where you can continue downhill to the old townsite, or along the ridge trail for expansive views over Pittsburg, Antioch, and the Delta and a hike down the sometimes steep, sometimes rough, and all around exciting Corcoran Mine Trail. No matter your choice, make sure to check out the Prospect Tunnel, a 400-foot coal prospecting tunnel half open to the public. Afterwards, continue along Stewartville Trail up and over one final pass to Frederickson Lane.
+
+At Frederickson Lane, there are two options for returning home: Tri Delta's on-demand Tri MyRide serves the neighborhood to the east (walk to Noakes Dr) and can be taken directly to BART, with a "predicted average wait time of 15-30 minutes". Download the app and set up an account beforehand for ease of hailing; it's a standard bus fare and typically more than makes up for the wait time with directness. Service runs until 9PM weekdays but only 5PM weekends. Alternatively, if Tri MyRide is unavailable, continue north at Frederickson Ln through Contra Loma Regional Park to catch Tri Delta 380/390 at Contra Loma Blvd & James Donlon Blvd (1.2mi longer). 380 buses runs hourly until nearly midnight seven days a week, but takes a circuitous route to BART.
