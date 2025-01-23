@@ -13,7 +13,7 @@ layout: default
   </div>
   {% endif %}
 
-  {%- if page.served != "daily" -%}
+  {%- if page.travel.served != "daily" -%}
   <p class="message">This trailhead is not served seven days a week. Check schedules before leaving.</p>
   {%- endif -%}
 
@@ -23,12 +23,38 @@ layout: default
     </p>
 
     <div class="infobox-child"><a href="{{ page.park-link }}">Park Information</a></div>
-    <div class="infobox-child"><span class="infobox-title">Distance</span><br><span class="infobox-value">{{ page.length }}</span></div>
-    <div class="infobox-child"><span class="infobox-title">Travel time</span><br><span class="infobox-value">{{ page.travel-time }} from {{ page.travel-time-from }}</span></div>
-    <div class="infobox-child"><span class="infobox-title">Transit stop served</span>: <span class="infobox-value">{{ page.served }}</span></div>
-    <div class="infobox-child"><span class="infobox-title">Transit stop</span>: <span class="infobox-child"><a href="{{ page.transit-stop-link }}">Open in Maps</a></span></div>
-    <div class="infobox-child"><span class="infobox-title">Trailhead</span>: <span class="infobox-child"><a href="{{ page.trailhead-link }}">Open in Maps</a></span></div>
-    <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-child">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Google Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
+    <div class="infobox-child"><span class="infobox-title">Distance</span>: <span class="infobox-value">{{ page.length }}</span></div>
+
+    <div class="infobox-child"><span class="infobox-title">Transit information</span>
+    {%- if page.travel.return -%}
+      <ul class="infobox-list">
+        <li>Routes to the trail:
+    {%- endif -%}
+          <ul class="infobox-sublist">
+          {%- for route in page.travel.out.routes -%}
+            <li ><a href="{{ route.link }}">{{ route.name }}</a></li>
+          {%- endfor %}
+          <li>Travel time{%- if page.travel.return %} out{% endif %}: {{ page.travel.out.time }}</li>
+          </ul>
+        {%- if page.travel.return -%}
+        </li>
+        <li>Routes back from the trail:
+          <ul class="infobox-sublist">
+          {%- for route in page.travel.return.routes -%}
+            <li ><a href="{{ route.link }}">{{ route.name }}</a></li>
+          {%- endfor %}
+          <li>Travel time back: {{ page.travel.return.time }}</li>
+          </ul>
+        </li>
+    </ul>
+    {% endif %}
+    </div>
+
+    <div class="infobox-child"><span class="infobox-title">Trailhead</span>: <span class="infobox-value"><a href="{{ page.trailhead.link }}">{% if page.trailhead.name %}{{ page.trailhead.name }}{% else %}Open in Maps{% endif %}</a></span></div>
+    <div class="infobox-child"><span class="infobox-title">Trailhead served</span>: {% if page.travel.served == "daily" %}all week{% else %} {{ page.travel.served }}{% endif %}</div>
+    <div class="infobox-child"><span class="infobox-title">Stop</span>: <span class="infobox-value"><a href="{{ page.travel.out.stop.link }}">{{ page.travel.out.stop.name }}</a></span></div>
+    <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-value">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
+    <div class="infobox-child"><i>Travel times are estimates from {{ page.travel.origin }}.</i></div>
   </div>
 
   {%- if page.getting-there -%}<p class="message">{{ page.getting-there }}</p>{%- endif -%}

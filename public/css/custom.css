@@ -27,6 +27,17 @@ html {
 .tag-highlighted {
     font-weight: bold;;
 }
+.infobox-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.infobox-sublist {
+    list-style-type: circle;
+    margin: 0;
+    padding-left: 1.5em;
+    padding-bottom: 0.5em;
+}
 #promo {
    /* the promo bar is only revealed if no promo=false cookie is found */
     display: none;
