@@ -7,14 +7,26 @@ region: north-peninsula
 difficulty: moderate
 length: 4.0-7.3mi
 
-served: daily
+travel:
+  origin: San Bruno BART
+  served: daily
+  out:
+    time: 20min
+    routes:
+    - name: SamTrans 121
+      link: https://www.samtrans.com/routes/121
+    - name: SamTrans 141
+      link: https://www.samtrans.com/routes/141
+    stop:
+      name: Skyline College Transit Center
+      link: https://maps.app.goo.gl/oyQLCYn78ZfdproN7
 
-travel-time: 20min
-travel-time-from: San Bruno BART
+trailhead:
+  name: Notch Trail
+  link: https://maps.app.goo.gl/537MqqfK65AfRuzv6
 
-trailhead-link: https://maps.app.goo.gl/537MqqfK65AfRuzv6
 map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2244.972581804069!2d-122.46429426919846!3d37.6289180864504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1699075305093!5m2!1sen!2sus"
-transit-stop-link: https://maps.app.goo.gl/oyQLCYn78ZfdproN7
+
 gpx: sweeney-ridge.gpx
 
 park-link: https://www.nps.gov/goga/sweeney.htm

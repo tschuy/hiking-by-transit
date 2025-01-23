@@ -7,15 +7,24 @@ region: marin
 difficulty: hard
 length: 7.8mi (out and back)
 
-served: daily
+travel:
+  origin: Marin City Hub
+  served: daily
+  out:
+    time: 44min
+    routes:
+    - name: Marin Transit 61
+      linK: https://marintransit.org/routes/61
+    stop:
+      name: Panoramic Hwy & Pantoll Ranger Station
+      link: https://maps.app.goo.gl/QX8Ya1skNCoLVqX27
 
-travel-time: 44min
-travel-time-from: Marin City Hub
+trailhead:
+  name: Matt Davis Trail
+  link: "https://maps.app.goo.gl/aaddxrmPQjaARiFk9"
 
-trailhead-link: "https://maps.app.goo.gl/aaddxrmPQjaARiFk9"
 map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.4586876847015!2d-122.60710312352835!3d37.90404410470207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808591a022a6a8b7%3A0xa32aaa1499adc315!2sPantoll%20Rd%20%26%20Matt%20Davis%20Trail%2C%20California%2094941!5e1!3m2!1sen!2sus!4v1737066517280!5m2!1sen!2su"
 
-transit-stop-link: "https://maps.app.goo.gl/QX8Ya1skNCoLVqX27"
 gpx: pantoll-out-and-back.gpx
 
 park-link: https://www.parks.ca.gov/?page_id=471

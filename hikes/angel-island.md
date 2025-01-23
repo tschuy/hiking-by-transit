@@ -8,15 +8,23 @@ difficulty-human: moderate to hard
 difficulty: moderate
 length: many options
 
-served: daily
+travel:
+  origin: San Francisco Ferry Building
+  served: daily
+  out:
+    time: 30min
+    routes:
+    - name: Angel Island Ferry
+      link: https://www.goldengate.org/ferry/angel-island-ferry/
+    stop:
+      name: San Francisco Ferry Building - Gate B/C
+      link: https://maps.app.goo.gl/iL6oEzeZL8hf8gZi8
 
-travel-time: 30min
-travel-time-from: San Francisco Ferry Building
+trailhead:
+  name: Angel Island Ranger Station
+  link: "https://maps.app.goo.gl/HnRfv3sw4zAuH7Ug6"
 
-trailhead-link: "https://maps.app.goo.gl/HnRfv3sw4zAuH7Ug6"
 map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.858192418125!2d-122.43452452411233!3d37.86360837196308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808583ecdf5dd1db%3A0x83403a75417ceb81!2sAngel%20Island%20State%20Park!5e0!3m2!1sen!2sus!4v1733705031764!5m2!1sen!2sus"
-
-transit-stop-link: "https://maps.app.goo.gl/iL6oEzeZL8hf8gZi8"
 
 gpx: angel-island.gpx
 park-link: https://www.parks.ca.gov/?page_id=468

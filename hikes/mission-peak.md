@@ -8,15 +8,25 @@ difficulty-human: moderate to hard
 difficulty: moderate
 length: 3.3mi
 
-served: daily
+travel:
+  origin: MacArthur BART
+  served: daily
+  out:
+    time: 1h18min
+    routes:
+    - name: AC Transit 210
+      link: https://www.actransit.org/bus-lines-schedules/210
+    - name: AC Transit 217
+      link: https://www.actransit.org/bus-lines-schedules/217
+    stop:
+      name: Ohlone College-Key D
+      link: https://goo.gl/maps/JAPL4UidoPkmdLkw5
 
-travel-time: 1h18min
-travel-time-from: MacArthur BART
+trailhead:
+  name: Spring Valley Trail
+  link: "https://goo.gl/maps/kKNaqddr2XyxMHkS6"
 
-trailhead-link: "https://goo.gl/maps/kKNaqddr2XyxMHkS6"
 map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1582.0254289597422!2d-121.9115877!3d37.5302984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc7d85023d0cf%3A0x7b1c136fe16fbbd1!2sSpring%20Valley%20Trail!5e0!3m2!1sen!2sus!4v1687410259182!5m2!1sen!2sus"
-
-transit-stop-link: "https://goo.gl/maps/JAPL4UidoPkmdLkw5"
 
 hike-link: https://www.google.com/maps/dir/Mission+San+Jose,+Fremont,+CA+94539/Mission+Peak+Summit/@37.5206626,-121.9007303,15z/data=!4m14!4m13!1m5!1m1!1s0x808fc6a475fab21b:0x29367e8d0c25090b!2m2!1d-121.9088902!2d37.5304889!1m5!1m1!1s0x808fc5ca58b42b7b:0x91d8b97650f75f66!2m2!1d-121.8808302!2d37.5125051!3e2
 

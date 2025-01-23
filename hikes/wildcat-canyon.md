@@ -8,15 +8,20 @@ difficulty-human: easy to moderate
 difficulty: easy 
 length: 6.2mi
 
-served: daily
-
-travel-time: 54min
-travel-time-from: MacArthur BART
+travel:
+  served: daily
+  origin: MacArthur BART
+  out:
+    time: 54min
+    routes:
+    - name: AC Transit 70
+      link: https://www.actransit.org/bus-lines-schedules/70
+    stop:
+      name: San Pablo Dam Rd & Contra Costa Av
+      link: https://goo.gl/maps/wBFEs3CgtdMwA5ug9
 
 trailhead-link: "https://goo.gl/maps/PgjxXGAc1HuTNiMb8"
 map-embed: "https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1573.0009889228115!2d-122.3239681!3d37.9537398!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDU3JzE0LjAiTiAxMjLCsDE5JzI3LjQiVw!5e0!3m2!1sen!2sus!4v1687410081231!5m2!1sen!2sus"
-
-transit-stop-link: "https://goo.gl/maps/wBFEs3CgtdMwA5ug9"
 
 hike-link: https://www.google.com/maps/dir/Wildcat+Canyon+Regional+Park,+5755+McBryde+Ave,+Richmond,+CA+94805/37.9486081,-122.2878241/37.9382516,-122.2982651/Wildcat+Canyon+Regional+Park,+McBryde+Avenue,+Richmond,+CA/@37.9438737,-122.3097234,3624m/data=!3m1!1e3!4m16!4m15!1m5!1m1!1s0x808579a359ab1f05:0x5322a17c7db812b2!2m2!1d-122.3224289!2d37.9515158!1m0!1m0!1m5!1m1!1s0x808579a359ab1f05:0x5322a17c7db812b2!2m2!1d-122.3224289!2d37.9515158!3e2
 

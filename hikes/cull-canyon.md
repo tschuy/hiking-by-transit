@@ -7,14 +7,23 @@ region: inner-east-bay
 difficulty: easy
 length: 4.8mi (out and back)
 
-served: daily
+travel:
+  served: daily
+  origin: Lake Merritt BART
+  out:
+    time: 40min
+    routes:
+    - name: AC Transit 28
+      link: https://www.actransit.org/bus-lines-schedules/28
+    stop:
+      name: Heyer Ave & Center St
+      link: https://maps.app.goo.gl/CEgTaQghQhP7f44g6
 
-travel-time: 40min
-travel-time-from: Lake Merritt BART
+trailhead:
+  name: Chabot to Garin Trail at Heyer Ave
+  link: https://goo.gl/maps/9QZeR2uQQ31t4ksEA
 
-trailhead-link: https://goo.gl/maps/9QZeR2uQQ31t4ksEA
 map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.667467301392!2d-122.0606071!3d37.7040079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f92475c30eccf%3A0x3ac94811f25d0f23!2sHeyer%20Ave%20%26%20Center%20St%2C%20Castro%20Valley%2C%20CA%2094546!5e0!3m2!1sen!2sus!4v1687819604130!5m2!1sen!2sus"
-transit-stop-link: https://goo.gl/maps/acsVD5G11sXAHYMw8
 gpx: cull-canyon.gpx
 
 park-link: https://www.ebparks.org/parks/cull-canyon

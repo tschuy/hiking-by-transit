@@ -7,15 +7,23 @@ region: southeast-bay
 difficulty: easy
 length: 3.2mi
 
-served: daily
+travel:
+  origin: MacArthur BART
+  served: daily
+  out:
+    time: 54min
+    routes:
+    - name: AC Transit 99
+      link: https://www.actransit.org/bus-lines-schedules/99
+    stop:
+      name: Mission Blvd & Whipple Rd
+      link: https://goo.gl/maps/bFkKfdEetRZfbkz8A
 
-travel-time: 54min
-travel-time-from: MacArthur BART
+trailhead:
+  name: Dry Creek Staging Area
+  link: "https://goo.gl/maps/zHbAW2SzANxqjD1Y7"
 
-trailhead-link: "https://goo.gl/maps/zHbAW2SzANxqjD1Y7"
 map-embed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1580.4127328646891!2d-122.0206486!3d37.6062665!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f956b24dcd4a5%3A0x12bee43743399afc!2sDry%20Creek%20Staging%20Area!5e0!3m2!1sen!2sus!4v1687410341052!5m2!1sen!2sus"
-
-transit-stop-link: "https://goo.gl/maps/bFkKfdEetRZfbkz8A"
 
 hike-link: https://www.google.com/maps/dir/Dry+Creek+Pioneer+Regional+Park:+Dry+Creek+Staging+Area/37.6191349,-122.0093216/37.6171913,-122.019004/Dry+Creek+Staging+Area,+May+Road,+Union+City,+CA/@37.615459,-122.0178321,1820m/data=!3m1!1e3!4m16!4m15!1m5!1m1!1s0x808f956b24dcd4a5:0x12bee43743399afc!2m2!1d-122.0178945!2d37.6074311!1m0!1m0!1m5!1m1!1s0x808f956b24dcd4a5:0x12bee43743399afc!2m2!1d-122.0178945!2d37.6074311!3e2
 

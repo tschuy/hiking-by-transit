@@ -7,20 +7,27 @@ region: south-bay
 difficulty: easy
 length: up to 7mi
 
-served: daily
+travel:
+  origin: Milpitas BART
+  served: daily
+  out:
+    time: 17min
+    routes:
+    - name: VTA 71
+      link: https://www.vta.org/go/routes/71
+    stop:
+      name: Piedmont & Noble
+      link: https://goo.gl/maps/Ed78TF3mpBu7TVhq7
 
-travel-time: 17min
-travel-time-from: Milpitas BART
+trailhead:
+  name: Penitencia Creek Trail, White Rd
+  link: https://goo.gl/maps/AQX7BWgUg3hda5ao9
 
-trailhead-link: https://goo.gl/maps/AQX7BWgUg3hda5ao9
 map-embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3169.949015077501!2d-121.84226699999999!3d37.391038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDIzJzI3LjciTiAxMjHCsDUwJzMyLjIiVw!5e0!3m2!1sen!2sus!4v1687409556061!5m2!1sen!2sus
-
-transit-stop-link: https://goo.gl/maps/Ed78TF3mpBu7TVhq7
 
 hike-link: https://www.google.com/maps/dir/37.391038,-121.842267/37.4038842,-121.7926494/@37.3976694,-121.8277441,15z/data=!3m1!4b1!4m2!4m1!3e2
 
 park-link: https://www.sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2088/2028
-
 image: alum-rock.jpg
 ---
 

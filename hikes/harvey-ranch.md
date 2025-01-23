@@ -7,14 +7,30 @@ region: inner-east-bay
 difficulty: hard
 length: 10.7mi
 
-served: daily
+travel:
+  origin: MacArthur BART
+  served: daily
+  out:
+    time: 34min
+    routes:
+    - name: County Connection 6
+      link: https://countyconnection.com/routes/6/
+    stop:
+      name: St Mary's College
+      link: https://goo.gl/maps/sB2K7Qe6c6D1nw7a6
+  return:
+    time: 49min
+    routes:
+    - name: County Connection 21 (weekday)
+      link: https://countyconnection.com/routes/21/
+    - name: County Connection 321 (weekend)
+      link: https://countyconnection.com/routes/321/
 
-travel-time: 34min
-travel-time-from: MacArthur BART
+trailhead:
+  name: Cross Path, St Mary's College
+  link: https://goo.gl/maps/miZQ6LzGx8qkjLx78
 
-trailhead-link: https://goo.gl/maps/miZQ6LzGx8qkjLx78
 map-embed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3150.9866240976176!2d-122.10391399999999!3d37.837199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDUwJzEzLjkiTiAxMjLCsDA2JzE0LjEiVw!5e0!3m2!1sen!2sus!4v1687410322079!5m2!1sen!2sus"
-transit-stop-link: https://goo.gl/maps/sB2K7Qe6c6D1nw7a6
 gpx: harvey_ranch.gpx
 
 park-link: https://jmlt.org/our-places/harvey-ranch/

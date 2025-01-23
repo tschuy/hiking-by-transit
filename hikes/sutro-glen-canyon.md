@@ -7,13 +7,27 @@ region: san-francisco
 difficulty: moderate
 length: 5.5mi / 8.8km
 
-served: daily
+travel:
+  origin: San Francisco
+  served: daily
+  out:
+    time: --
+    routes:
+    - name: Muni - N Judah
+      link: https://www.sfmta.com/routes/n-judah
+    stop:
+      name: Carl & Cole
+      link: https://maps.app.goo.gl/qsucugpAerGnb8kz9
+  return:
+    time: --
+    routes:
+    - name: Glen Park BART
+      link: https://bart.gov/schedules
 
-travel-time: 0min
-travel-time-from: Carl & Cole
+trailhead:
+  name: Historic Trail Trailhead
+  link: https://maps.app.goo.gl/uKgYMkw2UtKFeXVd9
 
-trailhead-link: https://maps.app.goo.gl/uKgYMkw2UtKFeXVd9
-transit-stop-link: https://maps.app.goo.gl/eQzYNtmyr7agZ2hT6
 gpx: sutro-glen-canyon.gpx
 
 park-link: https://sfrecpark.org/facilities/facility/details/twin-peaks-384

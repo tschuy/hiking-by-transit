@@ -8,15 +8,34 @@ difficulty-human: easy to moderate
 difficulty: easy 
 length: 3.8mi
 
-served: daily
+travel:
+  origin: 19th Street BART
+  served: daily
+  out:
+    time: 24min
+    routes:
+    - name: AC Transit NL
+      link: https://www.actransit.org/bus-lines-schedules/NL
+    - name: AC Transit 57
+      link: https://www.actransit.org/bus-lines-schedules/57
+    stop:
+      name: MacArthur Blvd & High St
+      link: https://maps.app.goo.gl/JZ81UT6qShu2Jb6Z9
+  return:
+    time: 28min
+    routes:
+    - name: AC Transit 54
+      link: https://www.actransit.org/bus-lines-schedules/54
+    stop:
+      name: Campus Dr & Merritt College
+      link: https://maps.app.goo.gl/u7ZLDJZb8eVt6roRA
 
-travel-time: 24min
-travel-time-from: 19th Street BART
+trailhead:
+  name: York Trail
+  link: "https://maps.app.goo.gl/YG11YdCNeVCxZaGTA"
 
-trailhead-link: "https://maps.app.goo.gl/YG11YdCNeVCxZaGTA"
 map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2760.5793478377864!2d-122.18234887828405!3d37.791182922377146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f87001acc0f47%3A0xc9c892269d0fedba!2sYork%20Trail!5e0!3m2!1sen!2sus!4v1721167764022!5m2!1sen!2sus"
 
-transit-stop-link: "https://maps.app.goo.gl/JZ81UT6qShu2Jb6Z9"
 gpx: leona_heights.gpx
 
 park-link: https://www.oaklandparks.org/leona-heights-park/

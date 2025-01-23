@@ -8,15 +8,36 @@ difficulty-human: moderate
 difficulty: moderate
 length: 3.1mi
 
-served: daily
+travel:
+  origin: 19th Street BART
+  served: daily
+  out:
+    time: 18min
+    routes:
+    - name: AC Transit NL
+      link: https://www.actransit.org/bus-lines-schedules/NL
+    - name: AC Transit 57
+      link: https://www.actransit.org/bus-lines-schedules/57
+    - name: AC Transit 96
+      link: https://www.actransit.org/bus-lines-schedules/96
+    stop:
+      name: MacArthur Blvd & Fruitvale Ave
+      link: https://maps.app.goo.gl/o3FBUtkCCf5ZJD6B6
+  return:
+    time: 20min
+    routes:
+    - name: AC Transit 33
+      link: https://www.actransit.org/bus-lines-schedules/33
+    stop:
+      name: Mountain Blvd & Snake Blvd
+      link: https://maps.app.goo.gl/SL1YJbtgECd2ZRai7
 
-travel-time: 18min
-travel-time-from: 19th Street BART
+trailhead:
+  name: El Centro Trailhead (Dimond Canyon)
+  link: "https://maps.app.goo.gl/m1nkNWzHPSEUDzUP7"
 
-trailhead-link: "https://maps.app.goo.gl/m1nkNWzHPSEUDzUP7"
 map-embed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.8628781032205!2d-122.21592565269941!3d37.8063786292708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f87a6426399bd%3A0xa3fc76db505b8125!2sEl%20Centro%20Trailhead%20(Dimond%20Canyon)!5e0!3m2!1sen!2sus!4v1721169723503!5m2!1sen!2sus"
 
-transit-stop-link: "https://maps.app.goo.gl/o3FBUtkCCf5ZJD6B6"
 gpx: sausal-creek.gpx
 
 park-link: https://www.oaklandparks.org/dimond-park/
