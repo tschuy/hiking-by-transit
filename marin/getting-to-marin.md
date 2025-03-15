@@ -24,7 +24,9 @@ There are parks everywhere in Marin. The most famous, however, are mainly locate
 
 ### Muir Woods Shuttle
 
-The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs from the Larkspur ferry terminal to the central Muir Woods Visitor Center.
+The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs **weekends and holidays only** from the Larkspur ferry terminal to the central Muir Woods Visitor Center.
+
+*2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
 ### Marin Transit 61
 
@@ -44,7 +46,26 @@ If the ferry schedule lines up with your plans, it is by far the most alluring w
 
 ### Muir Woods Shuttle
 
-This section will be updated when the Muir Woods Shuttle schedule for 2025 is released.
+The Muir Woods Shuttle runs **weekends and holidays only** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. *2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+
+**Ferry Connections**
+
+The ferry is the fastest way to connect to the shuttle and should be the preferred option unless you want to get to the park earlier than possible with it.
+
+**Outbound:** Shuttles depart on an inconsistent but approximately half-hourly cadence from 8:30am until mid-afternoon. The earliest ferry from San Francisco departs at 10:45am and arrives at 11:20am, which provides a short connection to the 11:30am shuttle; the shuttle company recommends arriving 15min before scheduled departure, so for comfort and to account for delays the 12:00pm shuttle may be preferred.
+
+**Inbound:** The last San Francisco-bound ferry departs at 6:00pm. As the last shuttle leaves Muir Woods at 5:15pm and has an estimated travel time of 30-45min, catching the earlier 4:45pm departure would be a more reliable way to make the ferry connection.
+
+**Bus Connections**
+
+There is an hourly connection possible from San Francisco. The transfer at San Rafael Transit Center is tight and there is not an alternative to waiting an hour for the next bus.
+
+1. Catch any northbound Golden Gate Transit 101 bus. Get off at San Rafael Transit Center.
+2. There is a 5-minute transfer to Marin Transit 228 buses southbound.
+3. It's a 6-minute trip to your stop at *E Sir Francis Drake Blvd & Larkspur Landing*.
+4. Walk 5 minutes to the shuttle stop.
+
+To return, catch the Marin Transit 228 at the same stop and transfer to a southbound Golden Gate Transit 101 at San Rafael Transit Center.
 
 ### Marin Transit 61
 
@@ -146,7 +167,16 @@ Like to ride your bike? There are secure bicycle lockers available at San Rafael
 
 ### Muir Woods Shuttle
 
-This section will be updated when the Muir Woods Shuttle schedule for 2025 is released.
+The Muir Woods Shuttle runs **weekends and holidays only** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. *2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+
+There is an hourly connection possible from the East Bay.
+
+1. Catch any westbound Golden Gate Transit 580 bus. Get off at San Rafael Transit Center.
+2. Transfer to Marin Transit 228. Depending on the trip, this is a 10-20min transfer.
+3. It's a 6-minute trip to your stop at *E Sir Francis Drake Blvd & Larkspur Landing*.
+4. Walk 5 minutes to the shuttle stop.
+
+To return, catch the Marin Transit 228 at the same stop and transfer to an eastbound Golden Gate Transit 580 at San Rafael Transit Center. This is a 14-20min transfer.
 
 ### Marin Transit 68
 
