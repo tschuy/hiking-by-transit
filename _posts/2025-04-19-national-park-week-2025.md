@@ -24,6 +24,28 @@ When the shuttle isn't running, Marin Transit 61 buses can be taken to Pantoll R
 
 ---
 
+## The Presidio
+
+San Francisco's sprawling historic fort at the Golden Gate Bridge is a popular destination for locals out for walks, runs, and rides, and the set-off point for innumerable tourists crossing the Golden Gate Bridge on foot or bicycle. Hosting the Walt Disney Family Museum, numerous historic fort sites open for visiting, and lots of spots perfect for picnicking, hanging out, and chatting, the uplands of the property also include miles of hiking trails through eucalyptus, cypress, and pine forest planted by the US Army for defensive and decorative purposes.
+
+The best way to get to the Presidio is to pick where you want to go, and use a map app to route you there. Buses run along, into, and through, depending on where you're going, so there's always a way to get where you're going. [Learn how to get to the new Presidio Tunnel Tops park from the Parks Conservancy »](https://www.parksconservancy.org/presidio-tunnel-tops-parking-directions-san-francisco-bay-area-national-park)
+
+![Trees in the Presidio](/assets/presidio.jpg)
+
+---
+
+## Alcatraz Island
+
+The famous island in the middle of the San Francisco Bay is part of the sprawling Golden Gate National Recreation Area. The Golden Gate National Recreation Area encompasses huge swathes of protected coastal headlands in San Francisco, Marin, and San Mateo Counties, much of it former military sites containing old Nike missile silos, coastal defense batteries, and former forts.
+
+Alcatraz is an absolute must-see on any San Francisco tourist's itinerary, but many locals have only been either with visiting family, or as part of a childhood school trip. However, it's an absolute must-see for good reason: the island is a cross-section of some of the most interesting periods in local history, having played critical roles in mid-19th century coastal defense, a maximum security prison home to Al Capone and Machine Gun Kelly, and the 1960s Indian civil rights movement. It's also a great place to go to spot shorebirds.
+
+[Check out how to get to Alcatraz »](https://www.nps.gov/alca/planyourvisit/directions.htm)
+
+![Alcatraz Island as seen from the water](/assets/alcatraz.jpg)
+
+---
+
 ## Point Reyes National Seashore
 
 The windswept, rainswept, waveswept Point Reyes is perhaps the antithesis to San Francisco's bustling urban spirit. It has every coastal ecosystem in the Bay Area in one preserve, with remote sandy beaches, grasslands, and forests of various kinds; valleys, fields, and ridges; flora, fauna, and a few tiny settlements.
@@ -36,14 +58,11 @@ Marin Transit 68 buses directly serve the Bear Valley Visitor Center, the main c
 
 ---
 
-## Alcatraz Island and the Golden Gate National Recreation Area
+## ...and all around the Golden Gate National Recreation Area!
 
-The famous island in the middle of the San Francisco Bay is part of the sprawling Golden Gate National Recreation Area. The Golden Gate National Recreation Area encompasses huge swathes of protected coastal headlands in San Francisco, Marin, and San Mateo Counties, much of it former military sites containing old Nike missile silos, coastal defense batteries, and former forts.
+The Golden Gate National Recreation Area covers a massive swath of the coastal counties of the Bay Area, extending from San Francisco north into Marin County and south nearly to Half Moon Bay. South of San Francisco, highlights like San Mateo County's Sweeney Ridge and Mori Point are accessible via SamTrans buses.
 
 The Golden Gate National Parks Conservancy has a guide to exploring different parts of the park by transit on their website that goes into depth on the parts accessible by bus, ferry, and train, and what to look for in each. [Check out the Parks Conservancy guide here »](https://www.parksconservancy.org/san-francisco-public-transportation-national-parks-ggnra-presidio-hiking-trails-marin-ocean-beach-alcatraz-presidio-tunnel-tops-san-mateo-muni-samtrans-bart)
-
-
-![Alcatraz Island as seen from the water](/assets/alcatraz.jpg)
 
 ---
 
