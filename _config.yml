@@ -18,6 +18,8 @@ exclude: ['olmap', 'scripts']
 plugins:
   - jekyll-paginate
 
+excerpt_separator: <!-- excerpt -->
+
 # Custom vars
 # version:             1.1.0
 google_analytics_id: #UA-XXXX-Y
