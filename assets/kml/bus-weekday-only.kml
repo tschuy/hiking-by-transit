@@ -374,6 +374,28 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Coyote Creek Trail: Silicon Valley Blvd Trailhead
+</name>
+        <description>0min walk from VTA 42 at Silicon Valley &amp; Eden Park.&lt;br&gt;&lt;br&gt;Paved trail.&lt;br&gt;&lt;br&gt;Thanks Tevin!</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.7723708,37.2487506,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Coyote Creek Trail: Silver Creek Valley Trailhead
+</name>
+        <description>2min walk from VTA 42 at Silver Creek Valley &amp; Silver Creek Valley Pl&lt;br&gt;&lt;br&gt;Paved trail.&lt;br&gt;&lt;br&gt;Thanks Tevin!</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.7909008,37.2576627,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

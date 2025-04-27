@@ -1493,6 +1493,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Coyote Creek Trail: Yerba Buena Avenue Trailhead
+</name>
+        <description>3min walk from VTA 72 at Yerba Buena &amp; Sunbrook&lt;br&gt;&lt;br&gt;Paved trail.&lt;br&gt;&lt;br&gt;Thanks Tevin!</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8191914,37.2899182,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
