@@ -28,4 +28,4 @@ The National Park Service runs a free shuttle system around the Valley with acce
 
 Hotels and campgrounds in the Valley can be reached year-round; Wawona Lodge can only be reached when the YARTS Fresno/Hwy 41 bus is running. [See the National Parks Service's guide to lodging in Yosemite National Park](https://www.nps.gov/yose/planyourvisit/lodging.htm).
 
-![Half Dome seen from Glacier Point](/assets/yosemite.jpg)
+<img class="infobox region-image" alt="Half Dome seen from Glacier Point" src="/assets/yosemite.jpg">

@@ -7,6 +7,8 @@ image: miller-knox.jpg
 
 Every year, the East Bay Regional Parks District puts on their annual [Trails Challenge](https://www.ebparks.org/trails-challenge). Now in its 32nd year, the Challenge is both an encouragement to get out on the trails, with a mileage goal and a trail count goal, and a guide suggesting a variety of hikes to go on suitable for people of all levels of hiking comfort.
 
+<!-- excerpt -->
+
 One of the most special parts of the East Bay Regional Parks is how integrated into our neighborhoods they are. Where houses end, parks begin, and this means that you can walk right off the bus and upto the trailhead at many of the trails in this year's Trails Challenge guidebook.
 
 This post is intended as an unofficial companion for the official [Trails Challenge 2025 guidebook](https://www.ebparks.org/sites/default/files/TC-2025-Guidebook-web.pdf): more information about the following hikes is available there.
