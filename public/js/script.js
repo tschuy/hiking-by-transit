@@ -5,8 +5,8 @@
     checkbox.checked = false;
   }
 
-  // if we're on mobile, show mobile-specific messages
-  if (window.navigator.userAgent.toLowerCase().includes("mobi")) {
+  // if we're on not mobile, hide mobile-specific messages
+  if (!window.navigator.userAgent.toLowerCase().includes("mobi")) {
     let banner = document.querySelector("#mobile-banner");
     if (banner) banner.style.display = 'none';
     let mobileMessage = document.querySelector("#mobile-message");
