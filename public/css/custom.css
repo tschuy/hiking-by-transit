@@ -82,6 +82,7 @@ html {
 #mobile-message {
     text-align: center;
     font-style: italic;
+    margin-top: 5px;
 }
 .map iframe {
     width: 100%;
