@@ -11,6 +11,12 @@
     banner.style.display = 'none';
   }
 
+  // // if we're on mobile, show the app text
+  let mobileMessage = document.querySelector("#mobile-message");
+  if (mobileMessage && !/Mobi/.test(navigator.userAgent)) {
+    mobileMessage.style.display = 'none';
+  }
+
   addEventListener("resize", (event) => {
     if (window.innerWidth > 1200) {
       checkbox.checked = true;

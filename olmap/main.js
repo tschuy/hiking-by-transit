@@ -8,6 +8,11 @@ import GPX from 'ol/format/GPX.js';
 import * as olProj from 'ol/proj';
 import {Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style.js';
 
+import {platformModifierKeyOnly} from 'ol/events/condition.js';
+import DragPan from 'ol/interaction/DragPan.js';
+import MouseWheelZoom from 'ol/interaction/MouseWheelZoom.js';
+import {defaults} from 'ol/interaction/defaults.js';
+
 import VectorSource from 'ol/source/Vector.js';
 import {Vector as VectorLayer} from 'ol/layer.js';
 
@@ -122,6 +127,16 @@ const map = new Map({
     projection: 'EPSG:3857',
     zoom: 10,
   }),
+  interactions: defaults({dragPan: false, mouseWheelZoom: false, altShiftDragRotate:false, pinchRotate:false}).extend([
+    new DragPan({
+      condition: function (event) {
+        return this.getPointerCount() === 2 || platformModifierKeyOnly(event);
+      },
+    }),
+    new MouseWheelZoom({
+      condition: platformModifierKeyOnly,
+    }),
+  ]),
 });
 
 map.addOverlay(overlay);
