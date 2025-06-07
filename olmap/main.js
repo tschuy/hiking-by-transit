@@ -130,6 +130,9 @@ const map = new Map({
   interactions: defaults({dragPan: false, mouseWheelZoom: false, altShiftDragRotate:false, pinchRotate:false}).extend([
     new DragPan({
       condition: function (event) {
+        if (!window.navigator.userAgent.toLowerCase().includes("mobi")) {
+          return true;
+        }
         return this.getPointerCount() === 2 || platformModifierKeyOnly(event);
       },
     }),

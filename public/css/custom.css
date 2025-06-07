@@ -79,7 +79,7 @@ html {
 #mobile-banner {
     text-align: center;
 }
-#mobile-message {
+#mobile-message, #desktop-message {
     text-align: center;
     font-style: italic;
     margin-top: 5px;

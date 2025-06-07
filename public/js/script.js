@@ -11,6 +11,11 @@
     if (banner) banner.style.display = 'none';
     let mobileMessage = document.querySelector("#mobile-message");
     if (mobileMessage) mobileMessage.style.display = 'none';
+  } else {
+    let banner = document.querySelector("#desktop-banner");
+    if (banner) banner.style.display = 'none';
+    let desktopMessage = document.querySelector("#desktop-message");
+    if (desktopMessage) mobileMessage.style.display = 'none';
   }
 
   addEventListener("resize", (event) => {
