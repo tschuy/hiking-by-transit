@@ -15,7 +15,7 @@
     let banner = document.querySelector("#desktop-banner");
     if (banner) banner.style.display = 'none';
     let desktopMessage = document.querySelector("#desktop-message");
-    if (desktopMessage) mobileMessage.style.display = 'none';
+    if (desktopMessage) desktopMessage.style.display = 'none';
   }
 
   addEventListener("resize", (event) => {
