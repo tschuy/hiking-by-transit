@@ -24,9 +24,11 @@ There are parks everywhere in Marin. The most famous, however, are mainly locate
 
 ### Muir Woods Shuttle
 
-The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs **weekends and holidays only** from the Larkspur ferry terminal to the central Muir Woods Visitor Center.
+The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs from either Larkspur Landing ferry terminal or the Sausalito Ferry terminal, depending on the day. Weekend service departs from Larkspur Landing, acting mainly as a parking overflow shuttle, while weekday service offers tourist-oriented ferry connections.
 
-*2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+The Muir Woods Shuttle requires advance reservations, and certain runs on busy days do book out.
+
+For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
 ### Marin Transit 61
 
@@ -46,17 +48,23 @@ If the ferry schedule lines up with your plans, it is by far the most alluring w
 
 ### Muir Woods Shuttle
 
-The Muir Woods Shuttle runs **weekends and holidays only** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. *2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+The Muir Woods Shuttle runs from March to October **weekends and holidays** from the Larkspur Landing Ferry Terminal, and June to August **weekdays (except holidays)** from the Sausalito Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
-**Ferry Connections**
+**Sausalito (weekdays)**
+
+**Outbound**: Connections work decently well for the first three ferries of the day. Consider leaving extra time to explore Sausalito, as the ferry landing can be crowded, and the shuttle service recommends arriving 15 minutes before the scheduled departure. Otherwise, catch hourly Golden Gate Transit 130 buses northbound from San Francisco and across the Golden Gate Bridge to Bay & Bridgeway to catch any of the shuttle runs.
+
+**Inbound**: The final ferry departing Sausalito leaves at 6:30pm. However, if you miss the last ferry, Golden Gate Transit 130 buses run hourly back to San Francisco until nearly midnight.
+
+**Ferry Connections at Larkspur (weekends)**
 
 The ferry is the fastest way to connect to the shuttle and should be the preferred option unless you want to get to the park earlier than possible with it.
 
 **Outbound:** Shuttles depart on an inconsistent but approximately half-hourly cadence from 8:30am until mid-afternoon. The earliest ferry from San Francisco departs at 10:45am and arrives at 11:20am, which provides a short connection to the 11:30am shuttle; the shuttle company recommends arriving 15min before scheduled departure, so for comfort and to account for delays the 12:00pm shuttle may be preferred.
 
-**Inbound:** The last San Francisco-bound ferry departs at 6:00pm. As the last shuttle leaves Muir Woods at 5:15pm and has an estimated travel time of 30-45min, catching the earlier 4:45pm departure would be a more reliable way to make the ferry connection.
+**Inbound:** The last San Francisco-bound ferry from Larkspur departs at 6:00pm. The shuttle has an estimated travel time of around 30-45 minutes, so when choosing a shuttle time, a departure time of 5:00pm or earlier offers a safer connection.
 
-**Bus Connections**
+**Bus Connections at Larkspur (weekends)**
 
 There is an hourly connection possible from San Francisco. The transfer at San Rafael Transit Center is tight and there is not an alternative to waiting an hour for the next bus.
 
@@ -69,10 +77,12 @@ To return, catch the Marin Transit 228 at the same stop and transfer to a southb
 
 ### Marin Transit 61
 
-**Weekday bus transfers at Marin City**
+**Weekday bus transfers**
 
-| GGT 130/150 San Francisco departure | Marin City arrival | Marin Transit 61 departure |
-|-----------------|----------------------------|
+Transfer at Marin City Hub.
+
+| GGT 130/150 San Francisco departure | GGT Arrival | Marin Transit 61 departure |
+|--|--|--|
 | 7:02am | 7:49am | 8:25am |
 | 10:59am | 11:46am | 12:10pm |
 | 11:57am | 12:47pm | 1:10pm |
@@ -81,6 +91,19 @@ To return, catch the Marin Transit 228 at the same stop and transfer to a southb
 | 5:13pm* | 6:12pm* | 6:35pm* |
 
 \**the connection to the 6:35pm bus is from GGT 130. All other weekday connections are from GGT 150.*
+
+**Weekday bus transfers (starting August 10th)**
+
+For Golden Gate Transit 130 buses, transfer in downtown Sausalito at Bridgeway & Bay. For Golden Gate Transit 150 buses, transfer at Marin City Hub.
+
+| GGT route | San Francisco departure | GGT arrival | Marin Transit 61 departure |
+|--|--|--|--|
+|130|7:17am|8:02am|8:35am|
+|130|11:17am|12:03pm|12:10pm|
+|130|12:14pm|1:01pm|1:10pm|
+|150|2:41pm*|3:35pm*|3:40pm*|
+|130|3:59pm|4:48pm|5:00pm|
+|150|5:55pm*|6:44pm*|7:10pm*|
 
 **Weekend bus transfers at Marin City**
 
@@ -95,6 +118,20 @@ To return, catch the Marin Transit 228 at the same stop and transfer to a southb
 | 3:46pm | 4:44pm | 5:10pm |
 
 \**the connections to the 8:15am and 3:25pm buses are from GGT 130. All other weekend connections are from GGT 150.*
+
+**Weekend bus transfers (starting August 10th)**
+
+For Golden Gate Transit 130 buses, transfer in downtown Sausalito at Bridgeway & Bay. For Golden Gate Transit 150 buses, transfer at Marin City Hub.
+
+| GGT route | San Francisco departure | GGT arrival | Marin Transit 61 departure |
+|--|--|--|--|
+|130|6:28am|7:05am|8:05am|
+|150|8:52am|9:43am|10:00am|
+|150|10:43am|11:41am|12:05pm|
+|150|11:42am|12:41pm|1:05pm|
+|150|12:44pm|1:41pm|2:00pm|
+|150|1:43pm|2:40pm|3:00pm|
+|150|3:45pm|4:41pm|5:10pm|
 
 **Ferry connections**
 
@@ -111,6 +148,17 @@ The 61 is not timed to meet ferries in Sausalito. However, it's a cute town that
 | 2:45pm | 3:15pm | 4:35pm |
 | 5:45pm | 6:15pm | 6:35pm |
 
+**Weekday ferry transfers at Sausalito (starting August 10th)**
+
+| San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
+|--|--|--|
+|7:40am|8:10am|8:35am|
+|10:15am|10:45am|12:10pm|
+|12:10pm|12:40pm|1:10pm|
+|2:45pm|3:10pm|3:30pm|
+|4:20pm|4:50pm|5:00pm|
+|5:45pm|6:15pm|7:00pm|
+
 **Weekend ferry transfers at Sausalito**
 
 | San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
@@ -123,11 +171,22 @@ The 61 is not timed to meet ferries in Sausalito. However, it's a cute town that
 | 2:15pm | 2:45pm | 3:15pm |
 | 4:00pm | 4:30pm | 5:00pm |
 
+**Weekend ferry transfers at Sausalito (starting August 10th)**
+
+| San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
+| ✗ | ✗ | 8:05am |
+| ✗ | ✗ | 9:50am |
+| 10:15am | 11:15am | 11:55am |
+| ✗ | ✗ | 12:55pm |
+| 12:35pm | 1:05pm | 1:50pm |
+| ✗ | ✗ | 2:40pm |
+| 4:00pm | 4:30pm | 5:00pm |
+
 ---
 
 ### Marin Transit 68
 
-From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour from the Salesforce Transit Center in San Francisco to reach San Rafael and is consistently the best option for transfering to the Marin Transit 68.
+From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour from the Salesforce Transit Center in San Francisco to reach San Rafael and is consistently the best option for transferring to the Marin Transit 68.
 
 **Weekday transfers at San Rafael**
 
@@ -142,6 +201,19 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 | 3:21pm | 4:25pm | 4:45pm |
 | 5:20pm | 6:25pm | 6:45pm |
 
+**Weekday transfers at San Rafael (starting August 10th)**
+
+| GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
+|--|--|--|
+| 6:35am | 7:25am | 7:45am |
+| 7:31am | 8:25am | 8:45am |
+| 9:30am | 10:25am | 10:45am |
+| 10:30am | 11:25am | 11:45am |
+| 11:29am | 12:25pm | 12:45pm |
+| 1:26pm | 2:25pm | 2:45pm |
+| 3:17pm | 4:25pm | 4:45pm |
+| 5:23pm | 6:25pm | 6:45pm |
+
 **Weekend transfers at San Rafael**
 
 | GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
@@ -153,6 +225,18 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 | 1:23pm | 2:25pm | 2:30pm |
 | 3:26pm | 4:25pm | 4:30pm |
 | 5:26pm | 6:25pm | 6:30pm |
+
+**Weekend transfers at San Rafael (starting August 10th)**
+
+| GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
+|--|--|--|
+| 6:38am | 7:25am | 7:30am |
+| 7:32am | 8:25am | 8:30am |
+| 10:27am | 11:25am | 11:30am |
+| 11:27am | 12:25pm | 12:30pm |
+| 1:26pm | 2:25pm | 2:30pm |
+| 3:26pm | 4:25pm | 4:30pm |
+| 5:27pm | 6:25pm | 6:30pm |
 
 ## From the East Bay
 
@@ -167,7 +251,9 @@ Like to ride your bike? There are secure bicycle lockers available at San Rafael
 
 ### Muir Woods Shuttle
 
-The Muir Woods Shuttle runs **weekends and holidays only** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. *2025 service on the Muir Woods Shuttle starts April 5.* For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+The Muir Woods Shuttle runs from March to October **weekends and holidays** from the Larkspur Landing Ferry Terminal, and June to August **weekdays (except holidays)** from the Sausalito Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+
+**Larkspur Landing (weekends)**
 
 There is an hourly connection possible from the East Bay.
 
@@ -178,7 +264,15 @@ There is an hourly connection possible from the East Bay.
 
 To return, catch the Marin Transit 228 at the same stop and transfer to an eastbound Golden Gate Transit 580 at San Rafael Transit Center. This is a 14-20min transfer.
 
+**Sausalito (weekdays)**
+
+The quickest way from the East Bay to Sausalito is to head into San Francisco, and then continue on north from there. See [*San Francisco: Muir Woods Shuttle*](#muir-woods-shuttle-1) for more information on how to get from San Francisco to the Sausalito shuttle stop by bus or by ferry.
+
+To take the bus from the East Bay to Sausalito *without* heading into San Francisco, catch the GGT 580 bus to San Rafael Transit Center and transfer to the Marin Transit 17 bus. This local bus takes approximately 45 minutes to complete its local route to the Sausalito Ferry Terminal.  
+
 ### Marin Transit 68
+
+Starting August 10th, transfers between the Golden Gate Transit 580 and Marin Transit 68 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. From Del Norte BART to getting on the Marin Transit 68 is consistently just over one hour. 
 
 **Weekday transfers at San Rafael**
 
@@ -193,6 +287,19 @@ To return, catch the Marin Transit 228 at the same stop and transfer to an eastb
 | 3:36pm | 4:16pm | 4:45pm |
 | 5:46pm | 6:16pm | 6:45pm |
 
+**Weekday transfers at San Rafael (starting August 10th)**
+
+| Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
+|--|--|--|
+| 6:41am | 7:37am | 7:45am |
+| 7:42am | 8:40am | 8:45am |
+| 9:42am | 10:25am | 10:45am |
+| 10:42am | 11:20am | 11:45am |
+| 11:42am | 12:21pm | 12:45pm |
+| 1:42pm | 2:21pm | 2:45pm |
+| 3:42pm | 4:24pm | 4:45pm |
+| 5:42pm | 6:21pm | 6:45pm |
+
 **Weekend transfers at San Rafael**
 
 | Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
@@ -205,10 +312,23 @@ To return, catch the Marin Transit 228 at the same stop and transfer to an eastb
 | 3:36pm | 4:20pm | 4:30pm |
 | 5:36pm | 6:20pm | 6:30pm |
 
+**Weekend transfers at San Rafael (starting August 10th)**
+
+| Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
+|--|--|--|
+| 6:44am | 7:20am | 7:30am |
+| 7:43am | 8:20am | 8:30am |
+| 10:42am | 11:21am | 11:30am |
+| 11:42am | 12:21pm | 12:30pm |
+| 1:42pm | 2:21pm | 2:30pm |
+| 3:42pm | 4:21pm | 4:30pm |
+| 5:42pm | 6:20pm | 6:30pm |
 
 ### Marin Transit 61
 
 Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not directly connect. Depending on the particular departure, there are several options for which bus is best to take to transfer between them; on weekends, there's generally a decent transfer via the Golden Gate Transit 150 bus at Marin City.
+
+Starting August 10th, transferring to the Marin Transit 61 requires taking the GGT 580, to the Marin Transit 71, to the Marin Transit 61. Transfers from the GGT 580 to the Marin Transit 71 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. The 61's inconsistent schedule means the second transfer is not as reliable, and trips should be planned around that.
 
 * Golden Gate Transit 150: transfer at Marin City\*
 * Marin Transit 17: transfer at Almonte Blvd & Rosemont Ave
@@ -225,6 +345,17 @@ Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not 
 | 3:36pm | 4:16pm | Marin Transit 17 at 4:29pm | 5:01pm |
 | 5:36pm | 6:16pm | Marin Transit 17 at 6:29pm | 7:01pm |
 
+**Weekday transfers (starting August 10th)**
+
+| Del Norte departure | 580 arrival at San Rafael | Marin Transit 71 transfer | Marin Transit 61 departure |
+|--|--|--|--|
+| 6:41am | 7:37am | 8:00am - 8:15am | 8:45am |
+| 10:42am | 11:20am | 11:30am - 11:43am | 12:20pm |
+| 11:42am | 12:21pm | 12:30pm - 12:43pm | 1:20pm |
+| 2:42pm | 3:23pm | 3:30pm - 3:43pm | 3:40pm |
+| 3:42pm | 4:24pm | 4:30pm - 4:43pm | 5:10pm |
+| 5:42pm | 6:21pm | 6:30pm - 6:43pm | 7:10pm |
+
 **Weekend transfers**
 
 | Del Norte departure | 580 arrival at San Rafael | via | Marin Transit 61 departure |
@@ -239,6 +370,18 @@ Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not 
 
 \**Due to a short transfer for the 10:00am and 2:00pm Marin Transit 61, transfer at the Manzanita Park and Ride/Shoreline Hwy & Pohono St.*
 
+**Weekend transfers (starting August 10th)**
+
+| Del Norte departure | 580 arrival at San Rafael | Marin Transit 71 transfer | Marin Transit 61 departure |
+|--|--|--|--|
+| 6:44am | 7:20am | 7:30am - 7:45am | 8:15am |
+| 8:42am | 9:20am | 9:30am - 9:45am | 10:00am |
+| 10:42am | 11:21am | 11:30am - 11:45am | 12:05pm |
+| 11:42am | 12:21pm | 12:30pm - 12:45pm | 1:05pm |
+| 12:42pm | 1:21pm | 1:30pm - 1:45pm | 2:00pm |
+| 1:42pm | 2:21pm | 2:30pm - 2:45pm | 2:50pm |
+| 3:42pm | 4:21pm | 4:30pm - 4:45pm | 5:10pm |
+
 ---
 
-This page was last updated on January 18th, 2025 using the latest timetables available from [Marin Transit](https://marintransit.org/routes), [Golden Gate Transit](https://www.goldengate.org/bus/schedules-maps/), and [Golden Gate Ferry](https://www.goldengate.org/ferry/schedules-maps/). Verify timetables before leaving; in general, agencies update their timetables twice annually in January and in August.
+Transfer tables on this page were updated in July 2025 using the August 10th schedule updates from [Marin Transit](https://marintransit.org/routes), [Golden Gate Transit](https://www.goldengate.org/bus/schedules-maps/), and [Golden Gate Ferry](https://www.goldengate.org/ferry/schedules-maps/). Verify timetables before leaving; in general, agencies update their timetables twice annually in January and in August.
