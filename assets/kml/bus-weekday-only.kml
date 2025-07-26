@@ -77,16 +77,6 @@
     <Folder>
       <name>Bus - Weekday Only</name>
       <Placemark>
-        <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Robinson Dr</name>
-        <description>0min walk from AC Transit line 39 at Joaquin Miller Rd &amp; Robinson Dr</description>
-        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.1835433,37.8095105,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Tilden: Selby Trail (north)
 </name>
         <description>3min walk from AC Transit 67 at Grizzly Peak &amp; Spruce</description>

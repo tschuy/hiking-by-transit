@@ -111,11 +111,11 @@
       <Placemark>
         <name>Black Diamond Mines Regional Park: River View Loop Trail
 </name>
-        <description>28min from Tri Delta 380 at Donlon &amp; Gentrytown Blvd</description>
+        <description>28min walk from Tri Delta - Tri My Ride on-demand shuttle: https://trideltatransit.com/tri-myride/&lt;br&gt;walk to James Donlon Blvd &amp; Gentrytown Dr</description>
         <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
         <Point>
           <coordinates>
-            -121.8554405,37.9813891,0
+            -121.8554405,37.9813553,0
           </coordinates>
         </Point>
       </Placemark>
@@ -726,17 +726,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Joaquin Miller Park: Palos Colorados Trailhead
-</name>
-        <description>15min walk from AC Transit 33 at Mountain Blvd &amp; Snake Rd</description>
-        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.20131,37.8159124,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Coyote Valley Open Space Preserve
 </name>
         <description>15min walk from VTA 68 at Santa Teresa &amp; Palm&lt;br&gt;(thank you Nick!)</description>
@@ -905,6 +894,36 @@
         <Point>
           <coordinates>
             -122.4250187,37.6681001,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Don Edwards National Wildlife Refuge: Harrier Spur Trail</name>
+        <description>WARNING: route from bus to trail is on gravel shoulder / paved bike lane on Thornton Ave / Marshlands Rd for approximately 2500ft&lt;br&gt;&lt;br&gt;24min walk from AC Transit 200 at Enterprise Dr &amp; Willow St</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.069205,37.5303181,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bodega Bay</name>
+        <description>Once-daily Mendocino Transit Authority Route 95&lt;br&gt;&lt;br&gt;23min to Bodega Dunes (Sonoma Coast State Park)&lt;br&gt;16min to Birdwalk Coastal Access Trail</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.0445415,38.329079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jenner</name>
+        <description>Once-daily Mendocino Transit Authority Route 95&lt;br&gt;&lt;br&gt;23min to Jenner Beach (Sonoma Coast State Park)&lt;br&gt;42min to Goat Rock (Sonoma Coast State Park)</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.114968,38.44945,0
           </coordinates>
         </Point>
       </Placemark>

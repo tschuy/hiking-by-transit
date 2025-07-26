@@ -144,7 +144,7 @@
       <Placemark>
         <name>Contra Loma Regional Park
 </name>
-        <description>0min from TriDelta 390 (weekday) at James Donlon Blvd &amp; Community Prk&lt;br&gt;8min from TriDelta 380 (weekend) and Contra Loma Blvd &amp; James Donlon Blvd</description>
+        <description>use Tri Delta - Tri My Ride on-demand shuttle:&#160;https://trideltatransit.com/tri-myride/</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -153,20 +153,9 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Kennedy Grove: Black Oak Loop Trail
-</name>
-        <description>7min from AC Transit 74 at Castro Ranch &amp; Sherwood Forest Dr</description>
-        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.2690494,37.9558136,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Contra Loma Regional Park: Grimsby Ct
 </name>
-        <description>10min from Tri Delta 380 at Donlon &amp; Gentrytown Blvd</description>
+        <description>10min walk from Tri Delta - Tri My Ride on-demand shuttle: https://trideltatransit.com/tri-myride/&lt;br&gt;walk to James Donlon Blvd &amp; Gentrytown Dr</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1019,7 +1008,7 @@
       </Placemark>
       <Placemark>
         <name>Marin Headlands: Morning Sun Trailhead</name>
-        <description>0min walk from Golden Gate Transit 101 at Spencer Ave Bus Pad</description>
+        <description>0min walk from Golden Gate Transit 150 at Spencer Ave Bus Pad</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1305,17 +1294,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Quarry Lakes Regional Park
-</name>
-        <description>11min walk from AC Transit 216 at Alvarado-Niles Rd &amp; Osprey Rd</description>
-        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.0068352,37.5793317,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Willow Camp Fire Road
 </name>
         <description>12min walk from Marin Transit 61 at 4813 Shoreline Hwy</description>
@@ -1328,7 +1306,7 @@
       </Placemark>
       <Placemark>
         <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
-        <description>2min walk from AC Transit line 79 at Derby &amp; Claremont</description>
+        <description>2min walk from AC Transit line 36 at Derby &amp; Claremont</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1371,7 +1349,7 @@
       </Placemark>
       <Placemark>
         <name>Bay Point Regional Shoreline</name>
-        <description>12min from Tri Delta 389 at Port Chicago Hwy &amp; Pacific Ave</description>
+        <description>12min from Tri Delta 374 at Port Chicago Hwy &amp; Pacific Ave</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1391,7 +1369,7 @@
       </Placemark>
       <Placemark>
         <name>Stoneman Trailhead</name>
-        <description>7min walk from Tri Delta 388/390 at West Leland Rd &amp; John Henry Johnson Pky</description>
+        <description>7min walk from Tri Delta 370 at West Leland Rd &amp; John Henry Johnson Pky</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1501,6 +1479,120 @@
         <Point>
           <coordinates>
             -121.8191914,37.2899182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hayward Reigonal Shoreline
+</name>
+        <description>14min from AC Transit 86 at Cabot Blvd &amp; W Winton Av</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1451005,37.6474232,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Francisco Bay Trail: Marina Park
+</name>
+        <description>2min from AC Transit 35 at Fairway Dr &amp; Monarch Bay Dr</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1851602,37.6926164,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oyster Bay Regional Shoreline
+</name>
+        <description>12min from AC Transit 35 at Aurora Dr &amp; Sitka St</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1923339,37.7094493,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Big Break Regional Shoreline: Marsh Creek Regional Trail</name>
+        <description>14min walk from Tri Delta 373 at Oakley Park n Ride</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.6953555,37.9977813,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Contra Loma: Delta de Anza Trail</name>
+        <description>9min walk from Tri Delta 375 / 376 at Lone Tree Wy &amp; James Donlon Blvd&lt;br&gt;or use Tri Delta - Tri My Ride on-demand shuttle: https://trideltatransit.com/tri-myride/</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8125784,37.9795733,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joaquin Miller Park: Redwood Bowl Staging Area</name>
+        <description>0min walk from AC Transit 31 at Chabot Observatory</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1807166,37.8183545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Crockett Pl</name>
+        <description>0min walk from AC Transit line 31 at Joaquin Miller Rd &amp; Crockett Pl</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1809577,37.8087476,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joaquin Miller Park: Bishops Walk</name>
+        <description>0min from AC Transit 31 at Joaquin Miller Rd &amp; Sanborn Dr</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1934178,37.8105948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Joaquin Miller Park: Palos Colorados Trailhead
+</name>
+        <description>12min walk from AC Transit 31 at Lincoln Av &amp; Monterey Blvd&lt;br&gt;15min walk from AC Transit 18 at Mountain Blvd &amp; Snake Rd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.20131,37.8159124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridgeview Trailhead</name>
+        <description>8min walk from AC Transit 33 at Park Blvd &amp; Leimert Blvd&lt;br&gt;19min walk from AC Transit 31 at Lincoln Av &amp; Tiffin Rd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2118874,37.8134779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hayward Regional Shoreline: Eden Landing</name>
+        <description>2min from AC Transit 86 at Eden Landing Rd &amp; Investment Blvd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1228866,37.6217553,0
           </coordinates>
         </Point>
       </Placemark>
