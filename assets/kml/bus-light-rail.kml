@@ -1596,6 +1596,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Dunsmuir Hills?: The San Leandro Trails</name>
+        <description>6min from AC Transit 34/35 at MacArthur Blvd &amp; Dutton Av (from Foothill Sq / toward BART)&lt;br&gt;3min from AC Transit 34/35 at Marlow Dr &amp; Revere Av (from BART / toward Foothill Sq)</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1396889,37.7372084,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
