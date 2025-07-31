@@ -16,8 +16,8 @@ travel:
     routes:
     - name: AC Transit 210
       link: https://www.actransit.org/bus-lines-schedules/210
-    - name: AC Transit 217
-      link: https://www.actransit.org/bus-lines-schedules/217
+    - name: AC Transit 211
+      link: https://www.actransit.org/bus-lines-schedules/211
     stop:
       name: Ohlone College-Key D
       link: https://goo.gl/maps/JAPL4UidoPkmdLkw5
@@ -35,6 +35,6 @@ park-link: https://www.ebparks.org/parks/mission-peak
 image: mission-peak.jpg
 ---
 
-AC Transit 217 serves Ohlone College, whose campus has multiple trailheads backing right onto Mission Peak Regional Preserve. Mission Peak is a popular hike; if you've had the misfortune to be on dating apps in the last decade in the region, you'll recognize the viewing pipes at the top from everyone's photos standing on them. The viewing pipes help you locate the myriad cities that are visible from the top, since at 2000ft in only 3.3mi, you get quite a view as a reward. However, don't forget to turn around: on the other side of the peak, you can see Sunol Wilderness and deep into the Diablo Range's rolling hills.
+AC Transit 210 and 211 serve Ohlone College, whose campus has multiple trailheads backing right onto Mission Peak Regional Preserve. Mission Peak is a popular hike; if you've had the misfortune to be on dating apps in the last decade in the region, you'll recognize the viewing pipes at the top from everyone's photos standing on them. The viewing pipes help you locate the myriad cities that are visible from the top, since at 2000ft in only 3.3mi, you get quite a view as a reward. However, don't forget to turn around: on the other side of the peak, you can see Sunol Wilderness and deep into the Diablo Range's rolling hills.
 
 Mission Peak is quite exposed, so if you're hiking in the spring or summer, bring sunscreen or other sun protection.

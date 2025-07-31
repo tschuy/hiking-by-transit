@@ -26,8 +26,8 @@ travel:
   return:
     time: 20min
     routes:
-    - name: AC Transit 33
-      link: https://www.actransit.org/bus-lines-schedules/33
+    - name: AC Transit 18
+      link: https://www.actransit.org/bus-lines-schedules/18
     stop:
       name: Mountain Blvd & Snake Blvd
       link: https://maps.app.goo.gl/SL1YJbtgECd2ZRai7
@@ -50,4 +50,4 @@ Dimond Canyon is perhaps my favorite way to quickly get "out of the city" when I
 
 From the Dimond, it's a short to Dimond Park, a neighborhood park with plenty of picnic spaces and a pool that you walk past to get to the real highlight: the trail snaking out along Sausal Creek and up the canyon. Heading up the canyon, the trail sometimes follows the bank, but sometimes disappears to leave you to hike through the creekbed. Passing under the Leimart Blvd bridge, and eventually up the side of the canyon, you reach a flatter, wider trail with homemade art of various creatures scattered over the next while. Don't miss the sketchy rope swing before heading into the redwoods!
 
-At Monterey Blvd, if you're ready to wrap it up for the day, take a left to head out to Montclair. Otherwise, you can take a right, head under CA-13, and take the Palos Colorados Trail up into Joaquin Miller Park for many more miles of redwoods (including trail access right into Redwood Regional Park). From Montclair, the AC Transit 33 bus runs back into Downtown Oakland for convenient connections on BART and AC Transit.
+At Monterey Blvd, if you're ready to wrap it up for the day, take a left to head out to Montclair. Otherwise, you can take a right, head under CA-13, and take the Palos Colorados Trail up into Joaquin Miller Park for many more miles of redwoods (including trail access right into Redwood Regional Park). From Montclair, the AC Transit 18 bus runs back into Downtown Oakland for convenient connections on BART and AC Transit.
