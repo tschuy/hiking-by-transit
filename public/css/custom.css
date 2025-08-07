@@ -48,6 +48,9 @@ html {
     text-align: center;
     font-size: 1.3em;
 }
+#promo a {
+    color: #ec9567;
+}
 #promo-interior {
     max-width: 46rem;
     margin: auto;
@@ -267,6 +270,9 @@ html {
     .theme-base-0f .container a, .theme-base-0f .sidebar-toggle, .theme-base-0f .related-posts li a:hover {
        color: #ec9567;
    }
+    #promo a {
+        color: #8f5536;
+    }
     .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
        box-shadow: 0 0 0 .25rem #000;
    }
