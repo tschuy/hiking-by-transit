@@ -79,21 +79,6 @@ To return, catch the Marin Transit 228 at the same stop and transfer to a southb
 
 **Weekday bus transfers**
 
-Transfer at Marin City Hub.
-
-| GGT 130/150 San Francisco departure | GGT Arrival | Marin Transit 61 departure |
-|--|--|--|
-| 7:02am | 7:49am | 8:25am |
-| 10:59am | 11:46am | 12:10pm |
-| 11:57am | 12:47pm | 1:10pm |
-| 1:53pm | 2:43pm | 3:10pm |
-| 3:44pm | 4:38pm | 4:45pm |
-| 5:13pm* | 6:12pm* | 6:35pm* |
-
-\**the connection to the 6:35pm bus is from GGT 130. All other weekday connections are from GGT 150.*
-
-**Weekday bus transfers (starting August 10th)**
-
 For Golden Gate Transit 130 buses, transfer in downtown Sausalito at Bridgeway & Bay. For Golden Gate Transit 150 buses, transfer at Marin City Hub.
 
 | GGT route | San Francisco departure | GGT arrival | Marin Transit 61 departure |
@@ -105,21 +90,7 @@ For Golden Gate Transit 130 buses, transfer in downtown Sausalito at Bridgeway &
 |130|3:59pm|4:48pm|5:00pm|
 |150|5:55pm*|6:44pm*|7:10pm*|
 
-**Weekend bus transfers at Marin City**
-
-| GGT 130/150 San Francisco departure | Marin City arrival | Marin Transit 61 departure |
-|-----------------|----------------------------|
-| 6:20am* | 7:23am* | 8:15am* |
-| 8:52am | 9:45am | 10:00am |
-| 10:46am | 11:46am | 12:05pm |
-| 11:47am | 12:46pm | 1:05pm |
-| 12:47pm | 1:46pm | 2:00pm |
-| 2:08pm* | 3:19pm* | 3:25pm* |
-| 3:46pm | 4:44pm | 5:10pm |
-
-\**the connections to the 8:15am and 3:25pm buses are from GGT 130. All other weekend connections are from GGT 150.*
-
-**Weekend bus transfers (starting August 10th)**
+**Weekend bus transfers**
 
 For Golden Gate Transit 130 buses, transfer in downtown Sausalito at Bridgeway & Bay. For Golden Gate Transit 150 buses, transfer at Marin City Hub.
 
@@ -140,17 +111,6 @@ The 61 is not timed to meet ferries in Sausalito. However, it's a cute town that
 **Weekday ferry transfers at Sausalito**
 
 | San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
-|-----------------|----------------------------|
-| 7:40am | 8:10am | 8:15am |
-| 10:15am | 10:45am | 12:00pm |
-| 12:10pm | 12:40pm | 1:00pm|
-| ✗ | ✗ | 3:00pm |
-| 2:45pm | 3:15pm | 4:35pm |
-| 5:45pm | 6:15pm | 6:35pm |
-
-**Weekday ferry transfers at Sausalito (starting August 10th)**
-
-| San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
 |--|--|--|
 |7:40am|8:10am|8:35am|
 |10:15am|10:45am|12:10pm|
@@ -160,18 +120,6 @@ The 61 is not timed to meet ferries in Sausalito. However, it's a cute town that
 |5:45pm|6:15pm|7:00pm|
 
 **Weekend ferry transfers at Sausalito**
-
-| San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
-|-----------------|----------------------------|
-| ✗ | ✗ | 8:05am |
-| ✗ | ✗ | 9:50am |
-| 10:15am | 11:15am | 11:55am |
-| ✗ | ✗ | 12:55pm |
-| 12:35pm | 1:05pm | 1:50pm |
-| 2:15pm | 2:45pm | 3:15pm |
-| 4:00pm | 4:30pm | 5:00pm |
-
-**Weekend ferry transfers at Sausalito (starting August 10th)**
 
 | San Francisco ferry departure | Ferry arrival | Marin Transit 61 departure |
 | ✗ | ✗ | 8:05am |
@@ -191,19 +139,6 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 **Weekday transfers at San Rafael**
 
 | GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
-|-----------------------------|----------------------------|
-| 6:32am | 7:25am | 7:45am |
-| 8:27am | 9:25am | 9:45am |
-| 9:27am | 10:25am | 10:45am |
-| 10:27am | 11:25am | 11:45am |
-| 11:27am | 12:25pm | 12:45pm |
-| 1:27pm | 2:25pm | 2:45pm |
-| 3:21pm | 4:25pm | 4:45pm |
-| 5:20pm | 6:25pm | 6:45pm |
-
-**Weekday transfers at San Rafael (starting August 10th)**
-
-| GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
 |--|--|--|
 | 6:35am | 7:25am | 7:45am |
 | 7:31am | 8:25am | 8:45am |
@@ -215,18 +150,6 @@ From San Francisco, the Golden Gate Transit 101 express bus takes around 1 hour 
 | 5:23pm | 6:25pm | 6:45pm |
 
 **Weekend transfers at San Rafael**
-
-| GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
-|-----------------------------|----------------------------|
-| 6:36am | 7:25am | 7:30am |
-| 7:27am | 8:25am | 8:30am |
-| 10:22am | 11:25am | 11:30am |
-| 11:22am | 12:25pm | 12:30pm |
-| 1:23pm | 2:25pm | 2:30pm |
-| 3:26pm | 4:25pm | 4:30pm |
-| 5:26pm | 6:25pm | 6:30pm |
-
-**Weekend transfers at San Rafael (starting August 10th)**
 
 | GGT 101 San Francisco departure | San Rafael arrival | Marin Transit 68 departure |
 |--|--|--|
@@ -277,19 +200,6 @@ Starting August 10th, transfers between the Golden Gate Transit 580 and Marin Tr
 **Weekday transfers at San Rafael**
 
 | Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
-|-----------------------------|----------------------------|
-| 6:16am | 7:06am | 7:45am |
-| 8:16am | 9:10am | 9:45am |
-| 9:36am | 10:16am | 10:45am |
-| 10:36am | 11:16am | 11:45am |
-| 11:36am | 12:16pm | 12:45pm |
-| 1:36pm | 2:16pm | 2:45pm |
-| 3:36pm | 4:16pm | 4:45pm |
-| 5:46pm | 6:16pm | 6:45pm |
-
-**Weekday transfers at San Rafael (starting August 10th)**
-
-| Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
 |--|--|--|
 | 6:41am | 7:37am | 7:45am |
 | 7:42am | 8:40am | 8:45am |
@@ -301,18 +211,6 @@ Starting August 10th, transfers between the Golden Gate Transit 580 and Marin Tr
 | 5:42pm | 6:21pm | 6:45pm |
 
 **Weekend transfers at San Rafael**
-
-| Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
-|-----------------------------|----------------------------|
-| 6:36am | 7:10am | 7:30am |
-| 7:36am | 8:17am | 8:30am |
-| 10:36am | 11:19am | 11:30am |
-| 11:36am | 12:20pm | 12:30pm |
-| 1:36pm | 2:20pm | 2:30pm |
-| 3:36pm | 4:20pm | 4:30pm |
-| 5:36pm | 6:20pm | 6:30pm |
-
-**Weekend transfers at San Rafael (starting August 10th)**
 
 | Del Norte BART departure | Golden Gate Transit arrival | Marin Transit 68 departure |
 |--|--|--|
@@ -336,17 +234,6 @@ Starting August 10th, transferring to the Marin Transit 61 requires taking the G
 
 **Weekday transfers**
 
-| Del Norte departure | 580 arrival at San Rafael | via | Marin Transit 61 departure |
-|---------------------------|----------|----------------------------|
-| 6:56am | 7:46am | Marin Transit 71 at 7:59am | 8:25am |
-| 10:36am | 11:16am | GGT 150 at 11:45am | 12:10pm |
-| 11:36am | 12:16pm | GGT 150 at 12:45pm | 1:10pm |
-| 1:36pm | 2:16pm | GGT 150 at 2:45pm | 3:10pm |
-| 3:36pm | 4:16pm | Marin Transit 17 at 4:29pm | 5:01pm |
-| 5:36pm | 6:16pm | Marin Transit 17 at 6:29pm | 7:01pm |
-
-**Weekday transfers (starting August 10th)**
-
 | Del Norte departure | 580 arrival at San Rafael | Marin Transit 71 transfer | Marin Transit 61 departure |
 |--|--|--|--|
 | 6:41am | 7:37am | 8:00am - 8:15am | 8:45am |
@@ -357,20 +244,6 @@ Starting August 10th, transferring to the Marin Transit 61 requires taking the G
 | 5:42pm | 6:21pm | 6:30pm - 6:43pm | 7:10pm |
 
 **Weekend transfers**
-
-| Del Norte departure | 580 arrival at San Rafael | via | Marin Transit 61 departure |
-|---------------------------|------------|----------------------------|
-| 6:36am | 7:10am | GGT 150 at 7:45am | 8:15am |
-| 8:36am* | 9:17am* | GGT 150 at 9:45am* | 10:00am* |
-| 10:36am | 11:20am | GGT 150 at 11:45am |12:05pm |
-| 11:36am | 12:20pm | GGT 150 at 12:45pm | 1:05pm |
-| 12:36pm* | 1:20pm* | GGT 150 at 1:45pm* | 2:00pm* |
-| 1:36pm | 2:20pm | GGT 150 at 2:45pm | 3:25pm |
-| 3:36pm | 4:20pm | GGT 150 at 4:45pm | 5:10pm |
-
-\**Due to a short transfer for the 10:00am and 2:00pm Marin Transit 61, transfer at the Manzanita Park and Ride/Shoreline Hwy & Pohono St.*
-
-**Weekend transfers (starting August 10th)**
 
 | Del Norte departure | 580 arrival at San Rafael | Marin Transit 71 transfer | Marin Transit 61 departure |
 |--|--|--|--|

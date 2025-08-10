@@ -25,8 +25,10 @@ travel:
     routes:
     - name: Tri MyRide
       link: https://trideltatransit.com/tri-myride/
-    - name: Tri Delta 380
-      link: https://trideltatransit.com/bus_routes/380-pittsburg-bay-point-bart-antioch-bart/
+    - name: Tri Delta 375
+      link: https://trideltatransit.com/bus_routes/375-WAITING-FOR-SITE-UDPATE/
+    - name: Tri Delta 376
+      link: https://trideltatransit.com/bus_routes/380-WAITING-FOR-SITE-UPDATE/
 
 trailhead:
   name: Black Diamond Trail, Clayton Rd Trailhead
@@ -51,4 +53,6 @@ Continuing east, make sure to explore the Rose Hill Cemetery, the cemetery share
 
 Stewartville Trail runs from the visitor center up to the ridge, where you can continue downhill to the old townsite, or along the ridge trail for expansive views over Pittsburg, Antioch, and the Delta and a hike down the sometimes steep, sometimes rough, and all around exciting Corcoran Mine Trail. No matter your choice, make sure to check out the Prospect Tunnel, a 400-foot coal prospecting tunnel half open to the public. Afterwards, continue along Stewartville Trail up and over one final pass to Frederickson Lane.
 
-At Frederickson Lane, there are two options for returning home: Tri Delta's on-demand Tri MyRide serves the neighborhood to the east (walk to Noakes Dr) and can be taken directly to BART, with a "predicted average wait time of 15-30 minutes". Download the app and set up an account beforehand for ease of hailing; it's a standard bus fare and typically more than makes up for the wait time with directness. Service runs until 9PM weekdays but only 5PM weekends. There are two alternatives: a 10-15min Uber/Lyft ride to Antioch BART runs at around $15 as of time of writing; otherwise, catch Tri Delta 380/390 at Contra Loma Blvd & James Donlon Blvd by continuing north at Frederickson Ln through Contra Loma Regional Park (1.2mi longer). 380 buses runs hourly until nearly midnight seven days a week, but take a circuitous route to BART.
+At Fredrickson Lane, there are two options for returning home: Tri Delta's on-demand Tri MyRide serves the neighborhood to the east (walk to Noakes Dr) and can be taken directly to BART, with a "predicted average wait time of 15-30 minutes". Download the app and set up an account beforehand for ease of hailing; it's a standard bus fare. Service runs until 9PM weekdays but only 5PM weekends.
+
+Otherwise, catch Tri Delta 375/376 at Contra Loma Blvd & James Donlon Blvd by continuing north at Frederickson Ln through Contra Loma Regional Park (1.2mi longer). The two routes together are timetabled to run every 30 minutes directly to BART.

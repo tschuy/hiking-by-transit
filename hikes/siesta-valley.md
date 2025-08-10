@@ -22,8 +22,8 @@ travel:
   return:
     time: 8min
     routes:
-    - name: AC Transit 79
-      link: https://www.actransit.org/bus-lines-schedules/79
+    - name: AC Transit 36
+      link: https://www.actransit.org/bus-lines-schedules/36
     stop:
       name: Derby St & Claremont Blvd
       link: https://maps.app.goo.gl/z2bC8YQf4jUDKXvB8
@@ -47,4 +47,4 @@ blurb: A trek over the hills via wildflower territory and eucalyptus groves with
 
 Siesta Valley is odd. Part of the water district's land right outside Orinda, the permit requirement and general low population in the immediate surrounding area keeps it quieter than East Bay parkland in the hills closer to Berkeley and Oakland, but the views from the shoulder of the valley are no less impressive. If it weren't for the Wilder Ranch subdivision, you'd barely know you're in the middle of one of the country's biggest metropolitan areas.
 
-The initial climb out of Orinda can be steep, and the EBMUD gravel maintenance road is perhaps maintained more for practicality than scenery, but the views right before dipping over into Siesta Valley of the Carquines Strait and the reservoirs north of Orinda are fantastic, and the tranquility of the valley itself even moreso. After hiking past a eucalyptus grove, the hike crosses Grizzly Peak Blvd and into Cal's hill land, where wildflowers bloom surprisingly late into the season. A steep descent down through Claremont Canyon Regional Preserve back into Berkeley awaits - choose between exiting at the end of the Stonewall-Panoramic Trail and Line 79 as indicated, or tuck through the forest for a hike down the Clark Kerr Trail's piano steps to Dwight Way and buses running along College Ave.
+The initial climb out of Orinda can be steep, and the EBMUD gravel maintenance road is perhaps maintained more for practicality than scenery, but the views right before dipping over into Siesta Valley of the Carquines Strait and the reservoirs north of Orinda are fantastic, and the tranquility of the valley itself even moreso. After hiking past a eucalyptus grove, the hike crosses Grizzly Peak Blvd and into Cal's hill land, where wildflowers bloom surprisingly late into the season. A steep descent down through Claremont Canyon Regional Preserve back into Berkeley awaits - choose between exiting at the end of the Stonewall-Panoramic Trail and Line 36 as indicated, or tuck through the forest for a hike down the Clark Kerr Trail's piano steps to Dwight Way and buses running along College Ave.

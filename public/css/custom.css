@@ -150,7 +150,10 @@ html {
     padding-top: 10px;
     border-top: 2px solid #8f5536;
 }
-
+.ytembed {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
 
 @media (max-width: 28em) {
     .ol-attribution ul {

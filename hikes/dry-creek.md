@@ -13,8 +13,8 @@ travel:
   out:
     time: 54min
     routes:
-    - name: AC Transit 99
-      link: https://www.actransit.org/bus-lines-schedules/99
+    - name: AC Transit 9
+      link: https://www.actransit.org/bus-lines-schedules/9
     stop:
       name: Mission Blvd & Whipple Rd
       link: https://goo.gl/maps/bFkKfdEetRZfbkz8A
@@ -34,4 +34,4 @@ image: dry-creek.jpg
 
 I've only hiked in Dry Creek Regional Park during the time of year the grass has already crisped up and the creeks ran dry, but I loved it nevertheless. Situated right where Union City hits the base of the East Bay hills, Dry Creek has multiple loop options of various lengths and difficulties suitable for most hikers. The one I've highlighted here is a 3.2 mile loop around the Pioneer Trail, a mostly-shaded route through forested canyons with views of the grassy foothills.
 
-Longer loops are available. A 5mi, 1000ft altitude gain High Ridge Loop offers views from far above Union City to the South Bay and the Peninsula. Or, go all the way north to the Newt Pond Trail, the first place I saw a bobcat in the East Bay (6.3mi loop). 
+Longer loops are available. A 5mi, 1000ft altitude gain High Ridge Loop offers views from far above Union City to the South Bay and the Peninsula. Or, go all the way north to the Newt Pond Trail, the first place I saw a bobcat in the East Bay (6.3mi loop).

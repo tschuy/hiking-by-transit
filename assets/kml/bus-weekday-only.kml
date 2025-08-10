@@ -77,16 +77,6 @@
     <Folder>
       <name>Bus - Weekday Only</name>
       <Placemark>
-        <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Robinson Dr</name>
-        <description>0min walk from AC Transit line 39 at Joaquin Miller Rd &amp; Robinson Dr</description>
-        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.1835433,37.8095105,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Tilden: Selby Trail (north)
 </name>
         <description>3min walk from AC Transit 67 at Grizzly Peak &amp; Spruce</description>
@@ -393,6 +383,66 @@
         <Point>
           <coordinates>
             -121.7909008,37.2576627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knowland Park: Arroyo Viejo Trail</name>
+        <description>0min from AC Transit 46L</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1483191,37.7540831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knowland Park: Fire Road</name>
+        <description>7min from AC Transit 46L at&#160;Golf Links Rd &amp; Elysian Fields Dr&lt;br&gt;&lt;br&gt;Warning: the walk to the trailhead involves walking along the shoulder of Golf Links Rd. Be cautious and stay safe!</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1379451,37.7576157,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knowland Park: Fallbrook Way</name>
+        <description>14min walk from AC Transit 46L at Golf Links Rd &amp; Scotia Av</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1295742,37.7534887,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knowland Park: Cotter St</name>
+        <description>8min walk from AC Transit 46L at Golf Links Rd &amp; Scotia Av</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1239291,37.7562091,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dunsmuir Hills?: Lochard St Trailhead</name>
+        <description>28min from AC Transit 46L at Golf Links Rd &amp; Scotia Av</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1298528,37.7438125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dunsmuir Hills?: Kerrigan Dr Trailhead</name>
+        <description>30min from AC Transit 46L at Golf Links Rd &amp; Scotia Av</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1341678,37.7443795,0
           </coordinates>
         </Point>
       </Placemark>
