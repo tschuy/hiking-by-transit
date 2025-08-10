@@ -195,7 +195,7 @@ To take the bus from the East Bay to Sausalito *without* heading into San Franci
 
 ### Marin Transit 68
 
-Starting August 10th, transfers between the Golden Gate Transit 580 and Marin Transit 68 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. From Del Norte BART to getting on the Marin Transit 68 is consistently just over one hour. 
+Transfers between the Golden Gate Transit 580 and Marin Transit 68 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. From Del Norte BART to getting on the Marin Transit 68 is consistently just over one hour.
 
 **Weekday transfers at San Rafael**
 
@@ -224,9 +224,9 @@ Starting August 10th, transfers between the Golden Gate Transit 580 and Marin Tr
 
 ### Marin Transit 61
 
-Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not directly connect. Depending on the particular departure, there are several options for which bus is best to take to transfer between them; on weekends, there's generally a decent transfer via the Golden Gate Transit 150 bus at Marin City.
+Transfers to the 61 are complicated, as the GGT 580 and Marin Transit 61 do not directly connect.
 
-Starting August 10th, transferring to the Marin Transit 61 requires taking the GGT 580, to the Marin Transit 71, to the Marin Transit 61. Transfers from the GGT 580 to the Marin Transit 71 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. The 61's inconsistent schedule means the second transfer is not as reliable, and trips should be planned around that.
+Transferring to the Marin Transit 61 requires taking the GGT 580, to the Marin Transit 71, to the Marin Transit 61. Transfers from the GGT 580 to the Marin Transit 71 are scheduled as a "pulse". Each meet is short enough to avoid long waits, but long enough to allow for comfortable transferring. The 61's inconsistent schedule means the second transfer is not as reliable, and trips should be planned around that.
 
 * Golden Gate Transit 150: transfer at Marin City\*
 * Marin Transit 17: transfer at Almonte Blvd & Rosemont Ave
