@@ -1606,6 +1606,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Joaquin Miller / Roberts Recreation Area</name>
+        <description>0min walk from AC Transit 31 at Skyline Blvd &amp; Roberts Park</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1756987,37.8125,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
