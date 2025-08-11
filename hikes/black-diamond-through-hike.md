@@ -26,9 +26,9 @@ travel:
     - name: Tri MyRide
       link: https://trideltatransit.com/tri-myride/
     - name: Tri Delta 375
-      link: https://trideltatransit.com/bus_routes/375-WAITING-FOR-SITE-UDPATE/
+      link: https://www.trideltatransit.com/bus_routes/375-antioch-bart-slatten-ranch-center/
     - name: Tri Delta 376
-      link: https://trideltatransit.com/bus_routes/380-WAITING-FOR-SITE-UPDATE/
+      link: https://www.trideltatransit.com/bus_routes/376-antioch-bart-kaiser-antioch-medical-center/
 
 trailhead:
   name: Black Diamond Trail, Clayton Rd Trailhead
