@@ -118,8 +118,9 @@ function updateOsmMapUrl() {
   }
 }
 
+promoName = document.getElementById("promo").dataset.name;
 // check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
-promoValue = document.cookie.split("; ").find((row) => row.startsWith("promo="))?.split("=")[1];
+promoValue = document.cookie.split("; ").find((row) => row.startsWith(promoName+"="))?.split("=")[1];
 if (promoValue != "false") {
   promoDiv = document.getElementById("promo");
   if (promoDiv) {
@@ -129,7 +130,7 @@ if (promoValue != "false") {
 
 // set promo dismiss cookie with the given expiration and hide promo
 function dismissPromo(endtime) {
-  cookieText = 'promo=false; expires=' + endtime + '; path=/';
+  cookieText = promoName + '=false; expires=' + endtime + '; path=/';
   document.cookie = cookieText;
   document.getElementById("promo").style.display = "none";
 }
