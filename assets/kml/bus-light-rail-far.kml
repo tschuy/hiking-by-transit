@@ -927,6 +927,17 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Carquinez Strait: Bull Valley Trail
+</name>
+        <description>17min walk from WestCAT 11 at John Swett High School&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2080357,38.0540812,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

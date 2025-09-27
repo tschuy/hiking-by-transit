@@ -120,27 +120,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Crockett Hills Trailhead</name>
-        <description>7min walk from WestCAT 11 at John Swett High School</description>
-        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.2212669,38.0470793,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Carquinez Strait: Bull Valley Trail
-</name>
-        <description>17min walk from WestCAT 11 at John Swett High School</description>
-        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.2080357,38.0540812,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Almaden Quicksilver Park: Mockingbird Hill
 </name>
         <description>8min walk from VTA line 83 at McKean &amp; Almaden</description>

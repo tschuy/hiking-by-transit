@@ -1616,6 +1616,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Crockett Hills Trailhead</name>
+        <description>7min walk from WestCAT 11 at John Swett High School</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2212669,38.0470793,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
