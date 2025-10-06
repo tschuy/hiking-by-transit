@@ -1339,7 +1339,7 @@
       <Placemark>
         <name>Coyote Hills: Tuibun Trail
 </name>
-        <description>7min to AC Transit 232 at Ardenwood Blvd &amp; Commerce Dr</description>
+        <description>7min to AC Transit 281 at Ardenwood Blvd &amp; Commerce Dr</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1623,6 +1623,16 @@
         <Point>
           <coordinates>
             -122.2212669,38.0470793,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lake Chabot: Crest Ave</name>
+        <description>14min walk from AC Transit 28 at Miramar Av &amp; Rolando Dr</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1061277,37.7098093,0
           </coordinates>
         </Point>
       </Placemark>
