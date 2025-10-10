@@ -81,7 +81,6 @@
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels" />
       </IconStyle>
     </Style>
     <Folder>
