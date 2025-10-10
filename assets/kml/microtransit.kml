@@ -85,102 +85,100 @@
       </IconStyle>
     </Style>
     <Folder>
-      <name>BART - 20min+ walk</name>
+      <name>Microtransit</name>
       <Placemark>
-        <name>MLK Jr Regional Park
+        <name>Black Diamond Mines Regional Park: River View Loop Trail
 </name>
-        <description>20min walk from Coliseum BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <description>28min walk from Tri Delta - Tri My Ride on-demand shuttle at James Donlon Blvd &amp; Gentrytown Dr.&#160;https://trideltatransit.com/tri-myride/</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.2110546,37.7506657,0
+            -121.8554405,37.9813553,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Lafayette Reservoir
+        <name>Black Diamond Mines Regional Preserve: Frederickson Ln</name>
+        <description>9min from Tri MyRide dial-a-ride service zone; walk to Noakes Dr to request a bus.&lt;br&gt;&lt;br&gt;https://trideltatransit.com/tri-myride/</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -121.8223756,37.9651069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Contra Loma Regional Park
 </name>
-        <description>20min walk from Lafayette BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <description>Tri Delta - Tri My Ride on-demand shuttle serves Worth Shaw Community Park parking lot.&#160;https://trideltatransit.com/tri-myride/</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.1400555,37.8877229,0
+            -121.8204517,37.979883,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Quarry Lakes Regional Park
+        <name>Contra Loma Regional Park: Grimsby Ct
 </name>
-        <description>24min walk from Union City BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <description>10min walk from Tri Delta - Tri My Ride on-demand shuttle at James Donlon Blvd &amp; Gentrytown Dr.&#160;https://trideltatransit.com/tri-myride/</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.00684,37.5793266,0
+            -121.8349512,37.9763301,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>San Bruno Mountain: Royce Way</name>
-        <description>23min walk from Colma BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <name>Rancho San Antonio: PG&amp;E Trailhead</name>
+        <description>Microtransit from Santa Clara Caltrain station to trailhead with Silicon Valley Hopper:&lt;br&gt;&lt;br&gt;https://city.ridewithvia.com/hopper</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.4541179,37.6920739,0
+            -122.0856968,37.329548,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Dry Creek Pioneer Regional Park: Dry Creek Staging Area</name>
-        <description>30min walk from Union City BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <name>Rancho San Antonio: Deer Hollow Farm Trailhead</name>
+        <description>Microtransit from Santa Clara Caltrain station to trailhead with Silicon Valley Hopper:&lt;br&gt;&lt;br&gt;https://city.ridewithvia.com/hopper</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.0178945,37.6074311,0
+            -122.0879422,37.3328754,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Dublin Hills: Martin Canyon Creek Trailhead</name>
-        <description>30min from West Dublin BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <name>Fremont Older Open Space: Fremont Older Trailhead</name>
+        <description>Microtransit from Santa Clara Caltrain station to trailhead with Silicon Valley Hopper:&lt;br&gt;&lt;br&gt;https://city.ridewithvia.com/hopper</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -121.9465416,37.704465,0
+            -122.062371,37.2930323,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Briones Regional Park: Briones-to-Las Trampas Trail</name>
-        <description>28min walk to Lafayette BART</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <name>Stevens Creek County Park: Rim Trail</name>
+        <description>Microtransit from Santa Clara Caltrain station to Stevens Canyon Rd &amp; Ricardo Ln with Silicon Valley Hopper. Walk 2min to trailhead.&lt;br&gt;&lt;br&gt;https://city.ridewithvia.com/hopper</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.1076373,37.899598,0
+            -122.0721175,37.3076421,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Walter Costa Trail
-</name>
-        <description>21min walk from BART at Lafayette&lt;br&gt;&lt;br&gt;This is an access trail to Briones Regional Park&lt;br&gt;&lt;br&gt;http://lafayette.granicus.com/MetaViewer.php?view_id=3&amp;clip_id=1670&amp;meta_id=23157</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
+        <name>Quarry Park</name>
+        <description>SamTrans Ride Plus microtransit:&#160;https://www.samtrans.com/rider-info/ride-plus</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
         <Point>
           <coordinates>
-            -122.1402604,37.8887385,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Peter Jakovina Trail
-</name>
-        <description>24min walk from BART at Lafayette&lt;br&gt;&lt;br&gt;This is a feeder trail to Briones Regional Park&lt;br&gt;&lt;br&gt;http://lafayette.granicus.com/MetaViewer.php?view_id=3&amp;clip_id=1670&amp;meta_id=23157</description>
-        <styleUrl>#icon-1719-E65100-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -122.1160416,37.8999003,0
+            -122.4623809,37.5037602,0
           </coordinates>
         </Point>
       </Placemark>
     </Folder>
-    </Document>
+  </Document>
 </kml>

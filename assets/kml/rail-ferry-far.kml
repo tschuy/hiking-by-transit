@@ -2,9 +2,9 @@
   <Document>
     <name>Transit-accessible trailheads in the Bay Area</name>
     <description>Trailheads in the San Francisco Bay Area within a 30min walk of a transit stop, excluding school and commute routes.&lt;br&gt;&lt;br&gt;For more information and hike suggestions, visit https://hikingbytransit.com!</description>
-    <Style id="icon-1502-757575-labelson">
+    <Style id="icon-1502-000000-labelson">
       <IconStyle>
-        <color>ff757575</color>
+        <color>ff000000</color>
         <scale>0.5</scale>
         <Icon>
           <href>/assets/pin.png</href>
@@ -20,18 +20,18 @@
         </Icon>
       </IconStyle>
     </Style>
-    <Style id="icon-1532-0288D1-labelson">
+    <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
-        <color>ffd18802</color>
+        <color>ff7e231a</color>
         <scale>0.5</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
       </IconStyle>
     </Style>
-    <Style id="icon-1532-1A237E-labelson">
+    <Style id="icon-1538-757575-labelson">
       <IconStyle>
-        <color>ff7e231a</color>
+        <color>ff757575</color>
         <scale>0.5</scale>
         <Icon>
           <href>/assets/pin.png</href>
@@ -72,6 +72,16 @@
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels" />
       </IconStyle>
     </Style>
     <Folder>
