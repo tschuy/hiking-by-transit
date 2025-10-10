@@ -51,6 +51,9 @@ If you're on your phone, I recommend opening the link below, which will temporar
       <br>
       <input type="checkbox" id="shuttles" name="shuttles" checked />
       <label for="shuttles">Park Shuttles</label>
+      <br>
+      <input type="checkbox" id="microtransit" name="microtransit" checked />
+      <label for="microtransit">Microtransit</label>
   </form>
 </div>
 

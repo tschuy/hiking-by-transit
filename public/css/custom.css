@@ -124,6 +124,9 @@ html {
     accent-color: #E65100;
 }
 #shuttles {
+    accent-color: #000000;
+}
+#microtransit {
     accent-color: #757575;
 }
 

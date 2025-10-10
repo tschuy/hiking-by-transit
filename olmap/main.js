@@ -56,6 +56,11 @@ closer.onclick = function() {
   return false;
 };
 
+function linkifyDescription(text) {
+  const urlRegex = /(https?:\/\/[^\s]+)/;
+  return text.replace(urlRegex, '<a href="$1" target="_blank">Learn more &raquo;</a>');
+}
+
 const overlay = new Overlay({
   element: container,
   offset: [0, -15],
@@ -77,7 +82,8 @@ const trailhead_kml_layers = {};
   "bus-weekday-only",
   "rail-ferry-far",
   "rail-ferry",
-  "shuttles"
+  "shuttles",
+  "microtransit"
 ].forEach((e) => trailhead_kml_layers[e] = new VectorLayer({
   name: e,
   source: new VectorSource({
@@ -197,7 +203,7 @@ map.on('click', function (evt) {
       hikeLink.style.visibility = "visible";
       content.innerHTML = formatHikeInfo(properties);
     } else {
-      parkInfo.description = feature.get('description');
+      parkInfo.description = linkifyDescription(feature.get('description'));
       parkInfo.weather = feature.get('weather');
       if (feature.get('weather') == undefined) {
         parkInfo.weather = "TODO: look up weather for this park" // getWeather(feature);
