@@ -4,12 +4,13 @@ title: Clipper 2.0 launches December 10th. What does that mean for getting outdo
 image: clipper.jpg
 ---
 
-
 ![A Clipper card in a redwood forest](/assets/clipper.jpg)
 
 Getting outdoors in the Bay Area often means taking lots of different agencies, including small ones with different rules and different fare structures. If you live in San Francisco, you might not know how Marin Transit fares work, and if you live in Berkeley, you might not know how County Connection fares work.
 
 In the Bay Area, people have been paying for transit with their Clipper cards for years. It's convenient – if you have enough money loaded on your card. It's easy – if you don't care how much the trip will cost. Clipper 2.0, which launches December 10th, solves these problems with the launch of two very important features:
+
+<!-- excerpt -->
 
 ## Tap and ride - no need for a Clipper card
 
@@ -38,5 +39,7 @@ Now, each step of the way gets a discount or free local bus fare: transferring f
 Personally, I'm planning on celebrating with a hike to the top of Mount Tamalpais. What better way to celebrate getting around the Bay than sweeping vistas of it from above? [Sign up for the Hiking by Transit mailing list](https://docs.google.com/forms/d/e/1FAIpQLSdAlFGvGSKRyt6ri-lLNEvcCkrHgNATMYvdxIZw-bfXFIZOHg/viewform?entry.839337160=Emails+about+upcoming+transit-accessible+hike+events) to join me!
 
 Or, to go by yourself, [learn how to get to the top of Mount Tamalpais from Pantoll Ranger Station here »](/hikes/mt-tam-pantoll-to-east-peak/)
+
+[*This article was published simultaneously on Streetsblog San Francisco*.](https://sf.streetsblog.org/2025/10/22/clipper-2-0-and-getting-outdoors)
 
 ![the view from Mt Tamalpais in Marin](/assets/mt-tam.jpg)
