@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Transit Month: Redwood Regional Park - AC Transit launch celebration"
+title: "Hiking by Transit: Clipper 2.0 Launch Celebration - Mt Tamalpais hike"
 
 event_date: December 16th, 2025
 ---
