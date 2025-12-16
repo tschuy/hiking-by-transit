@@ -1,10 +1,10 @@
 ---
 layout: hike
 title: "Mount Tamalpais: Pantoll to East Peak"
-tags: grassland hills historic wildflowers chaparral
+tags: grassland hills historic wildflowers chaparral forest redwoods
 
 region: marin
-difficulty: hard
+difficulty: moderate
 length: 7.8mi (out and back)
 
 travel:
@@ -39,3 +39,5 @@ Pantoll Ranger Station an important node in southern Marin County's trail networ
 Mount Tamalpais -- Mt Tam between friends -- needs no introduction to Bay Area hikers. The views from the top are stunning panoramic views of nearly the entire northern half of the Bay Area. The easiest transit-accessible hike up starts here at Pantoll, where you can immediately get on the Old Stage Road, remnant of the once mighty ["Crookedest Railroad in the World"](https://www.friendsofmttam.org/railroad/history.html). By virtue of being a grade built for a railroad, it's an even, steady uphill without much in the way of steep slope. Continuing up past the historic West Point Inn (a great place to stop for a picnic), an old railroad hotel and still an active non-profit inn today, turning up to continue onto the main Old Railroad Grade to the top. The hike starts out in redwood, but quickly ascends above and into shrubby chaparral – bring sunscreen!
 
 At the top, soak in views of San Francisco in the distance, the Bay sprawling out in front of you, and innumerable hills and mountains around the greater Bay Area, including Mount Diablo rising above the hills in the East. There are plenty of water fountains and bathrooms available at the top, and the Gravity Car Barn is open weekends to admire a replica of the types of carriages that used to ply the very grade you hiked in on. Then, turn around and hike down back to Pantoll for your bus back home!
+
+The trail surface is gravel nearly the entire way. The trail is well-maintained, with minimal rutting, but there are frequent rocky sections where hikers should keep an eye on the trail to avoid rolling an ankle. However, this is perhaps *the* easiest 8-mile hike up a mountain possible, and it is a great option for those looking to push themselves a little further than usual.
