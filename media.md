@@ -7,6 +7,13 @@ This page is really for me. It's been exciting to see so much positive feedback,
 
 <hr>
 
+As part of the Clipper 2.0 launch, KQED published an article detailing the transition. This article made mention of the Clipper 2.0 Interagency Transfers calculator that I put together in the runup to the launch, as I became the main non-MTC contact for understanding the Clipper 2.0 fare changes. The article was republished on the Cityside (Berkeleyside/the Oaklandside/Richmondside) network.
+
+<p class="message">
+<b><a href="https://www.kqed.org/news/12065714/clipper-card-new-bart-caltrain-login-next-generation-discounts">New Clipper Cards Are Here, With Big Perks for Riders. How to Manually Upgrade Yours</a></b>, KQED, 10 December 2025. <a href="https://web.archive.org/web/*/https://www.kqed.org/news/12065714/clipper-card-new-bart-caltrain-login-next-generation-discounts">(Archive link)</a>
+
+<hr>
+
 In August 2025, for the launch of AC Transit's Realign bus network redesign, I wrote an op-ed in the SF Chronicle discussing why it's so important that transit agencies prioritize service to parks to show that transit can be a way to live, not just a way to get by.
 
 <p class="message">
