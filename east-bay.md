@@ -9,7 +9,22 @@ title: East Bay Hikes
 
 The heart of the Bay Area's transit system is indisputably BART, whose five lines all cross through Oakland on their way to every end of the East Bay. Take the Red up to Berkeley for Tilden and Wildcat, the Yellow out to Diablo and Black Diamond Mines, the Blue out to Dublin Canyon, or the Green down to Mission Peak. No matter where you go for a hike, the East Bay is sure to delight. Just don't forget the sunscreen!
 
-## Selected Hikes
+<div>
+{%- assign pages_list = site.pages | sort:"url" -%}
+{%- for node in pages_list -%}
+{%- if node.title != null -%}{% if node.highlight %}
+<h3>{{ node.title }}</h3>
+
+{{ node.blurb }}
+<br><br>
+<a href="{{ node.url | absolute_url }}">Read&nbsp;more&nbsp;»</a>
+{%- endif -&}
+{%- endif -%}
+{%- endif -%}
+{%- endfor %}
+</div>
+
+## All Hikes
 
 <div class="infobox">
   <div>
