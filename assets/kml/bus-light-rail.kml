@@ -1304,7 +1304,7 @@
       <Placemark>
         <name>Big Break Regional Shoreline
 </name>
-        <description>10min from TriDelta 383/391 at Main St &amp; Big Break Rd</description>
+        <description>10min from TriDelta 373 at Main St &amp; Big Break Rd</description>
         <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1513,7 +1513,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Joaquin Miller Park: Redwood Bowl Staging Area</name>
+        <name>Redwood Regional Park / Joaquin Miller Park: Redwood Bowl Staging Area</name>
         <description>0min walk from AC Transit 31 at Chabot Observatory</description>
         <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
         <Point>
@@ -1610,6 +1610,26 @@
         <Point>
           <coordinates>
             -122.1061277,37.7098093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ardenwood Historic Farm</name>
+        <description>10min from AC Transit 281 at Ardenwood Blvd &amp; Ardenwood Ter</description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.0508424,37.5564349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bedwell Bayfront Park</name>
+        <description>4min walk from SamTrans 270 at 3719 Haven Ave</description>
+        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1723874,37.4911213,0
           </coordinates>
         </Point>
       </Placemark>

@@ -179,6 +179,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Shiloh Ranch Regional Park: South Ridge Trail</name>
+        <description>8min walk from SMART Connect Airport shuttle zone at Faught Rd &amp; Carriage Ln.&lt;br&gt;&lt;br&gt;https://sonomamarintrain.org/AirportShuttle</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.7578155,38.5184665,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
   </Document>
 </kml>
