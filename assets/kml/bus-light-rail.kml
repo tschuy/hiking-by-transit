@@ -20,6 +20,15 @@
         </Icon>
       </IconStyle>
     </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
     <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
         <color>ff7e231a</color>
@@ -74,22 +83,13 @@
         </Icon>
       </IconStyle>
     </Style>
-    <Style id="icon-1899-0288D1-labelson">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>0.5</scale>
-        <Icon>
-          <href>/assets/pin.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
     <Folder>
       <name>Bus / Light Rail - w/ Weekend</name>
       <Placemark>
         <name>Point Pinole Regional Shoreline
 </name>
         <description>6min walk from AC Transit 71 at Atlas &amp; Giant Highway</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.3527031,37.9998107,0
@@ -100,7 +100,7 @@
         <name>Cesar Chavez / McLaughlin
 </name>
         <description>0min walk from AC Transit 51B at University &amp; West Frontage</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.3049814,37.8654913,0
@@ -111,7 +111,7 @@
         <name>Miller Knox: Ferry Point Tunnel
 </name>
         <description>8min - AC Transit 72M&lt;br&gt;11min - Golden Gate Transit 580</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.3845836,37.9231044,0
@@ -122,7 +122,7 @@
         <name>Black Diamond Mines: Black Diamond Trail
 </name>
         <description>7min from County Connection 310 (weekend) / 10 (weekday) at Marsh Creek &amp; Clayton</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.92811,37.9411314,0
@@ -133,7 +133,7 @@
         <name>Wildcat Canyon: N Arlington
 </name>
         <description>13min from AC Transit 70/74 at San Pablo Dam &amp; Contra Costa Way</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.3242959,37.9538931,0
@@ -143,7 +143,7 @@
       <Placemark>
         <name>Mission Peak: Spring Valley Trail</name>
         <description>3min walk from AC Transit 217 at Ohlone College - Key D</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9083064,37.530034,0
@@ -153,7 +153,7 @@
       <Placemark>
         <name>Shadow Cliffs Regional Recreation Area</name>
         <description>0min from Wheels 10R at Stanley &amp; Shadow Cliffs</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.841661,37.6692998,0
@@ -164,7 +164,7 @@
         <name>Las Trampas Wilderness: Remington
 </name>
         <description>10min from County Connection 21/321 at San Ramon Valley Blvd And Livery-Mercantile</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0030099,37.8104814,0
@@ -174,7 +174,7 @@
       <Placemark>
         <name>Las Trampas Wilderness: Madrone Trailhead</name>
         <description>10min from County Connection 21/321 at Danville Blvd &amp; Camille Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0260879,37.8320622,0
@@ -184,7 +184,7 @@
       <Placemark>
         <name>Las Trampas Wilderness: Ringtail Cat Staging Area</name>
         <description>9min from County Connection 21/321 at Danville Blvd And Hemme Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0323545,37.8368145,0
@@ -195,7 +195,7 @@
         <name>Las Trampas to Mt Diablo Regional Trail
 </name>
         <description>3min from County Connection 21/321 at Danville Blvd &amp; Hemme Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0237825,37.8410791,0
@@ -205,7 +205,7 @@
       <Placemark>
         <name>Howe Homestead Park</name>
         <description>13min to County Connection 4 at S Broadway And Mt Diablo Blvd.&lt;br&gt;This park provides trail access into Shell Ridge Open Space; Fossil Hill Trail, Briones to Mt Diablo Trail, etc.</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0480539,37.899702,0
@@ -215,7 +215,7 @@
       <Placemark>
         <name>Orinda Oaks Park</name>
         <description>0min to County Connection 6 at Moraga Way &amp; Ivy Dr&lt;br&gt;&lt;br&gt;Access to Mulholland Ridge Open Space</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1531976,37.8552629,0
@@ -225,7 +225,7 @@
       <Placemark>
         <name>EBMUD Valle Vista Staging Area</name>
         <description>13min to Lafayette-Moraga Trail&lt;br&gt;22min to Valle Vista Staging Area&lt;br&gt;&lt;br&gt;via County Connection 6 at Moraga Rd &amp; Moraga Way</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1380162,37.8223679,0
@@ -236,7 +236,7 @@
         <name>Cull Canyon: Ridge Trail
 </name>
         <description>13min from AC Transit 28 at Center St &amp; Heyer Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0551833,37.7039126,0
@@ -247,7 +247,7 @@
         <name>Don Castro: Ursa Way
 </name>
         <description>5min walk from AC Transit line 95 at Kelly St &amp; Mossy Rock Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0511978,37.6885579,0
@@ -258,7 +258,7 @@
         <name>Sausal Creek
 </name>
         <description>5min walk to AC Transit 57 / NL / 96 at MacArthur &amp; Fruitvale</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2148586,37.8036931,0
@@ -269,7 +269,7 @@
         <name>Los Gatos Creek Trail / Lexington Reservoir
 </name>
         <description>4min walk from VTA line 27 at Main &amp; Santa Cruz</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.981698,37.2213726,0
@@ -280,7 +280,7 @@
         <name>Milagra Overlook Trail
 </name>
         <description>4min walk to SamTrans line 110 at Oceana Blvd &amp; Milagra Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4913775,37.6441497,0
@@ -291,7 +291,7 @@
         <name>Mori Point
 </name>
         <description>5min walk from SamTrans line 110 at Hwy 1 &amp; Westport Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4860094,37.6184095,0
@@ -302,7 +302,7 @@
         <name>Mori Ridge
 </name>
         <description>12min walk from SamTrans line 110 at Hwy 1 &amp; Westport Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.483295,37.6173132,0
@@ -312,7 +312,7 @@
       <Placemark>
         <name>San Pedro Valley Park: Weiler Ranch Rd Trail</name>
         <description>3min walk from SamTrans line 110 at Oddstad Blvd &amp; Terra Nova Blvd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4754495,37.5815847,0
@@ -322,7 +322,7 @@
       <Placemark>
         <name>San Pedro Valley Park: Montara Mountain Trail</name>
         <description>8min walk from SamTrans line 110 at Oddstad Blvd &amp; Terra Nova Blvd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.475943,37.5786938,0
@@ -333,7 +333,7 @@
         <name>Devil's Slide
 </name>
         <description>0min walk from SamTrans line 117 at Devil's Slide Tunnel Stop</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.515805,37.569983,0
@@ -343,7 +343,7 @@
       <Placemark>
         <name>Rancho Corral de Tierra: Farallone Cutoff</name>
         <description>5min walk from SamTrans 117 at Farallone Cutoff</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5118061,37.5453737,0
@@ -353,7 +353,7 @@
       <Placemark>
         <name>Rancho Corral de Tierra: Ameria Trail</name>
         <description>11min walk from SamTrans 117 at Ave Alhambra &amp; Vallejo St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4788951,37.5114502,0
@@ -363,7 +363,7 @@
       <Placemark>
         <name>JV Fitzgerald Marine Reserve: Bluff Trail</name>
         <description>8min walk from SamTrans 117 at Etheldore St &amp; California Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5157658,37.5235249,0
@@ -374,7 +374,7 @@
         <name>Montara State Beach
 </name>
         <description>5min walk from SamTrans line 117 at Main St &amp; 4th</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5143345,37.5453906,0
@@ -384,7 +384,7 @@
       <Placemark>
         <name>Gray Whale Cove State Beach</name>
         <description>11min walk from SamTrans line 117 at Devils Slide Tunnel Stop</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5139689,37.5645993,0
@@ -395,7 +395,7 @@
         <name>Quarry Park
 </name>
         <description>8min walk from SamTrans line 117 at Plaza Alhambra &amp; Coronado St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4626109,37.5035177,0
@@ -405,7 +405,7 @@
       <Placemark>
         <name>Miramar Beach</name>
         <description>5min walk from SamTrans ine 117 at Hwy 1 &amp; Medio Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4601688,37.4932367,0
@@ -416,7 +416,7 @@
         <name>Venice State Beach
 </name>
         <description>5min walk from SamTrans line 117 at Hwy 1 &amp; Ruisseau Francais Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4498331,37.482123,0
@@ -426,7 +426,7 @@
       <Placemark>
         <name>San Bruno Mountain: Royce Way</name>
         <description>5min walk from SamTrans line 130 at Orange St &amp; Chester St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4541179,37.6920739,0
@@ -437,7 +437,7 @@
         <name>Old Moraga Ranch Trail
 </name>
         <description>11min to County Connection 6 at St Mary's College</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1038666,37.8371166,0
@@ -448,7 +448,7 @@
         <name>Mount Wanda: Main Fire trail
 </name>
         <description>Weekends: consider using trailhead on Canyon Way&lt;br&gt;&lt;br&gt;3min walk from County Connection 16 at Alhambra Ave &amp; Alhambra Way&#160; (cross with light and walk on western shoulder)&lt;br&gt;4min walk from County Connection 316 at Alhambra Ave &amp; Walnut Ave (dangerous crossing; check Street View for options)</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1302039,37.9894421,0
@@ -459,7 +459,7 @@
         <name>Painted Rock
 </name>
         <description>8min walk from County Connection 6 at Moraga Rd And Rheem Blvd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1217492,37.8584554,0
@@ -470,7 +470,7 @@
         <name>Lagoon Valley Park / Pe&#241;a Adobe Regional Park
 </name>
         <description>12min walk from Vacaville City Coach 5 at Alamo Dr. at Marshall Rd&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0034494,38.3434583,0
@@ -481,7 +481,7 @@
         <name>Browns Valley Open Space: Drakes Point/Old Rocky Trailhead
 </name>
         <description>14min walk from City Coach 6 at Brown St. and Markham Ave&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9810719,38.3774101,0
@@ -491,7 +491,7 @@
       <Placemark>
         <name>Skyline Wilderness Park: River-to-Ridge Trailhead</name>
         <description>11min walk from Vine 10/11 at Soscol Ave at Magnolia Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2716902,38.270009,0
@@ -501,7 +501,7 @@
       <Placemark>
         <name>Bothe-Napa Valley State Park</name>
         <description>0min walk from Vine 10 at Bothe State Park</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.525833,38.553371,0
@@ -511,7 +511,7 @@
       <Placemark>
         <name>Oat Hill Mine Trailhead</name>
         <description>12min walk from Vine 11 at Hwy 29 at Brannan St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5771534,38.5892346,0
@@ -522,7 +522,7 @@
         <name>Cloverdale River Park
 </name>
         <description>10min walk from Sonoma County Transit 60 at Cloverdale City Hall &amp; Plaza</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -123.0089675,38.8085401,0
@@ -532,7 +532,7 @@
       <Placemark>
         <name>Sunset Beach River Park</name>
         <description>8min walk from Sonoma County Transit 20 at River Rd &amp; Westside Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.9349363,38.5020377,0
@@ -542,7 +542,7 @@
       <Placemark>
         <name>Ragle Ranch Park</name>
         <description>0min walk from Sonoma County Transit 24 at Ragle Park - Ragle Rd &amp; Covert Ln&lt;br&gt;14min walk from Sonoma County Transit 20/26 at Healdsburg Ave &amp; Murphy Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.8458676,38.4044738,0
@@ -552,7 +552,7 @@
       <Placemark>
         <name>Laguna de Santa Rosa Trail</name>
         <description>9min walk from Sonoma County Transit 20 at Hwy 12 &amp; Morris St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.8117633,38.4060436,0
@@ -562,7 +562,7 @@
       <Placemark>
         <name>Joe Rodota Trail</name>
         <description>0min walk from Sonoma County 20/24/26 at Petaluma Ave &amp; Abbott</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.8221029,38.4004459,0
@@ -573,7 +573,7 @@
         <name>Howarth Park
 </name>
         <description>0min from Santa Rosa CityBus 8 at Sonoma Ave &amp; Summerfield Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6683869,38.4498337,0
@@ -584,7 +584,7 @@
         <name>Spring Lake Park: Stonehenge Dr
 </name>
         <description>14min from Santa Rosa CityBus 8 at Summerfield Rd at Hoen Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6516128,38.4450221,0
@@ -595,7 +595,7 @@
         <name>Spring Lake Park: Parktrail Dr
 </name>
         <description>11min walk from Santa Rosa CityBus 8 at Summerfield Rd at Shade Tree Ln</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6523578,38.4407844,0
@@ -606,7 +606,7 @@
         <name>Spring Lake Park: Carissa Ave
 </name>
         <description>9min from Santa Rosa CityBus 8 at Summerfield Rd at Carissa Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6533698,38.437107,0
@@ -617,7 +617,7 @@
         <name>Howarth Park: Montgomery Dr
 </name>
         <description>2min from Sonoma County Transit 34/Santa Rosa Citybus 4/4B at Montgomery Dr at Summerfield Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6710018,38.4538413,0
@@ -627,7 +627,7 @@
       <Placemark>
         <name>Trione-Annadel State Park: Cobblestone Trailhead</name>
         <description>9min walk from Sonoma County Transit 30/34 at Hwy 12 &amp; Los Alamos</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6386565,38.456596,0
@@ -638,7 +638,7 @@
         <name>Carolyn Day Trail
 </name>
         <description>2min walk from Sonoma County Transit 30 at Arnold Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5232703,38.3529327,0
@@ -649,7 +649,7 @@
         <name>Sonoma County Regional Park: Arnold Dr
 </name>
         <description>4min walk from Sonoma County Transit 30 at Arnold Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5218648,38.3523732,0
@@ -660,7 +660,7 @@
         <name>Sonoma County Regional Park: Carmel Ave
 </name>
         <description>5min walk from Sonoma County Transit 30 at Arnold Dr &amp; Warm Springs Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5240739,38.3606091,0
@@ -671,7 +671,7 @@
         <name>Maxwell Farms Regional Park
 </name>
         <description>0min from Sonoma County Transit 30/34 at Verano Ave (outside FAHA)</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4808773,38.302843,0
@@ -681,7 +681,7 @@
       <Placemark>
         <name>Montini Open Space: Sonoma Overlook Trail</name>
         <description>11min walk from Sonoma County Transit 34/30X/40/32/30 at Sonoma Plaza</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4572497,38.2996142,0
@@ -691,7 +691,7 @@
       <Placemark>
         <name>Point Reyes National Seashore: Bear Valley Trailhead</name>
         <description>0min walk to Marin Transit 68 at Bear Valley Visitor Center</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.7997964,38.0396499,0
@@ -702,7 +702,7 @@
         <name>Samuel P Taylor State Park
 </name>
         <description>0min from Marin Transit 68 at Sir Francis Drake Blvd &amp; Samuel P Taylor Park</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.729507,38.019627,0
@@ -712,7 +712,7 @@
       <Placemark>
         <name>Gary Giacomini: Candelero Trail</name>
         <description>12min walk from Marin Transit 68 at Sir Francis Drake Blvd &amp; Tamal Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.682675,38.0128694,0
@@ -722,7 +722,7 @@
       <Placemark>
         <name>Loma Alta Preserve: Glen Fire Road Trailhead</name>
         <description>10min walk from Marin Transit 68/228 at Sir Francis Drake Blvd &amp; Olema Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6046557,38.005469,0
@@ -733,7 +733,7 @@
         <name>Natalie Coffin Greene Park: Ross Trail
 </name>
         <description>14min walk from Marin Transit 22 at Sir Francis Drake Blvd &amp; Lagunitas Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5687424,37.961793,0
@@ -744,7 +744,7 @@
         <name>King Mountain Preserve: Citron Fire Road
 </name>
         <description>12min walk from Marin Transit 22 at Magnolia Ave &amp; Skylark Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5445774,37.9412542,0
@@ -755,7 +755,7 @@
         <name>King Mountain Preserve: Citron Fire Road
 </name>
         <description>8min walk from Marin Transit 22 at Magnolia Av &amp; Ward St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5390942,37.9384334,0
@@ -766,7 +766,7 @@
         <name>Baltimore Canyon Regional Preserve: Piedmont Trail
 </name>
         <description>7min walk from Marin Transit 22 at Magnolia Av &amp; Madrone Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.538758,37.9290444,0
@@ -776,7 +776,7 @@
       <Placemark>
         <name>Blithedale Summit Regional Preserve: Blithedale Loop Trailhead</name>
         <description>13min walk from Marin Transit 22 at Redwood Av &amp; Montecito Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5372603,37.9240346,0
@@ -786,7 +786,7 @@
       <Placemark>
         <name>Horse Hill Preserve</name>
         <description>12min walk from Marin Transit 17 at E Blithedale Ave &amp; Tower Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5162286,37.9080894,0
@@ -797,7 +797,7 @@
         <name>Tiburon Open Space
 </name>
         <description>12min walk from Marin Transit 219 at Tiburon Blvd &amp; Gilmartin Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4716289,37.8905981,0
@@ -808,7 +808,7 @@
         <name>Dipsea Trailhead
 </name>
         <description>8min walk from Marin Transit 17 at Mill Valley Depot</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5545479,37.9049051,0
@@ -819,7 +819,7 @@
         <name>Mount Burdell: Dwarf Oak Trail Trailhead
 </name>
         <description>7min walk from Marin Transit 251 at San Marin High School</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.614196,38.119507,0
@@ -829,7 +829,7 @@
       <Placemark>
         <name>O&#8217;Hair Park</name>
         <description>12min walk from Marin Transit 251 at San Marin High School</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6101678,38.1161749,0
@@ -840,7 +840,7 @@
         <name>Indian Valley Preserve: Indian Valley College
 </name>
         <description>12min walk from Marin Transit 251/257 at Indian Valley College</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5817464,38.0728435,0
@@ -851,7 +851,7 @@
         <name>Loma Verde Preserve: Chicken Shack Fire Road
 </name>
         <description>7min walk from Marin Transit&#160; 35/71 at Alameda del Prado Bus Pad</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5340888,38.0481693,0
@@ -861,7 +861,7 @@
       <Placemark>
         <name>Lucas Valley Preserve: Queenstone Fire Road Trailhead</name>
         <description>14min walk from Marin Transit 257 at Las Gallinas Av &amp; Miller Creek Rd&lt;br&gt;20min walk from Marin Transit 35/49 at Marinwood Bus Pad</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5499154,38.0341713,0
@@ -872,7 +872,7 @@
         <name>Santa Venetia Marsh Preserve
 </name>
         <description>11min walk from Marin Transit 233 at N San Pedro Rd &amp; La Pasada Way</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5153775,38.0182099,0
@@ -882,7 +882,7 @@
       <Placemark>
         <name>Terra Linda: Sleepy Hollow Ridge</name>
         <description>14min walk from Marin Transit 257/245 at Manuel T Freitas Pkwy &amp; Montecillo</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5687621,38.0071604,0
@@ -893,7 +893,7 @@
         <name>San Pedro Mountain: Woodoaks Trailhead
 </name>
         <description>2min walk from Marin Transit 233 at N San Pedro Rd &amp; Woodoaks Dr&lt;br&gt;14min walk from Marin Transit 35/49 at Civic Center Dr &amp; N San Pedro Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5204723,38.0015823,0
@@ -904,7 +904,7 @@
         <name>San Pedro Mountain: San Pablo Ave
 </name>
         <description>9min walk from Marin Transit 35 at Civic Center Dr &amp; N San Pedro Rd &lt;br&gt;16min walk from Marin Transit 71 at Hwy 101 @ N San Pedro Rd Bus Pad</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5283665,37.9946109,0
@@ -914,7 +914,7 @@
       <Placemark>
         <name>Panoramic Hwy &amp; Sequoia Valley Rd</name>
         <description>0min walk from Marin Transit 61 at Panoramic Hwy &amp; Sequoia Valley Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5570173,37.8933802,0
@@ -924,7 +924,7 @@
       <Placemark>
         <name>Dipsea Trailhead</name>
         <description>8min walk from Marin Transit 61 at Panoramic Hwy &amp; Sequoia Valley Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.561352,37.8972258,0
@@ -934,7 +934,7 @@
       <Placemark>
         <name>Muir Woods: Panoramic Trail</name>
         <description>6min walk from Marin Transit 61 at Panoramic Hwy &amp; Park Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5731924,37.9054954,0
@@ -945,7 +945,7 @@
         <name>Mount Tamalpais: Hog Back Rd
 </name>
         <description>1min walk from Marin Transit 61 at Panoramic Hwy &amp; Edgewood Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5774005,37.9109706,0
@@ -955,7 +955,7 @@
       <Placemark>
         <name>Mount Tamalpais: Bootjack Parking Lot</name>
         <description>0min walk from Marin Transit 61 at 895 Panoramic Hwy Bootjack Parking Lot</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.60179,37.90913,0
@@ -966,7 +966,7 @@
         <name>Mount Tamalpais: Matt Davis Trailhead
 </name>
         <description>4min walk from Marin Transit 61 at 4813 Shoreline Hwy</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6373713,37.8996871,0
@@ -976,7 +976,7 @@
       <Placemark>
         <name>Bolinas Beach</name>
         <description>8min walk from Marin Transit 61 at Brighton Ave &amp; Wharf Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6824845,37.9068517,0
@@ -986,7 +986,7 @@
       <Placemark>
         <name>Capay Open Space Park</name>
         <description>8min walk to Yolobus 215 at Hwy 16 &amp; Rd 85</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0466959,38.7125674,0
@@ -996,7 +996,7 @@
       <Placemark>
         <name>Marin Headlands: Morning Sun Trailhead</name>
         <description>0min walk from Golden Gate Transit 150 at Spencer Ave Bus Pad</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4935589,37.8529634,0
@@ -1007,7 +1007,7 @@
         <name>Dry Creek Pioneer Regional Park: Dry Creek Staging Area
 </name>
         <description>4min walk from AC Transit 99 / Union City Transit 4 at Mission BL &amp; Whipple Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0180479,37.6076319,0
@@ -1018,7 +1018,7 @@
         <name>Bay Area Ridge Trail: Ascot Pkwy
 </name>
         <description>12min walk from SolTrans 6 at Georgia St &amp; Southport Way&lt;br&gt;20min walk from SolTrans 7A/7B at Columbus Pkwy &amp; Ascot Pkwy&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1887539,38.1040882,0
@@ -1029,7 +1029,7 @@
         <name>Glen Cove Waterfront Park: Shoall Dr West
 </name>
         <description>6min walk from SolTrans 8 at Glen Cove Pkwy &amp; S Regatta Dr&lt;br&gt;28min walk from SolTrans 3 at Old Glen Cove Rd &amp; Fulton Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2076656,38.068684,0
@@ -1039,7 +1039,7 @@
       <Placemark>
         <name>Anderson Marsh State Historic Park</name>
         <description>3min walk from Lake Transit 3 at Job Zone</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6134692,38.9204097,0
@@ -1050,7 +1050,7 @@
         <name>Chabot Park Main Entrance
 </name>
         <description>10min walk from AC Transit 34/35 at MacArthur and Estudillo</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1312949,37.7313952,0
@@ -1061,7 +1061,7 @@
         <name>Niles Community Park
 </name>
         <description>6min walk from AC Transit 216 at 37395 Niles Blvd&lt;br&gt;&lt;br&gt;access to Quarry Lakes via Alameda Creek Trail</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9805998,37.5749379,0
@@ -1072,7 +1072,7 @@
         <name>Leona Canyon Trailhead
 </name>
         <description>11min walk from AC Transit 54 at Campus Dr &amp; Merritt College</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1636536,37.7878935,0
@@ -1083,7 +1083,7 @@
         <name>Vargas Plateau: Cliff Trail
 </name>
         <description>12min walk from AC Transit 217 at Walnut Av &amp; Mission Blvd&lt;br&gt;14min walk from AC Transit 232 at Walnut Av &amp; Overacker Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9554595,37.5698629,0
@@ -1093,7 +1093,7 @@
       <Placemark>
         <name>Guadalupe Oak Grove Park</name>
         <description>5min from VTA 64B at Meridian &amp; Oakglen&lt;br&gt;(thank you Nick!)</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.8790983,37.2329776,0
@@ -1103,7 +1103,7 @@
       <Placemark>
         <name>Coyote Creek Trail: Hellyer Ave Trailhead</name>
         <description>11min walk from VTA 70/72/73 at Senter &amp; Hellyer / Senter &amp; Forestbrook&lt;br&gt;&lt;br&gt;Paved trail. South of here, the trail gets fairly remote for some time.&lt;br&gt;&lt;br&gt;Thanks Nick!</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.8143192,37.2840903,0
@@ -1113,7 +1113,7 @@
       <Placemark>
         <name>Coyote Creek Trail: Tully Library</name>
         <description>0min walk from VTA 26 at Tully and Galveston&lt;br&gt;&lt;br&gt;Paved trail.&lt;br&gt;&lt;br&gt;Beginning of contiguous segment of Coyote Creek Trail.</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.8422787,37.3112573,0
@@ -1124,7 +1124,7 @@
         <name>Mount Wanda &amp; Carquinez Strait: Hulet Hornbeck Trail
 </name>
         <description>10min walk from County Connection 16/316 at Alhambra Ave and J St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1339536,37.9907851,0
@@ -1135,7 +1135,7 @@
         <name>Carquinez Strait Regional Shoreline: Rankin Park Trail
 </name>
         <description>7min walk from County Connection 16/28/316 at Berrellesa St And Marina Vista Ave And Escobar St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1437168,38.0166969,0
@@ -1145,7 +1145,7 @@
       <Placemark>
         <name>Carquinez Strait: Nejedly Staging Area</name>
         <description>13min walk from County Connection 16/28/316 at Berrellesa St And Marina Vista Ave And Escobar St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1474874,38.0179773,0
@@ -1156,7 +1156,7 @@
         <name>Carquinez Strait: F St
 </name>
         <description>5min walk from County Connection 16/28/316 at Alhambra Ave &amp; F St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1368206,38.0018039,0
@@ -1166,7 +1166,7 @@
       <Placemark>
         <name>Lime Ridge Open Space: Treat Boulevard</name>
         <description>5min walk from County Connection 15 at Treat Blvd and Navaronne Way</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0088702,37.947999,0
@@ -1177,7 +1177,7 @@
         <name>Briones to Mount Diablo Regional Trail
 </name>
         <description>9min walk from County Connection 1/301 at Montego And Satellite Senior Homes</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0393663,37.908509,0
@@ -1188,7 +1188,7 @@
         <name>Maurice Thorner Memorial Preserve
 </name>
         <description>7min walk from Marin Transit 68 at Sir Francis Drake Blvd &amp; Lagunitas School Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.673275,38.0178003,0
@@ -1199,7 +1199,7 @@
         <name>French Ranch Preserve
 </name>
         <description>2min walk from Marin Transit 68 at Sir Francis Drake Blvd &amp; Lagunitas School Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6783463,38.0169408,0
@@ -1209,7 +1209,7 @@
       <Placemark>
         <name>Mt Tamalpais State Park: Pantoll Campground</name>
         <description>0min walk from Marin Transit 61 at Panoramic Hwy &amp; Pan Toll Ranger Station</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.6038858,37.9039927,0
@@ -1219,7 +1219,7 @@
       <Placemark>
         <name>Water Dog Lake South Trailhead</name>
         <description>6min walk from SamTrans 260 at Continentals Way &amp; Lyall Way&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.300484,37.5107123,0
@@ -1229,7 +1229,7 @@
       <Placemark>
         <name>Wildcat Canyon: Rifle Range Road Trailhead</name>
         <description>13min walk from AC Transit 7 at Arlington &amp; Rifle Range Road</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2959367,37.9324669,0
@@ -1240,7 +1240,7 @@
         <name>Notch Trail
 </name>
         <description>4min walk from SamTrans 121/141 at Skyline College Transit Center</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4650602,37.6284175,0
@@ -1251,7 +1251,7 @@
         <name>Mussel Rock Park
 </name>
         <description>11min walk from SamTrans 110/112 at Palmetto Ave &amp; Westline Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4944364,37.6667702,0
@@ -1262,7 +1262,7 @@
         <name>Avalon Canyon
 </name>
         <description>4min walk from SamTrans 110 at Skyline Dr &amp; Highland Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4915233,37.6810128,0
@@ -1273,7 +1273,7 @@
         <name>Garin: CSU East Bay / Harder Rd 
 </name>
         <description>5min from AC Transit 60 at East Loop Rd &amp; CSU East Bay Recreation &amp; Wellness</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0505775,37.6512947,0
@@ -1284,7 +1284,7 @@
         <name>Willow Camp Fire Road
 </name>
         <description>12min walk from Marin Transit 61 at 4813 Shoreline Hwy</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.642347,37.9045837,0
@@ -1294,7 +1294,7 @@
       <Placemark>
         <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
         <description>2min walk from AC Transit line 36 at Derby &amp; Claremont</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2440495,37.8625751,0
@@ -1305,7 +1305,7 @@
         <name>Big Break Regional Shoreline
 </name>
         <description>10min from TriDelta 373 at Main St &amp; Big Break Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.7321532,38.0087251,0
@@ -1316,7 +1316,7 @@
         <name>Alameda Creek: Stables Staging Area
 </name>
         <description>6min from Union City Transit 1 at Union City Blvd at Rocklin Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0701513,37.5663311,0
@@ -1327,7 +1327,7 @@
         <name>Coyote Hills: Tuibun Trail
 </name>
         <description>7min to AC Transit 281 at Ardenwood Blvd &amp; Commerce Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0677568,37.555739,0
@@ -1337,7 +1337,7 @@
       <Placemark>
         <name>Bay Point Regional Shoreline</name>
         <description>12min from Tri Delta 374 at Port Chicago Hwy &amp; Pacific Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9632274,38.0398973,0
@@ -1347,7 +1347,7 @@
       <Placemark>
         <name>Stoneman Trailhead</name>
         <description>7min walk from Tri Delta 370 at West Leland Rd &amp; John Henry Johnson Pky</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9200858,38.0092867,0
@@ -1358,7 +1358,7 @@
         <name>San Pedro Mountain: Corkscrew Trail
 </name>
         <description>5min walk from Marin Transit 233 at Vendola Dr &amp; Estancia Way</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.506385138335,38.0126508057111,0
@@ -1368,7 +1368,7 @@
       <Placemark>
         <name>Orchard Trailhead</name>
         <description>4min from Marin Transit 17 at Drake Av &amp; Cole Dr&lt;br&gt;10min from Golden Gate Transit 130, 150, Marin Transit 61 at Marin City Hub</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5098264,37.8668617,0
@@ -1379,7 +1379,7 @@
         <name>Pacheco Fire Road
 </name>
         <description>4min from Marin Transit 17 at Drake Ave &amp; Pacheco St&lt;br&gt;10min&#160;from Golden Gate Transit 130, 150, Marin Transit 61 at Marin City Hub</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.5148894,37.869854,0
@@ -1390,7 +1390,7 @@
         <name>SCA Trail
 </name>
         <description>11min walk from Golden Gate Transit 130 at US-101 Off-Ramp/Sausalito Lateral Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4823853,37.8321963,0
@@ -1401,7 +1401,7 @@
         <name>Panoramic Trail
 </name>
         <description>0min from Marin Transit 61 at Panoramic Hwy &amp; Ridge Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.567703,37.901028,0
@@ -1411,7 +1411,7 @@
       <Placemark>
         <name>Baquiano Trailhead</name>
         <description>8min walk from SamTrans 110 at Crespi Dr &amp; Fassler Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4786584,37.5994629,0
@@ -1421,7 +1421,7 @@
       <Placemark>
         <name>Sign Hill Trailhead</name>
         <description>12min from SamTrans 130, South City Shuttle Blue, South City Shuttle Green at Grand Ave &amp; Magnolia Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.4198116,37.662436,0
@@ -1431,7 +1431,7 @@
       <Placemark>
         <name>Alviso Marina County Park</name>
         <description>8min walk from VTA 59 at Gold &amp; Taylor</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.9794782,37.4304232,0
@@ -1441,7 +1441,7 @@
       <Placemark>
         <name>Faber-Laumeister Trail</name>
         <description>6min from SamTrans 280 at Pulgas Ave &amp; Garden St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1265483,37.4686322,0
@@ -1452,7 +1452,7 @@
         <name>Coyote Creek Trail: Yerba Buena Avenue Trailhead
 </name>
         <description>3min walk from VTA 72 at Yerba Buena &amp; Sunbrook&lt;br&gt;&lt;br&gt;Paved trail.&lt;br&gt;&lt;br&gt;Thanks Tevin!</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.8191914,37.2899182,0
@@ -1463,7 +1463,7 @@
         <name>Hayward Reigonal Shoreline
 </name>
         <description>14min from AC Transit 86 at Cabot Blvd &amp; W Winton Av</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1451005,37.6474232,0
@@ -1474,7 +1474,7 @@
         <name>San Francisco Bay Trail: Marina Park
 </name>
         <description>2min from AC Transit 35 at Fairway Dr &amp; Monarch Bay Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1851602,37.6926164,0
@@ -1485,7 +1485,7 @@
         <name>Oyster Bay Regional Shoreline
 </name>
         <description>12min from AC Transit 35 at Aurora Dr &amp; Sitka St</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1923339,37.7094493,0
@@ -1495,7 +1495,7 @@
       <Placemark>
         <name>Big Break Regional Shoreline: Marsh Creek Regional Trail</name>
         <description>14min walk from Tri Delta 373 at Oakley Park n Ride</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.6953555,37.9977813,0
@@ -1505,7 +1505,7 @@
       <Placemark>
         <name>Contra Loma: Delta de Anza Trail</name>
         <description>9min walk from Tri Delta 375 / 376 at Lone Tree Wy &amp; James Donlon Blvd&lt;br&gt;or use Tri Delta - Tri My Ride on-demand shuttle: https://trideltatransit.com/tri-myride/</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -121.8125784,37.9795733,0
@@ -1515,7 +1515,7 @@
       <Placemark>
         <name>Redwood Regional Park / Joaquin Miller Park: Redwood Bowl Staging Area</name>
         <description>0min walk from AC Transit 31 at Chabot Observatory</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1807166,37.8183545,0
@@ -1525,7 +1525,7 @@
       <Placemark>
         <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Crockett Pl</name>
         <description>0min walk from AC Transit line 31 at Joaquin Miller Rd &amp; Crockett Pl</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1809577,37.8087476,0
@@ -1535,7 +1535,7 @@
       <Placemark>
         <name>Joaquin Miller Park: Bishops Walk</name>
         <description>0min from AC Transit 31 at Joaquin Miller Rd &amp; Sanborn Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1934178,37.8105948,0
@@ -1546,7 +1546,7 @@
         <name>Joaquin Miller Park: Palos Colorados Trailhead
 </name>
         <description>12min walk from AC Transit 31 at Lincoln Av &amp; Monterey Blvd&lt;br&gt;15min walk from AC Transit 18 at Mountain Blvd &amp; Snake Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.20131,37.8159124,0
@@ -1556,7 +1556,7 @@
       <Placemark>
         <name>Bridgeview Trailhead</name>
         <description>8min walk from AC Transit 33 at Park Blvd &amp; Leimert Blvd&lt;br&gt;19min walk from AC Transit 31 at Lincoln Av &amp; Tiffin Rd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2118874,37.8134779,0
@@ -1566,7 +1566,7 @@
       <Placemark>
         <name>Hayward Regional Shoreline: Eden Landing</name>
         <description>2min from AC Transit 86 at Eden Landing Rd &amp; Investment Blvd</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1228866,37.6217553,0
@@ -1576,7 +1576,7 @@
       <Placemark>
         <name>Dunsmuir Hills?: The San Leandro Trails</name>
         <description>6min from AC Transit 34/35 at MacArthur Blvd &amp; Dutton Av (from Foothill Sq / toward BART)&lt;br&gt;3min from AC Transit 34/35 at Marlow Dr &amp; Revere Av (from BART / toward Foothill Sq)</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1396889,37.7372084,0
@@ -1586,7 +1586,7 @@
       <Placemark>
         <name>Joaquin Miller / Roberts Recreation Area</name>
         <description>0min walk from AC Transit 31 at Skyline Blvd &amp; Roberts Park</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1756987,37.8125,0
@@ -1596,7 +1596,7 @@
       <Placemark>
         <name>Crockett Hills Trailhead</name>
         <description>7min walk from WestCAT 11 at John Swett High School</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.2212669,38.0470793,0
@@ -1606,7 +1606,7 @@
       <Placemark>
         <name>Lake Chabot: Crest Ave</name>
         <description>14min walk from AC Transit 28 at Miramar Av &amp; Rolando Dr</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1061277,37.7098093,0
@@ -1616,7 +1616,7 @@
       <Placemark>
         <name>Ardenwood Historic Farm</name>
         <description>10min from AC Transit 281 at Ardenwood Blvd &amp; Ardenwood Ter</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.0508424,37.5564349,0
@@ -1626,10 +1626,180 @@
       <Placemark>
         <name>Bedwell Bayfront Park</name>
         <description>4min walk from SamTrans 270 at 3719 Haven Ave</description>
-        <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
             -122.1723874,37.4911213,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mendocino Headlands State Park</name>
+        <description>5min from Mendocino Transit 60 / 65 in downtown Mendocino</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.8062341,39.3089706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Caspar Headlands State Beach: Caspar Beach</name>
+        <description>0min from Mendocino Transit 60 / 65 at Caspar Beach</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.816132,39.359566,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Caspar Headlands State Beach</name>
+        <description>0min from Mendocino Transit 60 at Caspar</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.814507,39.364792,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jug Handle State Natural Reserve</name>
+        <description>12min from Mendocino Transit 65 at Caspar&lt;br&gt;7min from Mendocino Transit 60 at Caspar</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.8162706,39.3725219,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glass Beach</name>
+        <description>7min from Mendocino Transit 65 at Denny's</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.8134991,39.4526063,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Standish-Hickey State Recreation Area</name>
+        <description>5min from Humboldt Transit Agency North State Express (NSE101) / Gold Runner 7 at Leggett - Peg House</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7267195,39.8776688,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Humboldt Redwoods State Park: Franklin K. Lane Grove</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;5min from HTA Southern Humboldt Transit - Ave of Giants (Phillipsville Fire Department)</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7860828,40.2150022,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Humboldt Redwoods State Park: Stephens Grove Loop Trail / access to Dry Creek Trail</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;2min from HTA South Humboldt Intercity at Ave of Giants &amp; School Rd - Miranda</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.8241481,40.2378811,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Humboldt Redwoods State Park: Burlington-Weott Trail</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;5min from HTA South Humboldt Intercity at Weott Off Ramp</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.9256417,40.3222144,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Humboldt Redwoods State Park: Founders Grove</name>
+        <description>DROP OFF ONLY&lt;br&gt;MONDAY TO SATURDAY SERVICE&lt;br&gt;0min from HTA South Humboldt Intercity at Founders Grove</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.9239981,40.3524839,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trinidad Head Trail</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;14min from HTA Redwood Transit System at&#160;Main St &amp; View Ave - Trinidad&lt;br&gt;19min from Redwood Coast Transit 20 at Trinidad Park and Ride</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.1486732,41.0570704,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sue-meg State Park</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;0min from Redwood Coast Transit 20 at&#160;Sue-meg State Park</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.1554365,41.1347056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Redwood National and State Parks - Thomas H. Kuchel Visitor Center</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;0min from Redwood Coast Transit 20 at Kuchel Visitor Center</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.0909954,41.2868353,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Prairie Creek Redwoods State Park - Visitor Center</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;Cathedral Trees Trail: 0min&lt;br&gt;Prairie Creek Visitor Center: 3min&lt;br&gt;Elk Prairie Campground: 11min&lt;br&gt;&lt;br&gt;Bus stop for Redwood Coast Transit 20 at Prairie Creek SP Visitor Center on Newton B. Drury Scenic Pkwy</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.020887,41.3637877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Redwood State &amp; National Parks: Hidden Beach Trailhead</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;2min from Redwood Coast Transit 20 at Trees of Mystery</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.0880579,41.5842877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Redwood State and National Parks: Yurok Loop Trail</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;0min from Redwood Coast Transit 20 at Wilson Creek Beach Rest Area</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.0997769,41.594556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Redwood State &amp; National Parks: Howland Hill Trailhead</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;&lt;br&gt;12min from Redwood Coast Transit 4 at&#160;Howland Hill &amp; Mathews Street Elk Valley Rancheria</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.1476892,41.7567163,0
           </coordinates>
         </Point>
       </Placemark>

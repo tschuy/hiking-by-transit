@@ -20,6 +20,15 @@
         </Icon>
       </IconStyle>
     </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
     <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
         <color>ff7e231a</color>
@@ -72,16 +81,6 @@
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-labelson">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>0.5</scale>
-        <Icon>
-          <href>/assets/pin.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels" />
       </IconStyle>
     </Style>
     <Folder>
@@ -432,6 +431,56 @@
         <Point>
           <coordinates>
             -122.1341678,37.7443795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Greenwood State Beach</name>
+        <description>Once-daily Mendocino Transit 75</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7176665,39.1279239,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Navarro River Redwoods State Park: Navarro Beach</name>
+        <description>Once-daily Mendocino Transit Authority Route 75</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7482255,39.1963901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Van Damme State Park Visitor Center</name>
+        <description>Mendocino Transit 60 at Little River</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7886261,39.2751342,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jedidiah Smith Redwoods State Park: Campground and Day Use</name>
+        <description>at Redwood Coast Transit 199 at Jedidiah Smith Campground Day Use</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.0847552,41.7979797,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jedediah Smith Redwoods State Park: Hiouchi Visitor Center</name>
+        <description>at Redwood Coast Transit 199 at Hiouchi Visitor Center</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.0818722,41.7967606,0
           </coordinates>
         </Point>
       </Placemark>

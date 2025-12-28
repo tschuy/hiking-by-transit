@@ -83,9 +83,12 @@ Current agencies I've surveyed include:
 * Bear Transit
 * Union City Transit
 * SolTrans
+* Mendocino Transit
+* Humboldt Transit Authority
+* Redwood Coast Transit
 
 The next agencies I plan to look at are:
-* Mendocino Transit
 * Santa Cruz Metro
 * Monterey-Salinas Transit
+* Trinity Transit
 * Amtrak buses

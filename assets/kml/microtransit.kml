@@ -20,6 +20,15 @@
         </Icon>
       </IconStyle>
     </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
     <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
         <color>ff7e231a</color>
@@ -72,16 +81,6 @@
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-labelson">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>0.5</scale>
-        <Icon>
-          <href>/assets/pin.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels" />
       </IconStyle>
     </Style>
     <Folder>
@@ -186,6 +185,36 @@
         <Point>
           <coordinates>
             -122.7578155,38.5184665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Samoa Dunes Recreation Area</name>
+        <description>20min walk from Humboldt Flex at New Navy Base Rd &amp; Lincoln Ave, Fairhaven, CA</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.2178275,40.7701271,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Samoa Beach</name>
+        <description>Humboldt Flex</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.1991726,40.8062813,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ma-le'l Dunes South Unit</name>
+        <description>5min from Humboldt Flex at Midway Ct, Arcata, CA</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -124.1594607,40.862491,0
           </coordinates>
         </Point>
       </Placemark>

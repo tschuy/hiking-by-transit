@@ -20,6 +20,15 @@
         </Icon>
       </IconStyle>
     </Style>
+    <Style id="icon-1532-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>0.5</scale>
+        <Icon>
+          <href>/assets/pin.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
     <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
         <color>ff7e231a</color>
@@ -68,15 +77,6 @@
     <Style id="icon-1719-F57C00-labelson">
       <IconStyle>
         <color>ff007cf5</color>
-        <scale>0.5</scale>
-        <Icon>
-          <href>/assets/pin.png</href>
-        </Icon>
-      </IconStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-labelson">
-      <IconStyle>
-        <color>ffd18802</color>
         <scale>0.5</scale>
         <Icon>
           <href>/assets/pin.png</href>
@@ -933,6 +933,36 @@
         <Point>
           <coordinates>
             -122.2080357,38.0540812,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gualala Point Regional Park</name>
+        <description>25min from once-daily Mendocino Transit 95 / five-days-a-week Mendocino Transit 75 at Gualala Sundstrom Mall</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.5268402,38.7605237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Big River Trail&#160;</name>
+        <description>22min walk from Mendocino Transit 60 / 65 at Main St &amp; Lansing St, Mendocino</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.7854938,39.3030125,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>John B. Dewitt Redwoods State Natural Reserve</name>
+        <description>MONDAY TO SATURDAY SERVICE&lt;br&gt;30min from HTA South Humboldt Intercity at Redwood Dr &amp; Briceland Rd - Redway</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.8396639,40.1228888,0
           </coordinates>
         </Point>
       </Placemark>
