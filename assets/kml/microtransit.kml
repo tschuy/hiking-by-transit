@@ -218,6 +218,186 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Cowell-Purisima Coastal Trail</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance:&#160;https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4265897,37.4223148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cowell-Purisima Coastal Trailhead</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4159546,37.3961576,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>La Honda Creek Preserve:&#160;Driscoll Ranch Trailhed</name>
+        <description>PERMIT REQUIRED: Apply for no-fee permit online at&#160;https://www.openspace.org/preserves/la-honda-creek&lt;br&gt;&lt;br&gt;SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3097,37.3133686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sears Ranch Road Parking Area</name>
+        <description>Request ride to/from La Honda Post Office. Walk 20min up Sears Ranch Rd to trailhead.&lt;br&gt;&lt;br&gt;SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2799331,37.3263729,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sam McDonald Park: Town Fire Road Trailhead</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2650879,37.2960682,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Memorial County Park</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.2911771,37.2762626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Butano State Park: Visitor Center</name>
+        <description>You may be required to book to the entrance turnoff at Cloverdale Rd? Unclear on service zone.&lt;br&gt;&lt;br&gt;SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3395143,37.2020778,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>A&#241;o Nuevo State Park</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3362598,37.1393634,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gazos Creek State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3628242,37.1682202,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cloverdale Ranch: Wilbur's Watch</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.3790249,37.1831536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bean Hollow State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4093511,37.2256742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pebble Beach at Bean Hollow State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4159487,37.2359496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pescadero State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4135767,37.2597415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pescadero Beach State Park: Cabrillo Hwy S</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4122055,37.2651717,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pescadero State Park: North Parking</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.408952,37.274304,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pomponio State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4064028,37.2994774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Gregorio State Beach</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4033078,37.3229987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tunitas Creek Beach County Park</name>
+        <description>SamTrans SamCoast shared-ride service. Phone reservation required 1-7 days in advance: https://www.samtrans.com/service-info/coastside-services</description>
+        <styleUrl>#icon-1538-757575-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4003696,37.3554159,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
   </Document>
 </kml>
