@@ -1,6 +1,6 @@
 ---
 layout: hike
-title: "San Bruno: Sweeney Ridge"
+title: "San Bruno: Skyline College to Sweeney Ridge"
 tags: grassland hills wildflowers lake
 
 region: north-peninsula
@@ -20,6 +20,14 @@ travel:
     stop:
       name: Skyline College Transit Center
       link: https://maps.app.goo.gl/oyQLCYn78ZfdproN7
+  return:
+    time: 12min
+    routes:
+    - name: SamTrans 141
+      link: https://www.samtrans.com/routes/141
+    stop:
+      name: Riverside Dr & Sneath Ln
+      link: https://maps.app.goo.gl/tQY5Y5QC1P8KfJ6x5
 
 trailhead:
   name: Notch Trail
