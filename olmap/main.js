@@ -83,7 +83,8 @@ const trailhead_kml_layers = {};
   "rail-ferry-far",
   "rail-ferry",
   "shuttles",
-  "microtransit"
+  "microtransit",
+  "call-ahead"
 ].forEach((e) => trailhead_kml_layers[e] = new VectorLayer({
   name: e,
   source: new VectorSource({

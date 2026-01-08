@@ -129,6 +129,9 @@ html {
 #microtransit {
     accent-color: #757575;
 }
+#call-ahead {
+    accent-color: #BBBBBB;
+}
 
 .infobox-title {
     font-weight: bold;
