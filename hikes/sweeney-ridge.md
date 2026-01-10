@@ -3,7 +3,7 @@ layout: hike
 title: "San Bruno: Skyline College to Sweeney Ridge"
 tags: grassland hills wildflowers lake
 
-region: north-peninsula
+region: peninsula
 difficulty: moderate
 length: 4.0-7.3mi
 

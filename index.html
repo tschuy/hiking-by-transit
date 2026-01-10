@@ -131,13 +131,13 @@ hasmap: true
     {%- endfor %}
     </ul>
 
-<h3><a href="/north-peninsula/">North Peninsula Hikes</a></h3>
-  <p>The north peninsula is perhaps most known to residents outside of the immediate area for the airport, the Serramonte Mall, and its graveyards. However, its hills hold some great high-altitude coastal preserves, with windswept views of the Bay, the Pacific, and even the Farallones. <a href="/north-peninsula/">Read&nbsp;more&nbsp;»</a></p>
+<h3><a href="/peninsula/">Peninsula Hikes</a></h3>
+  <p>The Peninsula – here used to mean San Mateo County – stretches from the graveyards of Colma down to the opulent estate of Fioli, and from the windswept coastal plains of Pacifica to deep in the heart of the Santa Cruz Mountains' redwoods to the tidal marshland of the Bay. Discover views of San Francisco, of the vast Pacific Ocean, and towering redwood trees. <a href="/peninsula/">Read&nbsp;more&nbsp;»</a></p>
   <ul>
   {%- assign pages_list = site.pages | sort:"url" -%}
   {%- for node in pages_list -%}
       {%- if node.title != null -%}
-      {% if node.region == "north-peninsula" %}
+      {% if node.region == "peninsula" %}
       <li class="hike" data-difficulty="{{ node.difficulty }}" data-tags="{{ node.tags }}"><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
       {%- endif -%}
       {%- endif -%}

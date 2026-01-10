@@ -1,9 +1,9 @@
 ---
 layout: hike
-title: "Sweeney Ridge: Mori Point to Terra Nova"
+title: "Pacifica: Mori Point to Terra Nova via Sweeney Ridge"
 tags: grassland hills wildflowers
 
-region: north-peninsula
+region: peninsula
 difficulty: moderate
 length: 4.5mi
 
