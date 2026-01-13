@@ -62,6 +62,10 @@ If you're on your phone, I recommend opening the link below, which will temporar
 
 <hr>
 
+The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*
+
+<hr>
+
 I've surveyed most of the Bay Area's transit agencies so far; the most notable exception is Muni, which serves plenty of great hiking options inside San Francisco, plus San Bruno Mountain. I've left Muni off of the map as San Francisco's parks are not quite natural spaces in the sense of large uninterrupted spaces with few roads and little development; the city also has tons of great parks covering the place. For the best of San Francisco hiking, I've left that in the more capable hands of the Crosstown Trail, a project by the fantastic SF Parks Alliance.
 
 I try to keep up with agency route changes, but inevitably will miss some. If you see a trailhead that's accessible by transit that I've missed, or a bus I claim goes somewhere it no longer does or no longer does on weekends when I say it does, **please** contact me at the email address below.

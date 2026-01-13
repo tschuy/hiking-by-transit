@@ -1,9 +1,15 @@
 ---
 layout: default
-title: Resources
+title: Other Resources
 ---
 
 This website is by no means the end-all, be-all of getting out into nature on transit. Some other resources that I've found continually helpful for myself have been:
+
+## California transit to trails guides
+
+* [LA Transit to Trails](https://www.latransittotrails.com/): a curated guide to transit-accessible hikes around the greater Los Angeles area
+
+* [Pacific Crest Trail Association: Getting to the Trail](https://www.pcta.org/discover-the-trail/backcountry-basics/pct-transportation/): the official PCTA guide to getting to and around the trail, including rural Californian transit agencies and shuttle services
 
 ## National-level outdoors resources
 
@@ -19,6 +25,6 @@ This website is by no means the end-all, be-all of getting out into nature on tr
 
 ## General resources
 
-* [California Public Lands map](https://gis.data.ca.gov/datasets/f73858e200634ca888b19ca8c78e3aed_0/explore?location=37.856492%2C-121.985920%2C11.00): a map from CalFire showing all of the public land in the state
+* [California Protected Areas Database](https://www.mapcollaborator.org/cpad/): a map from [Greeninfo Network](https://calands.org/cpad/) showing all of the protected land in the state
 
 * [Climate Action Center - Bikes on Transit Information](https://www.climateaction.center/ebike-sfbay): Want to take your (e)bike on transit to help you go farther and see more? This site has detailed bike-friendliness information on each of the operators in the Bay Area
