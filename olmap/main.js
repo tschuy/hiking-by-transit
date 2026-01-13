@@ -111,7 +111,7 @@ const customUrl = localStorage.getItem("osmmapurl");
 const prodOSM = new OSM({
   attributions: [
     'Tiles ©<a href="https://www.thunderforest.com">Thunderforest</a>',
-    'CPAD data ©<a href="https://calands.org/cpad/">GreenInfo Network</a>',
+    // 'CPAD data ©<a href="https://calands.org/cpad/">GreenInfo Network</a>',
     'Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
   ],
   url: customUrl ? decodeURIComponent(customUrl) : 'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=d2ba8afb4a84444f878b429697465850'
@@ -128,18 +128,18 @@ const base = new TileLayer({
   source: osm,
 });
 
-const cpadAccessLayer = new TileLayer({
-  source: new TileArcGISRest({
-    url: 'https://gis.cnra.ca.gov/arcgis/rest/services/Boundaries/CPAD_AccessType/MapServer',
-    params: {
-      LAYERS: 'show:1'
-    }
-  }),
-  opacity: 0.8
-});
+// const cpadAccessLayer = new TileLayer({
+//   source: new TileArcGISRest({
+//     url: 'https://gis.cnra.ca.gov/arcgis/rest/services/Boundaries/CPAD_AccessType/MapServer',
+//     params: {
+//       LAYERS: 'show:1'
+//     }
+//   }),
+//   opacity: 0.4
+// });
 
 const map = new Map({
-  layers: [base, cpadAccessLayer, ...trails, ...Object.values(trailhead_kml_layers)],
+  layers: [base, ...trails, ...Object.values(trailhead_kml_layers)],
   target: document.getElementById('ol-map'),
   view: new View({
     center: [-13611974.488458559, 4558011.3361273315],
