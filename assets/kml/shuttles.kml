@@ -5,7 +5,7 @@
     <Style id="icon-1502-000000-labelson">
       <IconStyle>
         <color>ff000000</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -14,7 +14,7 @@
     <Style id="icon-1532-0097A7-labelson">
       <IconStyle>
         <color>ffa79700</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -23,7 +23,7 @@
     <Style id="icon-1532-0288D1-labelson">
       <IconStyle>
         <color>ffd18802</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -32,7 +32,7 @@
     <Style id="icon-1532-1A237E-labelson">
       <IconStyle>
         <color>ff7e231a</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -41,7 +41,7 @@
     <Style id="icon-1538-757575-labelson">
       <IconStyle>
         <color>ff757575</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -50,7 +50,7 @@
     <Style id="icon-1538-BDBDBD-normal">
       <IconStyle>
         <color>ffbdbdbd</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -62,7 +62,7 @@
     <Style id="icon-1538-BDBDBD-highlight">
       <IconStyle>
         <color>ffbdbdbd</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -84,7 +84,7 @@
     <Style id="icon-1716-880E4F-labelson">
       <IconStyle>
         <color>ff4f0e88</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -93,7 +93,7 @@
     <Style id="icon-1716-A52714-labelson">
       <IconStyle>
         <color>ff1427a5</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -102,7 +102,7 @@
     <Style id="icon-1719-E65100-labelson">
       <IconStyle>
         <color>ff0051e6</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>
@@ -111,7 +111,7 @@
     <Style id="icon-1719-F57C00-labelson">
       <IconStyle>
         <color>ff007cf5</color>
-        <scale>0.5</scale>
+        <scale>0.4</scale>
         <Icon>
           <href>/assets/pin.png</href>
         </Icon>

@@ -28,7 +28,7 @@ root = tree.getroot()
 styles = root.findall("./{http://www.opengis.net/kml/2.2}Document/{http://www.opengis.net/kml/2.2}Style")
 for style in styles:
     ics = style.find("{http://www.opengis.net/kml/2.2}IconStyle")
-    ics.find("{http://www.opengis.net/kml/2.2}scale").text = "0.5"
+    ics.find("{http://www.opengis.net/kml/2.2}scale").text = "0.4"
     ics.find("{http://www.opengis.net/kml/2.2}Icon/{http://www.opengis.net/kml/2.2}href").text = "/assets/pin.png"
 
 # for each KML Folder, delete all folders, copy the remaining one back in, and save to the output directory
