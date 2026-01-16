@@ -43,7 +43,7 @@ gpx: san-bruno-mountain.gpx
 park-link: https://www.smcgov.org/parks/san-bruno-mountain-state-county-park
 
 image: san-bruno-mountain.jpg
-blurb: 
+blurb: Just outside San Francisco, head up and over the chapparal slopes of San Bruno Mountain and enjoy 360° views of San Francisco, South City, and beyond.
 ---
 
 San Bruno Mountain is peculiar. In many ways, it has defined the history of San Francisco; its slopes first forced the early railroads of the area the long way around to the west, the path of today's BART trains, and then later forced the Southern Pacific to build a series of expensive tunnels to speed up trains on the slow approach into the city, the path of today's Caltrain. For commuters on 101, it rounding its eastern flank is what defines the transition between the suburban office parks of the suburbs, and the outer reaches of San Francisco.
