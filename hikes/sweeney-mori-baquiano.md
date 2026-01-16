@@ -1,6 +1,6 @@
 ---
 layout: hike
-title: "Pacifica: Mori Point to Terra Nova via Sweeney Ridge"
+title: "Sweeney Ridge: Pacifica from Mori Point to Terra Nova"
 tags: grassland hills wildflowers
 
 region: peninsula

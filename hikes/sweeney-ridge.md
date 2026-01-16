@@ -1,6 +1,6 @@
 ---
 layout: hike
-title: "San Bruno: Skyline College to Sweeney Ridge"
+title: "Sweeney Ridge: Skyline College to San Bruno"
 tags: grassland hills wildflowers lake
 
 region: peninsula
