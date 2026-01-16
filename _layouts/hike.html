@@ -34,6 +34,10 @@ layout: default
           {%- for route in page.travel.out.routes -%}
             <li ><a href="{{ route.link }}">{{ route.name }}</a></li>
           {%- endfor %}
+          {% if page.travel.out.stop %}<li>Stop: <a href="{{ page.travel.out.stop.link }}">{{ page.travel.out.stop.name }}</a></li>{% endif %}
+          {% if page.travel.out.stops %}{%- for stop in page.travel.out.stops -%}
+            <li>Stop for {{ stop.for }}:<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ stop.link }}">{{ stop.name }}</a></li>
+          {%- endfor -%}{% endif %}
           <li>Travel time{%- if page.travel.return %} out{% endif %}: {{ page.travel.out.time }}</li>
           </ul>
         {%- if page.travel.return -%}
@@ -43,6 +47,10 @@ layout: default
           {%- for route in page.travel.return.routes -%}
             <li ><a href="{{ route.link }}">{{ route.name }}</a></li>
           {%- endfor %}
+          {% if page.travel.return.stop %}<li>Stop: <a href="{{ page.travel.return.stop.link }}">{{ page.travel.return.stop.name }}</a></li>{% endif %}
+          {% if page.travel.return.stops %}{%- for stop in page.travel.return.stops -%}
+            <li>Stop for {{ stop.for }}:<br>&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ stop.link }}">{{ stop.name }}</a></li>
+          {%- endfor -%}{% endif %}
           <li>Travel time back: {{ page.travel.return.time }}</li>
           </ul>
         </li>
@@ -52,10 +60,6 @@ layout: default
 
     <div class="infobox-child"><span class="infobox-title">Trailhead</span>: <span class="infobox-value"><a href="{{ page.trailhead.link }}">{% if page.trailhead.name %}{{ page.trailhead.name }}{% else %}Open in Maps{% endif %}</a></span></div>
     <div class="infobox-child"><span class="infobox-title">Trailhead served</span>: {% if page.travel.served == "daily" %}all week{% else %} {{ page.travel.served }}{% endif %}</div>
-    {% if page.travel.out.stop %}<div class="infobox-child"><span class="infobox-title">Stop</span>: <span class="infobox-value"><a href="{{ page.travel.out.stop.link }}">{{ page.travel.out.stop.name }}</a></span></div>{% endif %}
-    {% if page.travel.out.stops %}<div class="infobox-child">{%- for stop in page.travel.out.stops -%}
-      <span class="infobox-title">Stop for {{ stop.for }}</span>: <span class="infobox-value"><a href="{{ stop.link }}">{{ stop.name }}</a></span><br>
-    {%- endfor -%}</div>{% endif %}
     <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-value">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
     {% if page.travel.origin %}<div class="infobox-child"><i>Travel times are estimates from {{ page.travel.origin }}.</i></div>{% endif %}
   </div>
