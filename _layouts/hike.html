@@ -52,9 +52,12 @@ layout: default
 
     <div class="infobox-child"><span class="infobox-title">Trailhead</span>: <span class="infobox-value"><a href="{{ page.trailhead.link }}">{% if page.trailhead.name %}{{ page.trailhead.name }}{% else %}Open in Maps{% endif %}</a></span></div>
     <div class="infobox-child"><span class="infobox-title">Trailhead served</span>: {% if page.travel.served == "daily" %}all week{% else %} {{ page.travel.served }}{% endif %}</div>
-    <div class="infobox-child"><span class="infobox-title">Stop</span>: <span class="infobox-value"><a href="{{ page.travel.out.stop.link }}">{{ page.travel.out.stop.name }}</a></span></div>
+    {% if page.travel.out.stop %}<div class="infobox-child"><span class="infobox-title">Stop</span>: <span class="infobox-value"><a href="{{ page.travel.out.stop.link }}">{{ page.travel.out.stop.name }}</a></span></div>{% endif %}
+    {% if page.travel.out.stops %}<div class="infobox-child">{%- for stop in page.travel.out.stops -%}
+      <span class="infobox-title">Stop for {{ stop.for }}</span>: <span class="infobox-value"><a href="{{ stop.link }}">{{ stop.name }}</a></span><br>
+    {%- endfor -%}</div>{% endif %}
     <div class="infobox-child"><span class="infobox-title">Hike route</span>: <span class="infobox-value">{% if page.hike-link %}<a href="{{ page.hike-link }}">Open in Maps</a>{% endif %}{% if page.gpx %}<a href="/assets/gpx/{{ page.gpx }}">Download GPX file</a>{% endif %}</span></div>
-    <div class="infobox-child"><i>Travel times are estimates from {{ page.travel.origin }}.</i></div>
+    {% if page.travel.origin %}<div class="infobox-child"><i>Travel times are estimates from {{ page.travel.origin }}.</i></div>{% endif %}
   </div>
 
   {%- if page.getting-there -%}<p class="message">{{ page.getting-there }}</p>{%- endif -%}
