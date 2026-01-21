@@ -518,6 +518,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Redwood Regional: Richard C Trudeau Conference Center</name>
+        <description>0min from AC Transit 31 at Skyline Blvd &amp; Crestmont Dr</description>
+        <styleUrl>#icon-1532-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.1772232,37.8032492,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

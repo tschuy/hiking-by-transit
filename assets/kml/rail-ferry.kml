@@ -184,6 +184,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Sign Hill Trailhead (East)</name>
+        <description>18min from Caltrain at South San Francisco</description>
+        <styleUrl>#icon-1716-A52714-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411634,37.661148,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

@@ -950,16 +950,6 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Jenner</name>
-        <description>Once-daily Mendocino Transit Authority Route 95&lt;br&gt;&lt;br&gt;23min to Jenner Beach (Sonoma Coast State Park)&lt;br&gt;42min to Goat Rock (Sonoma Coast State Park)</description>
-        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
-        <Point>
-          <coordinates>
-            -123.114968,38.44945,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
         <name>Carquinez Strait: Bull Valley Trail
 </name>
         <description>17min walk from WestCAT 11 at John Swett High School&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
@@ -997,6 +987,36 @@
         <Point>
           <coordinates>
             -123.8396639,40.1228888,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Bruno Mountain: Paul Ave</name>
+        <description>28min from SamTrans 292 at&#160;Bayshore Blvd &amp; Old County Rd</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.4066286,37.6783345,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sonoma Coast State Park: Jenner Beach</name>
+        <description>23min to once-daily&#160;Mendocino Transit Authority Route 95 at Jenner</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.1330594,38.4540809,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sonoma Coast State Park: Goat Rock</name>
+        <description>46min from once-daily&#160;Mendocino Transit Authority Route 95 at Jenner&lt;br&gt;&lt;br&gt;Included to indicate potential trail connections for thru-hiking from Monte Rio</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.1090853,38.4309352,0
           </coordinates>
         </Point>
       </Placemark>

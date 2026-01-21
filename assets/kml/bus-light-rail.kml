@@ -1252,7 +1252,7 @@
       </Placemark>
       <Placemark>
         <name>Water Dog Lake South Trailhead</name>
-        <description>6min walk from SamTrans 260 at Continentals Way &amp; Lyall Way&lt;br&gt;&lt;br&gt;NO SUNDAY SERVICE</description>
+        <description>6min walk from SamTrans 260 at Continentals Way &amp; Lyall Way</description>
         <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -1834,6 +1834,56 @@
         <Point>
           <coordinates>
             -124.1476892,41.7567163,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Southern Skyline Ridge Trail</name>
+        <description>OPENING SOON - CONSTRUCTION PROGRESS AT&#160;https://www.sfpuc.gov/construction-contracts/construction-projects/Southern-Skyline-Boulevard-Ridge-Trail-Extension&lt;br&gt;&lt;br&gt;DAY-USE PERMIT REQUIRED: apply on SFPUC website&lt;br&gt;&lt;br&gt;USE CAUTION WHEN CROSSING: Be patient crossing Hwy 92. Traffic can be heavy and you may have to wait. There is no signal and no marked crosswalk.&lt;br&gt;&lt;br&gt;2min from SamTrans 292 at Hwy 92 &amp; Hwy 35-Skyline Blvd</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.367801,37.4945095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sign Hill Trailhead (East)</name>
+        <description>9min from SamTrans 130 / South City Shuttle Blue at Grand Ave &amp; Spruce Ave</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.411634,37.661148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Monte Rio Redwoods: Main St</name>
+        <description>11min from Sonoma County Transit 20 at Main St (Creekside Park)</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.0081056,38.4559363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sonoma Coast State Park: Islands in the Sky Trailhead</name>
+        <description>14min from Sonoma County Transit 28 at Duncan Mills/Moscow Rd&lt;br&gt;&lt;br&gt;MONDAY TO SATURDAY SERVICE ONLY (NO SUNDAY SERVICE)</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.0504132,38.4493669,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jenner Headlands Preserve</name>
+        <description>8min from once-daily&#160;Mendocino Transit Authority Route 95 at Jenner</description>
+        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -123.1185431,38.4527888,0
           </coordinates>
         </Point>
       </Placemark>
