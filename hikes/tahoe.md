@@ -39,6 +39,8 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 *Fare*: $99 for one adult, with fares as low as $55 per passenger for a group of 5.
 
+**Bottom line**: from the Bay Area, your best bet is to catch the ~8:00am Capitol Corridor train to the 10:45am thruway bus to Truckee arrving at 1:15pm. Connect to TART for the final leg to the lake. 
+
 #### South Lake
 
 [**Sacramento/South Lake Tahoe connecting bus**](https://eldoradotransit.com/sacramento-south-lake-tahoe-connecting-bus/): El Dorado Transit runs a once-daily thruway bus that connecting to the Capitol Corridor, with tickets booked through Amtrak.
@@ -48,6 +50,8 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 [**South Tahoe Airporter**](https://southtahoeairporter.com/): shuttles runs several times a day from the Reno Tahoe International Airport to Stateline, NV (directly adjacent to South Lake Tahoe, CA).
 
 *Fare*: $33.25 for one adult, at the time of writing.
+
+**Bottom line**: from the Bay Area, your best bet is to catch the ~8:00am Capitol Corridor train to the 10:45am thruway bus to South Lake Tahoe arrving at 1:15pm. From elsewhere, fly to Reno and catch the Airporter to Stateline. 
 
 ### Getting around the region
 
