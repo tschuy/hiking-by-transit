@@ -67,7 +67,7 @@ The seasonal, summer-only [Emerald Bay Shuttle](https://www.keeptahoeblue.org/em
 
 This map shows transit-accessible trailheads across the Tahoe basin, including seasonal-only services. TART services to trailheads around Truckee are not included.
 
-<div id="ol-map" data-lon="-120.0326" data-lat="39.1046">
+<div id="ol-map" data-lon="-120.0326" data-lat="39.1046" data-zoom="11" style="height: 800px;">
   <div id="info"></div>
 </div>
 
