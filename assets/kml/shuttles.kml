@@ -130,6 +130,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Emerald Bay State Park</name>
+        <description>SEASONAL SERVICE - SUMMER ONLY&lt;br&gt;&lt;br&gt;https://www.keeptahoeblue.org/emerald-bay-shuttle/</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.1082038,38.9499894,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

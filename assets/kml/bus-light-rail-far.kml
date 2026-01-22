@@ -1020,6 +1020,106 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Old County Rd</name>
+        <description>23min from TART ML / NS89 at&#160;Hwy 28 at Old County Rd</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.1037341,39.2080446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Beaver St</name>
+        <description>16min from TART ML / NS89 / Hwy267 at&#160;Hwy 28 at Chipmunk St</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.0152027,39.2425934,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Knotty Pine Dr</name>
+        <description>18min from TART ML at&#160;Hwy 28 at Red Cedar Ln</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.9867459,39.2550754,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lariat Cir</name>
+        <description>22min from TART ML at&#160;Hwy 28 at Ponderosa Ave</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.9716532,39.2566962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barbara St</name>
+        <description>30min from TART ML at&#160;Hwy 28 at Village Blvd</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.9599083,39.2630229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rubicon Trail</name>
+        <description>16min from TART ML at&#160;Hwy 89 at McKinney Rubicon Springs Rd</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.1468036,39.0620636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Scott Peak Trail</name>
+        <description>20min from TART Hwy89 at Alpine Transport Center</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.212312,39.1796114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thunder Mountain Trail</name>
+        <description>5min from TART Hwy89 / NS89 at&#160;Village at Palisades Tahoe</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.2362215,39.1950948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tahoe City to Paige Meadows Trail</name>
+        <description>23min from&#160;TART Hwy89 / NS89 at Tahoe City Transit Center</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -120.1512046,39.1574626,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mott Canyon Rd</name>
+        <description>29min from TTD 22 at Foothill Park and Ride</description>
+        <styleUrl>#icon-1532-0097A7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.8481811,38.9415046,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
