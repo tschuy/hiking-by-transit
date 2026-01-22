@@ -33,7 +33,7 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 [**California Zephyr**](https://www.amtrak.com/california-zephyr-train): a once-daily long-distance Amtrak train runs from the San Francisco area through Truckee. Eastbound, the train is fairly reliable, but westbound trains originate in Chicago and are notorious for racking up delays over the course of the long journey.
 
-*Fare*: $50+ for one adult, with fares going up in price as seats on the train are sold.
+*Fare*: $50+ from Emeryville to Truckee for one adult, with fares going up in price as seats on the train are sold.
 
 [**North Lake Tahoe Express**](https://northlaketahoeexpress.com/): shuttles are available from the Reno Tahoe International Airport to destinations around the Truckee and North Lake area, with service 2-5 times a day depending on the route. 
 
