@@ -118,13 +118,15 @@ function updateOsmMapUrl() {
   }
 }
 
-promoName = document.getElementById("promo").dataset.name;
-// check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
-promoValue = document.cookie.split("; ").find((row) => row.startsWith(promoName+"="))?.split("=")[1];
-if (promoValue != "false") {
-  promoDiv = document.getElementById("promo");
-  if (promoDiv) {
-    promoDiv.style.display = "block";
+if (document.getElementById("promo")) {
+  promoName = document.getElementById("promo").dataset.name;
+  // check promo cookie; display banner if promo dismiss cookie isn't set and promo exists
+  promoValue = document.cookie.split("; ").find((row) => row.startsWith(promoName+"="))?.split("=")[1];
+  if (promoValue != "false") {
+    promoDiv = document.getElementById("promo");
+    if (promoDiv) {
+      promoDiv.style.display = "block";
+    }
   }
 }
 

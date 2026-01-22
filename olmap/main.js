@@ -72,6 +72,8 @@ const overlay = new Overlay({
   },
 });
 
+console.log('test');
+
 const kmlFormat = new KML({showPointNames: false});
 const trailhead_kml_layers = {}; 
 
@@ -138,14 +140,21 @@ const base = new TileLayer({
 //   opacity: 0.4
 // });
 
+const targetDiv = document.getElementById('ol-map');
+let view = {
+  center: [-13611974.488458559, 4558011.3361273315],
+  projection: 'EPSG:3857',
+  zoom: targetDiv.dataset.zoom ? targetDiv.dataset.zoom : 10,
+}
+
+if (targetDiv.dataset.lon && targetDiv.dataset.lat) {
+  view.center = olProj.fromLonLat([targetDiv.dataset.lon, targetDiv.dataset.lat]);
+}
+
 const map = new Map({
   layers: [base, ...trails, ...Object.values(trailhead_kml_layers)],
-  target: document.getElementById('ol-map'),
-  view: new View({
-    center: [-13611974.488458559, 4558011.3361273315],
-    projection: 'EPSG:3857',
-    zoom: 10,
-  }),
+  target: targetDiv,
+  view: new View(view),
   interactions: defaults({dragPan: false, mouseWheelZoom: false, altShiftDragRotate:false, pinchRotate:false}).extend([
     new DragPan({
       condition: function (event) {
