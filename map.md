@@ -62,7 +62,7 @@ If you're on your phone, I recommend opening the link below, which will temporar
 
 <hr>
 
-The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*
+<!--The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*-->
 
 <hr>
 
@@ -93,8 +93,11 @@ Current agencies I've surveyed include:
 * Mendocino Transit
 * Humboldt Transit Authority
 * Redwood Coast Transit
+* Tahoe Area Regional Transit (south of Truckee)
+* Tahoe Transportation District
 
 The next agencies I plan to look at are:
+* Tahoe Area Regional Transit (Truckee area)
 * Santa Cruz Metro
 * Monterey-Salinas Transit
 * Trinity Transit
