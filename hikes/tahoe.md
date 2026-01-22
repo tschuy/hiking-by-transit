@@ -51,10 +51,11 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 ### Getting around the region
 
-North Lake and Truckee's transit service is operated by TART. TART is fare-free for both fixed-route services along the highways, and for TART Connect microtransit.
+North Lake and Truckee's transit service is operated by TART. TART is fare-free for both fixed-route services along the highways, and for TART Connect microtransit. In the Olympic Valley and Alpine Meadows area, Mountaineer Transit offers a free microtransit service as well.
 
 * [TART](https://tahoetruckeetransit.com/)
 * [TART Connect](https://tahoetruckeetransit.com/tart-connect/)
+* [Mountaineer](https://www.mountaineertransit.org/)
 
 South Lake transit is operated by TTD Transit for fixed-route service and Lake Link for microtransit. Both services are fare-free.
 
