@@ -2,8 +2,9 @@
 layout: post
 title: "Lake Tahoe"
 region: trip
+hasmap: true
 
-blurb: Tahoe, from Washo dáʔaw, simply means <em>lake</em>, and cobalt-blue Lake Tahoe truly is <em>the</em> Californian lake. The largest alpine lake in North America, it attracts visitors from around the world every season of the year for its skiing, hiking, and water sports in a dramatic mountain setting.
+blurb: Tahoe, from Washo dáʔaw, simply means <em>lake</em>, and cobalt-blue Lake Tahoe truly is <em>the</em> lake. The largest alpine lake in North America, it attracts visitors from around the world every season of the year for its skiing, hiking, and water sports in a dramatic mountain setting.
 ---
 
 Tahoe, from Washo dáʔaw, simply means *lake*, and cobalt-blue Lake Tahoe truly is *the* lake. The largest alpine lake in North America, it attracts visitors from around the world every season of the year for its skiing, hiking, and water sports in a dramatic mountain setting.
@@ -14,7 +15,7 @@ The following transportation information is a summary. More comprehensive inform
 
 There are two main routes into the Tahoe area: from the north, I-80 and Amtrak run from Sacramento (or Reno) through Donner Pass and the city of Truckee; from the south, US-50 runs from Sacramento through Echo Pass to South Lake Tahoe.
 
-Truckee is located a 12-15mi drive from the lake itself on Hwy 89 (to Tahoe City) or Hwy 267 (to Kings Beach). Each of these roads sees hourly service on TART, the transit agency for the northern half of the lake. Tahoe City and Kings Beach, plus Incline Village are the main towns in the north, but contiguous vacation developments span much of the western and northern shores.
+Truckee is located a 12-15mi drive from the lake itself on Hwy 89 (to Tahoe City) or Hwy 267 (to Kings Beach). Each of these roads sees hourly service on TART, the transit agency for the northern half of the lake. Tahoe City and Kings Beach, along with Incline Village, are the main towns in the north, but contiguous vacation developments span much of the western and northern shores.
 
 South Lake Tahoe is sited directly on the lake, and along with Stateline and Kingsbury forms a largely contiguous sprawling town at the heart of the southern shore. South Lake is a major ski center, and as such has a modern faux urbanist center at Heavenly Village, but it is not a particularly walkable town.
 
@@ -26,17 +27,27 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 #### North Lake
 
-The [Capitol Corridor](https://www.capitolcorridor.org/) runs thruway buses twice a day that stop in Truckee from Sacramento in the west and Reno in the east. These buses each connect to specific train for connecting to the San Francisco area; check the arrival time on the bus, as one of the two daily buses arrives in Truckee after the last Tahoe-bound bus has already departed. Tickets from Emeryville are $50 for the first adult, with a 50% discount available for people traveling with them.
+[**Capitol Corridor**](https://www.capitolcorridor.org/): two daily thruway buses connect to/from Bay Area to Truckee (and Reno). The buses are timed to meet specific trains, and tickets are sold through Amtrak. Check timetables early in the planning process; one of the two daily buses arrives in Truckee after the last Tahoe-bound bus has already departed.
 
-Amtrak's [California Zephyr](https://www.amtrak.com/california-zephyr-train) train runs once daily from the San Francisco area through Truckee. Eastbound, the train is fairly reliable, but westbound trains originate in Chicago and are notorious for racking up delays over the course of the long journey. Tickets from Emeryville start at around $50 per adult but go up in price as more are sold.
+*Fare*: $27 from Sacramento to Truckee for one adult / $50 from Emeryville, with a 50% companion fare discount for up to 5 others.
 
-[North Lake Tahoe Express](https://northlaketahoeexpress.com/) shuttles are available from the Reno Tahoe International Airport to places all around the Truckee and North Lake area, with service 2-5 times a day depending on the destination. Tickets are $99 for the first adult, but go down to as low as $55 per for a group of 5.
+[**California Zephyr**](https://www.amtrak.com/california-zephyr-train): a once-daily long-distance Amtrak train runs from the San Francisco area through Truckee. Eastbound, the train is fairly reliable, but westbound trains originate in Chicago and are notorious for racking up delays over the course of the long journey.
+
+*Fare*: $50+ for one adult, with fares going up in price as seats on the train are sold.
+
+[**North Lake Tahoe Express**](https://northlaketahoeexpress.com/): shuttles are available from the Reno Tahoe International Airport to destinations around the Truckee and North Lake area, with service 2-5 times a day depending on the route. 
+
+*Fare*: $99 for one adult, with fares as low as $55 per passenger for a group of 5.
 
 #### South Lake
 
-El Dorado Transit runs a once-daily [Sacramento/South Lake Tahoe connecting bus](https://eldoradotransit.com/sacramento-south-lake-tahoe-connecting-bus/) that connects to the Capitol Corridor for connecting to the San Francisco area. Tickets can be booked through Amtrak, and tickets from Emeryville are $66 for the first adult, with a 50% discount available for people traveling with them.
+[**Sacramento/South Lake Tahoe connecting bus**](https://eldoradotransit.com/sacramento-south-lake-tahoe-connecting-bus/): El Dorado Transit runs a once-daily thruway bus that connecting to the Capitol Corridor, with tickets booked through Amtrak.
 
-The [South Tahoe Airporter](https://southtahoeairporter.com/) shuttle runs several times a day from the Reno Tahoe International Airport to Stateline (directly adjacent to South Lake Tahoe). Tickets are $33.25 per adult at the time of writing.
+*Fare*: $34 from Sacramento to South Lake Tahoe for one adult / $66 from Emeryville, with a 50% companion fare discount for up to 5 others.
+
+[**South Tahoe Airporter**](https://southtahoeairporter.com/): shuttles runs several times a day from the Reno Tahoe International Airport to Stateline, NV (directly adjacent to South Lake Tahoe, CA).
+
+*Fare*: $33.25 for one adult, at the time of writing.
 
 ### Getting around the region
 
@@ -51,5 +62,22 @@ South Lake transit is operated by TTD Transit for fixed-route service and Lake L
 * [Lake Link](https://ltva.org/lake-link-transportation/)
 
 The seasonal, summer-only [Emerald Bay Shuttle](https://www.keeptahoeblue.org/emerald-bay-shuttle/) connects to both TART (at Sugar Pine Campground) and TTD (at the "Y" Transit Center).
+
+## Transit-accessible trailheads
+
+This map shows transit-accessible trailheads across the Tahoe basin, including seasonal-only services. TART services to trailheads around Truckee are not included.
+
+<div id="ol-map" data-lon="-120.0326" data-lat="39.1046">
+  <div id="info"></div>
+</div>
+
+<p id="mobile-message">Use two fingers to pan and scroll the map.</p><p id="desktop-message">Hold <em>ctrl</em> and scroll to zoom.</p>
+
+<div id="popup" class="ol-popup">
+  <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
+  <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
+  <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+  <div id="popup-content"></div>
+</div>
 
 <img class="infobox region-image" alt="A view of Tahoe and snow-covered mountains behind it" src="/assets/tahoe.jpg">
