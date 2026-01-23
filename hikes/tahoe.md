@@ -83,7 +83,7 @@ There is no bad trail in the Tahoe area. The following is a selection of the mos
 
 **Emerald Bay State Park**
 
-On every list of Tahoe sights, Emerald Bay State Park tops the list. The park, home to "Scandanavian" mansion *Vikingsholm* and the blue-green waters of titular Emerald Bay, is one of the most photographed places in the world, at least according to California State Parks' claims.
+On every list of Tahoe sights, Emerald Bay State Park tops the list. The park, home to "Scandanavian" mansion *Vikingsholm* and the blue-green waters of titular Emerald Bay, is one of the most photographed places in the world, according to California State Parks.
 
 Situated on the most rugged section of Tahoe shoreline, Emerald Bay and adjacent D.L. Bliss State Park offer hike opportunities from a short-and-sweet 2-mile walk down the hill to Vikingsholm to a 7+-mile hike along the shore to and past Emerald Point or Eagle Point.
 
@@ -97,12 +97,12 @@ A seasonal (summer-only) shuttle operates from Sugar Pine Point Campground (conn
 The Rim Trail forms a complete loop around Lake Tahoe. Whether you want to thru-hike the full 165-mile trail, or just do day hikes along segments of the trail, there are several ways to access it by transit. The following is a selection of the most convenient ways:
 
 * *Tahoe City*: access directly from the Tahoe City Transit Center
-* *Brockway, from Tahoe Vista*: access via trail running between Regency Way and Hwy 267 (1.9mi, 760ft - informal trail)
+* *Brockway, from Tahoe Vista*: access via informal trail running between Regency Way and Hwy 267 (1.9mi, 760ft)
 * *Brockway, from Carnelian Bay*: access via Carnelian Bay Ave (2.2mi, 950ft)
 * *Incline Village west*: access via Barbara St (3.5mi, 2400ft - informal trail)
-* *Incline Village east*: access via Tunnel Creek (3.4mi, 1600ft - Tunnel Creek Trail)
+* *Incline Village east*: access via Tunnel Creek Road (3.4mi, 1600ft)
 * *Kingsbury*: access via Daggett Pass (1mi, 100ft)
-* *Stateline*: access via Van Sickle Bi-State Park (3.2mi, 1300ft - Van Sickle Trail)
+* *Stateline*: access via Van Sickle Bi-State Park (3.2mi, 1300ft)
 * *Tahoma*: access via Sugar Pine State Park (6.5mi, 1000ft - General Creek Trail or Rubicon Trail)
 
 **Sand Harbor**
@@ -116,7 +116,7 @@ As one of the busiest places in the Tahoe Basin, a seasonal East Shore Express b
 
 **Olympic Valley**
 
-The Olympic Valley, named in commemoration of hosting the 1960 Winter Olympic Games, is somewhat removed from Lake Tahoe but offers fantastic classic Sierra hiking. Several popular hikes leave directly from the developed heart of the valley, with Thunder Mountain Trail running through the main ski area, Shirley Canyon Trail runs through the next valley over and around the back to Shirley Lake, and Granite Chief Trail runs steeply up to ,meet the Pacific Crest Trail just before the summit of Granite Chief itself. 
+The Olympic Valley, host of the 1960 Winter Olympic Games, is somewhat removed from Lake Tahoe but offers classic Sierra hiking. Several popular hikes leave directly from the developed heart of the valley, with Thunder Mountain Trail running through the main ski area, Shirley Canyon Trail running through the next valley over and around the back to Shirley Lake, and Granite Chief Trail running steeply up to meet the Pacific Crest Trail just before the summit of Granite Chief itself. 
 
 [TART Hwy89 information »](https://tahoetruckeetransit.com/routes/route-hwy89/)
 
@@ -124,7 +124,7 @@ The Olympic Valley, named in commemoration of hosting the 1960 Winter Olympic Ga
 
 Heavenly Mountain Resort is a classic Tahoe ski resort, but its gondola runs year-round. In the summer, instead of taking skiiers up to the slopes, it offers sightseers an easy way up to high elevations -- and the views that come with that -- without the hike.
 
-The gondola, located at the Heavenly Village in South Lake Tahoe a short walk from Stateline Transit Center, has a base altitude of 6,630ft and a top station elevation at 9,136ft. Activities and a further ride on the Tamarack Express chair lift to hiking trails and viewpoints await at the top. As a part of the Heavenly Mountain Resort, summer season lift access is free for ski pass holders, but costs upwards of $100 per adult without.
+The gondola, located at the Heavenly Village in South Lake Tahoe a short walk from Stateline Transit Center, has a base altitude of 6,630ft and a top station elevation at 9,136ft. Activities and a further ride on the Tamarack Express chair lift to hiking trails and viewpoints await at the top. Unfortunately for budget-conscious visitors, summer season lift access is free for Heavenly ski pass holders, but costs upwards of $100 per adult without.
 
 [Heavenly Gondola information »](https://www.skiheavenly.com/explore-the-resort/activities/epic-discovery/summer-tickets.aspx)
 
