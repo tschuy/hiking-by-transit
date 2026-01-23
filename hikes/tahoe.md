@@ -11,6 +11,9 @@ Tahoe, from Washo dáʔaw, simply means *lake*, and cobalt-blue Lake Tahoe truly
 
 The following transportation information is a summary. More comprehensive information on mountain bike, ski, and resort shuttle services around the Tahoe area can be found on [Keep Tahoe Blue's website](https://www.keeptahoeblue.org/) (which has a particularly detailed section on winter transportation) and on the excellent [Linking Tahoe](https://www.linkingtahoe.com/) website, run by the Tahoe Regional Planning Association.
 
+* Do not remove this line (it will not be displayed)
+{:toc}
+
 ### Understanding the Tahoe region
 
 There are two main routes into the Tahoe area: from the north, I-80 and Amtrak run from Sacramento (or Reno) through Donner Pass and the city of Truckee; from the south, US-50 runs from Sacramento through Echo Pass to South Lake Tahoe.
@@ -73,6 +76,57 @@ South Lake transit is operated by TTD Transit for fixed-route service and Lake L
 * [Lake Link](https://ltva.org/lake-link-transportation/)
 
 The seasonal, summer-only [Emerald Bay Shuttle](https://www.keeptahoeblue.org/emerald-bay-shuttle/) connects to both TART (at Sugar Pine Campground) and TTD (at the "Y" Transit Center).
+
+## Where to go at Tahoe
+
+There is no bad trail in the Tahoe area. The following is a selection of the most popular spots in the Tahoe area that are accessible by transit:
+
+**Emerald Bay State Park**
+
+On every list of Tahoe sights, Emerald Bay State Park tops the list. The park, home to "Scandanavian" mansion *Vikingsholm* and the blue-green waters of titular Emerald Bay, is one of the most photographed places in the world, at least according to California State Parks' claims.
+
+Situated on the most rugged section of Tahoe shoreline, Emerald Bay and adjacent D.L. Bliss State Park offer hike opportunities from a short-and-sweet 2-mile walk down the hill to Vikingsholm to a 7+-mile hike along the shore to and past Emerald Point or Eagle Point.
+
+A seasonal (summer-only) shuttle operates from Sugar Pine Point Campground (connecting to TART ML) seven days a week, and from from the South Lake "Y" Transit Center (connecting to TTD 50 and 55, as well as intercity buses to/from Sacramento) Fridays through Sundays.
+
+[Official state park page »](https://www.parks.ca.gov/?page_id=506)  
+[Emerald Bay shuttle information »](https://www.keeptahoeblue.org/emerald-bay-shuttle/)
+
+**Tahoe Rim Trail**
+
+The Rim Trail forms a complete loop around Lake Tahoe. Whether you want to thru-hike the full 165-mile trail, or just do day hikes along segments of the trail, there are several ways to access it by transit. The following is a selection of the most convenient ways:
+
+* *Tahoe City*: access directly from the Tahoe City Transit Center
+* *Brockway, from Tahoe Vista*: access via trail running between Regency Way and Hwy 267 (1.9mi, 760ft - informal trail)
+* *Brockway, from Carnelian Bay*: access via Carnelian Bay Ave (2.2mi, 950ft)
+* *Incline Village west*: access via Barbara St (3.5mi, 2400ft - informal trail)
+* *Incline Village east*: access via Tunnel Creek (3.4mi, 1600ft - Tunnel Creek Trail)
+* *Kingsbury*: access via Daggett Pass (1mi, 100ft)
+* *Stateline*: access via Van Sickle Bi-State Park (3.2mi, 1300ft - Van Sickle Trail)
+* *Tahoma*: access via Sugar Pine State Park (6.5mi, 1000ft - General Creek Trail or Rubicon Trail)
+
+**Sand Harbor**
+
+Granite-studded sandy beaches and turquoise waters at Sand Harbor attract a massive number of visitors each year for swimming, paddling, hiking, or simple sightseeing.
+
+As one of the busiest places in the Tahoe Basin, a seasonal East Shore Express bus route runs from Incline Village to the park from June to September. Alternatively, the park is a 3-mile walk along the Tahoe East Shore Trail (a paved bicycle path).
+
+[Official state park page »](https://parks.nv.gov/parks/lake-tahoe-nevada-state-park)  
+[TTD 28 East Shore Express information »](https://www.tahoetransportation.org/routes/route-28/)
+
+**Olympic Valley**
+
+The Olympic Valley, named in commemoration of hosting the 1960 Winter Olympic Games, is somewhat removed from Lake Tahoe but offers fantastic classic Sierra hiking. Several popular hikes leave directly from the developed heart of the valley, with Thunder Mountain Trail running through the main ski area, Shirley Canyon Trail runs through the next valley over and around the back to Shirley Lake, and Granite Chief Trail runs steeply up to ,meet the Pacific Crest Trail just before the summit of Granite Chief itself. 
+
+[TART Hwy89 information »](https://tahoetruckeetransit.com/routes/route-hwy89/)
+
+**Heavenly Gondola**
+
+Heavenly Mountain Resort is a classic Tahoe ski resort, but its gondola runs year-round. In the summer, instead of taking skiiers up to the slopes, it offers sightseers an easy way up to high elevations -- and the views that come with that -- without the hike.
+
+The gondola, located at the Heavenly Village in South Lake Tahoe a short walk from Stateline Transit Center, has a base altitude of 6,630ft and a top station elevation at 9,136ft. Activities and a further ride on the Tamarack Express chair lift to hiking trails and viewpoints await at the top. As a part of the Heavenly Mountain Resort, summer season lift access is free for ski pass holders, but costs upwards of $100 per adult without.
+
+[Heavenly Gondola information »](https://www.skiheavenly.com/explore-the-resort/activities/epic-discovery/summer-tickets.aspx)
 
 ## Transit-accessible trailheads
 
