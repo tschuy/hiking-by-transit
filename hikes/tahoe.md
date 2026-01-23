@@ -37,6 +37,10 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 *Fare*: $50+ from Emeryville to Truckee for one adult, with fares going up in price as seats on the train are sold.
 
+[**Greyhound**](https://greyhound.com): a once-daily bus runs from San Francisco through Truckee, departing early in the morning (at time of writing, 6:30am) and arriving in Truckee in the early afternoon (12:15pm).
+
+*Fare*: $30+ from San Francisco for one adult, with fares going up as seats on the bus are sold.
+
 [**North Lake Tahoe Express**](https://northlaketahoeexpress.com/): shuttles are available from the Reno Tahoe International Airport to destinations around the Truckee and North Lake area, with service 2-5 times a day depending on the route. 
 
 *Fare*: $99 for one adult, with fares as low as $55 per passenger for a group of 5.
@@ -53,7 +57,7 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 *Fare*: $33.25 for one adult, at the time of writing.
 
-**Bottom line**: from the Bay Area, your best bet is to catch the ~8:00am Capitol Corridor train to the 10:45am thruway bus to South Lake Tahoe arrving at 1:15pm. From elsewhere, fly to Reno and catch the Airporter to Stateline. 
+**Bottom line**: from the Bay Area, your best bet is to catch the direct morning Greyhound bus, or the ~8:00am Capitol Corridor train to the 10:45am thruway bus to South Lake Tahoe arrving at 1:15pm. From elsewhere, fly to Reno and catch the Airporter to Stateline.
 
 ### Getting around the region
 
