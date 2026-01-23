@@ -231,7 +231,8 @@ map.on('click', function (evt) {
         parkInfo.weather = "TODO: look up weather for this park" // getWeather(feature);
       }
       const lonlat = olProj.transform(coordinates, 'EPSG:3857', 'EPSG:4326');
-      directionsLink.href = `https://www.google.com/maps/dir/?api=1&destination=${lonlat[1]},${lonlat[0]}&travelmode=transit`;
+      // directionsLink.href = `https://www.google.com/maps/dir/?api=1&destination=${lonlat[1]},${lonlat[0]}&travelmode=transit`;
+      directionsLink.href = `https://www.google.com/maps/place/${lonlat[1]},${lonlat[0]}/@${lonlat[1]},${lonlat[0]},15z`
       directionsLink.style.visibility = "visible";
       hikeLink.style.visibility = "hidden";
       content.innerHTML = formatParkInfo(parkInfo);
