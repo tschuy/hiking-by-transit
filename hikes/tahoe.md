@@ -64,6 +64,8 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 ### Getting around the region
 
+In general, the Tahoe Basin has very expansive, free microtransit offerings. Microtransit is on-demand shared rides, like hailing an Uber or Lyft but potentially sharing the ride for part of the trip. For getting around the developed areas of North Lake and South Lake, it offers a compelling door-to-door (or door-to-trailhead) offer. If you normally only use fixed-route transit services, consider trying microtransit.
+
 North Lake and Truckee's transit service is operated by TART. TART is fare-free for both fixed-route services along the highways, and for TART Connect microtransit. In the Olympic Valley and Alpine Meadows area, Mountaineer Transit offers a free microtransit service as well.
 
 * [TART](https://tahoetruckeetransit.com/)
