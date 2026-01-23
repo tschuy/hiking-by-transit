@@ -25,6 +25,8 @@ As such, it's important to decide early on in planning any Tahoe trip what activ
 
 ### Getting to the lake
 
+<embed src="/assets/tahoe-map.svg" alt="map of transit options around Lake Tahoe">
+
 #### North Lake
 
 [**Capitol Corridor**](https://www.capitolcorridor.org/): two daily thruway buses connect to/from Bay Area to Truckee (and Reno). The buses are timed to meet specific trains, and tickets are sold through Amtrak. Check timetables early in the planning process; one of the two daily buses arrives in Truckee after the last Tahoe-bound bus has already departed.
