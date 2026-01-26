@@ -3,10 +3,12 @@ layout: default
 title: "Transit-accessible Trailheads - GPKG format"
 ---
 
-# Transit-accessible Trailheads - GPKG format
+# Transit-accessible Trailheads - GPKG
 
 The following documentation describes the data contained in the latest version of the
 Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260126.gpkg`](/assets/gpkg/transit_accessible_trailheads_20260126.gpkg).
+
+The dataset is designed for use with the [MTC Regional GTFS feed](https://511.org/open-data/transit). To get the regional GTFS feed, available at `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
 
 ## Current status
 
@@ -38,8 +40,8 @@ Contains transit stop and access information.
 * `trailhead_id`: foreign key reference to `trailheads` layer
 * `stop_id`: GTFS `stop_id` for transit stop. See below for information on how this is used.
 * `stop_name`: Human-readable name of transit stop, taken from GTFS if available
-* `walk_time_min`: Integer64 of estimated walking time to trailhead from transit stop
-* `walk_source`: Source of calculation for walk_time_min; `routed` = calculated using machine routing engine (ex: Google Maps, OsmAnd)
+* `walk_time_min`: Estimated walking time to trailhead from transit stop
+* `walk_source`: Source of calculation for walk_time_min; current options: `routed` = calculated using machine routing engine (ex: Google Maps, OsmAnd)
 * `notes`: Human-readable notes about transit stop to trailhead (ex: walking route conditions, crossing safety)
 * `gtfs_source`: URL of GTFS feed used for frequency and stop name information
 * `weekday_frequency`: number of times a day transit stop is served on average weekday
