@@ -11,7 +11,7 @@ author:
   name:              Evan Tschuy
   url:               https://bsky.app/profile/tsch.uy
 
-include: ['hikes', 'events']
+include: ['hikes', 'events', 'docs']
 exclude: ['olmap', 'scripts']
 
 # Gems
