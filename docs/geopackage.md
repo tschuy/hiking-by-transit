@@ -42,9 +42,9 @@ Contains transit stop and access information.
 * `walk_source`: Source of calculation for walk_time_min; `routed` = calculated using machine routing engine (ex: Google Maps, OsmAnd)
 * `notes`: Human-readable notes about transit stop to trailhead (ex: walking route conditions, crossing safety)
 * `gtfs_source`: URL of GTFS feed used for frequency and stop name information
-* `weekday_frequency`: number of buses serving transit stop on average weekday
-* `saturday_frequency`: number of buses serving transit stop on Saturday
-* `sunday_frequency`: number of buses serving transit stop on Sunday
+* `weekday_frequency`: number of times a day transit stop is served on average weekday
+* `saturday_frequency`: number of times a day transit stop is served on Saturday
+* `sunday_frequency`: number of times a day transit stop is served on Sunday
 * `routes_served`: comma-separated string containing transit routes *from GTFS feed* serving transit stop
 
 **GTFS calculations**: to calculate frequency and routes serving a transit stop, all transit stops with an identical name are combined. This allows for scenarios where multiple operators serve a single stop, but the combined MTC GTFS feed does not accurately merge them.
