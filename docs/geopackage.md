@@ -36,7 +36,7 @@ Contains transit stop and access information.
 
 * `geom`: transit stop location
 
-* `access_id`: unique ID for transit stop. If available, initial `stop_id` from time of generation, but this can drift.
+* `access_id`: unique ID for transit stop. Formed from `trailhead_id` and `stop_id` or, if not a GTFS-enabled access, other stop-related string
 * `trailhead_id`: foreign key reference to `trailheads` layer
 * `stop_id`: GTFS `stop_id` for transit stop. See below for information on how this is used.
 * `stop_name`: Human-readable name of transit stop, taken from GTFS if available
