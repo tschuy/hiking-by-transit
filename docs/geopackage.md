@@ -8,7 +8,7 @@ title: "Transit-accessible Trailheads - GPKG format"
 The following documentation describes the data contained in the latest version of the
 Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260126.gpkg`](/assets/gpkg/transit_accessible_trailheads_20260126.gpkg).
 
-The dataset is designed for use with the [MTC Regional GTFS feed](https://511.org/open-data/transit). To get the regional GTFS feed, available at `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
+The dataset is designed for use with the [MTC Regional GTFS feed](https://511.org/open-data/transit). Download the regional feed by specifying `operator_id=RG`: `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
 
 ## Current status
 
