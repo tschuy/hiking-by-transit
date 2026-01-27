@@ -18,7 +18,7 @@
 <h4>Stop: Spruce St & Grizzly Peak Blvd</h4>
 <b>3 min walk</b><br>
 Served by AC Transit 67
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -36,7 +36,7 @@ Served by AC Transit 67
 <h4>Stop: Grizzly Peak Blvd & Shasta Rd</h4>
 <b>4 min walk</b><br>
 Served by AC Transit 65
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -54,7 +54,7 @@ Served by AC Transit 65
 <h4>Stop: Alhambra Ave and Alhambra Valley Rd</h4>
 <b>0 min walk</b><br>
 Served by CC 16
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -72,7 +72,7 @@ Served by CC 16
 <h4>Stop: Golf Links Rd & Grass Valley Sch.(Near Dunkirk Av)</h4>
 <b>10 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -90,7 +90,7 @@ Served by AC Transit 46L
 <h4>Stop: McKean & Almaden</h4>
 <b>8 min walk</b><br>
 Served by VTA 83
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -108,7 +108,7 @@ Served by VTA 83
 <h4>Stop: Foothill & Cristo Rey</h4>
 <b>7 min walk</b><br>
 Served by VTA 51
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -126,7 +126,7 @@ Served by VTA 51
 <h4>Stop: Foothill & Cupertino</h4>
 <b>22 min walk</b><br>
 Served by VTA 51
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -140,11 +140,11 @@ Served by VTA 51
     <name>Calero Creek Trail: Camden &amp; Harry</name>
     <description>
 <![CDATA[
-Provides walking/biking access to Santa Teresa<br>
+Provides walking/biking access to Santa Teresa <br>
 <h4>Stop: Camden & Harry</h4>
 <b>0 min walk</b><br>
 Served by VTA 83
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -161,9 +161,10 @@ Served by VTA 83
 
 <h4>Stop: Saratoga & Saratoga-Los Gatos</h4>
 WARNING: dangerous walk to trailhead and often minimal to no shoulder. Not for the faint of heart.
+<br>
 <b>28 min walk</b><br>
 Served by VTA 51
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -181,7 +182,7 @@ Served by VTA 51
 <h4>Stop: Space Sciences Lab / MSRI</h4>
 <b>6 min walk</b><br>
 Served by Bear Transit H-Line
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -199,7 +200,7 @@ Served by Bear Transit H-Line
 <h4>Stop: Space Sciences Lab / MSRI</h4>
 <b>2 min walk</b><br>
 Served by Bear Transit H-Line
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -217,7 +218,7 @@ Served by Bear Transit H-Line
 <h4>Stop: UC Botanical Garden</h4>
 <b>5 min walk</b><br>
 Served by Bear Transit H-Line
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -235,7 +236,7 @@ Served by Bear Transit H-Line
 <h4>Stop: Glen Eagle Way at Wrentham Dr.</h4>
 <b>5 min walk</b><br>
 Served by City Coach 2
-<ul><li>Weekday: 9 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 9 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -253,7 +254,7 @@ Served by City Coach 2
 <h4>Stop: Camille Creek Community School</h4>
 <b>10 min walk</b><br>
 Served by VINE Transit D
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -271,7 +272,7 @@ Served by VINE Transit D
 <h4>Stop: Summit</h4>
 <b>7 min walk</b><br>
 Served by Lake Transit 2
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -289,7 +290,7 @@ Served by Lake Transit 2
 <h4>Stop: Buckingham Country Club</h4>
 <b>10 min walk</b><br>
 Served by Lake Transit 4a
-<ul><li>Weekday: 2 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -307,7 +308,7 @@ Served by Lake Transit 4a
 <h4>Stop: Soda Bay</h4>
 <b>24 min walk</b><br>
 Served by Lake Transit 4a
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -325,7 +326,7 @@ Served by Lake Transit 4a
 <h4>Stop: Alhambra Ave and Rockridge Dr</h4>
 <b>30 min walk</b><br>
 Served by CC 16
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -343,7 +344,7 @@ Served by CC 16
 <h4>Stop: Pinole Valley Rd and Simas Ave</h4>
 <b>0 min walk</b><br>
 Served by WestCat 16
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -361,7 +362,7 @@ Served by WestCat 16
 <h4>Stop: Doidge Ave and Wright Ave</h4>
 <b>7 min walk</b><br>
 Served by WestCat 16
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -379,7 +380,7 @@ Served by WestCat 16
 <h4>Stop: Refugio Valley and Falcon Way</h4>
 <b>0 min walk</b><br>
 Served by WestCat 12
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -397,7 +398,7 @@ Served by WestCat 12
 <h4>Stop: Armstrong St and Grissom St</h4>
 <b>5 min walk</b><br>
 Served by WestCat 12
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -415,7 +416,7 @@ Served by WestCat 12
 <h4>Stop: Pleasant Hill Rd and Devon Ave</h4>
 <b>30 min walk</b><br>
 Served by CC 16
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -432,9 +433,10 @@ Served by CC 16
 
 <h4>Stop: Alhambra Ave and Wildcroft Dr</h4>
 Narrow shoulder and heavy traffic on Alhambra Ave, USE CAUTION.
+<br>
 <b>3 min walk</b><br>
 Served by CC 16
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -452,7 +454,7 @@ Served by CC 16
 <h4>Stop: Silicon Valley & Eden Park</h4>
 <b>0 min walk</b><br>
 Served by VTA 42
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -470,7 +472,7 @@ Served by VTA 42
 <h4>Stop: Silver Creek Valley & Silver Creek Valley Pl</h4>
 <b>2 min walk</b><br>
 Served by VTA 42
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -488,7 +490,7 @@ Served by VTA 42
 <h4>Stop: Golf Links Rd & Anza Av</h4>
 <b>0 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -505,9 +507,10 @@ Served by AC Transit 46L
 
 <h4>Stop: Golf Links Rd & Elysian Fields Dr</h4>
 WARNING: the walk to the trailhead involves walking along the shoulder of Golf Links Rd. Be cautious and stay safe!
+<br>
 <b>7 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -525,7 +528,7 @@ Served by AC Transit 46L
 <h4>Stop: Golf Links Rd & Scotia Av</h4>
 <b>14 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -543,7 +546,7 @@ Served by AC Transit 46L
 <h4>Stop: Golf Links Rd & Scotia Av</h4>
 <b>8 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -561,7 +564,7 @@ Served by AC Transit 46L
 <h4>Stop: Golf Links Rd & Scotia Av</h4>
 <b>28 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -579,7 +582,7 @@ Served by AC Transit 46L
 <h4>Stop: Golf Links Rd & Scotia Av</h4>
 <b>30 min walk</b><br>
 Served by AC Transit 46L
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -597,7 +600,7 @@ Served by AC Transit 46L
 <h4>Stop: Elk</h4>
 <b>0 min walk</b><br>
 Served by MTA 75
-<ul><li>Weekday: 2 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -615,7 +618,7 @@ Served by MTA 75
 <h4>Stop: Navarro River Junction</h4>
 <b>15 min walk</b><br>
 Served by MTA 60, MTA 75
-<ul><li>Weekday: 6 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -633,7 +636,7 @@ Served by MTA 60, MTA 75
 <h4>Stop: Little River Market</h4>
 <b>5 min walk</b><br>
 Served by MTA 60
-<ul><li>Weekday: 8 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -651,7 +654,7 @@ Served by MTA 60
 <h4>Stop: Jedidiah Smith Campground Day Use</h4>
 <b>0 min walk</b><br>
 Served by Redwood Coast Transit 199
-<ul><li>Weekday: 2 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -669,7 +672,7 @@ Served by Redwood Coast Transit 199
 <h4>Stop: Jedediah Smith Redwood SP Visitor Center</h4>
 <b>0 min walk</b><br>
 Served by Redwood Coast Transit 199
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -687,7 +690,7 @@ Served by Redwood Coast Transit 199
 <h4>Stop: Indian Valley College</h4>
 <b>29 min walk</b><br>
 Served by Marin Transit 57
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -705,7 +708,7 @@ Served by Marin Transit 57
 <h4>Stop: Main & Santa Cruz</h4>
 <b>4 min walk</b><br>
 Served by VTA 27
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -723,7 +726,7 @@ Served by VTA 27
 <h4>Stop: Brown St. at Markham Ave.</h4>
 <b>14 min walk</b><br>
 Served by City Coach 2
-<ul><li>Weekday: 9 trips a day</li><li>Saturday: 0 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 9 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -741,7 +744,7 @@ Served by City Coach 2
 <h4>Stop: Indian Valley College</h4>
 <b>12 min walk</b><br>
 Served by Marin Transit 57
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -759,7 +762,7 @@ Served by Marin Transit 57
 <h4>Stop: Treat Blvd and Navaronne Way</h4>
 <b>5 min walk</b><br>
 Served by CC 15
-<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>

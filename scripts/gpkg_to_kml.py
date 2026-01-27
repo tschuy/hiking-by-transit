@@ -29,19 +29,12 @@ def service_description(weekday, saturday, sunday):
         "Sunday": sunday,
     }
 
-    # If all are under 10, list raw numbers
-    if all(v < 10 for v in values.values()):
-        lines = [
-            f"<li>{day}: {v} trips a day</li>"
-            for day, v in values.items()
-        ]
-    else:
-        lines = [
-            f"<li>{day}: {frequency_label(v)}</li>"
-            for day, v in values.items()
-        ]
-
-    return "<ul>" + "".join(lines) + "</ul>"
+    results = {day: frequency_label(v) for day, v in values.items()}
+    if results["Weekday"] == results["Saturday"] == results["Sunday"]:
+        return f"<ul><li>7 days a week: {results["Weekday"]}</li></ul>"
+    if results["Saturday"] == results["Sunday"]:
+        return f"<ul><li>Weekday: {results["Weekday"]}</li><li>Weekend: {results["Saturday"]}</li></ul>"
+    return f"<ul><li>Weekday: {results["Weekday"]}</li><li>Saturday: {results["Saturday"]}</li><li>Sunday: {results["Sunday"]}</li></ul>"
 
 def safe_str(value):
     if value is None:
@@ -109,7 +102,7 @@ def main():
         trailhead_name = xml_escape(trailhead.get("trailhead_name")) or "N/A"
         trailhead_notes = cdata_safe(trailhead.get("notes"))
         if trailhead_notes:
-            trailhead_notes += "<br>"
+            trailhead_notes += " <br>" # space is necessary for URL parsing of notes
 
         lon, lat = trailhead.geometry.x, trailhead.geometry.y
 
@@ -192,6 +185,7 @@ def main():
             description_lines.append(f"<h4>Stop: {stop_name}</h4>")
             if access_notes:
                 description_lines.append(access_notes)
+                description_lines.append("<br>")
             description_lines.append(f"<b>{walk_time} min walk</b><br>")
             description_lines.append(f"Served by {', '.join(sorted(set(route_strings)))}")
             description_lines.append(service_description(weekday, saturday, sunday))

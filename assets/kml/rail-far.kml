@@ -18,7 +18,7 @@
 <h4>Stop: Union City</h4>
 <b>24 min walk</b><br>
 Served by BART Green, BART Orange
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -36,7 +36,7 @@ Served by BART Green, BART Orange
 <h4>Stop: Colma</h4>
 <b>23 min walk</b><br>
 Served by BART Red, BART Yellow
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -54,7 +54,7 @@ Served by BART Red, BART Yellow
 <h4>Stop: Union City</h4>
 <b>30 min walk</b><br>
 Served by BART Green, BART Orange
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -72,7 +72,7 @@ Served by BART Green, BART Orange
 <h4>Stop: West Dublin / Pleasanton</h4>
 <b>30 min walk</b><br>
 Served by BART Blue
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -90,7 +90,7 @@ Served by BART Blue
 <h4>Stop: Lafayette</h4>
 <b>28 min walk</b><br>
 Served by BART Yellow
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -104,11 +104,11 @@ Served by BART Yellow
     <name>Walter Costa Trail</name>
     <description>
 <![CDATA[
-This is an access trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157<br>
+This is an access trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157 <br>
 <h4>Stop: Lafayette</h4>
 <b>21 min walk</b><br>
 Served by BART Yellow
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -122,11 +122,11 @@ Served by BART Yellow
     <name>Peter Jakovina Trail</name>
     <description>
 <![CDATA[
-This is a feeder trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157<br>
+This is a feeder trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157 <br>
 <h4>Stop: Lafayette</h4>
 <b>24 min walk</b><br>
 Served by BART Yellow
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -143,9 +143,10 @@ Served by BART Yellow
 
 <h4>Stop: Suisun-Fairfield</h4>
 Amtrak Capitol Corridor
+<br>
 <b>28 min walk</b><br>
 Served by Amtrak nan
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -163,7 +164,7 @@ Served by Amtrak nan
 <h4>Stop: Mare Island Ferry Terminal</h4>
 <b>23 min walk</b><br>
 Served by San Francisco Bay Ferry VJO
-<ul><li>Weekday: 9 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 4 trips a day</li></ul>
+<ul><li>Weekday: 9 trips a day</li><li>Weekend: 4 trips a day</li></ul>
 
 ]]>
     </description>

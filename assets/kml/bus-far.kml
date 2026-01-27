@@ -18,7 +18,7 @@
 <h4>Stop: Armstrong Rd.</h4>
 <b>19 min walk</b><br>
 Served by Lake Transit 2, Lake Transit 3
-<ul><li>Weekday: 6 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
     </description>
@@ -36,7 +36,7 @@ Served by Lake Transit 2, Lake Transit 3
 <h4>Stop: SMART Novato Hamilton</h4>
 <b>17 min walk</b><br>
 Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -54,7 +54,7 @@ Served by SMART
 <h4>Stop: Marin Civic Center</h4>
 <b>17 min walk</b><br>
 Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -72,7 +72,7 @@ Served by SMART
 <h4>Stop: Marin Civic Center</h4>
 <b>27 min walk</b><br>
 Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -90,7 +90,7 @@ Served by SMART
 <h4>Stop: San Rafael Transit Center</h4>
 <b>22 min walk</b><br>
 Served by GGT 101, GGT 130, GGT 150, Marin Transit 17, Marin Transit 23, Marin Transit 35, Marin Transit 36, Marin Transit 71
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -108,7 +108,7 @@ Served by GGT 101, GGT 130, GGT 150, Marin Transit 17, Marin Transit 23, Marin T
 <h4>Stop: Marsh Creek Rd and Bigelow St</h4>
 <b>19 min walk</b><br>
 Served by CC 10, CC 310
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -126,7 +126,7 @@ Served by CC 10, CC 310
 <h4>Stop: San Pablo Dam Rd & Appian Way</h4>
 <b>17 min walk</b><br>
 Served by AC Transit 70, AC Transit 74
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 20–30 minutes</li></ul>
 
 ]]>
     </description>
@@ -144,7 +144,7 @@ Served by AC Transit 70, AC Transit 74
 <h4>Stop: Moraga Rd and Devin Dr</h4>
 <b>16 min walk</b><br>
 Served by CC 6
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -162,7 +162,7 @@ Served by CC 6
 <h4>Stop: S Main St and Rudgear Rd</h4>
 <b>23 min walk</b><br>
 Served by CC 21, CC 321
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -180,7 +180,7 @@ Served by CC 21, CC 321
 <h4>Stop: Dempsey & Park Victoria</h4>
 <b>27 min walk</b><br>
 Served by VTA 47
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -198,7 +198,7 @@ Served by VTA 47
 <h4>Stop: Santa Teresa Station</h4>
 <b>21 min walk</b><br>
 Served by VTA 201, VTA 27, VTA 42, VTA 66, VTA 68, VTA Blue Line, VTA BlueS, VTA Express 102
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -234,12 +234,12 @@ Served by VTA 40, VTA 52
 <h4>Stop: Sneath Ln & Mendocino Ct</h4>
 <b>19 min walk</b><br>
 Served by SamTrans 141
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>7 days a week: Every 20–30 minutes</li></ul>
 
 <h4>Stop: College Dr & Susan Dr</h4>
 <b>27 min walk</b><br>
 Served by SamTrans 121
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>7 days a week: Every 20–30 minutes</li></ul>
 
 ]]>
     </description>
@@ -257,12 +257,12 @@ Served by SamTrans 121
 <h4>Stop: Skyline Blvd & Sharp Park Rd</h4>
 <b>16 min walk</b><br>
 Served by SamTrans 121, SamTrans SKY
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 20–30 minutes</li></ul>
 
 <h4>Stop: Skyline College Transit Ctr</h4>
 <b>18 min walk</b><br>
 Served by SamTrans 121, SamTrans 141, SamTrans SKY
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -280,7 +280,7 @@ Served by SamTrans 121, SamTrans 141, SamTrans SKY
 <h4>Stop: Bayshore Blvd & Old County Rd</h4>
 <b>16 min walk</b><br>
 Served by SamTrans 292, SamTrans 397
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -298,7 +298,7 @@ Served by SamTrans 292, SamTrans 397
 <h4>Stop: Bayshore Blvd & Guadalupe Canyon Pkwy</h4>
 <b>16 min walk</b><br>
 Served by SamTrans 292, SamTrans 397
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -316,7 +316,7 @@ Served by SamTrans 292, SamTrans 397
 <h4>Stop: Bellevue Ave & Pope St</h4>
 <b>19 min walk</b><br>
 Served by SamTrans 121
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>7 days a week: Every 20–30 minutes</li></ul>
 
 ]]>
     </description>
@@ -334,12 +334,12 @@ Served by SamTrans 121
 <h4>Stop: Pope St & Bellevue Ave</h4>
 <b>19 min walk</b><br>
 Served by SamTrans 121
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 <h4>Stop: Chicago Way & Cordova Ave</h4>
 <b>21 min walk</b><br>
 Served by Muni 43
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -385,7 +385,7 @@ Served by VINE Transit 11X, VINE Transit 29
 <h4>Stop: Donaldson Way at Benton Way (NW)</h4>
 <b>24 min walk</b><br>
 Served by VINE Transit 11
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 <h4>Stop: Corcoran Ave & Solano Middle School</h4>
 <b>30 min walk</b><br>
@@ -408,7 +408,7 @@ Served by SolTrans 2
 <h4>Stop: Rio del Mar at Carolyn Dr (SE)</h4>
 <b>19 min walk</b><br>
 Served by VINE Transit 11
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -426,12 +426,12 @@ Served by VINE Transit 11
 <h4>Stop: Old Redwood Hwy & Airport Blvd</h4>
 <b>16 min walk</b><br>
 Served by SCT 60
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
 
 <h4>Stop: Fulton Rd & Airport Blvd</h4>
 <b>23 min walk</b><br>
 Served by SCT 62
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -449,7 +449,7 @@ Served by SCT 62
 <h4>Stop: Shiloh Rd & Old Redwood Hwy</h4>
 <b>21 min walk</b><br>
 Served by SCT 60, SCT 66
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -467,7 +467,7 @@ Served by SCT 60, SCT 66
 <h4>Stop: Russian River Senior Center</h4>
 <b>23 min walk</b><br>
 Served by SCT 28
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
     </description>
@@ -503,7 +503,7 @@ Served by SR 5
 <h4>Stop: Hwy 12 & Lawndale Dr</h4>
 <b>23 min walk</b><br>
 Served by SCT 30, SCT 30X, SCT 34
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: 8 trips a day</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: 8 trips a day</li></ul>
 
 ]]>
     </description>
@@ -521,7 +521,7 @@ Served by SCT 30, SCT 30X, SCT 34
 <h4>Stop: Park St & Central Av</h4>
 <b>28 min walk</b><br>
 Served by Marin Transit 625, Marin Transit 68
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -539,7 +539,7 @@ Served by Marin Transit 625, Marin Transit 68
 <h4>Stop: Sir Francis Drake Blvd & San Francisco Blvd</h4>
 <b>19 min walk</b><br>
 Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 68
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -557,7 +557,7 @@ Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 
 <h4>Stop: Sir Francis Drake Blvd & Claus Dr</h4>
 <b>22 min walk</b><br>
 Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 68
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -575,7 +575,7 @@ Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 
 <h4>Stop: Magnolia Av & Madrone Av</h4>
 <b>19 min walk</b><br>
 Served by Marin Transit 22, Marin Transit 613
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -593,7 +593,7 @@ Served by Marin Transit 22, Marin Transit 613
 <h4>Stop: Redwood Av & Montecito Dr</h4>
 <b>17 min walk</b><br>
 Served by Marin Transit 22, Marin Transit 613
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -611,7 +611,7 @@ Served by Marin Transit 22, Marin Transit 613
 <h4>Stop: Redwood Av & Montecito Dr</h4>
 <b>25 min walk</b><br>
 Served by Marin Transit 22, Marin Transit 613
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -629,7 +629,7 @@ Served by Marin Transit 22, Marin Transit 613
 <h4>Stop: Tamalpais Dr & Meadowsweet Dr</h4>
 <b>17 min walk</b><br>
 Served by Marin Transit 22, Marin Transit 613
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -647,7 +647,7 @@ Served by Marin Transit 22, Marin Transit 613
 <h4>Stop: Tiburon Blvd & Jefferson Dr</h4>
 <b>16 min walk</b><br>
 Served by Marin Transit 219, Marin Transit 619
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -665,7 +665,7 @@ Served by Marin Transit 219, Marin Transit 619
 <h4>Stop: Tiburon Blvd & Avenida Miraflores</h4>
 <b>17 min walk</b><br>
 Served by Marin Transit 219, Marin Transit 619
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -701,7 +701,7 @@ Served by Marin Transit 233
 <h4>Stop: E Blithedale Ave & Roque Moraes Dr</h4>
 <b>18 min walk</b><br>
 Served by Marin Transit 17
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -719,7 +719,7 @@ Served by Marin Transit 17
 <h4>Stop: Mill Valley Depot</h4>
 <b>22 min walk</b><br>
 Served by Marin Transit 17
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -737,7 +737,7 @@ Served by Marin Transit 17
 <h4>Stop: Miller Ave & Locust Ave</h4>
 <b>21 min walk</b><br>
 Served by Marin Transit 17
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -755,7 +755,7 @@ Served by Marin Transit 17
 <h4>Stop: Sir Francis Drake Blvd & San Francisco Blvd</h4>
 <b>16 min walk</b><br>
 Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 68
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -773,7 +773,7 @@ Served by Marin Transit 228, Marin Transit 23, Marin Transit 625, Marin Transit 
 <h4>Stop: Enfrente Rd & Salvatore Dr</h4>
 <b>22 min walk</b><br>
 Served by Marin Transit 49, Marin Transit 71
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -791,7 +791,7 @@ Served by Marin Transit 49, Marin Transit 71
 <h4>Stop: Las Gallinas Av & Cedar Hill Dr</h4>
 <b>20 min walk</b><br>
 Served by Marin Transit 245
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -809,7 +809,7 @@ Served by Marin Transit 245
 <h4>Stop: Smith Ranch Rd At Contempo Marin</h4>
 <b>18 min walk</b><br>
 Served by Marin Transit 245
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -827,12 +827,12 @@ Served by Marin Transit 245
 <h4>Stop: Lincoln Ave & Grand Ave</h4>
 <b>17 min walk</b><br>
 Served by Marin Transit 233, Marin Transit 35, Marin Transit 57
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 20–30 minutes</li></ul>
 
 <h4>Stop: San Rafael Transit Center</h4>
 <b>23 min walk</b><br>
 Served by GGT 101, GGT 130, GGT 150, Marin Transit 17, Marin Transit 23, Marin Transit 35, Marin Transit 36, Marin Transit 71
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -850,7 +850,7 @@ Served by GGT 101, GGT 130, GGT 150, Marin Transit 17, Marin Transit 23, Marin T
 <h4>Stop: Marin City Hub-Donahue St & Terners Dr</h4>
 <b>19 min walk</b><br>
 Served by GGT 130, GGT 150, Marin Transit 17, Marin Transit 22, Marin Transit 36, Marin Transit 61, Marin Transit 71
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -868,7 +868,7 @@ Served by GGT 130, GGT 150, Marin Transit 17, Marin Transit 22, Marin Transit 36
 <h4>Stop: Tam Junction-Shoreline & Almonte</h4>
 <b>30 min walk</b><br>
 Served by Marin Transit 17, Marin Transit 61
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -886,7 +886,7 @@ Served by Marin Transit 17, Marin Transit 61
 <h4>Stop: Tam Junction-Shoreline & Almonte</h4>
 <b>21 min walk</b><br>
 Served by Marin Transit 17, Marin Transit 61
-<ul><li>Weekday: Frequent service</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -904,7 +904,7 @@ Served by Marin Transit 17, Marin Transit 61
 <h4>Stop: Shoreline Hwy & Pine Hill Rd</h4>
 <b>32 min walk</b><br>
 Served by Marin Transit 61
-<ul><li>Weekday: 4 trips a day</li><li>Saturday: 7 trips a day</li><li>Sunday: 7 trips a day</li></ul>
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 7 trips a day</li></ul>
 
 ]]>
     </description>
@@ -957,6 +957,7 @@ Served by Lake Transit 4
 
 <h4>Stop: Upper Lake High School</h4>
 This has been included to show that with more time, it is possible to walk to the national forest from the bus. It is a *very* long walk, and this "trailhead" marker here indicates the start of the Forest Service road, not a trail.
+<br>
 <b>45 min walk</b><br>
 Served by Lake Transit 1, Lake Transit 7
 <ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
@@ -977,7 +978,7 @@ Served by Lake Transit 1, Lake Transit 7
 <h4>Stop: Abbe Park</h4>
 <b>25 min walk</b><br>
 Served by San Benito County Express Intercounty
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: 8 trips a day</li><li>Sunday: 8 trips a day</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: 8 trips a day</li></ul>
 
 ]]>
     </description>
@@ -995,7 +996,7 @@ Served by San Benito County Express Intercounty
 <h4>Stop: Juvenile Justice Center</h4>
 <b>17 min walk</b><br>
 Served by AC Transit 35
-<ul><li>Weekday: No service</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: No service</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1013,7 +1014,7 @@ Served by AC Transit 35
 <h4>Stop: Moraga Rd and Tanglewood Dr</h4>
 <b>21 min walk</b><br>
 Served by CC 6
-<ul><li>Weekday: About hourly</li><li>Saturday: 6 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: 6 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1031,7 +1032,7 @@ Served by CC 6
 <h4>Stop: Mission Blvd & Antelope Dr (S Grimmer Blvd)</h4>
 <b>18 min walk</b><br>
 Served by AC Transit 211
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -1049,7 +1050,7 @@ Served by AC Transit 211
 <h4>Stop: Berrellesa St and Mellus St</h4>
 <b>17 min walk</b><br>
 Served by CC 16, CC 28, CC 316, CC 98X
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: 9 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1066,9 +1067,10 @@ Served by CC 16, CC 28, CC 316, CC 98X
 
 <h4>Stop: Redwood Rd & Sereno Cir</h4>
 Walk up/down Crestmont Dr; Google Maps does not indicate this route
+<br>
 <b>29 min walk</b><br>
 Served by AC Transit 54
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -1085,9 +1087,10 @@ Served by AC Transit 54
 
 <h4>Stop: San Geronimo Valley Dr & Creamery Rd</h4>
 WARNING: no shoulder on Nicasio Rd
+<br>
 <b>16 min walk</b><br>
 Served by Marin Transit 625, Marin Transit 68
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1105,7 +1108,7 @@ Served by Marin Transit 625, Marin Transit 68
 <h4>Stop: Danville Blvd and Del Amigo Rd</h4>
 <b>23 min walk</b><br>
 Served by CC 21, CC 321
-<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: About hourly</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1123,7 +1126,7 @@ Served by CC 21, CC 321
 <h4>Stop: Garaventa Ranch Rd & Maralisa Ln</h4>
 <b>18 min walk</b><br>
 Served by Wheels 15
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -1141,7 +1144,7 @@ Served by Wheels 15
 <h4>Stop: S Main St and Rudgear Rd</h4>
 <b>23 min walk</b><br>
 Served by CC 21, CC 321
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -1159,7 +1162,7 @@ Served by CC 21, CC 321
 <h4>Stop: S Main St and Rudgear Rd</h4>
 <b>22 min walk</b><br>
 Served by CC 21, CC 321
-<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: About hourly</li></ul>
 
 ]]>
     </description>
@@ -1177,7 +1180,7 @@ Served by CC 21, CC 321
 <h4>Stop: MacArthur Blvd & High St</h4>
 <b>23 min walk</b><br>
 Served by AC Transit 57, AC Transit NL, AC Transit NX
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -1195,7 +1198,7 @@ Served by AC Transit 57, AC Transit NL, AC Transit NX
 <h4>Stop: Grand Av & Mountain View Av</h4>
 <b>21 min walk</b><br>
 Served by Marin Transit 233, Marin Transit 57
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1213,7 +1216,7 @@ Served by Marin Transit 233, Marin Transit 57
 <h4>Stop: Grand Av & Mountain View Av</h4>
 <b>20 min walk</b><br>
 Served by Marin Transit 233, Marin Transit 57
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1231,7 +1234,7 @@ Served by Marin Transit 233, Marin Transit 57
 <h4>Stop: Grand Av & Mountain View Av</h4>
 <b>18 min walk</b><br>
 Served by Marin Transit 233, Marin Transit 57
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1248,9 +1251,10 @@ Served by Marin Transit 233, Marin Transit 57
 
 <h4>Stop: Willow St & Newark Station Seniors</h4>
 WARNING: route from bus to trail is on gravel shoulder / paved bike lane on Thornton Ave / Marshlands Rd for approximately 2500ft
+<br>
 <b>24 min walk</b><br>
 Served by AC Transit 200
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -1286,7 +1290,7 @@ Served by WestCat 11
 <h4>Stop: Sundstrom Mall</h4>
 <b>25 min walk</b><br>
 Served by MTA 75, MTA 95
-<ul><li>Weekday: 6 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: 2 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1304,7 +1308,7 @@ Served by MTA 75, MTA 95
 <h4>Stop: Main St & Lansing St</h4>
 <b>22 min walk</b><br>
 Served by MTA 60, MTA 65
-<ul><li>Weekday: 8 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: 2 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1322,7 +1326,7 @@ Served by MTA 60, MTA 65
 <h4>Stop: Redwood Dr & Briceland Rd - Redway NB Stop</h4>
 <b>30 min walk</b><br>
 Served by HTA SHI
-<ul><li>Weekday: 8 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
     </description>
@@ -1340,7 +1344,7 @@ Served by HTA SHI
 <h4>Stop: Bayshore Blvd & Old County Rd</h4>
 <b>28 min walk</b><br>
 Served by SamTrans 292, SamTrans 397
-<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+<ul><li>7 days a week: Frequent service</li></ul>
 
 ]]>
     </description>
@@ -1358,7 +1362,7 @@ Served by SamTrans 292, SamTrans 397
 <h4>Stop: Jenner</h4>
 <b>23 min walk</b><br>
 Served by MTA 95
-<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+<ul><li>7 days a week: 2 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1375,9 +1379,10 @@ Served by MTA 95
 
 <h4>Stop: Jenner</h4>
 Included to indicate potential trail connections for thru-hiking from Monte Rio
+<br>
 <b>46 min walk</b><br>
 Served by MTA 95
-<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+<ul><li>7 days a week: 2 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1395,7 +1400,7 @@ Served by MTA 95
 <h4>Stop: Hwy 28 at Old County Rd</h4>
 <b>23 min walk</b><br>
 Served by TART ML, TART NS89
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -1413,7 +1418,7 @@ Served by TART ML, TART NS89
 <h4>Stop: Hwy 28 at Chipmunk St Lakeside</h4>
 <b>16 min walk</b><br>
 Served by TART Hwy267, TART ML, TART NS89
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -1431,7 +1436,7 @@ Served by TART Hwy267, TART ML, TART NS89
 <h4>Stop: Hwy 28 at Red Cedar Ln</h4>
 <b>18 min walk</b><br>
 Served by TART ML
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1449,7 +1454,7 @@ Served by TART ML
 <h4>Stop: Hwy 28 at Ponderosa Ave Mountain Side</h4>
 <b>22 min walk</b><br>
 Served by TART ML
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1467,7 +1472,7 @@ Served by TART ML
 <h4>Stop: Hwy 28 at Village Blvd</h4>
 <b>30 min walk</b><br>
 Served by TART ML
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1485,7 +1490,7 @@ Served by TART ML
 <h4>Stop: Hwy 89 at McKinney Rubicon Springs Rd</h4>
 <b>16 min walk</b><br>
 Served by TART ML
-<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
@@ -1503,7 +1508,7 @@ Served by TART ML
 <h4>Stop: Alpine Transport Center</h4>
 <b>20 min walk</b><br>
 Served by TART Hwy89
-<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+<ul><li>7 days a week: About hourly</li></ul>
 
 ]]>
     </description>
@@ -1521,7 +1526,7 @@ Served by TART Hwy89
 <h4>Stop: Tahoe City Transit Center - Depart</h4>
 <b>23 min walk</b><br>
 Served by TART Hwy89, TART ML, TART NS89
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
 
 ]]>
     </description>
@@ -1539,7 +1544,7 @@ Served by TART Hwy89, TART ML, TART NS89
 <h4>Stop: SR 207/Foothill Rd. (Foothill Park and Ride)- EB</h4>
 <b>29 min walk</b><br>
 Served by TTD 22
-<ul><li>Weekday: 5 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 5 trips a day</li></ul>
+<ul><li>7 days a week: 5 trips a day</li></ul>
 
 ]]>
     </description>
@@ -1556,9 +1561,10 @@ Served by TTD 22
 
 <h4>Stop: Moraga Rd and Moraga Way</h4>
 13min to Lafayette-Moraga Trail, 22min to Valle Vista Staging Area.
+<br>
 <b>22 min walk</b><br>
 Served by CC 6
-<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: Every 1–2 hours</li></ul>
 
 ]]>
     </description>
