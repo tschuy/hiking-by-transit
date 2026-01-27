@@ -52,4 +52,4 @@ Contains transit stop and access information.
 
 **GTFS calculations**: to calculate frequency and routes serving a transit stop, all transit stops with an identical name are combined. This allows for scenarios where multiple operators serve a single stop, but the combined MTC GTFS feed does not accurately merge them.
 
-**routes_served**: this field contains specifically route IDs from the GTFS feed: for instance, `SM:14,SM:110,SM:10,SM:19`. Transit routes outside of a GTFS feed (Bear Transit, Amtrak, etc) are exclusively noted in the `notes` field, as the `routes_served` field is designed to be used programmatically.
+**routes_served**: this field contains specifically route IDs from the GTFS feed: for instance, `SM:14,SM:110,SM:10,SM:19`. All `routes_served` are from the GTFS feed in the `gtfs_source` field; if a stop exists across multiple different feeds, that is represented via multiple `transit_stop_access` objects.
