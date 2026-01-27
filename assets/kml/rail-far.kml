@@ -17,7 +17,7 @@
 
 <h4>Stop: Union City</h4>
 <b>24 min walk</b><br>
-Served by BART Orange-S, BART Green-S, BART Green-N, BART Orange-N.
+Served by BART Green, BART Orange
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -35,7 +35,7 @@ Served by BART Orange-S, BART Green-S, BART Green-N, BART Orange-N.
 
 <h4>Stop: Colma</h4>
 <b>23 min walk</b><br>
-Served by BART Red-S, BART Yellow-N, BART Red-N, BART Yellow-S.
+Served by BART Red, BART Yellow
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -53,7 +53,7 @@ Served by BART Red-S, BART Yellow-N, BART Red-N, BART Yellow-S.
 
 <h4>Stop: Union City</h4>
 <b>30 min walk</b><br>
-Served by BART Orange-S, BART Green-S, BART Green-N, BART Orange-N.
+Served by BART Green, BART Orange
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -71,7 +71,7 @@ Served by BART Orange-S, BART Green-S, BART Green-N, BART Orange-N.
 
 <h4>Stop: West Dublin / Pleasanton</h4>
 <b>30 min walk</b><br>
-Served by BART Blue-S, BART Blue-N.
+Served by BART Blue
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -89,7 +89,7 @@ Served by BART Blue-S, BART Blue-N.
 
 <h4>Stop: Lafayette</h4>
 <b>28 min walk</b><br>
-Served by BART Yellow-N, BART Yellow-S.
+Served by BART Yellow
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -107,7 +107,7 @@ Served by BART Yellow-N, BART Yellow-S.
 This is an access trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157<br>
 <h4>Stop: Lafayette</h4>
 <b>21 min walk</b><br>
-Served by BART Yellow-N, BART Yellow-S.
+Served by BART Yellow
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -125,7 +125,7 @@ Served by BART Yellow-N, BART Yellow-S.
 This is a feeder trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157<br>
 <h4>Stop: Lafayette</h4>
 <b>24 min walk</b><br>
-Served by BART Yellow-N, BART Yellow-S.
+Served by BART Yellow
 <ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
 
 ]]>
@@ -137,13 +137,32 @@ Served by BART Yellow-N, BART Yellow-S.
   </Placemark>
 
   <Placemark>
+    <name>Hill Slough Wildlife Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Suisun-Fairfield</h4>
+Amtrak Capitol Corridor
+<b>28 min walk</b><br>
+Served by Amtrak nan
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.0202706,38.2411932,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
     <name>Mare Island: San Pablo Bay</name>
     <description>
 <![CDATA[
 
 <h4>Stop: Mare Island Ferry Terminal</h4>
 <b>23 min walk</b><br>
-Served by San Francisco Bay Ferry VJO.
+Served by San Francisco Bay Ferry VJO
 <ul><li>Weekday: 9 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 4 trips a day</li></ul>
 
 ]]>
