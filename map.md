@@ -28,26 +28,20 @@ If you're on your phone, I recommend opening the link below, which will temporar
 <div id="filter" class="infobox infobox-filter map-page">
   <b>Filter Trailheads</b>
   <form id="filter-form" autocomplete="off">
-      <input type="checkbox" id="bus-light-rail" name="bus-light-rail" checked />
-      <label for="bus-light-rail">Bus & Light Rail</label>
+      <input type="checkbox" id="bus" name="bus" checked />
+      <label for="bus">Bus & Light Rail</label>
       <br>
-      <input type="checkbox" id="bus-light-rail-far" name="bus-light-rail-far" checked />
-      <label for="bus-light-rail-far">Bus & Light Rail (15+min walk)</label>
+      <input type="checkbox" id="bus-far" name="bus-far" checked />
+      <label for="bus-far">Bus & Light Rail (15+min walk)</label>
       <br>
       <input type="checkbox" id="bus-weekday-only" name="bus-weekday-only" checked />
       <label for="bus-weekday-only">Bus (Weekday only)</label>
       <br>
-      <input type="checkbox" id="rail-ferry" name="rail-ferry" checked />
-      <label for="rail-ferry">Rail & Ferry</label>
+      <input type="checkbox" id="rail" name="rail" checked />
+      <label for="rail">Rail & Ferry</label>
       <br>
-      <input type="checkbox" id="rail-ferry-far" name="rail-ferry-far" checked />
-      <label for="rail-ferry-far">Rail & Ferry (20+min walk)</label>
-      <br>
-      <input type="checkbox" id="bart" name="bart" checked />
-      <label for="bart">BART</label>
-      <br>
-      <input type="checkbox" id="bart-far" name="bart-far" checked />
-      <label for="bart-far">BART (20+min walk)</label>
+      <input type="checkbox" id="rail-far" name="rail-far" checked />
+      <label for="rail-far">Rail & Ferry (20+min walk)</label>
       <br>
       <input type="checkbox" id="shuttles" name="shuttles" checked />
       <label for="shuttles">Park Shuttles</label>

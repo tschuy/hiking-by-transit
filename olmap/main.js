@@ -78,13 +78,11 @@ const kmlFormat = new KML({showPointNames: false});
 const trailhead_kml_layers = {}; 
 
 [
-  "bart-far",
-  "bart",
-  "bus-light-rail",
-  "bus-light-rail-far",
+  "bus",
+  "bus-far",
   "bus-weekday-only",
-  "rail-ferry-far",
-  "rail-ferry",
+  "rail-far",
+  "rail",
   "shuttles",
   "microtransit",
   "call-ahead"

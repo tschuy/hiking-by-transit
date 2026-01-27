@@ -102,26 +102,20 @@ html {
     margin: auto;
 }
 
-#bus-light-rail {
+#bus {
     accent-color: #0288D1;
 }
-#bus-light-rail-far {
+#bus-far {
     accent-color: #0097A7;
 }
 #bus-weekday-only {
     accent-color: #1A237E;
 }
-#rail-ferry {
+#rail {
     accent-color: #A52714;
 }
-#rail-ferry-far {
+#rail-far {
     accent-color: #880E4F;
-}
-#bart {
-    accent-color: #F57C00;
-}
-#bart-far {
-    accent-color: #E65100;
 }
 #shuttles {
     accent-color: #000000;
