@@ -8,15 +8,16 @@ title: "Transit-accessible Trailheads - GPKG format"
 The following documentation describes the data contained in the latest version of the
 Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260126.gpkg`](/assets/gpkg/transit_accessible_trailheads_20260126.gpkg).
 
+For *Hiking by Transit*, trailheads are generally considered "transit accessible" if there is a bus stop within a 30-minute walk (1.5mi, on flat terrain) of the trailhead itself. For certain trails, generally trails intended for longer-distance hiking, longer distances are allowed.
+
 The dataset is designed for use with the [MTC Regional GTFS feed](https://511.org/open-data/transit). Download the regional feed by specifying `operator_id=RG`: `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
 
 ## Current status
 
-All **trailheads** served by fixed-route transit on the *Hiking by Transit* map have been added to this package. **Transit information** has only been added for fixed-route transit in the 9-county Bay Area. The following is anticipated in upcoming editions of this package:
+All **trailheads** and **transit information** for trailheads served by fixed-route transit on the *Hiking by Transit* map have been added to this package. The following is anticipated in upcoming editions of this package:
 
 * Trailheads and transit information for microtransit and public dial-a-ride (ex: Silicon Valley Hopper, SamCoast)
 * Trailheads and transit information for park shuttle services (Muir Woods Shuttle, Emerald Bay Shuttle)
-* Transit information for trailheads outside of the 9-county Bay Area 
 
 ## Layers
 
