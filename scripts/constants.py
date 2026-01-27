@@ -156,7 +156,7 @@ agency_map = {
             "type": "rail"
         },
         "3D": {"short_name": "Tri Delta", "long_name": "Tri Delta Transit", "type": "bus"},
-        "MA": {"long_name": "Marin Transit", "type": "bus"},
+        "MA": {"long_name": "Marin Transit", "type": "bus", "filter_function": actransit_filter},
         "VN": {"long_name": "VINE Transit", "type": "bus"},
         "ST": {"long_name": "SolTrans", "type": "bus"},
         "CE": {"short_name": "ACE", "long_name": "Altamont Corridor Express", "type": "rail"},
