@@ -4,6 +4,9 @@ _site
 .ruby-version
 .jekyll-cache
 
+# Python cache
+__pycache__
+
 # Numerous always-ignore extensions
 *.diff
 *.err
