@@ -124,8 +124,10 @@ def main():
     print(f"  Sunday:   {summary['sunday_counts']:.1f}")
 
     print("\nRoutes serving this stop:")
-    for rid in summary['route_ids']:
-        print(f"  {rid}")
+    print(summary['route_ids'])
+
+    print("\nStop lon,lat:")
+    print(f'{summary["stop_lon"]},{summary["stop_lat"]}')
 
 if __name__ == "__main__":
     main()
