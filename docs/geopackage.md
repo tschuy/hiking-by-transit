@@ -10,7 +10,9 @@ Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260127.gp
 
 For *Hiking by Transit*, trailheads are generally considered "transit accessible" if there is a bus stop within a 30-minute walk (1.5mi, on flat terrain) of the trailhead itself. For certain trails, generally trails intended for longer-distance hiking, longer distances are allowed.
 
-The dataset is designed for use with the [MTC Regional GTFS feed](https://511.org/open-data/transit). Download the regional feed by specifying `operator_id=RG`: `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
+The dataset is designed for use with GTFS feeds for each of the agencies that serves a trailhead. The GTFS feed can be downloaded at the provided URL, except for the Bay Area's Regional feed, which requires an free access key.
+
+The Regional feed and information on how to get an access key can be [found on the 511.org website](https://511.org/open-data/transit). Download the regional feed by specifying `operator_id=RG`: `http://api.511.org/transit/datafeeds?api_key=[your_key]&operator_id=RG`.
 
 ## Current status
 
