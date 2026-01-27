@@ -114,9 +114,11 @@ def main():
     args = parser.parse_args()
 
     summary = get_stop_summary(args.stop_id, args.gtfs)
-
-    print(f"Stop Name: {summary['stop_name']} (Stop IDs: {', '.join(summary['stop_ids'])})")
+    print(f"Summary for stop {summary['stop_name']} (Stop IDs: {', '.join(summary['stop_ids'])})")
     print(f"Coordinates: lon={summary['stop_lon']}, lat={summary['stop_lat']}")
+
+    print(f"Stop ID: {args.stop_id}")
+    print(f"Stop name: {summary['stop_name']}")
 
     print(f"\nAverage number of stops per day:")
     print(f"  Weekdays: {summary['weekday_counts']:.1f}")
@@ -124,7 +126,7 @@ def main():
     print(f"  Sunday:   {summary['sunday_counts']:.1f}")
 
     print("\nRoutes serving this stop:")
-    print(summary['route_ids'])
+    print(",".join(summary['route_ids']))
 
     print("\nStop lon,lat:")
     print(f'{summary["stop_lon"]},{summary["stop_lat"]}')

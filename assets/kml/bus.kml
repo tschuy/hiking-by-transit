@@ -3997,4 +3997,58 @@ Served by TART ML
       <coordinates>-120.151262,39.1572879,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>O’Hair Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Marin High School</h4>
+<b>5 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 654
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.61027415846851,38.116391997358186,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Burdell: Dwarf Oak Trail Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Marin High School</h4>
+<b>7 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 654
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.61383539348763,38.11945069799096,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mt. Burdell Open Space Preserve: Sereno Way</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Marin Dr & Sereno Way</h4>
+<b>3 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 654
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.58661481179873,38.12541901733801,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

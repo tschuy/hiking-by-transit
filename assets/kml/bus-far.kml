@@ -29,60 +29,6 @@ Served by Lake Transit 2, Lake Transit 3
   </Placemark>
 
   <Placemark>
-    <name>Hamilton Wetlands</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: SMART Novato Hamilton</h4>
-<b>17 min walk</b><br>
-Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#bus-far</styleUrl>
-    <Point>
-      <coordinates>-122.5110998,38.0512664,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>San Pedro Mountain: San Pablo Ave</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Marin Civic Center</h4>
-<b>17 min walk</b><br>
-Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#bus-far</styleUrl>
-    <Point>
-      <coordinates>-122.528418,37.9946707,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>San Pedro Mountain: Woodoaks Trailhead</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Marin Civic Center</h4>
-<b>27 min walk</b><br>
-Served by SMART
-<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#bus-far</styleUrl>
-    <Point>
-      <coordinates>-122.5204723,38.0015823,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
     <name>Boyd Memorial Park: Robert Dollar Hiking Trail</name>
     <description>
 <![CDATA[
@@ -1571,6 +1517,24 @@ Served by CC 6
     <styleUrl>#bus-far</styleUrl>
     <Point>
       <coordinates>-122.1380162,37.8223679,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Burdell: San Andreas Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Marin Dr & San Andreas Dr</h4>
+<b>16 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 654
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-122.60419285640188,38.13011139911911,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

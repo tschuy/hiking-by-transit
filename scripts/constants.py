@@ -140,7 +140,7 @@ agency_map = {
         "GF": {"long_name": "Golden Gate Ferry", "type": "rail"},
         "VC": {"short_name": "City Coach", "long_name": "Vacaville City Coach", "type": "bus"},
         "GG": {"short_name": "GGT", "long_name": "Golden Gate Transit", "type": "bus", "filter_function": ggt_filter},
-        "SA": {"short_name": "SMART", "long_name": "Sonoma Marin Area Rail Transit", "type": "bus"},
+        "SA": {"short_name": "SMART", "long_name": "Sonoma Marin Area Rail Transit", "type": "rail"},
         "GP": {"long_name": "San Francisco Recreation and Parks", "type": "bus"},
         "BA": {"short_name": "BART", "long_name": "Bay Area Rapid Transit", "type": "rail"},
         "RV": {"short_name": "Delta Breeze", "long_name": "Rio Vista Delta Breeze", "type": "bus"},

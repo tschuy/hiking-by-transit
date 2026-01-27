@@ -173,4 +173,22 @@ Served by San Francisco Bay Ferry VJO
       <coordinates>-122.2852105,38.1005264,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain: Woodoaks Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Marin Civic Center</h4>
+<b>27 min walk</b><br>
+Served by SMART
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.5204723,38.0015823,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>
