@@ -2,6 +2,8 @@ import pandas as pd
 import zipfile
 
 gtfs_map = {
+    "amtrak": {"path": "./gtfs/amtrak.zip", "url": "https://content.amtrak.com/content/gtfs/GTFS.zip"},
+    "bear": {"path": "./gtfs/beartransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip"},
     "lake": {"path": "./gtfs/laketransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip"},
     "hta": {"path": "./gtfs/humboldtcounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip"},
     "redwood": {"path": "./gtfs/delnorte-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/delnorte-ca-us/delnorte-ca-us.zip"},
@@ -13,6 +15,28 @@ gtfs_map = {
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
     "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds"}
 }
+
+def actransit_filter(rid):
+    try:
+        route = int(rid.split(':')[-1])
+        if route >= 600:
+            return True
+    except ValueError:
+        return False
+
+def samtrans_filter(rid):
+    try:
+        route = int(rid.split(':')[-1])
+        if route < 100:
+            return True
+    except ValueError:
+        return False
+    
+def ggt_filter(rid):
+    route = int(rid.split(':')[-1])
+    if route not in [101, 130, 150, 580]:
+        return True
+    return False
 
 # Dictionary mapping URL -> {route_id: route_info}
 url_to_route_map = {}
@@ -37,6 +61,12 @@ for feed_name, feed_info in gtfs_map.items():
         url_to_route_map[url] = {}
 
 agency_map = {
+    "https://content.amtrak.com/content/gtfs/GTFS.zip": {
+        51: {"long_name": "Amtrak", "type": "rail"}
+    },
+    "https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip": {
+        1708: {"long_name": "Bear Transit", "type": "bus"}
+    },
     "https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip": {
         7: {"short_name": "Lake Transit", "long_name": "Lake Transit", "type": "bus"}
     },
@@ -80,7 +110,7 @@ agency_map = {
         123: {"long_name": "San Benito County Express", "type": "bus"}
     },
     "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip": {
-        261: {"long_name": "El Dorado Transit", "type": "bus"}
+        261: {"long_name": "Sacramento to South Lake Connector", "type": "bus"}
     },
     "http://api.511.org/transit/datafeeds": {
         "UC": {"long_name": "Union City Transit", "type": "bus"},
@@ -96,7 +126,7 @@ agency_map = {
         "FS": {"long_name": "FAST", "type": "bus"},
         "WC": {"short_name": "WestCat", "long_name": "WestCat (Western Contra Costa)", "type": "bus"},
         "EM": {"long_name": "Emery Go-Round", "type": "bus"},
-        "AC": {"short_name": "AC Transit", "long_name": "AC Transit", "type": "bus"},
+        "AC": {"short_name": "AC Transit", "long_name": "AC Transit", "type": "bus", "filter_function": actransit_filter},
         "AF": {"long_name": "Angel Island Tiburon Ferry", "type": "bus"},
         "DE": {"long_name": "Dumbarton Express Consortium", "type": "bus"},
         "CM": {"long_name": "Commute.org Shuttles", "type": "bus"},
@@ -106,24 +136,24 @@ agency_map = {
             "long_name": "Livermore Amador Valley Transit Authority",
             "type": "bus"
         },
-        "SM": {"long_name": "SamTrans", "type": "bus"},
+        "SM": {"long_name": "SamTrans", "type": "bus", "filter_function": samtrans_filter},
         "GF": {"long_name": "Golden Gate Ferry", "type": "rail"},
         "VC": {"short_name": "City Coach", "long_name": "Vacaville City Coach", "type": "bus"},
-        "GG": {"short_name": "GGT", "long_name": "Golden Gate Transit", "type": "bus"},
+        "GG": {"short_name": "GGT", "long_name": "Golden Gate Transit", "type": "bus", "filter_function": ggt_filter},
         "SA": {"short_name": "SMART", "long_name": "Sonoma Marin Area Rail Transit", "type": "bus"},
         "GP": {"long_name": "San Francisco Recreation and Parks", "type": "bus"},
         "BA": {"short_name": "BART", "long_name": "Bay Area Rapid Transit", "type": "rail"},
         "RV": {"short_name": "Delta Breeze", "long_name": "Rio Vista Delta Breeze", "type": "bus"},
         "TF": {"long_name": "Treasure Island Ferry", "type": "rail"},
         "MV": {"long_name": "MVgo", "type": "bus"},
-        "CC": {"short_name": "CC", "long_name": "County Connection", "type": "bus"},
+        "CC": {"short_name": "CC", "long_name": "County Connection", "type": "bus", "filter_function": actransit_filter},
         "SO": {"short_name": "SCT", "long_name": "Sonoma County Transit", "type": "bus"},
         "SC": {"short_name": "VTA", "long_name": "VTA", "type": "bus"},
         "SB": {"long_name": "San Francisco Bay Ferry", "type": "rail"},
         "AM": {
             "short_name": "Capitol Corridor",
             "long_name": "Capitol Corridor Joint Powers Authority",
-            "type": "bus"
+            "type": "rail"
         },
         "3D": {"short_name": "Tri Delta", "long_name": "Tri Delta Transit", "type": "bus"},
         "MA": {"long_name": "Marin Transit", "type": "bus"},

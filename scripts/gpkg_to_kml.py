@@ -166,8 +166,18 @@ def main():
                 agency = agency_info_map.get(agency_id, {})
                 agency_type = agency.get("type", "bus")
 
+                route_name = str(info["route_short_name"])
+                if route_name != route_name: route_name = ""
+                route_name = route_name.removesuffix('-N')
+                route_name = route_name.removesuffix('-S')
+                if route_name == "SMART": route_name = "" # workaround to route and agency name matching
+
+                filter_routes = agency.get("filter_function", lambda x: False)
+                if filter_routes(rid):
+                    continue
+
                 route_strings.append(
-                    f"{agency.get('short_name', agency.get('long_name', 'UNKNOWN'))} {info['route_short_name']}"
+                    f"{agency.get('short_name', agency.get('long_name', 'UNKNOWN'))} {route_name}".strip()
                 )
 
                 if agency_type == "rail":
@@ -183,7 +193,7 @@ def main():
             if access_notes:
                 description_lines.append(access_notes)
             description_lines.append(f"<b>{walk_time} min walk</b><br>")
-            description_lines.append(f"Served by {', '.join(list(set(route_strings)))}.")
+            description_lines.append(f"Served by {', '.join(sorted(set(route_strings)))}")
             description_lines.append(service_description(weekday, saturday, sunday))
             description_lines.append("")
 
