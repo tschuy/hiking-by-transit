@@ -8,11 +8,7 @@ hasmap: true
 
 This trailhead map contains all of the trailheads I've found that are transit accessible in the Bay Area (and a little bit beyond). I've considered "transit accessible" to be around a 30-minute walk, which is a reasonable approach for a longer hike, but for shorter hikes, I would recommend unchecking the "15+ min bus"/"20+ min train" categories. You can also toggle weekday-only services.
 
-Bus routes are only counted where they run throughout the day. Services that run a few times a day for school or office commutes aren't included, but routes that run a few-a-day lifeline-level have been in certain cases (like Lake County).
-
-If you're on your phone, I recommend opening the link below, which will temporarily add the trailheads as a layer in your Google Maps app. The Google Maps layer won't have the hike tracks that are included here.
-
-<h3 class="centered"><a href="https://www.google.com/maps/d/viewer?mid=1QqhlN34LiBV7FQZZh5ZzEl4kzpwLKcE" target="_blank">Open in Google Maps</a></h3>
+Bus routes are only counted where they run throughout the day. Services that run commuter service a few times in a morning and evening are not included, but rural routes that run a few times a day are.
 
 <div id="ol-map">
   <div id="info"></div>
