@@ -1,10 +1,11 @@
-# Readme
+# README
 
-## KML Processor
+This directory contains scripts used to manage the *Hiking by Transit* database.
 
-Munges a My Maps KML export into a set of KML files usable by Hiking by Transit.
+Currently, the canonical source of information for trailheads and transit information for fixed-route transit is `data/transit_accessible_trailheads.gpkg`. For shuttles, microtransit, and call-ahead services, static bespoke KML files are used.
 
-* In Google My Maps, "Export to KML/KMZ", select Entire map and check "Export as KML instead of KMZ"
-* KML supports folders, and the export contains each layer of the My Map as a folder; OpenLayers does not let us manipulate by folder, so we need to store each folder in its own KML
+## KML Processor: `gpkg_to_kml.py`
 
-To update the website, download new My Maps export, and run `./kml.py "~/path/to/exported.kml" ../assets/kml/ kmlmap.json`.
+Generates KMLs for fixed-route transit from the canonical GPKG.
+
+`python gpkg_to_kml.py ../data/transit_accessible_trailheads.gpkg`
