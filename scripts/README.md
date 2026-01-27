@@ -37,6 +37,12 @@ Routes serving this stop:
 -122.40498,37.65594
 ```
 
+## Fetching GTFS: `download_gtfs.py`
+
+Downloads GTFS feeds defined in `constants.py`. Requires an API key from MTC.
+
+`$ python download_gtfs.py --mtc-api-key xx-xx-xx-xx-xx`
+
 ## Full build
 
 1) Rebuilding the olmap

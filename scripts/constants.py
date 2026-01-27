@@ -1,6 +1,8 @@
 import pandas as pd
 import zipfile
 
+# map from agency slug to {path, url, annotated_url}
+# annotated_url is url used for downloads, including potential fstring for API keys
 gtfs_map = {
     "amtrak": {"path": "./gtfs/amtrak.zip", "url": "https://content.amtrak.com/content/gtfs/GTFS.zip"},
     "bear": {"path": "./gtfs/beartransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip"},
@@ -13,7 +15,7 @@ gtfs_map = {
     "yolo": {"path": "./gtfs/yolobus.zip", "url": "https://yolobus.com/wp-content/uploads/2025/10/google_transit.zip"},
     "sanbenito": {"path": "./gtfs/sanbenitocounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sanbenitocounty-ca-us/sanbenitocounty-ca-us.zip"},
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
-    "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds"}
+    "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"}
 }
 
 def actransit_filter(rid):
@@ -38,9 +40,10 @@ def ggt_filter(rid):
         return True
     return False
 
-# Dictionary mapping URL -> {route_id: route_info}
+# url -> {route_id: route_info}
 url_to_route_map = {}
 
+# populate url_to_route_map
 for feed_name, feed_info in gtfs_map.items():
     try:
         path = feed_info["path"]
@@ -60,6 +63,9 @@ for feed_name, feed_info in gtfs_map.items():
         print(f"Error processing {feed_name}: {e}")
         url_to_route_map[url] = {}
 
+# {url -> {route -> {long_name, short_name, type, filter_function}}}
+#   type: bus OR rail; bus includes light rail and rail includes ferry
+#   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
     "https://content.amtrak.com/content/gtfs/GTFS.zip": {
         51: {"long_name": "Amtrak", "type": "rail"}
