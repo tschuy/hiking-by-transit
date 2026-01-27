@@ -6,7 +6,7 @@ title: "Transit-accessible Trailheads - GPKG format"
 # Transit-accessible Trailheads - GPKG
 
 The following documentation describes the data contained in the latest version of the
-Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260126.gpkg`](/assets/gpkg/transit_accessible_trailheads_20260126.gpkg).
+Hiking by Transit trailhead dataset, [`transit_accessible_trailheads_20260127.gpkg`](/assets/gpkg/transit_accessible_trailheads_20260127.gpkg).
 
 For *Hiking by Transit*, trailheads are generally considered "transit accessible" if there is a bus stop within a 30-minute walk (1.5mi, on flat terrain) of the trailhead itself. For certain trails, generally trails intended for longer-distance hiking, longer distances are allowed.
 
