@@ -43,6 +43,19 @@ Downloads GTFS feeds defined in `constants.py`. Requires an API key from MTC.
 
 `$ python download_gtfs.py --mtc-api-key xx-xx-xx-xx-xx`
 
+## Trailhead statistics: `trailhead_service_levels.py`
+
+Calculates basic service level information:
+
+```
+$ python trailhead_service_levels.py
+
+Summary:
+  Stops served: 233
+  Total weekly services: 45917
+  Average per stop: 197
+```
+
 ## Full build
 
 1) Rebuilding the olmap
