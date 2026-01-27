@@ -140,6 +140,26 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Hidden Beach</name>
+        <description>0min from TTD 28 East Shore Express at Hidden Beach&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.9286615,39.221622,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sand Harbor State Park</name>
+        <description>0min from TTD 28 East Shore Express at Lake Tahoe Nevada State Park Sand Harbor&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.9321199,39.1984106,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

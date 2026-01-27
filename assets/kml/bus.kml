@@ -1,0 +1,3991 @@
+<kml><Document>
+
+  <Style id="bus">
+    <IconStyle>
+      <color>ffd18802</color>
+      <scale>0.4</scale>
+      <Icon>
+        <href>/assets/pin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+
+  <Placemark>
+    <name>Cesar Chavez / McLaughlin</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: University Av & W Frontage Rd</h4>
+<b>0 min walk</b><br>
+Served by AC Transit 51B.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.3049814,37.8654913,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carquinez Strait Regional Shoreline: Rankin Park Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Martinez</h4>
+As well as Amtrak Capitol Corridor and Gold Runner
+<b>8 min walk</b><br>
+Served by CC 18, CC 16, CC 28, CC 98X, CC 99X, CC 316, CC 19.
+<ul><li>Weekday: Frequent service</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1437645,38.0167179,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carquinez Strait: Nejedly Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Martinez</h4>
+As well as Amtrak Capitol Corridor and Gold Runner
+<b>14 min walk</b><br>
+Served by CC 18, CC 16, CC 28, CC 98X, CC 99X, CC 316, CC 19.
+<ul><li>Weekday: Frequent service</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1474874,38.0179773,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Alum Rock Park: Penitencia Creek Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Piedmont & Noble</h4>
+22min on Penitencia Creek Trail to Alum Rock Park
+<b>2 min walk</b><br>
+Served by VTA 71.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8252731,37.3954026,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Brookside Rd - access to Sibley via Wilder development</name>
+    <description>
+<![CDATA[
+30min to fire road up to Sibley at Wild Lilac Way. Connection thru paved fire road into subdivision, then thru subdivision on roadway to fire road.<br>
+<h4>Stop: Moraga Way and Mcdonnell Nursery</h4>
+<b>2 min walk</b><br>
+Served by CC 6, CC 606.
+<ul><li>Weekday: About hourly</li><li>Saturday: 6 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.175797,37.8644675,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Francis Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Kelly Ave & Church St</h4>
+<b>15 min walk</b><br>
+Served by SamTrans 117, SamTrans 15, SamTrans 18.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4444164,37.4651171,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Foothill Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Foothill Regional Park</h4>
+<b>0 min walk</b><br>
+Served by SCT 66.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.7978753,38.5610001,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ring Mountain: Reed Ranch Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tiburon Blvd & Reed Ranch Rd</h4>
+<b>15 min walk</b><br>
+Served by Marin Transit 219, Marin Transit 619.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.489834,37.901564,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Old St Hilary&#x27;s: Fishbits&#x27; Trail Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tiburon Blvd & Lyford Dr</h4>
+<b>15 min walk</b><br>
+Served by Marin Transit 219, Marin Transit 619.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4569511,37.8830713,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hamilton Wetlands</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hamilton Theatre Parking Lot</h4>
+<b>15 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 57.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5111113,38.0515757,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Coyote Valley Open Space Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Santa Teresa & Palm</h4>
+<b>15 min walk</b><br>
+Served by VTA 68.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.7267217,37.1704348,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Los Gatos Creek County Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Winchester Station</h4>
+<b>15 min walk</b><br>
+Served by VTA GreenS, VTA Green Line, VTA GreenN.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.948472222222,37.2728333333333,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>South San Francisco Sign Hill Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Chestnut Ave & Hillside Blvd</h4>
+<b>12 min walk</b><br>
+Served by South City Shuttle BLUE.
+<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Grand Ave & Chestnut Ave</h4>
+<b>28 min walk</b><br>
+Served by SamTrans 130.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+<h4>Stop: Chestnut Ave & Hillside Blvd</h4>
+<b>12 min walk</b><br>
+Served by South City Shuttle BLUE.
+<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4220188,37.6651212,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Bruno Mountain: Juncus Ravine Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Chestnut Ave & Hillside Blvd</h4>
+<b>4 min walk</b><br>
+Served by South City Shuttle BLUE.
+<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Grand Ave & Chestnut Ave</h4>
+<b>18 min walk</b><br>
+Served by SamTrans 130.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4250187,37.6681001,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bodega Bay</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 1 & Tides Inn - Bodega Bay</h4>
+23min to Bodega Dunes (Sonoma Coast State Park), 16min to Birdwalk Coastal Access Trail
+<b>0 min walk</b><br>
+Served by MTA 95.
+<ul><li>Weekday: 1 trips a day</li><li>Saturday: 1 trips a day</li><li>Sunday: 1 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.0445415,38.329079,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Thunder Mountain Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Village at Palisades Tahoe - East</h4>
+<b>5 min walk</b><br>
+Served by TART NS89, TART Hwy89.
+<ul><li>Weekday: About hourly</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.2362215,39.1950948,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Point Pinole Regional Shoreline</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Point Pinole Business Park</h4>
+<b>6 min walk</b><br>
+Served by AC Transit 71.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.3527031,37.9998107,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Miller Knox: Ferry Point Tunnel</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: S Garrard Blvd & W Cutting Blvd</h4>
+<b>8 min walk</b><br>
+Served by AC Transit 72M, AC Transit 607.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+<h4>Stop: Tewksbury Turnaround-Tewksbury & Castro</h4>
+<b>11 min walk</b><br>
+Served by AC Transit 72M, AC Transit 607.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.3845836,37.9231044,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Black Diamond Mines: Black Diamond Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Marsh Creek Rd and Bigelow St</h4>
+<b>7 min walk</b><br>
+Served by CC 10, CC 310.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.92811,37.9411314,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wildcat Canyon: N Arlington</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Pablo Dam Rd & Contra Costa Av</h4>
+<b>13 min walk</b><br>
+Served by AC Transit 669, AC Transit 70.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.3242959,37.9538931,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mission Peak: Spring Valley Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ohlone College-Key D</h4>
+<b>3 min walk</b><br>
+Served by AC Transit 211, AC Transit 210.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9083064,37.530034,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Shadow Cliffs Regional Recreation Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Stanley Blvd & Shadow Cliffs EB</h4>
+<b>0 min walk</b><br>
+Served by Wheels 10R.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.841661,37.6692998,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Las Trampas Wilderness: Remington</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: San Ramon Valley Blvd and Livery-Mercantile</h4>
+<b>10 min walk</b><br>
+Served by CC 321, CC 623, CC 21.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0030099,37.8104814,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Las Trampas Wilderness: Madrone Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Danville Blvd and Camille Ave</h4>
+<b>10 min walk</b><br>
+Served by CC 321, CC 21.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0260879,37.8320622,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Las Trampas Wilderness: Ringtail Cat Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Danville Blvd and Hemme Ave</h4>
+<b>9 min walk</b><br>
+Served by CC 321, CC 21.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0323545,37.8368145,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Las Trampas to Mt Diablo Regional Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Danville Blvd and Hemme Ave</h4>
+<b>3 min walk</b><br>
+Served by CC 321, CC 21.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0237825,37.8410791,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Howe Homestead Park</name>
+    <description>
+<![CDATA[
+This park provides trail access into Shell Ridge Open Space; Fossil Hill Trail, Briones to Mt Diablo Trail, etc.<br>
+<h4>Stop: S Broadway and Mt Diablo Blvd</h4>
+<b>13 min walk</b><br>
+Served by CC 605, CC 4.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0480539,37.899702,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Orinda Oaks Park</name>
+    <description>
+<![CDATA[
+Access to Mulholland Ridge Open Space<br>
+<h4>Stop: Moraga Way and Ivy Dr</h4>
+<b>0 min walk</b><br>
+Served by CC 6, CC 606.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1531976,37.8552629,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cull Canyon: Ridge Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Center St & Heyer Av</h4>
+<b>13 min walk</b><br>
+Served by AC Transit 28.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0551833,37.7039126,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Don Castro: Ursa Way</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Kelly St & Mossy Rock Dr</h4>
+<b>5 min walk</b><br>
+Served by AC Transit 95.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0511978,37.6885579,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sausal Creek</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: MacArthur Blvd & Fruitvale Av</h4>
+<b>5 min walk</b><br>
+Served by AC Transit 658, AC Transit 653, AC Transit NL, AC Transit 805, AC Transit 96, AC Transit 57, AC Transit 680, AC Transit 657, AC Transit NX.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2148586,37.8036931,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Milagra Overlook Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Oceana Blvd & Milagra Dr</h4>
+<b>4 min walk</b><br>
+Served by SamTrans 40, SamTrans 49, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4913775,37.6441497,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mori Point</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 1 & Westport Dr</h4>
+<b>5 min walk</b><br>
+Served by SamTrans PCX, SamTrans 49, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4860094,37.6184095,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mori Ridge</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 1 & Westport Dr</h4>
+To get between the bus stop and Mori Ridge Rd, use neighborhood connector trail at Cullen Dr & Lundy Way.
+<b>12 min walk</b><br>
+Served by SamTrans PCX, SamTrans 49, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.483295,37.6173132,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Valley Park: Weiler Ranch Rd Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Oddstad Blvd & Terra Nova Blvd</h4>
+<b>3 min walk</b><br>
+Served by SamTrans 14, SamTrans 19, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4754495,37.5815847,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Valley Park: Montara Mountain Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Oddstad Blvd & Terra Nova Blvd</h4>
+<b>8 min walk</b><br>
+Served by SamTrans 14, SamTrans 19, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.475943,37.5786938,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Devil&#x27;s Slide</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Devil's Slide Tunnel Stop</h4>
+<b>0 min walk</b><br>
+Served by SamTrans 117.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.515805,37.569983,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rancho Corral de Tierra: Farallone Cutoff</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 2nd St & Main St</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 117, GGT 130.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5118061,37.5453737,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Rancho Corral de Tierra: Ameria Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ave Alhambra & Vallejo St</h4>
+<b>11 min walk</b><br>
+Served by SamTrans 117, SamTrans 18.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4788951,37.5114502,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>JV Fitzgerald Marine Reserve: Bluff Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Etheldore St & California Ave</h4>
+<b>8 min walk</b><br>
+Served by SamTrans 117.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5157658,37.5235249,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Montara State Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main St & 4th St</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 117.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5143345,37.5453906,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Gray Whale Cove State Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Devil's Slide Tunnel Stop</h4>
+<b>11 min walk</b><br>
+Served by SamTrans 117.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5139689,37.5645993,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Quarry Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Plaza Alhambra & Coronado St</h4>
+<b>8 min walk</b><br>
+Served by SamTrans 117, SamTrans 18.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4626109,37.5035177,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Miramar Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 1 & Medio Ave</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 117, SamTrans 18.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4601688,37.4932367,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Venice State Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 1 & Ruisseau Francais Ave</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 117, SamTrans 18.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4498331,37.482123,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Bruno Mountain: Royce Way</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Orange St & Chester St</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 130, SamTrans 30.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4541179,37.6920739,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Old Moraga Ranch Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: St Mary'S College</h4>
+<b>11 min walk</b><br>
+Served by CC 6, CC 626.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1038666,37.8371166,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Wanda: Main Fire trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Alhambra Ave and Alhambra Way</h4>
+<b>3 min walk</b><br>
+Served by CC 16.
+<ul><li>Weekday: About hourly</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Alhambra Ave and Walnut Ave</h4>
+WARNING: dangerous crossing; check Street View for options
+<b>4 min walk</b><br>
+Served by CC 16, CC 316, CC 98X.
+<ul><li>Weekday: Frequent service</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1302039,37.9894421,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Painted Rock</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Moraga Rd and Rheem Blvd</h4>
+<b>8 min walk</b><br>
+Served by CC 6.
+<ul><li>Weekday: About hourly</li><li>Saturday: 6 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1217492,37.8584554,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lagoon Valley Park / Peña Adobe Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Alamo Dr. at Marshall Rd.</h4>
+<b>12 min walk</b><br>
+Served by City Coach 5.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0034494,38.3434583,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Skyline Wilderness Park: River-to-Ridge Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Soscol Ave at Magnolia Dr</h4>
+<b>11 min walk</b><br>
+Served by VINE Transit 10, VINE Transit 11.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2716902,38.270009,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bothe-Napa Valley State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Bothe State Park North</h4>
+<b>0 min walk</b><br>
+Served by VINE Transit 10.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.525833,38.553371,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Oat Hill Mine Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 29 at Brannan St</h4>
+<b>12 min walk</b><br>
+Served by VINE Transit 10.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5771534,38.5892346,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cloverdale River Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Cloverdale City Hall & Plaza</h4>
+<b>10 min walk</b><br>
+Served by SCT 60, SCT 68.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.0089675,38.8085401,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sunset Beach River Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: River Rd & Westside Rd</h4>
+<b>8 min walk</b><br>
+Served by SCT 20, SCT 20X.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.9349363,38.5020377,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ragle Ranch Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ragle Park - Ragle Rd & Covert Ln</h4>
+<b>0 min walk</b><br>
+Served by SCT 24.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Healdsburg Ave & Murphy Ave</h4>
+<b>14 min walk</b><br>
+Served by SCT 20, SCT 26, SCT 24.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.8458676,38.4044738,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Laguna de Santa Rosa Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 12 & Morris St</h4>
+<b>9 min walk</b><br>
+Served by SCT 20.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.8117633,38.4060436,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Joe Rodota Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Petaluma Ave & Abbott</h4>
+<b>0 min walk</b><br>
+Served by SCT 20, SCT 26, SCT 24.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.8221029,38.4004459,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Howarth Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sonoma Ave at Summerfield Rd</h4>
+<b>0 min walk</b><br>
+Served by SR 8.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6683869,38.4498337,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Spring Lake Park: Stonehenge Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Summerfield Rd at Hoen Ave</h4>
+<b>14 min walk</b><br>
+Served by SR 8.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6516128,38.4450221,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Spring Lake Park: Parktrail Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Summerfield Rd at Shade Tree Ln</h4>
+<b>11 min walk</b><br>
+Served by SR 8.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6523578,38.4407844,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Spring Lake Park: Carissa Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Summerfield Rd at Carissa Ave</h4>
+<b>9 min walk</b><br>
+Served by SR 8.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6533698,38.437107,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Howarth Park: Montgomery Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Montgomery Dr & Summerfield Dr</h4>
+<b>2 min walk</b><br>
+Served by SCT 30, SCT 34, SCT 30X.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6710018,38.4538413,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Trione-Annadel State Park: Cobblestone Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 12 & Los Alamos</h4>
+<b>9 min walk</b><br>
+Served by SCT 30, SCT 34, SCT 30X.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6386565,38.456596,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carolyn Day Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arnold Dr</h4>
+<b>2 min walk</b><br>
+Served by SCT 30.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5232703,38.3529327,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sonoma County Regional Park: Arnold Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arnold Dr</h4>
+<b>4 min walk</b><br>
+Served by SCT 30.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5218648,38.3523732,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sonoma County Regional Park: Carmel Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arnold Dr & Warm Springs Rd</h4>
+<b>5 min walk</b><br>
+Served by SCT 30.
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 8 trips a day</li><li>Sunday: 8 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5240739,38.3606091,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Maxwell Farms Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Verano Ave (outside FAHA)</h4>
+<b>0 min walk</b><br>
+Served by SCT 30, SCT 34, SCT 30X.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: 8 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4808773,38.302843,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Montini Open Space: Sonoma Overlook Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sonoma Plaza</h4>
+<b>11 min walk</b><br>
+Served by SCT 30, SCT 32, SCT 40, SCT 30X, SCT 34.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4572497,38.2996142,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Point Reyes National Seashore: Bear Valley Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Bear Valley Visitor Center</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 68.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.7997964,38.0396499,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Samuel P Taylor State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sir Francis Drake Blvd & Samuel P Taylor Park</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 68.
+<ul><li>Weekday: 9 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.729507,38.019627,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Gary Giacomini: Candelero Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Castro St & Montezuma Rd</h4>
+<b>12 min walk</b><br>
+Served by Marin Transit 68.
+<ul><li>Weekday: 7 trips a day</li><li>Saturday: 7 trips a day</li><li>Sunday: 5 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.682675,38.0128694,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Loma Alta Preserve: Glen Fire Road Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sir Francis Drake Blvd & Olema Rd</h4>
+<b>10 min walk</b><br>
+Served by Marin Transit 23, Marin Transit 228, Marin Transit 625, Marin Transit 68.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6046557,38.005469,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Natalie Coffin Greene Park: Ross Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sir Francis Drake Blvd & La Cuesta Dr</h4>
+<b>14 min walk</b><br>
+Served by Marin Transit 228, Marin Transit 22.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5687424,37.961793,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>King Mountain Preserve: Citron Fire Road</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Magnolia Ave & Skylark Dr</h4>
+<b>12 min walk</b><br>
+Served by Marin Transit 22.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+<h4>Stop: Magnolia Av & Ward St</h4>
+<b>8 min walk</b><br>
+Served by Marin Transit 22, Marin Transit 613.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5445774,37.9412542,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Baltimore Canyon Regional Preserve: Piedmont Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Magnolia Av & Madrone Av</h4>
+<b>7 min walk</b><br>
+Served by Marin Transit 22, Marin Transit 613.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.538758,37.9290444,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Blithedale Summit Regional Preserve: Blithedale Loop Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Redwood Av & Montecito Dr</h4>
+<b>13 min walk</b><br>
+Served by Marin Transit 22, Marin Transit 613.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5372603,37.9240346,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Horse Hill Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: E Blithedale Ave & Tower Dr</h4>
+<b>12 min walk</b><br>
+Served by GGT 114, Marin Transit 17.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5162286,37.9080894,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tiburon Open Space</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tiburon Blvd & Gilmartin Dr</h4>
+<b>12 min walk</b><br>
+Served by Marin Transit 219, Marin Transit 619.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4716289,37.8905981,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dipsea Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Mill Valley Depot</h4>
+<b>8 min walk</b><br>
+Served by GGT 114, Marin Transit 17.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+<h4>Stop: Panoramic Hwy & Sequoia Valley Rd</h4>
+<b>8 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 7 trips a day</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5545479,37.9049051,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Loma Verde Preserve: Chicken Shack Fire Road</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Alameda del Prado Bus Pad</h4>
+<b>7 min walk</b><br>
+Served by Marin Transit 57, Marin Transit 71, GGT 154.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5340888,38.0481693,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lucas Valley Preserve: Queenstone Fire Road Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Las Gallinas Av & Miller Creek Rd</h4>
+<b>14 min walk</b><br>
+Served by Marin Transit 57.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: No service</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Marinwood Bus Pad</h4>
+<b>20 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 71, GGT 154.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5499154,38.0341713,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Santa Venetia Marsh Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: N San Pedro Rd & La Pasada Way</h4>
+<b>11 min walk</b><br>
+Served by Marin Transit 233.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5153775,38.0182099,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Terra Linda: Sleepy Hollow Ridge</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Manuel T Freitas Pkwy & Montecillo Rd</h4>
+<b>14 min walk</b><br>
+Served by Marin Transit 245, Marin Transit 57.
+<ul><li>Weekday: About hourly</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5687621,38.0071604,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain: Woodoaks Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Civic Center Dr & N San Pedro Rd</h4>
+<b>14 min walk</b><br>
+Served by Marin Transit 233, Marin Transit 49, Marin Transit 35.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+<h4>Stop: N San Pedro Rd & Woodoaks Dr</h4>
+<b>2 min walk</b><br>
+Served by Marin Transit 233.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5204723,38.0015823,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain: San Pablo Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Civic Center Dr & N San Pedro Rd</h4>
+<b>9 min walk</b><br>
+Served by Marin Transit 233, Marin Transit 49, Marin Transit 35.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+<h4>Stop: N San Pedro Rd Bus Pad</h4>
+<b>16 min walk</b><br>
+Served by Marin Transit 245, Marin Transit 71, GGT 154.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5283665,37.9946109,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Panoramic Hwy &amp; Sequoia Valley Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Panoramic Hwy & Sequoia Valley Rd</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 7 trips a day</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5570173,37.8933802,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Muir Woods: Panoramic Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Panoramic Hwy & Park Av</h4>
+<b>6 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5731924,37.9054954,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Tamalpais: Hog Back Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Panoramic Hwy & Edgewood Av</h4>
+<b>1 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5774005,37.9109706,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Tamalpais: Bootjack Parking Lot</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 895 Panoramic Hwy Bootjack Parking Lot</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 7 trips a day</li><li>Sunday: 7 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.60179,37.90913,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Tamalpais: Matt Davis Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Shoreline Hwy & Calle del Mar</h4>
+<b>4 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6373713,37.8996871,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bolinas Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Brighton Ave & Wharf Rd</h4>
+<b>8 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6824845,37.9068517,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Capay Open Space Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 16 at Rd 85 (Capay) WB</h4>
+<b>8 min walk</b><br>
+Served by Yolobus 215.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0466959,38.7125674,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Marin Headlands: Morning Sun Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Spencer Ave Bus Pad</h4>
+<b>0 min walk</b><br>
+Served by GGT 114, GGT 150, GGT 132.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4935589,37.8529634,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dry Creek Pioneer Regional Park: Dry Creek Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Mission Blvd & Whipple Rd</h4>
+<b>4 min walk</b><br>
+Served by AC Transit 801, Union City Transit 4, AC Transit 9.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0180479,37.6076319,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bay Area Ridge Trail: Ascot Pkwy</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Georgia St & Southport Way</h4>
+<b>12 min walk</b><br>
+Served by SolTrans 6.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: About hourly</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Columbus Pkwy & Ascot Pkwy</h4>
+<b>20 min walk</b><br>
+Served by SolTrans 7B, SolTrans 38, SolTrans 7A, SolTrans 6.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1887539,38.1040882,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Glen Cove Waterfront Park: Shoall Dr West</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Glen Cove Pkwy & S Regatta Dr</h4>
+<b>6 min walk</b><br>
+Served by SolTrans 8, SolTrans 38.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: About hourly</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Fulton Ave & Old Glen Cove Rd</h4>
+<b>28 min walk</b><br>
+Served by SolTrans 38, SolTrans 3.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2076656,38.068684,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Anderson Marsh State Historic Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Job Zone</h4>
+<b>3 min walk</b><br>
+Served by Lake Transit 4, Lake Transit 3.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6134692,38.9204097,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Chabot Park Main Entrance</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: MacArthur Blvd & Estudillo Av</h4>
+<b>10 min walk</b><br>
+Served by AC Transit 35, AC Transit 34.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1312949,37.7313952,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Niles Community Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 37395 Niles Blvd</h4>
+<b>6 min walk</b><br>
+Served by AC Transit 216, AC Transit 625.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9805998,37.5749379,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Leona Canyon Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Campus Dr & Merritt College</h4>
+<b>11 min walk</b><br>
+Served by AC Transit 54.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1636536,37.7878935,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Vargas Plateau: Cliff Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Walnut Av & Mission Blvd</h4>
+<b>12 min walk</b><br>
+Served by AC Transit 211.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+<h4>Stop: Walnut Av & Overacker Av</h4>
+<b>14 min walk</b><br>
+Served by AC Transit 211.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9554595,37.5698629,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Guadalupe Oak Grove Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Meridian & Oakglen</h4>
+<b>5 min walk</b><br>
+Served by VTA 64B.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8790983,37.2329776,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Coyote Creek Trail: Hellyer Ave Trailhead</name>
+    <description>
+<![CDATA[
+Paved trail. South of here, the trail gets fairly remote for some time.<br>
+<h4>Stop: Senter & Hellyer</h4>
+<b>11 min walk</b><br>
+Served by VTA 70, VTA 73, VTA 72.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8143192,37.2840903,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Coyote Creek Trail: Tully Library</name>
+    <description>
+<![CDATA[
+Paved trail. Beginning of contiguous segment of Coyote Creek Trail.<br>
+<h4>Stop: Tully & Galveston</h4>
+<b>0 min walk</b><br>
+Served by VTA 26.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8422787,37.3112573,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mount Wanda &amp; Carquinez Strait: Hulet Hornbeck Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Alhambra Ave and J St</h4>
+<b>10 min walk</b><br>
+Served by CC 16, CC 316, WestCat 30Z, CC 98X.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1339536,37.9907851,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carquinez Strait Regional Shoreline: Rankin Park Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Berrellesa St and Marina Vista Ave and Escobar St</h4>
+<b>7 min walk</b><br>
+Served by CC 16, CC 28, CC 316, CC 98X.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1437168,38.0166969,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carquinez Strait: Nejedly Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Berrellesa St and Marina Vista Ave and Escobar St</h4>
+<b>13 min walk</b><br>
+Served by CC 16, CC 28, CC 316, CC 98X.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1474874,38.0179773,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carquinez Strait: F St</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Alhambra Ave and F St</h4>
+<b>5 min walk</b><br>
+Served by CC 16, CC 316, WestCat 30Z, CC 98X.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1368206,38.0018039,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Briones to Mount Diablo Regional Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Montego and Casa Montego Apts</h4>
+<b>9 min walk</b><br>
+Served by CC 301, CC 1, CC 93X.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0393663,37.908509,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Maurice Thorner Memorial Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sir Francis Drake Blvd & Lagunitas School Rd</h4>
+<b>7 min walk</b><br>
+Served by Marin Transit 68, Marin Transit 625.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.673275,38.0178003,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>French Ranch Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sir Francis Drake Blvd & Lagunitas School Rd</h4>
+<b>2 min walk</b><br>
+Served by Marin Transit 68, Marin Transit 625.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6783463,38.0169408,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mt Tamalpais State Park: Pantoll Campground</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Panoramic Hwy & Pan Toll Ranger Station</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.6038858,37.9039927,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Water Dog Lake South Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Continentals Way & Lyall Way</h4>
+<b>6 min walk</b><br>
+Served by SamTrans 60, SamTrans 62, SamTrans 260.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.300484,37.5107123,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wildcat Canyon: Rifle Range Road Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arlington Blvd & Rifle Range Rd</h4>
+<b>13 min walk</b><br>
+Served by AC Transit 7.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2959367,37.9324669,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Notch Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Skyline College Transit Ctr</h4>
+<b>4 min walk</b><br>
+Served by SamTrans 40, SamTrans SKY, SamTrans 121, SamTrans 141, SamTrans 42.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4650602,37.6284175,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mussel Rock Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Palmetto Ave & Westline Dr</h4>
+<b>11 min walk</b><br>
+Served by SamTrans 49, SamTrans 110, SamTrans 10, SamTrans 112, SamTrans 12.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4944364,37.6667702,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Avalon Canyon</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Skyline Dr & Highland Ave</h4>
+<b>4 min walk</b><br>
+Served by SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4915233,37.6810128,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Garin: CSU East Bay / Harder Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: East Loop Rd & CSU East Bay Recreation & Wellness</h4>
+<b>5 min walk</b><br>
+Served by AC Transit 60.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0505775,37.6512947,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Willow Camp Fire Road</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Shoreline Hwy & Calle del Mar</h4>
+<b>12 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.642347,37.9045837,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Claremont Canyon: Stonewall-Panoramic Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Derby St & Claremont Blvd</h4>
+<b>2 min walk</b><br>
+Served by AC Transit 36.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2440495,37.8625751,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Big Break Regional Shoreline</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main St & Big Break Rd</h4>
+<b>10 min walk</b><br>
+Served by Tri Delta 373, Tri Delta 362.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.7321532,38.0087251,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Alameda Creek: Stables Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Union City Bl & Rocklin Dr</h4>
+<b>6 min walk</b><br>
+Served by Union City Transit 1.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0701513,37.5663311,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Coyote Hills: Tuibun Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ardenwood Blvd & Commerce Dr</h4>
+<b>7 min walk</b><br>
+Served by AC Transit 621, AC Transit 281.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0677568,37.555739,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bay Point Regional Shoreline</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Port Chicago Hwy & Pacific Ave</h4>
+<b>12 min walk</b><br>
+Served by Tri Delta 201X, Tri Delta 374.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9632274,38.0398973,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stoneman Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: West Leland Rd & John Henry Johnson Pky</h4>
+<b>7 min walk</b><br>
+Served by Tri Delta 370.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9200858,38.0092867,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain: Corkscrew Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Vendola Dr & Estancia Way</h4>
+<b>5 min walk</b><br>
+Served by Marin Transit 233.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.506385138335,38.0126508057111,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Orchard Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Marin City Hub-Donahue St & Terners Dr</h4>
+<b>10 min walk</b><br>
+Served by Marin Transit 22, Marin Transit 61, GGT 150, GGT 114, Marin Transit 17, Marin Transit 36, GGT 130, Marin Transit 71.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5098264,37.8668617,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacheco Fire Road</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Marin City Hub-Donahue St & Terners Dr</h4>
+<b>10 min walk</b><br>
+Served by Marin Transit 22, Marin Transit 61, GGT 150, GGT 114, Marin Transit 17, Marin Transit 36, GGT 130, Marin Transit 71.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.5148894,37.869854,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>SCA Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 101 & Alexander Ave</h4>
+<b>11 min walk</b><br>
+Served by GGT 130.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4823853,37.8321963,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Panoramic Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Panoramic Hwy & Ridge Av</h4>
+<b>0 min walk</b><br>
+Served by Marin Transit 61.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.567703,37.901028,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Baquiano Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Crespi Dr & Fassler Ave</h4>
+<b>8 min walk</b><br>
+Served by SamTrans 14, SamTrans 19, SamTrans 110, SamTrans 10.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4786584,37.5994629,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sign Hill Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Grand Ave & Magnolia Ave</h4>
+<b>12 min walk</b><br>
+Served by SamTrans 130, South City Shuttle BLUE, South City Shuttle GREEN, SamTrans 37.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.4198116,37.662436,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Alviso Marina County Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Gold & Taylor</h4>
+<b>8 min walk</b><br>
+Served by VTA 59.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.9794782,37.4304232,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Faber-Laumeister Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Pulgas Ave & Garden St</h4>
+<b>6 min walk</b><br>
+Served by SamTrans 280, SamTrans 81.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1265483,37.4686322,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Coyote Creek Trail: Yerba Buena Avenue Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Yerba Buena & Sunbrook</h4>
+<b>3 min walk</b><br>
+Served by VTA 72.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8191914,37.2899182,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hayward Reigonal Shoreline</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Cabot Blvd & W Winton Av</h4>
+<b>14 min walk</b><br>
+Served by AC Transit 86.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1451005,37.6474232,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Francisco Bay Trail: Marina Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Aurora Dr & Fairway Dr</h4>
+<b>8 min walk</b><br>
+Served by AC Transit 35.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1851602,37.6926164,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Oyster Bay Regional Shoreline</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Marina Blvd & Neptune Dr</h4>
+<b>15 min walk</b><br>
+Served by AC Transit 35.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1923339,37.7094493,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Big Break Regional Shoreline: Marsh Creek Regional Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Oakley Park n Ride</h4>
+<b>14 min walk</b><br>
+Served by Tri Delta 373, Tri Delta 362.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.6953555,37.9977813,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Contra Loma: Delta de Anza Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Lone Tree Wy & Sutter Delta</h4>
+<b>3 min walk</b><br>
+Served by Tri Delta 376, Tri Delta 375.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.8125784,37.9795733,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Redwood Regional Park / Joaquin Miller Park: Redwood Bowl Staging Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Chabot Space & Science Center</h4>
+<b>0 min walk</b><br>
+Served by AC Transit 31.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1807166,37.8183545,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Joaquin Miller Park: Joaquin Miller Rd &amp; Crockett Pl</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Joaquin Miller Rd & Crockett Pl</h4>
+<b>0 min walk</b><br>
+Served by AC Transit 639, AC Transit 604, AC Transit 658, AC Transit 31, AC Transit 650, AC Transit 649, AC Transit 696, AC Transit 662, AC Transit 655, AC Transit 646.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1809577,37.8087476,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Joaquin Miller Park: Bishops Walk</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Joaquin Miller Rd & Sanborn Dr (West Jctn)</h4>
+<b>0 min walk</b><br>
+Served by AC Transit 639, AC Transit 604, AC Transit 658, AC Transit 31, AC Transit 650, AC Transit 649, AC Transit 696, AC Transit 662, AC Transit 655, AC Transit 646.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1934178,37.8105948,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Joaquin Miller Park: Palos Colorados Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Lincoln Av & Monterey Blvd</h4>
+<b>12 min walk</b><br>
+Served by AC Transit 639, AC Transit 604, AC Transit 658, AC Transit 31, AC Transit 605, AC Transit 653, AC Transit 606.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+<h4>Stop: Mountain Blvd & Snake Rd</h4>
+<b>15 min walk</b><br>
+Served by AC Transit 683, AC Transit 605, AC Transit 682, AC Transit 696, AC Transit 677, AC Transit 662, AC Transit 18, AC Transit 660, AC Transit 688, AC Transit V.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.20131,37.8159124,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bridgeview Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Park Blvd & Leimert Blvd</h4>
+<b>8 min walk</b><br>
+Served by AC Transit 688, AC Transit 650, AC Transit V, AC Transit 18.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+<h4>Stop: Lincoln Av & Tiffin Rd</h4>
+<b>19 min walk</b><br>
+Served by AC Transit 639, AC Transit 653, AC Transit 31.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2118874,37.8134779,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hayward Regional Shoreline: Eden Landing</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Eden Landing Rd + Investment B</h4>
+<b>2 min walk</b><br>
+Served by AC Transit 86.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1228866,37.6217553,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dunsmuir Hills?: The San Leandro Trails</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: MacArthur Blvd & Dutton Av</h4>
+<b>6 min walk</b><br>
+Served by AC Transit 35, AC Transit 34.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+<h4>Stop: Marlow Dr & Revere Av</h4>
+<b>3 min walk</b><br>
+Served by AC Transit NX3, AC Transit 35, AC Transit 34.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1396889,37.7372084,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Joaquin Miller / Roberts Recreation Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Skyline Blvd + Roberts Park</h4>
+<b>0 min walk</b><br>
+Served by AC Transit 31.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1756987,37.8125,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Crockett Hills Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: John Swett High School</h4>
+<b>7 min walk</b><br>
+Served by WestCat 11.
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.2212669,38.0470793,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lake Chabot: Crest Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Miramar Av & Rolando Av</h4>
+<b>14 min walk</b><br>
+Served by AC Transit 28.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1061277,37.7098093,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ardenwood Historic Farm</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ardenwood Blvd & Ardenwood Ter</h4>
+<b>10 min walk</b><br>
+Served by AC Transit 281.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.0508424,37.5564349,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bedwell Bayfront Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 3719 Haven Ave.</h4>
+<b>4 min walk</b><br>
+Served by SamTrans 270.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.1723874,37.4911213,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mendocino Headlands State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main St & Lansing St</h4>
+<b>5 min walk</b><br>
+Served by MTA 65, MTA 60.
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.8062341,39.3089706,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Caspar Headlands State Beach: Caspar Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Caspar Beach</h4>
+<b>0 min walk</b><br>
+Served by MTA 65, MTA 60.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 3 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.816132,39.359566,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Caspar Headlands State Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Caspar</h4>
+<b>0 min walk</b><br>
+Served by MTA 65, MTA 60.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 3 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.814507,39.364792,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Jug Handle State Natural Reserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Caspar</h4>
+<b>12 min walk</b><br>
+Served by MTA 65, MTA 60.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 3 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.8162706,39.3725219,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Glass Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Denny's</h4>
+<b>7 min walk</b><br>
+Served by MTA 65, MTA 5.
+<ul><li>Weekday: About hourly</li><li>Saturday: 5 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.8134991,39.4526063,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Standish-Hickey State Recreation Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 101 - Leggett (Peg House)</h4>
+Also served by Gold Runner 7
+<b>5 min walk</b><br>
+Served by HTA NSE101.
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.7267195,39.8776688,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Humboldt Redwoods State Park: Franklin K. Lane Grove</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ave of Giants - NB Stop (Phillipsville Fire Department)</h4>
+<b>5 min walk</b><br>
+Served by HTA SHI.
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.7860828,40.2150022,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Humboldt Redwoods State Park: Stephens Grove Loop Trail / access to Dry Creek Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Ave of Giants & School Rd - Miranda NB Stop (Sips Coffee)</h4>
+<b>2 min walk</b><br>
+Served by HTA SHI.
+<ul><li>Weekday: 8 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.8241481,40.2378811,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Humboldt Redwoods State Park: Burlington-Weott Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Weott Off Ramp - SB Stop</h4>
+<b>5 min walk</b><br>
+Served by HTA SHI.
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.9256417,40.3222144,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Humboldt Redwoods State Park: Founders Grove</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: DROP OFF ONLY - Founders Grove</h4>
+<b>0 min walk</b><br>
+Served by HTA SHI.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 5 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.9239981,40.3524839,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Trinidad Head Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main St & View Ave - Trinidad NB Stop</h4>
+<b>14 min walk</b><br>
+Served by HTA RTS.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Trinidad Park and Ride</h4>
+<b>19 min walk</b><br>
+Served by Redwood Coast Transit 20.
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.1486732,41.0570704,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sue-meg State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sue-Meg Park</h4>
+<b>0 min walk</b><br>
+Served by Redwood Coast Transit 20.
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.1554365,41.1347056,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Prairie Creek Redwoods State Park - Visitor Center</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Prairie Creek Redwoods SP Visitor Ctr-NB</h4>
+Cathedral Trees Trail: 0min; Prairie Creek Visitor Center: 3min; Elk Prairie Campground: 11min
+<b>0 min walk</b><br>
+Served by Redwood Coast Transit 20.
+<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.020887,41.3637877,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Redwood State &amp; National Parks: Hidden Beach Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Trees of Mystery - NB</h4>
+<b>2 min walk</b><br>
+Served by Redwood Coast Transit 20.
+<ul><li>Weekday: 3 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.0880579,41.5842877,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Redwood State and National Parks: Yurok Loop Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Wilson Creek Beach Rest Area</h4>
+<b>0 min walk</b><br>
+Served by Redwood Coast Transit 20.
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 6 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.0997769,41.594556,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Redwood State &amp; National Parks: Howland Hill Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Howland Hill & Mathews Street Elk Valley Rancheria</h4>
+<b>12 min walk</b><br>
+Served by Redwood Coast Transit 4.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-124.1476892,41.7567163,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Southern Skyline Ridge Trail</name>
+    <description>
+<![CDATA[
+OPENING SOON - CONSTRUCTION PROGRESS AT https://www.sfpuc.gov/construction-contracts/construction-projects/Southern-Skyline-Boulevard-Ridge-Trail-Extension DAY-USE PERMIT REQUIRED: apply on SFPUC website<br>
+<h4>Stop: Hwy 92  & Skyline Blvd</h4>
+USE CAUTION WHEN CROSSING: Be patient crossing Hwy 92. Traffic can be heavy and you may have to wait. There is no signal and no marked crosswalk.
+<b>2 min walk</b><br>
+Served by SamTrans 294.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.367801,37.4945095,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sign Hill Trailhead (East)</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Grand Ave & Spruce Ave</h4>
+<b>9 min walk</b><br>
+Served by South City Shuttle BLUE, SamTrans 141, South City Shuttle GREEN, SamTrans 37, SamTrans 130.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.411634,37.661148,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Monte Rio Redwoods: Main St</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Monte Rio (Creekside Park)</h4>
+<b>11 min walk</b><br>
+Served by SCT 20, SCT 28, SCT 20X.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.0081056,38.4559363,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sonoma Coast State Park: Islands in the Sky Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Duncans Mills/Moscow Rd (Westbound)</h4>
+<b>14 min walk</b><br>
+Served by SCT 28.
+<ul><li>Weekday: 3 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: 0 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.0504132,38.4493669,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Jenner Headlands Preserve</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Jenner</h4>
+<b>8 min walk</b><br>
+Served by MTA 95.
+<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-123.1185431,38.4527888,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tahoe Rim Trail: Tahoe City North Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tahoe City Transit Center - Depart</h4>
+<b>14 min walk</b><br>
+Served by TART NS89, TART Hwy89, TART ML.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1488247,39.1692532,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tahoe Rim Trail: Tahoe City South</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tahoe City Transit Center - Depart</h4>
+<b>6 min walk</b><br>
+Served by TART NS89, TART Hwy89, TART ML.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1484779,39.1630773,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>15N65</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Basecamp</h4>
+<b>12 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1426395,39.1766392,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dollar Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Dollar Dr</h4>
+<b>0 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1047158,39.1934826,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Woodchuck Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Ridgewood Rd</h4>
+<b>13 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0953307,39.2164531,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tallac St</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Center St</h4>
+<b>6 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0862156,39.2276891,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Carnelian Woods Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Carnelian Woods (Shelter)</h4>
+<b>11 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.080805,39.2332083,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Agate Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Agate Rd</h4>
+<b>13 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0763506,39.239167,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>North Tahoe Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Estates Dr</h4>
+<b>13 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.057442,39.2456852,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Unnamed Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Pino Grande Ave (Lakeside)</h4>
+<b>4 min walk</b><br>
+Served by TART NS89, TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0389591,39.2396805,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stateline Fire Lookout Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: HWY 28 Crystal Bay Club (Shelter) - Depart</h4>
+<b>15 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.004102,39.2373857,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Forest Road 16N87</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 28 at Deer St WB</h4>
+<b>11 min walk</b><br>
+Served by TART NS89, TART Hwy267, TART ML.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0269673,39.2435463,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Cambridge Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 267 and Cambridge Dr</h4>
+<b>5 min walk</b><br>
+Served by TART Hwy267.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0298735,39.2490605,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pinedrop Ln</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 267 and Cambridge Dr</h4>
+<b>7 min walk</b><br>
+Served by TART Hwy267.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0348182,39.2480884,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stewart Way</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 267 and Stewart Way</h4>
+<b>3 min walk</b><br>
+Served by TART Hwy267.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.0373117,39.2536893,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Waddle Ranch-Elizabethtown Meadows Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sawmill Heights</h4>
+<b>14 min walk</b><br>
+Served by TART Hwy267.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1037182,39.2869219,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sweetwater Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tunnel Creek Bonanza (Depart)</h4>
+<b>9 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9257162,39.2395759,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tahoe East Shore Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tunnel Creek Bonanza (Depart)</h4>
+<b>5 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9307997,39.2338146,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tunnel Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tunnel Creek Bonanza (Depart)</h4>
+<b>4 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9300442,39.234694,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ward Creek Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Ward Ave</h4>
+<b>4 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1580162,39.1324046,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sugar Pine Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 Timberland Dr Lakeside</h4>
+<b>13 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.169359,39.1286322,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Eagle Rock Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Grand Ave</h4>
+<b>5 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1614467,39.1079293,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Grand Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Grand Ave</h4>
+<b>9 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.17042,39.107303,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sans Souci Terrace</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Homewood Sign</h4>
+<b>0 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1614744,39.0864884,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Meadow Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Ellis Rd</h4>
+<b>7 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1548206,39.0739184,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>McKinney Ct</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at McKinney Rubicon Springs Rd</h4>
+<b>13 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.1435629,39.0639309,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Ed Z&#x27;berg Sugar Pine Point State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sugar Pine Point State Park</h4>
+<b>0 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.122333,39.059481,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tahoe River Bike Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Alpine Meadows Rd (River Ranch)</h4>
+<b>0 min walk</b><br>
+Served by TART NS89, TART Hwy89.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.195148,39.1869587,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Olympic Valley Western States Connector Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Olympic Valley Rd at 7-11 Driveway (Shelter)</h4>
+<b>7 min walk</b><br>
+Served by TART NS89, TART Hwy89.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.2035984,39.2038693,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Granite Chief Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Olympic Valley Clock Tower</h4>
+<b>0 min walk</b><br>
+Served by TART NS89, TART Hwy89.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.2358442,39.198811,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Shirley Canyon Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Olympic Valley Clock Tower</h4>
+<b>11 min walk</b><br>
+Served by TART NS89, TART Hwy89.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.241292,39.1985221,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lam Watah Nature Trail to Nevada Beach</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Kingsbury Transit Center</h4>
+<b>2 min walk</b><br>
+Served by TTD 28, TTD 55, TTD 22.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.935885,38.9708608,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Kahle Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: SR 207/Market St</h4>
+<b>1 min walk</b><br>
+Served by TTD 22.
+<ul><li>Weekday: 5 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 5 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9316213,38.9686454,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Van Sickle Bi-State Park: Meadow Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: SR 207/Market St</h4>
+<b>11 min walk</b><br>
+Served by TTD 22.
+<ul><li>Weekday: 5 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 5 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9254479,38.9652906,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Daggett Pass</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tramway Dr/SR 207</h4>
+<b>0 min walk</b><br>
+Served by TTD 22.
+<ul><li>Weekday: 9 trips a day</li><li>Saturday: 9 trips a day</li><li>Sunday: 9 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.8888331,38.9765194,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Van Sickle Bi-State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Stateline Transit Center</h4>
+<b>12 min walk</b><br>
+Served by TTD 50, TTD 55, TTD 22.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+<h4>Stop: Stateline Transit Center</h4>
+<b>12 min walk</b><br>
+Served by El Dorado Transit nan.
+<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9385113,38.9541186,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Chonokis Road Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Stateline Transit Center</h4>
+<b>15 min walk</b><br>
+Served by TTD 50, TTD 55, TTD 22.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+<h4>Stop: Stateline Transit Center</h4>
+<b>15 min walk</b><br>
+Served by El Dorado Transit nan.
+<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9434234,38.9502941,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Powerline Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Herbert Ave/Red Lake Rd (Kelly Ridge)</h4>
+<b>11 min walk</b><br>
+Served by TTD 55.
+<ul><li>Weekday: About hourly</li><li>Saturday: About hourly</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9498505,38.932448,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dennis T Machida Memorial Greenway</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Lake Tahoe Community College Mobility Hub</h4>
+<b>10 min walk</b><br>
+Served by TTD 50, TTD 55.
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 20–30 minutes</li><li>Sunday: Every 20–30 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9659326,38.9262333,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hartoonian Trails: Lodi Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: US 50/Lodi Ave</h4>
+<b>5 min walk</b><br>
+Served by TTD 50, TTD 55.
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.9865518,38.9214922,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Tahoe City to Paige Meadows Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hwy 89 at Granlibakken</h4>
+<b>13 min walk</b><br>
+Served by TART ML.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.151262,39.1572879,0</coordinates>
+    </Point>
+  </Placemark>
+</Document></kml>

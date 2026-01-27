@@ -1,0 +1,102 @@
+<kml><Document>
+
+  <Style id="rail">
+    <IconStyle>
+      <color>ff007cf5</color>
+      <scale>0.4</scale>
+      <Icon>
+        <href>/assets/pin.png</href>
+      </Icon>
+    </IconStyle>
+  </Style>
+
+  <Placemark>
+    <name>Siesta Valley: De Laveaga Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Orinda</h4>
+<b>10 min walk</b><br>
+Served by BART Yellow-N, BART Yellow-S.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.1879308,37.8808028,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>MLK Jr Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Coliseum</h4>
+<b>20 min walk</b><br>
+Served by BART Orange-N, BART Green-S, BART Blue-N, BART Orange-S, BART Blue-S, BART Green-N.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.2110546,37.7506657,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lafayette Reservoir</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Lafayette</h4>
+<b>20 min walk</b><br>
+Served by BART Yellow-N, BART Yellow-S.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.1400555,37.8877229,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Angel Island</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Angel Island (No Service to Tiburon)</h4>
+<b>0 min walk</b><br>
+Served by Golden Gate Ferry AISF, Golden Gate Ferry TRIA.
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 6 trips a day</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.4349553,37.8684749,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sign Hill Trailhead (East)</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: South San Francisco</h4>
+<b>18 min walk</b><br>
+Served by BART Red-S, BART Yellow-N, BART Red-N, BART Yellow-S.
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.411634,37.661148,0</coordinates>
+    </Point>
+  </Placemark>
+</Document></kml>
