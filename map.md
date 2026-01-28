@@ -14,6 +14,8 @@ Not every county in Northern California has been added to this map yet. See belo
   <div id="info"></div>
 </div>
 
+<p id="mobile-message">Use two fingers to pan and scroll the map.</p><p id="desktop-message">Hold <em>ctrl</em> and scroll to zoom.</p>
+
 <div id="popup" class="ol-popup">
   <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
   <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
@@ -50,11 +52,12 @@ Not every county in Northern California has been added to this map yet. See belo
   </form>
 </div>
 
+<!--
 <hr>
 
-<!--The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*-->
+The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*
 
-<hr>
+<hr>-->
 
 This map includes transit from transit agencies across Northern California.
 
@@ -72,7 +75,9 @@ named long-distance hiking route, even on a section that is pavement (like the B
 
 If you're interested in finding those sorts of mariginal access, enable both the Public Lands layer and the Transit Stops layer on the map, and get scrolling!
 
-In addition to the CPAD database, useful resources for constructing transit-accessible adventures are CalTopo's FSTopo 2016 layer for finding official trails, and the Strava Heatmap for finding routes that actually get use and have not been abandoned. *Note: the CPAD layer has been temporarily deactivated. [Browse it directly on CPAD's official map »](https://www.mapcollaborator.org/cpad/?base=map&y=40.96123&x=-123.82828&z=11&layers=cpad_access&opacs=46)*
+In addition to the CPAD database, useful resources for constructing transit-accessible adventures are CalTopo's FSTopo 2016 layer for finding official trails, and the Strava Heatmap for finding routes that actually get use and have not been abandoned.
+
+*Note: the CPAD layer and Transit Stops layers have been temporarily deactivated. [Browse CPAD directly on their official map »](https://www.mapcollaborator.org/cpad/?base=map&y=40.96123&x=-123.82828&z=11&layers=cpad_access&opacs=46)*
 
 ## Which transit agencies / areas are included on the map?
 
