@@ -1,14 +1,14 @@
 ---
 layout: default
-title: About the Map
+title: Trailhead Map
 hasmap: true
 ---
 
-<h1 class="page-title">About the Map</h1>
+<h1 class="page-title">Trailhead Map</h1>
 
-This trailhead map contains all of the trailheads I've found that are transit accessible in the Bay Area (and a little bit beyond). I've considered "transit accessible" to be around a 30-minute walk, which is a reasonable approach for a longer hike, but for shorter hikes, I would recommend unchecking the "15+ min bus"/"20+ min train" categories. You can also toggle weekday-only services.
+The trailhead map is intended to contain all the trailheads around Northern California that are transit-accessible. In urban and suburban areas, this generally considered to be no more than around a 30-minute walk from stop to trailhead. In more rural areas with more sparse transit access, stops further from transit are included; in some very rare cases, mainly for the Pacific Crest Trail, trailheads as far as 2-3 hours from transit are included.
 
-Bus routes are only counted where they run throughout the day. Services that run commuter service a few times in a morning and evening are not included, but rural routes that run a few times a day are.
+Not every county in Northern California has been added to this map yet. See below for more information on exactly which transit agencies have and have not been included. **Notably, Santa Cruz County is not yet included**.
 
 <div id="ol-map">
   <div id="info"></div>
@@ -56,11 +56,31 @@ Bus routes are only counted where they run throughout the day. Services that run
 
 <hr>
 
-I've surveyed most of the Bay Area's transit agencies so far; the most notable exception is Muni, which serves plenty of great hiking options inside San Francisco, plus San Bruno Mountain. I've left Muni off of the map as San Francisco's parks are not quite natural spaces in the sense of large uninterrupted spaces with few roads and little development; the city also has tons of great parks covering the place. For the best of San Francisco hiking, I've left that in the more capable hands of the Crosstown Trail, a project by the fantastic SF Parks Alliance.
+This map includes transit from transit agencies across Northern California.
 
-I try to keep up with agency route changes, but inevitably will miss some. If you see a trailhead that's accessible by transit that I've missed, or a bus I claim goes somewhere it no longer does or no longer does on weekends when I say it does, **please** contact me at the email address below.
+## Is this map comprehenisve?
 
-Current agencies I've surveyed include:
+This map is *intended* to be comprehensive. However, schedules change, and especially in far-flung rural areas it can be difficult to track changes over time. The map was last comprehensively updated in January 2026.
+
+If you've noticed a missing trailhead, transit service that should be included but isn't, or *especially* transit that no longer exists, **please** email <a href="mailto:contact@hikingbytransit.com">contact@hikingbytransit.com</a> with the details.
+
+## Pedestrian access to National Forests via roadways
+
+The lack of "trailhead access" in some rural areas does not mean there is no access
+for the motivated individual. Transit stops have been included here where a bus serves a specific
+named long-distance hiking route, even on a section that is pavement (like the Bigfoot Trail in Hayfork on Trinity Transit), but other places where a bus might stop within 4-10 miles of a National Forest have not been included (like is the case in Janesville on the Sage Stage).
+
+If you're interested in finding those sorts of mariginal access, enable both the Public Lands layer and the Transit Stops layer on the map, and get scrolling!
+
+In addition to the CPAD database, useful resources for constructing transit-accessible adventures are CalTopo's FSTopo 2016 layer for finding official trails, and the Strava Heatmap for finding routes that actually get use and have not been abandoned. *Note: the CPAD layer has been temporarily deactivated. [Browse it directly on CPAD's official map »](https://www.mapcollaborator.org/cpad/?base=map&y=40.96123&x=-123.82828&z=11&layers=cpad_access&opacs=46)*
+
+## Which transit agencies / areas are included on the map?
+
+Muni has not been included on this map, as its services stay exclusively within San Francisco. San Francisco has fantastic urban parks, including ones with world-class urban hikes, but that information can be found across the internet as a whole.
+
+### The following agencies currently appear on the map:
+
+**Bay Area**
 * Tri Delta
 * AC Transit
 * BART
@@ -80,18 +100,73 @@ Current agencies I've surveyed include:
 * Bear Transit
 * Union City Transit
 * SolTrans
-* Mendocino Transit
+
+**North Coast**
+* Lake Transit
+* Mendocino Transit Authority
 * Humboldt Transit Authority
 * Redwood Coast Transit
+
+**Sierra Nevada**
 * Tahoe Area Regional Transit (south of Truckee)
 * Tahoe Transportation District
+
+**Shasta Cascade**
 * Trinity Transit
 * Siskyou County STAGE
+* Sage Stage (Modoc County)
 
-The next agencies I plan to look at are:
-* Tahoe Area Regional Transit (Truckee area)
+### The following agencies do not appear on the map, but are planned to
+
+**Shasta Cascade**
+* Lassen Rural Bus
+* Redding Area Bus Authority
+
+**Central Coast**
 * Santa Cruz Metro
 * Monterey-Salinas Transit
-* Redding Area Bus Authority
+* SLORTA
+* SLO Transit
+
+**Sierra Nevada**
+* Tahoe Area Regional Transit (Truckee area)
+* Sequoia Shuttle
+* YARTS
+* Eastern Sierra Transit
+
+**Sierra Foothills**
+* Plumas Transit Systems
+* El Dorado Transit
+* Placer County Transit
+* Nevada County Transit
+* Tehama TRAX
+* Calaveras Transit
+* Amador Transit
+* Tuolumne County Transit
+
+**Central Valley and Foothills**
+* Kern Transit
+* SacRT
+* Madera County Connection
+* Fresno County Transit Agency
+* Fresno FAX
+* Butte County B-Line
+* Tulare County Regional Area Transit Agency
+* KART (Kings Area)
+* Merced County Transit
+* CatTracks (UC Merced)
+* StanRTA
+* San Joaquin RTD
+
+**Statewide**
+* Amtrak thruway buses
+
+### Microtransit and Dial-a-Ride
+The following dial-a-ride and microtransit services are intended to be included on the map:
+
 * ShastaConnect
-* Amtrak buses
+* Alpine County Dial-a-Ride
+* MARI-GO Transit
+* transPORT (Porterville)
+* The Micro Bus (Merced)
+* Van Go! (Stanislaus)
