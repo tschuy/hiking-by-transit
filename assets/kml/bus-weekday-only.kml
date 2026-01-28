@@ -1023,4 +1023,24 @@ Served by Sage Stage Redding
       <coordinates>-121.57672971378467,40.9638003361752,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Etna Summit Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Across from Etna Ray's Market</h4>
+Long-distance access to the Pacific Crest Trail. Approximately 10mi on Sawyers Bar Rd. Used primarily by thru-hikers for resupply or repositioning.
+<br>
+<b>240 min walk</b><br>
+Served by Siskiyou STAGE 4, Siskiyou STAGE 5
+<ul><li>Weekday: 9 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.99390650414028,41.39490172042857,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>
