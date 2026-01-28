@@ -825,4 +825,22 @@ Served by Trinity Transit Hayfork Line, Trinity Transit Lewiston Line, Trinity T
       <coordinates>-122.94232588349372,40.73521820896141,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Shasta-Trinity National Forest - Big Bar Ranger Station</name>
+    <description>
+<![CDATA[
+Access to Treloar Ridge Trail <br>
+<h4>Stop: Big Bar Ranger Station (across from Corral Bottom Rd)</h4>
+<b>3 min walk</b><br>
+Served by Trinity Transit Willow Creek Line
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-123.25152887696548,40.74067160297092,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>
