@@ -843,4 +843,96 @@ Served by Trinity Transit Willow Creek Line
       <coordinates>-123.25152887696548,40.74067160297092,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Castle Crags State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Castella Post office</h4>
+<b>7 min walk</b><br>
+Served by Siskiyou STAGE 2, Siskiyou STAGE 3
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.32154857501244,41.14816855191384,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Soda Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Soda Creek</h4>
+<b>0 min walk</b><br>
+Served by Siskiyou STAGE 2, Siskiyou STAGE 3
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.29854059994891,41.162359372589535,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail - I-5 Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Soda Creek</h4>
+<b>9 min walk</b><br>
+Served by Siskiyou STAGE 2, Siskiyou STAGE 3
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.29199054312338,41.16017104637959,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mounta Shasta: Gateway Trail System</name>
+    <description>
+<![CDATA[
+https://mountshastatrailassociation.org/trails/mt-shasta/gateway/ <br>
+<h4>Stop: Mount Shasta High School</h4>
+<b>27 min walk</b><br>
+Served by Siskiyou STAGE 2
+<ul><li>Weekday: 1 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.3085378188667,41.334331928825854,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Klamath River Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Seiad Valley Country Store</h4>
+The Pacific Crest Trail runs down Hwy 96 in this area.
+<br>
+<b>0 min walk</b><br>
+Served by Siskiyou STAGE 6
+<ul><li>Weekday: 1 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-123.21033075410065,41.84442935925978,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

@@ -16,7 +16,8 @@ gtfs_map = {
     "sanbenito": {"path": "./gtfs/sanbenitocounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sanbenitocounty-ca-us/sanbenitocounty-ca-us.zip"},
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
     "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"},
-    "trinity": {"path": "./gtfs/weaverville-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip"}
+    "trinity": {"path": "./gtfs/weaverville-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip"},
+    "siskiyou": {"path": "./gtfs/siskiyou-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip"}
 }
 
 def actransit_filter(rid):
@@ -68,6 +69,9 @@ for feed_name, feed_info in gtfs_map.items():
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip": {
+        24: {"short_name": "Siskiyou STAGE", "long_name": "Siskiyou Transit and General Express", "type": "bus"}
+    },
     "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip": {
         34: {"long_name": "Trinity Transit", "type": "bus"}
     },

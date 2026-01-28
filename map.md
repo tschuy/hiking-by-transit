@@ -85,10 +85,13 @@ Current agencies I've surveyed include:
 * Redwood Coast Transit
 * Tahoe Area Regional Transit (south of Truckee)
 * Tahoe Transportation District
+* Trinity Transit
+* Siskyou County STAGE
 
 The next agencies I plan to look at are:
 * Tahoe Area Regional Transit (Truckee area)
 * Santa Cruz Metro
 * Monterey-Salinas Transit
-* Trinity Transit
+* Redding Area Bus Authority
+* ShastaConnect
 * Amtrak buses
