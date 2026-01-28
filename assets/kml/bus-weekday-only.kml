@@ -771,4 +771,58 @@ Served by CC 15
       <coordinates>-122.0088702,37.947999,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Hayfork - Bigfoot Trail</name>
+    <description>
+<![CDATA[
+Long-distance hiking route across the Klamath Mountains. https://www.bigfoottrail.org/ <br>
+<h4>Stop: Hayfork Library</h4>
+<b>0 min walk</b><br>
+Served by Trinity Transit Hayfork Line
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-123.19088070110716,40.552742498165756,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Junction City - Bigfoot Trail</name>
+    <description>
+<![CDATA[
+Long-distance hiking route across the Klamath Mountains. https://www.bigfoottrail.org/ <br>
+<h4>Stop: Junction City Store</h4>
+<b>0 min walk</b><br>
+Served by Trinity Transit Willow Creek Line
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-123.05529987301365,40.72871522151823,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Weaver Basin Trails</name>
+    <description>
+<![CDATA[
+Trailsystem adjacent to Weaverville, with access deeper into Shasta-Trinity National Forest https://www.tcrcd.net/index.php/2014-02-05-08-30-03/weaverville-basin-trail-system <br>
+<h4>Stop: Weaverville Library</h4>
+<b>0 min walk</b><br>
+Served by Trinity Transit Hayfork Line, Trinity Transit Lewiston Line, Trinity Transit Redding Line, Trinity Transit Willow Creek Line
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-122.94232588349372,40.73521820896141,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>
