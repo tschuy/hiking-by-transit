@@ -121,7 +121,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Siskyou County STAGE
 * Sage Stage (Modoc County)
 
-### The following agencies do not appear on the map, but are planned to
+### The following agencies do not appear on the map, but are planned to:
 
 **Shasta Cascade**
 * Lassen Rural Bus
@@ -137,7 +137,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Tahoe Area Regional Transit (Truckee area)
 * Sequoia Shuttle
 * YARTS
-* Eastern Sierra Transit
+* Eastern Sierra Transit (including Reds Meadow shuttle)
 
 **Sierra Foothills**
 * Plumas Transit Systems

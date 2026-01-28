@@ -12,7 +12,7 @@ from constants import gtfs_map
 from stop_summary import get_stop_summary
 
 
-MAX_RADIUS_METERS = 4828.03  # 3 miles
+MAX_RADIUS_METERS = 4828.03 # 3 miles
 
 
 def load_stops(gtfs_path):
