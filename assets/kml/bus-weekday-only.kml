@@ -906,7 +906,7 @@ https://mountshastatrailassociation.org/trails/mt-shasta/gateway/ <br>
 <h4>Stop: Mount Shasta High School</h4>
 <b>27 min walk</b><br>
 Served by Siskiyou STAGE 2
-<ul><li>Weekday: 1 trips a day</li><li>Weekend: No service</li></ul>
+<ul><li>Weekday: 1 trip a day</li><li>Weekend: No service</li></ul>
 
 ]]>
     </description>
@@ -926,13 +926,105 @@ The Pacific Crest Trail runs down Hwy 96 in this area.
 <br>
 <b>0 min walk</b><br>
 Served by Siskiyou STAGE 6
-<ul><li>Weekday: 1 trips a day</li><li>Weekend: No service</li></ul>
+<ul><li>Served less than once daily. Check schedules for details.</li></ul>
 
 ]]>
     </description>
     <styleUrl>#bus-weekday-only</styleUrl>
     <Point>
       <coordinates>-123.21033075410065,41.84442935925978,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bizz Johnson National Recreation Trail: Susanville Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Susanville Riverside Drive (Walmart)</h4>
+Intercity service from Reno
+<br>
+<b>37 min walk</b><br>
+Served by Sage Stage Reno
+<ul><li>Weekday: 1 trip a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.66108053727437,40.41166276489657,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Modoc Line Rail-Trail: Madeline Trailhead</name>
+    <description>
+<![CDATA[
+https://lassenlandandtrailstrust.org/modoc-line-rail-trail <br>
+<h4>Stop: Madeline Old Chevron</h4>
+<b>4 min walk</b><br>
+Served by Sage Stage Reno
+<ul><li>Weekday: 1 trip a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.47353939861274,41.051676867610844,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Modoc Line Rail-Trail: Likely Trailhead</name>
+    <description>
+<![CDATA[
+https://lassenlandandtrailstrust.org/modoc-line-rail-trail <br>
+<h4>Stop: Likely General Store</h4>
+<b>2 min walk</b><br>
+Served by Sage Stage Reno
+<ul><li>Weekday: 1 trip a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.50142665026914,41.230524945774285,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Forest Route 7R02 for Fall River Mills</name>
+    <description>
+<![CDATA[
+7-8mi between trail and town <br>
+<h4>Stop: Shell Station (43202 Hwy. 299 E) Fall River Mills</h4>
+<b>177 min walk</b><br>
+Served by Sage Stage Redding
+<ul><li>Served less than once daily. Check schedules for details.</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.47759384802958,40.92231943671424,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Hwy 299</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: McDonalds Burney</h4>
+<b>144 min walk</b><br>
+Served by Sage Stage Redding
+<ul><li>Served less than once daily. Check schedules for details.</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.57672971378467,40.9638003361752,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>
