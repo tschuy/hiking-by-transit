@@ -11,6 +11,8 @@ from constants import url_to_route_map, agency_map
 def frequency_label(trips_per_day: int) -> str:
     if trips_per_day <= 0:
         return "No service"
+    elif trips_per_day == 1:
+        return f"{trips_per_day} trip a day"
     elif trips_per_day < 10:
         return f"{trips_per_day} trips a day"
     elif trips_per_day < 18:
@@ -129,6 +131,7 @@ def main():
             access_notes = cdata_safe(access.get("notes"))
 
             walk_time = int(round(access.get("walk_time_min", 0)))
+            times_per_weekday = access.get("weekday_frequency", 0)
             weekday = int(round(access.get("weekday_frequency", 0)))
             saturday = int(round(access.get("saturday_frequency", 0)))
             sunday = int(round(access.get("sunday_frequency", 0)))
@@ -190,7 +193,11 @@ def main():
                 description_lines.append("<br>")
             description_lines.append(f"<b>{walk_time} min walk</b><br>")
             description_lines.append(f"Served by {', '.join(sorted(set(route_strings)))}")
-            description_lines.append(service_description(weekday, saturday, sunday))
+            if times_per_weekday < 1 and saturday == 0:
+                # if it's not a weekend-only service, and it's served less than once daily, special message
+                description_lines.append("<ul><li>Served less than once daily. Check schedules for details.</li></ul>")
+            else:
+                description_lines.append(service_description(weekday, saturday, sunday))
             description_lines.append("")
 
         description_lines.append("]]>")

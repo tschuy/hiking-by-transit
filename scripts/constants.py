@@ -17,7 +17,8 @@ gtfs_map = {
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
     "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"},
     "trinity": {"path": "./gtfs/weaverville-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip"},
-    "siskiyou": {"path": "./gtfs/siskiyou-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip"}
+    "siskiyou": {"path": "./gtfs/siskiyou-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip"},
+    "sage": {"path": "./gtfs/sagestage-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sagestage-ca-us/sagestage-ca-us.zip"}
 }
 
 def actransit_filter(rid):
@@ -80,6 +81,9 @@ agency_map = {
     },
     "https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip": {
         1708: {"long_name": "Bear Transit", "type": "bus"}
+    },
+    "https://data.trilliumtransit.com/gtfs/sagestage-ca-us/sagestage-ca-us.zip": {
+        678: {"long_name": "Sage Stage", "type": "bus"}
     },
     "https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip": {
         7: {"short_name": "Lake Transit", "long_name": "Lake Transit", "type": "bus"}
