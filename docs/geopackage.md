@@ -43,7 +43,7 @@ Contains transit stop and access information.
 * `trailhead_id`: foreign key reference to `trailheads` layer
 * `stop_id`: GTFS `stop_id` for transit stop. See below for information on how this is used.
 * `stop_name`: Human-readable name of transit stop, taken from GTFS if available
-* `walk_time_min`: Estimated walking time to trailhead from transit stop
+* `walk_time_min`: Estimated walking time to trailhead from transit stop. NULL if "special" trailhead (details on walking time stored in `notes` field instead)
 * `walk_source`: Source of calculation for walk_time_min; current options: `routed` = calculated using machine routing engine (ex: Google Maps, OsmAnd)
 * `notes`: Human-readable notes about transit stop to trailhead (ex: walking route conditions, crossing safety)
 * `gtfs_source`: URL of GTFS feed used for frequency and stop name information

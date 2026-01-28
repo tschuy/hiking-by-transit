@@ -130,7 +130,12 @@ def main():
             stop_name = cdata_safe(access.get("stop_name"))
             access_notes = cdata_safe(access.get("notes"))
 
-            walk_time = int(round(access.get("walk_time_min", 0)))
+            # walk time: null means it's a special trailhead, where the notes field has more info
+            if not math.isnan(access.get("walk_time_min", -1)):
+                walk_time = int(round(access.get("walk_time_min", -1)))
+            else:
+                walk_time = -1
+
             times_per_weekday = access.get("weekday_frequency", 0)
             weekday = int(round(access.get("weekday_frequency", 0)))
             saturday = int(round(access.get("saturday_frequency", 0)))
@@ -191,7 +196,8 @@ def main():
             if access_notes:
                 description_lines.append(access_notes)
                 description_lines.append("<br>")
-            description_lines.append(f"<b>{walk_time} min walk</b><br>")
+            if walk_time >=0:
+                description_lines.append(f"<b>{walk_time} min walk</b><br>")
             description_lines.append(f"Served by {', '.join(sorted(set(route_strings)))}")
             if times_per_weekday < 1 and saturday == 0:
                 # if it's not a weekend-only service, and it's served less than once daily, special message
