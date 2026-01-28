@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
+
 import sys
 import geopandas as gpd
 import pandas as pd
 import html
+import math
 
 from constants import url_to_route_map, agency_map
 
@@ -160,7 +162,7 @@ def main():
                 agency_type = agency.get("type", "bus")
 
                 route_name = str(info["route_short_name"])
-                if route_name != route_name: route_name = ""
+                if route_name == "nan": route_name = info["route_long_name"]
                 route_name = route_name.removesuffix('-N')
                 route_name = route_name.removesuffix('-S')
                 if route_name == "SMART": route_name = "" # workaround to route and agency name matching

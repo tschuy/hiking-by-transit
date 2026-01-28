@@ -56,6 +56,15 @@ Summary:
   Average per stop: 197
 ```
 
+## Converting GTFS to KML: `gtfs_to_kml.py`
+
+It's often very useful to have transit stops in KML, a more widely-supported format
+for use with various mapping software (ex: CalTopo, mobile apps, etc).
+
+This script extracts stops and put them in a KML file with their stop_id.
+
+`gtfs_to_kml.py --gtfs ./gtfs/weaverville-ca-us.zip --output weaverville.kml`
+
 ## Full build
 
 1) Rebuilding the olmap

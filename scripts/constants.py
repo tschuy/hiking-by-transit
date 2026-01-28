@@ -15,7 +15,8 @@ gtfs_map = {
     "yolo": {"path": "./gtfs/yolobus.zip", "url": "https://yolobus.com/wp-content/uploads/2025/10/google_transit.zip"},
     "sanbenito": {"path": "./gtfs/sanbenitocounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sanbenitocounty-ca-us/sanbenitocounty-ca-us.zip"},
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
-    "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"}
+    "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"},
+    "trinity": {"path": "./gtfs/weaverville-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip"}
 }
 
 def actransit_filter(rid):
@@ -67,6 +68,9 @@ for feed_name, feed_info in gtfs_map.items():
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip": {
+        34: {"long_name": "Trinity Transit", "type": "bus"}
+    },
     "https://content.amtrak.com/content/gtfs/GTFS.zip": {
         51: {"long_name": "Amtrak", "type": "rail"}
     },
