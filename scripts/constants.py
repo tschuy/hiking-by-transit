@@ -27,7 +27,10 @@ gtfs_map = {
     "amador": {"path": "./gtfs/amador-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip"},
     "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
     "plumas": {"path": "./gtfs/plumas-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/plumas-ca-us/plumas-ca-us.zip"},
-    "yarts": {"path": "./gtfs/yarts.zip", "url": "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip"}
+    "yarts": {"path": "./gtfs/yarts.zip", "url": "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip"},
+    "lassen": {"path": "./gtfs/lassen-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip"},
+    "raba": {"path": "./gtfs/rabagtfs.zip", "url": "https://rabagtfs.z5.web.core.windows.net/rabagtfs.zip"}
+
 }
 
 def actransit_filter(rid):

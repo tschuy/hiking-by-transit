@@ -4213,4 +4213,132 @@ Served by El Dorado Transit 20, El Dorado Transit 25, El Dorado Transit 50x, El 
       <coordinates>-120.7888975766776,38.73310634717377,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Chester Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Pacific Crest Trail</h4>
+Request stop - call ahead for service
+<br>
+<b>0 min walk</b><br>
+Served by UNKNOWN West County
+<ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.33897618306716,40.26154399909674,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lassen National Forest: Road 30N05</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Coppervale Ski</h4>
+<b>6 min walk</b><br>
+Served by UNKNOWN West County
+<ul><li>Weekday: 5 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.89976387513025,40.34942403705906,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lassen National Forest: Road 30N29</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Fredonyer Summit</h4>
+<b>0 min walk</b><br>
+Served by UNKNOWN West County
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.8652375764902,40.36157545299325,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bizz Johnson Trail: Devils Corral</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Devil's Corral</h4>
+<b>8 min walk</b><br>
+Served by UNKNOWN West County
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.78029466895207,40.395655335985296,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bizz Johnson Trail: Richmond Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: RichmondRd. and Bizz Johnston Trail</h4>
+<b>0 min walk</b><br>
+Served by UNKNOWN West County
+<ul><li>Weekday: No service</li><li>Saturday: 3 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.66065709178562,40.41156782306417,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Susanville Ranch Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Susanville Ranch Park</h4>
+<b>0 min walk</b><br>
+Served by UNKNOWN Susanville City Route
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.66746485373355,40.43226821745118,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sacramento River Trail: Downtown Redding</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Court St at 11th St</h4>
+<b>10 min walk</b><br>
+Served by UNKNOWN 11, UNKNOWN 14
+<ul><li>Weekday: About hourly</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.40182782667961,40.59142306674058,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

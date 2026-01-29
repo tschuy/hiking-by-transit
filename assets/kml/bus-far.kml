@@ -1614,4 +1614,40 @@ Served by Placer County Transit 10, Placer County Transit 30, Placer County Tran
       <coordinates>-121.0691860193893,38.88918828706684,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Westside Trails Kilkee Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Airpark Dr at Placer St (FS)</h4>
+<b>46 min walk</b><br>
+Served by UNKNOWN 3
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-122.43835103554348,40.57748259578439,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Eastside Keswick Trails: Hornbeck Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Oasis Rd at Lake Blvd (FS)</h4>
+<b>31 min walk</b><br>
+Served by UNKNOWN 1
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-122.42207934207902,40.6357911867271,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

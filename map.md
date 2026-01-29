@@ -122,6 +122,8 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Siskyou County STAGE
 * Sage Stage (Modoc County)
 * Plumas Transit Systems
+* Lassen Rural Bus
+* Redding Area Bus Authority
 
 **Central Valley and Foothills**
 * Tehama TRAX
@@ -133,10 +135,6 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Tuolumne County Transit
 
 ### The following agencies do not appear on the map, but are planned to:
-
-**Shasta Cascade**
-* Lassen Rural Bus
-* Redding Area Bus Authority
 
 **Central Coast**
 * Santa Cruz Metro
