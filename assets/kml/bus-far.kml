@@ -1622,7 +1622,7 @@ Served by Placer County Transit 10, Placer County Transit 30, Placer County Tran
 
 <h4>Stop: Airpark Dr at Placer St (FS)</h4>
 <b>46 min walk</b><br>
-Served by UNKNOWN 3
+Served by RABA 3
 <ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -1640,7 +1640,7 @@ Served by UNKNOWN 3
 
 <h4>Stop: Oasis Rd at Lake Blvd (FS)</h4>
 <b>31 min walk</b><br>
-Served by UNKNOWN 1
+Served by RABA 1
 <ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -1648,6 +1648,24 @@ Served by UNKNOWN 1
     <styleUrl>#bus-far</styleUrl>
     <Point>
       <coordinates>-122.42207934207902,40.6357911867271,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Case Mountain Extensive Recreation Management Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Memorial Building</h4>
+<b>26 min walk</b><br>
+Served by Tulare C20, Tulare C30
+<ul><li>Weekday: About hourly</li><li>Weekend: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.86233295006838,36.45285989110725,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

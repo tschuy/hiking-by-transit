@@ -4223,7 +4223,7 @@ Served by El Dorado Transit 20, El Dorado Transit 25, El Dorado Transit 50x, El 
 Request stop - call ahead for service
 <br>
 <b>0 min walk</b><br>
-Served by UNKNOWN West County
+Served by Lassen Rural Bus West County
 <ul><li>Weekday: 2 trips a day</li><li>Saturday: 2 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4241,7 +4241,7 @@ Served by UNKNOWN West County
 
 <h4>Stop: Coppervale Ski</h4>
 <b>6 min walk</b><br>
-Served by UNKNOWN West County
+Served by Lassen Rural Bus West County
 <ul><li>Weekday: 5 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4259,7 +4259,7 @@ Served by UNKNOWN West County
 
 <h4>Stop: Fredonyer Summit</h4>
 <b>0 min walk</b><br>
-Served by UNKNOWN West County
+Served by Lassen Rural Bus West County
 <ul><li>Weekday: 6 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4277,7 +4277,7 @@ Served by UNKNOWN West County
 
 <h4>Stop: Devil's Corral</h4>
 <b>8 min walk</b><br>
-Served by UNKNOWN West County
+Served by Lassen Rural Bus West County
 <ul><li>Weekday: 6 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4295,7 +4295,7 @@ Served by UNKNOWN West County
 
 <h4>Stop: RichmondRd. and Bizz Johnston Trail</h4>
 <b>0 min walk</b><br>
-Served by UNKNOWN West County
+Served by Lassen Rural Bus West County
 <ul><li>Weekday: No service</li><li>Saturday: 3 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4313,7 +4313,7 @@ Served by UNKNOWN West County
 
 <h4>Stop: Susanville Ranch Park</h4>
 <b>0 min walk</b><br>
-Served by UNKNOWN Susanville City Route
+Served by Lassen Rural Bus Susanville City Route
 <ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4331,7 +4331,7 @@ Served by UNKNOWN Susanville City Route
 
 <h4>Stop: Court St at 11th St</h4>
 <b>10 min walk</b><br>
-Served by UNKNOWN 11, UNKNOWN 14
+Served by RABA 11, RABA 14
 <ul><li>Weekday: About hourly</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
 
 ]]>
@@ -4339,6 +4339,42 @@ Served by UNKNOWN 11, UNKNOWN 14
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-122.40182782667961,40.59142306674058,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Donner Memorial State Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Donner Pass Rd Cold Stream Rd</h4>
+<b>8 min walk</b><br>
+Served by TART SBDS, TART TLR
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.23292436279144,39.32437594633852,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Truckee Regional Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Brockway Rd at Regional Park (Bus Shelter)</h4>
+<b>0 min walk</b><br>
+Served by TART Hwy267, TART TLR
+<ul><li>7 days a week: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.17706659626221,39.32634988758886,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

@@ -1018,7 +1018,7 @@ Served by Sage Stage Redding
 
 <h4>Stop: SR 89 @ SR 299 Park and Ride Lot</h4>
 <b>57 min walk</b><br>
-Served by UNKNOWN 299X
+Served by RABA 299X
 <ul><li>Weekday: 6 trips a day</li><li>Weekend: No service</li></ul>
 
 ]]>
@@ -1390,6 +1390,24 @@ Served by Tuolumne County Transit R2
     <styleUrl>#bus-weekday-only</styleUrl>
     <Point>
       <coordinates>-120.1635897926512,38.07935804960472,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sierra National Forest: Chepo Saddle Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Bass Lake - Government Center</h4>
+<b>26 min walk</b><br>
+Served by Madera County Connection Eastern Madera County
+<ul><li>Weekday: 5 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-119.5911776391325,37.34909678212809,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

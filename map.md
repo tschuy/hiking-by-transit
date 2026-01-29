@@ -113,7 +113,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Redwood Coast Transit
 
 **Sierra Nevada**
-* Tahoe Area Regional Transit (south of Truckee)
+* Tahoe Area Regional Transit
 * Tahoe Transportation District
 * Sequoia Shuttle
 
@@ -133,6 +133,14 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Calaveras Transit
 * Amador Transit
 * Tuolumne County Transit
+* Madera County Connection
+* San Joaquin RTD
+* StanRTA
+* KART (Kings Area)
+* Merced County Transit
+* CatTracks (UC Merced)
+* Tulare County Regional Area Transit Agency
+* Fresno County Transit Agency
 
 ### The following agencies do not appear on the map, but are planned to:
 
@@ -143,23 +151,13 @@ Muni has not been included on this map, as its services stay exclusively within 
 * SLO Transit
 
 **Sierra Nevada**
-* Tahoe Area Regional Transit (Truckee area)
 * YARTS
 * Eastern Sierra Transit (including Reds Meadow shuttle)
 
 **Central Valley and Foothills**
 * Kern Transit
 * SacRT
-* Madera County Connection
-* Fresno County Transit Agency
-* Fresno FAX
 * Butte County B-Line
-* Tulare County Regional Area Transit Agency
-* KART (Kings Area)
-* Merced County Transit
-* CatTracks (UC Merced)
-* StanRTA
-* San Joaquin RTD
 
 **Statewide**
 * Amtrak thruway buses
