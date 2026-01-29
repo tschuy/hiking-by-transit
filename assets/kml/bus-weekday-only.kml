@@ -1043,4 +1043,348 @@ Served by Siskiyou STAGE 4, Siskiyou STAGE 5
       <coordinates>-122.99390650414028,41.39490172042857,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Canyondam Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 29571 Hwy 89 Canyon Dam</h4>
+<b>17 min walk</b><br>
+Served by Plumas Transit North County
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.08380639500959,40.168762394945134,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Road 26N81</name>
+    <description>
+<![CDATA[
+Dirt forest service road, motor vehicles may be present <br>
+<h4>Stop: Wolf Creek Rd at Higbie Ave</h4>
+<b>6 min walk</b><br>
+Served by Plumas Transit North County
+<ul><li>Weekday: 7 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.96240463666643,40.14779133488845,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Mount Hough Ranger District Office</name>
+    <description>
+<![CDATA[
+Access to Forest Roads around Snake Lake <br>
+<h4>Stop: 39300 Hwy 70 (Evergreen Trailer Park)</h4>
+<b>9 min walk</b><br>
+Served by Plumas Transit North County, Plumas Transit Quincy Local
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.93917580645171,39.97733722554757,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Quincy Powerline Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 270 Hospital Rd (Courthouse Annex)</h4>
+<b>26 min walk</b><br>
+Served by Plumas Transit East County, Plumas Transit North County, Plumas Transit Quincy Local
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.95170587294143,39.961613518075616,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Road 23N12</name>
+    <description>
+<![CDATA[
+Dirt road open to vehicle use. Access to McDermott Ravine <br>
+<h4>Stop: Sloat Rd / Cromberg</h4>
+<b>29 min walk</b><br>
+Served by Plumas Transit East County
+<ul><li>Weekday: 5 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.72762179999299,39.88003621118041,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Plumas National Forest: Beckwourth Peak Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: 440 S. Gulling (Portola Post Office)</h4>
+<b>1 min walk</b><br>
+Served by Plumas Transit East County
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.46542282373092,39.805583880719645,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>South Yuba River State Park: Hoyt Crossing Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: South Yuba River</h4>
+<b>5 min walk</b><br>
+Served by Nevada County Connects 7
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.09038446506972,39.297981646032234,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>South Yuba River State Park: Independence Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: South Yuba River</h4>
+<b>13 min walk</b><br>
+Served by Nevada County Connects 7
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.0972791914762,39.2918702172522,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stevens Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Colfax Depot</h4>
+<b>26 min walk</b><br>
+Served by Placer County Transit 40, Placer County Transit 60
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.94718120161059,39.105543843341906,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Folsom Lake State Recreation Area: Willow Creek</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Iron Point Light Rail</h4>
+<b>1 min walk</b><br>
+Served by El Dorado Transit 50x
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.19111331216327,38.64453673693695,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Smithflat</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Smith Flat Rd. at School St. (West)</h4>
+<b>4 min walk</b><br>
+Served by El Dorado Transit 20
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.75659113764588,38.73395219446805,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Verde Robles Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Camino Heights Park and Ride</h4>
+<b>19 min walk</b><br>
+Served by El Dorado Transit 60
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.71480772620119,38.72963655957292,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stanislaus National Forest: Lakemont Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arnold - Big Trees Market</h4>
+<b>31 min walk</b><br>
+Served by Calaveras Connect Red Line
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.37665140506985,38.243205566127216,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stanislaus National Forest: Arnold Rim Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Arnold - Library/Blagen Rd.</h4>
+<b>18 min walk</b><br>
+Served by Calaveras Connect Red Line
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.34378995533298,38.26502855789687,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Dragoon Gulch Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Community Pharmacy Stockton Street</h4>
+<b>11 min walk</b><br>
+Served by Tuolumne County Transit R1, Tuolumne County Transit R2
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.3906782118291,37.98268593703399,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Columbia State Historic Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Columbia State Park (Head Quarters)</h4>
+Historical park, not for hiking.
+<br>
+<b>0 min walk</b><br>
+Served by Tuolumne County Transit R2
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.40217,38.03371,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Main Tuolumne Ditch Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Twain Harte Market</h4>
+<b>44 min walk</b><br>
+Served by Tuolumne County Transit R2
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.22928341804487,38.05661526333288,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Main Tuolumne Ditch Trail: Access Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sugar Pine (Across from Sugar Shack)</h4>
+<b>30 min walk</b><br>
+Served by Tuolumne County Transit R2
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.21547499267423,38.05533789649423,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lyons Reservoir Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sierra Village</h4>
+<b>15 min walk</b><br>
+Served by Tuolumne County Transit R2
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-120.1635897926512,38.07935804960472,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

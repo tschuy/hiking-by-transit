@@ -115,11 +115,22 @@ Muni has not been included on this map, as its services stay exclusively within 
 **Sierra Nevada**
 * Tahoe Area Regional Transit (south of Truckee)
 * Tahoe Transportation District
+* Sequoia Shuttle
 
 **Shasta Cascade**
 * Trinity Transit
 * Siskyou County STAGE
 * Sage Stage (Modoc County)
+* Plumas Transit Systems
+
+**Central Valley and Foothills**
+* Tehama TRAX
+* Placer County Transit
+* El Dorado Transit
+* Nevada County Transit
+* Calaveras Transit
+* Amador Transit
+* Tuolumne County Transit
 
 ### The following agencies do not appear on the map, but are planned to:
 
@@ -135,19 +146,8 @@ Muni has not been included on this map, as its services stay exclusively within 
 
 **Sierra Nevada**
 * Tahoe Area Regional Transit (Truckee area)
-* Sequoia Shuttle
 * YARTS
 * Eastern Sierra Transit (including Reds Meadow shuttle)
-
-**Sierra Foothills**
-* Plumas Transit Systems
-* El Dorado Transit
-* Placer County Transit
-* Nevada County Transit
-* Tehama TRAX
-* Calaveras Transit
-* Amador Transit
-* Tuolumne County Transit
 
 **Central Valley and Foothills**
 * Kern Transit
@@ -175,3 +175,4 @@ The following dial-a-ride and microtransit services are intended to be included 
 * transPORT (Porterville)
 * The Micro Bus (Merced)
 * Van Go! (Stanislaus)
+* Quincy Evening

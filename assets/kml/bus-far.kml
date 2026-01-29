@@ -1537,4 +1537,81 @@ Served by Marin Transit 49
       <coordinates>-122.60419285640188,38.13011139911911,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Nisenan Tribute Site Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Broad Street @ City Hall</h4>
+<b>18 min walk</b><br>
+Served by Nevada County Connects 1, Nevada County Connects 7
+<ul><li>Weekday: 3 trips a day</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-121.03107522157102,39.26175301216449,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Deer Creek Environs Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Broad Street @ City Hall</h4>
+<b>20 min walk</b><br>
+Served by Nevada County Connects 1, Nevada County Connects 7
+<ul><li>Weekday: 3 trips a day</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-121.03033493192564,39.260506960226245,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Empire Mine State Historic Park: Gold Hill Dr</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Colfax Ave at Ophir St, Bottle Shop</h4>
+<b>16 min walk</b><br>
+Served by Nevada County Connects 3
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-121.04360277619338,39.21165434983326,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Auburn State Recreation Area: Overlook Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Nevada St at Amtrak Station</h4>
+<b>36 min walk</b><br>
+Served by Nevada County Connects 5
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 6 trips a day</li><li>Sunday: No service</li></ul>
+
+<h4>Stop: Auburn Station</h4>
+<b>36 min walk</b><br>
+Served by Placer County Transit 10, Placer County Transit 30, Placer County Transit 40, Placer County Transit 60
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-121.0691860193893,38.88918828706684,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

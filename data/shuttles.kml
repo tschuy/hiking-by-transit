@@ -143,7 +143,7 @@
       <Placemark>
         <name>Hidden Beach</name>
         <description>0min from TTD 28 East Shore Express at Hidden Beach&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
-        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
             -119.9286615,39.221622,0
@@ -153,10 +153,20 @@
       <Placemark>
         <name>Sand Harbor State Park</name>
         <description>0min from TTD 28 East Shore Express at Lake Tahoe Nevada State Park Sand Harbor&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
-        <styleUrl>#icon-1532-0288D1-labelson</styleUrl>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
             -119.9321199,39.1984106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sequoia National Park</name>
+        <description>Sequoia Shuttle runs seasonally (May to September) from Visalia to Sequoia National Park, connecting to internal shuttle buses at the Giant Forest Museum.&lt;br&gt;&lt;br&gt; https://www.sequoiashuttle.com/ &lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.772847848,36.564578487,0
           </coordinates>
         </Point>
       </Placemark>

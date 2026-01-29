@@ -160,6 +160,16 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Sequoia National Park</name>
+        <description>Sequoia Shuttle runs seasonally (May to September) from Visalia to Sequoia National Park, connecting to internal shuttle buses at the Giant Forest Museum.&lt;br&gt;&lt;br&gt; https://www.sequoiashuttle.com/ &lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -118.772847848,36.564578487,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>

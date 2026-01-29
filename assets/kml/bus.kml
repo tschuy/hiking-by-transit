@@ -3892,7 +3892,7 @@ Served by TTD 22, TTD 50, TTD 55
 
 <h4>Stop: Stateline Transit Center</h4>
 <b>12 min walk</b><br>
-Served by Sacramento to South Lake Connector Sac/SLT Connecting Bus
+Served by El Dorado Transit Sac/SLT Connecting Bus
 <ul><li>7 days a week: 2 trips a day</li></ul>
 
 ]]>
@@ -3915,7 +3915,7 @@ Served by TTD 22, TTD 50, TTD 55
 
 <h4>Stop: Stateline Transit Center</h4>
 <b>15 min walk</b><br>
-Served by Sacramento to South Lake Connector Sac/SLT Connecting Bus
+Served by El Dorado Transit Sac/SLT Connecting Bus
 <ul><li>7 days a week: 2 trips a day</li></ul>
 
 ]]>
@@ -4049,6 +4049,168 @@ Served by Marin Transit 49
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-122.58661481179873,38.12541901733801,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hirschman Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Maidu Ave at Eric Rood Government Center</h4>
+<b>4 min walk</b><br>
+Served by Nevada County Connects 1, Nevada County Connects 7
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: About hourly</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.02936855425177,39.26864834147997,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Empire Mine State Historic Park: Race St</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Colfax Ave at Ophir St, Bottle Shop</h4>
+<b>6 min walk</b><br>
+Served by Nevada County Connects 3
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.0546944686182,39.213042951999654,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Empire Mine State Historic Park: Hardrock Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: S Auburn St at Stacey Ln</h4>
+<b>8 min walk</b><br>
+Served by Nevada County Connects 3
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.05737715309587,39.209389976977505,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Empire Mine State Historic Park: Stacey Lane Gate</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: S Auburn St at Stacey Ln</h4>
+<b>3 min walk</b><br>
+Served by Nevada County Connects 3
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 9 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.0602944393479,39.207353147139656,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: El Dorado</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Pleasant Valley Rd. at Church St.</h4>
+<b>5 min walk</b><br>
+Served by El Dorado Transit 30, El Dorado Transit 35
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.85119180811711,38.68340745568417,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Missouri Flat Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Missouri Flat Transfer Center</h4>
+<b>9 min walk</b><br>
+Served by El Dorado Transit 25, El Dorado Transit 30, El Dorado Transit 35, El Dorado Transit 50x
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.82368402086415,38.70321914692174,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Forni Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Placerville Library</h4>
+<b>7 min walk</b><br>
+Served by El Dorado Transit 25, El Dorado Transit 50x
+<ul><li>Weekday: About hourly</li><li>Saturday: Every 1–2 hours</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.82338599693416,38.72720112928001,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Main St</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main St. at Spring St.</h4>
+<b>6 min walk</b><br>
+Served by El Dorado Transit 20, El Dorado Transit 25
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: 8 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.81138122086152,38.72854680392734,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>El Dorado Trail: Mosquito Rd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Placerville Station Transfer Center</h4>
+<b>1 min walk</b><br>
+Served by El Dorado Transit 20, El Dorado Transit 25, El Dorado Transit 50x, El Dorado Transit 60, El Dorado Transit Sac/SLT Connecting Bus
+<ul><li>Weekday: Frequent service</li><li>Saturday: About hourly</li><li>Sunday: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.7888975766776,38.73310634717377,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

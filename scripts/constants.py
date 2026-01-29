@@ -18,7 +18,16 @@ gtfs_map = {
     "bayarea": {"path": "./gtfs/bayarea.zip", "url": "http://api.511.org/transit/datafeeds", "annotated_url": "http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG"},
     "trinity": {"path": "./gtfs/weaverville-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip"},
     "siskiyou": {"path": "./gtfs/siskiyou-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip"},
-    "sage": {"path": "./gtfs/sagestage-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sagestage-ca-us/sagestage-ca-us.zip"}
+    "sage": {"path": "./gtfs/sagestage-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/sagestage-ca-us/sagestage-ca-us.zip"},
+    "nevada": {"path": "./gtfs/goldcountrystage-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/goldcountrystage-ca-us/goldcountrystage-ca-us.zip"},
+    "placer": {"path": "./gtfs/placercounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip"},
+    "tehama": {"path": "./gtfs/tehama-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip"},
+    "calaveras": {"path": "./gtfs/calaveras-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/calaveras-ca-us/calaveras-ca-us.zip"},
+    "tuolumne": {"path": "./gtfs/tuolumne_ca_us.zip", "url": "https://gtfs.remix.com/tuolumne_ca_us.zip"},
+    "amador": {"path": "./gtfs/amador-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip"},
+    "eldorado": {"path": "./gtfs/eldoradotransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip"},
+    "plumas": {"path": "./gtfs/plumas-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/plumas-ca-us/plumas-ca-us.zip"},
+    "yarts": {"path": "./gtfs/yarts.zip", "url": "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip"}
 }
 
 def actransit_filter(rid):
@@ -70,6 +79,9 @@ for feed_name, feed_info in gtfs_map.items():
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip": {
+        114: {'type': 'bus', 'long_name': 'Yosemite Area Regional Transportation System', 'short_name': 'YARTS'},
+    },
     "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip": {
         24: {"short_name": "Siskiyou STAGE", "long_name": "Siskiyou Transit and General Express", "type": "bus"}
     },
@@ -128,7 +140,7 @@ agency_map = {
         123: {"long_name": "San Benito County Express", "type": "bus"}
     },
     "https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip": {
-        261: {"long_name": "Sacramento to South Lake Connector", "type": "bus"}
+        261: {"long_name": "El Dorado Transit", "type": "bus"}
     },
     "http://api.511.org/transit/datafeeds": {
         "UC": {"long_name": "Union City Transit", "type": "bus"},
@@ -178,5 +190,27 @@ agency_map = {
         "VN": {"long_name": "VINE Transit", "type": "bus"},
         "ST": {"long_name": "SolTrans", "type": "bus"},
         "CE": {"short_name": "ACE", "long_name": "Altamont Corridor Express", "type": "rail"},
+    },
+    "https://data.trilliumtransit.com/gtfs/goldcountrystage-ca-us/goldcountrystage-ca-us.zip": {
+        1523: {'type': 'bus', 'long_name': 'Nevada County Connects'},
+    },
+    "https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip": {
+        874: {'type': 'bus', 'long_name': 'Placer County Transit'},
+    },
+    "https://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip": {
+        62: {'type': 'bus', 'long_name': 'Susanville Indian Rancheria Public Transportation Program'},
+        21: {'type': 'bus', 'long_name': 'Tehama Rural Area Express', 'short_name': 'Tehama TRAX'},
+    },
+    "https://data.trilliumtransit.com/gtfs/calaveras-ca-us/calaveras-ca-us.zip": {
+        79: {'type': 'bus', 'long_name': 'Calaveras Connect'},
+    },
+    "https://gtfs.remix.com/tuolumne_ca_us.zip": {
+        'TCT': {'type': 'bus', 'long_name': 'Tuolumne County Transit'},
+    },
+    "https://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip": {
+        80: {'type': 'bus', 'long_name': 'Amador Transit'},
+    },
+    "https://data.trilliumtransit.com/gtfs/plumas-ca-us/plumas-ca-us.zip": {
+        20: {'type': 'bus', 'long_name': 'Plumas Transit'},
     },
 }
