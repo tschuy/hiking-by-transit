@@ -1,7 +1,6 @@
 {
     "agencies": [
         {"agencyKey":"amtrak","path":"./gtfs/amtrak.zip"},
-        {"agencyKey":"bear","path":"./gtfs/beartransit-ca-us.zip"},
         {"agencyKey":"lake","path":"./gtfs/laketransit-ca-us.zip"},
         {"agencyKey":"hta","path":"./gtfs/humboldtcounty-ca-us.zip"},
         {"agencyKey":"redwood","path":"./gtfs/delnorte-ca-us.zip"},
@@ -11,7 +10,6 @@
         {"agencyKey":"yolo","path":"./gtfs/yolobus.zip"},
         {"agencyKey":"sanbenito","path":"./gtfs/sanbenitocounty-ca-us.zip"},
         {"agencyKey":"eldorado","path":"./gtfs/eldoradotransit-ca-us.zip"},
-        {"agencyKey":"bayarea","path":"./gtfs/bayarea.zip"},
         {"agencyKey":"trinity","path":"./gtfs/weaverville-ca-us.zip"},
         {"agencyKey":"siskiyou","path":"./gtfs/siskiyou-ca-us.zip"},
         {"agencyKey":"sage","path":"./gtfs/sagestage-ca-us.zip"},
@@ -29,11 +27,11 @@
         {"agencyKey":"sanjoaquin","path":"./gtfs/rtd-gtfs.zip"},
         {"agencyKey":"stanrta","path":"./gtfs/stanrta.zip"},
         {"agencyKey":"tulare","path":"./gtfs/tulare.zip"},
-        {"agencyKey":"sacrt","path":"./gtfs/sacrt.zip"},
         {"agencyKey":"butte","path":"./gtfs/butte.zip"},
         {"agencyKey":"slorta","path":"./gtfs/slorta.zip"},
         {"agencyKey":"kern","path":"./gtfs/kerncounty-ca-us.zip"},
-        {"agencyKey":"easternsierra","path":"./gtfs/easternsierra-ca-us.zip"}
+        {"agencyKey":"easternsierra","path":"./gtfs/easternsierra-ca-us.zip"},
+        {"agencyKey":"goldrunner","path":"./gtfs/goldrunner.zip"}
     ],
     "outputType": "agency",
     "outputFormat": "lines-and-stops",

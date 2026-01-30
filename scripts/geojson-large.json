@@ -1,0 +1,11 @@
+{
+    "agencies": [
+        {"agencyKey":"bear","path":"./gtfs/beartransit-ca-us.zip"},
+        {"agencyKey":"bayarea","path":"./gtfs/bayarea.zip"},
+        {"agencyKey":"sacrt","path":"./gtfs/sacrt.zip"}
+    ],
+    "outputType": "agency",
+    "outputFormat": "lines",
+    "outputPath": "geojson",
+    "ignoreDuplicates": true
+}
