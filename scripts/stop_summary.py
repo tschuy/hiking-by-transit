@@ -5,6 +5,8 @@ import pandas as pd
 import zipfile
 import os
 
+GTFS_ID_COLUMNS = ["stop_id", "trip_id", "route_id", "service_id"]
+
 def load_gtfs(gtfs_path):
     """Load GTFS CSV files from a zip or folder into pandas DataFrames."""
     data = {}
@@ -12,12 +14,8 @@ def load_gtfs(gtfs_path):
     def read_csv(path_or_buf):
         return pd.read_csv(
             path_or_buf,
-            dtype={
-                "stop_id": str,
-                "trip_id": str,
-                "route_id": str,
-                "service_id": str,
-            }
+            dtype={c: str for c in GTFS_ID_COLUMNS},
+            skipinitialspace=True,  # handles " 1" in calendar.txt
         )
 
     if gtfs_path.endswith(".zip"):
@@ -32,10 +30,15 @@ def load_gtfs(gtfs_path):
                 df_name = os.path.splitext(filename)[0]
                 data[df_name] = read_csv(os.path.join(gtfs_path, filename))
 
+    # Normalize GTFS ID columns
+    for df in data.values():
+        for col in GTFS_ID_COLUMNS:
+            if col in df.columns:
+                df[col] = df[col].astype(str).str.strip()
+
     return data
 
 def get_stop_summary(stop_id, gtfs_path):
-    gtfs = load_gtfs(gtfs_path)
     """
     Returns a dictionary with information about a stop:
     - stop_ids: all stop_ids with the same stop_name
@@ -47,6 +50,9 @@ def get_stop_summary(stop_id, gtfs_path):
     - sunday_counts: average number of stops on Sunday
     - route_ids: list of route_ids serving this stop
     """
+
+    gtfs = load_gtfs(gtfs_path)
+
     required_files = ["stops", "stop_times", "trips", "routes", "calendar"]
     for f in required_files:
         if f not in gtfs:
@@ -67,24 +73,26 @@ def get_stop_summary(stop_id, gtfs_path):
     # All stop_ids sharing this name
     stop_ids_same_name = stops[stops["stop_name"] == stop_name]["stop_id"].tolist()
 
-    # Use the first stop_id for coordinates
-    stop_lon = stops[stops["stop_name"] == stop_name].iloc[0]["stop_lon"]
-    stop_lat = stops[stops["stop_name"] == stop_name].iloc[0]["stop_lat"]
+    first_stop = stops[stops["stop_name"] == stop_name].iloc[0]
+    stop_lon = first_stop["stop_lon"]
+    stop_lat = first_stop["stop_lat"]
 
-    # Collect counts per stop_id
     weekday_counts_list = []
     saturday_counts_list = []
     sunday_counts_list = []
 
     for sid in stop_ids_same_name:
         stimes = stop_times[stop_times["stop_id"] == sid]
-        trips_joined = stimes.merge(trips, on="trip_id")
-        cal_joined = trips_joined.merge(calendar, on="service_id")
+        trips_joined = stimes.merge(trips, on="trip_id", how="left")
+        cal_joined = trips_joined.merge(calendar, on="service_id", how="left")
 
-        # Average per weekday
-        weekday_counts_list.append(cal_joined[['monday','tuesday','wednesday','thursday','friday']].sum(axis=1).sum() / 5)
-        saturday_counts_list.append(cal_joined['saturday'].sum())
-        sunday_counts_list.append(cal_joined['sunday'].sum())
+        # Average per weekday (Mon–Fri)
+        weekday_counts_list.append(
+            cal_joined[["monday","tuesday","wednesday","thursday","friday"]]
+            .sum(axis=1).sum() / 5
+        )
+        saturday_counts_list.append(cal_joined["saturday"].sum())
+        sunday_counts_list.append(cal_joined["sunday"].sum())
 
     # Average across stop_ids
     weekday_counts = sum(weekday_counts_list) if weekday_counts_list else 0
@@ -93,8 +101,10 @@ def get_stop_summary(stop_id, gtfs_path):
 
     # Routes serving any of these stop_ids
     stimes_all = stop_times[stop_times["stop_id"].isin(stop_ids_same_name)]
-    trips_all = stimes_all.merge(trips, on="trip_id")
-    route_ids = trips_all['route_id'].unique().tolist()
+    trips_all = stimes_all.merge(trips, on="trip_id", how="left")
+    trips_all["route_id"] = trips_all["route_id"].astype(str).str.strip()
+
+    route_ids = sorted(trips_all["route_id"].unique().tolist())
 
     return {
         "stop_ids": stop_ids_same_name,
@@ -114,13 +124,14 @@ def main():
     args = parser.parse_args()
 
     summary = get_stop_summary(args.stop_id, args.gtfs)
+
     print(f"Summary for stop {summary['stop_name']} (Stop IDs: {', '.join(summary['stop_ids'])})")
     print(f"Coordinates: lon={summary['stop_lon']}, lat={summary['stop_lat']}")
 
     print(f"Stop ID: {args.stop_id}")
     print(f"Stop name: {summary['stop_name']}")
 
-    print(f"\nAverage number of stops per day:")
+    print("\nAverage number of stops per day:")
     print(f"  Weekdays: {summary['weekday_counts']:.1f}")
     print(f"  Saturday: {summary['saturday_counts']:.1f}")
     print(f"  Sunday:   {summary['sunday_counts']:.1f}")

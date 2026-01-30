@@ -5,8 +5,28 @@ import geopandas as gpd
 import pandas as pd
 import html
 import math
+import re
 
 from constants import url_to_route_map, agency_map
+
+def normalize_stop_name(stop_name: str) -> str:
+    if not stop_name or not stop_name.isupper():
+        return stop_name
+
+    # Split out parenthetical parts
+    parts = re.split(r"(\([^)]*\))", stop_name)
+
+    normalized = []
+    for part in parts:
+        if part.startswith("(") and part.endswith(")"):
+            # Keep parentheticals exactly as-is
+            normalized.append(part)
+        else:
+            # Title-case the non-parenthetical text
+            normalized.append(part.title())
+
+    return "".join(normalized)
+
 
 def frequency_label(trips_per_day: int) -> str:
     if trips_per_day <= 0:
@@ -128,6 +148,7 @@ def main():
 
         for _, access in matching_access.iterrows():
             stop_name = cdata_safe(access.get("stop_name"))
+            stop_name = normalize_stop_name(stop_name)
             access_notes = cdata_safe(access.get("notes"))
 
             # walk time: null means it's a special trailhead, where the notes field has more info
@@ -150,14 +171,12 @@ def main():
             route_strings = []
 
             for rid in routes_served:
-                rid = rid.strip()
                 if not rid:
                     continue
 
-                info = route_map.get(rid)
+                info = route_map.get(rid, route_map.get(rid.strip(), route_map.get(rid.lstrip("0"))))
                 if not info:
-                    print(route_map, routes_served)
-                    print(stop_name)
+                    print(rid, type(rid), route_map.keys(), stop_name)
                     route_strings.append(f"UNKNOWN({rid})")
                     has_bus = True
                     bus_min_walk = walk_time if bus_min_walk is None else min(bus_min_walk, walk_time)

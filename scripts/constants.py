@@ -33,7 +33,8 @@ gtfs_map = {
     "madera": {"path": "./gtfs/maderactc-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/maderactc-ca-us/maderactc-ca-us.zip"},
     "sanjoaquin": {"path": "./gtfs/rtd-gtfs.zip", "url": "https://sanjoaquinrtd.com/RTD-GTFS/RTD-GTFS.zip"},
     "stanrta": {"path": "./gtfs/stanrta.zip", "url": "https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx"},
-    "tulare": {"path": "./gtfs/tulare.zip", "url": "http://data.peaktransit.com/staticgtfs/120/gtfs.zip"}
+    "tulare": {"path": "./gtfs/tulare.zip", "url": "http://data.peaktransit.com/staticgtfs/120/gtfs.zip"},
+    "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"}
 }
 
 def actransit_filter(rid):
@@ -85,6 +86,9 @@ for feed_name, feed_info in gtfs_map.items():
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip": {
+        'SRTD': {'type': 'bus', 'long_name': 'Sacramento Regional Transit', 'short_name': 'SacRT'},
+    },
     "https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip": {
         81: {'type': 'bus', 'long_name': 'Lassen Rural Bus'},
     },
