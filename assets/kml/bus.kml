@@ -4572,4 +4572,112 @@ Served by B-Line 2
       <coordinates>-121.83513134313486,39.73331427674721,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Hearst San Simeon State Park: Vista del Mar</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Hearst & San Simeon</h4>
+<b>7 min walk</b><br>
+Served by UNKNOWN 15S
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.14390384936735,35.609495363480264,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hearst San Simeon State Park: Moonstone Boardwalk</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Moonstone & Fireside Inn</h4>
+<b>4 min walk</b><br>
+Served by UNKNOWN 15N
+<ul><li>Weekday: 5 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.11812100235075,35.580592913772165,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hearst San Simeon State Park: Moonstone Boardwalk</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Moonstone Beach & Windsor</h4>
+<b>1 min walk</b><br>
+Served by UNKNOWN 15N, UNKNOWN 15S
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.10578489483188,35.56906639341629,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fiscalini Ranch Preserve: Santa Rosa Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Moonstone Beach & Windsor</h4>
+<b>2 min walk</b><br>
+Served by UNKNOWN 15N, UNKNOWN 15S
+<ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.10408410904654,35.567763651811234,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fiscalini Ranch Preserve: Santa Rosa Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Main & Bluebird Inn</h4>
+<b>1 min walk</b><br>
+Served by UNKNOWN 15N
+<ul><li>Weekday: 5 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.08640234965746,35.563107733609485,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Fiscalini Ranch Preserve: Trenton Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Burton & Ardath</h4>
+<b>13 min walk</b><br>
+Served by UNKNOWN 15S
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 5 trips a day</li><li>Sunday: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.08771023706272,35.55247228675584,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

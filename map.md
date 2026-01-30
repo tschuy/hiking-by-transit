@@ -142,6 +142,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Tulare County Regional Area Transit Agency
 * Fresno County Transit Agency
 * SacRT
+* Butte County B-Line
 
 ### The following agencies do not appear on the map, but are planned to:
 
@@ -149,6 +150,9 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Santa Cruz Metro
 * Monterey-Salinas Transit
 * SLORTA
+    * Grover/Pismo
+    * SLO
+    * Morro Bay up to Cayucos
 * SLO Transit
 
 **Sierra Nevada**
@@ -156,7 +160,6 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Eastern Sierra Transit (including Reds Meadow shuttle)
 
 **Central Valley and Foothills**
-* Butte County B-Line
 * Kern Transit
 
 **Statewide**

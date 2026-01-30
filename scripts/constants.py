@@ -35,7 +35,8 @@ gtfs_map = {
     "stanrta": {"path": "./gtfs/stanrta.zip", "url": "https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx"},
     "tulare": {"path": "./gtfs/tulare.zip", "url": "http://data.peaktransit.com/staticgtfs/120/gtfs.zip"},
     "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"},
-    "butte": {"path": "./gtfs/butte.zip", "url": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip"}
+    "butte": {"path": "./gtfs/butte.zip", "url": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip"},
+    "slorta": {"path": "./gtfs/slorta.zip", "url": "http://slo.connexionz.net/rtt/public/resource/gtfs.zip"}
 }
 
 def actransit_filter(rid):
