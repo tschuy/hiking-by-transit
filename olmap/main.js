@@ -83,6 +83,7 @@ const agencyShortNames = {
 
 const agencies = [
   'amtrak',
+  'goldrunner',
   'bear',
   'lake',
   'hta',
@@ -149,11 +150,12 @@ agencies.forEach(function(e) {
   geojson_layers[e] = new VectorLayer({
     name: e,
     source: source,
+    renderMode: 'image'
   });
 });
 
 let transitGroups = {
-  'amtrak': ['amtrak'],
+  'amtrak': ['amtrak', 'goldrunner'],
   'sacrt': ['sacrt'],
   'tahoe': ['tart', 'ttd', 'eldorado', 'placer'],
   'bayarea': ['bayarea', 'bear'],

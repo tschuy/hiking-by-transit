@@ -5,6 +5,7 @@ import zipfile
 # annotated_url is url used for downloads, including potential fstring for API keys
 gtfs_map = {
     "amtrak": {"path": "./gtfs/amtrak.zip", "url": "https://content.amtrak.com/content/gtfs/GTFS.zip"},
+    "goldrunner": {"path": "./gtfs/goldrunner.zip", "url": "https://d34tiw64n5z4oh.cloudfront.net/wp-content/uploads/GRGTFS.zip"},
     "bear": {"path": "./gtfs/beartransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip"},
     "lake": {"path": "./gtfs/laketransit-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip"},
     "hta": {"path": "./gtfs/humboldtcounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip"},
