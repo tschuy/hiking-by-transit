@@ -1,6 +1,6 @@
 # Setup
 title:               Hiking by Transit
-description:         'A collection of useful information for hiking by transit in the Bay Area.'
+description:         'A collection of useful information for hiking by transit around Northern California.'
 url:                 https://hikingbytransit.com
 baseurl:             ''
 paginate:            10
@@ -11,7 +11,7 @@ author:
   name:              Evan Tschuy
   url:               https://bsky.app/profile/tsch.uy
 
-include: ['hikes', 'events', 'docs']
+include: ['hikes', 'events', 'docs', 'public']
 exclude: ['olmap', 'scripts']
 
 # Gems
