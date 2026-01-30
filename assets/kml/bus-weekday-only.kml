@@ -1392,4 +1392,58 @@ Served by Madera County Connection Eastern Madera County
       <coordinates>-119.5911776391325,37.34909678212809,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Lake Oroville State Recreation Area: Visitor Center</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Kelly Ridge & Royal Oaks</h4>
+<b>3 min walk</b><br>
+Served by B-Line 26
+<ul><li>Weekday: Frequent service</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.46729858076353,39.53362850802186,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lake Oroville State Recreation Area: Saddle Dam Day Use Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Olive Hwy & Saddle Drive</h4>
+<b>21 min walk</b><br>
+Served by B-Line 26
+<ul><li>Weekday: Frequent service</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.46345612646051,39.51304673836286,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Upper Bidwell Park: Hooker Oak Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Manzanita Ave & Hooker Oak Ave</h4>
+<b>0 min walk</b><br>
+Served by B-Line 7
+<ul><li>Weekday: Frequent service</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-121.79937962195318,39.7599881230796,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

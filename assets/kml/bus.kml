@@ -4490,4 +4490,86 @@ Served by SacRT 21
       <coordinates>-121.28716284574018,38.61892973913707,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Brad Freeman Trail: Downtown Oroville</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Montgomery St & Table Mtn Blvd</h4>
+<b>3 min walk</b><br>
+Served by B-Line 20
+<ul><li>7 days a week: Frequent service</li></ul>
+
+<h4>Stop: Orange Ave & Bridge St</h4>
+<b>6 min walk</b><br>
+Served by B-Line 26
+<ul><li>Weekday: Frequent service</li><li>Weekend: No service</li></ul>
+
+<h4>Stop: Yard St & Bridge St</h4>
+<b>7 min walk</b><br>
+Served by B-Line 24
+<ul><li>Weekday: Frequent service</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.5493709955982,39.516429717836495,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Brad Freeman Trail: Table Mountain Blvd</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: County Center Dr at Juvenile Hall</h4>
+<b>2 min walk</b><br>
+Served by B-Line 20, B-Line 24
+<ul><li>7 days a week: Frequent service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.56918867471666,39.53189239561302,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lower Bidwell Park: Chico Creek Nature Center</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: E 8th St & Forest</h4>
+<b>0 min walk</b><br>
+Served by B-Line 5
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.80595699193307,39.74622633601991,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lower Bidwell Park: One Mile Area at Mangrove Ave</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Vallombrosa & Memorial</h4>
+<b>3 min walk</b><br>
+Served by B-Line 2
+<ul><li>Weekday: Frequent service</li><li>Saturday: Frequent service</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.83513134313486,39.73331427674721,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

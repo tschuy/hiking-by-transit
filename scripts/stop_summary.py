@@ -53,16 +53,21 @@ def get_stop_summary(stop_id, gtfs_path):
 
     gtfs = load_gtfs(gtfs_path)
 
-    required_files = ["stops", "stop_times", "trips", "routes", "calendar"]
+    required_files = ["stops", "stop_times", "trips", "routes"]
     for f in required_files:
         if f not in gtfs:
             raise ValueError(f"{f}.txt is missing from GTFS")
+
+    if "calendar" not in gtfs and "calendar_dates" not in gtfs:
+        raise ValueError("GTFS must contain calendar.txt or calendar_dates.txt")
+
 
     stops = gtfs["stops"]
     stop_times = gtfs["stop_times"]
     trips = gtfs["trips"]
     routes = gtfs["routes"]
-    calendar = gtfs["calendar"]
+    calendar = gtfs.get("calendar")
+    calendar_dates = gtfs.get("calendar_dates")
 
     stop_row = stops[stops["stop_id"] == stop_id]
     if stop_row.empty:
@@ -84,15 +89,29 @@ def get_stop_summary(stop_id, gtfs_path):
     for sid in stop_ids_same_name:
         stimes = stop_times[stop_times["stop_id"] == sid]
         trips_joined = stimes.merge(trips, on="trip_id", how="left")
-        cal_joined = trips_joined.merge(calendar, on="service_id", how="left")
 
-        # Average per weekday (Mon–Fri)
-        weekday_counts_list.append(
-            cal_joined[["monday","tuesday","wednesday","thursday","friday"]]
-            .sum(axis=1).sum() / 5
-        )
-        saturday_counts_list.append(cal_joined["saturday"].sum())
-        sunday_counts_list.append(cal_joined["sunday"].sum())
+        if calendar is not None:
+            cal_joined = trips_joined.merge(calendar, on="service_id", how="left")
+
+            weekday_counts_list.append(
+                cal_joined[["monday","tuesday","wednesday","thursday","friday"]]
+                .sum(axis=1).sum() / 5
+            )
+            saturday_counts_list.append(cal_joined["saturday"].sum())
+            sunday_counts_list.append(cal_joined["sunday"].sum())
+
+        else:
+            svc = trips_joined.merge(calendar_dates, on="service_id", how="left")
+            svc = svc[svc["exception_type"] == 1]
+            svc["date"] = pd.to_datetime(svc["date"], format="%Y%m%d", errors="coerce")
+
+            weekday = svc[svc["date"].dt.weekday < 5]
+            saturday = svc[svc["date"].dt.weekday == 5]
+            sunday = svc[svc["date"].dt.weekday == 6]
+
+            weekday_counts_list.append(len(weekday) / 5)
+            saturday_counts_list.append(len(saturday))
+            sunday_counts_list.append(len(sunday))
 
     # Average across stop_ids
     weekday_counts = sum(weekday_counts_list) if weekday_counts_list else 0

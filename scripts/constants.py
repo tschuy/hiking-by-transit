@@ -34,7 +34,8 @@ gtfs_map = {
     "sanjoaquin": {"path": "./gtfs/rtd-gtfs.zip", "url": "https://sanjoaquinrtd.com/RTD-GTFS/RTD-GTFS.zip"},
     "stanrta": {"path": "./gtfs/stanrta.zip", "url": "https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx"},
     "tulare": {"path": "./gtfs/tulare.zip", "url": "http://data.peaktransit.com/staticgtfs/120/gtfs.zip"},
-    "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"}
+    "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"},
+    "butte": {"path": "./gtfs/butte.zip", "url": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip"}
 }
 
 def actransit_filter(rid):
@@ -88,6 +89,9 @@ for feed_name, feed_info in gtfs_map.items():
 agency_map = {
     "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip": {
         'SRTD': {'type': 'bus', 'long_name': 'Sacramento Regional Transit', 'short_name': 'SacRT'},
+    },
+    "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip": {
+        '97aff62a-ed6d-4bd2-a9c8-d63f8e98a358': {'type': 'bus', 'long_name': 'B-Line'},
     },
     "https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip": {
         81: {'type': 'bus', 'long_name': 'Lassen Rural Bus'},
