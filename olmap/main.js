@@ -17,6 +17,7 @@ import {defaults} from 'ol/interaction/defaults.js';
 
 import VectorSource from 'ol/source/Vector.js';
 import {Vector as VectorLayer} from 'ol/layer.js';
+import { intersects } from 'ol/extent';
 
 // styles for imported GPX traces
 const style = {
@@ -73,6 +74,7 @@ const overlay = new Overlay({
   },
 });
 
+const LARGE_AGENCIES = ["bayarea", "sacrt"];
 const geojson_layers = {};
 
 const agencyShortNames = {
@@ -123,34 +125,75 @@ const agencyHiddenRoutes = {
   'ttd': ['5853']
 };
 
-agencies.forEach(function(e) {
-  const hiddenRoutes = agencyHiddenRoutes[e] || [];
+const featureCache = {};
+
+agencies.forEach((agency) => {
+  const hiddenRoutes = agencyHiddenRoutes[agency] || [];
+  const isLarge = LARGE_AGENCIES.includes(agency);
 
   const source = new VectorSource({
-    loader: function(extent, resolution, projection) {
-      fetch(`/assets/geojson/${e}.geojson`)
-        .then(res => res.json())
-        .then(function(data) {
-          // Filter features before adding to source
-          const filteredFeatures = data.features
-            .filter(f => !hiddenRoutes.includes(f.properties.route_id));
+    loader: async function(extent, resolution, projection) {
+      try {
+        // load and cache large agency features at once
+        if (isLarge && !featureCache[agency]) {
+          const res = await fetch(`/assets/geojson/${agency}.geojson`);
+          const geojson = await res.json();
 
-          const features = new GeoJSON().readFeatures({
-            type: 'FeatureCollection',
-            features: filteredFeatures
-          }, {
-            featureProjection: projection
+          const filtered = geojson.features.filter(
+            f => !hiddenRoutes.includes(f.properties.route_id)
+          );
+
+          featureCache[agency] = new GeoJSON().readFeatures(
+            {
+              type: "FeatureCollection",
+              features: filtered
+            },
+            { featureProjection: projection }
+          );
+        }
+
+        // Clear previously rendered features
+        source.clear(true);
+
+        if (isLarge) {
+          // extent-based filtering for large agencies
+          const visible = featureCache[agency].filter(feature => {
+            const geom = feature.getGeometry();
+            return geom && intersects(extent, geom.getExtent());
           });
 
-          source.addFeatures(features);
-        });
+          source.addFeatures(visible);
+        } else {
+          // simple all-at-once loading for small agencies
+          if (source.getFeatures().length === 0) {
+            const res = await fetch(`/assets/geojson/${agency}.geojson`);
+            const geojson = await res.json();
+
+            const filtered = geojson.features.filter(
+              f => !hiddenRoutes.includes(f.properties.route_id)
+            );
+
+            const features = new GeoJSON().readFeatures(
+              {
+                type: "FeatureCollection",
+                features: filtered
+              },
+              { featureProjection: projection }
+            );
+
+            source.addFeatures(features);
+          }
+        }
+      } catch (err) {
+        console.error(`Failed loading ${agency}`, err);
+      }
     }
   });
 
-  geojson_layers[e] = new VectorLayer({
-    name: e,
+  geojson_layers[agency] = new VectorLayer({
+    name: agency,
     source: source,
-    renderMode: 'image'
+    renderMode: isLarge ? "image" : "vector",
   });
 });
 
