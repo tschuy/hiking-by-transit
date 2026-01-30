@@ -81,3 +81,15 @@ $ cd scripts/
 $ python gpkg_to_kml.py ../data/transit_accessible_trailheads.gpkg
 $ cp ../data/*.kml ../assets/kml/
 ```
+
+## Building route layers
+
+1) Build the layers: this command outputs the resultant layers to `geojson/`.
+
+`$ gtfs-to-geojson`
+
+2) Clip Amtrak:
+
+```
+$ ogr2ogr -f GeoJSON geojson/amtrak-clipped.geojson geojson/amtrak.geojson -clipsrc california_and_reno.geojson -lco RFC7946=YES -lco COORDINATE_PRECISION=6
+```
