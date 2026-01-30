@@ -4238,6 +4238,29 @@ Served by El Dorado Transit 20, El Dorado Transit 25, El Dorado Transit 50x, El 
   </Placemark>
 
   <Placemark>
+    <name>Dragoon Gulch Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Community Pharmacy Stockton Street</h4>
+<b>11 min walk</b><br>
+Served by Tuolumne County Transit R1, Tuolumne County Transit R2
+<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
+
+<h4>Stop: Stockton St. (Bank of America)</h4>
+<b>14 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 3 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.3906782118291,37.98268593703399,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
     <name>Pacific Crest Trail: Chester Trailhead</name>
     <description>
 <![CDATA[
@@ -4678,6 +4701,251 @@ Served by UNKNOWN 15S
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-121.08771023706272,35.55247228675584,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sierra National Forest: Big Sandy Road Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tenaya Lodge</h4>
+<b>5 min walk</b><br>
+Served by YARTS Fresno HWY 41 (SEASONAL SERVICE)
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 6 trips a day</li><li>Sunday: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.63567200580933,37.471823641416954,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Mariposa Grove</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Mariposa Grove</h4>
+Served by YARTS Fresno HWY 41 (SEASONAL SERVICE)
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 6 trips a day</li><li>Sunday: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.63006655365783,37.50676480094009,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Wawona Store</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Wawona Store</h4>
+Served by YARTS Fresno HWY 41 (SEASONAL SERVICE)
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 6 trips a day</li><li>Sunday: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.6580115333265,37.5377234206834,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Yosemite Valley</name>
+    <description>
+<![CDATA[
+The entire Yosemite Valley is very transit-friendly. Check YARTS and Yosemite Valley shuttle maps for which stops to use for which trailheads. <br>
+<h4>Stop: Yosemite Village</h4>
+Served by YARTS Fresno HWY 41 (SEASONAL SERVICE), YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE), YARTS Merced HWY 140, YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.58692,37.74775,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: White Wolf Lodge</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: White Wolf Lodge</h4>
+<b>0 min walk</b><br>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.64903,37.86971,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Tuolumne Meadows Visitor Center</name>
+    <description>
+<![CDATA[
+Access to various trails around the Tuolumne Meadows basin <br>
+<h4>Stop: Tuolumne Meadows Visitors Ctr.</h4>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.37348,37.8723,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Tuolumne Meadows Store</name>
+    <description>
+<![CDATA[
+Access to various trails around the Tuolumne Meadows basin <br>
+<h4>Stop: Tuolumne Meadows Store</h4>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.35783,37.87367,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Mono Basin Vistor Center</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Mono Basin Visitor Center</h4>
+<b>0 min walk</b><br>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.12105,37.96565,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: June Lake Junction</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: June Lake Junction 158/395</h4>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.05435,37.81223,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Mammoth Lakes</name>
+    <description>
+<![CDATA[
+Mammoth Lakes has good internal shuttle systems in the winter and summer. See Visit Mammoth for more information https://www.visitmammoth.com/travel-info/getting-around/ <br>
+<h4>Stop: Mammoth Lakes Park & Ride</h4>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.96607,37.6445,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Tuolumne Grove Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Crane Flat Gas Station</h4>
+<b>13 min walk</b><br>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE), YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 8 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.8058760342014,37.75825642638535,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Yosemite National Park: Hodgdon Meadow</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Big Oak Flat Park Entrance Gate</h4>
+<b>10 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.86711461972058,37.80000276709465,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stanislaus National Forest: Rush Creek Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Rush Creek Lodge</h4>
+<b>11 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-119.87712858956183,37.81504986813284,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stanislaus National Forest: Buck Meadow Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Buck Meadows Lodge</h4>
+<b>5 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-120.05532526905793,37.81862238944313,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

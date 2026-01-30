@@ -1686,4 +1686,58 @@ Served by UNKNOWN 15N, UNKNOWN 15S
       <coordinates>-121.12391113459935,35.594156677419875,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Glen Aulin Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tuolumne Meadows Visitors Ctr.</h4>
+<b>19 min walk</b><br>
+Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-119.36712160948757,37.879002365782114,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stansislaus National Forest: Carlon Falls Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Rush Creek Lodge</h4>
+<b>29 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 6 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-119.86143608431739,37.81425156400212,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Stanislaus National Forest: Groveland Ranger District Office</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Firefall Ranch</h4>
+<b>21 min walk</b><br>
+Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
+<ul><li>7 days a week: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-120.09871551412614,37.82182669023526,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

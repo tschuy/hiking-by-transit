@@ -1284,24 +1284,6 @@ Served by Calaveras Connect Red Line
   </Placemark>
 
   <Placemark>
-    <name>Dragoon Gulch Trailhead</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Community Pharmacy Stockton Street</h4>
-<b>11 min walk</b><br>
-Served by Tuolumne County Transit R1, Tuolumne County Transit R2
-<ul><li>Weekday: Every 1–2 hours</li><li>Weekend: No service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#bus-weekday-only</styleUrl>
-    <Point>
-      <coordinates>-120.3906782118291,37.98268593703399,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
     <name>Columbia State Historic Park</name>
     <description>
 <![CDATA[
