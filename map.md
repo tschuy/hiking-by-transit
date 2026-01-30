@@ -81,7 +81,6 @@ Not every county in Northern California has been added to this map yet. See belo
   </div>
 </div>
 
-
 <hr>
 
 The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*
