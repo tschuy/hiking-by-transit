@@ -5,10 +5,10 @@ _site
 .jekyll-cache
 
 # ignore build artifacts
-assets/kml/*
-assets/geojson/*
-public/js/olmap.js
-public/css/olmap.css
+jekyll/assets/kml/*
+jekyll/assets/geojson/*
+jekyll/public/js/olmap.js
+jekyll/public/css/olmap.css
 
 # Python cache
 __pycache__

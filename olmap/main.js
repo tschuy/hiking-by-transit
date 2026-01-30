@@ -478,7 +478,6 @@ filterLayers.addEventListener('change', function(e) {
     for (const a of transitGroups[e.target.name]) {
       geojson_layers[a].setVisible(e.target.checked);
     }
-    console.log(e.target.name);
     return;
   }
 

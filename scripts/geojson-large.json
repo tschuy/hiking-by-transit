@@ -6,6 +6,6 @@
     ],
     "outputType": "agency",
     "outputFormat": "lines",
-    "outputPath": "../assets/geojson",
+    "outputPath": "../jekyll/assets/geojson",
     "ignoreDuplicates": true
 }

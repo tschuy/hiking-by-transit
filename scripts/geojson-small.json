@@ -35,6 +35,6 @@
     ],
     "outputType": "agency",
     "outputFormat": "lines-and-stops",
-    "outputPath": "../assets/geojson",
+    "outputPath": "../jekyll/assets/geojson",
     "ignoreDuplicates": true
 }

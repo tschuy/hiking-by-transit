@@ -14,7 +14,7 @@ author:
 source: .
 destination: ../_site
 
-include: ['hikes', 'events', 'docs', 'public', 'assets', '../public', '../assets']
+include: ['hikes', 'events', 'docs', 'public', 'assets']
 exclude: ['olmap', 'scripts']
 
 # Gems

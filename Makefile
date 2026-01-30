@@ -2,7 +2,7 @@
 OLMAP_DIR := olmap
 SCRIPTS_DIR := scripts
 DATA_DIR := data
-ASSETS_DIR := assets
+ASSETS_DIR := jekyll/assets
 
 KML_DIR := $(ASSETS_DIR)/kml
 GEOJSON_DIR := $(ASSETS_DIR)/geojson
@@ -18,7 +18,7 @@ GPKG := $(DATA_DIR)/transit_accessible_trailheads.gpkg
 DATA_KMLS := $(wildcard $(DATA_DIR)/*.kml)
 
 # ---- outputs to watch
-OLMAP_JS := public/js/olmap.js
+OLMAP_JS := jekyll/public/js/olmap.js
 KML_SENTINEL := $(KML_DIR)/.kml_built
 GEOJSON_LARGE_SENTINEL := $(GEOJSON_DIR)/.geojson_large_built
 GEOJSON_SMALL_SENTINEL := $(GEOJSON_DIR)/.geojson_small_built

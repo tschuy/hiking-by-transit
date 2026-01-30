@@ -4,7 +4,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "build-and-deploy": "vite build && mv dist/assets/index-*.js ../public/js/olmap.js && mv dist/assets/index-*.css ../public/css/olmap.css",
+    "build-and-deploy": "vite build && mv dist/assets/index-*.js ../jekyll/public/js/olmap.js && mv dist/assets/index-*.css ../jekyll/public/css/olmap.css",
     "serve": "vite preview"
   },
   "devDependencies": {

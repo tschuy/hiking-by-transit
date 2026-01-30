@@ -257,11 +257,11 @@ def main():
             else:
                 outputs["bus-weekday-only"].append(placemark("bus-weekday-only"))
 
-    write_kml("../assets/kml/rail.kml", outputs["rail"], "rail", "ff007cf5")
-    write_kml("../assets/kml/rail-far.kml", outputs["rail-far"], "rail-far", "ff0051e6")
-    write_kml("../assets/kml/bus.kml", outputs["bus"], "bus", "ffd18802")
-    write_kml("../assets/kml/bus-far.kml", outputs["bus-far"], "bus-far", "ffa79700")
-    write_kml("../assets/kml/bus-weekday-only.kml", outputs["bus-weekday-only"], "bus-weekday-only", "ff7e231a")
+    write_kml("../jekyll/assets/kml/rail.kml", outputs["rail"], "rail", "ff007cf5")
+    write_kml("../jekyll/assets/kml/rail-far.kml", outputs["rail-far"], "rail-far", "ff0051e6")
+    write_kml("../jekyll/assets/kml/bus.kml", outputs["bus"], "bus", "ffd18802")
+    write_kml("../jekyll/assets/kml/bus-far.kml", outputs["bus-far"], "bus-far", "ffa79700")
+    write_kml("../jekyll/assets/kml/bus-weekday-only.kml", outputs["bus-weekday-only"], "bus-weekday-only", "ff7e231a")
 
 if __name__ == "__main__":
     main()
