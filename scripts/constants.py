@@ -36,7 +36,8 @@ gtfs_map = {
     "tulare": {"path": "./gtfs/tulare.zip", "url": "http://data.peaktransit.com/staticgtfs/120/gtfs.zip"},
     "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"},
     "butte": {"path": "./gtfs/butte.zip", "url": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip"},
-    "slorta": {"path": "./gtfs/slorta.zip", "url": "http://slo.connexionz.net/rtt/public/resource/gtfs.zip"}
+    "slorta": {"path": "./gtfs/slorta.zip", "url": "http://slo.connexionz.net/rtt/public/resource/gtfs.zip"},
+    "kern": {"path": "./gtfs/kerncounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip"}
 }
 
 def actransit_filter(rid):
@@ -65,6 +66,12 @@ def ggt_filter(rid):
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "http://slo.connexionz.net/rtt/public/resource/gtfs.zip": {
+        1: {'type': 'bus', 'long_name': 'SLORTA'},
+    },
+    "https://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip": {
+        194: {'type': 'bus', 'long_name': 'Kern Transit'},
+    },
     "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip": {
         'SRTD': {'type': 'bus', 'long_name': 'Sacramento Regional Transit', 'short_name': 'SacRT'},
     },

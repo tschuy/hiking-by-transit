@@ -1428,4 +1428,58 @@ Served by B-Line 7
       <coordinates>-121.79937962195318,39.7599881230796,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Sky Point Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Cerro Coso Community College (2740476)</h4>
+<b>18 min walk</b><br>
+Served by Kern Transit 227
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-117.66214138157281,35.576828087546296,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>College Heights Rademacher Trailheads</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Cerro Coso Community College (2740476)</h4>
+<b>6 min walk</b><br>
+Served by Kern Transit 227
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-117.67106466747188,35.56535394322547,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Pacific Crest Trail: Walker Pass</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Walker Pass at Hwy. 178 WB (781470)</h4>
+<b>0 min walk</b><br>
+Served by Kern Transit 227
+<ul><li>Weekday: 2 trips a day</li><li>Weekend: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-weekday-only</styleUrl>
+    <Point>
+      <coordinates>-118.02669672658729,35.66279865996125,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>

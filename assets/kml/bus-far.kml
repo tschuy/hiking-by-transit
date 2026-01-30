@@ -1676,7 +1676,7 @@ Served by Tulare C20, Tulare C30
 
 <h4>Stop: Oceanpoint Ranch</h4>
 <b>17 min walk</b><br>
-Served by UNKNOWN 15N, UNKNOWN 15S
+Served by SLORTA 15N, SLORTA 15S
 <ul><li>Weekday: Every 1–2 hours</li><li>Saturday: Every 1–2 hours</li><li>Sunday: 6 trips a day</li></ul>
 
 ]]>
@@ -1738,6 +1738,78 @@ Served by YARTS Sonora HWY 120 (SEASONAL SERVICE)
     <styleUrl>#bus-far</styleUrl>
     <Point>
       <coordinates>-120.09871551412614,37.82182669023526,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>TMTA: Lehigh Trails</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tehachapi Park & Ride WB (760801)</h4>
+<b>43 min walk</b><br>
+Served by Kern Transit 100
+<ul><li>Weekday: 6 trips a day</li><li>Saturday: 3 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.42952681460915,35.13934819823506,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sequoia National Forest: Cannell Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Valley View Dr. at Sierra Way (761124)</h4>
+<b>31 min walk</b><br>
+Served by Kern Transit 220
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.43093872602746,35.77302996928321,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sequoia National Forest: Whiskey Flat Trail</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Burlando Rd. at Rio Vista Dr. (771170)</h4>
+<b>28 min walk</b><br>
+Served by Kern Transit 220
+<ul><li>Weekday: 4 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.44517838094983,35.77593563301735,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Los Padres National Forest: Cold Springs Canyon</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Post Office/Monterey Trail (760830)</h4>
+<b>25 min walk</b><br>
+Served by Kern Transit 130
+<ul><li>Weekday: 7 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.96244488714642,34.823996523324745,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

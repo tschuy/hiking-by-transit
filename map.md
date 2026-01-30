@@ -144,6 +144,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Fresno County Transit Agency
 * SacRT
 * Butte County B-Line
+* Kern Transit
 
 ### The following agencies do not appear on the map, but are planned to:
 
@@ -159,9 +160,6 @@ Muni has not been included on this map, as its services stay exclusively within 
 **Sierra Nevada**
 * Eastern Sierra Transit (including Reds Meadow shuttle)
 
-**Central Valley and Foothills**
-* Kern Transit
-
 **Statewide**
 * Amtrak thruway buses
 
@@ -175,3 +173,4 @@ The following dial-a-ride and microtransit services are intended to be included 
 * The Micro Bus (Merced)
 * Van Go! (Stanislaus)
 * Quincy Evening
+* Kern Transit
