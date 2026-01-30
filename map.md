@@ -6,7 +6,7 @@ hasmap: true
 
 <h1 class="page-title">Trailhead Map</h1>
 
-The trailhead map is intended to contain all the trailheads around Northern California that are transit-accessible. In urban and suburban areas, this generally considered to be no more than around a 30-minute walk from stop to trailhead. In more rural areas with more sparse transit access, stops further from transit are included; in some very rare cases, mainly for the Pacific Crest Trail, trailheads as far as 2-3 hours from transit are included.
+The trailhead map is intended to contain all the trailheads around Northern California that are transit-accessible. In urban and suburban areas, this generally considered to be no more than around a 30-minute walk from stop to trailhead. In more rural areas with more sparse transit access, stops further from transit are included; in some very rare cases, mainly for the Pacific Crest Trail and Eastern Sierra passes, trailheads as far as 2-3+ hours from transit are included.
 
 Not every county in Northern California has been added to this map yet. See below for more information on exactly which transit agencies have and have not been included. **Notably, Santa Cruz County is not yet included**.
 
@@ -24,6 +24,7 @@ Not every county in Northern California has been added to this map yet. See belo
 </div>
 
 <div id="filter" class="infobox infobox-filter map-page">
+  <div id="filter-trailheads">
   <b>Filter Trailheads</b>
   <form id="filter-form" autocomplete="off">
       <input type="checkbox" id="bus" name="bus" checked />
@@ -50,14 +51,42 @@ Not every county in Northern California has been added to this map yet. See belo
       <input type="checkbox" id="call-ahead" name="call-ahead" checked />
       <label for="call-ahead">Call-ahead Service</label>
   </form>
+  </div>
+  <hr>
+  <div id="filter-layers">
+  <form id="filter-layers-form" autocomplete="off">
+    <b>Layers</b><br>
+      <input type="checkbox" id="cpad" name="cpad" />
+      <label for="cpad">CPAD - Protected Areas</label>
+    <hr><b>Show Transit</b><br>
+      <input type="checkbox" id="bayarea" name="bayarea" />
+      <label for="bayarea">Bay Area</label>
+      <br>
+      <input type="checkbox" id="tahoe" name="tahoe" />
+      <label for="tahoe">Tahoe</label>
+      <br>
+      <input type="checkbox" id="amtrak" name="amtrak" />
+      <label for="amtrak">Amtrak</label>
+      <br>
+      <input type="checkbox" id="sacrt" name="sacrt"/>
+      <label for="sacrt">Sacramento Regional Transit (SacRT)</label>
+      <br>
+      <input type="checkbox" id="central-valley" name="central-valley" />
+      <label for="central-valley">Central Valley</label>
+      <br>
+      <input type="checkbox" id="other" name="other" />
+      <label for="other">Other agencies</label>
+      <br>
+  </form>
+  </div>
 </div>
 
-<!--
+
 <hr>
 
 The park and protected lands layer is from the Greeninfo Network: *California Protected Areas Database (CPAD) – [www.calands.org](www.calands.org) (December 2025)*
 
-<hr>-->
+<hr>
 
 This map includes transit from transit agencies across Northern California.
 
@@ -76,8 +105,6 @@ named long-distance hiking route, even on a section that is pavement (like the B
 If you're interested in finding those sorts of mariginal access, enable both the Public Lands layer and the Transit Stops layer on the map, and get scrolling!
 
 In addition to the CPAD database, useful resources for constructing transit-accessible adventures are CalTopo's FSTopo 2016 layer for finding official trails, and the Strava Heatmap for finding routes that actually get use and have not been abandoned.
-
-*Note: the CPAD layer and Transit Stops layers have been temporarily deactivated. [Browse CPAD directly on their official map »](https://www.mapcollaborator.org/cpad/?base=map&y=40.96123&x=-123.82828&z=11&layers=cpad_access&opacs=46)*
 
 ## Which transit agencies / areas are included on the map?
 

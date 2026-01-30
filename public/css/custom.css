@@ -150,10 +150,36 @@ html {
     padding-top: 10px;
     border-top: 2px solid #8f5536;
 }
+
 .ytembed {
     width: 100%;
     aspect-ratio: 16 / 9;
-  }
+}
+
+.filter-toggle {
+    padding: 10px;
+    margin: 10px;
+    min-width: 20em;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.infobox-filter {
+    max-height: 55px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+  
+/* Content inside always visible, clipped by max-height */
+.filter-content {
+    display: block;
+}
+  
+/* Expanded state */
+.infobox-filter:not(.collapsed) {
+    max-height: 1000px;
+}
 
 @media (max-width: 28em) {
     .ol-attribution ul {
@@ -187,6 +213,12 @@ html {
 }
 
 @media (min-width: 1400px) {
+    .infobox-filter {
+        max-height: none;
+    }
+    .filter-toggle {
+        display: none;
+    }
     #sidebar-checkbox:checked ~ .sidebar,
     #sidebar-checkbox:checked ~ .wrap,
     #sidebar-checkbox:checked ~ .sidebar-toggle {
@@ -254,7 +286,7 @@ html {
     }
 
     .infobox.map-page {
-        top: 450px;
+        top: 300px;
     }
 }
 

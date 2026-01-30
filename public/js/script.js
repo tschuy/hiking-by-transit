@@ -136,3 +136,10 @@ function dismissPromo(endtime) {
   document.cookie = cookieText;
   document.getElementById("promo").style.display = "none";
 }
+
+const filterDiv = document.getElementById('filter');
+const toggleBtn = document.getElementById('filter-toggle');
+
+toggleBtn.addEventListener('click', function() {
+  filterDiv.classList.toggle('collapsed');
+});
