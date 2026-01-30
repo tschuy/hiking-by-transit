@@ -55,10 +55,10 @@ def service_description(weekday, saturday, sunday):
 
     results = {day: frequency_label(v) for day, v in values.items()}
     if results["Weekday"] == results["Saturday"] == results["Sunday"]:
-        return f"<ul><li>7 days a week: {results["Weekday"]}</li></ul>"
+        return f"<ul><li>7 days a week: {results['Weekday']}</li></ul>"
     if results["Saturday"] == results["Sunday"]:
-        return f"<ul><li>Weekday: {results["Weekday"]}</li><li>Weekend: {results["Saturday"]}</li></ul>"
-    return f"<ul><li>Weekday: {results["Weekday"]}</li><li>Saturday: {results["Saturday"]}</li><li>Sunday: {results["Sunday"]}</li></ul>"
+        return f"<ul><li>Weekday: {results['Weekday']}</li><li>Weekend: {results['Saturday']}</li></ul>"
+    return f"<ul><li>Weekday: {results['Weekday']}</li><li>Saturday: {results['Saturday']}</li><li>Sunday: {results['Sunday']}</li></ul>"
 
 def safe_str(value):
     if value is None:
