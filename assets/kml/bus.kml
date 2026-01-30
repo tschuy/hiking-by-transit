@@ -4869,6 +4869,10 @@ Mammoth Lakes has good internal shuttle systems in the winter and summer. See Vi
 Served by YARTS Mammoth Lakes HWY 120E/395 (SEASONAL SERVICE)
 <ul><li>7 days a week: 4 trips a day</li></ul>
 
+<h4>Stop: Old Mammoth Rd / Tavern Rd</h4>
+Served by Eastern Sierra Evening Trolley, Eastern Sierra Late Night Trolley, Eastern Sierra Red Line
+<ul><li>7 days a week: Every 20–30 minutes</li></ul>
+
 ]]>
     </description>
     <styleUrl>#bus</styleUrl>
@@ -4982,6 +4986,92 @@ Served by Kern Transit 220
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-118.48409693297327,35.641023454476176,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Los Padres National Forest: Frazier Park Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Post Office/Monterey Trail (760830)</h4>
+<b>13 min walk</b><br>
+Served by Kern Transit 130
+<ul><li>Weekday: 7 trips a day</li><li>Saturday: 4 trips a day</li><li>Sunday: No service</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.9403185792254,34.823819852792006,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Lone Pine</name>
+    <description>
+<![CDATA[
+A hub for Eastern Sierra recreation. Private shuttle services to trailheads can be found on Climber.org. https://climber.org/data/shuttles.html <br>
+<h4>Stop: Lone Pine - McDonald's, 601 S. Main Street</h4>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.06243,36.60242,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Independence</name>
+    <description>
+<![CDATA[
+A hub for Eastern Sierra recreation. Private shuttle services to trailheads can be found on Climber.org. https://climber.org/data/shuttles.html <br>
+<h4>Stop: Independence - Court House, 168 N. Edwards Street</h4>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.19959,36.80221,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Big Pine</name>
+    <description>
+<![CDATA[
+A hub for Eastern Sierra recreation. Private shuttle services to trailheads can be found on Climber.org. https://climber.org/data/shuttles.html <br>
+<h4>Stop: Big Pine - 391 S. Main Street</h4>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.28964,37.164,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bishop</name>
+    <description>
+<![CDATA[
+A hub for Eastern Sierra recreation. Private shuttle services to trailheads can be found on Climber.org. https://climber.org/data/shuttles.html <br>
+<h4>Stop: Bishop - Vons/Kmart, 1200 N. Main Street</h4>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra Benton-Bishop, Eastern Sierra LPX, Eastern Sierra MMX
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-118.39195,37.37391,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

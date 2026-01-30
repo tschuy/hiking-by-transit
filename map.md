@@ -117,6 +117,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Tahoe Transportation District
 * YARTS
 * Sequoia Shuttle
+* Eastern Sierra Transit, not including Reds Meadow shuttle
 
 **Shasta Cascade**
 * Trinity Transit
@@ -158,7 +159,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * SLO Transit
 
 **Sierra Nevada**
-* Eastern Sierra Transit (including Reds Meadow shuttle)
+* Reds Meadow shuttle
 
 **Statewide**
 * Amtrak thruway buses

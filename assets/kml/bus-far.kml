@@ -1812,4 +1812,238 @@ Served by Kern Transit 130
       <coordinates>-118.96244488714642,34.823996523324745,0</coordinates>
     </Point>
   </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Olancha Pass Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Olancha - Mobile, 105 US 395</h4>
+<b>200 min walk</b><br>
+Served by Eastern Sierra 395 Route South
+<ul><li>7 days a week: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.06005737005489,36.2264214628445,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Alabama Hills National Scenic Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Lone Pine - McDonald's, 601 S. Main Street</h4>
+<b>22 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.07656688916602,36.60237209830998,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Lone Pine Campground</name>
+    <description>
+<![CDATA[
+trail access to Whitney Portal <br>
+<h4>Stop: Lone Pine - McDonald's, 601 S. Main Street</h4>
+<b>192 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 8 trips a day</li><li>Weekend: 4 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.18495148862009,36.59735503519247,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Shepherd Pass Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Independence - Court House, 168 N. Edwards Street</h4>
+<b>169 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.27888932287414,36.727327765246464,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Onion Valley Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Independence - Court House, 168 N. Edwards Street</h4>
+<b>265 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.34034553914798,36.772678670064664,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Baxter Pass Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Independence - Court House, 168 N. Edwards Street</h4>
+<b>154 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.29770000467926,36.84472610686151,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Sawmill Pass Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Aberdeen - 150 Tinemaha Road</h4>
+<b>88 min walk</b><br>
+Served by Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.29054030425971,36.93907584716776,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Taboose Pass Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Aberdeen - 150 Tinemaha Road</h4>
+<b>121 min walk</b><br>
+Served by Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 6 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.32783439908809,37.00968459450436,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Big Pine Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Big Pine - 391 S. Main Street</h4>
+<b>214 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.43767075540791,37.125259809311416,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Sugarloaf Road</name>
+    <description>
+<![CDATA[
+Forest road - open to motor vehicles. <br>
+<h4>Stop: Big Pine - 391 S. Main Street</h4>
+<b>65 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra LPX
+<ul><li>Weekday: 4 trips a day</li><li>Weekend: 2 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.33873825570248,37.155915555770896,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Druid Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Bishop - Vons/Kmart, 1200 N. Main Street</h4>
+<b>124 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra Benton-Bishop, Eastern Sierra LPX, Eastern Sierra MMX
+<ul><li>7 days a week: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.44470731522874,37.31693326208491,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: Rock Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Tom's Place - 8180 Crowley Lake Drive</h4>
+<b>26 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra MMX
+<ul><li>7 days a week: 8 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.65976802787915,37.55699950843942,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Inyo National Forest: McGee Creek Trailhead</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Crowley Lake - Community Center, 482 S. Landing Road</h4>
+<b>129 min walk</b><br>
+Served by Eastern Sierra 395 Route North, Eastern Sierra 395 Route South, Eastern Sierra MMX
+<ul><li>7 days a week: 8 trips a day</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus-far</styleUrl>
+    <Point>
+      <coordinates>-118.80266093260987,37.550840771841635,0</coordinates>
+    </Point>
+  </Placemark>
 </Document></kml>
