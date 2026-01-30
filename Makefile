@@ -6,6 +6,7 @@ ASSETS_DIR := assets
 
 KML_DIR := $(ASSETS_DIR)/kml
 GEOJSON_DIR := $(ASSETS_DIR)/geojson
+JEKYLL_DIR := jekyll
 
 VENV := $(SCRIPTS_DIR)/venv
 PYTHON := $(VENV)/bin/python
@@ -78,4 +79,10 @@ clean:
 # development server
 .PHONY: serve
 serve:
-	bundle exec jekyll serve
+	cd $(JEKYLL_DIR) && bundle exec jekyll serve
+
+# build whole website
+.PHONY: site
+site: all
+	cd $(JEKYLL_DIR) && bundle exec jekyll build \
+		--destination ../_site
