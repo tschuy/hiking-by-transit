@@ -21,6 +21,8 @@ def load_gtfs(gtfs_path):
     if gtfs_path.endswith(".zip"):
         with zipfile.ZipFile(gtfs_path, 'r') as z:
             for filename in z.namelist():
+                if "/" in filename:
+                    continue  # skip subdirectories like __MACOSX/, thanks YARTS
                 if filename.endswith(".txt"):
                     df_name = os.path.splitext(os.path.basename(filename))[0]
                     data[df_name] = read_csv(z.open(filename))

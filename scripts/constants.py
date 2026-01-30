@@ -61,29 +61,6 @@ def ggt_filter(rid):
         return True
     return False
 
-# url -> {route_id: route_info}
-url_to_route_map = {}
-
-# populate url_to_route_map
-for feed_name, feed_info in gtfs_map.items():
-    try:
-        path = feed_info["path"]
-        url = feed_info["url"]
-
-        with zipfile.ZipFile(path, 'r') as zf:
-            if "routes.txt" in zf.namelist():
-                routes_df = pd.read_csv(zf.open("routes.txt"))
-                # Create a dict mapping route_id -> row as dict
-                routes_df["route_id"] = routes_df["route_id"].astype(str)
-                route_dict = routes_df.set_index("route_id").T.to_dict()
-                url_to_route_map[url] = route_dict
-            else:
-                print(f"Warning: {feed_name} has no routes.txt")
-                url_to_route_map[url] = {}
-    except Exception as e:
-        print(f"Error processing {feed_name}: {e}")
-        url_to_route_map[url] = {}
-
 # {url -> {route -> {long_name, short_name, type, filter_function}}}
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
@@ -113,7 +90,16 @@ agency_map = {
         120: {'type': 'bus', 'long_name': 'Tulare County Regional Transit Agency', 'short_name': 'Tulare'},
     },
     "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip": {
-        114: {'type': 'bus', 'long_name': 'Yosemite Area Regional Transportation System', 'short_name': 'YARTS'},
+        114: {
+            'type': 'bus',
+            'long_name': 'Yosemite Area Regional Transportation System',
+            'short_name': 'YARTS',
+            'route_notes': {
+                '2005': '(SEASONAL SERVICE)',
+                '582': '(SEASONAL SERVICE)',
+                '1094': '(SEASONAL SERVICE)'
+            }
+        },
     },
     "https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip": {
         24: {"short_name": "Siskiyou STAGE", "long_name": "Siskiyou Transit and General Express", "type": "bus"}
@@ -247,3 +233,39 @@ agency_map = {
         20: {'type': 'bus', 'long_name': 'Plumas Transit'},
     },
 }
+
+# url -> {route_id: route_info}
+url_to_route_map = {}
+
+# Populate url_to_route_map
+for feed_name, feed_info in gtfs_map.items():
+    path = feed_info["path"]
+    url = feed_info["url"]
+    try:
+        with zipfile.ZipFile(path, "r") as zf:
+            if "routes.txt" in zf.namelist():
+                routes_df = pd.read_csv(zf.open("routes.txt"))
+                # Ensure route_id is string
+                routes_df["route_id"] = routes_df["route_id"].astype(str)
+                route_dict = routes_df.set_index("route_id").T.to_dict()
+            else:
+                print(f"Warning: {feed_name} has no routes.txt")
+                route_dict = {}
+
+        # --- Merge agency route_notes if they exist ---
+        if url in agency_map:
+            for agency_id, agency_info in agency_map[url].items():
+                route_notes = agency_info.get("route_notes", {})
+                for rid, note in route_notes.items():
+                    rid = str(rid)  # ensure string keys
+                    if rid in route_dict:
+                        route_dict[rid]["note"] = note
+                    else:
+                        print(route_dict.keys())
+                        print(f"Warning: route_id {rid} in route_notes not found in {feed_name}")
+
+        url_to_route_map[url] = route_dict
+
+    except Exception as e:
+        print(f"Error processing {feed_name}: {e}")
+        url_to_route_map[url] = {}

@@ -199,7 +199,7 @@ def main():
                     continue
 
                 route_strings.append(
-                    f"{agency.get('short_name', agency.get('long_name', 'UNKNOWN'))} {route_name}".strip()
+                    f"{agency.get('short_name', agency.get('long_name', 'UNKNOWN'))} {route_name} {info.get('note', '')}".strip()
                 )
 
                 if agency_type == "rail":
