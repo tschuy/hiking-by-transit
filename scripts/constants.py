@@ -37,7 +37,8 @@ gtfs_map = {
     "sacrt": {"path": "./gtfs/sacrt.zip", "url": "https://iportal.sacrt.com/gtfs/srtd/google_transit.zip"},
     "butte": {"path": "./gtfs/butte.zip", "url": "https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip"},
     "slorta": {"path": "./gtfs/slorta.zip", "url": "http://slo.connexionz.net/rtt/public/resource/gtfs.zip"},
-    "kern": {"path": "./gtfs/kerncounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip"}
+    "kern": {"path": "./gtfs/kerncounty-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip"},
+    "easternsierra": {"path": "./gtfs/easternsierra-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip"}
 }
 
 def actransit_filter(rid):
@@ -66,6 +67,9 @@ def ggt_filter(rid):
 #   type: bus OR rail; bus includes light rail and rail includes ferry
 #   filter_function(rid): return True for routes to be hidden for that agency (ex: school routes)
 agency_map = {
+    "https://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip": {
+        78: {'type': 'bus', 'long_name': 'Eastern Sierra Transit Authority', 'short_name': 'Eastern Sierra'},
+    },
     "http://slo.connexionz.net/rtt/public/resource/gtfs.zip": {
         1: {'type': 'bus', 'long_name': 'SLORTA'},
     },
