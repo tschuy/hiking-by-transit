@@ -58,6 +58,11 @@ jobs:
           source scripts/venv/bin/activate
           pip install -r scripts/requirements.txt
 
+      - name: Install GDAL / ogr2ogr
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gdal-bin
+
       # ---- Build everything ----
       - name: Build site
         run: make site

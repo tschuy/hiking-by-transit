@@ -7,7 +7,7 @@ import html
 import math
 import re
 
-from constants import url_to_route_map, agency_map
+from config import url_to_route_map, agency_map
 
 def normalize_stop_name(stop_name: str) -> str:
     if not stop_name or not stop_name.isupper():

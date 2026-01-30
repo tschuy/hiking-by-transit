@@ -42,6 +42,25 @@ gtfs_map = {
     "easternsierra": {"path": "./gtfs/easternsierra-ca-us.zip", "url": "https://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip"}
 }
 
+gtfs_config_map = {
+    "yarts": {
+        "path": "./gtfs/yarts.zip",
+        "url": "https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip",
+        "agency": {
+            114: {
+                'type': 'bus',
+                'long_name': 'Yosemite Area Regional Transportation System',
+                'short_name': 'YARTS',
+                'route_notes': {
+                    '2005': '(SEASONAL SERVICE)',
+                    '582': '(SEASONAL SERVICE)',
+                    '1094': '(SEASONAL SERVICE)'
+                }
+            }
+        }
+    }
+}
+
 def actransit_filter(rid):
     try:
         route = int(rid.split(':')[-1])

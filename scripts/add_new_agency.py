@@ -2,7 +2,7 @@ import csv
 import zipfile
 from pathlib import Path
 
-from constants import gtfs_map, agency_map
+from config import gtfs_map, agency_map
 
 
 def prompt(field_name, current_value=None, default=None):

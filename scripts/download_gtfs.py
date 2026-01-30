@@ -5,7 +5,7 @@ import os
 import sys
 import urllib.request
 
-from constants import gtfs_map
+from config import gtfs_map
 
 # seriously, Yolo?
 USER_AGENT = (

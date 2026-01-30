@@ -6,7 +6,7 @@ import csv
 import sys
 from xml.sax.saxutils import escape
 
-from constants import gtfs_map
+from config import gtfs_map
 
 
 KML_HEADER = """<?xml version="1.0" encoding="UTF-8"?>

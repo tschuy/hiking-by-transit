@@ -8,7 +8,7 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 
-from constants import gtfs_map
+from config import gtfs_map
 from stop_summary import get_stop_summary
 
 

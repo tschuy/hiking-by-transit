@@ -4,7 +4,7 @@ import argparse
 
 import geopandas as gpd
 
-from constants import gtfs_map
+from config import gtfs_map
 from stop_summary import get_stop_summary
 
 
