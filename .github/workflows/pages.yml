@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: github-pages
+
+    env:
+      MTC_API_KEY: ${{ secrets.MTC_API_KEY }}
 
     steps:
       - name: Checkout

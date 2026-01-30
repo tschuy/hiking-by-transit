@@ -1,3 +1,5 @@
+export MTC_API_KEY
+
 # ---- paths ----
 OLMAP_DIR := olmap
 SCRIPTS_DIR := scripts
@@ -27,6 +29,14 @@ GEOJSON_SMALL_SENTINEL := $(GEOJSON_DIR)/.geojson_small_built
 .PHONY: all
 all: olmap kml geojson-large geojson-small
 
+# ---- GTFS download ----
+.PHONY: download-gtfs
+download-gtfs:
+	@echo "Downloading GTFS feeds..."
+	cd scripts && \
+		MTC_API_KEY=$(MTC_API_KEY) \
+		${PYTHON} download_gtfs.py --mtc-api-key "$$MTC_API_KEY"
+
 # ---- step 1: olmap build ----
 .PHONY: olmap
 olmap: $(OLMAP_JS)
@@ -36,7 +46,7 @@ $(OLMAP_JS):
 
 # ---- step 2 + 3: kml generation and copy ----
 .PHONY: kml
-kml: $(KML_SENTINEL)
+kml: download-gtfs $(KML_SENTINEL)
 
 $(KML_SENTINEL): $(GPKG) $(DATA_KMLS)
 	mkdir -p $(KML_DIR)
@@ -47,7 +57,7 @@ $(KML_SENTINEL): $(GPKG) $(DATA_KMLS)
 
 ## geojson
 .PHONY: geojson
-geojson: geojson-large geojson-small
+geojson: download-gtfs geojson-large geojson-small
 
 # large
 .PHONY: geojson-large
