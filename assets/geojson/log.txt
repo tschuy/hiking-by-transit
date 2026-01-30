@@ -1,0 +1,8 @@
+Feed Version: UTC: 21-Jan-2026 10:06
+GTFS-to-geoJSON Version: 3.8.5
+Date Generated: Fri Jan 30 2026 01:16:45 GMT-0800 (Pacific Standard Time)
+Route Count: 0
+Shape Count: 0
+GeoJSON File Count: 1
+Output Type: agency
+Source: ./gtfs/easternsierra-ca-us.zip
