@@ -4125,6 +4125,29 @@ Served by Nevada County Connects 3
   </Placemark>
 
   <Placemark>
+    <name>Folsom Lake State Recreation Area: Willow Creek</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Iron Point Light Rail</h4>
+<b>1 min walk</b><br>
+Served by El Dorado Transit 50x
+<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
+
+<h4>Stop: Iron Point Station (WB)</h4>
+<b>1 min walk</b><br>
+Served by SacRT Gold
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.19111331216327,38.64453673693695,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
     <name>El Dorado Trail: El Dorado</name>
     <description>
 <![CDATA[
@@ -4375,6 +4398,96 @@ Served by TART Hwy267, TART TLR
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-120.17706659626221,39.32634988758886,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Folsom Lake State Recreation Area: Black Miners Bar Left Bank</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Historic Folsom Station (WB)</h4>
+<b>3 min walk</b><br>
+Served by SacRT Gold
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.1812680925784,38.67770237283002,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Folsom Lake State Recreation Area: Black Miners Bar</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Historic Folsom Station (WB)</h4>
+<b>15 min walk</b><br>
+Served by SacRT Gold
+<ul><li>Weekday: Every 20–30 minutes</li><li>Saturday: Every 30–45 minutes</li><li>Sunday: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.17683463994332,38.682859875001604,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Bannister Park</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Fair Oaks Blvd & San Juan Ave (WB)</h4>
+<b>12 min walk</b><br>
+Served by SacRT 23
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.2869895549049,38.63355435269595,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Sunrise Recreation Area</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Sunrise Blvd & Gold Country Blvd (NB)</h4>
+<b>11 min walk</b><br>
+Served by SacRT 124, SacRT 21
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.26392260673289,38.63468205593356,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>American River: El Manto</name>
+    <description>
+<![CDATA[
+
+<h4>Stop: Coloma Rd & El Manto Dr (WB)</h4>
+<b>7 min walk</b><br>
+Served by SacRT 21
+<ul><li>Weekday: Every 30–45 minutes</li><li>Saturday: About hourly</li><li>Sunday: Every 1–2 hours</li></ul>
+
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-121.28716284574018,38.61892973913707,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

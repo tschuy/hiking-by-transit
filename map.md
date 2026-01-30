@@ -141,6 +141,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * CatTracks (UC Merced)
 * Tulare County Regional Area Transit Agency
 * Fresno County Transit Agency
+* SacRT
 
 ### The following agencies do not appear on the map, but are planned to:
 
@@ -155,9 +156,8 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Eastern Sierra Transit (including Reds Meadow shuttle)
 
 **Central Valley and Foothills**
-* Kern Transit
-* SacRT
 * Butte County B-Line
+* Kern Transit
 
 **Statewide**
 * Amtrak thruway buses

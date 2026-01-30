@@ -1212,24 +1212,6 @@ Served by Placer County Transit 40, Placer County Transit 60
   </Placemark>
 
   <Placemark>
-    <name>Folsom Lake State Recreation Area: Willow Creek</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Iron Point Light Rail</h4>
-<b>1 min walk</b><br>
-Served by El Dorado Transit 50x
-<ul><li>Weekday: About hourly</li><li>Weekend: No service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#bus-weekday-only</styleUrl>
-    <Point>
-      <coordinates>-121.19111331216327,38.64453673693695,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
     <name>El Dorado Trail: Smithflat</name>
     <description>
 <![CDATA[
