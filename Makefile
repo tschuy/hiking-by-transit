@@ -8,7 +8,7 @@ KML_DIR := $(ASSETS_DIR)/kml
 GEOJSON_DIR := $(ASSETS_DIR)/geojson
 JEKYLL_DIR := jekyll
 
-VENV := $(SCRIPTS_DIR)/venv
+VENV := venv
 PYTHON := $(VENV)/bin/python
 
 GTFS_TO_GEOJSON := $(OLMAP_DIR)/node_modules/gtfs-to-geojson/dist/bin/gtfs-to-geojson.js

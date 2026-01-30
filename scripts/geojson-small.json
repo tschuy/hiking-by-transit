@@ -35,6 +35,6 @@
     ],
     "outputType": "agency",
     "outputFormat": "lines-and-stops",
-    "outputPath": "geojson",
+    "outputPath": "../assets/geojson",
     "ignoreDuplicates": true
 }

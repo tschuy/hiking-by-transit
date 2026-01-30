@@ -4,6 +4,11 @@ _site
 .ruby-version
 .jekyll-cache
 
+# ignore build artifacts
+assets/kml/*
+assets/geojson/*
+public/olmap.js
+
 # Python cache
 __pycache__
 
