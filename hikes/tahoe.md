@@ -132,7 +132,21 @@ The gondola, located at the Heavenly Village in South Lake Tahoe a short walk fr
 
 ## Transit-accessible trailheads
 
-This map shows transit-accessible trailheads across the Tahoe basin, including seasonal-only services. TART services to trailheads around Truckee are not included.
+This map shows transit-accessible trailheads across the Tahoe basin, including seasonal-only services.
+
+<div id="filter">
+<div id="filter-form"></div>
+<div id="filter-layers">
+  <form id="filter-layers-form" autocomplete="off">
+    <b>Layers</b><br>
+    <input type="checkbox" id="cpad" name="cpad" />
+    <label for="cpad">CPAD - California Protected Areas</label><br>
+    <input type="checkbox" id="tahoe" name="tahoe" />
+    <label for="tahoe">Transit</label>
+    <br>
+  </form>
+</div>
+</div>
 
 <div id="ol-map" data-lon="-120.0326" data-lat="39.1046" data-zoom="11" style="height: 800px;">
   <div id="info"></div>
