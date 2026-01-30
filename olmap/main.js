@@ -5,6 +5,7 @@ import TileArcGISRest from 'ol/source/TileArcGISRest.js';
 import OSM from 'ol/source/OSM';
 import KML from 'ol/format/KML.js';
 import Overlay from 'ol/Overlay.js';
+import GeoJSON from 'ol/format/GeoJSON.js';
 import GPX from 'ol/format/GPX.js';
 import * as olProj from 'ol/proj';
 import {Circle as CircleStyle, Fill, Stroke, Style} from 'ol/style.js';
@@ -72,11 +73,109 @@ const overlay = new Overlay({
   },
 });
 
-console.log('test');
+const geojson_layers = {};
+
+const agencyShortNames = {
+  'Tahoe Transportation District': 'TTD',
+  'Tahoe Truckee Area Regional Transit': 'TART',
+  'Sacramento Regional Transit': 'SacRT'
+}
+
+const agencies = [
+  'amtrak',
+  'bear',
+  'lake',
+  'hta',
+  'redwood',
+  'mendo',
+  'ttd',
+  'tart',
+  'yolo',
+  'sanbenito',
+  'eldorado',
+  'bayarea',
+  'trinity',
+  'siskiyou',
+  'sage',
+  'nevada',
+  'placer',
+  'tehama',
+  'calaveras',
+  'tuolumne',
+  'amador',
+  'plumas',
+  'yarts',
+  'lassen',
+  'raba',
+  'madera',
+  'sanjoaquin',
+  'stanrta',
+  'tulare',
+  'sacrt',
+  'butte',
+  'slorta',
+  'kern',
+  'easternsierra'
+]
+
+const agencyHiddenRoutes = {
+  'ttd': ['5853']
+};
+
+agencies.forEach(function(e) {
+  const hiddenRoutes = agencyHiddenRoutes[e] || [];
+
+  const source = new VectorSource({
+    loader: function(extent, resolution, projection) {
+      fetch(`/assets/geojson/${e}.geojson`)
+        .then(res => res.json())
+        .then(function(data) {
+          // Filter features before adding to source
+          const filteredFeatures = data.features
+            .filter(f => !hiddenRoutes.includes(f.properties.route_id));
+
+          const features = new GeoJSON().readFeatures({
+            type: 'FeatureCollection',
+            features: filteredFeatures
+          }, {
+            featureProjection: projection
+          });
+
+          source.addFeatures(features);
+        });
+    }
+  });
+
+  geojson_layers[e] = new VectorLayer({
+    name: e,
+    source: source,
+  });
+});
+
+let transitGroups = {
+  'amtrak': ['amtrak'],
+  'sacrt': ['sacrt'],
+  'tahoe': ['tart', 'ttd', 'eldorado', 'placer'],
+  'bayarea': ['bayarea', 'bear'],
+  'central-valley': ['stanrta', 'sanjoaquin']
+};
+
+const groupedAgencies = new Set(
+  Object.values(transitGroups).flat()
+);
+
+transitGroups['other'] = agencies.filter(a => !groupedAgencies.has(a));
+
+const preHiddenGroups = ['sacrt', 'bayarea', 'central-valley', 'amtrak', 'tahoe', 'other']
+
+for (const g of preHiddenGroups) {
+  for (const a of transitGroups[g]) {
+    geojson_layers[a].setVisible(false);
+  }
+}
 
 const kmlFormat = new KML({showPointNames: false});
-const trailhead_kml_layers = {}; 
-
+const trailhead_kml_layers = {};
 [
   "bus",
   "bus-far",
@@ -107,13 +206,15 @@ const trails = hikes_with_gpx.map((e) => new VectorLayer({
   properties: {...e, ...{"type": "gpx"}},
 }));
 
+const cpadAttribution = 'CPAD data ©<a href="https://calands.org/cpad/">GreenInfo Network</a>';
+const prodAttributions = [
+  'Tiles ©<a href="https://www.thunderforest.com">Thunderforest</a>',
+  'Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+];
+
 const customUrl = localStorage.getItem("osmmapurl");
 const prodOSM = new OSM({
-  attributions: [
-    'Tiles ©<a href="https://www.thunderforest.com">Thunderforest</a>',
-    // 'CPAD data ©<a href="https://calands.org/cpad/">GreenInfo Network</a>',
-    'Map data ©<a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-  ],
+  attributions: prodAttributions,
   url: customUrl ? decodeURIComponent(customUrl) : 'https://tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey=d2ba8afb4a84444f878b429697465850'
 });
 
@@ -128,15 +229,17 @@ const base = new TileLayer({
   source: osm,
 });
 
-// const cpadAccessLayer = new TileLayer({
-//   source: new TileArcGISRest({
-//     url: 'https://gis.cnra.ca.gov/arcgis/rest/services/Boundaries/CPAD_AccessType/MapServer',
-//     params: {
-//       LAYERS: 'show:1'
-//     }
-//   }),
-//   opacity: 0.4
-// });
+const cpadAccessLayer = new TileLayer({
+  source: new TileArcGISRest({
+    url: 'https://gis.cnra.ca.gov/arcgis/rest/services/Boundaries/CPAD_AccessType/MapServer',
+    params: {
+      LAYERS: 'show:1'
+    }
+  }),
+  opacity: 0.4
+});
+
+cpadAccessLayer.setVisible(false);
 
 const targetDiv = document.getElementById('ol-map');
 let view = {
@@ -150,7 +253,7 @@ if (targetDiv.dataset.lon && targetDiv.dataset.lat) {
 }
 
 const map = new Map({
-  layers: [base, ...trails, ...Object.values(trailhead_kml_layers)],
+  layers: [base, cpadAccessLayer, ...Object.values(geojson_layers), ...trails, ...Object.values(trailhead_kml_layers)],
   target: targetDiv,
   view: new View(view),
   interactions: defaults({dragPan: false, mouseWheelZoom: false, altShiftDragRotate:false, pinchRotate:false}).extend([
@@ -172,22 +275,61 @@ map.addOverlay(overlay);
 
 let currentFeature;
 const displayFeatureInfo = function (pixel, target) {
-  const feature = target.closest('.ol-control')
-    ? undefined
-    : map.forEachFeatureAtPixel(pixel, function (feature) {
-        return feature;
-      });
-  if (feature) {
+  // Ignore map controls
+  if (target.closest('.ol-control')) {
+    info.style.visibility = 'hidden';
+    currentFeature = undefined;
+    return;
+  }
+
+  // Get all features under this pixel
+  var features = map.getFeaturesAtPixel(pixel, { hitTolerance: 5 }) || [];
+
+  if (features.length > 0) {
     info.style.left = pixel[0] + 'px';
     info.style.top = pixel[1] + 'px';
-    if (feature !== currentFeature) {
-      info.style.visibility = 'visible';
-      info.innerText = feature.get('name');
+    info.style.visibility = 'visible';
+
+    // set hover to any named trailhead
+    var featureWithName = features.find(function(f) {
+      return f.get('name');
+    });
+    if (featureWithName) {
+      info.innerText = featureWithName.get('name');
+      currentFeature = featureWithName;
+      return;
+    }
+
+    // ...or stops
+    var stopFeature = features.find(function(f) {
+      return f.get('stop_id');
+    });
+    if (stopFeature) {
+      info.innerText = stopFeature.get('stop_name') || '';
+      currentFeature = stopFeature;
+      return;
+    }
+
+    // ...or to transit routes
+    var agencyFeatures = features.filter(function(f) {
+      return f.get('agency_id');
+    });
+
+    if (agencyFeatures.length > 0) {
+      var lines = agencyFeatures.map(function(f) {
+        var agencyLongName = f.get('agency_name') || '';
+        var agency = agencyShortNames[agencyLongName] || agencyLongName;
+        var route = f.get('route_short_name') || f.get('route_long_name') || '';
+        return agency + ' ' + route;
+      });
+      info.innerText = lines.join('\n');
+      currentFeature = agencyFeatures[0]; // optional: track first route
+      return;
     }
   } else {
     info.style.visibility = 'hidden';
+    currentFeature = undefined;
   }
-  currentFeature = feature;
 };
 
 map.on('pointermove', function (evt) {
@@ -200,6 +342,7 @@ map.on('pointermove', function (evt) {
   displayFeatureInfo(pixel, evt.originalEvent.target);
 });
 
+
 map.getTargetElement().addEventListener('pointerleave', function () {
   currentFeature = undefined;
   info.style.visibility = 'hidden';
@@ -209,7 +352,8 @@ map.on('click', function (evt) {
   const [feature, layer] = map.forEachFeatureAtPixel(evt.pixel, function (feature, layer) {
     return [feature, layer];
   });
-  if (feature) {
+  // if feature is trailhead, not transit route / stop
+  if (feature && feature.get('name')) {
     let coordinates = feature.getGeometry().getCoordinates();
     if (feature.getGeometry().getType() != "Point") {
       coordinates = evt.coordinate;
@@ -229,7 +373,6 @@ map.on('click', function (evt) {
         parkInfo.weather = "TODO: look up weather for this park" // getWeather(feature);
       }
       const lonlat = olProj.transform(coordinates, 'EPSG:3857', 'EPSG:4326');
-      // directionsLink.href = `https://www.google.com/maps/dir/?api=1&destination=${lonlat[1]},${lonlat[0]}&travelmode=transit`;
       directionsLink.href = `https://www.google.com/maps/place/${lonlat[1]},${lonlat[0]}/@${lonlat[1]},${lonlat[0]},15z`
       directionsLink.style.visibility = "visible";
       hikeLink.style.visibility = "hidden";
@@ -254,31 +397,45 @@ function formatParkInfo(parkInfo) {
     parkInfo.description = "";
   }
   if (parkInfo.trailhead) {
-    return `<h3>${parkInfo.parkname}</h3><h4>${parkInfo.trailhead}</h4>${parkInfo.description}` // <br><br>${parkInfo.weather}`
+    return `<h3>${parkInfo.parkname}</h3><h4>${parkInfo.trailhead}</h4>${parkInfo.description}`
   }
-  return `<h3>${parkInfo.parkname}</h3>${parkInfo.description}` // <br><br>${parkInfo.weather}`
+  return `<h3>${parkInfo.parkname}</h3>${parkInfo.description}`
 }
 
 function formatHikeInfo(properties) {
   return `<h3>${properties.title}</h3><ul><li>Length: ${properties.length}</li><li>Difficulty: ${properties.difficultyhuman}</li></ul>${properties.blurb}`
 }
 
-const filter = document.getElementById('filter-form');
-filter.addEventListener('change', function(e) {
+const filterTrailheads = document.getElementById('filter-form');
+filterTrailheads.addEventListener('change', function(e) {
   const layer_name = e.target.name;
-  if (e.target.checked) {
-    map.addLayer(trailhead_kml_layers[layer_name]);
-  } else {
-    var layersToRemove = [];
-    map.getLayers().forEach(function (layer) {
-        if (layer.get('name') != undefined && layer.get('name') === layer_name) {
-            layersToRemove.push(layer);
-        }
-    });
+  const layer = trailhead_kml_layers[layer_name];
+  if (!layer) return;
 
-    var len = layersToRemove.length;
-    for(var i = 0; i < len; i++) {
-        map.removeLayer(layersToRemove[i]);
+  layer.setVisible(e.target.checked);
+});
+
+const filterLayers = document.getElementById('filter-layers-form');
+filterLayers.addEventListener('change', function(e) {
+  // special layers: CPAD
+  if (e.target.name === 'cpad') {
+    cpadAccessLayer.setVisible(e.target.checked);
+    if (e.target.checked) {
+      prodOSM.setAttributions([...prodAttributions, cpadAttribution]);
+    } else {
+      prodOSM.setAttributions(prodAttributions);
     }
+    return;
   }
+
+  // group geojson layers
+  if (e.target.name in transitGroups) {
+    for (const a of transitGroups[e.target.name]) {
+      geojson_layers[a].setVisible(e.target.checked);
+    }
+    console.log(e.target.name);
+    return;
+  }
+
+  layer.setVisible(e.target.checked);
 });
