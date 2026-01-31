@@ -151,6 +151,11 @@ html {
     border-top: 2px solid #8f5536;
 }
 
+.hike-photo {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .ytembed {
     width: 100%;
     aspect-ratio: 16 / 9;

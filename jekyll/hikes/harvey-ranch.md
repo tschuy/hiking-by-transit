@@ -25,6 +25,9 @@ travel:
       link: https://countyconnection.com/routes/21/
     - name: County Connection 321 (weekend)
       link: https://countyconnection.com/routes/321/
+    stop:
+      name: Danville Blvd and Camille Ave
+      link: https://maps.app.goo.gl/8T6nMJfhAJkcPp456
 
 trailhead:
   name: Cross Path, St Mary's College

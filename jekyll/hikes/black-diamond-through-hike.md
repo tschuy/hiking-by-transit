@@ -29,6 +29,9 @@ travel:
       link: https://www.trideltatransit.com/bus_routes/375-antioch-bart-slatten-ranch-center/
     - name: Tri Delta 376
       link: https://www.trideltatransit.com/bus_routes/376-antioch-bart-kaiser-antioch-medical-center/
+    stop:
+      name: Lone Tree Wy & Sutter Delta
+      link: https://maps.app.goo.gl/pMUJDKzUwQXk3hZm8
 
 trailhead:
   name: Black Diamond Trail, Clayton Rd Trailhead
@@ -55,4 +58,4 @@ Stewartville Trail runs from the visitor center up to the ridge, where you can c
 
 At Fredrickson Lane, there are two options for returning home: Tri Delta's on-demand Tri MyRide serves the neighborhood to the east (walk to Noakes Dr) and can be taken directly to BART, with a "predicted average wait time of 15-30 minutes". Download the app and set up an account beforehand for ease of hailing; it's a standard bus fare. Service runs until 9PM weekdays but only 5PM weekends.
 
-Otherwise, catch Tri Delta 375/376 at Contra Loma Blvd & James Donlon Blvd by continuing north at Frederickson Ln through Contra Loma Regional Park (1.2mi longer). The two routes together are timetabled to run every 30 minutes directly to BART.
+Otherwise, catch Tri Delta 375/376 at Lone Tree Wy & Sutter Delta by continuing north at Frederickson Ln through Contra Loma Regional Park (1.2mi longer). The two routes together are timetabled to run every 30 minutes directly to BART.

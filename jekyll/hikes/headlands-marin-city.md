@@ -27,6 +27,9 @@ travel:
       link: https://www.goldengate.org/bus/route-schedule/san-rafael-san-francisco-130/
     - name: Golden Gate Transit 150
       link: https://www.goldengate.org/bus/route-schedule/san-rafael-san-francisco-150/
+    stop:
+      name: Marin City Hub-Donahue St & Terners Dr
+      link: https://maps.app.goo.gl/gER5PJ6APLhVRTf59
 
 trailhead:
   name: SCA Trailhead

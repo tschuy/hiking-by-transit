@@ -18,8 +18,8 @@ travel:
     - name: County Connection 310 (weekend)
       link: https://countyconnection.com/routes/310/
     stop:
-      name: Marsh Creek Rd And El Molino Dr
-      link: "https://www.google.com/maps/place/Marsh+Creek+Rd+And+El+Molino+Dr/@37.9335198,-121.9274601,18.14z/data=!4m15!1m8!3m7!1s0x80855f69021edc5b:0x79bfef6b8958c100!2sMarsh+Creek+Rd+%26+El+Molino+Dr,+Clayton,+CA+94517!3b1!8m2!3d37.9339802!4d-121.9280843!16s%2Fg%2F11gf0nh5bf!3m5!1s0x80855f691cfb2217:0xcc67d97f7f456976!8m2!3d37.93391!4d-121.92825!16s%2Fg%2F11h523rngd"
+      name: Marsh Creek Rd and Bigelow St
+      link: "https://maps.app.goo.gl/bAjztmohe4HNmSbg6"
 
 trailhead:
   name: Donner Creek Fire Road
