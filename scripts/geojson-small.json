@@ -31,7 +31,8 @@
         {"agencyKey":"slorta","path":"./gtfs/slorta.zip"},
         {"agencyKey":"kern","path":"./gtfs/kerncounty-ca-us.zip"},
         {"agencyKey":"easternsierra","path":"./gtfs/easternsierra-ca-us.zip"},
-        {"agencyKey":"goldrunner","path":"./gtfs/goldrunner.zip"}
+        {"agencyKey":"goldrunner","path":"./gtfs/goldrunner.zip"},
+        {"agencyKey":"visalia","path":"./gtfs/visalia.zip"}
     ],
     "outputType": "agency",
     "outputFormat": "lines-and-stops",

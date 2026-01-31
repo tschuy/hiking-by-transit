@@ -105,7 +105,7 @@ const agencies = [
   'tart', 'yolo', 'sanbenito', 'eldorado', 'bayarea', 'trinity', 'siskiyou',
   'sage', 'nevada', 'placer', 'tehama', 'calaveras', 'tuolumne', 'amador',
   'plumas', 'yarts', 'lassen', 'raba', 'madera', 'sanjoaquin', 'stanrta',
-  'tulare', 'sacrt', 'butte', 'slorta', 'kern', 'easternsierra'
+  'tulare', 'sacrt', 'butte', 'slorta', 'kern', 'easternsierra', 'visalia'
 ];
 
 const agencyHiddenRoutes: Record<string, string[]> = { 'ttd': ['5853'] };
@@ -162,7 +162,7 @@ let transitGroups: Record<string, string[]> = {
   'sacrt': ['sacrt'],
   'tahoe': ['tart', 'ttd', 'eldorado', 'placer'],
   'bayarea': ['bayarea', 'bear'],
-  'central-valley': ['stanrta', 'sanjoaquin']
+  'central-valley': ['stanrta', 'sanjoaquin', 'visalia']
 };
 const groupedAgencies = new Set(Object.values(transitGroups).flat());
 transitGroups['other'] = agencies.filter(a => !groupedAgencies.has(a));

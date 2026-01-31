@@ -57,7 +57,7 @@ $(KML_SENTINEL): $(GPKG) $(DATA_KMLS)
 
 ## geojson
 .PHONY: geojson
-geojson: download-gtfs geojson-large geojson-small
+geojson: geojson-large geojson-small
 
 # large
 .PHONY: geojson-large
