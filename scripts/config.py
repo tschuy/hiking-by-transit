@@ -97,7 +97,8 @@ for feed_name, feed_info in gtfs_map.items():
                 for rid in routes.keys():
                     rid = str(rid)  # ensure string keys
                     if rid in route_dict:
-                        route_dict[rid]["note"] = routes[rid]["note"]
+                        if routes[rid].get("note"):
+                            route_dict[rid]["note"] = routes[rid]["note"]
                     else:
                         print(route_dict.keys())
                         print(f"Warning: route_id {rid} in routes not found in {feed_name}")
