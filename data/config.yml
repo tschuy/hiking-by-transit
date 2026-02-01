@@ -1,0 +1,436 @@
+feeds:
+  amtrak:
+    gtfs:
+      url: https://content.amtrak.com/content/gtfs/GTFS.zip
+    agencies:
+      '51':
+        type: rail
+        long_name: Amtrak
+  goldrunner:
+    gtfs:
+      url: https://d34tiw64n5z4oh.cloudfront.net/wp-content/uploads/GRGTFS.zip
+    agencies:
+      SJJPA:
+        type: rail
+        long_name: Gold Runner
+  bear:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/beartransit-ca-us/beartransit-ca-us.zip
+    agencies:
+      '1708':
+        type: bus
+        long_name: Bear Transit
+  lake:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip
+    agencies:
+      '7':
+        type: bus
+        long_name: Lake Transit
+        short_name: Lake Transit
+  hta:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/humboldtcounty-ca-us/humboldtcounty-ca-us.zip
+    agencies:
+      RTS:
+        type: bus
+        long_name: Redwood Transit System
+        short_name: HTA
+      ETS:
+        type: bus
+        long_name: Eureka Transit System
+        short_name: HTA
+      A&MRTS:
+        type: bus
+        long_name: Arcata & Mad River Transit System
+        short_name: HTA
+      NSE101:
+        type: bus
+        long_name: 'North State Express: 101'
+        short_name: HTA
+      NSE299:
+        type: bus
+        long_name: 'North State Express: 299'
+        short_name: HTA
+      SHI:
+        type: bus
+        long_name: Southern Humboldt Line
+        short_name: HTA
+  redwood:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/delnorte-ca-us/delnorte-ca-us.zip
+    agencies:
+      '19':
+        type: bus
+        long_name: Redwood Coast Transit
+  mendo:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/mendocino-ca-us/mendocino-ca-us.zip
+    agencies:
+      '42':
+        type: bus
+        long_name: Mendocino Transit Authority
+        short_name: MTA
+  ttd:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/tahoe-ca-us/tahoe-ca-us.zip
+    agencies:
+      '215':
+        type: bus
+        long_name: Tahoe Transportation District
+        short_name: TTD
+  tart:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/laketahoe-ca-us/laketahoe-ca-us.zip
+    agencies:
+      '16':
+        type: bus
+        long_name: North Lake Tahoe Express - 24 hour advance reservations required
+        short_name: ''
+      '904':
+        type: bus
+        long_name: Tahoe Truckee Area Regional Transit
+        short_name: TART
+  yolo:
+    gtfs:
+      url: https://yolobus.com/wp-content/uploads/2025/10/google_transit.zip
+    agencies:
+      d139e461-175c-4156-beb0-e6a23b64d978:
+        type: bus
+        long_name: Yolo County Transportation District
+        short_name: Yolobus
+  sanbenito:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/sanbenitocounty-ca-us/sanbenitocounty-ca-us.zip
+    agencies:
+      '123':
+        type: bus
+        long_name: San Benito County Express
+  eldorado:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/eldoradotransit-ca-us/eldoradotransit-ca-us.zip
+    agencies:
+      '261':
+        type: bus
+        long_name: El Dorado Transit
+  bayarea:
+    gtfs:
+      url: http://api.511.org/transit/datafeeds
+      annotated_url: http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG
+    agencies:
+      UC:
+        type: bus
+        long_name: Union City Transit
+      PE:
+        type: bus
+        long_name: Petaluma
+        short_name: Petaluma
+      PG:
+        type: bus
+        long_name: Presidio Go
+      SS:
+        type: bus
+        long_name: South City Shuttle
+        short_name: South City Shuttle
+      EE:
+        type: bus
+        long_name: Emery Express
+      MC:
+        type: bus
+        long_name: Mountain View Community Shuttle
+      SR:
+        type: bus
+        long_name: Santa Rosa
+        short_name: SR
+      SF:
+        type: bus
+        long_name: Muni
+        short_name: Muni
+      CT:
+        type: rail
+        long_name: Caltrain
+      SI:
+        type: bus
+        long_name: San Francisco International Airport
+      FS:
+        type: bus
+        long_name: FAST
+      WC:
+        type: bus
+        long_name: WestCat (Western Contra Costa)
+        short_name: WestCat
+      EM:
+        type: bus
+        long_name: Emery Go-Round
+      AC:
+        type: bus
+        long_name: AC Transit
+        short_name: AC Transit
+        filter_function: sixhundred_filter
+      AF:
+        type: bus
+        long_name: Angel Island Tiburon Ferry
+      DE:
+        type: bus
+        long_name: Dumbarton Express Consortium
+      CM:
+        type: bus
+        long_name: Commute.org Shuttles
+      MB:
+        type: bus
+        long_name: Mission Bay TMA
+      WH:
+        type: bus
+        long_name: Livermore Amador Valley Transit Authority
+        short_name: Wheels
+      SM:
+        type: bus
+        long_name: SamTrans
+        filter_function: samtrans_filter
+      GF:
+        type: rail
+        long_name: Golden Gate Ferry
+      VC:
+        type: bus
+        long_name: Vacaville City Coach
+        short_name: City Coach
+      GG:
+        type: bus
+        long_name: Golden Gate Transit
+        short_name: GGT
+        filter_function: ggt_filter
+      SA:
+        type: rail
+        long_name: Sonoma Marin Area Rail Transit
+        short_name: SMART
+      GP:
+        type: bus
+        long_name: San Francisco Recreation and Parks
+      BA:
+        type: rail
+        long_name: Bay Area Rapid Transit
+        short_name: BART
+      RV:
+        type: bus
+        long_name: Rio Vista Delta Breeze
+        short_name: Delta Breeze
+      TF:
+        type: rail
+        long_name: Treasure Island Ferry
+      MV:
+        type: bus
+        long_name: MVgo
+      CC:
+        type: bus
+        long_name: County Connection
+        short_name: CC
+        filter_function: sixhundred_filter
+      SO:
+        type: bus
+        long_name: Sonoma County Transit
+        short_name: SCT
+      SC:
+        type: bus
+        long_name: VTA
+        short_name: VTA
+      SB:
+        type: rail
+        long_name: San Francisco Bay Ferry
+      AM:
+        type: rail
+        long_name: Capitol Corridor Joint Powers Authority
+        short_name: Capitol Corridor
+      3D:
+        type: bus
+        long_name: Tri Delta Transit
+        short_name: Tri Delta
+      MA:
+        type: bus
+        long_name: Marin Transit
+        filter_function: sixhundred_filter
+      VN:
+        type: bus
+        long_name: VINE Transit
+      ST:
+        type: bus
+        long_name: SolTrans
+      CE:
+        type: rail
+        long_name: Altamont Corridor Express
+        short_name: ACE
+  trinity:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/weaverville-ca-us/weaverville-ca-us.zip
+    agencies:
+      '34':
+        type: bus
+        long_name: Trinity Transit
+  siskiyou:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip
+    agencies:
+      '24':
+        type: bus
+        long_name: Siskiyou Transit and General Express
+        short_name: Siskiyou STAGE
+  sage:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/sagestage-ca-us/sagestage-ca-us.zip
+    agencies:
+      '678':
+        type: bus
+        long_name: Sage Stage
+  nevada:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/goldcountrystage-ca-us/goldcountrystage-ca-us.zip
+    agencies:
+      '1523':
+        type: bus
+        long_name: Nevada County Connects
+  placer:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/placercounty-ca-us/placercounty-ca-us.zip
+    agencies:
+      '874':
+        type: bus
+        long_name: Placer County Transit
+  tehama:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/tehama-ca-us/tehama-ca-us.zip
+    agencies:
+      '62':
+        type: bus
+        long_name: Susanville Indian Rancheria Public Transportation Program
+      '21':
+        type: bus
+        long_name: Tehama Rural Area Express
+        short_name: Tehama TRAX
+  calaveras:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/calaveras-ca-us/calaveras-ca-us.zip
+    agencies:
+      '79':
+        type: bus
+        long_name: Calaveras Connect
+  tuolumne:
+    gtfs:
+      url: https://gtfs.remix.com/tuolumne_ca_us.zip
+    agencies:
+      TCT:
+        type: bus
+        long_name: Tuolumne County Transit
+  amador:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/amador-ca-us/amador-ca-us.zip
+    agencies:
+      '80':
+        type: bus
+        long_name: Amador Transit
+  plumas:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/plumas-ca-us/plumas-ca-us.zip
+    agencies:
+      '20':
+        type: bus
+        long_name: Plumas Transit
+  yarts:
+    gtfs:
+      url: https://files.mobilitydatabase.org/mdb-2394/mdb-2394-202512250133/mdb-2394-202512250133.zip
+    agencies:
+      '114':
+        type: bus
+        long_name: Yosemite Area Regional Transportation System
+        short_name: YARTS
+        route_notes:
+          '2005': (SEASONAL SERVICE)
+          '582': (SEASONAL SERVICE)
+          '1094': (SEASONAL SERVICE)
+  lassen:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip
+    agencies:
+      '81':
+        type: bus
+        long_name: Lassen Rural Bus
+  raba:
+    gtfs:
+      url: https://rabagtfs.z5.web.core.windows.net/rabagtfs.zip
+    agencies:
+      '25':
+        type: bus
+        long_name: Redding Area Bus Authority
+        short_name: RABA
+  madera:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/maderactc-ca-us/maderactc-ca-us.zip
+    agencies:
+      '111':
+        type: bus
+        long_name: Madera County Connection
+  sanjoaquin:
+    gtfs:
+      url: https://sanjoaquinrtd.com/RTD-GTFS/RTD-GTFS.zip
+    agencies:
+      '90012':
+        type: bus
+        long_name: San Joaquin Regional Transit District (RTD)
+        short_name: RTD
+  stanrta:
+    gtfs:
+      url: https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx
+    agencies:
+      '0':
+        type: bus
+        long_name: StanRTA
+  tulare:
+    gtfs:
+      url: http://data.peaktransit.com/staticgtfs/120/gtfs.zip
+    agencies:
+      '120':
+        type: bus
+        long_name: Tulare County Regional Transit Agency
+        short_name: Tulare
+  sacrt:
+    gtfs:
+      url: https://iportal.sacrt.com/gtfs/srtd/google_transit.zip
+    agencies:
+      SRTD:
+        type: bus
+        long_name: Sacramento Regional Transit
+        short_name: SacRT
+  butte:
+    gtfs:
+      url: https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip
+    agencies:
+      97aff62a-ed6d-4bd2-a9c8-d63f8e98a358:
+        type: bus
+        long_name: B-Line
+  slorta:
+    gtfs:
+      url: http://slo.connexionz.net/rtt/public/resource/gtfs.zip
+    agencies:
+      '1':
+        type: bus
+        long_name: SLORTA
+  kern:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/kerncounty-ca-us/kerncounty-ca-us.zip
+    agencies:
+      '194':
+        type: bus
+        long_name: Kern Transit
+  easternsierra:
+    gtfs:
+      url: https://data.trilliumtransit.com/gtfs/easternsierra-ca-us/easternsierra-ca-us.zip
+    agencies:
+      '78':
+        type: bus
+        long_name: Eastern Sierra Transit Authority
+        short_name: Eastern Sierra
+  visalia:
+    gtfs:
+      url: https://files.mobilitydatabase.org/ntd-90091/ntd-90091-202501060017/ntd-90091-202501060017.zip
+    agencies:
+      '84':
+        type: bus
+        long_name: Visalia Transit
