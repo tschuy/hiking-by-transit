@@ -23,6 +23,9 @@ import { intersects } from 'ol/extent';
 import Feature from 'ol/Feature';
 import Geometry from 'ol/geom/Geometry';
 
+import { fetchConfig, ConfigFile, RouteConfig, AgencyConfig } from './configLoader';
+const config: ConfigFile = await fetchConfig('/assets/data/config.json');
+
 // --------------------
 // Styles for GPX features
 // --------------------
@@ -92,85 +95,103 @@ function formatHikeInfo(properties: any): string {
 // --------------------
 // Agencies / layers
 // --------------------
-const LARGE_AGENCIES = ['bayarea', 'sacrt'];
 const geojson_layers: Record<string, VectorLayer<VectorSource<Geometry>>> = {};
-const agencyShortNames: Record<string, string> = {
-  'Tahoe Transportation District': 'TTD',
-  'Tahoe Truckee Area Regional Transit': 'TART',
-  'Sacramento Regional Transit': 'SacRT'
-};
+const featureCache: Record<string, any[]> = {};
 
-const agencies = [
-  'amtrak', 'goldrunner', 'bear', 'lake', 'hta', 'redwood', 'mendo', 'ttd',
-  'tart', 'yolo', 'sanbenito', 'eldorado', 'bayarea', 'trinity', 'siskiyou',
-  'sage', 'nevada', 'placer', 'tehama', 'calaveras', 'tuolumne', 'amador',
-  'plumas', 'yarts', 'lassen', 'raba', 'madera', 'sanjoaquin', 'stanrta',
-  'tulare', 'sacrt', 'butte', 'slorta', 'kern', 'easternsierra', 'visalia'
-];
+function flattenAgencies(config: ConfigFile): Record<string, AgencyConfig> {
+  const flat: Record<string, AgencyConfig> = {};
+  for (const feed of Object.values(config.feeds)) {
+    Object.assign(flat, feed.agencies);
+  }
+  return flat;
+}
 
-const agencyHiddenRoutes: Record<string, string[]> = { 'ttd': ['5853'] };
-const featureCache: Record<string, Feature<Geometry>[]> = {};
+// Assuming you already have `config` loaded via top-level await:
+const allAgencies = flattenAgencies(config);
 
-// --------------------
-// Load GeoJSON layers
-// --------------------
-agencies.forEach(agency => {
-  const hiddenRoutes = agencyHiddenRoutes[agency] ?? [];
-  const isLarge = LARGE_AGENCIES.includes(agency);
+export function combineRoutes(agencies: AgencyConfig[]): Record<string, RouteConfig> {
+  const combined: Record<string, RouteConfig> = {};
 
+  for (const agency of agencies) {
+    if (agency.routes) {
+      Object.assign(combined, agency.routes);
+    }
+  }
+
+  return combined;
+}
+
+for (const feed of Object.keys(config.feeds)) {
+  const agencies = Object.values(config.feeds[feed].agencies);
   const source = new VectorSource({
     loader: async (extent, resolution, projection) => {
       try {
-        if (isLarge && !featureCache[agency]) {
-          const res = await fetch(`/assets/geojson/${agency}.geojson`);
+        // Fetch and cache features if not already
+        if (!featureCache[feed]) {
+          const res = await fetch(`/assets/geojson/${feed}.geojson`);
           const geojson = await res.json();
-          const filtered = geojson.features.filter((f: any) => !hiddenRoutes.includes(f.properties.route_id));
-          featureCache[agency] = new GeoJSON().readFeatures({ type: 'FeatureCollection', features: filtered }, { featureProjection: projection });
+
+          // Combine all routes from the agencies for this feed
+          const routes = combineRoutes(agencies); // routes: Record<string, RouteConfig>
+
+          // Filter features: only include routes that exist and are not hidden
+          const filtered = geojson.features.filter(
+            (f: any) => {
+              const routeId = f.properties?.route_id;
+              return !routeId || !routes[routeId] || !routes[routeId].hidden;
+            }
+          );
+
+          featureCache[feed] = new GeoJSON().readFeatures(
+            { type: 'FeatureCollection', features: filtered },
+            { featureProjection: projection }
+          );
         }
 
+        // Clear previous features
         source.clear(true);
 
-        if (isLarge) {
-          const visible = featureCache[agency].filter(f => {
-            const geom = f.getGeometry();
-            return geom && intersects(extent, geom.getExtent());
-          });
-          source.addFeatures(visible);
-        } else {
-          if (source.getFeatures().length === 0) {
-            const res = await fetch(`/assets/geojson/${agency}.geojson`);
-            const geojson = await res.json();
-            const filtered = geojson.features.filter((f: any) => !hiddenRoutes.includes(f.properties.route_id));
-            const features = new GeoJSON().readFeatures({ type: 'FeatureCollection', features: filtered }, { featureProjection: projection });
-            source.addFeatures(features);
-          }
-        }
+        // Only add features intersecting the current viewport
+        const visible = featureCache[feed].filter(f => {
+          const geom = f.getGeometry();
+          return geom && intersects(extent, geom.getExtent());
+        });
+
+        source.addFeatures(visible);
       } catch (err) {
-        console.error(`Failed loading ${agency}`, err);
+        console.error(`Failed loading ${feed}`, err);
       }
-    }
+    },
   });
 
-  geojson_layers[agency] = new VectorLayer({ name: agency, source, renderMode: isLarge ? 'image' : 'vector' });
-});
+  geojson_layers[feed] = new VectorLayer({
+    name: feed,
+    source,
+    renderMode: 'image',
+  });
+}
 
-// --------------------
-// Transit groups
-// --------------------
-let transitGroups: Record<string, string[]> = {
-  'amtrak': ['amtrak', 'goldrunner'],
-  'sacrt': ['sacrt'],
-  'tahoe': ['tart', 'ttd', 'eldorado', 'placer'],
-  'bayarea': ['bayarea', 'bear'],
-  'central-valley': ['stanrta', 'sanjoaquin', 'visalia']
-};
-const groupedAgencies = new Set(Object.values(transitGroups).flat());
-transitGroups['other'] = agencies.filter(a => !groupedAgencies.has(a));
+const groupedFeeds = new Set<string>(
+  Object.values(config.feedGroups).flatMap(g => g.members)
+);
 
-const preHiddenGroups = ['sacrt', 'bayarea', 'central-valley', 'amtrak', 'tahoe', 'other'];
-for (const g of preHiddenGroups) {
-  for (const a of transitGroups[g]) {
-    geojson_layers[a].setVisible(false);
+const otherFeeds = Object.keys(config.feeds).filter(feed => !groupedFeeds.has(feed));
+
+if (otherFeeds.length > 0) {
+  config.feedGroups['other'] = {
+    members: otherFeeds,
+    hidden: true,
+  };
+}
+
+for (const [groupName, group] of Object.entries(config.feedGroups)) {
+  if (group.hidden) {
+    for (const feed of group.members) {
+      const layer = geojson_layers[feed];
+      if (layer) {
+        layer.setVisible(false);
+      }
+    }
   }
 }
 
@@ -179,13 +200,19 @@ for (const g of preHiddenGroups) {
 // --------------------
 const kmlFormat = new KML({ showPointNames: false });
 const trailhead_kml_layers: Record<string, VectorLayer<VectorSource<Geometry>>> = {};
-['bus','bus-far','bus-weekday-only','rail-far','rail','shuttles','microtransit','call-ahead'].forEach(name => {
-  trailhead_kml_layers[name] = new VectorLayer({
-    name,
-    source: new VectorSource({ url: `/assets/kml/${name}.kml`, format: kmlFormat })
-  });
-});
+for (const groupType of ['hardcoded', 'generated'] as const) {
+  const groups = config.kmlGroups[groupType];
 
+  for (const name of Object.keys(groups)) {
+    trailhead_kml_layers[name] = new VectorLayer({
+      name,
+      source: new VectorSource({
+        url: `/assets/kml/${name}.kml`,
+        format: kmlFormat,
+      }),
+    });
+  }
+}
 // --------------------
 // GPX trails (global variable from template)
 // --------------------
@@ -303,15 +330,33 @@ const displayFeatureInfo = (pixel: [number, number], target: EventTarget | null)
     const agencyFeatures = features.filter(f => f.get('agency_id'));
     if (agencyFeatures.length > 0) {
       const lines = agencyFeatures.map(f => {
-        const agencyLongName = f.get('agency_name') ?? '';
-        const agency = agencyShortNames[agencyLongName] ?? agencyLongName;
+        const agencyId = f.get('agency_id') ?? '';
+        const agencyConfig = allAgencies[agencyId];
+
+        // Prefer short_name, then long_name, then fallback to agencyId
+        console.log(agencyConfig);
+        console.log(agencyId);
+        const agency =
+          agencyConfig?.shortName ??
+          agencyConfig?.longName ??
+          agencyId;
+
+        // Use route_short_name, fallback to route_long_name, or empty string
         const route = f.get('route_short_name') ?? f.get('route_long_name') ?? '';
-        return `${agency} ${route}`;
+
+        // avoid double named routes, ex: "Gold Runner Gold Runner"
+        if (agency === route) {
+          return route;
+        } else {
+          return `${agency} ${route}`;
+        }
       });
+
       info.innerText = lines.join('\n');
       currentFeature = agencyFeatures[0];
       return;
     }
+
   } else {
     info.style.visibility = 'hidden';
     currentFeature = undefined;
@@ -404,8 +449,14 @@ filterLayers.addEventListener('change', (e: Event) => {
   }
 
   // Transit groups
-  if (target.name in transitGroups) {
-    transitGroups[target.name].forEach(a => geojson_layers[a].setVisible(target.checked));
+  const groupConfig = config.feedGroups[target.name];
+  if (groupConfig) {
+    for (const feed of groupConfig.members) {
+      const layer = geojson_layers[feed];
+      if (layer) {
+        layer.setVisible(target.checked);
+      }
+    }
     return;
   }
 

@@ -50,8 +50,8 @@ def rebuild_maps_from_yaml(cfg):
             if "short_name" in agency_cfg:
                 rebuilt["short_name"] = agency_cfg["short_name"]
 
-            if "route_notes" in agency_cfg:
-                rebuilt["route_notes"] = agency_cfg["route_notes"]
+            if "routes" in agency_cfg:
+                rebuilt["routes"] = agency_cfg["routes"]
 
             if "filter_function" in agency_cfg:
                 fn_name = agency_cfg["filter_function"]
@@ -93,14 +93,14 @@ for feed_name, feed_info in gtfs_map.items():
         # --- Merge agency route_notes if they exist ---
         if url in agency_map:
             for agency_id, agency_info in agency_map[url].items():
-                route_notes = agency_info.get("route_notes", {})
-                for rid, note in route_notes.items():
+                routes = agency_info.get("routes", {})
+                for rid in routes.keys():
                     rid = str(rid)  # ensure string keys
                     if rid in route_dict:
-                        route_dict[rid]["note"] = note
+                        route_dict[rid]["note"] = routes[rid]["note"]
                     else:
                         print(route_dict.keys())
-                        print(f"Warning: route_id {rid} in route_notes not found in {feed_name}")
+                        print(f"Warning: route_id {rid} in routes not found in {feed_name}")
 
         url_to_route_map[url] = route_dict
 

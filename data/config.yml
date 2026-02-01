@@ -1,3 +1,55 @@
+kml_groups:
+  hardcoded:
+    microtransit:
+      name: Microtransit
+    shuttles:
+      name: Park Shuttles
+    call-ahead:
+      name: Call-ahead Service
+  generated:
+    bus:
+      name: Bus & Light Rail
+    bus-far:
+      name: Bus & Light Rail (15+-min walk)
+    bus-weekday-only:
+      name: Bus (Weekday-only)
+    rail:
+      name: Rail & Ferry
+    rail-far:
+      name: Rail & Ferry (20+-min walk)
+feed_groups:
+  amtrak:
+    name: Amtrak
+    members:
+    - amtrak
+    - goldrunner
+    hidden: true
+  sacrt:
+    name: Sacramento
+    members:
+    - sacrt
+    hidden: true
+  tahoe:
+    name: Tahoe
+    members:
+    - tart
+    - ttd
+    - eldorado
+    - placer
+    hidden: true
+  bayarea:
+    name: Bay Area
+    members:
+    - bayarea
+    - bear
+    hidden: true
+  central-valley:
+    name: Central Valley
+    members:
+    - stanrta
+    - sanjoaquin
+    - visalia
+    hidden: true
 feeds:
   amtrak:
     gtfs:
@@ -79,6 +131,9 @@ feeds:
         type: bus
         long_name: Tahoe Transportation District
         short_name: TTD
+        routes:
+          '5853':
+            hidden: true
   tart:
     gtfs:
       url: https://data.trilliumtransit.com/gtfs/laketahoe-ca-us/laketahoe-ca-us.zip
@@ -341,10 +396,13 @@ feeds:
         type: bus
         long_name: Yosemite Area Regional Transportation System
         short_name: YARTS
-        route_notes:
-          '2005': (SEASONAL SERVICE)
-          '582': (SEASONAL SERVICE)
-          '1094': (SEASONAL SERVICE)
+        routes:
+          '2005':
+            note: (SEASONAL SERVICE)
+          '582':
+            note: (SEASONAL SERVICE)
+          '1094':
+            note: (SEASONAL SERVICE)
   lassen:
     gtfs:
       url: https://data.trilliumtransit.com/gtfs/lassen-ca-us/lassen-ca-us.zip
