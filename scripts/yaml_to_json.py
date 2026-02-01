@@ -22,7 +22,7 @@ def main():
     with open(yaml_path, "r") as f:
         config = yaml.safe_load(f)
 
-    # Write JSON
+    os.makedirs(os.path.dirname(json_path), exist_ok=True)
     with open(json_path, "w") as f:
         json.dump(config, f, indent=2)
 
