@@ -83,8 +83,13 @@ for feed_name, feed_info in gtfs_map.items():
         with zipfile.ZipFile(path, "r") as zf:
             if "routes.txt" in zf.namelist():
                 routes_df = pd.read_csv(zf.open("routes.txt"))
-                # Ensure route_id is string
+
+                # Ensure IDs are strings
                 routes_df["route_id"] = routes_df["route_id"].astype(str)
+
+                if "agency_id" in routes_df.columns:
+                    routes_df["agency_id"] = routes_df["agency_id"].astype(str)
+
                 route_dict = routes_df.set_index("route_id").T.to_dict()
             else:
                 print(f"Warning: {feed_name} has no routes.txt")
