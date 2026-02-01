@@ -53,8 +53,7 @@ $(KML_SENTINEL): $(GPKG) $(DATA_KMLS)
 	cd $(SCRIPTS_DIR) && \
 		$(PYTHON) gpkg_to_kml.py ../$(GPKG)
 	cp $(DATA_DIR)/*.kml $(KML_DIR)/ && \
-	cd $(SCRIPTS_DIR) && \
-		$(PYTHON) yaml_to_json.py ../data/config.yml ../jekyll/assets/data/config.json
+	$(SCRIPTS_DIR)/$(PYTHON) $(SCRIPTS_DIR)/yaml_to_json.py data/config.yml jekyll/assets/data/config.json
 	touch $@
 
 ## geojson
