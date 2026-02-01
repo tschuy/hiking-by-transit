@@ -1,8 +1,8 @@
 {
     "agencies": [
-        {"agencyKey":"bear","path":"./gtfs/beartransit-ca-us.zip"},
-        {"agencyKey":"bayarea","path":"./gtfs/bayarea.zip"},
-        {"agencyKey":"sacrt","path":"./gtfs/sacrt.zip"}
+        {"agencyKey":"bear","path":"../data/gtfs/bear.zip"},
+        {"agencyKey":"bayarea","path":"../data/gtfs/bayarea.zip"},
+        {"agencyKey":"sacrt","path":"../data/gtfs/sacrt.zip"}
     ],
     "outputType": "agency",
     "outputFormat": "lines",
