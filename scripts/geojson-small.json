@@ -32,7 +32,8 @@
         {"agencyKey":"kern","path":"../data/gtfs/kern.zip"},
         {"agencyKey":"easternsierra","path":"../data/gtfs/easternsierra.zip"},
         {"agencyKey":"goldrunner","path":"../data/gtfs/goldrunner.zip"},
-        {"agencyKey":"visalia","path":"../data/gtfs/visalia.zip"}
+        {"agencyKey":"visalia","path":"../data/gtfs/visalia.zip"},
+        {"agencyKey":"oregonpoint","path":"../data/gtfs/oregonpoint.zip"}
     ],
     "outputType": "agency",
     "outputFormat": "lines-and-stops",

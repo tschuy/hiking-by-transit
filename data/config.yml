@@ -492,3 +492,10 @@ feeds:
       '84':
         type: bus
         long_name: Visalia Transit
+  oregonpoint:
+    gtfs:
+      url: https://oregon-gtfs.trilliumtransit.com/gtfs_data/point-or-us/point-or-us.zip
+    agencies:
+      '45':
+        type: bus
+        long_name: Oregon POINT

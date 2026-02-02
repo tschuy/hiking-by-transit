@@ -79,9 +79,14 @@ $(GEOJSON_SMALL_SENTINEL):
 	cd $(SCRIPTS_DIR) && \
 		node ../$(GTFS_TO_GEOJSON) --configPath geojson-small.json
 	cd $(SCRIPTS_DIR) && \
-		ogr2ogr -f GeoJSON ../jekyll/assets/geojson/amtrak-clipped.geojson ../jekyll/assets/geojson/amtrak.geojson -clipsrc california_and_reno.geojson -lco RFC7946=YES -lco COORDINATE_PRECISION=6
+		ogr2ogr -f GeoJSON ../jekyll/assets/geojson/amtrak-clipped.geojson ../jekyll/assets/geojson/amtrak.geojson -clipsrc greater_california.geojson -lco RFC7946=YES -lco COORDINATE_PRECISION=6
+	cd $(SCRIPTS_DIR) && \
+		ogr2ogr -f GeoJSON ../jekyll/assets/geojson/oregonpoint-clipped.geojson ../jekyll/assets/geojson/oregonpoint.geojson -clipsrc greater_california.geojson -lco RFC7946=YES -lco COORDINATE_PRECISION=6
 	cd $(SCRIPTS_DIR) && \
 		mv ../jekyll/assets/geojson/amtrak-clipped.geojson ../jekyll/assets/geojson/amtrak.geojson
+	cd $(SCRIPTS_DIR) && \
+		mv ../jekyll/assets/geojson/oregonpoint-clipped.geojson ../jekyll/assets/geojson/oregonpoint.geojson
+	cp data/southern_california.geojson jekyll/assets/geojson/
 	touch $@
 
 # cleanup
