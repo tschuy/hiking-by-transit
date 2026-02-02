@@ -92,6 +92,11 @@ function formatHikeInfo(properties: any): string {
   return `<h3>${properties.title}</h3><ul><li>Length: ${properties.length}</li><li>Difficulty: ${properties.difficultyhuman}</li></ul>${properties.blurb}`;
 }
 
+function formatPolygonInfo(feature: any): string {
+  console.log(feature);
+  return feature.get('description') ?? '';
+}
+
 // --------------------
 // Agencies / layers
 // --------------------
@@ -170,6 +175,14 @@ for (const feed of Object.keys(config.feeds)) {
     renderMode: 'image',
   });
 }
+
+const southernCalifornia = new VectorLayer({
+  name: 'southernCalifornia',
+  source: new VectorSource({
+    url: '/assets/geojson/southern_california.geojson',
+    format: new GeoJSON(),
+  }),
+});
 
 const groupedFeeds = new Set<string>(
   Object.values(config.feedGroups).flatMap(g => g.members)
@@ -273,7 +286,7 @@ if (targetDiv.dataset.lon && targetDiv.dataset.lat) {
 }
 
 const map = new Map({
-  layers: [base, cpadAccessLayer, ...Object.values(geojson_layers), ...trails, ...Object.values(trailhead_kml_layers)],
+  layers: [base, cpadAccessLayer, southernCalifornia, ...Object.values(geojson_layers), ...trails, ...Object.values(trailhead_kml_layers)],
   target: targetDiv,
   view: new View(viewOpts),
   interactions: defaults({ dragPan: false, mouseWheelZoom: false, altShiftDragRotate:false, pinchRotate:false }).extend([
@@ -357,10 +370,12 @@ const displayFeatureInfo = (pixel: [number, number], target: EventTarget | null)
       return;
     }
 
-  } else {
-    info.style.visibility = 'hidden';
-    currentFeature = undefined;
+    // if we get here, we didn't find any features we want to display
   }
+
+  info.style.visibility = 'hidden';
+  info.innerText = '';
+  currentFeature = undefined;
 };
 
 // --------------------
@@ -400,15 +415,23 @@ map.on('click', (evt: MapBrowserEvent<UIEvent>) => {
     coordinates = evt.coordinate;
   }
 
-  const parkInfo = separateName(feature.get('name') ?? '');
+  overlay.setPosition(coordinates);
+  kmlFormat.showPointNames = true;
 
   const properties = layer.getProperties();
-  if (properties && properties.type === 'gpx') {
+
+  if (layer === southernCalifornia) {
+    directionsLink.style.visibility = 'hidden';
+    hikeLink.style.visibility = 'hidden';
+    content.innerHTML = formatPolygonInfo(feature);
+  } else if (properties && properties.type === 'gpx') {
     directionsLink.style.visibility = 'hidden';
     hikeLink.href = properties.url ?? '#';
     hikeLink.style.visibility = 'visible';
     content.innerHTML = formatHikeInfo(properties);
+    return;
   } else {
+    const parkInfo = separateName(feature.get('name') ?? '');
     parkInfo.description = linkifyDescription(feature.get('description') ?? '');
     parkInfo.weather = feature.get('weather') ?? 'TODO: look up weather for this park';
     const lonlat = olProj.transform(coordinates, 'EPSG:3857', 'EPSG:4326');
@@ -416,10 +439,8 @@ map.on('click', (evt: MapBrowserEvent<UIEvent>) => {
     directionsLink.style.visibility = 'visible';
     hikeLink.style.visibility = 'hidden';
     content.innerHTML = formatParkInfo(parkInfo);
+    return;
   }
-
-  overlay.setPosition(coordinates);
-  kmlFormat.showPointNames = true;
 });
 
 // --------------------
