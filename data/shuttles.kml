@@ -170,6 +170,96 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Big Basin State Park</name>
+        <description>Santa Cruz METRO runs seasonal service on Line 35B from Cavallaro Transit Center in Scotts Valley to Big Basin State Park. &lt;br&gt;&lt;br&gt; https://scmetro.org/routes/route-35/ &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -122.22205189766274,37.17211577950599,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Agnew Meadows</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.08077408101808,37.68136492857869,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Starkweather Lake</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07294805301906,37.66324561696509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Upper Soda Springs Campground</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07424961849874,37.65134878758321,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Minaret Falls Campground Turnoff</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07715177995199,37.63886731556784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Devils Postpile National Monument</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07715177995199,37.63886731556784,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Sotcher Lake</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07674848902623,37.62737083103014,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Reds Meadow Campground</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07682632416943,37.6201884345122,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Inyo National Forest: Rainbow Falls Trailhead</name>
+        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <styleUrl>#icon-1502-000000-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -119.07612438625421,37.61454335005063,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
     </Document>
 </kml>
