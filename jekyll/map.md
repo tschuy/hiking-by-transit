@@ -62,6 +62,9 @@ Not every county in Northern California has been added to this map yet. See belo
       <input type="checkbox" id="bayarea" name="bayarea" />
       <label for="bayarea">Bay Area</label>
       <br>
+      <input type="checkbox" id="centralcoast" name="centralcoast" />
+      <label for="centralcoast">Central Coast</label>
+      <br>
       <input type="checkbox" id="tahoe" name="tahoe" />
       <label for="tahoe">Tahoe</label>
       <br>
@@ -132,6 +135,11 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Union City Transit
 * SolTrans
 
+**Central Coast**
+* Monterey-Salinas Transit
+* SLO Transit
+* SLORTA
+
 **North Coast**
 * Lake Transit
 * Mendocino Transit Authority
@@ -177,12 +185,6 @@ Muni has not been included on this map, as its services stay exclusively within 
 
 **Central Coast**
 * Santa Cruz Metro
-* Monterey-Salinas Transit
-* SLORTA
-    * Grover/Pismo
-    * SLO
-    * Morro Bay up to Cayucos
-* SLO Transit
 
 **Sierra Nevada**
 * Reds Meadow shuttle

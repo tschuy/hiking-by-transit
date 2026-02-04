@@ -184,8 +184,14 @@ def main():
                         bus_has_saturday = True
                     continue
 
-                agency_id = info["agency_id"]
-                agency = agency_info_map.get(agency_id, {})
+                agency_id = info.get("agency_id")
+                if agency_id:
+                    agency = agency_info_map.get(agency_id, {})
+                elif len(agency_info_map) == 1:
+                    agency = agency_info_map[list(agency_info_map.keys())[0]]
+                else:
+                    raise ValueError('agency_id cannot be optional for multi-agency feeds')
+
                 agency_type = agency.get("type", "bus")
 
                 route_name = str(info["route_short_name"])
