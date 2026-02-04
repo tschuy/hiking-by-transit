@@ -33,8 +33,12 @@ def generate_trailhead_id(name):
 def prompt_lat_lon():
     while True:
         try:
-            lat = float(input("Trailhead latitude: ").strip())
-            lon = float(input("Trailhead longitude: ").strip())
+            lat_lon = input('Trailhead coordinates (lat, lon): ').strip()
+
+            lat_str, lon_str = lat_lon.replace(',', ' ').split()
+            lat = float(lat_str)
+            lon = float(lon_str)
+
             if not (-90 <= lat <= 90 and -180 <= lon <= 180):
                 raise ValueError
             return lat, lon
