@@ -49,6 +49,7 @@ feed_groups:
     - mst
     - slo
     - slorta
+    - scmetro
     hidden: true
   central-valley:
     name: Central Valley
@@ -522,3 +523,10 @@ feeds:
         type: bus
         long_name: City of San Luis Obispo Transit
         short_name: SLO Transit
+  scmetro:
+    gtfs:
+      url: https://developer.scmetro.org/gtfs.zip
+    agencies:
+      '1':
+        type: bus
+        long_name: Santa Cruz METRO

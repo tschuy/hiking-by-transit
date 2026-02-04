@@ -8,7 +8,7 @@ hasmap: true
 
 The trailhead map is intended to contain all the trailheads around Northern California that are transit-accessible. In urban and suburban areas, this generally considered to be no more than around a 30-minute walk from stop to trailhead. In more rural areas with more sparse transit access, stops further from transit are included; in some very rare cases, mainly for the Pacific Crest Trail and Eastern Sierra passes, trailheads as far as 2-3+ hours from transit are included.
 
-Not every county in Northern California has been added to this map yet. See below for more information on exactly which transit agencies have and have not been included. **Notably, Santa Cruz County is not yet included**.
+Certain shuttles and microtransit services have not yet been added to this map. See below for more information on exactly which transit agencies have and have not been included.
 
 <div id="ol-map">
   <div id="info"></div>
@@ -136,6 +136,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 * SolTrans
 
 **Central Coast**
+* Santa Cruz Metro
 * Monterey-Salinas Transit
 * SLO Transit
 * SLORTA
@@ -182,12 +183,6 @@ Muni has not been included on this map, as its services stay exclusively within 
 * Kern Transit
 
 ### The following agencies do not appear on the map, but are planned to:
-
-**Central Coast**
-* Santa Cruz Metro
-
-**Sierra Nevada**
-* Reds Meadow shuttle
 
 **Statewide**
 * Amtrak thruway buses
