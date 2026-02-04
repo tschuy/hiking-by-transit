@@ -38,7 +38,11 @@ def main():
         stop_id = row.stop_id
         access_id = row.access_id
 
-        summary = get_stop_summary(stop_id, gtfs_path)
+        try:
+            summary = get_stop_summary(stop_id, gtfs_path)
+        except ValueError as e:
+            print(f'error processing access ${access_id}: could not find stop_id ${stop_id}')
+            continue
 
         old_weekday = row.weekday_frequency
         old_sat = row.saturday_frequency
