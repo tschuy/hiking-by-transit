@@ -67,7 +67,9 @@ geojson-large: $(GEOJSON_LARGE_SENTINEL)
 $(GEOJSON_LARGE_SENTINEL):
 	mkdir -p $(GEOJSON_DIR)
 	cd $(SCRIPTS_DIR) && \
-		node ../$(GTFS_TO_GEOJSON) --configPath geojson-large.json
+		$(PYTHON) geojson_config_generator.py true /tmp/geojson-lines-only.json
+	cd $(SCRIPTS_DIR) && \
+		node ../$(GTFS_TO_GEOJSON) --configPath /tmp/geojson-lines-only.json
 	touch $@
 
 ## small
@@ -77,7 +79,9 @@ geojson-small: $(GEOJSON_SMALL_SENTINEL)
 $(GEOJSON_SMALL_SENTINEL):
 	mkdir -p $(GEOJSON_DIR)
 	cd $(SCRIPTS_DIR) && \
-		node ../$(GTFS_TO_GEOJSON) --configPath geojson-small.json
+		$(PYTHON) geojson_config_generator.py false /tmp/geojson-lines-and-stops.json
+	cd $(SCRIPTS_DIR) && \
+		node ../$(GTFS_TO_GEOJSON) --configPath /tmp/geojson-lines-and-stops.json
 	cd $(SCRIPTS_DIR) && \
 		ogr2ogr -f GeoJSON ../jekyll/assets/geojson/amtrak-clipped.geojson ../jekyll/assets/geojson/amtrak.geojson -clipsrc greater_california_less_socal.geojson -lco RFC7946=YES -lco COORDINATE_PRECISION=6
 	cd $(SCRIPTS_DIR) && \

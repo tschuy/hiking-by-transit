@@ -69,10 +69,10 @@ Certain shuttles and microtransit services have not yet been added to this map. 
       <label for="tahoe">Tahoe</label>
       <br>
       <input type="checkbox" id="amtrak" name="amtrak" />
-      <label for="amtrak">Amtrak</label>
+      <label for="amtrak">Amtrak / Gold Runner</label>
       <br>
       <input type="checkbox" id="sacrt" name="sacrt"/>
-      <label for="sacrt">Sacramento Regional Transit (SacRT)</label>
+      <label for="sacrt">SacRT (Sacramento)</label>
       <br>
       <input type="checkbox" id="central-valley" name="central-valley" />
       <label for="central-valley">Central Valley</label>

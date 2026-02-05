@@ -80,6 +80,7 @@ feeds:
       '1708':
         type: bus
         long_name: Bear Transit
+    hideStops: true
   lake:
     gtfs:
       url: https://data.trilliumtransit.com/gtfs/laketransit-ca-us/laketransit-ca-us.zip
@@ -177,6 +178,7 @@ feeds:
         type: bus
         long_name: El Dorado Transit
   bayarea:
+    hideStops: true
     gtfs:
       url: http://api.511.org/transit/datafeeds
       annotated_url: http://api.511.org/transit/datafeeds?api_key={mtc_api_key}&operator_id=RG
@@ -441,6 +443,7 @@ feeds:
         type: bus
         long_name: San Joaquin Regional Transit District (RTD)
         short_name: RTD
+    hideStops: true
   stanrta:
     gtfs:
       url: https://stanrta.rideralerts.com/InfoPoint/gtfs-zip.ashx
@@ -448,6 +451,7 @@ feeds:
       '0':
         type: bus
         long_name: StanRTA
+    hideStops: true
   tulare:
     gtfs:
       url: http://data.peaktransit.com/staticgtfs/120/gtfs.zip
@@ -464,6 +468,7 @@ feeds:
         type: bus
         long_name: Sacramento Regional Transit
         short_name: SacRT
+    hideStops: true
   butte:
     gtfs:
       url: https://d16k74nzx9emoe.cloudfront.net/c4326823-2c12-4f59-82f1-3fc4d987e12b/google_transit.zip
@@ -500,6 +505,7 @@ feeds:
       '84':
         type: bus
         long_name: Visalia Transit
+    hideStops: true
   oregonpoint:
     gtfs:
       url: https://oregon-gtfs.trilliumtransit.com/gtfs_data/point-or-us/point-or-us.zip
