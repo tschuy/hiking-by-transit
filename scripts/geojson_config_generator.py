@@ -27,7 +27,7 @@ agencies = [
         "path": f"../data/gtfs/{key}.zip",
     }
     for key, feed in config.get("feeds", {}).items()
-    if feed.get("hideStops") is hide_stops
+    if feed.get("hideStops", False) is hide_stops
 ]
 
 tmp_config = {
