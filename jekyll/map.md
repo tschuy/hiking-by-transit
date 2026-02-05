@@ -184,12 +184,7 @@ Muni has not been included on this map, as its services stay exclusively within 
 
 ### The following agencies do not appear on the map, but are planned to:
 
-**Statewide**
-* Amtrak thruway buses
-
-### Microtransit and Dial-a-Ride
-The following dial-a-ride and microtransit services are intended to be included on the map:
-
+**Microtransit and Dial-a-Ride**
 * ShastaConnect
 * Alpine County Dial-a-Ride
 * MARI-GO Transit
