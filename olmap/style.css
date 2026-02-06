@@ -17,6 +17,12 @@ html, body {
   position: relative;
 }
 
+@media (min-width: 1400px) {
+  #ol-map {
+    height: 800px;
+  }
+}
+
 #info {
   position: absolute;
   display: inline-block;
