@@ -278,7 +278,7 @@ const targetDiv = document.getElementById('ol-map')!;
 let viewOpts: any = {
   center: [-13611974.488458559, 4558011.3361273315],
   projection: 'EPSG:3857',
-  zoom: targetDiv.dataset.zoom ? parseInt(targetDiv.dataset.zoom) : 10,
+  zoom: targetDiv.dataset.zoom ? parseInt(targetDiv.dataset.zoom) : 9,
 };
 
 if (targetDiv.dataset.lon && targetDiv.dataset.lat) {
