@@ -7,8 +7,13 @@ import os
 
 GTFS_ID_COLUMNS = ["stop_id", "trip_id", "route_id", "service_id"]
 
+gtfs_memoize = {}
+
 def load_gtfs(gtfs_path):
     """Load GTFS CSV files from a zip or folder into pandas DataFrames."""
+    if gtfs_path in gtfs_memoize:
+        return gtfs_memoize[gtfs_path]
+
     data = {}
 
     def read_csv(path_or_buf):
@@ -38,9 +43,10 @@ def load_gtfs(gtfs_path):
             if col in df.columns:
                 df[col] = df[col].astype(str).str.strip()
 
+    gtfs_memoize[gtfs_path] = data
     return data
 
-def get_stop_summary(stop_id, gtfs_path):
+def get_stop_summary(stop_id, gtfs_path, start_date=None):
     """
     Returns a dictionary with information about a stop:
     - stop_ids: all stop_ids with the same stop_name
@@ -52,6 +58,11 @@ def get_stop_summary(stop_id, gtfs_path):
     - sunday_counts: average number of stops on Sunday
     - route_ids: list of route_ids serving this stop
     """
+
+    if start_date:
+        start_date = pd.to_datetime(start_date, format="%Y%m%d", errors="coerce")
+        if pd.isna(start_date):
+            raise ValueError("start_date must be in YYYYMMDD format")
 
     gtfs = load_gtfs(gtfs_path)
 
@@ -95,6 +106,14 @@ def get_stop_summary(stop_id, gtfs_path):
         if calendar is not None:
             cal_joined = trips_joined.merge(calendar, on="service_id", how="left")
 
+            if start_date is not None:
+                cal_joined["start_date"] = pd.to_datetime(cal_joined["start_date"], format="%Y%m%d", errors="coerce")
+                cal_joined["end_date"] = pd.to_datetime(cal_joined["end_date"], format="%Y%m%d", errors="coerce")
+
+                cal_joined = cal_joined[
+                    (cal_joined["end_date"] >= start_date)
+                ]
+
             weekday_counts_list.append(
                 cal_joined[["monday","tuesday","wednesday","thursday","friday"]]
                 .sum(axis=1).sum() / 5
@@ -105,7 +124,11 @@ def get_stop_summary(stop_id, gtfs_path):
         else:
             svc = trips_joined.merge(calendar_dates, on="service_id", how="left")
             svc = svc[svc["exception_type"] == 1]
+
             svc["date"] = pd.to_datetime(svc["date"], format="%Y%m%d", errors="coerce")
+
+            if start_date is not None:
+                svc = svc[svc["date"] >= start_date]
 
             weekday = svc[svc["date"].dt.weekday < 5]
             saturday = svc[svc["date"].dt.weekday == 5]
@@ -142,9 +165,14 @@ def main():
     parser = argparse.ArgumentParser(description="GTFS Stop Summary")
     parser.add_argument("gtfs", help="Path to GTFS zip or folder")
     parser.add_argument("stop_id", help="Stop ID to analyze")
+    parser.add_argument(
+        "--start_date",
+        help="Filter service from this date forward (YYYYMMDD)",
+        required=False
+    )
     args = parser.parse_args()
 
-    summary = get_stop_summary(args.stop_id, args.gtfs)
+    summary = get_stop_summary(args.stop_id, args.gtfs, args.start_date)
 
     print(f"Summary for stop {summary['stop_name']} (Stop IDs: {', '.join(summary['stop_ids'])})")
     print(f"Coordinates: lon={summary['stop_lon']}, lat={summary['stop_lat']}")

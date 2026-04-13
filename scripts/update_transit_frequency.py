@@ -12,6 +12,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--gtfs", required=True)
     parser.add_argument("--gpkg", required=True)
+    parser.add_argument("--start_date", required=False)
     args = parser.parse_args()
 
     if args.gtfs not in gtfs_map:
@@ -39,7 +40,7 @@ def main():
         access_id = row.access_id
 
         try:
-            summary = get_stop_summary(stop_id, gtfs_path)
+            summary = get_stop_summary(stop_id, gtfs_path, args.start_date)
         except ValueError as e:
             print(f'error processing access ${access_id}: could not find stop_id ${stop_id}')
             continue
