@@ -48,26 +48,31 @@ def main():
         old_weekday = row.weekday_frequency
         old_sat = row.saturday_frequency
         old_sun = row.sunday_frequency
+        old_routes_served = row.routes_served
 
         new_weekday = summary["weekday_counts"]
         new_sat = summary["saturday_counts"]
         new_sun = summary["sunday_counts"]
+        new_routes_served = ",".join(summary["route_ids"])
 
         if (
             old_weekday != new_weekday
             or old_sat != new_sat
             or old_sun != new_sun
+            or old_routes_served != new_routes_served
         ):
             print(f"Access ID: {access_id}")
             print(f"  Stop ID: {stop_id}")
 
             print(f"  Weekday:  {old_weekday} → {new_weekday}")
             print(f"  Saturday: {old_sat} → {new_sat}")
-            print(f"  Sunday:   {old_sun} → {new_sun}")
+
+            print(f"Routes served:   {old_routes_served} → {new_routes_served}")
 
             gdf.at[idx, "weekday_frequency"] = new_weekday
             gdf.at[idx, "saturday_frequency"] = new_sat
             gdf.at[idx, "sunday_frequency"] = new_sun
+            gdf.at[idx, "routes_served"] = new_routes_served
 
             updated += 1
             print("-" * 60)
