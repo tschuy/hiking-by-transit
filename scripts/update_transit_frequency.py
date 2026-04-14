@@ -42,7 +42,7 @@ def main():
         try:
             summary = get_stop_summary(stop_id, gtfs_path, args.start_date)
         except ValueError as e:
-            print(f'error processing access ${access_id}: could not find stop_id ${stop_id}')
+            print(f'error processing access {access_id}: could not find stop_id {stop_id}')
             continue
 
         old_weekday = row.weekday_frequency
