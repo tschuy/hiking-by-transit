@@ -197,7 +197,7 @@ To take the bus from the East Bay to Sausalito *without* heading into San Franci
 
 ### Marin Transit 68
 
-TODO WRITE SOMETHING HERE
+Certain morning runs of the 580 across the Richmond Bridge make decent connections to the 68. Unfortunately, most daytime runs on both weekdays and weekends arrive shortly after a 68 departs, leaving almost an hour transfer time.
 
 **Weekday transfers at San Rafael**
 
