@@ -7,6 +7,14 @@ This page is really for me. It's been exciting to see so much positive feedback,
 
 <hr>
 
+In Spring 2026, SamTrans had me on for an episode of the Wheel Talk podcast to talk about places to go and ways to get outside in San Mateo County.
+
+<p class="message">
+<b><a href="https://podcasts.apple.com/us/podcast/hop-off-here-spring-hiking-by-transit-samtrans-getaways/id1480590691?i=1000763476045">Hop Off Here: Spring hiking by transit, SamTrans getaways, and Caltrain's Destination Downtown</a></b> (Wheel Talk: Navigating the Future of Bay Area Transit), SamTrans, 24 April 2026. (Archive link not available)
+</p>
+
+<hr>
+
 As part of the Clipper 2.0 launch, KQED published an article detailing the transition. This article made mention of the Clipper 2.0 Interagency Transfers calculator that I put together in the runup to the launch, as I became the main non-MTC contact for understanding the Clipper 2.0 fare changes. The article was republished on the Cityside (Berkeleyside/the Oaklandside/Richmondside) network.
 
 <p class="message">
