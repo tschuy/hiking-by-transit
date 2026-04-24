@@ -64,6 +64,7 @@ layout: default
     {% if page.travel.origin %}<div class="infobox-child"><i>Travel times are estimates from {{ page.travel.origin }}.</i></div>{% endif %}
   </div>
 
+  {%- if page.gpx == nil -%}<p class="message"><i>This is a legacy hike from the early days of Hiking by Transit, and is not up to our current standards. Check back for a refresh later!</i></p>{%- endif -%}
   {%- if page.getting-there -%}<p class="message">{{ page.getting-there }}</p>{%- endif -%}
 
   {{ content }}
