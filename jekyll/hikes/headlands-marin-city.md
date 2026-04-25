@@ -5,7 +5,7 @@ tags: coastal hills historic wildflowers
 
 region: marin
 difficulty: easy
-length: 3.3mi / 5.7mi 
+length: 5.7mi 
 
 served: daily
 
