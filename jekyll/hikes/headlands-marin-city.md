@@ -39,7 +39,7 @@ park-link: https://www.nps.gov/goga/marin-headlands.htm
 
 image: headlands.jpg
 blurb: See the Golden Gate Bridge and hike up into the Marin headlands for expansive views of San Francisco, the bridge, and the Bay.
-getting-there: Golden Gate Transit runs hourly service seven days a week northbound from San Francisco to the Golden Gate Bridge bus stop. To get back, catch the half-hourly 120 buses at Marin City (for a 5.7mi hike).
+getting-there: Golden Gate Transit runs service half-hourly most of the day seven days a week on Route 120 northbound from San Francisco to the Golden Gate Bridge bus stop. To get back, catch the same Route 120 southbound at Marin City.
 ---
 
 The Golden Gate Bridge is a must-see for every visitor to San Francisco, and for good reason. The bridge itself is architecturally stunning, and the landing is no less spectacular in the steep, hilly terrain of the Marin Headlands. Hourly Golden Gate Transit buses stop just past the main Vista Point, where this hike begins. After taking in the views of the bridge from close up, pass underneath the bridge and through the final visitor parking lot to find the beginning of the SCA Trail. The trail cuts across Conzelman Road, where hikers can head up towards Hawk Hill, and the trail gets significantly less busy after this crossing and up the ridge. Enjoy wildflowers, and views of the bridge getting hidden behind and reappearing in front of the hills each time the trail meanders.
