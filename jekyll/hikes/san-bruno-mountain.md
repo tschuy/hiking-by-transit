@@ -1,7 +1,7 @@
 ---
 layout: hike
 title: "San Bruno Mountain State & County Park"
-tags: grassland hills wildflowers eucalyptus skyline
+tags: grassland hills wildflowers eucalyptus skyline summitting
 
 region: peninsula
 difficulty: hard
