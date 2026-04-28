@@ -38,6 +38,7 @@ gpx: mission-peak.gpx
 park-link: https://www.ebparks.org/parks/mission-peak
 
 image: mission-peak.jpg
+blurb: The famed Mission Peak attracts all sorts to reach its stony peak perched above Fremont. From the top, panoramic views of the Bay and of the Diablo Range await.
 ---
 
 Mission Peak is a classic of Bay Area hikes. It's perhaps <i>the</i> most hiked peak in the Bay, attracting not just regular hikers up its 2,517ft summit but families and couples angling to get their photo taken at the "Mission Peeker" pole located on the top. Along the way, hikers are treated to panoramic views first of southern Fremont, more of the southern Bay as they ascend, and just before the summit, the rugged Sunol Regional Wilderness to the east. Once at the top, the Santa Cruz Mountains are visible to the west, Mt Hamilton to the south, and on a clear day even the Sierra Nevada to the east.

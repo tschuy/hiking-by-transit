@@ -37,7 +37,7 @@ gpx: baquiano.gpx
 park-link: https://www.nps.gov/goga/sweeney.htm
 
 image: baquiano.jpg
-blurb: 
+blurb: A windbeaten ridgeline with panoramic views of the Bay and the ocean from a historic former Nike missile site.
 ---
 
 Pacifica, when brought up outside of the immediate area, is most known for its cool, foggy weather and isolated, far away feel. However, it's only a few miles away from the nearest BART station and half-hourly buses run directly from the station deep into the heart of the town.

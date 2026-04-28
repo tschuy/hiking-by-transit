@@ -36,6 +36,7 @@ gpx: wildcat-canyon.gpx
 park-link: https://www.ebparks.org/parks/wildcat-canyon
 
 image: wildcat-canyon.jpg
+blurb: Wildflowers and expansive grassy views from right behind Richmond and El Cerrito.
 ---
 
 Wildcat Canyon offers hikes at all levels and abilities. The main entrance opens onto Wildcat Creek Trail, which is a flat, formerly-paved road. Eventually, it turns into a still quite flat gravel fire road, though certainly with occasional rises and dips, that you could follow all the way up to Tilden Regional Park. A walk following the indicated path below from the bus, through the entrance (the Alvarado Park area), and out some distance along Wildcat Creek Trail is a fantastic walk in the park.

@@ -29,6 +29,8 @@ park-link: https://www.ebparks.org/parks/dry-creek-pioneer
 
 image: dry-creek.jpg
 gpx: dry-creek.gpx
+
+blurb: Largely-shaded trails along creeks in classic East Bay rolling hills.
 ---
 
 Dry Creek Pioneer Regional Park is a fantastic spot for a hike on a warm-but-not-hot morning or afternoon. This particular hike follows trails along two different creeks, and as such remains a comfortable hiking temperature further into spring than many hikes in the area. The whole area is grazed, so keep an eye out for cows along the trail.
