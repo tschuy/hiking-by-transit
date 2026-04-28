@@ -13,7 +13,7 @@ Big Basin Redwoods State Park is California's oldest State Park, and one of its 
 
 Santa Cruz METRO runs *Hwy 17 Express* buses between San José Diridon and downtown Santa Cruz twice an hour on weekends. Only some of those buses go to Cavallaro Transit Center in Scotts Valley, and in past years the schedules have meant long waits there for the park-bound 35B.
 
-When they launched the 2026 seasonal service this past weekend, however it came with a schedule thought up with the *Hwy 17 Express* in mind.
+When they launched the 2026 seasonal service this past weekend, however, it came with a schedule thought up with the *Hwy 17 Express* in mind.
 
 ### San José to Big Basin Redwoods State Park
 
