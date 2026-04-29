@@ -24,9 +24,9 @@ There are parks everywhere in Marin. The most famous, however, are mainly locate
 
 ### Muir Woods Shuttle
 
-The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around March to October, the shuttle runs from either Larkspur Landing ferry terminal or the Sausalito Ferry terminal, depending on the day. Weekend service departs from Larkspur Landing, acting mainly as a parking overflow shuttle, while weekday service offers tourist-oriented ferry connections.
+The Shuttle is the easiest and most convenient way to get to world-famous Muir Woods. Operating only during the peak season, around April to October, the shuttle runs from the Larkspur Landing ferry terminal Fridays to Sundays.
 
-The Muir Woods Shuttle requires advance reservations, and certain runs on busy days do book out.
+The Muir Woods Shuttle requires advance reservations, and certain runs on busy days some runs do book out.
 
 For more information, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
@@ -50,25 +50,17 @@ Golden Gate Transit runs buses half-hourly or better for most most of the day se
 
 ### Muir Woods Shuttle
 
-The Muir Woods Shuttle runs from March to October **weekends and holidays** from the Larkspur Landing Ferry Terminal, and June to August **weekdays (except holidays)** from the Sausalito Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+The Muir Woods Shuttle runs from April to October **weekends and holidays** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
-**Sausalito (weekdays)**
-
-*Holiday and spring Friday shuttles leave from Larkspur. Check the location displayed after selecting the number of people traveling.*
-
-**Outbound**: Connections work decently well for the first three ferries of the day. Consider leaving extra time to explore Sausalito, as the ferry landing can be crowded, and the shuttle service recommends arriving 15 minutes before the scheduled departure. Otherwise, catch Golden Gate Transit 120 buses (half-hourly or hourly, depending on time of day) northbound from San Francisco and across the Golden Gate Bridge to Bay & Bridgeway to catch any of the shuttle runs.
-
-**Inbound**: The final ferry departing Sausalito leaves at 6:30pm. However, if you miss the last ferry, Golden Gate Transit 120 buses run hourly back to San Francisco until nearly midnight.
-
-**Ferry Connections at Larkspur (weekends)**
+**Ferry Connections at Larkspur**
 
 The ferry is the fastest way to connect to the shuttle and should be the preferred option unless you want to get to the park earlier than possible with it.
 
-**Outbound:** Shuttles depart approximately every 20 minutes from 8:00am until mid-afternoon, with the shuttle company recommending arriving 15min before scheduled departure. The earliest ferry from San Francisco departs at 10:45am and arrives at 11:20am, which provides a 20 minute connection to the 11:40am shuttle.
+**Outbound:** Shuttles depart approximately every 20 minutes from 8:00am until mid-afternoon, with the shuttle company recommending arriving 15min before scheduled departure. The earliest weekend ferry from San Francisco departs at 10:45am and arrives at 11:20am, which provides a 20 minute connection to the 11:40am shuttle.
 
 **Inbound:** The last San Francisco-bound ferry from Larkspur departs at 6:00pm. The shuttle has an estimated travel time of around 30-45 minutes, so when choosing a shuttle time, a departure time of 5:00pm or earlier offers a safer connection.
 
-**Bus Connections at Larkspur (weekends)**
+**Bus Connections at Larkspur**
 
 There is an hourly connection possible from San Francisco. San Rafael Transit Center operates on a timed "pulse", where the GGT 101 bus arrives 5 minutes before the departure of a large number of local buses. *Local buses do not wait for delayed GGT 101 buses.*
 
@@ -176,9 +168,9 @@ Like to ride your bike? There are secure bicycle lockers available at San Rafael
 
 ### Muir Woods Shuttle
 
-The Muir Woods Shuttle runs from March to October **weekends and holidays** from the Larkspur Landing Ferry Terminal, and June to August **weekdays (except holidays)** from the Sausalito Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
+The Muir Woods Shuttle runs from April to October **weekends and holidays** from the Larkspur Landing Ferry Terminal to the main Visitor Center of Muir Woods National Monument. For more information, to check availability, and reserve a spot on the shuttle, [visit the Muir Woods Shuttle website »](https://gomuirwoods.com/muir/shuttleParkingInfo)
 
-**Larkspur Landing (weekends)**
+**Larkspur Landing**
 
 There is an hourly connection possible from the East Bay. For the GGT 580 buses departing El Cerrito at 6:47am and 7:45am, the transfer is 10 minutes; for all other departures, the transfer is 40 minutes.
 
@@ -188,12 +180,6 @@ There is an hourly connection possible from the East Bay. For the GGT 580 buses 
 4. Walk 5 minutes to the shuttle stop.
 
 To return, catch the Marin Transit 228 at the same stop and transfer to an eastbound Golden Gate Transit 580 at San Rafael Transit Center. This is a 5min transfer.
-
-**Sausalito (weekdays)**
-
-The quickest way from the East Bay to Sausalito is to head into San Francisco, and then continue on north from there. See [*San Francisco: Muir Woods Shuttle*](#muir-woods-shuttle-1) for more information on how to get from San Francisco to the Sausalito shuttle stop by bus or by ferry.
-
-To take the bus from the East Bay to Sausalito *without* heading into San Francisco, catch the GGT 580 bus to San Rafael Transit Center and transfer to the Marin Transit 17 bus. This local bus takes approximately 45 minutes to complete its local route to the Sausalito Ferry Terminal.
 
 ### Marin Transit 68
 
