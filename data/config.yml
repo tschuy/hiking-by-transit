@@ -515,7 +515,7 @@ feeds:
         long_name: Oregon POINT
   mst:
     gtfs:
-      url: https://mst.org/google/google_transit.zip
+      url: https://www.mst.org/google/google_transit.zip
     agencies:
       "Monterey-Salinas Transit":
         type: bus
@@ -523,7 +523,7 @@ feeds:
         short_name: MST
   slo:
     gtfs:
-      url: https://app.mecatran.com/urb/ws/feed/c2l0ZT1zbG90cmFuc2l0O2NsaWVudD1zZWxmO2V4cGlyZT07dHlwZT1ndGZzO2tleT0zZTMwMzM1OTRiMTE2NzA0N2IxNjQwNjA0ZjQwMGMzMzdiM2E1MTQ0
+      url: http://data.peaktransit.com/staticgtfs/1/gtfs.zip
     agencies:
       SLOT:
         type: bus
