@@ -3,7 +3,9 @@
 import argparse
 import os
 import sys
+import tempfile
 import urllib.request
+import zipfile
 
 from config import gtfs_map
 
@@ -14,6 +16,7 @@ USER_AGENT = (
     "Chrome/120.0.0.0 Safari/537.36"
 )
 
+
 def download_file(url: str, dest_path: str):
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
 
@@ -23,10 +26,43 @@ def download_file(url: str, dest_path: str):
     )
 
     print(f"Downloading {url}")
-    with urllib.request.urlopen(req) as response, open(dest_path, "wb") as f:
-        f.write(response.read())
 
-    print(f"Saved to {dest_path}")
+    # Download to a temporary file first
+    fd, temp_path = tempfile.mkstemp(dir=os.path.dirname(dest_path))
+    os.close(fd)
+
+    try:
+        with urllib.request.urlopen(req) as response, open(temp_path, "wb") as f:
+            f.write(response.read())
+
+        # If replacing an existing ZIP, verify the downloaded file is valid.
+        if (
+            os.path.exists(dest_path)
+            and dest_path.lower().endswith(".zip")
+        ):
+            try:
+                with zipfile.ZipFile(temp_path) as zf:
+                    bad_file = zf.testzip()
+                    if bad_file is not None:
+                        raise zipfile.BadZipFile(
+                            f"Corrupt member: {bad_file}"
+                        )
+            except Exception:
+                os.remove(temp_path)
+                raise RuntimeError(
+                    f"Downloaded file for {dest_path} is not a valid ZIP; "
+                    "keeping existing file."
+                )
+
+        # Atomically replace the destination.
+        os.replace(temp_path, dest_path)
+
+        print(f"Saved to {dest_path}")
+
+    except Exception:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+        raise
 
 
 def main():
