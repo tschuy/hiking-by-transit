@@ -332,7 +332,7 @@ feeds:
         long_name: Trinity Transit
   siskiyou:
     gtfs:
-      url: https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip-skip
+      url: https://data.trilliumtransit.com/gtfs/siskiyou-ca-us/siskiyou-ca-us.zip
     agencies:
       '24':
         type: bus
