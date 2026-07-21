@@ -17,8 +17,9 @@ Certain shuttles and microtransit services have not yet been added to this map. 
 <p id="mobile-message">Use two fingers to pan and scroll the map.</p><p id="desktop-message">Hold <em>ctrl</em> and scroll to zoom.</p>
 
 <div id="popup" class="ol-popup">
-  <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open in Maps</a>
-  <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»</a>
+  <a href="#" id="popup-directions-link" class="ol-popup-link" target="_blank">Open&nbsp;in&nbsp;Maps&nbsp;»<br></a>
+  <a href="#" id="popup-hike-link" class="ol-popup-link">Read&nbsp;more&nbsp;»<br></a>
+  <a href="#" id="popup-alltrails-link" class="ol-popup-link">Open in AllTrails&nbsp;»<br></a>
   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
   <div id="popup-content"></div>
 </div>

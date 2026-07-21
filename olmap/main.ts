@@ -51,6 +51,7 @@ const style: Record<string, Style> = {
 const container = document.getElementById('popup')!;
 const content = document.getElementById('popup-content')!;
 const directionsLink = document.getElementById('popup-directions-link')! as HTMLAnchorElement;
+const alltrailsLink = document.getElementById('popup-alltrails-link')! as HTMLAnchorElement;
 const hikeLink = document.getElementById('popup-hike-link')! as HTMLAnchorElement;
 const closer = document.getElementById('popup-closer')!;
 const info = document.getElementById('info')!;
@@ -421,13 +422,15 @@ map.on('click', (evt: MapBrowserEvent<UIEvent>) => {
   const properties = layer.getProperties();
 
   if (layer === southernCalifornia) {
-    directionsLink.style.visibility = 'hidden';
-    hikeLink.style.visibility = 'hidden';
+    directionsLink.style.display = 'none';
+    alltrailsLink.style.visibility = 'none';
+    hikeLink.style.visibility = 'none';
     content.innerHTML = formatPolygonInfo(feature);
   } else if (properties && properties.type === 'gpx') {
-    directionsLink.style.visibility = 'hidden';
+    directionsLink.style.visibility = 'none';
+    alltrailsLink.style.visibility = 'none';
     hikeLink.href = properties.url ?? '#';
-    hikeLink.style.visibility = 'visible';
+    hikeLink.style.display = '';
     content.innerHTML = formatHikeInfo(properties);
     return;
   } else {
@@ -436,8 +439,25 @@ map.on('click', (evt: MapBrowserEvent<UIEvent>) => {
     parkInfo.weather = feature.get('weather') ?? 'TODO: look up weather for this park';
     const lonlat = olProj.transform(coordinates, 'EPSG:3857', 'EPSG:4326');
     directionsLink.href = `https://www.google.com/maps/place/${lonlat[1]},${lonlat[0]}/@${lonlat[1]},${lonlat[0]},15z`;
-    directionsLink.style.visibility = 'visible';
-    hikeLink.style.visibility = 'hidden';
+    directionsLink.style.display = '';
+
+    const longitude = lonlat[0];
+    const latitude = lonlat[1];
+
+    const latitudePadding = 0.01;
+    const longitudePadding = 0.012;
+
+    const alltrailsParams = new URLSearchParams({
+      b_tl_lat: String(latitude + latitudePadding),
+      b_tl_lng: String(longitude - longitudePadding),
+      b_br_lat: String(latitude - latitudePadding),
+      b_br_lng: String(longitude + longitudePadding),
+    });
+
+    alltrailsLink.href = `https://www.alltrails.com/explore?${alltrailsParams.toString()}`;
+    alltrailsLink.style.display = '';
+
+    hikeLink.style.display = 'none';
     content.innerHTML = formatParkInfo(parkInfo);
     return;
   }
