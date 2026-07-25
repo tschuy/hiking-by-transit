@@ -2,6 +2,7 @@ import { ContentHikeCard } from '../components/ContentHikeCard'
 import { MarkdownContent } from '../components/MarkdownContent'
 import { TrailheadMap } from '../components/TrailheadMap'
 import { getGuideContent, getPlaceContent, hikeContent, placeContent } from '../data/content'
+import { mapScopePresets } from '../map/scopes'
 import { NotFoundPage } from './NotFoundPage'
 
 const kindLabels = { region: 'Region', park: 'Destination park', forest: 'Forest', 'recreation-area': 'Recreation area' }
@@ -14,6 +15,7 @@ export function PlacePage({ slug }: { slug: string }) {
   const descendants = new Set([place.place_id, ...children.map((child) => child.place_id)])
   const hikes = hikeContent.filter((hike) => hike.place_ids.some((id) => descendants.has(id)))
   const guides = (place.guide_ids ?? []).map(getGuideContent).filter((guide) => guide !== undefined)
+  const mapScope = mapScopePresets[place.place_id]
 
   return <article className="page container place-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span>{parent && <><a href={`/places/${parent.slug}`}>{parent.title}</a><span aria-hidden="true">/</span></>}<span>{place.title}</span></nav>
@@ -23,6 +25,6 @@ export function PlacePage({ slug }: { slug: string }) {
     {guides.length > 0 && <aside className="place-guide-callout"><p className="eyebrow">Plan your trip</p><h2>Getting to and around {place.title}</h2>{guides.map((guide) => <a className="button-link" href={`/guides/${guide.slug}`} key={guide.guide_id}>{guide.title} <span aria-hidden="true">→</span></a>)}</aside>}
     {children.length > 0 && <section className="place-section" aria-labelledby="within-place"><h2 id="within-place">Places within {place.title}</h2><nav className="region-list" aria-label={`Places within ${place.title}`}>{children.map((child) => <a href={`/places/${child.slug}`} key={child.place_id}>{child.title}<span aria-hidden="true"> →</span></a>)}</nav></section>}
     {hikes.length > 0 && <section className="place-section" aria-labelledby="place-hikes"><h2 id="place-hikes">Recommended hikes</h2><div className="card-grid">{hikes.map((hike) => <ContentHikeCard hike={hike} key={hike.hike_id} />)}</div></section>}
-    <section className="place-section" aria-labelledby="place-map"><p className="eyebrow">Trailhead access</p><h2 id="place-map">Trailheads in {place.title}</h2>{place.place_id === 'tahoe' ? <TrailheadMap scope="tahoe" center={{ longitude: -120.0326, latitude: 39.1046, zoom: 11 }} /> : <div className="map-placeholder map-placeholder-compact" role="img" aria-label={`Map placeholder for trailheads in ${place.title}`}><span aria-hidden="true">⌖</span><strong>Map coming soon!</strong></div>}</section>
+    {mapScope && <section className="place-section" aria-labelledby="place-map"><p className="eyebrow">Trailhead access</p><h2 id="place-map">Trailheads in {place.title}</h2><TrailheadMap key={place.place_id} scope={place.place_id} center={mapScope.center} transitGroups={mapScope.transitGroups} defaultTransitGroups={mapScope.defaultTransitGroups} label={place.title} /></section>}
   </article>
 }

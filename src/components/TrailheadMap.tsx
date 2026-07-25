@@ -1,177 +1,168 @@
-import { useEffect } from 'react'
-import { hikeContent } from '../data/content'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
+import type { MapAction, MapFeatureDetails, VisibleFeatureState } from 'olmap'
+import 'olmap/styles/openlayers.css'
+import { useTrailheadMap } from '../hooks/useTrailheadMap'
+import { sanitizeMapHtml } from '../map/sanitizeMapHtml'
 
-interface MapHike {
-  title: string
-  url: string
-  gpx: string
-  blurb: string
-  length: string
-  difficultyhuman: string
-  difficulty: string
-}
-
-const mappedHikes: MapHike[] = hikeContent.flatMap((hike) => hike.gpx ? [{
-  title: hike.title,
-  url: `/hikes/${hike.slug}`,
-  gpx: hike.gpx,
-  blurb: hike.blurb ?? '',
-  length: hike.length,
-  difficultyhuman: hike.difficulty_human ?? hike.difficulty,
-  difficulty: hike.difficulty,
-}] : [])
-
-const placeRoutes: MapHike[] = [
-  {
-    title: 'Crosstown Trail',
-    url: '/places/san-francisco#the-crosstown-trail',
-    gpx: 'crosstown.gpx',
-    blurb: "The premier trail featuring segments through all of San Francisco's best hilltop parks.",
-    length: 'Segments from 3–17mi',
-    difficultyhuman: 'As easy or hard as you want it to be',
-    difficulty: 'easy',
-  },
-  {
-    title: 'Double Cross Trail',
-    url: '/places/san-francisco#the-double-cross-trail',
-    gpx: 'doublecross.gpx',
-    blurb: "From quiet windswept Fort Funston to the dense inner city via the city's lesser-known southwest neighborhoods and hills.",
-    length: 'Segments up to 14mi',
-    difficultyhuman: 'As easy or hard as you want it to be',
-    difficulty: 'easy',
-  },
-]
-
-interface MapCheckbox {
-  name: string
-  label: string
-  checked?: boolean
-}
+interface MapCheckbox { name: string; label: string; color?: string }
 
 const trailheadLayers: MapCheckbox[] = [
-  { name: 'bus', label: 'Bus & light rail', checked: true },
-  { name: 'bus-far', label: 'Bus & light rail (15+ min walk)', checked: true },
-  { name: 'bus-weekday-only', label: 'Bus (weekday only)', checked: true },
-  { name: 'rail', label: 'Rail & ferry', checked: true },
-  { name: 'rail-far', label: 'Rail & ferry (20+ min walk)', checked: true },
-  { name: 'shuttles', label: 'Park shuttles', checked: true },
-  { name: 'microtransit', label: 'Microtransit', checked: true },
-  { name: 'call-ahead', label: 'Call-ahead service', checked: true },
+  { name: 'bus', label: 'Bus & light rail', color: '#0288d1' },
+  { name: 'bus-far', label: 'Bus & light rail (15+ min walk)', color: '#0097a7' },
+  { name: 'bus-weekday-only', label: 'Bus (weekday only)', color: '#1a237e' },
+  { name: 'rail', label: 'Rail & ferry', color: '#f57c00' },
+  { name: 'rail-far', label: 'Rail & ferry (20+ min walk)', color: '#e65100' },
+  { name: 'shuttles', label: 'Park shuttles', color: '#000000' },
+  { name: 'microtransit', label: 'Microtransit', color: '#757575' },
+  { name: 'call-ahead', label: 'Call-ahead service', color: '#bdbdbd' },
 ]
 
+const trailheadGroups = [
+  { label: 'Bus access', members: ['bus', 'bus-far', 'bus-weekday-only'] },
+  { label: 'Rail and ferry access', members: ['rail', 'rail-far'] },
+  { label: 'Flexible and special service', members: ['shuttles', 'microtransit', 'call-ahead'] },
+]
+const trailheadLayerById = new Map(trailheadLayers.map((layer) => [layer.name, layer]))
+
 const transitLayers: MapCheckbox[] = [
-  { name: 'bayarea', label: 'Bay Area' },
-  { name: 'tahoe', label: 'Tahoe' },
-  { name: 'centralcoast', label: 'Central Coast' },
-  { name: 'amtrak', label: 'Amtrak / Gold Runner' },
-  { name: 'sacrt', label: 'Sacramento' },
-  { name: 'central-valley', label: 'Central Valley' },
+  { name: 'bayarea', label: 'Bay Area' }, { name: 'tahoe', label: 'Tahoe' },
+  { name: 'centralcoast', label: 'Central Coast' }, { name: 'amtrak', label: 'Amtrak / Gold Runner' },
+  { name: 'sacrt', label: 'Sacramento' }, { name: 'central-valley', label: 'Central Valley' },
   { name: 'other', label: 'Other agencies' },
 ]
 
-function CheckboxList({ items }: { items: MapCheckbox[] }) {
-  return <>{items.map((item) => <label className="map-checkbox" key={item.name}><input type="checkbox" name={item.name} defaultChecked={item.checked} /><span>{item.label}</span></label>)}</>
-}
-
 interface TrailheadMapProps {
   center?: { longitude: number; latitude: number; zoom: number }
-  scope?: 'statewide' | 'tahoe'
+  scope?: string
+  transitGroups?: string[]
+  defaultTransitGroups?: string[]
+  label?: string
 }
 
-export function TrailheadMap({ center, scope = 'statewide' }: TrailheadMapProps) {
-  const isTahoe = scope === 'tahoe'
-  const displayedTransitLayers = isTahoe ? transitLayers.filter((layer) => layer.name === 'tahoe').map((layer) => ({ ...layer, checked: true })) : transitLayers
+function ActionLink({ action }: { action: MapAction }) {
+  const external = action.url.startsWith('http')
+  return <a className={`map-action map-action-${action.kind}`} href={action.url} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined}>{action.label} <span aria-hidden="true">{external ? '↗' : '→'}</span></a>
+}
+
+function RichDescription({ html }: { html: string }) {
+  const sanitized = useMemo(() => sanitizeMapHtml(html), [html])
+  return <div className="map-rich-description" dangerouslySetInnerHTML={{ __html: sanitized }} />
+}
+
+function MiniMap({ feature }: { feature: MapFeatureDetails }) {
+  if (!feature.coordinate) return null
+  const radius = 6_378_137
+  const longitude = feature.coordinate[0] / radius * 180 / Math.PI
+  const latitude = (2 * Math.atan(Math.exp(feature.coordinate[1] / radius)) - Math.PI / 2) * 180 / Math.PI
+  const delta = .012
+  const params = new URLSearchParams({
+    bbox: `${longitude - delta},${latitude - delta},${longitude + delta},${latitude + delta}`,
+    marker: `${latitude},${longitude}`,
+    layer: 'mapnik',
+  })
+  return <iframe className="map-mini-map" title={`Small map showing ${feature.name}`} loading="lazy" src={`https://www.openstreetmap.org/export/embed.html?${params}`} />
+}
+
+function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatureDetails; includeMiniMap?: boolean }) {
+  return <div className="map-feature-details">
+    {includeMiniMap && <MiniMap feature={feature} />}
+    {feature.description && <RichDescription html={feature.description} />}
+    {feature.kind === 'cluster' && <p>This group contains {feature.clusterSize} trailheads of the same access type. Select it again to zoom in.</p>}
+    {feature.actions.length > 0 && <nav className="popup-actions" aria-label="Selection actions">{feature.actions.map((action) => <ActionLink action={action} key={`${action.kind}-${action.url}`} />)}</nav>}
+  </div>
+}
+
+function SelectionPanel({ feature, onClose }: { feature: MapFeatureDetails; onClose: () => void }) {
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const returnFocusRef = useRef<HTMLElement | null>(null)
   useEffect(() => {
-    const mapWindow = window as Window & { hikes_with_gpx?: MapHike[] }
-    mapWindow.hikes_with_gpx = [...mappedHikes, ...placeRoutes]
-    const filterContainer = document.getElementById('filter')
-    const inputs = Array.from(filterContainer?.querySelectorAll<HTMLInputElement>('input[type="checkbox"]') ?? [])
-    const selectedLayers = new Set(new URLSearchParams(window.location.search).getAll('layer'))
+    returnFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
+    closeRef.current?.focus({ preventScroll: true })
+  }, [feature.id])
+  const close = () => {
+    const returnFocus = returnFocusRef.current
+    onClose()
+    requestAnimationFrame(() => returnFocus?.focus({ preventScroll: true }))
+  }
+  return <aside className="map-selection" role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
+    <button ref={closeRef} className="map-selection-close" type="button" onClick={close} aria-label="Close map details">×</button>
+    <p className="eyebrow">{feature.kind === 'cluster' ? `${feature.clusterSize} nearby trailheads` : 'Map selection'}</p>
+    <h2>{feature.name}</h2>
+    <FeatureDetails feature={feature} />
+  </aside>
+}
 
-    if (selectedLayers.size > 0) {
-      inputs.forEach((input) => { input.checked = selectedLayers.has(input.name) })
-    }
+function ResultList({ features, selected, onSelect }: { features: VisibleFeatureState[]; selected?: MapFeatureDetails; onSelect: (id: string) => void }) {
+  const [page, setPage] = useState(0)
+  const pageSize = 25
+  const pageCount = Math.max(1, Math.ceil(features.length / pageSize))
+  const safePage = Math.min(page, pageCount - 1)
+  const rows = features.slice(safePage * pageSize, (safePage + 1) * pageSize)
+  if (!features.length) return <p className="map-empty">No trailheads are visible in this map area. Pan or zoom out to find results.</p>
+  return <>
+    <ol className="map-result-list" start={safePage * pageSize + 1}>
+      {rows.map((feature) => {
+        const layer = trailheadLayerById.get(feature.sourceId)
+        return <li key={feature.id} className={feature.id === selected?.id ? 'selected' : undefined}>
+        <button type="button" aria-expanded={feature.id === selected?.id} onClick={() => onSelect(feature.id)}>
+          <strong>{feature.name}</strong><span className="map-result-type">{layer?.color && <i className="map-layer-swatch" style={{ backgroundColor: layer.color }} aria-hidden="true" />}{layer?.label ?? feature.sourceId.replaceAll('-', ' ')}</span>
+        </button>
+        {feature.id === selected?.id && <div className="map-result-details"><FeatureDetails feature={selected} includeMiniMap /></div>}
+      </li>})}
+    </ol>
+    {pageCount > 1 && <nav className="map-pagination" aria-label="Trailhead result pages">
+      <button type="button" disabled={safePage === 0} onClick={() => setPage((value) => Math.max(0, value - 1))}>Previous</button>
+      <span>Page {safePage + 1} of {pageCount}</span>
+      <button type="button" disabled={safePage === pageCount - 1} onClick={() => setPage((value) => Math.min(pageCount - 1, value + 1))}>Next</button>
+    </nav>}
+  </>
+}
 
-    const applyInitialLayers = () => {
-      inputs.forEach((input) => input.dispatchEvent(new Event('change', { bubbles: true })))
-    }
+export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
+  const {
+    targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
+    activateFeature, clearSelection, retrySource,
+  } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
+  const isScoped = scope !== 'statewide'
+  const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
+  const featureLookup = useMemo(() => new Map(state.visible.features.map((feature) => [feature.id, feature])), [state.visible.features])
+  const visibleFeatures = state.visible.ids.flatMap((id) => featureLookup.get(id) ?? [])
+  const failedLayers = Object.values(state.layers).filter((layer) => layer.status === 'error' || layer.status === 'unavailable')
+  const resultsHeadingId = useId()
 
-    const saveSelectedLayers = () => {
-      const params = new URLSearchParams(window.location.search)
-      params.delete('layer')
-      inputs.filter((input) => input.checked).forEach((input) => params.append('layer', input.name))
-      const query = params.toString()
-      window.history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}`)
-    }
+  return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`}>
+    <div className="map-view-switcher" aria-label="Choose map or list view">
+      <button type="button" aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
+      <button type="button" aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
+    </div>
 
-    filterContainer?.addEventListener('change', saveSelectedLayers)
-
-    if (!document.querySelector('link[data-trailhead-map-styles]')) {
-      const stylesheet = document.createElement('link')
-      stylesheet.rel = 'stylesheet'
-      stylesheet.href = '/map/olmap.css'
-      stylesheet.dataset.trailheadMapStyles = 'true'
-      document.head.append(stylesheet)
-    }
-
-    let script = document.querySelector<HTMLScriptElement>('script[data-trailhead-map-bundle]')
-    if (!script) {
-      script = document.createElement('script')
-      script.type = 'module'
-      script.src = '/map/olmap.js'
-      script.dataset.trailheadMapBundle = 'true'
-      const newScript = script
-      script.addEventListener('load', () => { newScript.dataset.loaded = 'true' })
-      document.body.append(script)
-    }
-
-    if (script.dataset.loaded === 'true') applyInitialLayers()
-    else script.addEventListener('load', applyInitialLayers, { once: true })
-
-    return () => {
-      filterContainer?.removeEventListener('change', saveSelectedLayers)
-      script?.removeEventListener('load', applyInitialLayers)
-    }
-  }, [])
-
-  return (
-    <div className="map-layout">
-      <div className="map-stage">
-        <div id="ol-map" data-lon={center?.longitude} data-lat={center?.latitude} data-zoom={center?.zoom} aria-label={isTahoe ? 'Interactive map of transit-accessible trailheads around Lake Tahoe' : 'Interactive map of transit-accessible trailheads'}>
-          <div id="info" />
-        </div>
-
-        <div id="popup" className="ol-popup">
-          <a href="#map-end" id="popup-closer" className="ol-popup-closer" aria-label="Close map popup" />
-          <div id="popup-content" />
-          <div className="popup-actions">
-            <a href="#map-end" id="popup-directions-link" className="ol-popup-link" target="_blank" rel="noreferrer">Open in Maps <span aria-hidden="true">↗</span></a>
-            <a href="#map-end" id="popup-hike-link" className="ol-popup-link">Read hike guide <span aria-hidden="true">→</span></a>
-            <a href="#map-end" id="popup-alltrails-link" className="ol-popup-link" target="_blank" rel="noreferrer">Open in AllTrails <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-
+    <div className={`map-layout map-view-${viewMode}`}>
+      <div className="map-stage" hidden={viewMode === 'list'}>
+        <div ref={targetRef} className="trailhead-map-target olmap-map" aria-label={isScoped ? `Interactive map of transit-accessible trailheads in ${label}` : 'Interactive map of transit-accessible trailheads statewide'} role="region" />
+        {state.loading && <p className="map-status" role="status">Loading map data…</p>}
+        {state.selected && <SelectionPanel feature={state.selected} onClose={clearSelection} />}
         <p className="map-instruction mobile-map-instruction">Use two fingers to pan the map.</p>
         <p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p>
       </div>
 
-      <aside id="filter" className="map-filters" aria-label="Map filters">
+      <section className="map-companion" aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
+        <div className="filter-heading"><div><p className="eyebrow">Visible map area</p><h2 id={resultsHeadingId}>Trailhead results</h2></div><span aria-live="polite">{state.visible.total} result{state.visible.total === 1 ? '' : 's'}{state.visible.limited ? ', first 250 shown' : ''}</span></div>
+        <ResultList features={visibleFeatures} selected={state.selected} onSelect={activateFeature} />
+      </section>
+
+      <aside className="map-filters" aria-label="Map filters">
         <div className="filter-heading"><div><p className="eyebrow">Map layers</p><h2>Filter the map</h2></div><span>Changes apply instantly</span></div>
-        <div className={`filter-columns${isTahoe ? ' filter-columns-scoped' : ''}`}>
-          {isTahoe ? <form id="filter-form" autoComplete="off" /> : <fieldset>
-            <legend>Trailhead access</legend>
-            <form id="filter-form" autoComplete="off"><CheckboxList items={trailheadLayers} /></form>
-          </fieldset>}
-          <fieldset>
-            <legend>Transit networks</legend>
-            <form id="filter-layers-form" autoComplete="off">
-              <label className="map-checkbox"><input type="checkbox" name="cpad" /><span>Protected areas (CPAD)</span></label>
-              <CheckboxList items={displayedTransitLayers} />
-            </form>
+        <div className={`filter-columns${isScoped ? ' filter-columns-scoped' : ''}`}>
+          <fieldset><legend>Trailhead access by type</legend>{trailheadGroups.map((group) => <div className="map-filter-group" key={group.label}><h3>{group.label}</h3>{group.members.map((name) => trailheadLayers.find((layer) => layer.name === name)).map((item) => item && <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: item.color }} aria-hidden="true" /><span>{item.label}</span></label>)}</div>)}</fieldset>
+          <fieldset><legend>Transit and boundaries</legend>
+            <label className="map-checkbox"><input type="checkbox" checked={enabledLayers.has('cpad')} onChange={(event) => setLayerEnabled('cpad', event.target.checked)} /><span>Protected areas (CPAD)</span></label>
+            {displayedTransit.map((item) => <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><span>{item.label}</span></label>)}
           </fieldset>
         </div>
       </aside>
-      <span id="map-end" />
     </div>
-  )
+
+    {state.configError && <div className="map-error" role="alert"><strong>Map unavailable</strong><span>{state.configError}</span><button type="button" onClick={() => window.location.reload()}>Retry map</button></div>}
+    {failedLayers.length > 0 && <section className="map-partial-errors" aria-label="Map data issues"><p>Some optional map data could not be loaded. Other layers remain available.</p><ul>{failedLayers.map((layer) => <li key={layer.sourceId}><span>{layer.error?.message ?? `${layer.sourceId} is unavailable`}</span>{layer.error?.retryable && <button type="button" onClick={() => retrySource(layer.sourceId)}>Retry</button>}</li>)}</ul></section>}
+  </section>
 }
