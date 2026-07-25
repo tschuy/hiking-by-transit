@@ -64,7 +64,7 @@ function MiniMap({ feature }: { feature: MapFeatureDetails }) {
 }
 
 function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatureDetails; includeMiniMap?: boolean }) {
-  return <div className="map-feature-details">
+  return <div className={`map-feature-details map-feature-details-${feature.kind}`}>
     {includeMiniMap && <MiniMap feature={feature} />}
     {feature.description && <RichDescription html={feature.description} />}
     {feature.kind === 'cluster' && <p>This group contains {feature.clusterSize} trailheads of the same access type. Select it again to zoom in.</p>}
@@ -84,7 +84,7 @@ function SelectionPanel({ feature, onClose }: { feature: MapFeatureDetails; onCl
     onClose()
     requestAnimationFrame(() => returnFocus?.focus({ preventScroll: true }))
   }
-  return <aside className="map-selection" role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
+  return <aside className={`map-selection map-selection-${feature.kind}`} role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
     <button ref={closeRef} className="map-selection-close" type="button" onClick={close} aria-label="Close map details">×</button>
     <p className="eyebrow">{feature.kind === 'cluster' ? `${feature.clusterSize} nearby trailheads` : 'Map selection'}</p>
     <h2>{feature.name}</h2>

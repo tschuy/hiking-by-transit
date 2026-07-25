@@ -1,85 +1,105 @@
 import { useEffect, useId, useRef, useState } from 'react'
+import type { ConfigFile, TrailheadMapController, TrailheadMapEvent } from 'olmap'
+import 'olmap/styles/openlayers.css'
+import { ElevationProfile } from './ElevationProfile'
+import { nearestRouteSample, parseGpx, type ParsedRoute } from '../map/gpx'
 
-declare global {
-  interface Window { L?: LeafletApi }
-}
-
-interface LeafletMap { remove: () => void }
-interface ElevationControl { addTo: (map: LeafletMap) => ElevationControl; on: (event: string, callback: () => void) => void; load: (url: string) => void; remove: () => void }
-interface LeafletApi {
-  map: (element: HTMLElement, options: Record<string, unknown>) => LeafletMap
-  control: { elevation: (options: Record<string, unknown>) => ElevationControl }
-}
-
-const resources = {
-  leafletCss: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
-  elevationCss: 'https://unpkg.com/@raruto/leaflet-elevation@2.2.8/dist/leaflet-elevation.min.css',
-  leaflet: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js',
-  leafletUi: 'https://unpkg.com/leaflet-ui@0.5.9/dist/leaflet-ui.js',
-  elevation: 'https://unpkg.com/@raruto/leaflet-elevation@2.2.8/dist/leaflet-elevation.min.js',
-}
-
-function stylesheet(href: string) {
-  if (document.querySelector(`link[href="${href}"]`)) return
-  const link = document.createElement('link')
-  link.rel = 'stylesheet'
-  link.href = href
-  document.head.append(link)
-}
-
-function script(src: string) {
-  const existing = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`)
-  if (existing?.dataset.loaded === 'true') return Promise.resolve()
-  return new Promise<void>((resolve, reject) => {
-    const element = existing ?? document.createElement('script')
-    element.addEventListener('load', () => { element.dataset.loaded = 'true'; resolve() }, { once: true })
-    element.addEventListener('error', () => reject(new Error(`Unable to load ${src}`)), { once: true })
-    if (!existing) { element.src = src; document.head.append(element) }
-  })
-}
-
-let libraryPromise: Promise<void> | undefined
-function loadLibrary() {
-  if (window.L?.control?.elevation) return Promise.resolve()
-  stylesheet(resources.leafletCss)
-  stylesheet(resources.elevationCss)
-  libraryPromise ??= script(resources.leaflet)
-    .then(() => script(resources.leafletUi))
-    .then(() => script(resources.elevation))
-  return libraryPromise
+const routeConfig: ConfigFile = {
+  schemaVersion: 'legacy-1',
+  dataVersion: 'hike-route',
+  feeds: {},
+  feedGroups: {},
+  kmlGroups: { hardcoded: {}, generated: {} },
 }
 
 export function GpxMap({ file, title, compact = false }: { file: string; title: string; compact?: boolean }) {
   const mapRef = useRef<HTMLDivElement>(null)
+  const controllerRef = useRef<TrailheadMapController>(null)
   const mapId = useId()
   const [status, setStatus] = useState('Loading route map…')
+  const [route, setRoute] = useState<ParsedRoute>()
+  const [activeIndex, setActiveIndex] = useState<number>()
   const fileUrl = file.split('/').map(encodeURIComponent).join('/')
 
   useEffect(() => {
-    let cancelled = false
-    let map: LeafletMap | undefined
-    let elevation: ElevationControl | undefined
-    loadLibrary().then(() => {
-      if (cancelled || !mapRef.current || !window.L) return
-      const L = window.L
-      map = L.map(mapRef.current, { fullscreenControl: false, resizerControl: true, preferCanvas: true })
-      elevation = L.control.elevation({
-        theme: 'lightblue-theme', collapsed: true, autohide: false, autofitBounds: true,
-        position: 'bottomleft', detached: true, summary: 'inline', imperial: true,
-        slope: 'disabled', speed: false, acceleration: false, time: 'summary', legend: true,
-        followMarker: true, almostOver: true, distanceMarkers: false, hotline: false,
-      }).addTo(map)
-      elevation.on('eledata_loaded', () => { if (!cancelled) setStatus('Route loaded. Use the map and elevation chart to inspect the hike.') })
-      elevation.load(`/assets/gpx/${fileUrl}`)
-    }).catch(() => { if (!cancelled) setStatus('The route map could not be loaded. The GPX download is still available.') })
-    return () => { cancelled = true; elevation?.remove(); map?.remove() }
-  }, [file, fileUrl])
+    const target = mapRef.current
+    if (!target) return
+    const abortController = new AbortController()
+    let controller: TrailheadMapController | undefined
 
-  return (
-    <section className={`hike-map-section${compact ? ' hike-map-section-compact' : ''}`} aria-label={compact ? `${title} route map and elevation` : undefined} aria-labelledby={compact ? undefined : `${mapId}-title`}>
-      {!compact && <div className="section-heading compact-heading"><div><p className="eyebrow">Route and elevation</p><h2 id={`${mapId}-title`}>{title} map</h2></div><a href={`/assets/gpx/${fileUrl}`} download>Download GPX</a></div>}
-      <div className="hike-gpx-map" ref={mapRef} aria-label={`Interactive GPX route map for ${title}`} />
-      <p className={`field-note${compact ? ' visually-hidden' : ''}`} role="status">{status}</p>
-    </section>
-  )
+    void (async () => {
+      try {
+        const [response, olmap] = await Promise.all([
+          fetch(`/assets/gpx/${fileUrl}`, { signal: abortController.signal }),
+          import('olmap'),
+        ])
+        if (!response.ok) throw new Error(`Route request returned HTTP ${response.status}`)
+        const gpx = await response.text()
+        const parsed = parseGpx(gpx)
+        if (abortController.signal.aborted) return
+        setRoute(parsed)
+        const handleEvent = (event: TrailheadMapEvent) => {
+          if (event.type === 'route-position-change') {
+            setActiveIndex(event.coordinate ? nearestRouteSample(parsed.samples, event.coordinate) : undefined)
+          }
+          if (event.type === 'layer-progress' && event.layer.sourceId === 'route' && event.layer.status === 'ready') {
+            setStatus('Route loaded. Use the map and elevation profile to inspect the hike.')
+            requestAnimationFrame(() => {
+              controller?.updateSize()
+              controller?.fitToExtent(parsed.extent, { padding: [32, 32, 32, 32], maxZoom: 16 })
+            })
+          }
+          if (event.type === 'error' && event.error.sourceId === 'route') setStatus('The route could not be displayed. The GPX download is still available.')
+        }
+        controller = olmap.createTrailheadMap({
+          target,
+          config: routeConfig,
+          dataSources: [{
+            id: 'route',
+            kind: 'gpx',
+            role: 'hike',
+            hikeId: 'route',
+            visible: true,
+            load: async () => gpx,
+          }],
+          hikes: [{ id: 'route', slug: file, title, gpx: file, url: window.location.pathname }],
+          initialView: { extent: parsed.extent },
+          tileSource: {
+            url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+            attribution: 'Map data © OpenStreetMap contributors',
+          },
+          reducedMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+          onEvent: handleEvent,
+        })
+        controllerRef.current = controller
+        await controller.ready
+        requestAnimationFrame(() => {
+          controller?.updateSize()
+          controller?.fitToExtent(parsed.extent, { padding: [32, 32, 32, 32], maxZoom: 16 })
+        })
+      } catch (error) {
+        if (!abortController.signal.aborted) {
+          setStatus(error instanceof Error ? `The route could not be loaded: ${error.message}` : 'The route could not be loaded.')
+        }
+      }
+    })()
+
+    return () => {
+      abortController.abort()
+      controller?.destroy()
+      if (controllerRef.current === controller) controllerRef.current = null
+    }
+  }, [file, fileUrl, title])
+
+  const inspectRoute = (index?: number) => {
+    setActiveIndex(index)
+    controllerRef.current?.setRoutePosition(index === undefined ? undefined : route?.samples[index]?.mapCoordinate)
+  }
+
+  return <section className={`hike-map-section olmap-root${compact ? ' hike-map-section-compact' : ''}`} aria-label={compact ? `${title} route map and elevation` : undefined} aria-labelledby={compact ? undefined : `${mapId}-title`}>
+    {!compact && <div className="section-heading compact-heading"><div><p className="eyebrow">Route and elevation</p><h2 id={`${mapId}-title`}>{title} map</h2></div><a href={`/assets/gpx/${fileUrl}`} download>Download GPX</a></div>}
+    <div className="hike-gpx-map olmap-map" ref={mapRef} aria-label={`Interactive GPX route map for ${title}`} role="region" />
+    {route && <ElevationProfile route={route} activeIndex={activeIndex} onActiveIndex={inspectRoute} />}
+    <p className={`field-note${compact ? ' visually-hidden' : ''}`} role="status">{status}</p>
+  </section>
 }
