@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hikingbytransit.com/schemas/hike-frontmatter-v1.schema.json",
+  "title": "Hiking by Transit hike frontmatter v1",
+  "description": "Target schema for full hike guides after migration; existing Markdown is not expected to pass until IDs and normalized fields are added.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["layout", "hike_id", "slug", "title", "trailhead_ids", "place_ids", "difficulty", "length", "travel"],
+  "properties": {
+    "layout": { "const": "hike" },
+    "hike_id": {
+      "type": "string",
+      "pattern": "^hike-[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": { "type": "string", "minLength": 1 },
+    "trailhead_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^TH_[0-9]+$" }
+    },
+    "place_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      }
+    },
+    "difficulty": { "enum": ["easy", "moderate", "hard"] },
+    "difficulty_human": { "type": "string" },
+    "length": { "type": "string", "minLength": 1 },
+    "tags": {
+      "oneOf": [
+        {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        {
+          "type": "string",
+          "description": "Legacy space-separated form accepted during migration."
+        }
+      ]
+    },
+    "gpx": { "type": "string", "minLength": 1 },
+    "image": { "type": "string", "minLength": 1 },
+    "blurb": { "type": "string" },
+    "getting-there": { "type": "string" },
+    "featured": { "type": "boolean", "default": false },
+    "travel": { "$ref": "#/$defs/travel" }
+  },
+  "$defs": {
+    "link": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "link": { "type": "string", "format": "uri" },
+        "for": { "type": "string" }
+      }
+    },
+    "leg": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["routes", "stops"],
+      "properties": {
+        "time": { "type": "string" },
+        "routes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/link" }
+        },
+        "stops": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/link" }
+        }
+      }
+    },
+    "travel": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["origin", "served", "out"],
+      "properties": {
+        "origin": { "type": "string", "minLength": 1 },
+        "served": { "type": "string", "minLength": 1 },
+        "out": { "$ref": "#/$defs/leg" },
+        "return": { "$ref": "#/$defs/leg" }
+      }
+    }
+  }
+}

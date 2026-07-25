@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hikingbytransit.com/schemas/catalog-v0.9.schema.json",
+  "title": "Hiking by Transit static catalog v0.9",
+  "description": "Transitional contract matching the current GeoPackage without requiring proposed source columns.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "generatedAt", "source", "counts", "trailheads", "hikes", "places"],
+  "properties": {
+    "schemaVersion": { "const": "0.9" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "source": { "$ref": "#/$defs/source" },
+    "counts": { "$ref": "#/$defs/counts" },
+    "trailheads": { "type": "array", "items": { "$ref": "#/$defs/trailhead" } },
+    "hikes": { "type": "array", "items": { "$ref": "#/$defs/hike" } },
+    "places": { "type": "array", "items": { "$ref": "#/$defs/place" } }
+  },
+  "$defs": {
+    "id": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "nullableText": { "type": ["string", "null"] },
+    "nullableNonNegativeNumber": { "type": ["number", "null"], "minimum": 0 },
+    "coordinates": {
+      "type": "array",
+      "prefixItems": [
+        { "type": "number", "minimum": -180, "maximum": 180 },
+        { "type": "number", "minimum": -90, "maximum": 90 }
+      ],
+      "items": false,
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gpkgPath", "gpkgSha256", "contentPath", "gitRevision"],
+      "properties": {
+        "gpkgPath": { "type": "string", "minLength": 1 },
+        "gpkgSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "contentPath": { "type": "string", "minLength": 1 },
+        "gitRevision": { "type": "string", "minLength": 7 }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["trailheads", "accessRecords", "hikes", "places"],
+      "properties": {
+        "trailheads": { "type": "integer", "minimum": 0 },
+        "accessRecords": { "type": "integer", "minimum": 0 },
+        "hikes": { "type": "integer", "minimum": 0 },
+        "places": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "trailhead": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "coordinates", "notes", "access"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^TH_[0-9]+$" },
+        "name": { "type": "string", "minLength": 1 },
+        "coordinates": { "$ref": "#/$defs/coordinates" },
+        "notes": { "$ref": "#/$defs/nullableText" },
+        "access": { "type": "array", "items": { "$ref": "#/$defs/access" } }
+      }
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceFid", "id", "stopId", "stopName", "coordinates", "walkMinutes", "walkSource", "notes", "gtfsSource", "frequency", "routeIds"],
+      "properties": {
+        "sourceFid": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Transitional row discriminator because the current source contains one duplicate access_id."
+        },
+        "id": { "$ref": "#/$defs/id" },
+        "stopId": { "type": ["string", "null"] },
+        "stopName": { "type": "string", "minLength": 1 },
+        "coordinates": { "$ref": "#/$defs/coordinates" },
+        "walkMinutes": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+        "walkSource": { "type": "string", "minLength": 1 },
+        "notes": { "$ref": "#/$defs/nullableText" },
+        "gtfsSource": { "$ref": "#/$defs/nullableText" },
+        "frequency": {
+          "type": "object",
+          "description": "Names mirror the current GeoPackage. Values are arrivals per representative day, not headways.",
+          "additionalProperties": false,
+          "required": ["weekday", "saturday", "sunday"],
+          "properties": {
+            "weekday": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+            "saturday": { "$ref": "#/$defs/nullableNonNegativeNumber" },
+            "sunday": { "$ref": "#/$defs/nullableNonNegativeNumber" }
+          }
+        },
+        "routeIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "hike": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "slug", "title", "trailheadIds", "placeIds", "difficulty", "lengthLabel", "tags", "gpx", "image", "blurb"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "slug": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string", "minLength": 1 },
+        "trailheadIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^TH_[0-9]+$" } },
+        "placeIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "difficulty": { "enum": ["easy", "moderate", "hard"] },
+        "lengthLabel": { "type": "string", "minLength": 1 },
+        "tags": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+        "gpx": { "$ref": "#/$defs/nullableText" },
+        "image": { "$ref": "#/$defs/nullableText" },
+        "blurb": { "$ref": "#/$defs/nullableText" }
+      }
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "slug", "title", "kind", "parentId", "blurb"],
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "slug": { "$ref": "#/$defs/slug" },
+        "title": { "type": "string", "minLength": 1 },
+        "kind": { "enum": ["region", "park", "forest", "recreation_area", "other"] },
+        "parentId": { "type": ["string", "null"] },
+        "blurb": { "$ref": "#/$defs/nullableText" }
+      }
+    }
+  }
+}
