@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"route_id":"fixture-route","agency_id":"fixture-agency"},"geometry":{"type":"LineString","coordinates":[[-122.4,37.7],[-122.3,37.8]]}}]}

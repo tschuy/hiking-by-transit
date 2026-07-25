@@ -1,0 +1,19 @@
+{
+  "schema_version": "legacy-1",
+  "data_version": "fixture-1",
+  "feeds": {
+    "fixture-transit": {
+      "gtfs": { "url": "https://example.test/gtfs.zip" },
+      "agencies": {
+        "fixture-agency": { "type": "bus", "long_name": "Fixture Transit" }
+      }
+    }
+  },
+  "feed_groups": {
+    "fixture-group": { "members": ["fixture-transit"], "hidden": true }
+  },
+  "kml_groups": {
+    "hardcoded": { "fixture-trailheads": { "name": "Fixture trailheads" } },
+    "generated": {}
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "olmap",
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist",
+    "styles"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "sideEffects": [
+    "./dist/legacy.js",
+    "./styles/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./legacy": {
+      "types": "./dist/types/legacy/bootstrap.d.ts",
+      "import": "./dist/legacy.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./dom": {
+      "types": "./dist/types/presentation/dom.d.ts",
+      "import": "./dist/dom.js"
+    },
+    "./styles/openlayers.css": "./styles/openlayers.css",
+    "./styles/default.css": "./styles/default.css"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "npm run build:legacy && npm run build:types && npm run build:library",
+    "build:legacy": "vite build",
+    "build:types": "tsc --emitDeclarationOnly --declaration --declarationMap --outDir dist/types",
+    "build:library": "vite build --config vite.lib.config.ts",
+    "typecheck": "tsc --noEmit",
+    "check:assets": "node scripts/check-assets.mjs --config ../../public/assets/data/config.json --assets ../../public/assets --manifest baseline-assets.json",
+    "check:fixtures": "node scripts/check-assets.mjs --config test/fixtures/assets/data/config.json --assets test/fixtures/assets --manifest test/fixtures/assets/manifest.json",
+    "check:performance": "node scripts/check-performance.mjs",
+    "test": "npm run build:library && npm run check:performance && node test/check-assets.test.mjs && node test/config-validation.test.mjs && node test/state-presentation.test.mjs && node test/legacy-popup.test.mjs && node test/data-loading.test.mjs && node test/clustering.test.mjs && node test/controller.test.mjs",
+    "verify:baseline": "npm run check:assets && npm run typecheck && npm run build && npm run test",
+    "build-and-deploy": "vite build && mv dist/assets/index-*.js ../jekyll/public/js/olmap.js && mv dist/assets/index-*.css ../jekyll/public/css/olmap.css",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^5.3.3"
+  },
+  "dependencies": {
+    "gtfs-to-geojson": "^3.8.5",
+    "ol": "10.6.1"
+  }
+}

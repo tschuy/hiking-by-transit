@@ -1,0 +1,9 @@
+{
+  "bundleGzipBytes": 190000,
+  "initialTrailheadBytes": 400000,
+  "visibleListLimit": 250,
+  "firstUsableMapMilliseconds": 2000,
+  "moveEndToListMilliseconds": 100,
+  "longTaskMilliseconds": 50,
+  "retainedRouteTransitionBytes": 1048576
+}

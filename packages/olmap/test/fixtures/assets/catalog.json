@@ -1,0 +1,3 @@
+{
+  "hikes": [{ "slug": "fixture-hike", "gpx": "fixture-hike.gpx" }]
+}

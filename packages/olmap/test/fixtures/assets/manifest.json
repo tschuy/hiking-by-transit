@@ -1,0 +1,4 @@
+{
+  "catalogs": ["catalog.json"],
+  "required": ["pin.png"]
+}

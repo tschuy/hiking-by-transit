@@ -1,0 +1,117 @@
+.olmap-root {
+  --olmap-control-background: #fff;
+  --olmap-popup-background: #fff;
+  --olmap-popup-border: #ccc;
+  --olmap-popup-color: #313131;
+  --olmap-info-background: #333;
+  --olmap-info-color: #fff;
+  --olmap-focus-color: #1261a0;
+  --olmap-font-family: inherit;
+}
+
+.olmap-root .olmap-filter-form {
+  font-family: var(--olmap-font-family);
+}
+
+.olmap-root .olmap-map {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+@media (min-width: 1400px) {
+  .olmap-root .olmap-map {
+    height: 800px;
+  }
+}
+
+.olmap-root .olmap-info {
+  position: absolute;
+  display: inline-block;
+  z-index: 100;
+  max-width: min(24rem, calc(100% - 2rem));
+  background-color: var(--olmap-info-background);
+  color: var(--olmap-info-color);
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  transform: translateX(3%);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.olmap-root .olmap-popup {
+  position: absolute;
+  min-width: 280px;
+  max-width: min(24rem, calc(100vw - 2rem));
+  padding: 10px;
+  border: 1px solid var(--olmap-popup-border);
+  border-radius: 10px;
+  bottom: 12px;
+  left: -50px;
+  background-color: var(--olmap-popup-background);
+  color: var(--olmap-popup-color);
+  filter: drop-shadow(0 1px 4px rgb(0 0 0 / 20%));
+  font-family: var(--olmap-font-family);
+}
+
+.olmap-root .olmap-popup h3,
+.olmap-root .olmap-popup h4 {
+  color: var(--olmap-popup-color);
+}
+
+.olmap-root .olmap-popup-content {
+  margin-top: -10px;
+}
+
+.olmap-root .olmap-popup::after,
+.olmap-root .olmap-popup::before {
+  position: absolute;
+  top: 100%;
+  left: 48px;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  content: "";
+  pointer-events: none;
+}
+
+.olmap-root .olmap-popup::after {
+  margin-left: -10px;
+  border-width: 10px;
+  border-top-color: var(--olmap-popup-background);
+}
+
+.olmap-root .olmap-popup::before {
+  margin-left: -11px;
+  border-width: 11px;
+  border-top-color: var(--olmap-popup-border);
+}
+
+.olmap-root .olmap-popup-closer {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  text-decoration: none;
+}
+
+.olmap-root .olmap-popup-closer::after {
+  content: "✖";
+}
+
+.olmap-root :is(a, button, input, select, textarea):focus-visible,
+.olmap-root .ol-control button:focus-visible {
+  outline: 3px solid var(--olmap-focus-color);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .olmap-root *,
+  .olmap-root *::before,
+  .olmap-root *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

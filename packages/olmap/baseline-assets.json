@@ -1,0 +1,11 @@
+{
+  "catalogs": [
+    "../../src/data/content.generated.json"
+  ],
+  "required": [
+    "geojson/southern_california.geojson",
+    "gpx/crosstown.gpx",
+    "gpx/doublecross.gpx",
+    "pin.png"
+  ]
+}
