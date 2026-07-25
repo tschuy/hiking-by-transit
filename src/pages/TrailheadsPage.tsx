@@ -8,7 +8,7 @@ export function TrailheadsPage() {
   const methodology = getPageContent('about-data')
   return (
     <section className="page container">
-      <div className="section-heading trailhead-heading"><div><p className="eyebrow">Statewide explorer</p><h1>Transit-accessible trailheads</h1><p className="page-lede">Explore all known access points across California, including trailheads without a curated hike guide.</p></div><span className="view-label" aria-label="Current view">Map view</span></div>
+      <div className="section-heading trailhead-heading"><div><p className="eyebrow">Statewide explorer</p><h1>Transit-accessible trailheads</h1><p className="page-lede">Explore all transit-accessible trailheads across California, including trailheads without a curated hike guide.</p></div><span className="view-label" aria-label="Current view">Map view</span></div>
 
       <TrailheadMap />
 

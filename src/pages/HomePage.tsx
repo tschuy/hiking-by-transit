@@ -2,7 +2,6 @@ import { SearchForm } from '../components/SearchForm'
 import { ContentHikeCard } from '../components/ContentHikeCard'
 import { HeroSlideshow } from '../components/HeroSlideshow'
 import { hikeContent, placeContent, postContent } from '../data/content'
-import { trailheads } from '../data/trails'
 
 export function HomePage() {
   const bayAreaRegions = placeContent.filter((place) => place.parent_id === 'bay-area')
@@ -51,14 +50,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="trailhead-callout" aria-labelledby="trailheads-title">
-        <div className="container trailhead-callout-inner">
-          <div><p className="eyebrow">The complete reference</p><h2 id="trailheads-title">Browse every trailhead</h2><p>Explore the growing statewide dataset—even when a trailhead does not yet have a full hike guide.</p></div>
-          <div className="dataset-summary"><strong>{trailheads.length}</strong><span>sample trailheads in the current fixture set</span><a className="button-link button-light" href="/trailheads">Open the statewide explorer</a></div>
-        </div>
-      </section>
-
-      <section className="section container" aria-labelledby="latest-posts-title"><div className="section-heading"><div><p className="eyebrow">From Hiking by Transit</p><h2 id="latest-posts-title">Latest posts</h2></div><a href="/posts">View all posts <span aria-hidden="true">→</span></a></div><div className="post-list post-list-home">{postContent.slice(0, 3).map((post) => <article className="post-card" key={post.url}>{post.image && <img src={`/assets/${post.image}`} alt="" loading="lazy" />}<div><time dateTime={post.date}>{post.date}</time><h3><a href={post.url}>{post.title}</a></h3></div></article>)}</div></section>
+      <section className="section container" aria-labelledby="latest-posts-title"><div className="section-heading"><div><p className="eyebrow">From Hiking by Transit</p><h2 id="latest-posts-title">Latest posts</h2></div><a href="/posts">View all posts <span aria-hidden="true">→</span></a></div><div className="post-list post-list-home">{postContent.slice(0, 3).map((post) => <article className={`post-card${post.image ? '' : ' post-card-no-image'}`} key={post.url}>{post.image && <img src={`/assets/${post.image}`} alt="" loading="lazy" />}<div><time dateTime={post.date}>{post.date}</time><h3><a href={post.url}>{post.title}</a></h3></div></article>)}</div></section>
     </>
   )
 }
