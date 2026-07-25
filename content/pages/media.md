@@ -10,7 +10,7 @@ This page is really for me. It's been exciting to see so much positive feedback,
 <hr>
 
 <p class="message">
-<b><a href="https://www.sfgate.com/travel/article/bay-area-transit-map-22326017.php">The most sophisticated transit map for the entire Bay Area is here</a></b> SFGATE, 5 July 2026. <a href="https://web.archive.org/web/20260706042113/https://www.sfgate.com/travel/article/bay-area-transit-map-22326017.php">(Archive link)</a>
+<b><a href="https://www.sfgate.com/travel/article/bay-area-transit-map-22326017.php">The most sophisticated transit map for the entire Bay Area is here</a></b>, SFGATE, 5 July 2026. <a href="https://web.archive.org/web/20260706042113/https://www.sfgate.com/travel/article/bay-area-transit-map-22326017.php">(Archive link)</a>
 </p>
 
 <hr>

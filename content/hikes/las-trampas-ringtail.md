@@ -46,6 +46,7 @@ map-embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6301.86139954454
 hike-link: https://www.google.com/maps/dir/Ringtail+Cat+Staging+Area,+560+Hemme+Ave,+Alamo,+CA+94507/Las+Trampas+Ridge+Trail,+California/Las+Trampas+-+Del+Amigo+Trail+Entrance/@37.8255865,-122.041451,15z/data=!4m20!4m19!1m5!1m1!1s0x808f8b0c747dcacf:0x35317ef68b6c42f7!2m2!1d-122.0323545!2d37.8368145!1m5!1m1!1s0x808f8bb9b706bd7f:0x1d7941366248fa97!2m2!1d-122.0516494!2d37.8251128!1m5!1m1!1s0x808f8b6109523001:0x5676972dbecb168f!2m2!1d-122.0195996!2d37.8205437!3e2!5m1!1e4
 park-link: https://www.ebparks.org/parks/las-trampas
 image: las-trampas.jpg
+blurb: Climb the rocky ridgeline from suburban Danville up into a rugged East Bay classic.
 ---
 
 County Connection buses 21 (weekday) and 321 (weekend) serve this trailhead. Transfer at Walnut Creek BART.

@@ -6,6 +6,7 @@ title: East Bay
 kind: region
 parent_id: bay-area
 image: mt-diablo.jpg
+blurb: test
 ---
 
 The East Bay contains everything from swampy wetlands to redwood forests and rolling grass hills. Every season and every preserve has its own individual style, its own best places to see, and its own small details to enjoy.

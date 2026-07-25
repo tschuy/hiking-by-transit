@@ -32,6 +32,7 @@ map-embed: https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3169.9490150775
 hike-link: https://www.google.com/maps/dir/37.391038,-121.842267/37.4038842,-121.7926494/@37.3976694,-121.8277441,15z/data=!3m1!4b1!4m2!4m1!3e2
 park-link: https://www.sanjoseca.gov/Home/Components/FacilityDirectory/FacilityDirectory/2088/2028
 image: alum-rock.jpg
+blurb: The Penitencia Creek Trail runs all the way from Berryessa BART into Alum Rock Park, and then up the narrow canyon parallel to the roadway
 ---
 
 The Penitencia Creek Trail runs all the way from Berryessa BART into Alum Rock Park, and then up the narrow canyon parallel to the roadway. This hike joins the trail about a mile from the entrance to the park itself, where the trail runs along ponds and the channelized creek by the same name. Inside the park, the trail tends to follow the alignment of an old railway, used for getting San José residents out of town and up to the canyon's mineral water resorts. Ruins of those baths exist along the trail, as do ruins of the railroad itself, and services like playgrounds and picnic tables. Turn around whenever you feel like, or head back until the trail turns up the side of the canyon.

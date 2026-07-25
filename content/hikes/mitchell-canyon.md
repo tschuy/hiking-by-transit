@@ -37,6 +37,7 @@ map-embed: https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6294.04512062133
 hike-link: https://www.google.com/maps/dir/Marsh+Creek+Rd+And+El+Molino+Dr,+Clayton,+CA+94517/Mount+Diablo+Summit+Museum+and+Trailhead,+Summit+Road,+Walnut+Creek,+Calif%C3%B2rnia/@37.9049345,-121.9399523,14z/data=!4m14!4m13!1m5!1m1!1s0x80855f691cfb2217:0xcc67d97f7f456976!2m2!1d-121.92825!2d37.93391!1m5!1m1!1s0x80855f7c2bf2dd29:0xb96e264748dc5303!2m2!1d-121.9142302!2d37.8817969!3e2!5m1!1e3
 park-link: https://www.parks.ca.gov/?page_id=517
 image: mt-diablo.jpg
+blurb: Mount Diablo State Park is the crown jewel of the East Bay. On a clear day, from the summit, 40 of California's 58 counties can be seen, from the Golden Gate Bridge to the Sentinel Dome of Yosemite Valley (provided you have good binoculars).
 ---
 
 Mount Diablo State Park is the crown jewel of the East Bay. On a clear day, from the summit, 40 of California's 58 counties can be seen, from the Golden Gate Bridge to the Sentinel Dome of Yosemite Valley (provided you have good binoculars). On the way up, you'll pass classic East Bay chaparral and grasslands.

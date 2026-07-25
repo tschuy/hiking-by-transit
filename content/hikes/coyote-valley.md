@@ -33,6 +33,7 @@ map-embed: https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3179.23962584066
 hike-link: https://www.alltrails.com/trail/us/california/arrowhead-loop-trail--2
 park-link: https://www.openspaceauthority.org/preserves/coyotevalley.html
 difficulty_human: easy-to-moderate
+blurb: Coyote Valley Open Space Preserve offers views over Morgan Hill from its grassy and oaky shoulder.
 ---
 
 Coyote Valley Open Space Preserve offers views over Morgan Hill from its grassy and oaky shoulder. Unfortunately, this preserve currently has no access into nearby Rancho Cañada del Oro, nor into the bordering Tilton Ranch Preserve, which was recently acquired and is in the early stages of being publicly managed.
