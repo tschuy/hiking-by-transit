@@ -1543,7 +1543,7 @@
       "title": "Bay Area",
       "kind": "region",
       "parent_id": "california",
-      "body": "The San Francisco Bay Area combines a dense regional transit network with an extraordinary variety of nearby landscapes. Ferries, trains, and buses reach urban ridgelines, coastal headlands, redwood forests, wetlands, and the oak-covered hills surrounding the Bay.\n\nBrowse San Francisco, Marin, the East Bay, the Peninsula, and the South Bay for regional guidance and curated hikes. Each hike guide pairs a trail route with the transit itinerary needed to reach it."
+      "body": "The San Francisco Bay Area is one of the nation's most important biodiversity hotspots, with every corner feeling like a different world. Thanks to the region's strong environmentalist movement, these lands are public and yours to explore, and thanks to the region's strong transit network, you can get there without having to get in a car."
     },
     {
       "layout": "place",
@@ -1551,7 +1551,7 @@
       "slug": "california",
       "title": "California",
       "kind": "region",
-      "body": "This place guide needs to be filled out."
+      "body": "California's natural landscapes are famous, and from the redwood forests to the shoreline waters this is for good reason. The state has a wealth of unique and bold flora and fauna across bold landforms.\n\nWhether you want to go for a hike in your backyard, take a bus into the heart of Yosemite National Park, or go for a multi-day backpacking trip, California's public lands are open and accessible."
     },
     {
       "layout": "place",
@@ -1572,7 +1572,6 @@
       "kind": "region",
       "parent_id": "bay-area",
       "image": "mt-diablo.jpg",
-      "blurb": "test",
       "body": "The East Bay contains everything from swampy wetlands to redwood forests and rolling grass hills. Every season and every preserve has its own individual style, its own best places to see, and its own small details to enjoy.\n\nThe heart of the Bay Area's transit system is BART, whose lines cross through Oakland on their way to every end of the East Bay. Take the Red Line toward Berkeley for Tilden and Wildcat, the Yellow Line toward Mount Diablo and Black Diamond Mines, the Blue Line toward Dublin Canyon, or the Green Line toward Mission Peak. No matter where you go for a hike, the East Bay is sure to delight. Just don't forget the sunscreen.\n\n## Inner East Bay\n\nHikes in the Berkeley and Oakland Hills and the Lamorinda area offer redwoods, eucalyptus groves, reservoirs, and broad views close to the region's urban core.\n\n## Outer East Bay\n\nBeyond Lamorinda, from Danville to Antioch, oak woodlands and exposed rolling grasslands define a hotter and more expansive landscape.\n\n## Southern East Bay\n\nThe hills around Hayward through Fremont provide creek corridors, historic ranchland, and challenging climbs above the southern Bay."
     },
     {

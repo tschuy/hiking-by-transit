@@ -11,26 +11,26 @@ export function HomePage() {
   return (
     <>
       <section className="hero-section">
+        <HeroSlideshow />
         <div className="container hero-grid">
-          <div>
+          <div className="hero-content">
             <h1>Take transit to the trail.</h1>
             <p className="hero-copy">Find California hikes, parks, and trailheads you can reach by bus, train, or ferry.</p>
             <a className="hero-map-cta" href="/trailheads">
               <span className="hero-map-icon" aria-hidden="true">
                 <svg viewBox="0 0 48 48" role="img"><path d="m4 10 12-5 16 6 12-5v32l-12 5-16-6-12 5V10Z" /><path d="M16 5v32m16-26v32" /><circle cx="25" cy="23" r="4" /><path d="M25 27c-4-4-6-7-6-10a6 6 0 0 1 12 0c0 3-2 6-6 10Z" /></svg>
               </span>
-              <span className="hero-map-copy"><strong>Explore the trailhead map</strong><span>Browse every transit-accessible trailhead across California</span></span>
+              <span className="hero-map-copy"><strong>Explore the map</strong><span>Browse transit-accessible hikes and trailheads across California</span></span>
               <span className="hero-map-arrow" aria-hidden="true">→</span>
             </a>
             <SearchForm />
           </div>
-          <HeroSlideshow />
         </div>
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">
         <div className="section-heading">
-          <div><p className="eyebrow">Recommended nearby trips</p><h2 id="bay-area-title">Hike the Bay Area</h2></div>
+          <div><p className="eyebrow">Recommended hikes</p><h2 id="bay-area-title">Hike the Bay Area</h2></div>
           <p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p>
         </div>
         <nav className="region-list" aria-label="Bay Area subregions">

@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
 
 const slides = [
-  { file: 'las-trampas.jpg', alt: 'A hiker overlooking the rolling hills at Las Trampas' },
-  { file: 'black-diamond.jpg', alt: 'Grasslands and wooded hills at Black Diamond Mines' },
-  { file: 'tahoe.jpg', alt: 'Lake Tahoe surrounded by the Sierra Nevada' },
-  { file: 'yosemite.jpg', alt: 'Granite cliffs and forest in Yosemite National Park' },
+  { file: 'las-trampas.jpg', alt: 'Diablo seen from the rolling hills at Las Trampas' },
+  { file: 'black-diamond.jpg', alt: 'Diablo seen from grasslands and wooded hills at Black Diamond Mines' },
+  { file: 'tahoe.jpg', alt: 'Craggy, snowy peaks at Desolation Wilderness seen from across Lake Tahoe' },
+  { file: 'yosemite.jpg', alt: 'Half Dome seen from across Yosemite Valley' },
 ]
 
 export function HeroSlideshow() {
@@ -15,5 +15,5 @@ export function HeroSlideshow() {
     return () => window.clearInterval(timer)
   }, [])
 
-  return <div className="hero-slideshow"><img src={`/assets/${slides[active].file}`} alt={slides[active].alt} /><div className="slideshow-controls" aria-label="Choose hero photo">{slides.map((slide, index) => <button type="button" className={index === active ? 'active' : ''} aria-label={`Show ${slide.alt.toLowerCase()}`} aria-pressed={index === active} onClick={() => setActive(index)} key={slide.file} />)}</div></div>
+  return <div className="hero-slideshow"><img src={`/assets/${slides[active].file}`} alt="" key={slides[active].file} /><div className="slideshow-controls" aria-label="Choose hero photo">{slides.map((slide, index) => <button type="button" className={index === active ? 'active' : ''} aria-label={`Show ${slide.alt.toLowerCase()}`} aria-pressed={index === active} onClick={() => setActive(index)} key={slide.file} />)}</div></div>
 }

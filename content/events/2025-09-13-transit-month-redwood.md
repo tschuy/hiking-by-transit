@@ -9,6 +9,4 @@ Come celebrate the launch of AC Transit service to Redwood Regional Park with Hi
 
 AC Transit is bringing back bus service to the East Bay Hills reigonal parks for the first time since 2020 with Line 31. Celebrate by exploring the East Bay's finest redwood park.
 
-More information on the event coming soon, check back in coming weeks!
-
 Register on [Luma](https://lu.ma/jcoyi4eq)!

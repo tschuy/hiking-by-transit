@@ -7,6 +7,4 @@ kind: region
 parent_id: california
 ---
 
-The San Francisco Bay Area combines a dense regional transit network with an extraordinary variety of nearby landscapes. Ferries, trains, and buses reach urban ridgelines, coastal headlands, redwood forests, wetlands, and the oak-covered hills surrounding the Bay.
-
-Browse San Francisco, Marin, the East Bay, the Peninsula, and the South Bay for regional guidance and curated hikes. Each hike guide pairs a trail route with the transit itinerary needed to reach it.
+The San Francisco Bay Area is one of the nation's most important biodiversity hotspots, with every corner feeling like a different world. Thanks to the region's strong environmentalist movement, these lands are public and yours to explore, and thanks to the region's strong transit network, you can get there without having to get in a car.
