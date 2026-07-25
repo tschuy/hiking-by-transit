@@ -1,0 +1,1 @@
+export const mailingListUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdAlFGvGSKRyt6ri-lLNEvcCkrHgNATMYvdxIZw-bfXFIZOHg/viewform?entry.839337160=Emails+about+upcoming+transit-accessible+hike+events'

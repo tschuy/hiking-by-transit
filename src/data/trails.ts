@@ -1,0 +1,371 @@
+import type { Park, Place, Region, Trail, Trailhead, Trip } from '../types/trails'
+
+export const regions: Region[] = [
+  {
+    slug: 'california',
+    name: 'California',
+    description: 'Statewide transit-accessible trailhead coverage, from coastal parks to the Sierra Nevada.',
+    kind: 'state',
+    featured: false,
+  },
+  {
+    slug: 'bay-area',
+    name: 'Bay Area',
+    description: 'The most complete collection of recommended hikes, organized by Bay subregion.',
+    parentSlug: 'california',
+    kind: 'macroregion',
+    featured: false,
+  },
+  {
+    slug: 'east-bay',
+    name: 'East Bay',
+    description: 'Ridgelines, redwoods, and open-space preserves connected to BART and local buses.',
+    parentSlug: 'bay-area',
+    kind: 'subregion',
+    featured: false,
+  },
+  {
+    slug: 'marin',
+    name: 'Marin',
+    description: 'Coastal headlands and wooded slopes reached by bus and ferry connections.',
+    parentSlug: 'bay-area',
+    kind: 'subregion',
+    featured: false,
+  },
+  {
+    slug: 'peninsula',
+    name: 'Peninsula',
+    description: 'Bay views and forest trails accessible from Caltrain and connecting buses.',
+    parentSlug: 'bay-area',
+    kind: 'subregion',
+    featured: false,
+  },
+  {
+    slug: 'san-francisco',
+    name: 'San Francisco',
+    description: 'Urban ridgelines, coastal paths, and large parks connected by frequent local transit.',
+    parentSlug: 'bay-area',
+    kind: 'subregion',
+    featured: false,
+  },
+  {
+    slug: 'south-bay',
+    name: 'South Bay',
+    description: 'Foothill preserves and mountain routes reached through San José and nearby cities.',
+    parentSlug: 'bay-area',
+    kind: 'subregion',
+    featured: false,
+  },
+  {
+    slug: 'tahoe',
+    name: 'Tahoe',
+    description: 'High-elevation lake and mountain trails served by regional buses and seasonal connections.',
+    parentSlug: 'california',
+    kind: 'macroregion',
+    featured: true,
+  },
+  {
+    slug: 'lost-sierra',
+    name: 'Lost Sierra',
+    description: 'Quiet mountain communities, long-distance trails, and limited rural transit worth planning around.',
+    parentSlug: 'california',
+    kind: 'macroregion',
+    featured: true,
+  },
+  {
+    slug: 'north-coast',
+    name: 'North Coast',
+    description: 'Redwood forests and rugged coastline connected by intercity and local bus routes.',
+    parentSlug: 'california',
+    kind: 'macroregion',
+    featured: true,
+  },
+]
+
+export const parks: Park[] = [
+  {
+    slug: 'tilden-regional-park',
+    name: 'Tilden Regional Park',
+    regionSlug: 'east-bay',
+    description: 'A varied regional park with eucalyptus groves, lake paths, and broad Bay views.',
+    destination: false,
+  },
+  {
+    slug: 'tennessee-valley',
+    name: 'Tennessee Valley',
+    regionSlug: 'marin',
+    description: 'A gentle valley route leading to a small beach in the Marin Headlands.',
+    destination: false,
+  },
+  {
+    slug: 'san-bruno-mountain',
+    name: 'San Bruno Mountain State Park',
+    regionSlug: 'peninsula',
+    description: 'Wind-swept grasslands with expansive views over San Francisco and the Bay.',
+    destination: false,
+  },
+  {
+    slug: 'yosemite-national-park',
+    name: 'Yosemite National Park',
+    regionSlug: 'california',
+    description: 'A world-famous Sierra destination reached seasonally by regional bus, with an internal shuttle network.',
+    destination: true,
+  },
+  {
+    slug: 'channel-islands-national-park',
+    name: 'Channel Islands National Park',
+    regionSlug: 'california',
+    description: 'Island hiking that combines intercity transit, harbor connections, and reserved boat service.',
+    destination: true,
+  },
+  {
+    slug: 'redwood-national-state-parks',
+    name: 'Redwood National and State Parks',
+    regionSlug: 'north-coast',
+    description: 'Ancient redwood groves and coastal trails linked by rural North Coast bus services.',
+    destination: true,
+  },
+  {
+    slug: 'tahoe-state-recreation-area',
+    name: 'Tahoe State Recreation Area',
+    regionSlug: 'tahoe',
+    description: 'Lakeside recreation and regional trail connections in the heart of Tahoe City.',
+    destination: false,
+  },
+  {
+    slug: 'plumas-national-forest',
+    name: 'Plumas National Forest',
+    regionSlug: 'lost-sierra',
+    description: 'Mountain trails, lakes, and forest access surrounding Quincy and nearby communities.',
+    destination: false,
+  },
+]
+
+const featuredPlaceSlugs = new Set([
+  'tahoe',
+  'lost-sierra',
+  'north-coast',
+  'yosemite-national-park',
+  'channel-islands-national-park',
+])
+
+export const places: Place[] = [
+  ...regions.map((region): Place => ({
+    slug: region.slug,
+    name: region.name,
+    description: region.description,
+    parentSlug: region.parentSlug,
+    kind: 'region',
+    featured: featuredPlaceSlugs.has(region.slug),
+  })),
+  ...parks.map((park): Place => ({
+    slug: park.slug,
+    name: park.name,
+    description: park.description,
+    parentSlug: park.regionSlug,
+    kind: park.slug === 'plumas-national-forest'
+      ? 'forest'
+      : park.destination
+        ? 'park'
+        : 'recreation-area',
+    featured: featuredPlaceSlugs.has(park.slug),
+  })),
+]
+
+export const trailheads: Trailhead[] = [
+  {
+    slug: 'inspiration-point',
+    name: 'Inspiration Point',
+    coordinates: { latitude: 37.9041, longitude: -122.2447 },
+    parkSlug: 'tilden-regional-park',
+    stopName: 'Grizzly Peak Blvd & Shasta Rd',
+    walkFromStopMinutes: 18,
+    accessibilityNotes: 'The paved Nimitz Way begins at the trailhead; grades vary beyond the first section.',
+    dataOnly: false,
+    transitRoutes: [
+      {
+        agency: 'AC Transit',
+        routeName: 'Line 67',
+        mode: 'Bus',
+        serviceFrequency: 'Every 30–60 minutes',
+        scheduleUrl: 'https://www.actransit.org/',
+      },
+    ],
+  },
+  {
+    slug: 'tennessee-valley-trailhead',
+    name: 'Tennessee Valley Trailhead',
+    coordinates: { latitude: 37.8614, longitude: -122.5354 },
+    parkSlug: 'tennessee-valley',
+    stopName: 'Tennessee Valley Rd & Marin Ave',
+    walkFromStopMinutes: 22,
+    accessibilityNotes: 'The main route is wide and gently graded, with an unpaved final approach to the beach.',
+    dataOnly: false,
+    transitRoutes: [
+      {
+        agency: 'Marin Transit',
+        routeName: 'Route 61',
+        mode: 'Bus',
+        serviceFrequency: 'Check current weekend service',
+        scheduleUrl: 'https://marintransit.org/',
+      },
+    ],
+  },
+  {
+    slug: 'saddle-loop-trailhead',
+    name: 'Saddle Loop Trailhead',
+    coordinates: { latitude: 37.6885, longitude: -122.4352 },
+    parkSlug: 'san-bruno-mountain',
+    stopName: 'Old Mission Rd & Hillside Blvd',
+    walkFromStopMinutes: 25,
+    accessibilityNotes: 'The route includes steep, narrow, and uneven trail sections.',
+    dataOnly: false,
+    transitRoutes: [
+      {
+        agency: 'SamTrans',
+        routeName: 'Route 122',
+        mode: 'Bus',
+        serviceFrequency: 'Every 30–60 minutes',
+        scheduleUrl: 'https://www.samtrans.com/',
+      },
+    ],
+  },
+  {
+    slug: 'tahoe-city-transit-center',
+    name: 'Tahoe City Lakeside Trail Access',
+    coordinates: { latitude: 39.1677, longitude: -120.1437 },
+    parkSlug: 'tahoe-state-recreation-area',
+    stopName: 'Tahoe City Transit Center',
+    walkFromStopMinutes: 4,
+    accessibilityNotes: 'Paved lakeside access is available near the transit center; connecting trails vary.',
+    dataOnly: true,
+    transitRoutes: [{ agency: 'Tahoe Truckee Area Regional Transit', routeName: 'Mainline', mode: 'Bus', serviceFrequency: 'Check current seasonal service', scheduleUrl: 'https://tahoetruckeetransit.com/' }],
+  },
+  {
+    slug: 'quincy-bucks-lake-road',
+    name: 'Quincy Trail Access',
+    coordinates: { latitude: 39.9368, longitude: -120.9472 },
+    parkSlug: 'plumas-national-forest',
+    stopName: 'Quincy Downtown',
+    walkFromStopMinutes: 30,
+    accessibilityNotes: 'This is a rural access point with variable shoulders and uneven trail surfaces.',
+    dataOnly: true,
+    transitRoutes: [{ agency: 'Plumas Transit Systems', routeName: 'Quincy Local', mode: 'Bus', serviceFrequency: 'Limited weekday service', scheduleUrl: 'https://www.plumastransit.com/' }],
+  },
+  {
+    slug: 'prairie-creek-visitor-center',
+    name: 'Prairie Creek Visitor Center',
+    coordinates: { latitude: 41.3639, longitude: -124.0226 },
+    parkSlug: 'redwood-national-state-parks',
+    stopName: 'Prairie Creek Redwoods State Park',
+    walkFromStopMinutes: 2,
+    accessibilityNotes: 'Visitor center paths include accessible surfaces; backcountry trails vary significantly.',
+    dataOnly: true,
+    transitRoutes: [{ agency: 'Redwood Coast Transit', routeName: 'Route 20', mode: 'Bus', serviceFrequency: 'Limited daily service', scheduleUrl: 'https://redwoodcoasttransit.org/' }],
+  },
+  {
+    slug: 'yosemite-valley-visitor-center',
+    name: 'Yosemite Valley Visitor Center',
+    coordinates: { latitude: 37.7487, longitude: -119.5871 },
+    parkSlug: 'yosemite-national-park',
+    stopName: 'Yosemite Valley Visitor Center',
+    walkFromStopMinutes: 1,
+    accessibilityNotes: 'Accessible paved paths connect the stop, visitor center, and nearby valley destinations.',
+    dataOnly: true,
+    transitRoutes: [{ agency: 'YARTS', routeName: 'Highway 140', mode: 'Bus', serviceFrequency: 'Seasonal schedules vary', scheduleUrl: 'https://yarts.com/' }],
+  },
+  {
+    slug: 'ventura-harbor',
+    name: 'Ventura Harbor Island Packers',
+    coordinates: { latitude: 34.242, longitude: -119.2654 },
+    parkSlug: 'channel-islands-national-park',
+    stopName: 'Ventura Harbor Village',
+    walkFromStopMinutes: 8,
+    accessibilityNotes: 'Harbor access is paved; island landing and trail accessibility depend on destination and conditions.',
+    dataOnly: true,
+    transitRoutes: [{ agency: 'Gold Coast Transit', routeName: 'Route 6', mode: 'Bus', serviceFrequency: 'Check connection and boat reservation times', scheduleUrl: 'https://www.gctd.org/' }],
+  },
+]
+
+export const trails: Trail[] = [
+  {
+    slug: 'nimitz-way-loop',
+    name: 'Nimitz Way to Wildcat Peak',
+    trailheadSlug: 'inspiration-point',
+    parkSlug: 'tilden-regional-park',
+    regionSlug: 'east-bay',
+    summary: 'A rolling ridge walk with open Bay views and a peaceful eucalyptus-lined approach.',
+    distanceMiles: 5.2,
+    elevationGainFeet: 720,
+    difficulty: 'Moderate',
+    estimatedDuration: '2.5–3.5 hours',
+    bestSeason: 'Year-round',
+    featured: true,
+  },
+  {
+    slug: 'tennessee-valley-beach',
+    name: 'Tennessee Valley Beach',
+    trailheadSlug: 'tennessee-valley-trailhead',
+    parkSlug: 'tennessee-valley',
+    regionSlug: 'marin',
+    summary: 'Follow a broad valley trail through coastal habitat to a tucked-away Pacific beach.',
+    distanceMiles: 3.4,
+    elevationGainFeet: 170,
+    difficulty: 'Easy',
+    estimatedDuration: '1.5–2 hours',
+    bestSeason: 'Fall through spring',
+    seasonalNotice: 'The final beach approach may be flooded after heavy rain.',
+    featured: true,
+  },
+  {
+    slug: 'san-bruno-summit-loop',
+    name: 'San Bruno Mountain Summit Loop',
+    trailheadSlug: 'saddle-loop-trailhead',
+    parkSlug: 'san-bruno-mountain',
+    regionSlug: 'peninsula',
+    summary: 'A breezy climb through coastal scrub with sweeping city, ocean, and Bay panoramas.',
+    distanceMiles: 4.1,
+    elevationGainFeet: 980,
+    difficulty: 'Hard',
+    estimatedDuration: '2.5–3 hours',
+    bestSeason: 'Spring and fall',
+    featured: true,
+  },
+]
+
+export const trips: Trip[] = [
+  {
+    slug: 'nimitz-way-loop',
+    trailSlug: 'nimitz-way-loop',
+    origin: 'Downtown Berkeley BART',
+    estimatedTransitTime: '35 minutes',
+    transferSummary: 'Take AC Transit Line 67, then walk to Inspiration Point.',
+    returnServiceWarning: 'Service is infrequent in the evening; confirm the last return bus before leaving.',
+    scheduleLastChecked: '2026-07-24',
+  },
+  {
+    slug: 'tennessee-valley-beach',
+    trailSlug: 'tennessee-valley-beach',
+    origin: 'San Francisco',
+    estimatedTransitTime: '75 minutes',
+    transferSummary: 'Connect to Marin Transit, then walk along Tennessee Valley Road.',
+    returnServiceWarning: 'Weekend service varies seasonally; check the agency schedule before departure.',
+    scheduleLastChecked: '2026-07-24',
+  },
+  {
+    slug: 'san-bruno-summit-loop',
+    trailSlug: 'san-bruno-summit-loop',
+    origin: 'Daly City BART',
+    estimatedTransitTime: '30 minutes',
+    transferSummary: 'Take SamTrans Route 122, then walk uphill to the park entrance.',
+    returnServiceWarning: 'Allow extra time for the walk back to the stop before sunset.',
+    scheduleLastChecked: '2026-07-24',
+  },
+]
+
+export const getTrail = (slug: string) => trails.find((trail) => trail.slug === slug)
+export const getTrailhead = (slug: string) => trailheads.find((trailhead) => trailhead.slug === slug)
+export const getPark = (slug: string) => parks.find((park) => park.slug === slug)
+export const getRegion = (slug: string) => regions.find((region) => region.slug === slug)
+export const getTrip = (slug: string) => trips.find((trip) => trip.slug === slug)
+export const getPlace = (slug: string) => places.find((place) => place.slug === slug)
