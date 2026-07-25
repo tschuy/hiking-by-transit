@@ -194,7 +194,8 @@ export type TrailheadMapEvent =
   | { type: 'feature-hover'; feature?: MapFeatureSummary; pixel?: Coordinate }
   | { type: 'feature-select'; feature: MapFeatureDetails }
   | { type: 'selection-clear' }
-  | { type: 'layer-visibility-change'; layerId: string; visible: boolean };
+  | { type: 'layer-visibility-change'; layerId: string; visible: boolean }
+  | { type: 'route-position-change'; coordinate?: Coordinate };
 
 export interface FitToExtentOptions {
   padding?: [number, number, number, number];
@@ -210,6 +211,7 @@ export interface TrailheadMapController {
   fitToExtent(extent: Extent, options?: FitToExtentOptions): void;
   selectFeature(id: string): void;
   activateFeature(id: string): void;
+  setRoutePosition(coordinate?: Coordinate): void;
   clearSelection(): void;
   setHikes(hikes: MapHike[]): void;
   setDataSources(sources: MapDataSource[]): void;

@@ -189,6 +189,20 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
   });
   const baseLayer = new TileLayer({ source: baseSource, properties: { sourceId: 'base', role: 'base' } });
   const layers: Array<TileLayer<OSM | TileArcGISRest> | MapVectorLayer> = [baseLayer];
+  const routePositionSource = new VectorSource<MapFeature>();
+  const routePositionLayer = new VectorLayer<MapVectorSource, MapFeature>({
+    source: routePositionSource,
+    zIndex: 1000,
+    style: new Style({
+      image: new CircleStyle({
+        radius: 7,
+        fill: new Fill({ color: '#f7f2e8' }),
+        stroke: new Stroke({ color: '#174a37', width: 3 }),
+      }),
+    }),
+    properties: { sourceId: 'route-position', role: 'route-position' },
+  });
+  layers.push(routePositionLayer);
 
   let protectedAreaLayer: TileLayer<TileArcGISRest> | undefined;
   if (options.protectedAreaTileSource) {
@@ -672,6 +686,10 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
         feature: result ? normalizeFeatureSummary(presentationInput(result.feature, result.definition)) : undefined,
         pixel: [event.pixel[0], event.pixel[1]],
       });
+      emit({
+        type: 'route-position-change',
+        coordinate: result?.definition.role === 'hike' ? [event.coordinate[0], event.coordinate[1]] : undefined,
+      });
     }),
     map.on('click', (event) => {
       const result = map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
@@ -762,6 +780,11 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       const result = findFeature(id);
       if (result) activate(result.feature, result.definition, true);
     },
+    setRoutePosition: (coordinate) => {
+      if (destroyed) return;
+      routePositionSource.clear(true);
+      if (coordinate) routePositionSource.addFeature(new Feature(new Point(coordinate)));
+    },
     clearSelection: () => {
       if (destroyed) return;
       clearSelected();
@@ -834,6 +857,7 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       popupOverlay?.setPosition(undefined);
       if (popupOverlay) map.removeOverlay(popupOverlay);
       protectedAreaLayer?.getSource()?.clear();
+      routePositionSource.clear(true);
       baseSource.clear();
       map.setTarget(undefined);
       state = { ...state, status: 'idle', visibleTrailheadIds: [] };

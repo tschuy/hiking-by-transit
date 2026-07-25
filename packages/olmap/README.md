@@ -174,8 +174,13 @@ partial errors, retries, filters, and a paginated companion list. No map global,
 fixed DOM ID, or injected bundle/stylesheet is used by the React path.
 
 The adapter serializes validated center, zoom, layer, selection, and map/list
-state into the URL and uses the same component for statewide and Tahoe-scoped
-maps. The legacy entry remains available only for the older static consumer.
+state into the URL and uses the same component for statewide and regional
+scoped maps. The legacy entry remains available only for the older static consumer.
+
+Hike-page GPX embeds reuse the same controller with one injected GeoJSON hike
+source. `setRoutePosition()` and `route-position-change` synchronize the map
+with the host-owned elevation profile without placing chart concerns in the
+framework-independent package.
 
 The map embed for Hiking by Transit is developed separately from the rest of the website, as it requires a proper
 build toolchain.

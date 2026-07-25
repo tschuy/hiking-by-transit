@@ -111,6 +111,8 @@ test('supports independent instances, commands, and idempotent destruction', asy
   first.setLayerVisibility('fixture-layer', true);
   first.setDataSources([]);
   first.refresh();
+  first.setRoutePosition([10, 20]);
+  first.setRoutePosition();
   first.updateSize();
 
   assert.deepEqual(first.getState().view.center, [100, 200]);
