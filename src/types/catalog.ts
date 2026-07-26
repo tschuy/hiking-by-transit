@@ -31,7 +31,7 @@ export interface CatalogTrailhead {
 export interface TrailheadCatalog {
   schemaVersion: '0.9'
   generatedAt: string
-  source: { gpkgPath: string; gpkgSha256: string; contentPath: string; gitRevision: string }
+  source: { gpkgPath: string; gpkgSha256: string; contentPath: string; kmlSources: Array<{ path: string; sha256: string; publicPath: string }>; gitRevision: string }
   counts: { trailheads: number; accessRecords: number; hikes: number; places: number }
   trailheads: CatalogTrailhead[]
   hikes: Array<{ id: string; slug: string; title: string; trailheadIds: string[]; placeIds: string[]; difficulty: string; lengthLabel: string; tags: string[]; gpx: string | null; image: string | null; blurb: string | null }>

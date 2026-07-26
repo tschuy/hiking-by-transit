@@ -34,11 +34,25 @@
     "source": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["gpkgPath", "gpkgSha256", "contentPath", "gitRevision"],
+      "required": ["gpkgPath", "gpkgSha256", "contentPath", "kmlSources", "gitRevision"],
       "properties": {
         "gpkgPath": { "type": "string", "minLength": 1 },
         "gpkgSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
         "contentPath": { "type": "string", "minLength": 1 },
+        "kmlSources": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["path", "sha256", "publicPath"],
+            "properties": {
+              "path": { "type": "string", "minLength": 1 },
+              "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+              "publicPath": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
         "gitRevision": { "type": "string", "minLength": 7 }
       }
     },

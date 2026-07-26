@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import html
 import json
 import re
+import shutil
 import subprocess
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -21,6 +24,9 @@ DEFAULT_GPKG = ROOT / "data" / "transit_accessible_trailheads.gpkg"
 DEFAULT_CONTENT = ROOT / "src" / "data" / "content.generated.json"
 DEFAULT_SCHEMA = ROOT / "data-contract" / "catalog-v0.9.schema.json"
 DEFAULT_OUTPUT = ROOT / "src" / "data" / "catalog-v0.9.generated.json"
+KML_DIRECTORY = ROOT / "data" / "kml"
+PUBLIC_KML_DIRECTORY = ROOT / "public" / "assets" / "kml"
+CANONICAL_KML = ("shuttles.kml", "microtransit.kml", "call-ahead.kml")
 
 
 def nullable(value):
@@ -52,6 +58,55 @@ def git_revision() -> str:
     ).stdout.strip()
 
 
+def plain_kml_description(value: str | None) -> str | None:
+    if not value:
+        return None
+    value = html.unescape(value)
+    value = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
+    value = re.sub(r"<[^>]+>", " ", value)
+    value = re.sub(r"[ \t]+", " ", value)
+    value = re.sub(r"\s*\n\s*", "\n", value).strip()
+    return value or None
+
+
+def read_canonical_kml() -> tuple[list[dict], list[dict]]:
+    records = []
+    sources = []
+    namespace = {"kml": "http://www.opengis.net/kml/2.2"}
+    PUBLIC_KML_DIRECTORY.mkdir(parents=True, exist_ok=True)
+    for filename in CANONICAL_KML:
+        path = KML_DIRECTORY / filename
+        public_path = PUBLIC_KML_DIRECTORY / filename
+        shutil.copyfile(path, public_path)
+        sources.append({
+            "path": str(path.relative_to(ROOT)),
+            "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+            "publicPath": str(public_path.relative_to(ROOT)),
+        })
+        category = path.stem
+        root = ET.parse(path).getroot()
+        for placemark in root.findall(".//kml:Placemark", namespace):
+            name = " ".join((placemark.findtext("kml:name", default="", namespaces=namespace)).split())
+            coordinate_text = placemark.findtext("kml:Point/kml:coordinates", default="", namespaces=namespace).strip()
+            coordinates = [float(value.strip()) for value in coordinate_text.split(",")[:2]]
+            description = plain_kml_description(placemark.findtext("kml:description", namespaces=namespace))
+            identity = hashlib.sha256(f"{category}|{name}|{coordinates[0]:.8f}|{coordinates[1]:.8f}".encode()).hexdigest()[:12].upper()
+            lowered = (description or "").lower()
+            records.append({
+                "id": f"KML_{category.replace('-', '_').upper()}_{identity}",
+                "name": name,
+                "coordinates": coordinates,
+                "notes": description,
+                "access": [],
+                "hikeIds": [],
+                "placeIds": [],
+                "serviceDays": [],
+                "reservationRequirement": True if "reservation required" in lowered else "unknown",
+                "seasonalService": True if "seasonal" in lowered or "summer only" in lowered else "unknown",
+            })
+    return records, sources
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--gpkg", type=Path, default=DEFAULT_GPKG)
@@ -63,8 +118,9 @@ def main() -> None:
     content = json.loads(args.content.read_text(encoding="utf-8"))
     trailheads = gpd.read_file(args.gpkg, layer="trailheads", fid_as_index=True).to_crs("EPSG:4326")
     access = gpd.read_file(args.gpkg, layer="transit_stop_access", fid_as_index=True).to_crs("EPSG:4326")
+    kml_records, kml_sources = read_canonical_kml()
 
-    names = [str(value).strip() for value in trailheads["trailhead_name"]]
+    names = [str(value).strip() for value in trailheads["trailhead_name"]] + [record["name"] for record in kml_records]
     slug_counts: dict[str, int] = {}
     for name in names:
         base = slugify(name)
@@ -134,6 +190,12 @@ def main() -> None:
             "seasonalService": "unknown",
         })
 
+    for record in kml_records:
+        base_slug = slugify(record["name"])
+        record["slug"] = base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{record['id'].lower().replace('_', '-')}"
+        records.append(record)
+    records.sort(key=lambda record: (record["name"].casefold(), record["id"]))
+
     places = [{
         "id": place["place_id"],
         "slug": place["slug"],
@@ -149,6 +211,7 @@ def main() -> None:
             "gpkgPath": str(args.gpkg.relative_to(ROOT)),
             "gpkgSha256": hashlib.sha256(args.gpkg.read_bytes()).hexdigest(),
             "contentPath": str(args.content.relative_to(ROOT)),
+            "kmlSources": kml_sources,
             "gitRevision": git_revision(),
         },
         "counts": {

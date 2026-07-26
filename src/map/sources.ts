@@ -58,7 +58,7 @@ export function createMapSources(config: ConfigFile, enabledLayers: ReadonlySet<
       load: async (signal) => {
         const response = await fetch(`/assets/kml/${layerId}.kml`, { signal })
         if (!response.ok) throw new Error(`HTTP ${response.status} for trailhead layer ${layerId}`)
-        return enrichTrailheadKml(await response.text())
+        return enrichTrailheadKml(await response.text(), layerId)
       },
       version: config.dataVersion,
       cachePolicy: 'memory' as const,

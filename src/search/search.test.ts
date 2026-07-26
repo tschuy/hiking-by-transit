@@ -17,7 +17,7 @@ describe('site search', () => {
     expect(searchSite('YOSEMITE').some((result) => result.title.toLowerCase().includes('yosemite'))).toBe(true)
   })
 
-  it('searches authoritative GeoPackage trailheads', () => {
+  it('searches authoritative trailheads', () => {
     expect(searchSite('De Laveaga').some((result) => result.href === '/trailheads/siesta-valley-de-laveaga-trail')).toBe(true)
   })
 })

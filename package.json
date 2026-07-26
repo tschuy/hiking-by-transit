@@ -10,7 +10,7 @@
     "generate:catalog": "python3 scripts/generate-trailhead-catalog.py",
     "check:catalog": "python3 scripts/generate-trailhead-catalog.py --output /tmp/hbt-catalog-v0.9.json",
     "dev": "vite",
-    "build": "npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender",
+    "build": "npm run generate:catalog && npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender",
     "build:client": "tsc -b && vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
     "prerender": "node scripts/prerender.mjs",

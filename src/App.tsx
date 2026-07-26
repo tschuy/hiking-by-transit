@@ -102,7 +102,7 @@ export function resolveRoute(pathname: string): ResolvedRoute {
   const trailheadMatch = normalizedPath.match(/^\/trailheads\/([^/]+)$/)
   if (trailheadMatch) {
     const trailhead = getCatalogTrailhead(decodeURIComponent(trailheadMatch[1]))
-    if (trailhead) return { element: <TrailheadPage slug={trailhead.slug} />, metadata: metadata(trailhead.name, normalizedPath, trailhead.notes ?? descriptions.trailheads) }
+    if (trailhead) return { element: <TrailheadPage slug={trailhead.slug} />, metadata: metadata(trailhead.name, normalizedPath, trailhead.notes && trailhead.notes.length > 20 ? trailhead.notes : descriptions.trailheads) }
   }
 
   const hikeMatch = normalizedPath.match(/^\/(?:trips|hikes)\/([^/]+)$/)

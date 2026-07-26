@@ -2,7 +2,7 @@
 
 ## Status
 
-The application will initially publish the current GeoPackage through the transitional v0.9 static catalog contract. The richer source schema and v1 contract remain the documented future target. Migration and generation scripts should validate source data before publishing artifacts.
+The application publishes the current GeoPackage plus three hand-maintained KML sources through the transitional v0.9 static catalog contract. The richer source schema and v1 contract remain the documented future target. Migration and generation scripts validate source data before publishing artifacts.
 
 Machine-readable contracts:
 
@@ -24,15 +24,23 @@ Version 0.9 deliberately does not require `feed_id`, renamed arrival columns, tr
 
 Authoritative sources:
 
-- `hbt/data/transit_accessible_trailheads.gpkg`
-- `hbt/jekyll/hikes/*.md`
+- `data/transit_accessible_trailheads.gpkg`
+- `data/kml/shuttles.kml`
+- `data/kml/microtransit.kml`
+- `data/kml/call-ahead.kml`
+- `content/hikes/*.md`
 
 Observed GeoPackage structure on 2026-07-25:
 
 | Layer | Geometry | CRS | Rows | Purpose |
 |---|---|---:|---:|---|
 | `trailheads` | Point | EPSG:4326 | 577 | One canonical point per trailhead |
-| `transit_stop_access` | Point | EPSG:4326 | 615 | A transit stop that provides access to a trailhead |
+| `transit_stop_access` | Point | EPSG:4326 | 614 | A transit stop that provides access to a trailhead |
+
+The three canonical KML files contain another 45 hand-maintained trailheads for
+services that are not generated from the GeoPackage. Catalog generation copies
+those exact sources to `public/assets/kml/` and gives their placemarks stable
+KML-scoped IDs and detail-page slugs.
 
 Current `trailheads` columns:
 
@@ -90,6 +98,7 @@ Current Markdown observations:
 |---|---|
 | Trailhead identity, name, point, and source notes | GeoPackage `trailheads` |
 | Stop identity, point, walking connection, and computed service snapshot | GeoPackage `transit_stop_access` |
+| Shuttle, microtransit, and call-ahead trailheads and service notes | Canonical `data/kml/*.kml` files |
 | Hike identity, prose, difficulty, media, GPX reference, and recommended itinerary | Hike Markdown |
 | Hike-to-trailhead relationship | Markdown `trailhead_ids` |
 | Hike-to-place relationship | Markdown `place_ids` |
@@ -247,7 +256,7 @@ Rules:
 
 ## Generated catalog layout
 
-Version 1 may be published as a single catalog because the current 577-trailhead dataset is modest:
+Version 1 may be published as a single catalog because the current combined 622-trailhead dataset is modest:
 
 ```text
 public/data/catalog-v1.json
@@ -273,7 +282,7 @@ The root catalog contains:
 - `generatedAt` — build timestamp.
 - `source` — source file identity, checksums/revisions, and service snapshot dates.
 - `counts` — integrity-friendly entity counts.
-- `trailheads` — normalized GeoPackage trailheads with nested access records.
+- `trailheads` — normalized GeoPackage trailheads with nested access records plus canonical hand-maintained KML trailheads.
 - `hikes` — normalized Markdown metadata, not full rendered article HTML.
 - `places` — place identities and hierarchy.
 
@@ -300,7 +309,7 @@ Routes are exported as arrays. The build currently splits `routes_served` on com
 
 ## Build output and validation sequence
 
-1. Open the GeoPackage read-only.
+1. Open the GeoPackage read-only and parse the three canonical KML sources.
 2. Validate its schema and all required constraints.
 3. Resolve the current duplicate access record before publishing strict version 1 output.
 4. Load place content and build the valid place-ID set.
@@ -313,7 +322,7 @@ Routes are exported as arrays. The build currently splits `routes_served` on com
 11. Sort all arrays deterministically by ID.
 12. Validate the generated object against `catalog-v1.schema.json`.
 13. Write JSON atomically with a source checksum and build timestamp.
-14. Generate search and legacy map artifacts from the same validated inputs.
+14. Copy canonical KML sources to `public/assets/kml/` and generate search and map artifacts from the same validated inputs.
 
 ## Contract evolution
 

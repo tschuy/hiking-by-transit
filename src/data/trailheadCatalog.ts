@@ -25,14 +25,19 @@ export function catalogTrailheadForFeature(featureId: string): CatalogTrailhead 
 }
 
 const coordinateKey = ([longitude, latitude]: [number, number]) => `${longitude.toFixed(6)},${latitude.toFixed(6)}`
-const byCoordinate = new Map(catalogTrailheads.map((trailhead) => [coordinateKey(trailhead.coordinates), trailhead]))
+const byCoordinate = new Map<string, CatalogTrailhead[]>()
+catalogTrailheads.forEach((trailhead) => byCoordinate.set(coordinateKey(trailhead.coordinates), [...(byCoordinate.get(coordinateKey(trailhead.coordinates)) ?? []), trailhead]))
 
-export function enrichTrailheadKml(xml: string): string {
+export function enrichTrailheadKml(xml: string, sourceId?: string): string {
   const document = new DOMParser().parseFromString(xml, 'application/xml')
   for (const placemark of document.querySelectorAll('Placemark')) {
     const coordinates = placemark.querySelector('Point coordinates')?.textContent?.trim().split(',').slice(0, 2).map(Number)
     if (!coordinates || coordinates.length !== 2 || coordinates.some((value) => !Number.isFinite(value))) continue
-    const trailhead = byCoordinate.get(coordinateKey(coordinates as [number, number]))
+    const candidates = byCoordinate.get(coordinateKey(coordinates as [number, number])) ?? []
+    const kmlPrefix = sourceId ? `KML_${sourceId.replaceAll('-', '_').toUpperCase()}_` : undefined
+    const trailhead = (kmlPrefix ? candidates.find((candidate) => candidate.id.startsWith(kmlPrefix)) : undefined)
+      ?? candidates.find((candidate) => !candidate.id.startsWith('KML_'))
+      ?? candidates[0]
     if (!trailhead) continue
     const values: Record<string, string> = {
       trailhead_id: trailhead.id,
