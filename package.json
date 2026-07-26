@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "hiking-by-transit",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,20 +7,23 @@
     "packages/*"
   ],
   "scripts": {
+    "generate": "npm run generate:catalog",
     "generate:catalog": "python3 scripts/generate-trailhead-catalog.py",
-    "check:catalog": "python3 scripts/generate-trailhead-catalog.py --output /tmp/hbt-catalog-v0.9.json",
+    "check:generated": "python3 scripts/generate-trailhead-catalog.py --check",
     "dev": "vite",
-    "build": "npm run generate:catalog && npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender",
+    "build": "npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender && npm run prepare:cloudflare",
     "build:client": "tsc -b && vite build",
     "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
     "prerender": "node scripts/prerender.mjs",
     "check:prerender": "node scripts/check-prerender.mjs",
-    "deploy:dev": "npm run build && node scripts/prepare-cloudflare-assets.mjs && wrangler deploy",
+    "prepare:cloudflare": "node scripts/prepare-cloudflare-assets.mjs",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:preview": "npm run build && wrangler versions upload",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "verify": "npm run check:catalog && npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
+    "verify": "npm run check:generated && npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
   },
   "dependencies": {
     "olmap": "1.0.0",

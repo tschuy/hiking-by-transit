@@ -1,0 +1,4 @@
+# Only needed when regenerating the committed trailhead catalog and public KML.
+geopandas==1.0.1
+jsonschema==4.23.0
+pandas==2.2.3
