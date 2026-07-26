@@ -2,10 +2,12 @@
 layout: page
 page_id: media
 slug: media
-title: Media Coverage
+title: Media
 ---
 
-This page is really for me. It's been exciting to see so much positive feedback, and getting media coverage was definitely not something I expected when I launched this site.
+Reporting on transit, trails, or car-free access to the outdoors? We'd love to hear from you, and can help with background, data, local knowledge, and trip ideas. Reach out at <a href="contact@hikingbytransit.com">contact@hikingbytransit.com</a>.
+
+<h4>Past media coverage</h4>
 
 <hr>
 

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate the frontend content catalog from Markdown source files."""
 
+import argparse
 import json
 import re
 from pathlib import Path
@@ -51,15 +52,28 @@ def read_collection(name: str) -> list[dict]:
     return records
 
 
-catalog = {
-    "hikes": read_collection("hikes"),
-    "places": read_collection("places"),
-    "posts": read_collection("posts"),
-    "guides": read_collection("guides"),
-    "events": read_collection("events"),
-    "pages": read_collection("pages"),
-}
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true", help="fail if the committed catalog is stale without writing it")
+    args = parser.parse_args()
+    catalog = {
+        "hikes": read_collection("hikes"),
+        "places": read_collection("places"),
+        "posts": read_collection("posts"),
+        "guides": read_collection("guides"),
+        "events": read_collection("events"),
+        "pages": read_collection("pages"),
+    }
+    output = ROOT / "src" / "data" / "content.generated.json"
+    serialized = json.dumps(catalog, indent=2, ensure_ascii=False) + "\n"
+    if args.check:
+        if not output.exists() or output.read_text(encoding="utf-8") != serialized:
+            raise SystemExit("Generated content is stale; run `npm run generate` and commit the result.")
+        print("Verified generated content catalog.")
+        return
+    output.write_text(serialized, encoding="utf-8")
+    print(f"Generated {output.relative_to(ROOT)} with {len(catalog['hikes'])} hikes, {len(catalog['places'])} places, {len(catalog['posts'])} posts, {len(catalog['guides'])} guides, {len(catalog['events'])} events, and {len(catalog['pages'])} pages")
 
-output = ROOT / "src" / "data" / "content.generated.json"
-output.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-print(f"Generated {output.relative_to(ROOT)} with {len(catalog['hikes'])} hikes, {len(catalog['places'])} places, {len(catalog['posts'])} posts, {len(catalog['guides'])} guides, {len(catalog['events'])} events, and {len(catalog['pages'])} pages")
+
+if __name__ == "__main__":
+    main()

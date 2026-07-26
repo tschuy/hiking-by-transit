@@ -20,7 +20,7 @@ import { PostsPage } from './pages/PostsPage'
 import { TrailheadsPage } from './pages/TrailheadsPage'
 import { TrailheadPage } from './pages/TrailheadPage'
 import {
-  eventContent, getEventContent, getGuideContent, getHikeContent, getPageContent, getPlaceContent, getPostContent,
+  eventContent, getEventContent, getGuideContent, getGuidePath, getHikeContent, getPageContent, getPlaceContent, getPostContent,
   guideContent, hikeContent, pageContent, placeContent, postContent,
 } from './data/content'
 import { catalogTrailheads, getCatalogTrailhead } from './data/trailheadCatalog'
@@ -73,6 +73,8 @@ const legacyRedirects: Record<string, string> = {
     '/hikes/tahoe': '/places/tahoe',
     '/hikes/yosemite': '/places/yosemite-national-park',
     '/hikes/china-camp': '/places/marin',
+    '/guides/getting-to-marin': '/marin/getting-to-marin',
+    '/guides/samcoast': '/peninsula/samcoast',
 }
 
 export function resolveRoute(pathname: string): ResolvedRoute {
@@ -141,7 +143,7 @@ export const prerenderPaths = [...new Set([
   ...pageContent.map((page) => `/${page.slug}`),
   ...hikeContent.map((hike) => `/hikes/${hike.slug}`),
   ...placeContent.filter((place) => place.place_id !== 'california').map((place) => `/places/${place.slug}`),
-  ...guideContent.map((guide) => guide.slug === 'getting-to-marin' ? '/marin/getting-to-marin' : guide.slug === 'samcoast' ? '/peninsula/samcoast' : `/guides/${guide.slug}`),
+  ...guideContent.map((guide) => getGuidePath(guide.slug)),
   ...postContent.map((post) => post.url.replace(/\/$/, '') || '/'),
   ...eventContent.map((event) => event.url.replace(/\/$/, '')),
   ...catalogTrailheads.map((trailhead) => `/trailheads/${trailhead.slug}`),

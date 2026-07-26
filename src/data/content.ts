@@ -14,5 +14,10 @@ export const getHikeContent = (slug: string) => hikeContent.find((hike) => hike.
 export const getPlaceContent = (slug: string) => placeContent.find((place) => place.slug === slug)
 export const getPostContent = (date: string, slug: string) => postContent.find((post) => post.date === date && post.slug === slug)
 export const getGuideContent = (slug: string) => guideContent.find((guide) => guide.slug === slug)
+export const getGuidePath = (slug: string) => {
+  if (slug === 'getting-to-marin') return '/marin/getting-to-marin'
+  if (slug === 'samcoast') return '/peninsula/samcoast'
+  return `/guides/${slug}`
+}
 export const getEventContent = (slug: string) => eventContent.find((event) => event.slug === slug || event.url.includes(`/${slug}/`))
 export const getPageContent = (slug: string) => pageContent.find((page) => page.slug === slug)

@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest'
+import { renderToStaticMarkup } from 'react-dom/server'
 import { prerenderPaths, resolveRoute } from './App'
 
 describe('route resolution', () => {
@@ -19,6 +20,13 @@ describe('route resolution', () => {
     expect(resolveRoute('/places/marin/').metadata.title).toBe('Marin · Hiking by Transit')
     expect(resolveRoute('/trailheads/siesta-valley-de-laveaga-trail').metadata.title).toContain('Siesta Valley')
     expect(resolveRoute('/not-a-real-page').metadata.title).toBe('Page not found · Hiking by Transit')
+  })
+
+  it('links place guides to their canonical prerendered paths', () => {
+    const peninsula = renderToStaticMarkup(resolveRoute('/places/peninsula').element)
+    expect(peninsula).toContain('href="/peninsula/samcoast"')
+    expect(prerenderPaths).toContain('/peninsula/samcoast')
+    expect(resolveRoute('/peninsula/samcoast').metadata.title).toContain('SamCoast')
   })
 
   it('keeps post structured data serializable and canonical', () => {

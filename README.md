@@ -14,9 +14,11 @@ npm run deploy         # build and deploy the hiking-by-transit Worker
 ```
 
 `npm run build` is intentionally Node-only and does not rewrite committed data.
-After changing the authoritative GeoPackage, canonical KML, or normalized
-content, run `python3 -m pip install -r requirements-generation.txt` once, then
-run `npm run generate`, review and commit its generated catalog/KML changes,
+During `npm run dev`, edits under `content/` automatically regenerate the
+frontend content catalog and refresh Vite. Before committing content—or after
+changing the authoritative GeoPackage or canonical KML—run
+`python3 -m pip install -r requirements-generation.txt` once, then run
+`npm run generate`, review and commit its generated content/catalog/KML changes,
 and use `npm run check:generated` for a non-mutating freshness check. These
 Python geospatial dependencies are not installed during a Cloudflare build.
 
