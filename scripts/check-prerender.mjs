@@ -14,6 +14,8 @@ for (const pathname of prerenderPaths) {
   if (!/<main id="main-content">[\s\S]+<\/main>/.test(html)) failures.push(`${pathname}: empty main content`)
   if (!/<title>(?!Hiking by Transit<\/title>).*<\/title>/.test(html) && pathname !== '/') failures.push(`${pathname}: generic or missing title`)
   if (!/<link rel="canonical" href="https:\/\/hikingbytransit\.com\//.test(html)) failures.push(`${pathname}: missing canonical URL`)
+  if (!/<meta property="og:image" content="https:\/\/[^\"]+" \/>/.test(html)) failures.push(`${pathname}: missing Open Graph image`)
+  if (!html.includes('<meta name="twitter:card" content="summary_large_image" />')) failures.push(`${pathname}: missing Twitter card`)
   if (!/<script type="module" crossorigin src="\/assets\//.test(html)) failures.push(`${pathname}: missing hydration bundle`)
 }
 

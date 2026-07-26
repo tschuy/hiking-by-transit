@@ -22,7 +22,19 @@ for (const pathname of prerenderPaths) {
   const structuredData = metadata.structuredData
     ? `<script type="application/ld+json">${JSON.stringify(metadata.structuredData).replaceAll('<', '\\u003c')}</script>`
     : ''
-  const headTags = `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />${structuredData}`
+  const socialTags = [
+    '<meta property="og:type" content="website" />',
+    `<meta property="og:site_name" content="Hiking by Transit" />`,
+    `<meta property="og:title" content="${escapeHtml(metadata.title)}" />`,
+    `<meta property="og:description" content="${escapeHtml(metadata.description)}" />`,
+    `<meta property="og:url" content="${escapeHtml(canonicalUrl)}" />`,
+    `<meta property="og:image" content="${escapeHtml(metadata.socialImage)}" />`,
+    '<meta name="twitter:card" content="summary_large_image" />',
+    `<meta name="twitter:title" content="${escapeHtml(metadata.title)}" />`,
+    `<meta name="twitter:description" content="${escapeHtml(metadata.description)}" />`,
+    `<meta name="twitter:image" content="${escapeHtml(metadata.socialImage)}" />`,
+  ].join('')
+  const headTags = `<link rel="canonical" href="${escapeHtml(canonicalUrl)}" />${socialTags}${structuredData}`
   const html = template
     .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(metadata.title)}</title>`)
     .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${escapeHtml(metadata.description)}" />`)

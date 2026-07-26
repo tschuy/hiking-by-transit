@@ -36,4 +36,10 @@ describe('route resolution', () => {
     expect(metadata.structuredData).toMatchObject({ '@type': 'BlogPosting' })
     expect(() => JSON.stringify(metadata.structuredData)).not.toThrow()
   })
+
+  it('selects relevant social images and falls back to the default preview', () => {
+    expect(resolveRoute('/hikes/angel-island').metadata.socialImage).toBe('https://hikingbytransit.com/assets/angel-island.jpg')
+    expect(resolveRoute('/peninsula/samcoast').metadata.socialImage).toBe('https://hikingbytransit.com/assets/samcoast.jpg')
+    expect(resolveRoute('/trailheads').metadata.socialImage).toBe('https://hikingbytransit.com/assets/preview.png')
+  })
 })

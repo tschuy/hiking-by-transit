@@ -32,6 +32,7 @@ export interface RouteMetadata {
   title: string
   description: string
   canonicalPath: string
+  socialImage: string
   structuredData?: Record<string, unknown>
 }
 
@@ -54,8 +55,20 @@ function plainText(value?: string): string | undefined {
   return text ? text.slice(0, 180) : undefined
 }
 
-function metadata(title: string, canonicalPath: string, description = descriptions.home, structuredData?: Record<string, unknown>): RouteMetadata {
-  return { title: title === siteName ? siteName : `${title} · ${siteName}`, description, canonicalPath, structuredData }
+function contentImage(image?: string, body?: string): string | undefined {
+  if (image) return image.startsWith('/') || image.startsWith('http') ? image : `/assets/${image}`
+  return body?.match(/!\[[^\]]*\]\(([^)\s]+)(?:\s+"[^"]*")?\)/)?.[1]
+}
+
+function metadata(title: string, canonicalPath: string, description = descriptions.home, structuredData?: Record<string, unknown>, image?: string): RouteMetadata {
+  const imagePath = image ?? '/assets/preview.png'
+  return {
+    title: title === siteName ? siteName : `${title} · ${siteName}`,
+    description,
+    canonicalPath,
+    socialImage: imagePath.startsWith('http') ? imagePath : `${siteUrl}${imagePath.startsWith('/') ? imagePath : `/${imagePath}`}`,
+    structuredData,
+  }
 }
 
 const legacyRedirects: Record<string, string> = {
@@ -89,16 +102,16 @@ export function resolveRoute(pathname: string): ResolvedRoute {
   if (normalizedPath === '/trailheads') return { element: <TrailheadsPage />, metadata: metadata('Trailhead map', normalizedPath, descriptions.trailheads) }
   if (['/resources', '/media', '/about-data'].includes(normalizedPath)) {
     const page = getPageContent(normalizedPath.slice(1))
-    if (page) return { element: <ContentPage slug={page.slug} />, metadata: metadata(page.title, normalizedPath, plainText(page.body)) }
+    if (page) return { element: <ContentPage slug={page.slug} />, metadata: metadata(page.title, normalizedPath, plainText(page.body), undefined, contentImage(undefined, page.body)) }
   }
   const specialGuides: Record<string, string> = { '/marin/getting-to-marin': 'getting-to-marin', '/peninsula/samcoast': 'samcoast' }
   const specialGuide = specialGuides[normalizedPath] ? getGuideContent(specialGuides[normalizedPath]) : undefined
-  if (specialGuide) return { element: <GuidePage slug={specialGuide.slug} />, metadata: metadata(specialGuide.title, normalizedPath, plainText(specialGuide.body)) }
+  if (specialGuide) return { element: <GuidePage slug={specialGuide.slug} />, metadata: metadata(specialGuide.title, normalizedPath, plainText(specialGuide.body), undefined, contentImage(undefined, specialGuide.body)) }
 
   const eventMatch = normalizedPath.match(/^\/events\/([^/]+)$/)
   if (eventMatch) {
     const event = getEventContent(decodeURIComponent(eventMatch[1]))
-    if (event) return { element: <EventPage slug={event.slug} />, metadata: metadata(event.title, normalizedPath, plainText(event.body)) }
+    if (event) return { element: <EventPage slug={event.slug} />, metadata: metadata(event.title, normalizedPath, plainText(event.body), undefined, contentImage(undefined, event.body)) }
   }
 
   const trailheadMatch = normalizedPath.match(/^\/trailheads\/([^/]+)$/)
@@ -110,7 +123,7 @@ export function resolveRoute(pathname: string): ResolvedRoute {
   const hikeMatch = normalizedPath.match(/^\/(?:trips|hikes)\/([^/]+)$/)
   if (hikeMatch) {
     const hike = getHikeContent(decodeURIComponent(hikeMatch[1]))
-    if (hike) return { element: <HikePage slug={hike.slug} />, metadata: metadata(hike.title, normalizedPath, hike.blurb ?? plainText(hike.body)) }
+    if (hike) return { element: <HikePage slug={hike.slug} />, metadata: metadata(hike.title, normalizedPath, hike.blurb ?? plainText(hike.body), undefined, contentImage(hike.image, hike.body)) }
   }
 
   const postMatch = normalizedPath.match(/^\/(\d{4})\/(\d{2})\/(\d{2})\/([^/]+)$/)
@@ -119,20 +132,20 @@ export function resolveRoute(pathname: string): ResolvedRoute {
     if (post) {
       const canonicalPath = post.url.replace(/\/$/, '') || '/'
       const structuredData = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title, datePublished: post.date, mainEntityOfPage: `${siteUrl}${canonicalPath}`, ...(post.image ? { image: `${siteUrl}/assets/${post.image}` } : {}) }
-      return { element: <PostPage date={post.date} slug={post.slug} />, metadata: metadata(post.title, canonicalPath, plainText(post.body), structuredData) }
+      return { element: <PostPage date={post.date} slug={post.slug} />, metadata: metadata(post.title, canonicalPath, plainText(post.body), structuredData, contentImage(post.image, post.body)) }
     }
   }
 
   const placeMatch = normalizedPath.match(/^\/(?:places|parks|regions)\/([^/]+)$/)
   if (placeMatch) {
     const place = getPlaceContent(decodeURIComponent(placeMatch[1]))
-    if (place) return { element: <PlacePage slug={place.slug} />, metadata: metadata(place.title, normalizedPath, place.blurb ?? plainText(place.body)) }
+    if (place) return { element: <PlacePage slug={place.slug} />, metadata: metadata(place.title, normalizedPath, place.blurb ?? plainText(place.body), undefined, contentImage(place.image, place.body)) }
   }
 
   const guideMatch = normalizedPath.match(/^\/guides\/([^/]+)$/)
   if (guideMatch) {
     const guide = getGuideContent(decodeURIComponent(guideMatch[1]))
-    if (guide) return { element: <GuidePage slug={guide.slug} />, metadata: metadata(guide.title, normalizedPath, plainText(guide.body)) }
+    if (guide) return { element: <GuidePage slug={guide.slug} />, metadata: metadata(guide.title, normalizedPath, plainText(guide.body), undefined, contentImage(undefined, guide.body)) }
   }
 
   return { element: <NotFoundPage />, metadata: metadata('Page not found', normalizedPath) }
