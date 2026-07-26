@@ -174,7 +174,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
       </section>
 
       <aside className="map-filters" aria-label="Map filters">
-        <div className="filter-heading"><div><p className="eyebrow">Map layers</p><h2>Filter the map</h2></div><span>Changes apply instantly</span></div>
+        <div className="filter-heading"><div><p className="eyebrow">Map layers</p><h2>Filter the map</h2></div></div>
         <div className={`filter-columns${isScoped ? ' filter-columns-scoped' : ''}`}>
           <fieldset><legend>Trailhead access by type</legend>{trailheadGroups.map((group) => <div className="map-filter-group" key={group.label}><h3>{group.label}</h3>{group.members.map((name) => trailheadLayers.find((layer) => layer.name === name)).map((item) => item && <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: item.color }} aria-hidden="true" /><span>{item.label}</span></label>)}</div>)}</fieldset>
           <fieldset><legend>Transit and boundaries</legend>

@@ -98,7 +98,6 @@ export function SearchForm() {
           ><span className="result-type">{result.badgeLabel ?? result.type}</span><span className="result-copy"><strong>{result.title}</strong><span>{result.description}</span>{result.detail && <small>{result.detail}</small>}</span><span className="result-arrow" aria-hidden="true">→</span></a>)}
         </div>}
       </div>
-      <p className="field-note">Use the arrow keys to review suggestions and Enter to open one.</p>
     </form>
   )
 }
