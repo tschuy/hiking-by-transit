@@ -6,6 +6,7 @@ import { sanitizeMapHtml } from '../map/sanitizeMapHtml'
 import { catalogTrailheadForFeature, getCatalogHike } from '../data/trailheadCatalog'
 import type { CatalogTrailhead } from '../types/catalog'
 import { formatAccessRoutes } from '../data/transitRouteNames'
+import { formatServiceFrequency } from '../data/transitFrequency'
 
 interface MapCheckbox { name: string; label: string; color?: string }
 
@@ -71,7 +72,8 @@ function CatalogDetails({ trailhead }: { trailhead: CatalogTrailhead }) {
     {trailhead.notes && <p>{trailhead.notes}</p>}
     {trailhead.access.map((access) => {
       const routes = formatAccessRoutes(access)
-      return <div className="map-catalog-stop" key={`${access.id}-${access.sourceFid}`}><strong>Stop: {access.stopName}</strong><p>{access.walkMinutes === null ? 'See access notes' : `${Math.round(access.walkMinutes)} min walk`}</p>{routes.length > 0 && <p>Served by {routes.join(', ')}</p>}{access.notes && <p>{access.notes}</p>}</div>
+      const frequency = formatServiceFrequency(access)
+      return <div className="map-catalog-stop" key={`${access.id}-${access.sourceFid}`}><strong>Stop: {access.stopName}</strong><p>{access.walkMinutes === null ? 'See access notes' : `${Math.round(access.walkMinutes)} min walk`}</p>{routes.length > 0 && <p>Served by {routes.join(', ')}</p>}{routes.length > 0 && frequency.length > 0 && <p>{frequency.join(' · ')}</p>}{access.notes && <p>{access.notes}</p>}</div>
     })}
     {trailhead.hikeIds.map(getCatalogHike).map((hike) => hike && <p key={hike.id}><a href={`/hikes/${hike.slug}`}>Read hike guide: {hike.title} →</a></p>)}
   </div>
