@@ -14,6 +14,14 @@ export interface CatalogAccess {
   routeIds: string[]
 }
 
+export interface CatalogRoute {
+  gtfsSource: string
+  id: string
+  agencyId: string | null
+  shortName: string | null
+  longName: string | null
+}
+
 export interface CatalogTrailhead {
   id: string
   slug: string
@@ -47,4 +55,5 @@ export interface TrailheadCatalog {
   destinations: CatalogDestination[]
   hikes: Array<{ id: string; slug: string; title: string; trailheadIds: string[]; placeIds: string[]; difficulty: string; lengthLabel: string; tags: string[]; gpx: string | null; image: string | null; blurb: string | null }>
   places: Array<{ id: string; slug: string; title: string; kind: string; parentId: string | null; blurb: string | null }>
+  routes: CatalogRoute[]
 }

@@ -5,7 +5,7 @@
   "description": "Transitional contract matching the current GeoPackage without requiring proposed source columns.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "generatedAt", "source", "counts", "trailheads", "destinations", "hikes", "places"],
+  "required": ["schemaVersion", "generatedAt", "source", "counts", "trailheads", "destinations", "hikes", "places", "routes"],
   "properties": {
     "schemaVersion": { "const": "0.9" },
     "generatedAt": { "type": "string", "format": "date-time" },
@@ -14,7 +14,8 @@
     "trailheads": { "type": "array", "items": { "$ref": "#/$defs/trailhead" } },
     "destinations": { "type": "array", "items": { "$ref": "#/$defs/destination" } },
     "hikes": { "type": "array", "items": { "$ref": "#/$defs/hike" } },
-    "places": { "type": "array", "items": { "$ref": "#/$defs/place" } }
+    "places": { "type": "array", "items": { "$ref": "#/$defs/place" } },
+    "routes": { "type": "array", "items": { "$ref": "#/$defs/route" } }
   },
   "$defs": {
     "id": { "type": "string", "minLength": 1, "maxLength": 200 },
@@ -135,6 +136,18 @@
           "uniqueItems": true,
           "items": { "type": "string", "minLength": 1 }
         }
+      }
+    },
+    "route": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gtfsSource", "id", "agencyId", "shortName", "longName"],
+      "properties": {
+        "gtfsSource": { "type": "string", "minLength": 1 },
+        "id": { "type": "string", "minLength": 1 },
+        "agencyId": { "$ref": "#/$defs/nullableText" },
+        "shortName": { "$ref": "#/$defs/nullableText" },
+        "longName": { "$ref": "#/$defs/nullableText" }
       }
     },
     "hike": {

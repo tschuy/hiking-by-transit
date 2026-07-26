@@ -28,6 +28,8 @@ DEFAULT_SCHEMA = ROOT / "data-contract" / "catalog-v0.9.schema.json"
 DEFAULT_OUTPUT = ROOT / "src" / "data" / "catalog-v0.9.generated.json"
 KML_DIRECTORY = ROOT / "data" / "kml"
 PUBLIC_KML_DIRECTORY = ROOT / "public" / "assets" / "kml"
+MAP_CONFIG = ROOT / "public" / "assets" / "data" / "config.json"
+GEOJSON_DIRECTORY = ROOT / "public" / "assets" / "geojson"
 CANONICAL_KML = ("shuttles.kml", "microtransit.kml", "call-ahead.kml")
 
 
@@ -46,6 +48,30 @@ def text(value):
 def number(value):
     value = nullable(value)
     return None if value is None else max(0, float(value))
+
+
+def route_metadata() -> dict[tuple[str, str], dict]:
+    """Index the display fields already bundled with each map GTFS feed."""
+    config = json.loads(MAP_CONFIG.read_text(encoding="utf-8"))
+    metadata: dict[tuple[str, str], dict] = {}
+    for source_id, feed in config["feeds"].items():
+        source_url = feed.get("gtfs", {}).get("url")
+        path = GEOJSON_DIRECTORY / f"{source_id}.geojson"
+        if not source_url or not path.exists():
+            continue
+        geojson = json.loads(path.read_text(encoding="utf-8"))
+        for feature in geojson.get("features", []):
+            for route in feature.get("properties", {}).get("routes", []):
+                route_id = text(route.get("route_id"))
+                if route_id is None:
+                    continue
+                metadata[(source_url, route_id)] = {
+                    "id": route_id,
+                    "agencyId": text(route.get("agency_id")),
+                    "shortName": text(route.get("route_short_name")),
+                    "longName": text(route.get("route_long_name")),
+                }
+    return metadata
 
 
 def slugify(value: str) -> str:
@@ -126,6 +152,7 @@ def main() -> None:
     content = json.loads(args.content.read_text(encoding="utf-8"))
     trailheads = gpd.read_file(args.gpkg, layer="trailheads", fid_as_index=True).to_crs("EPSG:4326")
     access = gpd.read_file(args.gpkg, layer="transit_stop_access", fid_as_index=True).to_crs("EPSG:4326")
+    routes_by_source_and_id = route_metadata()
     kml_records, kml_sources = read_canonical_kml(copy_public=not args.check)
 
     names = [" ".join(str(value).split()) for value in trailheads["trailhead_name"]] + [record["name"] for record in kml_records]
@@ -172,6 +199,7 @@ def main() -> None:
             }
             service_days.update(day for day, count in frequency.items() if count is not None and count > 0)
             route_ids = sorted({route.strip() for route in (text(item.get("routes_served")) or "").split(",") if route.strip()})
+            gtfs_source = text(item.get("gtfs_source"))
             access_records.append({
                 "sourceFid": int(item.name),
                 "id": str(item["access_id"]),
@@ -181,7 +209,7 @@ def main() -> None:
                 "walkMinutes": number(item.get("walk_time_min")),
                 "walkSource": str(item["walk_source"]).strip(),
                 "notes": text(item.get("notes")),
-                "gtfsSource": text(item.get("gtfs_source")),
+                "gtfsSource": gtfs_source,
                 "frequency": frequency,
                 "routeIds": route_ids,
             })
@@ -267,6 +295,12 @@ def main() -> None:
             raise SystemExit(
                 f"Destination {destination['name']} exactly matches place {matching_place['place_id']} but is not listed in its destination_names"
             )
+    used_routes = sorted({
+        (access_record["gtfsSource"], route_id)
+        for record in records for access_record in record["access"] for route_id in access_record["routeIds"]
+        if (access_record["gtfsSource"], route_id) in routes_by_source_and_id
+    })
+    routes = [{"gtfsSource": source, **routes_by_source_and_id[(source, route_id)]} for source, route_id in used_routes]
     catalog = {
         "schemaVersion": "0.9",
         "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
@@ -281,7 +315,7 @@ def main() -> None:
             "trailheads": len(records), "accessRecords": len(access),
             "hikes": len(hikes), "places": len(places), "destinations": len(destinations),
         },
-        "trailheads": records, "destinations": destinations, "hikes": hikes, "places": places,
+        "trailheads": records, "destinations": destinations, "hikes": hikes, "places": places, "routes": routes,
     }
 
     schema = json.loads(args.schema.read_text(encoding="utf-8"))
