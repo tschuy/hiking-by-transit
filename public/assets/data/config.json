@@ -1,4 +1,6 @@
 {
+  "schema_version": "legacy-1",
+  "data_version": "2026-07-21",
   "kml_groups": {
     "hardcoded": {
       "microtransit": {
