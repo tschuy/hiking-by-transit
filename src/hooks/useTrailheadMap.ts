@@ -4,7 +4,6 @@ import type {
   MapFeatureDetails,
   TrailheadMapController,
   TrailheadMapEvent,
-  TrailheadMapFilters,
   TrailheadMapView,
   VisibleFeatureResult,
 } from 'olmap'
@@ -33,21 +32,6 @@ interface TrailheadMapUiState {
 }
 
 const emptyVisible: VisibleFeatureResult = { ids: [], total: 0, limited: false, features: [] }
-
-function readStructuredFilters(): Partial<TrailheadMapFilters> {
-  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
-  const walk = Number(params.get('walk'))
-  const service = params.get('service')
-  const triState = (value: string | null): boolean | 'unknown' | undefined => value === 'yes' ? true : value === 'no' ? false : value === 'unknown' ? 'unknown' : undefined
-  return {
-    maximumWalkMinutes: params.has('walk') && Number.isFinite(walk) && walk >= 0 ? walk : undefined,
-    serviceDays: service === 'weekday' || service === 'weekend' ? [service] : undefined,
-    reservationRequired: triState(params.get('reservation')),
-    seasonalService: triState(params.get('seasonal')),
-    hasHikeGuide: params.get('guide') === 'yes' ? true : params.get('guide') === 'no' ? false : undefined,
-    placeSlugs: params.getAll('place').filter(Boolean),
-  }
-}
 
 function readInitialLayers(transitGroups: string[]): Set<string> {
   if (typeof window === 'undefined') return new Set([...trailheadLayerIds, ...transitGroups])
@@ -94,7 +78,6 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
   const [enabledLayers, setEnabledLayers] = useState(() => new Set([...trailheadLayerIds, ...defaultTransitGroups]))
   const [viewMode, setViewModeState] = useState<MapViewMode>('map')
   const [state, setState] = useState<TrailheadMapUiState>({ loading: true, layers: {}, visible: emptyVisible })
-  const [structuredFilters, setStructuredFiltersState] = useState<Partial<TrailheadMapFilters>>(() => readStructuredFilters())
   const enabledLayersRef = useRef(enabledLayers)
   enabledLayersRef.current = enabledLayers
 
@@ -148,7 +131,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
             ? { latitude: centerLatitude, longitude: centerLongitude, zoom: centerZoom }
             : undefined),
           initialSelectedFeatureId: validFeatureId(params.get('selected')),
-          initialFilters: { ...readStructuredFilters(), showProtectedAreas: enabledLayersRef.current.has('cpad') },
+          initialFilters: { showProtectedAreas: enabledLayersRef.current.has('cpad') },
           tileSource: {
             url: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
             attribution: 'Map data © OpenStreetMap contributors',
@@ -197,23 +180,6 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
     if (mode === 'map') requestAnimationFrame(() => controllerRef.current?.updateSize())
   }, [])
 
-  const setStructuredFilters = useCallback((filters: Partial<TrailheadMapFilters>) => {
-    setStructuredFiltersState(filters)
-    controllerRef.current?.setFilters(filters)
-    replaceQuery((params) => {
-      for (const key of ['walk', 'service', 'reservation', 'seasonal', 'guide', 'place']) params.delete(key)
-      if (filters.maximumWalkMinutes !== undefined) params.set('walk', String(filters.maximumWalkMinutes))
-      if (filters.serviceDays?.[0]) params.set('service', filters.serviceDays[0])
-      const encode = (value: boolean | 'unknown' | undefined) => value === true ? 'yes' : value === false ? 'no' : value
-      const reservation = encode(filters.reservationRequired)
-      const seasonal = encode(filters.seasonalService)
-      if (reservation) params.set('reservation', reservation)
-      if (seasonal) params.set('seasonal', seasonal)
-      if (filters.hasHikeGuide !== undefined) params.set('guide', filters.hasHikeGuide ? 'yes' : 'no')
-      filters.placeSlugs?.forEach((place) => params.append('place', place))
-    })
-  }, [])
-
   return {
     targetRef,
     state,
@@ -221,8 +187,6 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
     viewMode,
     setViewMode,
     setLayerEnabled,
-    structuredFilters,
-    setStructuredFilters,
     selectFeature: (id: string) => controllerRef.current?.selectFeature(id),
     activateFeature: (id: string) => controllerRef.current?.activateFeature(id),
     clearSelection: () => controllerRef.current?.clearSelection(),

@@ -3,7 +3,7 @@ import type { MapAction, MapFeatureDetails, VisibleFeatureState } from 'olmap'
 import 'olmap/styles/openlayers.css'
 import { useTrailheadMap } from '../hooks/useTrailheadMap'
 import { sanitizeMapHtml } from '../map/sanitizeMapHtml'
-import { catalogTrailheadForFeature, getCatalogHike, trailheadCatalog } from '../data/trailheadCatalog'
+import { catalogTrailheadForFeature, getCatalogHike } from '../data/trailheadCatalog'
 import type { CatalogTrailhead } from '../types/catalog'
 import { formatAccessRoutes } from '../data/transitRouteNames'
 
@@ -139,7 +139,7 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
 export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
-    activateFeature, clearSelection, retrySource, structuredFilters, setStructuredFilters,
+    activateFeature, clearSelection, retrySource,
   } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
@@ -178,14 +178,6 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
             {displayedTransit.map((item) => <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><span>{item.label}</span></label>)}
           </fieldset>
         </div>
-        <fieldset className="catalog-filters"><legend>Trailhead details</legend>
-          <label>Place<select value={structuredFilters.placeSlugs?.[0] ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, placeSlugs: event.target.value ? [event.target.value] : undefined })}><option value="">All places</option>{trailheadCatalog.places.filter((place) => place.id !== 'california').map((place) => <option value={place.slug} key={place.id}>{place.title}</option>)}</select></label>
-          <label>Maximum walk time<select value={structuredFilters.maximumWalkMinutes ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, maximumWalkMinutes: event.target.value ? Number(event.target.value) : undefined })}><option value="">Any walk time</option><option value="5">5 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option></select></label>
-          <label>Service days<select value={structuredFilters.serviceDays?.[0] ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, serviceDays: event.target.value ? [event.target.value as 'weekday' | 'weekend'] : undefined })}><option value="">Any service</option><option value="weekday">Weekday service</option><option value="weekend">Weekend service</option></select></label>
-          <label>Reservation requirement<select value={structuredFilters.reservationRequired === undefined ? '' : String(structuredFilters.reservationRequired)} onChange={(event) => setStructuredFilters({ ...structuredFilters, reservationRequired: event.target.value === '' ? undefined : event.target.value === 'unknown' ? 'unknown' : event.target.value === 'true' })}><option value="">Any status</option><option value="true">Required</option><option value="false">Not required</option><option value="unknown">Not yet classified</option></select></label>
-          <label>Seasonal service<select value={structuredFilters.seasonalService === undefined ? '' : String(structuredFilters.seasonalService)} onChange={(event) => setStructuredFilters({ ...structuredFilters, seasonalService: event.target.value === '' ? undefined : event.target.value === 'unknown' ? 'unknown' : event.target.value === 'true' })}><option value="">Any status</option><option value="true">Seasonal</option><option value="false">Year-round</option><option value="unknown">Not yet classified</option></select></label>
-          <label>Hike guide<select value={structuredFilters.hasHikeGuide === undefined ? '' : String(structuredFilters.hasHikeGuide)} onChange={(event) => setStructuredFilters({ ...structuredFilters, hasHikeGuide: event.target.value === '' ? undefined : event.target.value === 'true' })}><option value="">With or without</option><option value="true">Has a hike guide</option><option value="false">No hike guide</option></select></label>
-        </fieldset>
       </aside>
     </div>
 
