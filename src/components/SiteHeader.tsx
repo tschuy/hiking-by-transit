@@ -6,11 +6,11 @@ export function SiteHeader() {
         <a className="wordmark" href="/" aria-label="Hiking by Transit home">Hiking by Transit</a>
         <nav aria-label="Primary navigation">
           <ul className="nav-list">
+            <li><a href="/trailheads">Trailhead map</a></li>
             <li><a href="/hikes">Hikes</a></li>
             <li><a href="/places">Places</a></li>
             <li><a href="/posts">Posts</a></li>
             <li><a href="/events">Events</a></li>
-            <li><a href="/trailheads">Trailhead map</a></li>
           </ul>
         </nav>
       </div>
