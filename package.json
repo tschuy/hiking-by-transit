@@ -7,6 +7,8 @@
     "packages/*"
   ],
   "scripts": {
+    "generate:catalog": "python3 scripts/generate-trailhead-catalog.py",
+    "check:catalog": "python3 scripts/generate-trailhead-catalog.py --output /tmp/hbt-catalog-v0.9.json",
     "dev": "vite",
     "build": "npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender",
     "build:client": "tsc -b && vite build",
@@ -18,7 +20,7 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:e2e": "playwright test",
-    "verify": "npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
+    "verify": "npm run check:catalog && npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
   },
   "dependencies": {
     "olmap": "1.0.0",

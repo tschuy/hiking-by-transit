@@ -17,7 +17,7 @@ describe('route resolution', () => {
 
   it('resolves dynamic metadata and unknown slugs', () => {
     expect(resolveRoute('/places/marin/').metadata.title).toBe('Marin · Hiking by Transit')
-    expect(resolveRoute('/trailheads/inspiration-point').metadata.title).toContain('Inspiration Point')
+    expect(resolveRoute('/trailheads/siesta-valley-de-laveaga-trail').metadata.title).toContain('Siesta Valley')
     expect(resolveRoute('/not-a-real-page').metadata.title).toBe('Page not found · Hiking by Transit')
   })
 

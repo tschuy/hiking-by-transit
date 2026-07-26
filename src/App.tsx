@@ -23,7 +23,7 @@ import {
   eventContent, getEventContent, getGuideContent, getHikeContent, getPageContent, getPlaceContent, getPostContent,
   guideContent, hikeContent, pageContent, placeContent, postContent,
 } from './data/content'
-import { getTrailhead, trailheads } from './data/trails'
+import { catalogTrailheads, getCatalogTrailhead } from './data/trailheadCatalog'
 
 const siteName = 'Hiking by Transit'
 const siteUrl = 'https://hikingbytransit.com'
@@ -101,8 +101,8 @@ export function resolveRoute(pathname: string): ResolvedRoute {
 
   const trailheadMatch = normalizedPath.match(/^\/trailheads\/([^/]+)$/)
   if (trailheadMatch) {
-    const trailhead = getTrailhead(decodeURIComponent(trailheadMatch[1]))
-    if (trailhead) return { element: <TrailheadPage slug={trailhead.slug} />, metadata: metadata(trailhead.name, normalizedPath, trailhead.accessibilityNotes) }
+    const trailhead = getCatalogTrailhead(decodeURIComponent(trailheadMatch[1]))
+    if (trailhead) return { element: <TrailheadPage slug={trailhead.slug} />, metadata: metadata(trailhead.name, normalizedPath, trailhead.notes ?? descriptions.trailheads) }
   }
 
   const hikeMatch = normalizedPath.match(/^\/(?:trips|hikes)\/([^/]+)$/)
@@ -144,7 +144,7 @@ export const prerenderPaths = [...new Set([
   ...guideContent.map((guide) => guide.slug === 'getting-to-marin' ? '/marin/getting-to-marin' : guide.slug === 'samcoast' ? '/peninsula/samcoast' : `/guides/${guide.slug}`),
   ...postContent.map((post) => post.url.replace(/\/$/, '') || '/'),
   ...eventContent.map((event) => event.url.replace(/\/$/, '')),
-  ...trailheads.map((trailhead) => `/trailheads/${trailhead.slug}`),
+  ...catalogTrailheads.map((trailhead) => `/trailheads/${trailhead.slug}`),
 ])].sort()
 
 function App({ pathname }: { pathname: string }) {

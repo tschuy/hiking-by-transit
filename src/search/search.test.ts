@@ -16,4 +16,8 @@ describe('site search', () => {
   it('normalizes case and accents', () => {
     expect(searchSite('YOSEMITE').some((result) => result.title.toLowerCase().includes('yosemite'))).toBe(true)
   })
+
+  it('searches authoritative GeoPackage trailheads', () => {
+    expect(searchSite('De Laveaga').some((result) => result.href === '/trailheads/siesta-valley-de-laveaga-trail')).toBe(true)
+  })
 })

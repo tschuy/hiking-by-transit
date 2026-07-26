@@ -1,5 +1,6 @@
 import type { ConfigFile, MapDataSource, MapHike } from 'olmap'
 import { hikeContent } from '../data/content'
+import { enrichTrailheadKml } from '../data/trailheadCatalog'
 
 const placeRoutes: MapHike[] = [
   {
@@ -54,6 +55,11 @@ export function createMapSources(config: ConfigFile, enabledLayers: ReadonlySet<
       kind: 'kml' as const,
       role: 'trailhead' as const,
       url: `/assets/kml/${layerId}.kml`,
+      load: async (signal) => {
+        const response = await fetch(`/assets/kml/${layerId}.kml`, { signal })
+        if (!response.ok) throw new Error(`HTTP ${response.status} for trailhead layer ${layerId}`)
+        return enrichTrailheadKml(await response.text())
+      },
       version: config.dataVersion,
       cachePolicy: 'memory' as const,
       visible: enabledLayers.has(layerId),

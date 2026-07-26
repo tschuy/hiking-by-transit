@@ -17,6 +17,7 @@
   },
   "$defs": {
     "id": { "type": "string", "minLength": 1, "maxLength": 200 },
+    "trailheadId": { "type": "string", "pattern": "^[A-Za-z0-9_]+$" },
     "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
     "nullableText": { "type": ["string", "null"] },
     "nullableNonNegativeNumber": { "type": ["number", "null"], "minimum": 0 },
@@ -55,13 +56,19 @@
     "trailhead": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "name", "coordinates", "notes", "access"],
+      "required": ["id", "slug", "name", "coordinates", "notes", "access", "hikeIds", "placeIds", "serviceDays", "reservationRequirement", "seasonalService"],
       "properties": {
-        "id": { "type": "string", "pattern": "^TH_[0-9]+$" },
+        "id": { "$ref": "#/$defs/trailheadId" },
+        "slug": { "$ref": "#/$defs/slug" },
         "name": { "type": "string", "minLength": 1 },
         "coordinates": { "$ref": "#/$defs/coordinates" },
         "notes": { "$ref": "#/$defs/nullableText" },
-        "access": { "type": "array", "items": { "$ref": "#/$defs/access" } }
+        "access": { "type": "array", "items": { "$ref": "#/$defs/access" } },
+        "hikeIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "placeIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+        "serviceDays": { "type": "array", "uniqueItems": true, "items": { "enum": ["weekday", "saturday", "sunday"] } },
+        "reservationRequirement": { "enum": [true, false, "unknown"] },
+        "seasonalService": { "enum": [true, false, "unknown"] }
       }
     },
     "access": {
@@ -108,7 +115,7 @@
         "id": { "$ref": "#/$defs/id" },
         "slug": { "$ref": "#/$defs/slug" },
         "title": { "type": "string", "minLength": 1 },
-        "trailheadIds": { "type": "array", "uniqueItems": true, "items": { "type": "string", "pattern": "^TH_[0-9]+$" } },
+        "trailheadIds": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/trailheadId" } },
         "placeIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
         "difficulty": { "enum": ["easy", "moderate", "hard"] },
         "lengthLabel": { "type": "string", "minLength": 1 },

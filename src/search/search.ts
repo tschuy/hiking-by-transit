@@ -1,5 +1,5 @@
 import { eventContent, guideContent, hikeContent, pageContent, placeContent, postContent, visiblePlaceContent } from '../data/content'
-import { getPark, trailheads } from '../data/trails'
+import { catalogTrailheads, getCatalogPlace } from '../data/trailheadCatalog'
 
 export type SearchResultType = 'Event' | 'Guide' | 'Hike' | 'Page' | 'Place' | 'Post' | 'Trailhead'
 
@@ -36,18 +36,18 @@ const searchResults: SearchResult[] = [
   ...eventContent.map((event): SearchResult => ({ id: `event-${event.slug}`, type: 'Event', title: event.title, description: event.event_date, href: event.url, searchableText: `${event.title} ${event.body}` })),
   ...guideContent.map((guide): SearchResult => ({ id: `guide-${guide.slug}`, type: 'Guide', title: guide.title, description: 'Transit planning guide', href: `/guides/${guide.slug}`, searchableText: `${guide.title} ${guide.body}` })),
   ...pageContent.map((page): SearchResult => ({ id: `page-${page.slug}`, type: 'Page', title: page.title, description: 'Hiking by Transit information', href: `/${page.slug}`, searchableText: `${page.title} ${page.body}` })),
-  ...trailheads.map((trailhead): SearchResult => {
-    const park = getPark(trailhead.parkSlug)
-    const transitTerms = trailhead.transitRoutes
-      .flatMap((route) => [route.agency, route.routeName, route.mode])
-      .join(' ')
+  ...catalogTrailheads.map((trailhead): SearchResult => {
+    const placeNames = trailhead.placeIds.map((id) => getCatalogPlace(id)?.title).filter(Boolean)
+    const access = trailhead.access.at(0)
+    const walkMinutes = trailhead.access.map((item) => item.walkMinutes).filter((value): value is number => value !== null).sort((a, b) => a - b).at(0)
+    const transitTerms = trailhead.access.flatMap((item) => item.routeIds).join(' ')
     return {
       id: `trailhead-${trailhead.slug}`,
       type: 'Trailhead',
       title: trailhead.name,
-      description: `${trailhead.walkFromStopMinutes} min from transit${park ? ` · ${park.name}` : ''}`,
+      description: `${walkMinutes === undefined ? 'Special access' : `${Math.round(walkMinutes)} min from transit`}${placeNames.length ? ` · ${placeNames.at(-1)}` : ''}`,
       href: `/trailheads/${trailhead.slug}`,
-      searchableText: `${trailhead.name} ${trailhead.stopName} ${park?.name ?? ''} ${transitTerms}`,
+      searchableText: `${trailhead.name} ${access?.stopName ?? ''} ${placeNames.join(' ')} ${transitTerms}`,
     }
   }),
 ]

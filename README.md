@@ -1,75 +1,63 @@
-# React + TypeScript + Vite
+# Hiking by Transit application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React, TypeScript, and Vite application for the Hiking by Transit site. The
+canonical framework-independent map package lives in `packages/olmap` and is
+linked through the repository's npm workspace.
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Use `npm run build` for application type checking, client and server builds,
+static route generation, and prerender verification. Use `npm run lint` for
+ESLint. The map package has its own full verification command:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm --workspace olmap run verify
 ```
+
+## Static rendering and deployment
+
+The production build prerenders every route in the content catalogs. React
+hydrates that HTML in the browser for maps, search, slideshows, and other
+interaction; page content and navigation remain available without JavaScript.
+
+- `npm run build:client` builds the browser application.
+- `npm run build:ssr` builds the temporary server-rendering entry.
+- `npm run prerender` writes route-specific HTML into `dist`.
+- `npm run check:prerender` verifies content, metadata, and hydration assets.
+- `npm run build` runs the complete sequence.
+- `npm run deploy:dev` builds, prepares large Cloudflare assets, and deploys.
+
+Cloudflare serves generated route files with automatic trailing-slash handling
+and uses the prerendered `404.html` for unknown paths instead of falling back to
+home-page markup.
+
+## Map integration
+
+`src/hooks/useTrailheadMap.ts` is the lifecycle adapter. It dynamically imports
+the `olmap` ESM entry only on pages with a map, fetches and validates the map
+configuration, creates the controller after the target ref mounts, and destroys
+it during effect cleanup. React owns filters, details, result pagination,
+loading, partial errors, and retries; OpenLayers objects never enter React
+state.
+
+Map URL state uses validated query parameters:
+
+- `x`, `y`, and `z` for the projected center and zoom;
+- repeated `layer` values for enabled trailhead/transit/boundary layers;
+- `selected` for the selected feature ID;
+- `view=map|list` for the active accessible view.
+
+The same `TrailheadMap` component supports the statewide page and scoped place
+maps. Data asset URLs are assembled at the application boundary in
+`src/map/sources.ts`; the core package has no application asset-root knowledge.
+
+Hike and post GPX embeds also use `olmap`. `src/map/gpx.ts` parses each GPX once
+into shared route geometry and distance/elevation samples. `GpxMap` sends the
+geometry to the map controller and renders the samples with the accessible
+React/SVG `ElevationProfile`; pointer or keyboard inspection updates a common
+route-position marker. No Leaflet scripts, plugins, or styles are injected.

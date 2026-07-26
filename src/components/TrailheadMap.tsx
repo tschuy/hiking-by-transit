@@ -3,6 +3,8 @@ import type { MapAction, MapFeatureDetails, VisibleFeatureState } from 'olmap'
 import 'olmap/styles/openlayers.css'
 import { useTrailheadMap } from '../hooks/useTrailheadMap'
 import { sanitizeMapHtml } from '../map/sanitizeMapHtml'
+import { catalogTrailheadForFeature, getCatalogHike, trailheadCatalog } from '../data/trailheadCatalog'
+import type { CatalogTrailhead } from '../types/catalog'
 
 interface MapCheckbox { name: string; label: string; color?: string }
 
@@ -63,12 +65,22 @@ function MiniMap({ feature }: { feature: MapFeatureDetails }) {
   return <iframe className="map-mini-map" title={`Small map showing ${feature.name}`} loading="lazy" src={`https://www.openstreetmap.org/export/embed.html?${params}`} />
 }
 
+function CatalogDetails({ trailhead }: { trailhead: CatalogTrailhead }) {
+  return <div className="map-catalog-details">
+    {trailhead.notes && <p>{trailhead.notes}</p>}
+    {trailhead.access.map((access) => <div key={`${access.id}-${access.sourceFid}`}><strong>Stop: {access.stopName}</strong><p>{access.walkMinutes === null ? 'See access notes' : `${Math.round(access.walkMinutes)} min walk`}{access.routeIds.length ? ` · ${access.routeIds.join(', ')}` : ''}</p>{access.notes && <p>{access.notes}</p>}</div>)}
+    {trailhead.hikeIds.map(getCatalogHike).map((hike) => hike && <p key={hike.id}><a href={`/hikes/${hike.slug}`}>Read hike guide: {hike.title} →</a></p>)}
+  </div>
+}
+
 function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatureDetails; includeMiniMap?: boolean }) {
+  const trailhead = feature.kind === 'trailhead' ? catalogTrailheadForFeature(feature.id) : undefined
   return <div className={`map-feature-details map-feature-details-${feature.kind}`}>
     {includeMiniMap && <MiniMap feature={feature} />}
-    {feature.description && <RichDescription html={feature.description} />}
+    {trailhead ? <CatalogDetails trailhead={trailhead} /> : feature.description && <RichDescription html={feature.description} />}
     {feature.kind === 'cluster' && <p>This group contains {feature.clusterSize} trailheads of the same access type. Select it again to zoom in.</p>}
     {feature.actions.length > 0 && <nav className="popup-actions" aria-label="Selection actions">{feature.actions.map((action) => <ActionLink action={action} key={`${action.kind}-${action.url}`} />)}</nav>}
+    {trailhead && <a className="map-action" href={`/trailheads/${trailhead.slug}`}>View trailhead details <span aria-hidden="true">→</span></a>}
   </div>
 }
 
@@ -104,9 +116,10 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
     <ol className="map-result-list" start={safePage * pageSize + 1}>
       {rows.map((feature) => {
         const layer = trailheadLayerById.get(feature.sourceId)
+        const trailhead = catalogTrailheadForFeature(feature.id)
         return <li key={feature.id} className={feature.id === selected?.id ? 'selected' : undefined}>
         <button type="button" aria-expanded={feature.id === selected?.id} onClick={() => onSelect(feature.id)}>
-          <strong>{feature.name}</strong><span className="map-result-type">{layer?.color && <i className="map-layer-swatch" style={{ backgroundColor: layer.color }} aria-hidden="true" />}{layer?.label ?? feature.sourceId.replaceAll('-', ' ')}</span>
+          <strong>{trailhead?.name ?? feature.name}</strong><span className="map-result-type">{layer?.color && <i className="map-layer-swatch" style={{ backgroundColor: layer.color }} aria-hidden="true" />}{layer?.label ?? feature.sourceId.replaceAll('-', ' ')}</span>
         </button>
         {feature.id === selected?.id && <div className="map-result-details"><FeatureDetails feature={selected} includeMiniMap /></div>}
       </li>})}
@@ -122,7 +135,7 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
 export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
-    activateFeature, clearSelection, retrySource,
+    activateFeature, clearSelection, retrySource, structuredFilters, setStructuredFilters,
   } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
@@ -161,6 +174,14 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
             {displayedTransit.map((item) => <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><span>{item.label}</span></label>)}
           </fieldset>
         </div>
+        <fieldset className="catalog-filters"><legend>Trailhead details</legend>
+          <label>Place<select value={structuredFilters.placeSlugs?.[0] ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, placeSlugs: event.target.value ? [event.target.value] : undefined })}><option value="">All places</option>{trailheadCatalog.places.filter((place) => place.id !== 'california').map((place) => <option value={place.slug} key={place.id}>{place.title}</option>)}</select></label>
+          <label>Maximum walk time<select value={structuredFilters.maximumWalkMinutes ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, maximumWalkMinutes: event.target.value ? Number(event.target.value) : undefined })}><option value="">Any walk time</option><option value="5">5 minutes</option><option value="15">15 minutes</option><option value="30">30 minutes</option><option value="60">60 minutes</option></select></label>
+          <label>Service days<select value={structuredFilters.serviceDays?.[0] ?? ''} onChange={(event) => setStructuredFilters({ ...structuredFilters, serviceDays: event.target.value ? [event.target.value as 'weekday' | 'weekend'] : undefined })}><option value="">Any service</option><option value="weekday">Weekday service</option><option value="weekend">Weekend service</option></select></label>
+          <label>Reservation requirement<select value={structuredFilters.reservationRequired === undefined ? '' : String(structuredFilters.reservationRequired)} onChange={(event) => setStructuredFilters({ ...structuredFilters, reservationRequired: event.target.value === '' ? undefined : event.target.value === 'unknown' ? 'unknown' : event.target.value === 'true' })}><option value="">Any status</option><option value="true">Required</option><option value="false">Not required</option><option value="unknown">Not yet classified</option></select></label>
+          <label>Seasonal service<select value={structuredFilters.seasonalService === undefined ? '' : String(structuredFilters.seasonalService)} onChange={(event) => setStructuredFilters({ ...structuredFilters, seasonalService: event.target.value === '' ? undefined : event.target.value === 'unknown' ? 'unknown' : event.target.value === 'true' })}><option value="">Any status</option><option value="true">Seasonal</option><option value="false">Year-round</option><option value="unknown">Not yet classified</option></select></label>
+          <label>Hike guide<select value={structuredFilters.hasHikeGuide === undefined ? '' : String(structuredFilters.hasHikeGuide)} onChange={(event) => setStructuredFilters({ ...structuredFilters, hasHikeGuide: event.target.value === '' ? undefined : event.target.value === 'true' })}><option value="">With or without</option><option value="true">Has a hike guide</option><option value="false">No hike guide</option></select></label>
+        </fieldset>
       </aside>
     </div>
 
