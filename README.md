@@ -45,6 +45,7 @@ hydrates that HTML in the browser for maps, search, slideshows, and other
 interaction; page content and navigation remain available without JavaScript.
 
 - `npm run build:client` builds the browser application.
+- `npm run build:olmap` builds the local map workspace consumed by the app.
 - `npm run build:ssr` builds the temporary server-rendering entry.
 - `npm run prerender` writes route-specific HTML into `dist`.
 - `npm run check:prerender` verifies content, metadata, and hydration assets.
