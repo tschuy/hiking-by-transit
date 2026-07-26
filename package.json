@@ -8,10 +8,17 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender",
+    "build:client": "tsc -b && vite build",
+    "build:ssr": "vite build --ssr src/entry-server.tsx --outDir dist-ssr",
+    "prerender": "node scripts/prerender.mjs",
+    "check:prerender": "node scripts/check-prerender.mjs",
     "deploy:dev": "npm run build && node scripts/prepare-cloudflare-assets.mjs && wrangler deploy",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "verify": "npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
   },
   "dependencies": {
     "olmap": "1.0.0",
@@ -20,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.62.0",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
@@ -28,9 +36,11 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.7.0",
+    "jsdom": "^29.1.1",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.62.0",
     "vite": "^8.1.1",
+    "vitest": "^4.1.10",
     "wrangler": "^4.114.0"
   }
 }

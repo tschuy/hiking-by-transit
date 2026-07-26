@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+/* eslint-disable react-refresh/only-export-components -- route metadata is shared with the build-time renderer */
+import { useEffect, type ReactNode } from 'react'
 import './App.css'
 import { SiteFooter } from './components/SiteFooter'
 import { SiteHeader } from './components/SiteHeader'
@@ -18,21 +19,46 @@ import { PostPage } from './pages/PostPage'
 import { PostsPage } from './pages/PostsPage'
 import { TrailheadsPage } from './pages/TrailheadsPage'
 import { TrailheadPage } from './pages/TrailheadPage'
+import {
+  eventContent, getEventContent, getGuideContent, getHikeContent, getPageContent, getPlaceContent, getPostContent,
+  guideContent, hikeContent, pageContent, placeContent, postContent,
+} from './data/content'
+import { getTrailhead, trailheads } from './data/trails'
 
-function usePathname() {
-  const [pathname, setPathname] = useState(window.location.pathname)
+const siteName = 'Hiking by Transit'
+const siteUrl = 'https://hikingbytransit.com'
 
-  useEffect(() => {
-    const handlePopState = () => setPathname(window.location.pathname)
-    window.addEventListener('popstate', handlePopState)
-    return () => window.removeEventListener('popstate', handlePopState)
-  }, [])
-
-  return pathname
+export interface RouteMetadata {
+  title: string
+  description: string
+  canonicalPath: string
+  structuredData?: Record<string, unknown>
 }
 
-function getPage(pathname: string) {
-  const legacyRedirects: Record<string, string> = {
+export interface ResolvedRoute {
+  element: ReactNode
+  metadata: RouteMetadata
+}
+
+const descriptions = {
+  home: 'Transit-accessible hikes, parks, and trailheads across California.',
+  hikes: 'Find California hikes you can reach by bus, train, ferry, or shuttle.',
+  places: 'Explore California regions and parks with practical public-transit guidance.',
+  posts: 'News, trip-planning resources, and guides from Hiking by Transit.',
+  events: 'Upcoming and past transit-accessible hiking events.',
+  trailheads: 'Explore transit-accessible trailheads across California on an interactive map.',
+}
+
+function plainText(value?: string): string | undefined {
+  const text = value?.replace(/<[^>]+>/g, ' ').replace(/[#*_`>[\]()!-]/g, ' ').replace(/\s+/g, ' ').trim()
+  return text ? text.slice(0, 180) : undefined
+}
+
+function metadata(title: string, canonicalPath: string, description = descriptions.home, structuredData?: Record<string, unknown>): RouteMetadata {
+  return { title: title === siteName ? siteName : `${title} · ${siteName}`, description, canonicalPath, structuredData }
+}
+
+const legacyRedirects: Record<string, string> = {
     '/map': '/trailheads',
     '/east-bay': '/places/east-bay',
     '/marin': '/places/marin',
@@ -47,56 +73,91 @@ function getPage(pathname: string) {
     '/hikes/tahoe': '/places/tahoe',
     '/hikes/yosemite': '/places/yosemite-national-park',
     '/hikes/china-camp': '/places/marin',
-  }
-  const normalizedPath = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname
-  if (legacyRedirects[normalizedPath]) return <RedirectPage to={legacyRedirects[normalizedPath]} />
-
-  if (pathname === '/') return <HomePage />
-  if (pathname === '/hikes' || pathname === '/hikes/') return <HikesPage />
-  if (pathname === '/places' || pathname === '/places/') return <PlacesPage />
-  if (pathname === '/posts' || pathname === '/posts/') return <PostsPage />
-  if (pathname === '/events' || pathname === '/events/') return <EventsPage />
-  if (pathname === '/resources' || pathname === '/resources/') return <ContentPage slug="resources" />
-  if (pathname === '/media' || pathname === '/media/') return <ContentPage slug="media" />
-  if (pathname === '/about-data' || pathname === '/about-data/') return <ContentPage slug="about-data" />
-  if (pathname === '/marin/getting-to-marin' || pathname === '/marin/getting-to-marin/') return <GuidePage slug="getting-to-marin" />
-  if (pathname === '/peninsula/samcoast' || pathname === '/peninsula/samcoast/') return <GuidePage slug="samcoast" />
-
-  const eventMatch = pathname.match(/^\/events\/([^/]+)\/?$/)
-  if (eventMatch) return <EventPage slug={decodeURIComponent(eventMatch[1])} />
-  if (pathname === '/trailheads' || pathname === '/trailheads/') return <TrailheadsPage />
-
-  const trailheadMatch = pathname.match(/^\/trailheads\/([^/]+)\/?$/)
-  if (trailheadMatch) return <TrailheadPage slug={decodeURIComponent(trailheadMatch[1])} />
-
-  const tripMatch = pathname.match(/^\/trips\/([^/]+)\/?$/)
-  if (tripMatch) {
-    const slug = decodeURIComponent(tripMatch[1])
-    return <HikePage slug={slug} />
-  }
-
-  const hikeMatch = pathname.match(/^\/hikes\/([^/]+)\/?$/)
-  if (hikeMatch) return <HikePage slug={decodeURIComponent(hikeMatch[1])} />
-
-  const postMatch = pathname.match(/^\/(\d{4})\/(\d{2})\/(\d{2})\/([^/]+)\/?$/)
-  if (postMatch) return <PostPage date={`${postMatch[1]}-${postMatch[2]}-${postMatch[3]}`} slug={decodeURIComponent(postMatch[4])} />
-
-  const placeMatch = pathname.match(/^\/(?:places|parks|regions)\/([^/]+)\/?$/)
-  if (placeMatch) return <PlacePage slug={decodeURIComponent(placeMatch[1])} />
-
-  const guideMatch = pathname.match(/^\/guides\/([^/]+)\/?$/)
-  if (guideMatch) return <GuidePage slug={decodeURIComponent(guideMatch[1])} />
-
-  return <NotFoundPage />
 }
 
-function App() {
-  const pathname = usePathname()
+export function resolveRoute(pathname: string): ResolvedRoute {
+  const normalizedPath = pathname.length > 1 ? pathname.replace(/\/$/, '') : pathname
+  if (legacyRedirects[normalizedPath]) return { element: <RedirectPage to={legacyRedirects[normalizedPath]} />, metadata: metadata('Page moved', normalizedPath) }
+
+  if (normalizedPath === '/') return { element: <HomePage />, metadata: metadata(siteName, '/', descriptions.home) }
+  if (normalizedPath === '/hikes') return { element: <HikesPage />, metadata: metadata('Hikes', normalizedPath, descriptions.hikes) }
+  if (normalizedPath === '/places') return { element: <PlacesPage />, metadata: metadata('Places', normalizedPath, descriptions.places) }
+  if (normalizedPath === '/posts') return { element: <PostsPage />, metadata: metadata('Posts', normalizedPath, descriptions.posts) }
+  if (normalizedPath === '/events') return { element: <EventsPage />, metadata: metadata('Events', normalizedPath, descriptions.events) }
+  if (normalizedPath === '/trailheads') return { element: <TrailheadsPage />, metadata: metadata('Trailhead map', normalizedPath, descriptions.trailheads) }
+  if (['/resources', '/media', '/about-data'].includes(normalizedPath)) {
+    const page = getPageContent(normalizedPath.slice(1))
+    if (page) return { element: <ContentPage slug={page.slug} />, metadata: metadata(page.title, normalizedPath, plainText(page.body)) }
+  }
+  const specialGuides: Record<string, string> = { '/marin/getting-to-marin': 'getting-to-marin', '/peninsula/samcoast': 'samcoast' }
+  const specialGuide = specialGuides[normalizedPath] ? getGuideContent(specialGuides[normalizedPath]) : undefined
+  if (specialGuide) return { element: <GuidePage slug={specialGuide.slug} />, metadata: metadata(specialGuide.title, normalizedPath, plainText(specialGuide.body)) }
+
+  const eventMatch = normalizedPath.match(/^\/events\/([^/]+)$/)
+  if (eventMatch) {
+    const event = getEventContent(decodeURIComponent(eventMatch[1]))
+    if (event) return { element: <EventPage slug={event.slug} />, metadata: metadata(event.title, normalizedPath, plainText(event.body)) }
+  }
+
+  const trailheadMatch = normalizedPath.match(/^\/trailheads\/([^/]+)$/)
+  if (trailheadMatch) {
+    const trailhead = getTrailhead(decodeURIComponent(trailheadMatch[1]))
+    if (trailhead) return { element: <TrailheadPage slug={trailhead.slug} />, metadata: metadata(trailhead.name, normalizedPath, trailhead.accessibilityNotes) }
+  }
+
+  const hikeMatch = normalizedPath.match(/^\/(?:trips|hikes)\/([^/]+)$/)
+  if (hikeMatch) {
+    const hike = getHikeContent(decodeURIComponent(hikeMatch[1]))
+    if (hike) return { element: <HikePage slug={hike.slug} />, metadata: metadata(hike.title, normalizedPath, hike.blurb ?? plainText(hike.body)) }
+  }
+
+  const postMatch = normalizedPath.match(/^\/(\d{4})\/(\d{2})\/(\d{2})\/([^/]+)$/)
+  if (postMatch) {
+    const post = getPostContent(`${postMatch[1]}-${postMatch[2]}-${postMatch[3]}`, decodeURIComponent(postMatch[4]))
+    if (post) {
+      const canonicalPath = post.url.replace(/\/$/, '') || '/'
+      const structuredData = { '@context': 'https://schema.org', '@type': 'BlogPosting', headline: post.title, datePublished: post.date, mainEntityOfPage: `${siteUrl}${canonicalPath}`, ...(post.image ? { image: `${siteUrl}/assets/${post.image}` } : {}) }
+      return { element: <PostPage date={post.date} slug={post.slug} />, metadata: metadata(post.title, canonicalPath, plainText(post.body), structuredData) }
+    }
+  }
+
+  const placeMatch = normalizedPath.match(/^\/(?:places|parks|regions)\/([^/]+)$/)
+  if (placeMatch) {
+    const place = getPlaceContent(decodeURIComponent(placeMatch[1]))
+    if (place) return { element: <PlacePage slug={place.slug} />, metadata: metadata(place.title, normalizedPath, place.blurb ?? plainText(place.body)) }
+  }
+
+  const guideMatch = normalizedPath.match(/^\/guides\/([^/]+)$/)
+  if (guideMatch) {
+    const guide = getGuideContent(decodeURIComponent(guideMatch[1]))
+    if (guide) return { element: <GuidePage slug={guide.slug} />, metadata: metadata(guide.title, normalizedPath, plainText(guide.body)) }
+  }
+
+  return { element: <NotFoundPage />, metadata: metadata('Page not found', normalizedPath) }
+}
+
+export const prerenderPaths = [...new Set([
+  '/', '/hikes', '/places', '/posts', '/events', '/trailheads',
+  ...pageContent.map((page) => `/${page.slug}`),
+  ...hikeContent.map((hike) => `/hikes/${hike.slug}`),
+  ...placeContent.filter((place) => place.place_id !== 'california').map((place) => `/places/${place.slug}`),
+  ...guideContent.map((guide) => guide.slug === 'getting-to-marin' ? '/marin/getting-to-marin' : guide.slug === 'samcoast' ? '/peninsula/samcoast' : `/guides/${guide.slug}`),
+  ...postContent.map((post) => post.url.replace(/\/$/, '') || '/'),
+  ...eventContent.map((event) => event.url.replace(/\/$/, '')),
+  ...trailheads.map((trailhead) => `/trailheads/${trailhead.slug}`),
+])].sort()
+
+function App({ pathname }: { pathname: string }) {
+  const route = resolveRoute(pathname)
+
+  useEffect(() => {
+    document.title = route.metadata.title
+  }, [route.metadata.title])
 
   return (
     <div className="site-frame">
       <SiteHeader />
-      <main id="main-content">{getPage(pathname)}</main>
+      <main id="main-content">{route.element}</main>
       <SupportCta />
       <SiteFooter />
     </div>

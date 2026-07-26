@@ -26,6 +26,9 @@ export function HomePage() {
             <SearchForm />
           </div>
         </div>
+        <a className="hero-scroll-cue" href="#bay-area-hikes">
+          <span>Recommended hikes</span><span aria-hidden="true">↓</span>
+        </a>
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">

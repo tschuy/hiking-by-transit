@@ -34,13 +34,14 @@ interface TrailheadMapUiState {
 const emptyVisible: VisibleFeatureResult = { ids: [], total: 0, limited: false, features: [] }
 
 function readInitialLayers(transitGroups: string[]): Set<string> {
+  if (typeof window === 'undefined') return new Set([...trailheadLayerIds, ...transitGroups])
   const requested = new URLSearchParams(window.location.search).getAll('layer').filter((layer) => validLayers.has(layer))
   if (requested.length) return new Set(requested)
   return new Set([...trailheadLayerIds, ...transitGroups])
 }
 
 function readInitialView(center?: UseTrailheadMapOptions['center']): Partial<TrailheadMapView> {
-  const params = new URLSearchParams(window.location.search)
+  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
   const x = Number(params.get('x'))
   const y = Number(params.get('y'))
   const zoom = Number(params.get('z'))
@@ -73,11 +74,19 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
   const targetRef = useRef<HTMLDivElement>(null)
   const controllerRef = useRef<TrailheadMapController>(null)
   const transitGroupKey = transitGroups.join('|')
-  const [enabledLayers, setEnabledLayers] = useState(() => readInitialLayers(defaultTransitGroups))
-  const [viewMode, setViewModeState] = useState<MapViewMode>(() => new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'map')
+  const defaultTransitGroupKey = defaultTransitGroups.join('|')
+  const [enabledLayers, setEnabledLayers] = useState(() => new Set([...trailheadLayerIds, ...defaultTransitGroups]))
+  const [viewMode, setViewModeState] = useState<MapViewMode>('map')
   const [state, setState] = useState<TrailheadMapUiState>({ loading: true, layers: {}, visible: emptyVisible })
   const enabledLayersRef = useRef(enabledLayers)
   enabledLayersRef.current = enabledLayers
+
+  useEffect(() => {
+    const initialLayers = readInitialLayers(defaultTransitGroupKey ? defaultTransitGroupKey.split('|') : [])
+    enabledLayersRef.current = initialLayers
+    setEnabledLayers(initialLayers)
+    setViewModeState(new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'map')
+  }, [defaultTransitGroupKey])
 
   useEffect(() => {
     const target = targetRef.current

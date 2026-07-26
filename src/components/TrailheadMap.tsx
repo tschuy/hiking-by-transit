@@ -72,13 +72,14 @@ function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatu
   </div>
 }
 
-function SelectionPanel({ feature, onClose }: { feature: MapFeatureDetails; onClose: () => void }) {
+function SelectionPanel({ feature, active, onClose }: { feature: MapFeatureDetails; active: boolean; onClose: () => void }) {
   const closeRef = useRef<HTMLButtonElement>(null)
   const returnFocusRef = useRef<HTMLElement | null>(null)
   useEffect(() => {
+    if (!active) return
     returnFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
     closeRef.current?.focus({ preventScroll: true })
-  }, [feature.id])
+  }, [active, feature.id])
   const close = () => {
     const returnFocus = returnFocusRef.current
     onClose()
@@ -137,10 +138,11 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
     </div>
 
     <div className={`map-layout map-view-${viewMode}`}>
-      <div className="map-stage" hidden={viewMode === 'list'}>
+      <div className={`map-stage${state.selected ? ' map-stage-has-selection' : ''}`} aria-hidden={viewMode === 'list'} inert={viewMode === 'list'}>
         <div ref={targetRef} className="trailhead-map-target olmap-map" aria-label={isScoped ? `Interactive map of transit-accessible trailheads in ${label}` : 'Interactive map of transit-accessible trailheads statewide'} role="region" />
+        <p className="map-noscript">The interactive map requires JavaScript. Browse the <a href="/hikes">hike guides</a> or use the trailhead records instead.</p>
         {state.loading && <p className="map-status" role="status">Loading map data…</p>}
-        {state.selected && <SelectionPanel feature={state.selected} onClose={clearSelection} />}
+        {state.selected && <SelectionPanel feature={state.selected} active={viewMode === 'map'} onClose={clearSelection} />}
         <p className="map-instruction mobile-map-instruction">Use two fingers to pan the map.</p>
         <p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p>
       </div>
