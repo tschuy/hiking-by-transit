@@ -159,7 +159,7 @@ OpenLayers base CSS remains a separate import.
 
 ## React application integration
 
-The canonical consumer is now `my-app/src/hooks/useTrailheadMap.ts`. It imports
+The canonical consumer is now `src/hooks/useTrailheadMap.ts`. It imports
 this package through the local npm workspace, dynamically loads the runtime ESM
 entry on map routes, constructs the controller from a mounted ref, and destroys
 it in effect cleanup. React renders structured selection details, progress,
