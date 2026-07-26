@@ -10,12 +10,12 @@ export function DestinationAccess({ destinations, label, showRelatedHikes = true
   const hikes = [...new Set(trailheads.flatMap((trailhead) => trailhead.hikeIds))].map(getCatalogHike).filter((hike) => hike !== undefined)
 
   return <section className="destination-access" aria-labelledby="destination-access-title">
-    <p className="eyebrow">Trailhead access</p><h2 id="destination-access-title">Transit-accessible entrances</h2>
+    <h2 id="destination-access-title">Transit-accessible entrances</h2>
     <p className="destination-access-lede">Explore {trailheads.length} transit-accessible trailhead{trailheads.length === 1 ? '' : 's'} serving {label}.</p>
     <DestinationMap label={label} trailheads={trailheads} />
 
     <section className="destination-trailheads" aria-labelledby="destination-trailheads-title">
-      <p className="eyebrow">Choose an entrance</p><h3 id="destination-trailheads-title">Trailheads</h3>
+      <h3 id="destination-trailheads-title">Trailheads</h3>
       <div className="trailhead-list">{trailheads.map((trailhead) => {
         const walkMinutes = trailhead.access.map((item) => item.walkMinutes).filter((value): value is number => value !== null).sort((a, b) => a - b)[0]
         const routes = [...new Set(trailhead.access.flatMap(formatAccessRoutes))]

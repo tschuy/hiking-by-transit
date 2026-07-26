@@ -10,7 +10,7 @@ export function TrailCard({ trail }: { trail: Trail }) {
     <article className="trail-card">
       <div className="card-landscape" aria-hidden="true"><span>▲</span></div>
       <div className="card-body">
-        <p className="eyebrow">{park?.name}</p>
+        <p className="card-context">{park?.name}</p>
         <h3><a href={`/trips/${trail.slug}`}>{trail.name}</a></h3>
         <p>{trail.summary}</p>
         <ul className="fact-list" aria-label="Trail details">

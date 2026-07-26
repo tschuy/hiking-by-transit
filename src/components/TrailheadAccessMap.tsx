@@ -101,7 +101,7 @@ export function TrailheadAccessMap({ trailhead }: { trailhead: CatalogTrailhead 
   }, [trailhead])
 
   return <section className="trailhead-access-map olmap-root" aria-labelledby="trailhead-access-map-title">
-    <div className="filter-heading"><div><p className="eyebrow">Access map</p><h2 id="trailhead-access-map-title">Trailhead and transit stops</h2></div><a href={googleMapsUrl(trailhead.coordinates)} target="_blank" rel="noreferrer">Open trailhead in Google Maps ↗</a></div>
+    <div className="filter-heading"><div><h2 id="trailhead-access-map-title">Trailhead and transit stops</h2></div><a href={googleMapsUrl(trailhead.coordinates)} target="_blank" rel="noreferrer">Open trailhead in Google Maps ↗</a></div>
     <div ref={targetRef} className="trailhead-access-map-target olmap-map" role="region" aria-label={`Map of ${trailhead.name} and its associated transit stops`} />
     {error && <p className="map-error" role="alert">The access map could not be loaded. {error}</p>}
   </section>

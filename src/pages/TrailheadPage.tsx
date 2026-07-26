@@ -15,7 +15,7 @@ export function TrailheadPage({ slug }: { slug: string }) {
   return (
     <article className="page container">
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/trailheads">Trailheads</a><span aria-hidden="true">/</span><span>{trailhead.name}</span></nav>
-      <p className="eyebrow">Trailhead{places.length ? ` · ${places.at(-1)?.title}` : ''}</p>
+      <p className="page-context">Trailhead{places.length ? ` · ${places.at(-1)?.title}` : ''}</p>
       <h1>{trailhead.name}</h1>
 
       {destinations.length > 0 && <nav className="trailhead-destinations" aria-label="Outdoor destinations served by this trailhead"><span>Destinations</span>{destinations.map((destination) => <a href={getDestinationPath(destination)} key={destination.id}>{destination.name}</a>)}</nav>}
@@ -24,7 +24,6 @@ export function TrailheadPage({ slug }: { slug: string }) {
 
       {trailhead.notes && <p className="notice content-panel">{trailhead.notes}</p>}
       <section className="content-panel">
-        <p className="eyebrow">Arrive by transit</p>
         <h2>Nearby stops</h2>
         {trailhead.access.length ? <ul className="trailhead-stop-list">{trailhead.access.map((access) => {
           const routes = formatAccessRoutes(access)

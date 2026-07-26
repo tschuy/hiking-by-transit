@@ -103,14 +103,17 @@ function SelectionPanel({ feature, active, onClose }: { feature: MapFeatureDetai
   }
   return <aside className={`map-selection map-selection-${feature.kind}`} role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
     <button ref={closeRef} className="map-selection-close" type="button" onClick={close} aria-label="Close map details">×</button>
-    <p className="eyebrow">{feature.kind === 'cluster' ? `${feature.clusterSize} nearby trailheads` : 'Map selection'}</p>
+    <p className="map-selection-context">{feature.kind === 'cluster' ? `${feature.clusterSize} nearby trailheads` : 'Map selection'}</p>
     <h2>{feature.name}</h2>
     <FeatureDetails feature={feature} />
   </aside>
 }
 
 function ResultList({ features, selected, onSelect }: { features: VisibleFeatureState[]; selected?: MapFeatureDetails; onSelect: (id: string) => void }) {
-  const [page, setPage] = useState(0)
+  const featureSetKey = features.map((feature) => feature.id).join('|')
+  const [pagination, setPagination] = useState({ featureSetKey, page: 0 })
+  const page = pagination.featureSetKey === featureSetKey ? pagination.page : 0
+  const setPage = (update: (value: number) => number) => setPagination((current) => ({ featureSetKey, page: update(current.featureSetKey === featureSetKey ? current.page : 0) }))
   const pageSize = 25
   const pageCount = Math.max(1, Math.ceil(features.length / pageSize))
   const safePage = Math.min(page, pageCount - 1)
@@ -147,19 +150,21 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
   const visibleFeatures = state.visible.ids.flatMap((id) => featureLookup.get(id) ?? [])
   const failedLayers = Object.values(state.layers).filter((layer) => layer.status === 'error' || layer.status === 'unavailable')
   const resultsHeadingId = useId()
+  const mapPanelId = useId()
+  const resultsPanelId = useId()
 
-  return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`}>
+  return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
     {!isScoped && <aside className="weekday-service-callout" aria-labelledby="weekday-service-title">
       <div><strong id="weekday-service-title">Weekday-only trailheads</strong><p>Some buses run Monday–Friday only.</p></div>
       <label className="map-checkbox weekday-service-toggle"><input type="checkbox" checked={enabledLayers.has('bus-weekday-only')} onChange={(event) => setLayerEnabled('bus-weekday-only', event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: '#1a237e' }} aria-hidden="true" /><span>Include weekday-only buses</span></label>
     </aside>}
-    <div className="map-view-switcher" aria-label="Choose map or list view">
-      <button type="button" aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
-      <button type="button" aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
+    <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
+      <button type="button" aria-controls={mapPanelId} aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
+      <button type="button" aria-controls={resultsPanelId} aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
     </div>
 
     <div className={`map-layout map-view-${viewMode}`}>
-      <div className={`map-stage${state.selected ? ' map-stage-has-selection' : ''}`} aria-hidden={viewMode === 'list'} inert={viewMode === 'list'}>
+      <div className={`map-stage${state.selected ? ' map-stage-has-selection' : ''}`} id={mapPanelId} aria-hidden={viewMode === 'list'} inert={viewMode === 'list'}>
         <div ref={targetRef} className="trailhead-map-target olmap-map" aria-label={isScoped ? `Interactive map of transit-accessible trailheads in ${label}` : 'Interactive map of transit-accessible trailheads statewide'} role="region" />
         <p className="map-noscript">The interactive map requires JavaScript. Browse the <a href="/hikes">hike guides</a> or use the trailhead records instead.</p>
         {state.loading && <p className="map-status" role="status">Loading map data…</p>}
@@ -168,13 +173,13 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
         <p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p>
       </div>
 
-      <section className="map-companion" aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
-        <div className="filter-heading"><div><p className="eyebrow">Visible map area</p><h2 id={resultsHeadingId}>Trailhead results</h2></div><span aria-live="polite">{state.visible.total} result{state.visible.total === 1 ? '' : 's'}{state.visible.limited ? ', first 250 shown' : ''}</span></div>
+      <section className="map-companion" id={resultsPanelId} aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
+        <div className="filter-heading"><div><h2 id={resultsHeadingId}>Trailhead results</h2></div><span aria-live="polite">{state.visible.total} result{state.visible.total === 1 ? '' : 's'}{state.visible.limited ? ', first 250 shown' : ''}</span></div>
         <ResultList features={visibleFeatures} selected={state.selected} onSelect={activateFeature} />
       </section>
 
       <aside className="map-filters" aria-label="Map filters">
-        <div className="filter-heading"><div><p className="eyebrow">Map layers</p><h2>Filter the map</h2></div></div>
+        <div className="filter-heading"><div><h2>Filter the map</h2></div></div>
         <div className={`filter-columns${isScoped ? ' filter-columns-scoped' : ''}`}>
           <fieldset><legend>Trailhead access by type</legend>{trailheadGroups.map((group) => <div className="map-filter-group" key={group.label}><h3>{group.label}</h3>{group.members.map((name) => trailheadLayers.find((layer) => layer.name === name)).map((item) => item && <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: item.color }} aria-hidden="true" /><span>{item.label}</span></label>)}</div>)}</fieldset>
           <fieldset><legend>Transit and boundaries</legend>

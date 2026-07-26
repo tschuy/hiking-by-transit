@@ -34,7 +34,7 @@ export function HomePage() {
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">
         <div className="section-heading">
-          <div><p className="eyebrow">Recommended hikes</p><h2 id="bay-area-title">Hike the Bay Area</h2></div>
+          <div><h2 id="bay-area-title">Hike the Bay Area</h2></div>
           <p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p>
         </div>
         <nav className="region-list" aria-label="Bay Area subregions">
@@ -47,14 +47,14 @@ export function HomePage() {
 
       <section className="section section-tint" id="places" aria-labelledby="places-title">
         <div className="container">
-          <div className="section-heading"><div><p className="eyebrow">Go farther</p><h2 id="places-title">Explore places</h2></div><p>Browse regions and destination parks together, with transit guidance, seasonal constraints, recommended hikes, and nearby trailheads.</p></div>
+          <div className="section-heading"><div><h2 id="places-title">Explore places</h2></div><p>Browse regions and destination parks together, with transit guidance, seasonal constraints, recommended hikes, and nearby trailheads.</p></div>
           <div className="places-grid">
-            {featuredPlaces.map((place, index) => <a className={`editorial-card region-theme-${index % 3 + 1}`} href={`/places/${place.slug}`} key={place.slug}><span className="eyebrow">{place.kind === 'park' ? 'Destination park' : 'California place'}</span><strong>{place.title}</strong><span>{place.blurb ?? 'Place guide'}</span><b>Explore this place <span aria-hidden="true">→</span></b></a>)}
+            {featuredPlaces.map((place, index) => <a className={`editorial-card region-theme-${index % 3 + 1}`} href={`/places/${place.slug}`} key={place.slug}><span className="card-context">{place.kind === 'park' ? 'Destination park' : 'California place'}</span><strong>{place.title}</strong><span>{place.blurb ?? 'Place guide'}</span><b>Explore this place <span aria-hidden="true">→</span></b></a>)}
           </div>
         </div>
       </section>
 
-      <section className="section container" aria-labelledby="latest-posts-title"><div className="section-heading"><div><p className="eyebrow">From Hiking by Transit</p><h2 id="latest-posts-title">Latest posts</h2></div><a href="/posts">View all posts <span aria-hidden="true">→</span></a></div><div className="post-list post-list-home">{postContent.slice(0, 3).map((post) => <article className={`post-card${post.image ? '' : ' post-card-no-image'}`} key={post.url}>{post.image && <img src={`/assets/${post.image}`} alt="" loading="lazy" />}<div><time dateTime={post.date}>{post.date}</time><h3><a href={post.url}>{post.title}</a></h3></div></article>)}</div></section>
+      <section className="section container" aria-labelledby="latest-posts-title"><div className="section-heading"><div><h2 id="latest-posts-title">Latest posts</h2></div><a href="/posts">View all posts <span aria-hidden="true">→</span></a></div><div className="post-list post-list-home">{postContent.slice(0, 3).map((post) => <article className={`post-card${post.image ? '' : ' post-card-no-image'}`} key={post.url}>{post.image && <img src={`/assets/${post.image}`} alt="" loading="lazy" />}<div><time dateTime={post.date}>{post.date}</time><h3><a href={post.url}>{post.title}</a></h3></div></article>)}</div></section>
     </>
   )
 }

@@ -11,7 +11,7 @@ function EventList({ events }: { events: EventContent[] }) {
     <div className="event-list">
       {events.map((event) => (
         <article className="event-card" key={event.url}>
-          <p className="eyebrow">{event.event_date}</p>
+          <p className="event-date">{event.event_date}</p>
           <h2><a href={event.url}>{event.title}</a></h2>
           <a href={event.url}>Event details <span aria-hidden="true">→</span></a>
         </article>
@@ -28,7 +28,6 @@ export function EventsPage() {
 
   return (
     <section className="page container">
-      <p className="eyebrow">Hike together</p>
       <h1>Events</h1>
       <p className="page-lede">Want to celebrate getting outdoors on the bus or try a car-free hike with other people? Join Hiking by Transit for an event.</p>
       <a className="button-link archive-action" href={mailingListUrl}>Get event announcements</a>

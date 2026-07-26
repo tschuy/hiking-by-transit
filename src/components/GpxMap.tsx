@@ -97,7 +97,7 @@ export function GpxMap({ file, title, compact = false }: { file: string; title: 
   }
 
   return <section className={`hike-map-section olmap-root${compact ? ' hike-map-section-compact' : ''}`} aria-label={compact ? `${title} route map and elevation` : undefined} aria-labelledby={compact ? undefined : `${mapId}-title`}>
-    {!compact && <div className="section-heading compact-heading"><div><p className="eyebrow">Route and elevation</p><h2 id={`${mapId}-title`}>{title} map</h2></div><a href={`/assets/gpx/${fileUrl}`} download>Download GPX</a></div>}
+    {!compact && <div className="section-heading compact-heading"><div><h2 id={`${mapId}-title`}>{title} map</h2></div><a href={`/assets/gpx/${fileUrl}`} download>Download GPX</a></div>}
     <div className="hike-gpx-map olmap-map" ref={mapRef} aria-label={`Interactive GPX route map for ${title}`} role="region" />
     <p className="map-noscript">The interactive route map and elevation profile require JavaScript. The GPX file remains available to download.</p>
     {route && <ElevationProfile route={route} activeIndex={activeIndex} onActiveIndex={inspectRoute} />}
