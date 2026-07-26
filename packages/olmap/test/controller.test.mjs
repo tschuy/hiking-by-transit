@@ -209,3 +209,30 @@ test('aborts pending source work on destroy and supports targeted cache-bypassin
   await waitFor(() => loads === 2 && cached.getState().layers.cached?.status === 'ready', 'refreshed source');
   cached.destroy();
 });
+
+test('restores pending selection after data loads and emits serializable selection state', async () => {
+  const fakeDocument = installDomHarness();
+  const events = [];
+  const featureCollection = {
+    type: 'FeatureCollection',
+    features: [{
+      type: 'Feature', id: 'one',
+      properties: { name: 'Restored trailhead', walk_minutes: 8 },
+      geometry: { type: 'Point', coordinates: [-122.2, 37.8] },
+    }],
+  };
+  const controller = createTrailheadMap({
+    ...options(new FakeElement(fakeDocument), events),
+    initialSelectedFeatureId: 'fixture:one',
+    dataSources: [{ id: 'fixture', kind: 'geojson', role: 'trailhead', clustering: false, load: async () => featureCollection }],
+  });
+  await waitFor(() => events.some((event) => event.type === 'feature-select'), 'restored selection');
+  assert.equal(controller.getState().selectedFeatureId, 'fixture:one');
+  const selection = events.find((event) => event.type === 'feature-select');
+  assert.equal(selection.feature.name, 'Restored trailhead');
+  assert.doesNotThrow(() => JSON.stringify(selection));
+  controller.clearSelection();
+  assert.equal(controller.getState().selectedFeatureId, undefined);
+  assert.equal(events.at(-1).type, 'selection-clear');
+  controller.destroy();
+});

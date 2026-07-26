@@ -664,6 +664,18 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
   commitVisibleFeatures(false);
   if (options.initialView?.extent) view.fit(options.initialView.extent, { size: map.getSize() });
 
+  function resolveRenderedFeature(candidate: unknown, layer: unknown): { feature: MapFeature; definition: MapDataSource } | undefined {
+    if (!(candidate instanceof Feature) || !(layer instanceof VectorLayer)) return undefined;
+    const sourceId = String(layer.get('sourceId') ?? 'unknown');
+    const managed = vectorLayers.get(sourceId);
+    if (!managed) return undefined;
+    const members = candidate.get('features');
+    const feature = Array.isArray(members) && members.length === 1 && members[0] instanceof Feature
+      ? members[0] as MapFeature
+      : candidate as MapFeature;
+    return { feature, definition: managed.definition };
+  }
+
   listenerKeys.push(
     map.on('pointermove', (event) => {
       if (event.dragging) {
@@ -671,15 +683,7 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
         return;
       }
       const result = map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
-        if (!(candidate instanceof Feature) || !(layer instanceof VectorLayer)) return undefined;
-        const sourceId = String(layer.get('sourceId') ?? 'unknown');
-        const managed = vectorLayers.get(sourceId);
-        if (!managed) return undefined;
-        const members = candidate.get('features');
-        const feature = Array.isArray(members) && members.length === 1 && members[0] instanceof Feature
-          ? members[0] as MapFeature
-          : candidate as MapFeature;
-        return { feature, definition: managed.definition };
+        return resolveRenderedFeature(candidate, layer);
       }, { hitTolerance: 5 });
       emit({
         type: 'feature-hover',
@@ -692,17 +696,16 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       });
     }),
     map.on('click', (event) => {
-      const result = map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
-        if (!(candidate instanceof Feature) || !(layer instanceof VectorLayer)) return undefined;
-        const sourceId = String(layer.get('sourceId') ?? 'unknown');
-        const managed = vectorLayers.get(sourceId);
-        if (!managed) return undefined;
-        const members = candidate.get('features');
-        const feature = Array.isArray(members) && members.length === 1 && members[0] instanceof Feature
-          ? members[0] as MapFeature
-          : candidate as MapFeature;
-        return { feature, definition: managed.definition };
-      });
+      let result = map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => resolveRenderedFeature(candidate, layer));
+      if (!result) {
+        const nearby = new globalThis.Map<string, { feature: MapFeature; definition: MapDataSource }>();
+        map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
+          const resolved = resolveRenderedFeature(candidate, layer);
+          if (resolved) nearby.set(String(resolved.feature.getId()), resolved);
+          return undefined;
+        }, { hitTolerance: 14 });
+        if (nearby.size === 1) result = nearby.values().next().value;
+      }
       if (result) activate(result.feature, result.definition);
     }),
     map.on('moveend', () => {

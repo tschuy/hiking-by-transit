@@ -1,1 +1,0 @@
-export { renderLegacyPopupContent } from './legacyPopup';

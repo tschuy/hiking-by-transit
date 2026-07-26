@@ -12,8 +12,6 @@ export default defineConfig({
     lib: {
       entry: {
         index: resolve(root, 'src/index.ts'),
-        dom: resolve(root, 'src/presentation/dom.ts'),
-        legacy: resolve(root, 'src/legacy/bootstrap.ts'),
       },
       formats: ['es'],
     },
