@@ -3,14 +3,19 @@ import type { CatalogTrailhead, TrailheadCatalog } from '../types/catalog'
 
 export const trailheadCatalog = catalogJson as TrailheadCatalog
 export const catalogTrailheads = trailheadCatalog.trailheads
+export const catalogDestinations = trailheadCatalog.destinations
 
 const byId = new Map(catalogTrailheads.map((trailhead) => [trailhead.id, trailhead]))
 const bySlug = new Map(catalogTrailheads.map((trailhead) => [trailhead.slug, trailhead]))
+const destinationById = new Map(catalogDestinations.map((destination) => [destination.id, destination]))
+const destinationBySlug = new Map(catalogDestinations.map((destination) => [destination.slug, destination]))
 const hikeById = new Map(trailheadCatalog.hikes.map((hike) => [hike.id, hike]))
 const placeById = new Map(trailheadCatalog.places.map((place) => [place.id, place]))
 
 export const getCatalogTrailhead = (slug: string) => bySlug.get(slug)
 export const getCatalogTrailheadById = (id: string) => byId.get(id)
+export const getCatalogDestination = (slug: string) => destinationBySlug.get(slug)
+export const getCatalogDestinationById = (id: string) => destinationById.get(id)
 export const getCatalogHike = (id: string) => hikeById.get(id)
 export const getCatalogPlace = (id: string) => placeById.get(id)
 

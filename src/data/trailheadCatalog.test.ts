@@ -1,11 +1,22 @@
 import { describe, expect, it } from 'vitest'
-import { catalogTrailheads, enrichTrailheadKml, getCatalogTrailheadById, trailheadCatalog } from './trailheadCatalog'
+import { catalogDestinations, catalogTrailheads, enrichTrailheadKml, getCatalogDestinationById, getCatalogTrailheadById, trailheadCatalog } from './trailheadCatalog'
 
 describe('trailhead catalog', () => {
   it('contains all authoritative trailhead records with stable slugs', () => {
-    expect(catalogTrailheads).toHaveLength(622)
+    expect(catalogTrailheads).toHaveLength(618)
     expect(new Set(catalogTrailheads.map((trailhead) => trailhead.slug)).size).toBe(catalogTrailheads.length)
     expect(trailheadCatalog.counts.accessRecords).toBe(614)
+  })
+
+  it('generates unique destinations and bidirectional trailhead relationships', () => {
+    expect(catalogDestinations).toHaveLength(trailheadCatalog.counts.destinations)
+    expect(catalogDestinations.length).toBeGreaterThan(0)
+    expect(new Set(catalogDestinations.map((destination) => destination.slug)).size).toBe(catalogDestinations.length)
+    const trailhead = catalogTrailheads.find((candidate) => candidate.destinationIds.length > 1)!
+    const destinations = trailhead.destinationIds.map(getCatalogDestinationById)
+    expect(destinations.every((destination) => destination?.trailheadIds.includes(trailhead.id))).toBe(true)
+    expect(catalogDestinations.find((destination) => destination.name === 'Pacific Crest Trail')?.trailheadIds).toHaveLength(10)
+    expect(catalogDestinations.some((destination) => destination.name === 'Miller/Knox Regional Shoreline')).toBe(true)
   })
 
   it('includes canonical hand-maintained KML trailheads and provenance', () => {

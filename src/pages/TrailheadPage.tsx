@@ -1,4 +1,4 @@
-import { getCatalogHike, getCatalogPlace, getCatalogTrailhead } from '../data/trailheadCatalog'
+import { getCatalogDestinationById, getCatalogHike, getCatalogPlace, getCatalogTrailhead } from '../data/trailheadCatalog'
 import { TrailheadAccessMap } from '../components/TrailheadAccessMap'
 import { googleMapsUrl } from '../map/googleMaps'
 import { formatAccessRoutes } from '../data/transitRouteNames'
@@ -9,6 +9,7 @@ export function TrailheadPage({ slug }: { slug: string }) {
   if (!trailhead) return <NotFoundPage />
 
   const places = trailhead.placeIds.map(getCatalogPlace).filter(Boolean)
+  const destinations = trailhead.destinationIds.map(getCatalogDestinationById).filter((destination) => destination !== undefined)
   const relatedHikes = trailhead.hikeIds.map(getCatalogHike).filter(Boolean)
 
   return (
@@ -16,6 +17,8 @@ export function TrailheadPage({ slug }: { slug: string }) {
       <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/trailheads">Trailheads</a><span aria-hidden="true">/</span><span>{trailhead.name}</span></nav>
       <p className="eyebrow">Trailhead{places.length ? ` · ${places.at(-1)?.title}` : ''}</p>
       <h1>{trailhead.name}</h1>
+
+      {destinations.length > 0 && <nav className="trailhead-destinations" aria-label="Outdoor destinations served by this trailhead"><span>Destinations</span>{destinations.map((destination) => <a href={`/destinations/${destination.slug}`} key={destination.id}>{destination.name}</a>)}</nav>}
 
       <TrailheadAccessMap trailhead={trailhead} />
 

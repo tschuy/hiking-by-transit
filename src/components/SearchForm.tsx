@@ -9,7 +9,7 @@ export function SearchForm() {
   const [isOpen, setIsOpen] = useState(false)
   const [isExpanded, setIsExpanded] = useState(false)
   const [activeIndex, setActiveIndex] = useState(-1)
-  const results = searchSite(query, isExpanded ? 24 : 5)
+  const results = searchSite(query)
   const hasSearchableQuery = query.trim().length >= 2
   const showPanel = isOpen
 
@@ -95,7 +95,7 @@ export function SearchForm() {
             aria-selected={index === activeIndex}
             key={result.id}
             onMouseEnter={() => setActiveIndex(index)}
-          ><span className="result-type">{result.type}</span><span className="result-copy"><strong>{result.title}</strong><span>{result.description}</span></span><span className="result-arrow" aria-hidden="true">→</span></a>)}
+          ><span className="result-type">{result.type}</span><span className="result-copy"><strong>{result.title}</strong><span>{result.description}</span>{result.detail && <small>{result.detail}</small>}</span><span className="result-arrow" aria-hidden="true">→</span></a>)}
         </div>}
       </div>
       <p className="field-note">Use the arrow keys to review suggestions and Enter to open one.</p>

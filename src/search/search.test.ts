@@ -5,6 +5,7 @@ describe('site search', () => {
   it('requires a meaningful query and respects result limits', () => {
     expect(searchSite('m')).toEqual([])
     expect(searchSite('trail', 3)).toHaveLength(3)
+    expect(searchSite('trail').length).toBeGreaterThan(24)
   })
 
   it('ranks exact and prefix title matches before body matches', () => {
@@ -19,5 +20,27 @@ describe('site search', () => {
 
   it('searches authoritative trailheads', () => {
     expect(searchSite('De Laveaga').some((result) => result.href === '/trailheads/siesta-valley-de-laveaga-trail')).toBe(true)
+  })
+
+  it('separates a trailhead entrance from its destination names for display', () => {
+    const result = searchSite('Hidden Beach Trailhead').find((candidate) => candidate.type === 'Trailhead')
+    expect(result).toMatchObject({
+      title: 'Redwood National and State Parks',
+      description: 'Hidden Beach Trailhead',
+    })
+    expect(result?.detail).toContain('from transit')
+  })
+
+  it('includes outdoor destinations with their canonical routes', () => {
+    expect(searchSite('Pacific Crest Trail').some((result) => result.type === 'Destination' && result.href === '/destinations/pacific-crest-trail')).toBe(true)
+  })
+
+  it('matches non-adjacent query terms and ranks destinations above trailheads', () => {
+    const results = searchSite('national park', 24)
+    expect(results.some((result) => result.type === 'Destination' && result.title === 'Redwood National and State Parks')).toBe(true)
+    expect(searchSite('national park', 5).some((result) => result.title === 'Redwood National and State Parks')).toBe(true)
+    const lastDestination = results.findLastIndex((result) => result.type === 'Destination')
+    const firstTrailhead = results.findIndex((result) => result.type === 'Trailhead')
+    expect(firstTrailhead).toBeGreaterThan(lastDestination)
   })
 })

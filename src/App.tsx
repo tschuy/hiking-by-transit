@@ -19,11 +19,12 @@ import { PostPage } from './pages/PostPage'
 import { PostsPage } from './pages/PostsPage'
 import { TrailheadsPage } from './pages/TrailheadsPage'
 import { TrailheadPage } from './pages/TrailheadPage'
+import { DestinationPage } from './pages/DestinationPage'
 import {
   eventContent, getEventContent, getGuideContent, getGuidePath, getHikeContent, getPageContent, getPlaceContent, getPostContent,
   guideContent, hikeContent, pageContent, placeContent, postContent,
 } from './data/content'
-import { catalogTrailheads, getCatalogTrailhead } from './data/trailheadCatalog'
+import { catalogDestinations, catalogTrailheads, getCatalogDestination, getCatalogHike, getCatalogTrailhead, getCatalogTrailheadById } from './data/trailheadCatalog'
 
 const siteName = 'Hiking by Transit'
 const siteUrl = 'https://hikingbytransit.com'
@@ -48,6 +49,7 @@ const descriptions = {
   posts: 'News, trip-planning resources, and guides from Hiking by Transit.',
   events: 'Upcoming and past transit-accessible hiking events.',
   trailheads: 'Explore transit-accessible trailheads across California on an interactive map.',
+  destinations: 'Find transit-accessible entrances and trailheads for this outdoor destination.',
 }
 
 function plainText(value?: string): string | undefined {
@@ -114,6 +116,18 @@ export function resolveRoute(pathname: string): ResolvedRoute {
     if (event) return { element: <EventPage slug={event.slug} />, metadata: metadata(event.title, normalizedPath, plainText(event.body), undefined, contentImage(undefined, event.body)) }
   }
 
+  const destinationMatch = normalizedPath.match(/^\/destinations\/([^/]+)$/)
+  if (destinationMatch) {
+    const destination = getCatalogDestination(decodeURIComponent(destinationMatch[1]))
+    if (destination) {
+      const image = destination.trailheadIds
+        .flatMap((id) => getCatalogTrailheadById(id)?.hikeIds ?? [])
+        .map(getCatalogHike)
+        .find((hike) => hike?.image)?.image ?? undefined
+      return { element: <DestinationPage slug={destination.slug} />, metadata: metadata(destination.name, normalizedPath, `${destination.trailheadIds.length} transit-accessible trailhead${destination.trailheadIds.length === 1 ? '' : 's'} serving ${destination.name}.`, undefined, contentImage(image)) }
+    }
+  }
+
   const trailheadMatch = normalizedPath.match(/^\/trailheads\/([^/]+)$/)
   if (trailheadMatch) {
     const trailhead = getCatalogTrailhead(decodeURIComponent(trailheadMatch[1]))
@@ -159,6 +173,7 @@ export const prerenderPaths = [...new Set([
   ...guideContent.map((guide) => getGuidePath(guide.slug)),
   ...postContent.map((post) => post.url.replace(/\/$/, '') || '/'),
   ...eventContent.map((event) => event.url.replace(/\/$/, '')),
+  ...catalogDestinations.map((destination) => `/destinations/${destination.slug}`),
   ...catalogTrailheads.map((trailhead) => `/trailheads/${trailhead.slug}`),
 ])].sort()
 

@@ -22,6 +22,14 @@ describe('route resolution', () => {
     expect(resolveRoute('/not-a-real-page').metadata.title).toBe('Page not found · Hiking by Transit')
   })
 
+  it('prerenders destination pages and links them from associated trailheads', () => {
+    expect(prerenderPaths).toContain('/destinations/pacific-crest-trail')
+    expect(resolveRoute('/destinations/pacific-crest-trail').metadata.title).toContain('Pacific Crest Trail')
+    const trailhead = renderToStaticMarkup(resolveRoute('/trailheads/castle-crags-state-park-pacific-crest-trail-soda-creek-trailhead').element)
+    expect(trailhead).toContain('href="/destinations/castle-crags-state-park"')
+    expect(trailhead).toContain('href="/destinations/pacific-crest-trail"')
+  })
+
   it('links place guides to their canonical prerendered paths', () => {
     const peninsula = renderToStaticMarkup(resolveRoute('/places/peninsula').element)
     expect(peninsula).toContain('href="/peninsula/samcoast"')

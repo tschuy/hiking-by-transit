@@ -23,7 +23,7 @@
     "deploy:preview": "npm run build && wrangler versions upload",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "npm run build:olmap && vitest run",
+    "test": "npm run build:olmap && python3 scripts/test_trailhead_names.py && vitest run",
     "test:e2e": "playwright test",
     "verify": "npm run check:generated && npm run lint && npm run test && npm --workspace olmap run verify && npm run build && npm run test:e2e"
   },

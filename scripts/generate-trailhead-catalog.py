@@ -18,6 +18,7 @@ from pathlib import Path
 import geopandas as gpd
 import pandas as pd
 from jsonschema import Draft202012Validator, FormatChecker
+from trailhead_names import destination_candidates, parse_trailhead_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -127,7 +128,8 @@ def main() -> None:
     access = gpd.read_file(args.gpkg, layer="transit_stop_access", fid_as_index=True).to_crs("EPSG:4326")
     kml_records, kml_sources = read_canonical_kml(copy_public=not args.check)
 
-    names = [str(value).strip() for value in trailheads["trailhead_name"]] + [record["name"] for record in kml_records]
+    names = [" ".join(str(value).split()) for value in trailheads["trailhead_name"]] + [record["name"] for record in kml_records]
+    known_destination_names = destination_candidates(names)
     slug_counts: dict[str, int] = {}
     for name in names:
         base = slugify(name)
@@ -156,7 +158,7 @@ def main() -> None:
     records = []
     for _, row in trailheads.sort_values("trailhead_id").iterrows():
         trailhead_id = str(row["trailhead_id"])
-        name = str(row["trailhead_name"]).strip()
+        name = " ".join(str(row["trailhead_name"]).split())
         base_slug = slugify(name)
         slug = base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{trailhead_id.lower().replace('_', '-')}"
         matching = access[access["trailhead_id"] == trailhead_id].sort_index()
@@ -183,10 +185,13 @@ def main() -> None:
                 "frequency": frequency,
                 "routeIds": route_ids,
             })
+        parsed_name = parse_trailhead_name(name, known_destination_names)
         records.append({
             "id": trailhead_id,
             "slug": slug,
             "name": name,
+            "entranceName": parsed_name.entrance_name,
+            "destinationNames": list(parsed_name.destination_names),
             "coordinates": [float(row.geometry.x), float(row.geometry.y)],
             "notes": text(row.get("notes")),
             "access": access_records,
@@ -200,8 +205,38 @@ def main() -> None:
     for record in kml_records:
         base_slug = slugify(record["name"])
         record["slug"] = base_slug if slug_counts[base_slug] == 1 else f"{base_slug}-{record['id'].lower().replace('_', '-')}"
+        parsed_name = parse_trailhead_name(record["name"], known_destination_names)
+        record["entranceName"] = parsed_name.entrance_name
+        record["destinationNames"] = list(parsed_name.destination_names)
         records.append(record)
     records.sort(key=lambda record: (record["name"].casefold(), record["id"]))
+
+    destination_trailheads: dict[str, set[str]] = {}
+    destination_display_names: dict[str, str] = {}
+    for record in records:
+        for destination_name in record.pop("destinationNames"):
+            key = destination_name.casefold()
+            destination_display_names.setdefault(key, destination_name)
+            destination_trailheads.setdefault(key, set()).add(record["id"])
+
+    destination_slug_groups: dict[str, list[str]] = {}
+    for key, display_name in destination_display_names.items():
+        destination_slug_groups.setdefault(slugify(display_name), []).append(key)
+
+    destinations = []
+    destination_id_by_key: dict[str, str] = {}
+    for key in sorted(destination_display_names, key=lambda item: destination_display_names[item].casefold()):
+        display_name = destination_display_names[key]
+        identity = hashlib.sha256(key.encode()).hexdigest()[:12].upper()
+        base_slug = slugify(display_name)
+        slug = base_slug if len(destination_slug_groups[base_slug]) == 1 else f"{base_slug}-{identity.lower()[:8]}"
+        destination_id = f"DEST_{identity}"
+        destination_id_by_key[key] = destination_id
+        destinations.append({"id": destination_id, "slug": slug, "name": display_name, "trailheadIds": sorted(destination_trailheads[key])})
+
+    for record in records:
+        parsed_name = parse_trailhead_name(record["name"], known_destination_names)
+        record["destinationIds"] = sorted(destination_id_by_key[name.casefold()] for name in parsed_name.destination_names)
 
     places = [{
         "id": place["place_id"],
@@ -223,9 +258,9 @@ def main() -> None:
         },
         "counts": {
             "trailheads": len(records), "accessRecords": len(access),
-            "hikes": len(hikes), "places": len(places),
+            "hikes": len(hikes), "places": len(places), "destinations": len(destinations),
         },
-        "trailheads": records, "hikes": hikes, "places": places,
+        "trailheads": records, "destinations": destinations, "hikes": hikes, "places": places,
     }
 
     schema = json.loads(args.schema.read_text(encoding="utf-8"))
@@ -261,7 +296,7 @@ def main() -> None:
         output_label = args.output.relative_to(ROOT)
     except ValueError:
         output_label = args.output
-    print(f"Generated {output_label}: {len(records)} trailheads, {len(access)} access records, {len(hikes)} hikes, {len(places)} places")
+    print(f"Generated {output_label}: {len(records)} trailheads, {len(access)} access records, {len(hikes)} hikes, {len(places)} places, {len(destinations)} destinations")
 
 
 if __name__ == "__main__":
