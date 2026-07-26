@@ -2,6 +2,7 @@ import { SearchForm } from '../components/SearchForm'
 import { ContentHikeCard } from '../components/ContentHikeCard'
 import { HeroSlideshow } from '../components/HeroSlideshow'
 import { hikeContent, placeContent, postContent } from '../data/content'
+import trailMapIcon from '../assets/trail-map.svg'
 
 export function HomePage() {
   const bayAreaRegions = placeContent.filter((place) => place.parent_id === 'bay-area')
@@ -18,7 +19,7 @@ export function HomePage() {
             <p className="hero-copy">Find California hikes, parks, and trailheads you can reach by bus, train, or ferry.</p>
             <a className="hero-map-cta" href="/trailheads">
               <span className="hero-map-icon" aria-hidden="true">
-                <svg viewBox="0 0 48 48" role="img"><path d="m4 10 12-5 16 6 12-5v32l-12 5-16-6-12 5V10Z" /><path d="M16 5v32m16-26v32" /><circle cx="25" cy="23" r="4" /><path d="M25 27c-4-4-6-7-6-10a6 6 0 0 1 12 0c0 3-2 6-6 10Z" /></svg>
+                <img src={trailMapIcon} alt="" />
               </span>
               <span className="hero-map-copy"><strong>Explore the map</strong><span>Browse transit-accessible hikes and trailheads across California</span></span>
               <span className="hero-map-arrow" aria-hidden="true">→</span>
