@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import html
 import json
@@ -69,15 +70,17 @@ def plain_kml_description(value: str | None) -> str | None:
     return value or None
 
 
-def read_canonical_kml() -> tuple[list[dict], list[dict]]:
+def read_canonical_kml(copy_public: bool = True) -> tuple[list[dict], list[dict]]:
     records = []
     sources = []
     namespace = {"kml": "http://www.opengis.net/kml/2.2"}
-    PUBLIC_KML_DIRECTORY.mkdir(parents=True, exist_ok=True)
+    if copy_public:
+        PUBLIC_KML_DIRECTORY.mkdir(parents=True, exist_ok=True)
     for filename in CANONICAL_KML:
         path = KML_DIRECTORY / filename
         public_path = PUBLIC_KML_DIRECTORY / filename
-        shutil.copyfile(path, public_path)
+        if copy_public:
+            shutil.copyfile(path, public_path)
         sources.append({
             "path": str(path.relative_to(ROOT)),
             "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
@@ -113,12 +116,16 @@ def main() -> None:
     parser.add_argument("--content", type=Path, default=DEFAULT_CONTENT)
     parser.add_argument("--schema", type=Path, default=DEFAULT_SCHEMA)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--check", action="store_true",
+        help="validate inputs and confirm committed generated files are current without writing them",
+    )
     args = parser.parse_args()
 
     content = json.loads(args.content.read_text(encoding="utf-8"))
     trailheads = gpd.read_file(args.gpkg, layer="trailheads", fid_as_index=True).to_crs("EPSG:4326")
     access = gpd.read_file(args.gpkg, layer="transit_stop_access", fid_as_index=True).to_crs("EPSG:4326")
-    kml_records, kml_sources = read_canonical_kml()
+    kml_records, kml_sources = read_canonical_kml(copy_public=not args.check)
 
     names = [str(value).strip() for value in trailheads["trailhead_name"]] + [record["name"] for record in kml_records]
     slug_counts: dict[str, int] = {}
@@ -225,6 +232,30 @@ def main() -> None:
     errors = sorted(Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(catalog), key=lambda error: list(error.path))
     if errors:
         raise SystemExit("Catalog validation failed:\n" + "\n".join(f"- {'/'.join(map(str, error.path))}: {error.message}" for error in errors))
+    if args.check:
+        if not args.output.exists():
+            raise SystemExit(f"Generated catalog is missing: {args.output.relative_to(ROOT)}")
+        committed = json.loads(args.output.read_text(encoding="utf-8"))
+        comparable_catalog = copy.deepcopy(catalog)
+        comparable_committed = copy.deepcopy(committed)
+        comparable_catalog.pop("generatedAt", None)
+        comparable_committed.pop("generatedAt", None)
+        comparable_catalog.get("source", {}).pop("gitRevision", None)
+        comparable_committed.get("source", {}).pop("gitRevision", None)
+        if comparable_catalog != comparable_committed:
+            raise SystemExit("Generated catalog is stale; run `npm run generate` and commit the result.")
+        stale_kml = [
+            filename for filename in CANONICAL_KML
+            if not (PUBLIC_KML_DIRECTORY / filename).exists()
+            or (KML_DIRECTORY / filename).read_bytes() != (PUBLIC_KML_DIRECTORY / filename).read_bytes()
+        ]
+        if stale_kml:
+            raise SystemExit(
+                "Generated public KML is stale; run `npm run generate`: " + ", ".join(stale_kml)
+            )
+        print(f"Verified generated catalog and {len(CANONICAL_KML)} canonical KML copies.")
+        return
+
     args.output.write_text(json.dumps(catalog, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     try:
         output_label = args.output.relative_to(ROOT)

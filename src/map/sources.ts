@@ -75,6 +75,24 @@ export function createMapSources(config: ConfigFile, enabledLayers: ReadonlySet<
     cachePolicy: 'memory',
     visible: true,
   }))
+  const regionalResources: MapDataSource = {
+    id: 'southern-california',
+    kind: 'geojson',
+    role: 'protected-area',
+    url: '/assets/geojson/southern_california.geojson',
+    version: config.dataVersion,
+    cachePolicy: 'memory',
+    visible: true,
+    load: async (signal) => {
+      const response = await fetch('/assets/geojson/southern_california.geojson', { signal })
+      if (!response.ok) throw new Error(`HTTP ${response.status} for Southern California resources`)
+      const collection = await response.json() as { features?: Array<{ properties?: Record<string, unknown> }> }
+      collection.features?.forEach((feature) => {
+        feature.properties = { ...feature.properties, name: 'Southern California' }
+      })
+      return collection
+    },
+  }
 
-  return [...transit, ...trailheads, ...hikes]
+  return [regionalResources, ...transit, ...trailheads, ...hikes]
 }
