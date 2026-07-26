@@ -92,11 +92,12 @@
     "destination": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "slug", "name", "trailheadIds"],
+      "required": ["id", "slug", "name", "placeId", "trailheadIds"],
       "properties": {
         "id": { "$ref": "#/$defs/id" },
         "slug": { "$ref": "#/$defs/slug" },
         "name": { "type": "string", "minLength": 1 },
+        "placeId": { "type": ["string", "null"] },
         "trailheadIds": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/trailheadId" } }
       }
     },

@@ -24,7 +24,7 @@ import {
   eventContent, getEventContent, getGuideContent, getGuidePath, getHikeContent, getPageContent, getPlaceContent, getPostContent,
   guideContent, hikeContent, pageContent, placeContent, postContent,
 } from './data/content'
-import { catalogDestinations, catalogTrailheads, getCatalogDestination, getCatalogHike, getCatalogTrailhead, getCatalogTrailheadById } from './data/trailheadCatalog'
+import { catalogDestinations, catalogTrailheads, getCatalogDestination, getCatalogHike, getCatalogTrailhead, getCatalogTrailheadById, getDestinationPath } from './data/trailheadCatalog'
 
 const siteName = 'Hiking by Transit'
 const siteUrl = 'https://hikingbytransit.com'
@@ -120,6 +120,8 @@ export function resolveRoute(pathname: string): ResolvedRoute {
   if (destinationMatch) {
     const destination = getCatalogDestination(decodeURIComponent(destinationMatch[1]))
     if (destination) {
+      const destinationPath = getDestinationPath(destination)
+      if (destination.placeId) return { element: <RedirectPage to={destinationPath} />, metadata: metadata('Page moved', destinationPath, descriptions.destinations) }
       const image = destination.trailheadIds
         .flatMap((id) => getCatalogTrailheadById(id)?.hikeIds ?? [])
         .map(getCatalogHike)

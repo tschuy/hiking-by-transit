@@ -1,4 +1,4 @@
-import { getCatalogDestinationById, getCatalogHike, getCatalogPlace, getCatalogTrailhead } from '../data/trailheadCatalog'
+import { getCatalogDestinationById, getCatalogHike, getCatalogPlace, getCatalogTrailhead, getDestinationPath } from '../data/trailheadCatalog'
 import { TrailheadAccessMap } from '../components/TrailheadAccessMap'
 import { googleMapsUrl } from '../map/googleMaps'
 import { formatAccessRoutes } from '../data/transitRouteNames'
@@ -18,7 +18,7 @@ export function TrailheadPage({ slug }: { slug: string }) {
       <p className="eyebrow">Trailhead{places.length ? ` · ${places.at(-1)?.title}` : ''}</p>
       <h1>{trailhead.name}</h1>
 
-      {destinations.length > 0 && <nav className="trailhead-destinations" aria-label="Outdoor destinations served by this trailhead"><span>Destinations</span>{destinations.map((destination) => <a href={`/destinations/${destination.slug}`} key={destination.id}>{destination.name}</a>)}</nav>}
+      {destinations.length > 0 && <nav className="trailhead-destinations" aria-label="Outdoor destinations served by this trailhead"><span>Destinations</span>{destinations.map((destination) => <a href={getDestinationPath(destination)} key={destination.id}>{destination.name}</a>)}</nav>}
 
       <TrailheadAccessMap trailhead={trailhead} />
 

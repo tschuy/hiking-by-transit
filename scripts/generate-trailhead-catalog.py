@@ -246,6 +246,27 @@ def main() -> None:
         "parentId": place.get("parent_id"),
         "blurb": place.get("blurb"),
     } for place in content["places"]]
+    destination_by_name = {destination["name"].casefold(): destination for destination in destinations}
+    destination_owner: dict[str, str] = {}
+    for place in content["places"]:
+        for destination_name in place.get("destination_names", []):
+            key = destination_name.casefold()
+            destination = destination_by_name.get(key)
+            if destination is None:
+                raise SystemExit(f"Place {place['place_id']} references unknown destination: {destination_name}")
+            if key in destination_owner:
+                raise SystemExit(f"Destination {destination_name} is owned by both {destination_owner[key]} and {place['place_id']}")
+            destination_owner[key] = place["place_id"]
+            destination["placeId"] = place["place_id"]
+    for destination in destinations:
+        destination.setdefault("placeId", None)
+    place_by_title = {place["title"].casefold(): place for place in content["places"]}
+    for destination in destinations:
+        matching_place = place_by_title.get(destination["name"].casefold())
+        if matching_place and destination["placeId"] is None:
+            raise SystemExit(
+                f"Destination {destination['name']} exactly matches place {matching_place['place_id']} but is not listed in its destination_names"
+            )
     catalog = {
         "schemaVersion": "0.9",
         "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),

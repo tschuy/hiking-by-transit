@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.9",
-  "generatedAt": "2026-07-26T21:19:28.172498Z",
+  "generatedAt": "2026-07-26T21:46:25.558809Z",
   "source": {
     "gpkgPath": "data/transit_accessible_trailheads.gpkg",
     "gpkgSha256": "0b2efd0970314307f135c523bd880c9e42fe7a4f04e2e63dbeaa37249eeec154",
@@ -22,7 +22,7 @@
         "publicPath": "public/assets/kml/call-ahead.kml"
       }
     ],
-    "gitRevision": "812897fe60810264af72af5d9dd1278673133e4f"
+    "gitRevision": "9cfa05c6607568c3befcbdbe7e36f32d9c66856f"
   },
   "counts": {
     "trailheads": 618,
@@ -29104,7 +29104,8 @@
       "name": "Alabama Hills National Scenic Area",
       "trailheadIds": [
         "TH_7988216"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F72F87BE3556",
@@ -29112,7 +29113,8 @@
       "name": "Alameda Creek Regional Trails",
       "trailheadIds": [
         "TH_3399871"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_307AF41C435D",
@@ -29120,7 +29122,8 @@
       "name": "Alhambra Hills Open Space",
       "trailheadIds": [
         "TH_3470934"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_14F0D390D790",
@@ -29128,7 +29131,8 @@
       "name": "Almaden Quicksilver County Park",
       "trailheadIds": [
         "TH_9163070"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_50759EE98E9A",
@@ -29136,7 +29140,8 @@
       "name": "Alto Bowl Preserve",
       "trailheadIds": [
         "TH_5055078"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EE76BD0E5E9D",
@@ -29144,7 +29149,8 @@
       "name": "Alum Rock Park",
       "trailheadIds": [
         "TH_1108412"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_FD5303BE8430",
@@ -29152,7 +29158,8 @@
       "name": "Alviso Marina County Park",
       "trailheadIds": [
         "TH_2638917"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1E7A4942BD19",
@@ -29160,7 +29167,8 @@
       "name": "American River",
       "trailheadIds": [
         "TH_5570025"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DB72B9B5F4D8",
@@ -29168,7 +29176,8 @@
       "name": "Anderson Marsh State Historic Park",
       "trailheadIds": [
         "TH_2376432"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F04BF1B666A1",
@@ -29176,7 +29185,8 @@
       "name": "Angel Island State Park",
       "trailheadIds": [
         "TH_437663"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_ED9FF669B68D",
@@ -29184,7 +29194,8 @@
       "name": "Anthony Chabot Regional Park",
       "trailheadIds": [
         "TH_1275989"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0E49E8881928",
@@ -29192,7 +29203,8 @@
       "name": "Ardenwood Historic Farm",
       "trailheadIds": [
         "TH_13510"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B3AAA60D7E42",
@@ -29200,7 +29212,8 @@
       "name": "Armstrong Redwoods State Natural Reserve",
       "trailheadIds": [
         "TH_9264679"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C0C12E780DB1",
@@ -29208,7 +29221,8 @@
       "name": "Asilomar Dunes Natural Preserve",
       "trailheadIds": [
         "TH_3988222"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_388D4BBF588E",
@@ -29216,7 +29230,8 @@
       "name": "Auburn State Recreation Area",
       "trailheadIds": [
         "TH_7731410"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D6883553DD83",
@@ -29224,7 +29239,8 @@
       "name": "Año Nuevo State Park",
       "trailheadIds": [
         "KML_CALL_AHEAD_CD246B284446"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_08CB5E35CF3C",
@@ -29232,7 +29248,8 @@
       "name": "Bald Hill Preserve",
       "trailheadIds": [
         "TH_6287069"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_028C91B0A884",
@@ -29240,7 +29257,8 @@
       "name": "Baltimore Canyon Preserve",
       "trailheadIds": [
         "TH_1088540"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5ABF53135030",
@@ -29248,7 +29266,8 @@
       "name": "Baltimore Canyon Regional Preserve",
       "trailheadIds": [
         "TH_701919"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E3B8F94DEEAE",
@@ -29256,7 +29275,8 @@
       "name": "Bannister Park",
       "trailheadIds": [
         "TH_938258"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_95BD64C0B98E",
@@ -29265,7 +29285,8 @@
       "trailheadIds": [
         "TH_5640453",
         "TH_9313171"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1A8ECAC304DA",
@@ -29273,7 +29294,8 @@
       "name": "Bay Point Regional Shoreline",
       "trailheadIds": [
         "TH_6890854"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DE63F0CDA1AB",
@@ -29281,7 +29303,8 @@
       "name": "Bean Hollow State Beach",
       "trailheadIds": [
         "KML_CALL_AHEAD_5FF1566150F3"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4929DF90C35E",
@@ -29289,7 +29312,8 @@
       "name": "Bedwell Bayfront Park",
       "trailheadIds": [
         "TH_9302292"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B04A8C080921",
@@ -29297,7 +29321,8 @@
       "name": "Big Basin State Park",
       "trailheadIds": [
         "KML_SHUTTLES_376E5E8EC7DB"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_28201A553143",
@@ -29306,7 +29331,8 @@
       "trailheadIds": [
         "TH_5326005",
         "TH_8740221"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_30A4562D97BA",
@@ -29315,7 +29341,8 @@
       "trailheadIds": [
         "TH_1328527",
         "TH_4485942"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_663A99E7939C",
@@ -29325,7 +29352,8 @@
         "TH_658785",
         "TH_6634669",
         "TH_9565242"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0DE4F8517A3A",
@@ -29335,7 +29363,8 @@
         "TH_1025850",
         "TH_1277058",
         "TH_6511743"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0C91E8778E20",
@@ -29343,7 +29372,8 @@
       "name": "Black Diamond Mines Regional Park",
       "trailheadIds": [
         "KML_MICROTRANSIT_E336F9D1B4CD"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EEF62A1221BA",
@@ -29352,7 +29382,8 @@
       "trailheadIds": [
         "KML_MICROTRANSIT_40D9C517A9C6",
         "TH_9285834"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D9CA53598780",
@@ -29362,7 +29393,8 @@
         "TH_5099673",
         "TH_7140219",
         "TH_733088"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E3E228FDEED7",
@@ -29370,7 +29402,8 @@
       "name": "Boggs Mountain Demonstration State Forest",
       "trailheadIds": [
         "TH_2773424"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8AEA9E558614",
@@ -29378,7 +29411,8 @@
       "name": "Bothe-Napa Valley State Park",
       "trailheadIds": [
         "TH_2194055"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A91A320E3C31",
@@ -29387,7 +29421,8 @@
       "trailheadIds": [
         "TH_1431295",
         "TH_6485395"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C5058F05CAFD",
@@ -29396,7 +29431,8 @@
       "trailheadIds": [
         "TH_3807061",
         "TH_5799556"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A3EF442385CC",
@@ -29406,7 +29442,8 @@
         "TH_1708604",
         "TH_593246",
         "TH_7673686"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7E99908DAF47",
@@ -29414,7 +29451,8 @@
       "name": "Brushy Peak Regional Preserve",
       "trailheadIds": [
         "TH_9741429"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4EF100D5D860",
@@ -29422,7 +29460,8 @@
       "name": "Burton Creek State Park",
       "trailheadIds": [
         "TH_2834315"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F4C9C83B7D41",
@@ -29430,7 +29469,8 @@
       "name": "Butano State Park",
       "trailheadIds": [
         "KML_CALL_AHEAD_C0856BD07C6B"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_64927CD725EE",
@@ -29438,7 +29478,8 @@
       "name": "Calero Creek Trail",
       "trailheadIds": [
         "TH_7916569"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D98B33C8AC35",
@@ -29446,7 +29487,8 @@
       "name": "Caligiuri Park and Preserve",
       "trailheadIds": [
         "TH_1722512"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_65D0F4249205",
@@ -29454,7 +29496,8 @@
       "name": "Camino Alto Preserve",
       "trailheadIds": [
         "TH_4007103"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F9B936828A00",
@@ -29462,7 +29505,8 @@
       "name": "Capay Open Space Park",
       "trailheadIds": [
         "TH_9109874"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E363D36CB900",
@@ -29477,7 +29521,8 @@
         "TH_7695407",
         "TH_8370552",
         "TH_89107"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5458AF4DBCB5",
@@ -29485,7 +29530,8 @@
       "name": "Caspar Headlands State Beach",
       "trailheadIds": [
         "TH_5007864"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_36D5601D3F70",
@@ -29493,7 +29539,8 @@
       "name": "Caspar Headlands State Reserve",
       "trailheadIds": [
         "TH_5351376"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E2B924C97CA7",
@@ -29503,7 +29550,8 @@
         "TH_2041786",
         "TH_602022",
         "TH_7520674"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_730B145508C7",
@@ -29511,7 +29559,8 @@
       "name": "Castle Rock State Park",
       "trailheadIds": [
         "TH_1244000"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F93362E9E014",
@@ -29519,7 +29568,8 @@
       "name": "Cayucos State Beach",
       "trailheadIds": [
         "TH_9145617"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EC83A0EBE2AE",
@@ -29530,7 +29580,8 @@
         "TH_3822929",
         "TH_5550755",
         "TH_8133723"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A84AC465D4E1",
@@ -29538,7 +29589,8 @@
       "name": "Chapin Peak",
       "trailheadIds": [
         "TH_6793733"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A08A18AA6E96",
@@ -29546,7 +29598,8 @@
       "name": "China Camp State Park",
       "trailheadIds": [
         "TH_5099992"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_18178EE78AF4",
@@ -29554,7 +29607,8 @@
       "name": "Claremont Canyon Regional Preserve",
       "trailheadIds": [
         "TH_9662257"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BA691B55CA0C",
@@ -29562,7 +29616,8 @@
       "name": "Clear Lake State Park",
       "trailheadIds": [
         "TH_2848434"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5B59F5D768C2",
@@ -29570,7 +29625,8 @@
       "name": "Cloverdale Ranch",
       "trailheadIds": [
         "KML_CALL_AHEAD_E4E3D9B034EC"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_AD69463C005A",
@@ -29578,7 +29634,8 @@
       "name": "Cloverdale River Park",
       "trailheadIds": [
         "TH_9356829"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DF2E9BBD214A",
@@ -29586,7 +29643,8 @@
       "name": "Columbia State Historic Park",
       "trailheadIds": [
         "TH_2831451"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3E3A29DC312D",
@@ -29596,7 +29654,8 @@
         "KML_MICROTRANSIT_39EDB78066B7",
         "KML_MICROTRANSIT_6D4ACD856C80",
         "TH_3863840"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1D27F4C79359",
@@ -29608,7 +29667,8 @@
         "TH_7243033",
         "TH_8075013",
         "TH_9340801"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_25BD66F09035",
@@ -29616,7 +29676,8 @@
       "name": "Coyote Hills Regional Park",
       "trailheadIds": [
         "TH_2983084"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7A8CF5716105",
@@ -29624,7 +29685,8 @@
       "name": "Coyote Valley Open Space Preserve",
       "trailheadIds": [
         "TH_3558010"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B33D221EFD62",
@@ -29632,7 +29694,8 @@
       "name": "Crockett Hills Regional Park",
       "trailheadIds": [
         "TH_8412606"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9F6E6B2B3CBD",
@@ -29640,7 +29703,8 @@
       "name": "Cull Canyon Regional Recreation Area",
       "trailheadIds": [
         "TH_9431113"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CC71A2B2E333",
@@ -29649,7 +29713,8 @@
       "trailheadIds": [
         "TH_4347290",
         "TH_8153002"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_90F779C14D04",
@@ -29657,7 +29722,8 @@
       "name": "DeLaveaga Park",
       "trailheadIds": [
         "TH_2740030"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_187087136818",
@@ -29665,7 +29731,8 @@
       "name": "Devils Postpile National Monument",
       "trailheadIds": [
         "KML_SHUTTLES_C9654709848D"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E0120EEF6D7B",
@@ -29674,7 +29741,8 @@
       "trailheadIds": [
         "TH_4924262",
         "TH_6636624"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D8615F57ADCA",
@@ -29682,7 +29750,8 @@
       "name": "Don Castro Regional Recreation Area",
       "trailheadIds": [
         "TH_4031741"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4CCFFAFD7B59",
@@ -29691,7 +29760,8 @@
       "trailheadIds": [
         "TH_8176315",
         "TH_9862621"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_91F61278C84D",
@@ -29699,7 +29769,8 @@
       "name": "Donner Memorial State Park",
       "trailheadIds": [
         "TH_7141450"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_661F94FE0D0F",
@@ -29708,7 +29779,8 @@
       "trailheadIds": [
         "TH_3037759",
         "TH_8196482"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D6B46CCE4FE9",
@@ -29717,7 +29789,8 @@
       "trailheadIds": [
         "TH_1280397",
         "TH_3791435"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C7AE449CBC1B",
@@ -29725,7 +29798,8 @@
       "name": "Dublin Hills Regional Open Space Preserve",
       "trailheadIds": [
         "TH_6951284"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_37D40AF7A1D4",
@@ -29735,7 +29809,8 @@
         "TH_377234",
         "TH_7338109",
         "TH_8061862"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_78EA9E6174BB",
@@ -29743,7 +29818,8 @@
       "name": "Eastside Keswick Trails",
       "trailheadIds": [
         "TH_8103967"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8E643CD5935D",
@@ -29751,7 +29827,8 @@
       "name": "Ed Levin County Park",
       "trailheadIds": [
         "TH_4346312"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BB178F4B907A",
@@ -29759,7 +29836,8 @@
       "name": "Ed Z'berg Sugar Pine Point State Park",
       "trailheadIds": [
         "TH_9282211"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_418C5378DDE7",
@@ -29773,7 +29851,8 @@
         "TH_5422411",
         "TH_6572203",
         "TH_8915829"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_11810A3246F9",
@@ -29781,7 +29860,8 @@
       "name": "El Moro Elfin Forest",
       "trailheadIds": [
         "TH_2128575"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DF2CA3BD5DEB",
@@ -29789,7 +29869,8 @@
       "name": "Emerald Bay State Park",
       "trailheadIds": [
         "KML_SHUTTLES_3A226DEB3CA9"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E552215BDCE1",
@@ -29800,7 +29881,8 @@
         "TH_1579989",
         "TH_8920177",
         "TH_9396055"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DFB41D29AB81",
@@ -29808,7 +29890,8 @@
       "name": "Estero Bluffs State Park",
       "trailheadIds": [
         "TH_8655081"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A127E115FF75",
@@ -29816,7 +29899,8 @@
       "name": "Fernandez Ranch",
       "trailheadIds": [
         "TH_6162975"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_83B7D0620F77",
@@ -29826,7 +29910,8 @@
         "TH_3664802",
         "TH_4596193",
         "TH_6957610"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_562962DB9BCC",
@@ -29834,7 +29919,8 @@
       "name": "Fitzgerald Marine Reserve",
       "trailheadIds": [
         "TH_3326216"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1282209DBBA7",
@@ -29844,7 +29930,8 @@
         "TH_4108001",
         "TH_6182890",
         "TH_6512666"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_60D0E6D6ABEC",
@@ -29852,7 +29939,8 @@
       "name": "Foothill Regional Park",
       "trailheadIds": [
         "TH_9044422"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_18960D52BC27",
@@ -29860,7 +29948,8 @@
       "name": "Forest of Nisene Marks State Park",
       "trailheadIds": [
         "TH_6951584"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E6E794067EDA",
@@ -29870,7 +29959,8 @@
         "TH_1489138",
         "TH_3658528",
         "TH_6198146"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F63C10F1A467",
@@ -29879,7 +29969,8 @@
       "trailheadIds": [
         "TH_3667127",
         "TH_4462684"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F3A0E473D825",
@@ -29887,7 +29978,8 @@
       "name": "Fremont Older Open Space",
       "trailheadIds": [
         "KML_MICROTRANSIT_E2F879C65A66"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CA6143FDABC4",
@@ -29895,7 +29987,8 @@
       "name": "French Ranch Preserve",
       "trailheadIds": [
         "TH_4811882"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5D62E5D87B2E",
@@ -29903,7 +29996,8 @@
       "name": "Garin Regional Park",
       "trailheadIds": [
         "TH_5617807"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_73920877D00C",
@@ -29915,7 +30009,8 @@
         "TH_3288070",
         "TH_4101114",
         "TH_6387858"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4415835CF0B1",
@@ -29924,7 +30019,8 @@
       "trailheadIds": [
         "TH_2482622",
         "TH_7393810"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3416B1B4BF08",
@@ -29932,7 +30028,8 @@
       "name": "Gazos Creek State Beach",
       "trailheadIds": [
         "KML_CALL_AHEAD_DB901A6801EE"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6E7396D8E125",
@@ -29940,7 +30037,8 @@
       "name": "Glen Cove Waterfront Park",
       "trailheadIds": [
         "TH_1266264"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DCFD97275EDE",
@@ -29949,7 +30047,8 @@
       "trailheadIds": [
         "TH_1722512",
         "TH_184863"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D9DB2D87EABB",
@@ -29957,7 +30056,8 @@
       "name": "Glenwood Open Space Preserve",
       "trailheadIds": [
         "TH_6840729"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_04C624DD347E",
@@ -29965,7 +30065,8 @@
       "name": "Gray Whale Cove State Beach",
       "trailheadIds": [
         "TH_6262111"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_945191235484",
@@ -29973,7 +30074,8 @@
       "name": "Greenwood State Beach",
       "trailheadIds": [
         "TH_2126106"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B72FBD8423F1",
@@ -29981,7 +30083,8 @@
       "name": "Guadalupe Oak Grove Park",
       "trailheadIds": [
         "TH_3713983"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EA45B5256A80",
@@ -29989,7 +30092,8 @@
       "name": "Gualala Point Regional Park",
       "trailheadIds": [
         "TH_9683152"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_121B25934C19",
@@ -29997,7 +30101,8 @@
       "name": "Half Moon Bay State Beach",
       "trailheadIds": [
         "TH_9473865"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_2EA0C103F8D5",
@@ -30006,7 +30111,8 @@
       "trailheadIds": [
         "TH_3023444",
         "TH_5669895"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_819284D302F5",
@@ -30014,7 +30120,8 @@
       "name": "Hartoonian Trails",
       "trailheadIds": [
         "TH_123992"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8DBD33488494",
@@ -30023,7 +30130,8 @@
       "trailheadIds": [
         "TH_6917256",
         "TH_7008693"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3C9FD402F0CE",
@@ -30034,7 +30142,8 @@
         "TH_5771170",
         "TH_582165",
         "TH_6313730"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D021F1810E56",
@@ -30046,7 +30155,8 @@
         "TH_8292948",
         "TH_8306680",
         "TH_9501631"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_39841122F7FE",
@@ -30054,7 +30164,8 @@
       "name": "Hercules Open Space",
       "trailheadIds": [
         "TH_7532627"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1B2CE033086A",
@@ -30062,7 +30173,8 @@
       "name": "Hill Slough Wildlife Area",
       "trailheadIds": [
         "TH_8189907"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6F29D0E30521",
@@ -30070,7 +30182,8 @@
       "name": "Horse Hill Preserve",
       "trailheadIds": [
         "TH_4982290"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_04A1554C5351",
@@ -30079,7 +30192,8 @@
       "trailheadIds": [
         "TH_7110985",
         "TH_7253136"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A9F802E2369B",
@@ -30087,7 +30201,8 @@
       "name": "Howe Homestead Park",
       "trailheadIds": [
         "TH_8646533"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0DE2F83ACAAD",
@@ -30095,7 +30210,8 @@
       "name": "Huckleberry Hill Nature Preserve",
       "trailheadIds": [
         "TH_2852684"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D34522C476F0",
@@ -30106,7 +30222,8 @@
         "TH_6651354",
         "TH_7216028",
         "TH_9250031"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_62E7403A0CC6",
@@ -30115,7 +30232,8 @@
       "trailheadIds": [
         "TH_2469211",
         "TH_7276571"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_926AABC76EF0",
@@ -30124,7 +30242,8 @@
       "trailheadIds": [
         "TH_5485451",
         "TH_7743600"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_AE048284EE2D",
@@ -30152,7 +30271,8 @@
         "TH_8830022",
         "TH_9717880",
         "TH_9814256"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_2AA592741FB8",
@@ -30161,7 +30281,8 @@
       "trailheadIds": [
         "TH_8713541",
         "TH_8965188"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_ED27FEE22DC7",
@@ -30169,7 +30290,8 @@
       "name": "Islay Hill Natural Reserve",
       "trailheadIds": [
         "TH_417739"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DA53613D3C92",
@@ -30177,7 +30299,8 @@
       "name": "Jack London State Historic Park",
       "trailheadIds": [
         "TH_9938328"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3AD90514DC75",
@@ -30186,7 +30309,8 @@
       "trailheadIds": [
         "TH_1919975",
         "TH_4384782"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_042AE00EE0C6",
@@ -30194,7 +30318,8 @@
       "name": "Jenner Headlands Preserve",
       "trailheadIds": [
         "TH_184999"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_40187070B386",
@@ -30202,7 +30327,8 @@
       "name": "Jerry Russom Memorial Park",
       "trailheadIds": [
         "TH_5738003"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BF8A8681AF5A",
@@ -30214,7 +30340,8 @@
         "TH_3278001",
         "TH_4631529",
         "TH_7054420"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6446A09DAD89",
@@ -30222,7 +30349,8 @@
       "name": "John B. Dewitt Redwoods State Natural Reserve",
       "trailheadIds": [
         "TH_1005841"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8ED24D0F9DE5",
@@ -30230,7 +30358,8 @@
       "name": "Jug Handle State Natural Reserve",
       "trailheadIds": [
         "TH_1329793"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_09550A8E0C15",
@@ -30238,7 +30367,8 @@
       "name": "Kahle Park",
       "trailheadIds": [
         "TH_2742657"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F17FD7745FA8",
@@ -30246,7 +30376,8 @@
       "name": "King Mountain Preserve",
       "trailheadIds": [
         "TH_1773255"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F85CDAD0E06E",
@@ -30254,7 +30385,8 @@
       "name": "Klamath National Forest",
       "trailheadIds": [
         "TH_1551394"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_287D566A3078",
@@ -30265,7 +30397,8 @@
         "TH_4363135",
         "TH_5875107",
         "TH_9856008"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_91A0D050EBAB",
@@ -30273,7 +30406,8 @@
       "name": "La Honda Creek Preserve",
       "trailheadIds": [
         "KML_CALL_AHEAD_B7A14E0BE085"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_478C3C02ECE4",
@@ -30281,7 +30415,8 @@
       "name": "La Honda Preserve",
       "trailheadIds": [
         "KML_CALL_AHEAD_3B397F0630B3"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5569C6CCC0B4",
@@ -30289,7 +30424,8 @@
       "name": "Lagoon Valley Park",
       "trailheadIds": [
         "TH_511859"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F3B183782BAB",
@@ -30300,7 +30436,8 @@
         "TH_7907113",
         "TH_9988144",
         "TH_ad3f9dd5"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_891EE18D7366",
@@ -30309,7 +30446,8 @@
       "trailheadIds": [
         "TH_6620713",
         "TH_9839074"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_901FF91C57B6",
@@ -30317,7 +30455,8 @@
       "name": "Las Gallinas Valley",
       "trailheadIds": [
         "TH_2404330"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CAD78C13BF51",
@@ -30328,7 +30467,8 @@
         "TH_3199807",
         "TH_7677230",
         "TH_8934664"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1031576E42B1",
@@ -30341,7 +30481,8 @@
         "TH_56795",
         "TH_7958508",
         "TH_9353498"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EE9099CA4A05",
@@ -30349,7 +30490,8 @@
       "name": "Leona Canyon Open Space Regional Preserve",
       "trailheadIds": [
         "TH_85016"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_30CD519582C9",
@@ -30357,7 +30499,8 @@
       "name": "Lime Ridge Open Space",
       "trailheadIds": [
         "TH_1926757"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9683460A90CB",
@@ -30365,7 +30508,8 @@
       "name": "Loma Alta Preserve",
       "trailheadIds": [
         "TH_9303594"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8299B938BB46",
@@ -30374,7 +30518,8 @@
       "trailheadIds": [
         "TH_3783942",
         "TH_928207"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DBAB6659EDBE",
@@ -30382,7 +30527,8 @@
       "name": "Los Gatos Creek County Park",
       "trailheadIds": [
         "TH_743671"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_56AE63E9A0BB",
@@ -30391,7 +30537,8 @@
       "trailheadIds": [
         "TH_138227",
         "TH_9323531"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_1DAA6754A58C",
@@ -30400,7 +30547,8 @@
       "trailheadIds": [
         "TH_1789722",
         "TH_5783271"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3730FEBAA0C3",
@@ -30408,7 +30556,8 @@
       "name": "Lucas Valley Preserve",
       "trailheadIds": [
         "TH_9430453"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4EB285078DD7",
@@ -30416,7 +30565,8 @@
       "name": "Manzanita County Park",
       "trailheadIds": [
         "TH_8153540"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_061218A7D12A",
@@ -30424,7 +30574,8 @@
       "name": "Mare Island",
       "trailheadIds": [
         "TH_9161012"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A3CE4FCFA982",
@@ -30439,7 +30590,8 @@
         "TH_6481828",
         "TH_7814461",
         "TH_9002317"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B9538042CE4F",
@@ -30447,7 +30599,8 @@
       "name": "Marina State Beach",
       "trailheadIds": [
         "TH_7419097"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9B691D0DF271",
@@ -30455,7 +30608,8 @@
       "name": "Martin Luther King Jr. Regional Shoreline",
       "trailheadIds": [
         "TH_5589829"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CB02F8907298",
@@ -30463,7 +30617,8 @@
       "name": "Maurice Thorner Memorial Preserve",
       "trailheadIds": [
         "TH_3553029"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B1E7C351B0C4",
@@ -30471,7 +30626,8 @@
       "name": "Maxwell Farms Regional Park",
       "trailheadIds": [
         "TH_5575073"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B6CF645D3673",
@@ -30479,7 +30635,8 @@
       "name": "McCrea Memorial Park/Leona Heights",
       "trailheadIds": [
         "TH_2726841"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_549BA9A1B56F",
@@ -30487,7 +30644,8 @@
       "name": "McLaughlin Eastshore State Park",
       "trailheadIds": [
         "TH_8792767"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BFD5B4D86220",
@@ -30495,7 +30653,8 @@
       "name": "Memorial County Park",
       "trailheadIds": [
         "KML_CALL_AHEAD_9853EB13B125"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_286062849188",
@@ -30504,7 +30663,8 @@
       "trailheadIds": [
         "TH_2780612",
         "TH_5738926"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9128771A0C14",
@@ -30512,7 +30672,8 @@
       "name": "Mendocino National Forest",
       "trailheadIds": [
         "TH_2244194"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_278B89FAB9C5",
@@ -30520,7 +30681,8 @@
       "name": "Middletown Trailside Park",
       "trailheadIds": [
         "TH_9314259"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6523AAC418B8",
@@ -30529,7 +30691,8 @@
       "trailheadIds": [
         "TH_1704585",
         "TH_3602559"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0CE5AC5CEBCD",
@@ -30537,7 +30700,8 @@
       "name": "Miller Property County Park",
       "trailheadIds": [
         "TH_8117003"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4E208BE9C130",
@@ -30545,7 +30709,8 @@
       "name": "Miller/Knox Regional Shoreline",
       "trailheadIds": [
         "TH_7303483"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F7AD11779A8B",
@@ -30554,7 +30719,8 @@
       "trailheadIds": [
         "TH_9645517",
         "TH_9948474"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7F306A6F308D",
@@ -30564,7 +30730,8 @@
         "TH_1813800",
         "TH_3328874",
         "TH_8651427"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8A3524500BFC",
@@ -30573,7 +30740,8 @@
       "trailheadIds": [
         "TH_5136187",
         "TH_8494950"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7122BC90C2C0",
@@ -30581,7 +30749,8 @@
       "name": "Montara State Beach",
       "trailheadIds": [
         "TH_2681729"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_46A1289B10C1",
@@ -30589,7 +30758,8 @@
       "name": "Monte Rio Redwoods Regional Park and Open Space Preserve",
       "trailheadIds": [
         "TH_8146434"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A30CDBD3EAC7",
@@ -30598,7 +30768,8 @@
       "trailheadIds": [
         "TH_231710",
         "TH_8977431"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F677916F94F0",
@@ -30606,7 +30777,8 @@
       "name": "Montini Open Space Preserve",
       "trailheadIds": [
         "TH_996418"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3E22845D8221",
@@ -30616,7 +30788,8 @@
         "TH_4756145",
         "TH_8942166",
         "TH_9887782"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_AEB162F44CC4",
@@ -30625,7 +30798,8 @@
       "trailheadIds": [
         "TH_2912460",
         "TH_5572789"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A06AFD4F2142",
@@ -30635,7 +30809,8 @@
         "TH_5710973",
         "TH_8735209",
         "TH_8903013"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_561551E777AC",
@@ -30643,7 +30818,8 @@
       "name": "Mount Diablo State Park",
       "trailheadIds": [
         "TH_6182090"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0E51E2490D0A",
@@ -30652,7 +30828,8 @@
       "trailheadIds": [
         "TH_5412961",
         "TH_9044510"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_185A046EAC7C",
@@ -30666,7 +30843,8 @@
         "TH_7770972",
         "TH_8839065",
         "TH_9834435"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CC5AEAF3444B",
@@ -30676,7 +30854,8 @@
         "TH_4751733",
         "TH_4829824",
         "TH_5981019"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_95CFB3C2B44F",
@@ -30684,7 +30863,8 @@
       "name": "Muir Woods National Monument",
       "trailheadIds": [
         "TH_5369188"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_58B2E8573E88",
@@ -30692,7 +30872,8 @@
       "name": "Mulholland Ridge Open Space",
       "trailheadIds": [
         "TH_5851568"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7A90C23B6B0D",
@@ -30700,7 +30881,8 @@
       "name": "Mussel Rock Park",
       "trailheadIds": [
         "TH_7814437"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_606147FB4137",
@@ -30708,7 +30890,8 @@
       "name": "Natalie Coffin Greene Park",
       "trailheadIds": [
         "TH_3552941"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C4AAB556C58F",
@@ -30716,7 +30899,8 @@
       "name": "Natural Bridges State Beach",
       "trailheadIds": [
         "TH_735203"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BADF57385125",
@@ -30724,7 +30908,8 @@
       "name": "Navarro River Redwoods State Park",
       "trailheadIds": [
         "TH_195740"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DBBF74CFA4ED",
@@ -30732,7 +30917,8 @@
       "name": "Newell Open Space",
       "trailheadIds": [
         "TH_5108563"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B1A689D2C07F",
@@ -30740,7 +30926,8 @@
       "name": "Niles Community Park",
       "trailheadIds": [
         "TH_2712071"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6A2C32C284CF",
@@ -30748,7 +30935,8 @@
       "name": "North Tahoe Regional Park",
       "trailheadIds": [
         "TH_9442118"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F568627FCF78",
@@ -30756,7 +30944,8 @@
       "name": "Old St Hilary's",
       "trailheadIds": [
         "TH_2089966"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_073CB4039E5D",
@@ -30764,7 +30953,8 @@
       "name": "Orinda Oaks Park",
       "trailheadIds": [
         "TH_3294152"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_ADAB59A2841F",
@@ -30772,7 +30962,8 @@
       "name": "Owens Peak Wilderness",
       "trailheadIds": [
         "TH_4269312"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4FEAB9D67A10",
@@ -30780,7 +30971,8 @@
       "name": "Oyster Bay Regional Shoreline",
       "trailheadIds": [
         "TH_4729905"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A28EBEC872FA",
@@ -30788,7 +30980,8 @@
       "name": "O’Hair Park",
       "trailheadIds": [
         "TH_9020782"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BD129D72BBC1",
@@ -30805,7 +30998,8 @@
         "TH_7520674",
         "TH_7569362",
         "TH_7958508"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_556BE47AAE2A",
@@ -30815,7 +31009,8 @@
         "TH_1239444",
         "TH_8038748",
         "TH_870978"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_40DBD6B9E724",
@@ -30823,7 +31018,8 @@
       "name": "Pebble Beach at Bean Hollow State Beach",
       "trailheadIds": [
         "KML_CALL_AHEAD_CCF0C26FEE17"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_42BADC20AC8F",
@@ -30831,7 +31027,8 @@
       "name": "Pedro Point Headlands",
       "trailheadIds": [
         "TH_9081355"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D17D88430C2D",
@@ -30841,7 +31038,8 @@
         "KML_CALL_AHEAD_6DF6D0FF2D2B",
         "KML_CALL_AHEAD_841CAB1873EE",
         "KML_CALL_AHEAD_EE6C21F1F4E2"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4EFC98F0D09A",
@@ -30849,7 +31047,8 @@
       "name": "Peña Adobe Regional Park",
       "trailheadIds": [
         "TH_511859"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D0DC00713E41",
@@ -30857,7 +31056,8 @@
       "name": "Pinole Open Space",
       "trailheadIds": [
         "TH_4163159"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8C7B23F2C9D7",
@@ -30865,7 +31065,8 @@
       "name": "Pinole Valley Park",
       "trailheadIds": [
         "TH_8797674"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A98622B15A94",
@@ -30873,7 +31074,8 @@
       "name": "Pinto Lake County Park",
       "trailheadIds": [
         "TH_3062042"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_13581AF6961D",
@@ -30881,7 +31083,8 @@
       "name": "Pismo Preserve",
       "trailheadIds": [
         "TH_1308534"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4586BCC13267",
@@ -30892,7 +31095,8 @@
         "TH_5771357",
         "TH_8284748",
         "TH_9872944"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_86E65B694180",
@@ -30905,7 +31109,8 @@
         "TH_871020",
         "TH_9189956",
         "TH_9758246"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5C74743DBD7F",
@@ -30915,7 +31120,8 @@
         "TH_606249",
         "TH_8015740",
         "TH_8018887"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_346F04C8B44B",
@@ -30923,7 +31129,8 @@
       "name": "Point Pinole Regional Shoreline",
       "trailheadIds": [
         "TH_7915057"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9CFCDCE05E3B",
@@ -30932,7 +31139,8 @@
       "trailheadIds": [
         "PRNS_PFR",
         "TH_2830693"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E472642119CC",
@@ -30940,7 +31148,8 @@
       "name": "Pomponio State Beach",
       "trailheadIds": [
         "KML_CALL_AHEAD_1ED2CD0B1362"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8A580B24F6EF",
@@ -30948,7 +31157,8 @@
       "name": "Prairie Creek Redwoods State Park",
       "trailheadIds": [
         "TH_5014134"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E35218F191AB",
@@ -30956,7 +31166,8 @@
       "name": "Quail Hollow Ranch County Park",
       "trailheadIds": [
         "TH_8524994"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E741D786F7BB",
@@ -30964,7 +31175,8 @@
       "name": "Quarry Lakes Regional Recreation Area",
       "trailheadIds": [
         "TH_8865484"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5C9FFEED9423",
@@ -30973,7 +31185,8 @@
       "trailheadIds": [
         "KML_MICROTRANSIT_6866EC434657",
         "TH_5095213"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5A9FDF761AC7",
@@ -30981,7 +31194,8 @@
       "name": "Ragle Ranch Park",
       "trailheadIds": [
         "TH_9629809"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_AE5A4B838008",
@@ -30990,7 +31204,8 @@
       "trailheadIds": [
         "TH_1249995",
         "TH_9674562"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_7E7F5F1FBCC6",
@@ -30999,7 +31214,8 @@
       "trailheadIds": [
         "KML_MICROTRANSIT_0D0D4F89DFD9",
         "KML_MICROTRANSIT_2FBFA823A05D"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DE075136F8F2",
@@ -31008,7 +31224,8 @@
       "trailheadIds": [
         "TH_2335475",
         "TH_2979768"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_2AE5EC2527AF",
@@ -31022,7 +31239,8 @@
         "TH_7192418",
         "TH_8521544",
         "TH_8586567"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_07F8681BE6D1",
@@ -31032,7 +31250,8 @@
         "TH_3129361",
         "TH_4650527",
         "TH_9257585"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0400F1046661",
@@ -31041,7 +31260,8 @@
       "trailheadIds": [
         "TH_2639573",
         "TH_5292288"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C3AB1173D34D",
@@ -31049,7 +31269,8 @@
       "name": "Rip Van Winkle Open Space Preserve",
       "trailheadIds": [
         "TH_7509739"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_87E2D676560B",
@@ -31057,7 +31278,8 @@
       "name": "Roberts Regional Recreation Area",
       "trailheadIds": [
         "TH_7054420"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5E1314073D29",
@@ -31065,7 +31287,8 @@
       "name": "Rockville Hills Regional Park",
       "trailheadIds": [
         "TH_3962941"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C25A3E7B7AB8",
@@ -31073,7 +31296,8 @@
       "name": "Roy's Redwoods Preserve",
       "trailheadIds": [
         "TH_1778483"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DA33697BE9A1",
@@ -31081,7 +31305,8 @@
       "name": "Rush Creek Preserve",
       "trailheadIds": [
         "MCP_RCP"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_87CC58E396E4",
@@ -31089,7 +31314,8 @@
       "name": "Sacramento River Trail",
       "trailheadIds": [
         "TH_5046455"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_6A3B9BCDD8AB",
@@ -31097,7 +31323,8 @@
       "name": "Sam McDonald Park",
       "trailheadIds": [
         "KML_CALL_AHEAD_3F1C8E1CFC77"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B895BA27BACB",
@@ -31105,7 +31332,8 @@
       "name": "Samoa Dunes Recreation Area",
       "trailheadIds": [
         "KML_MICROTRANSIT_4AE63AA73A74"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_CD285505EE4A",
@@ -31113,7 +31341,8 @@
       "name": "Samuel P Taylor State Park",
       "trailheadIds": [
         "TH_9150013"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C68F109728C2",
@@ -31127,7 +31356,8 @@
         "TH_7803814",
         "TH_8052580",
         "TH_8259174"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_2C0A28CF989A",
@@ -31135,7 +31365,8 @@
       "name": "San Francisco Bay Trail",
       "trailheadIds": [
         "TH_9992181"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C56938FD6163",
@@ -31143,7 +31374,8 @@
       "name": "San Gregorio State Beach",
       "trailheadIds": [
         "KML_CALL_AHEAD_793BDA92B5DE"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_9260B68C2780",
@@ -31156,7 +31388,8 @@
         "TH_7085182",
         "TH_8846095",
         "TH_9932631"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_AF2433888EDE",
@@ -31165,7 +31398,8 @@
       "trailheadIds": [
         "TH_2392112",
         "TH_4393338"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0DBAF847EC64",
@@ -31173,7 +31407,8 @@
       "name": "Sand Harbor State Park",
       "trailheadIds": [
         "KML_SHUTTLES_CB4540A3BB93"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E6F2E11B71EB",
@@ -31181,7 +31416,8 @@
       "name": "Santa Teresa County Park",
       "trailheadIds": [
         "TH_7734673"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_41038851BB57",
@@ -31189,7 +31425,8 @@
       "name": "Santa Venetia Marsh Preserve",
       "trailheadIds": [
         "TH_4615419"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_43F227510B1D",
@@ -31197,7 +31434,8 @@
       "name": "Saratoga Quarry Park",
       "trailheadIds": [
         "TH_3339522"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B785DC091D2B",
@@ -31207,7 +31445,8 @@
         "TH_2728577",
         "TH_4269312",
         "TH_4800361"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D1F87F89D852",
@@ -31215,7 +31454,8 @@
       "name": "Sequoia National Park",
       "trailheadIds": [
         "KML_SHUTTLES_3D25149CF265"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A9ACCA502670",
@@ -31223,7 +31463,8 @@
       "name": "Shadow Cliffs Regional Recreation Area",
       "trailheadIds": [
         "TH_5372181"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_4E71FAE25D95",
@@ -31235,7 +31476,8 @@
         "TH_4485942",
         "TH_4920186",
         "TH_7003831"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_DFCDAF88D518",
@@ -31245,7 +31487,8 @@
         "KML_MICROTRANSIT_34AEFED31A23",
         "TH_316559",
         "TH_6464689"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_07FE5D27401B",
@@ -31254,7 +31497,8 @@
       "trailheadIds": [
         "TH_3592364",
         "TH_4763540"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_477FEAB5DC39",
@@ -31262,7 +31506,8 @@
       "name": "Siesta Valley",
       "trailheadIds": [
         "TH_2240612"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E9B5A54B7F76",
@@ -31271,7 +31516,8 @@
       "trailheadIds": [
         "TH_1773013",
         "TH_3589542"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8C222B263497",
@@ -31281,7 +31527,8 @@
         "TH_427542",
         "TH_4322570",
         "TH_5001932"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D77FE07420AE",
@@ -31291,7 +31538,8 @@
         "TH_3294718",
         "TH_876709",
         "TH_9938328"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A11F79E965F0",
@@ -31299,7 +31547,8 @@
       "name": "Sorich Ranch Park",
       "trailheadIds": [
         "TH_7313412"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A15A6EFCBAAA",
@@ -31309,7 +31558,8 @@
         "TH_3256051",
         "TH_4954073",
         "TH_6862672"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_01BB3F7207F4",
@@ -31319,7 +31569,8 @@
         "TH_5806071",
         "TH_6116198",
         "TH_9353285"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_764E05AFC5CE",
@@ -31328,7 +31579,8 @@
       "trailheadIds": [
         "TH_5757798",
         "TH_7173233"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_83F827445B23",
@@ -31338,7 +31590,8 @@
         "TH_6055785",
         "TH_6689729",
         "TH_9141083"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3F2BED25285E",
@@ -31346,7 +31599,8 @@
       "name": "St. Joseph's Hill Preserve",
       "trailheadIds": [
         "TH_489741"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BD229CD0965C",
@@ -31354,7 +31608,8 @@
       "name": "Standish-Hickey State Recreation Area",
       "trailheadIds": [
         "TH_8621843"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_0587884F3610",
@@ -31370,7 +31625,8 @@
         "TH_7726199",
         "TH_8473285",
         "TH_9435659"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C2EADD47F1FB",
@@ -31379,7 +31635,8 @@
       "trailheadIds": [
         "KML_MICROTRANSIT_1EC81C0DA5BD",
         "TH_7042904"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C077D6DD36EC",
@@ -31387,7 +31644,8 @@
       "name": "Strawberry Canyon",
       "trailheadIds": [
         "TH_6753000"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8CEDFF293F5D",
@@ -31395,7 +31653,8 @@
       "name": "Sue-meg State Park",
       "trailheadIds": [
         "TH_2323176"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F1ECEDD2441C",
@@ -31405,7 +31664,8 @@
         "TH_2195727",
         "TH_485999",
         "TH_7489765"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_8ECD0BA793CD",
@@ -31413,7 +31673,8 @@
       "name": "Sunrise Recreation Area",
       "trailheadIds": [
         "TH_2138755"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_FE5C36FB259D",
@@ -31421,7 +31682,8 @@
       "name": "Sunset Beach River Park",
       "trailheadIds": [
         "TH_9873290"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B842555DA40D",
@@ -31429,7 +31691,8 @@
       "name": "Susanville Ranch Park",
       "trailheadIds": [
         "TH_5782753"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A8D0B6B9D6B9",
@@ -31440,7 +31703,8 @@
         "TH_1519934",
         "TH_2955862",
         "TH_5460537"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_23EB507ACF5E",
@@ -31478,7 +31742,8 @@
         "TH_8941025",
         "TH_9511940",
         "TH_9544262"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B6BFB992E642",
@@ -31487,7 +31752,8 @@
       "trailheadIds": [
         "TH_8236821",
         "TH_9056039"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_019251522F99",
@@ -31495,7 +31761,8 @@
       "name": "Taylor Mountain Regional Park",
       "trailheadIds": [
         "TH_9922957"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_5F45AFEA3EFE",
@@ -31503,7 +31770,8 @@
       "name": "Terra Linda/Sleepy Hollow Preserve",
       "trailheadIds": [
         "TH_3562637"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_76D83469BC87",
@@ -31511,7 +31779,8 @@
       "name": "The \"P\"",
       "trailheadIds": [
         "TH_6793733"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_128CBB3872E8",
@@ -31520,7 +31789,8 @@
       "trailheadIds": [
         "TH_2652497",
         "TH_9850592"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_75DC0AB05D14",
@@ -31530,7 +31800,8 @@
         "TH_4583832",
         "TH_720483",
         "TH_8223365"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_50C823C63F57",
@@ -31538,7 +31809,8 @@
       "name": "TMTA",
       "trailheadIds": [
         "TH_7531033"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EF310BA62574",
@@ -31546,7 +31818,8 @@
       "name": "Toiyabe National Forest",
       "trailheadIds": [
         "TH_753585"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_BFF3838856D4",
@@ -31555,7 +31828,8 @@
       "trailheadIds": [
         "TH_3018542",
         "TH_6883957"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_31B7A0B06385",
@@ -31563,7 +31837,8 @@
       "name": "Trout Creek Park",
       "trailheadIds": [
         "TH_9255622"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_A51CA8767E94",
@@ -31571,7 +31846,8 @@
       "name": "Truckee Regional Park",
       "trailheadIds": [
         "TH_1243894"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_C5B80D395EE0",
@@ -31579,7 +31855,8 @@
       "name": "UC Berkeley",
       "trailheadIds": [
         "TH_1193488"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_F4964FCCE52E",
@@ -31590,7 +31867,8 @@
         "TH_7529660",
         "TH_7815435",
         "TH_8250026"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_B7CC0A8A1CFB",
@@ -31598,7 +31876,8 @@
       "name": "Upper Bidwell Park",
       "trailheadIds": [
         "TH_7909220"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EB22A383D58A",
@@ -31606,7 +31885,8 @@
       "name": "Van Damme State Park",
       "trailheadIds": [
         "TH_2463425"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_EF092C467845",
@@ -31616,7 +31896,8 @@
         "TH_3641495",
         "TH_482842",
         "TH_8034887"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_35D6A567C238",
@@ -31624,7 +31905,8 @@
       "name": "Vargas Plateau Regional Park",
       "trailheadIds": [
         "TH_2258200"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_D63E3C2CA420",
@@ -31632,7 +31914,8 @@
       "name": "Venice State Beach",
       "trailheadIds": [
         "TH_701352"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_02F615849283",
@@ -31640,7 +31923,8 @@
       "name": "Ward Creek Park",
       "trailheadIds": [
         "TH_8728624"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_3BECF5349011",
@@ -31648,7 +31932,8 @@
       "name": "Wetlands Edge Park",
       "trailheadIds": [
         "TH_3089405"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_62051D416E4D",
@@ -31658,7 +31943,8 @@
         "TH_174693",
         "TH_2509145",
         "TH_3290447"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_2C4F29134E6C",
@@ -31667,7 +31953,8 @@
       "trailheadIds": [
         "TH_6174163",
         "TH_6290462"
-      ]
+      ],
+      "placeId": null
     },
     {
       "id": "DEST_E31D8F4604D0",
@@ -31683,7 +31970,8 @@
         "TH_6918631",
         "TH_728589",
         "TH_7569362"
-      ]
+      ],
+      "placeId": "yosemite-national-park"
     }
   ],
   "hikes": [

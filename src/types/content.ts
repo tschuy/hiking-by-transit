@@ -49,6 +49,7 @@ export interface PlaceContent {
   blurb?: string
   body: string
   guide_ids?: string[]
+  destination_names?: string[]
 }
 
 export interface PostContent {

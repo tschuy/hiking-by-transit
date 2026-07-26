@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import type { CatalogDestination, CatalogTrailhead } from '../types/catalog'
+import type { CatalogTrailhead } from '../types/catalog'
 
 function webMercator([longitude, latitude]: [number, number]): [number, number] {
   const radius = 6_378_137
@@ -10,7 +10,7 @@ function webMercator([longitude, latitude]: [number, number]): [number, number] 
   ]
 }
 
-export function DestinationMap({ destination, trailheads }: { destination: CatalogDestination; trailheads: CatalogTrailhead[] }) {
+export function DestinationMap({ label, trailheads }: { label: string; trailheads: CatalogTrailhead[] }) {
   const targetRef = useRef<HTMLDivElement>(null)
   const [error, setError] = useState<string>()
 
@@ -62,7 +62,7 @@ export function DestinationMap({ destination, trailheads }: { destination: Catal
 
   return <section className="trailhead-access-map olmap-root" aria-labelledby="destination-map-title">
     <div className="filter-heading"><div><p className="eyebrow">Access map</p><h2 id="destination-map-title">Transit-accessible entrances</h2></div><span>{trailheads.length} trailhead{trailheads.length === 1 ? '' : 's'}</span></div>
-    <div ref={targetRef} className="trailhead-access-map-target olmap-map" role="region" aria-label={`Map of trailheads serving ${destination.name}`} />
+    <div ref={targetRef} className="trailhead-access-map-target olmap-map" role="region" aria-label={`Map of trailheads serving ${label}`} />
     {error && <p className="map-error" role="alert">The destination map could not be loaded. {error}</p>}
   </section>
 }

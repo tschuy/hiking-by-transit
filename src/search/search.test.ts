@@ -43,4 +43,10 @@ describe('site search', () => {
     const firstTrailhead = results.findIndex((result) => result.type === 'Trailhead')
     expect(firstTrailhead).toBeGreaterThan(lastDestination)
   })
+
+  it('uses an owning place instead of a duplicate destination result', () => {
+    const results = searchSite('Yosemite National Park')
+    expect(results.some((result) => result.type === 'Place' && result.href === '/places/yosemite-national-park')).toBe(true)
+    expect(results.some((result) => result.type === 'Destination' && result.title === 'Yosemite National Park')).toBe(false)
+  })
 })

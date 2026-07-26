@@ -1,5 +1,5 @@
 import catalogJson from './catalog-v0.9.generated.json'
-import type { CatalogTrailhead, TrailheadCatalog } from '../types/catalog'
+import type { CatalogDestination, CatalogTrailhead, TrailheadCatalog } from '../types/catalog'
 
 export const trailheadCatalog = catalogJson as TrailheadCatalog
 export const catalogTrailheads = trailheadCatalog.trailheads
@@ -16,6 +16,11 @@ export const getCatalogTrailhead = (slug: string) => bySlug.get(slug)
 export const getCatalogTrailheadById = (id: string) => byId.get(id)
 export const getCatalogDestination = (slug: string) => destinationBySlug.get(slug)
 export const getCatalogDestinationById = (id: string) => destinationById.get(id)
+export const getOwnedCatalogDestinations = (placeId: string) => catalogDestinations.filter((destination) => destination.placeId === placeId)
+export const getDestinationPath = (destination: CatalogDestination) => {
+  const place = destination.placeId ? placeById.get(destination.placeId) : undefined
+  return place ? `/places/${place.slug}` : `/destinations/${destination.slug}`
+}
 export const getCatalogHike = (id: string) => hikeById.get(id)
 export const getCatalogPlace = (id: string) => placeById.get(id)
 

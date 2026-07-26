@@ -30,6 +30,15 @@ describe('route resolution', () => {
     expect(trailhead).toContain('href="/destinations/pacific-crest-trail"')
   })
 
+  it('makes an owning place canonical for its generated destination', () => {
+    const destinationRoute = resolveRoute('/destinations/yosemite-national-park')
+    expect(destinationRoute.metadata.canonicalPath).toBe('/places/yosemite-national-park')
+    expect(renderToStaticMarkup(destinationRoute.element)).toContain('href="/places/yosemite-national-park"')
+    const place = renderToStaticMarkup(resolveRoute('/places/yosemite-national-park').element)
+    expect(place).toContain('Transit-accessible entrances')
+    expect(place).toContain('/trailheads/yosemite-national-park-yosemite-valley')
+  })
+
   it('links place guides to their canonical prerendered paths', () => {
     const peninsula = renderToStaticMarkup(resolveRoute('/places/peninsula').element)
     expect(peninsula).toContain('href="/peninsula/samcoast"')

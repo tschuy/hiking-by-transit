@@ -34,6 +34,7 @@ export interface CatalogDestination {
   id: string
   slug: string
   name: string
+  placeId: string | null
   trailheadIds: string[]
 }
 

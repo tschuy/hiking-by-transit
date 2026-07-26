@@ -19,6 +19,11 @@ describe('trailhead catalog', () => {
     expect(catalogDestinations.some((destination) => destination.name === 'Miller/Knox Regional Shoreline')).toBe(true)
   })
 
+  it('assigns only Yosemite to an owning editorial place', () => {
+    const owned = catalogDestinations.filter((destination) => destination.placeId !== null)
+    expect(owned).toEqual([expect.objectContaining({ name: 'Yosemite National Park', placeId: 'yosemite-national-park' })])
+  })
+
   it('includes canonical hand-maintained KML trailheads and provenance', () => {
     expect(catalogTrailheads.filter((trailhead) => trailhead.id.startsWith('KML_'))).toHaveLength(45)
     expect(trailheadCatalog.source.kmlSources.map((source) => source.path)).toEqual([

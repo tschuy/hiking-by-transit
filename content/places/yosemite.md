@@ -6,6 +6,8 @@ title: Yosemite National Park
 kind: park
 parent_id: california
 image: yosemite.jpg
+destination_names:
+  - Yosemite National Park
 blurb: Consistently one of the country's most-visited national parks, Yosemite deserves its fame. Its towering giant sequoias
   are dwarfed only by its immense granite cliffs and waterfalls. Buses serve the park year-round from Merced; routes to the
   Mariposa Grove, the Eastern Sierras, and Fresno are seasonal (May to September).

@@ -1,5 +1,5 @@
 import { eventContent, getGuidePath, guideContent, hikeContent, pageContent, placeContent, postContent, visiblePlaceContent } from '../data/content'
-import { catalogDestinations, catalogTrailheads, getCatalogPlace, getCatalogTrailheadById } from '../data/trailheadCatalog'
+import { catalogDestinations, catalogTrailheads, getCatalogPlace, getCatalogTrailheadById, getDestinationPath, getOwnedCatalogDestinations } from '../data/trailheadCatalog'
 
 export type SearchResultType = 'Destination' | 'Event' | 'Guide' | 'Hike' | 'Page' | 'Place' | 'Post' | 'Trailhead'
 
@@ -25,19 +25,24 @@ const searchResults: SearchResult[] = [
       searchableText: [hike.title, hike.blurb, hike.difficulty, ...hike.tags, ...placeNames].filter(Boolean).join(' '),
     }
   }),
-  ...visiblePlaceContent.map((place): SearchResult => ({
-    id: `place-${place.slug}`,
-    type: 'Place',
-    title: place.title,
-    description: place.blurb ?? `${place.kind} guide`,
-    href: `/places/${place.slug}`,
-    searchableText: `${place.title} ${place.blurb ?? ''} ${place.kind}`,
-  })),
+  ...visiblePlaceContent.map((place): SearchResult => {
+    const ownedDestinations = getOwnedCatalogDestinations(place.place_id)
+    const destinationTrailheads = ownedDestinations.flatMap((destination) => destination.trailheadIds).map(getCatalogTrailheadById).filter((trailhead) => trailhead !== undefined)
+    const accessTerms = destinationTrailheads.flatMap((trailhead) => trailhead.access.flatMap((access) => [access.stopName, ...access.routeIds]))
+    return {
+      id: `place-${place.slug}`,
+      type: 'Place',
+      title: place.title,
+      description: ownedDestinations.length > 0 ? `Destination guide · ${new Set(destinationTrailheads.map((trailhead) => trailhead.id)).size} transit-accessible trailheads` : place.blurb ?? `${place.kind} guide`,
+      href: `/places/${place.slug}`,
+      searchableText: [place.title, place.blurb, place.kind, ...ownedDestinations.map((destination) => destination.name), ...destinationTrailheads.map((trailhead) => trailhead.name), ...accessTerms].filter(Boolean).join(' '),
+    }
+  }),
   ...postContent.map((post): SearchResult => ({ id: `post-${post.slug}`, type: 'Post', title: post.title, description: `Published ${post.date}`, href: post.url, searchableText: `${post.title} ${post.body}` })),
   ...eventContent.map((event): SearchResult => ({ id: `event-${event.slug}`, type: 'Event', title: event.title, description: event.event_date, href: event.url, searchableText: `${event.title} ${event.body}` })),
   ...guideContent.map((guide): SearchResult => ({ id: `guide-${guide.slug}`, type: 'Guide', title: guide.title, description: 'Transit planning guide', href: getGuidePath(guide.slug), searchableText: `${guide.title} ${guide.body}` })),
   ...pageContent.map((page): SearchResult => ({ id: `page-${page.slug}`, type: 'Page', title: page.title, description: 'Hiking by Transit information', href: `/${page.slug}`, searchableText: `${page.title} ${page.body}` })),
-  ...catalogDestinations.map((destination): SearchResult => {
+  ...catalogDestinations.filter((destination) => destination.placeId === null).map((destination): SearchResult => {
     const trailheads = destination.trailheadIds.map(getCatalogTrailheadById).filter((trailhead) => trailhead !== undefined)
     const accessTerms = trailheads.flatMap((trailhead) => trailhead.access.flatMap((access) => [access.stopName, ...access.routeIds]))
     return {
@@ -45,7 +50,7 @@ const searchResults: SearchResult[] = [
       type: 'Destination',
       title: destination.name,
       description: `${trailheads.length} transit-accessible trailhead${trailheads.length === 1 ? '' : 's'}`,
-      href: `/destinations/${destination.slug}`,
+      href: getDestinationPath(destination),
       searchableText: [destination.name, ...trailheads.map((trailhead) => trailhead.entranceName ?? trailhead.name), ...accessTerms].join(' '),
     }
   }),
