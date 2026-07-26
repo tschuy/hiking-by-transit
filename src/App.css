@@ -154,6 +154,8 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .catalog-filters select { width: 100%; min-width: 0; padding: .6rem; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; font: inherit; }
 .map-catalog-details { display: grid; gap: .65rem; }
 .map-catalog-details div, .map-catalog-details p { margin: 0; }
+.map-catalog-stop { display: grid; gap: .25rem; padding-block: .65rem; }
+.map-catalog-stop + .map-catalog-stop { border-top: 1px solid var(--line); }
 .map-layer-swatch { flex: 0 0 auto; width: .8rem; height: .8rem; margin-top: .2rem; border: 1px solid rgb(0 0 0 / 22%); border-radius: 50%; }
 .popup-actions { display: grid; gap: .3rem; padding-top: .8rem; border-top: 1px solid #82958b; }
 .popup-actions a { color: #07583d; font-size: .84rem; font-weight: 850; text-decoration: none; }
@@ -266,6 +268,12 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .content-panel { max-width: 760px; padding: 2rem; background: var(--cream); border-radius: var(--radius); }
 .content-panel h2 { font-size: 2rem; }
 .content-panel p { line-height: 1.65; }
+.trailhead-stop-list { display: grid; gap: 1.25rem; padding: 0; margin: 1.25rem 0 0; list-style: none; }
+.trailhead-stop-list li { display: grid; gap: .35rem; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.trailhead-stop-list strong { color: var(--heading); font-size: 1.05rem; }
+.trailhead-stop-list p { margin: 0; }
+.trailhead-stop-list a { justify-self: start; margin-top: .25rem; font-weight: 750; }
+.trailhead-stop-walk, .trailhead-stop-routes { color: var(--ink-soft); }
 .badge-row { margin-block: 1rem; }
 .notice { padding-top: 1rem; border-top: 1px solid var(--line); }
 .not-found { text-align: center; }
