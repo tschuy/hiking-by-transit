@@ -86,15 +86,15 @@ export function featureMatchesFilters(feature: FilterableFeature, filters: Trail
   }
   if (filters.serviceDays?.length) {
     const days = listProperty(properties, 'service_days', 'serviceDays');
-    if (days.length > 0 && !filters.serviceDays.some((day) => days.includes(day))) return false;
+    if (!filters.serviceDays.some((day) => day === 'weekend' ? days.includes('weekend') || days.includes('saturday') || days.includes('sunday') : days.includes(day))) return false;
   }
   if (filters.seasonalService !== undefined) {
     const seasonal = booleanProperty(properties, 'seasonal_service', 'seasonalService', 'seasonal');
-    if (seasonal !== undefined && seasonal !== filters.seasonalService) return false;
+    if (filters.seasonalService === 'unknown' ? seasonal !== undefined : seasonal !== filters.seasonalService) return false;
   }
   if (filters.reservationRequired !== undefined) {
     const reservation = booleanProperty(properties, 'reservation_required', 'reservationRequired');
-    if (reservation !== undefined && reservation !== filters.reservationRequired) return false;
+    if (filters.reservationRequired === 'unknown' ? reservation !== undefined : reservation !== filters.reservationRequired) return false;
   }
   if (filters.hasHikeGuide !== undefined) {
     const hasGuide = booleanProperty(properties, 'has_hike_guide', 'hasHikeGuide') ?? typeof properties.hike_slug === 'string';

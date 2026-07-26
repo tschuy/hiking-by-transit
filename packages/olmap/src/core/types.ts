@@ -22,8 +22,8 @@ export interface TrailheadMapFilters {
   accessModes: AccessMode[];
   maximumWalkMinutes?: number;
   serviceDays?: Array<'weekday' | 'weekend'>;
-  seasonalService?: boolean;
-  reservationRequired?: boolean;
+  seasonalService?: boolean | 'unknown';
+  reservationRequired?: boolean | 'unknown';
   hasHikeGuide?: boolean;
   placeSlugs?: string[];
   transitGroups?: string[];
@@ -115,6 +115,7 @@ export interface MapDataSource {
   groupIds?: string[];
   hikeId?: string;
   clustering?: boolean | Partial<ClusteringOptions>;
+  pointMarkers?: boolean;
 }
 
 export interface ClusteringOptions {

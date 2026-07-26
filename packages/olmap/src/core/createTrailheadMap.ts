@@ -89,6 +89,34 @@ const TRAILHEAD_COLORS: Record<string, string> = {
   'call-ahead': '#bdbdbd',
 };
 const clusterStyleCache = new globalThis.Map<string, Style>();
+const trailheadStyleCache = new globalThis.Map<string, Style>();
+
+function trailheadStyle(sourceId: string, feature?: MapFeature): Style {
+  const markerColor = feature?.get('marker_color');
+  const label = feature?.get('marker_label');
+  const color = typeof markerColor === 'string' && markerColor ? markerColor : TRAILHEAD_COLORS[sourceId] ?? '#c5522f';
+  const labelText = typeof label === 'string' ? label : '';
+  const key = `${sourceId}:${color}:${labelText}`;
+  const cached = trailheadStyleCache.get(key);
+  if (cached) return cached;
+  const style = new Style({
+    image: new CircleStyle({
+      radius: 8,
+      fill: new Fill({ color }),
+      stroke: new Stroke({ color: '#fff', width: 2 }),
+    }),
+    text: labelText ? new Text({
+      text: labelText,
+      offsetX: 13,
+      textAlign: 'left',
+      font: '700 13px system-ui, sans-serif',
+      fill: new Fill({ color: '#17231d' }),
+      stroke: new Stroke({ color: '#fff', width: 4 }),
+    }) : undefined,
+  });
+  trailheadStyleCache.set(key, style);
+  return style;
+}
 
 function clusterStyle(sourceId: string, size: number): Style {
   const color = TRAILHEAD_COLORS[sourceId] ?? '#24543f';
@@ -479,7 +507,7 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
             const geometry = feature.getGeometry();
             return geometry ? hikeStyles[geometry.getType()] : undefined;
           }
-        : definition.role === 'trailhead'
+        : definition.role === 'trailhead' || definition.pointMarkers
           ? (candidate, resolution) => {
               if (!(candidate instanceof Feature)) return undefined;
               const feature = candidate as MapFeature;
@@ -487,7 +515,7 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
               if (Array.isArray(members)) {
                 if (members.length > 1) return clusterStyle(definition.id, members.length);
                 const member = members[0];
-                return member instanceof Feature ? member.getStyleFunction()?.(member, resolution) : undefined;
+                return member instanceof Feature ? member.getStyleFunction()?.(member, resolution) ?? trailheadStyle(definition.id, member as MapFeature) : undefined;
               }
               const summary = normalizeFeatureSummary(presentationInput(feature, definition));
               const filterable = {
@@ -498,7 +526,7 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
                 visibleOnMap: true,
               };
               return featureMatchesFilters(filterable, state.filters)
-                ? feature.getStyleFunction()?.(feature, resolution)
+                ? feature.getStyleFunction()?.(feature, resolution) ?? trailheadStyle(definition.id, feature)
                 : undefined;
             }
           : undefined,
