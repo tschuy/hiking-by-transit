@@ -15,15 +15,19 @@ Certain shuttles, microtransit services, and public dial-a-ride programs have no
 
 ## Is the map comprehensive?
 
-The map is intended to be comprehensive, but schedules and services change. Rural services can be particularly difficult to track over time. The legacy dataset was last comprehensively reviewed in January 2026.
+The map is intended to be comprehensive, but schedules and services change. Rural services can be particularly difficult to track over time. The statewide dataset was last comprehensively reviewed in January 2026.
 
 If you notice a missing trailhead, service that should be included, or transit that no longer exists, please email [contact@hikingbytransit.com](mailto:contact@hikingbytransit.com) with the details.
 
-## Pedestrian access to National Forests
+## Access to National Forests
 
-The lack of a mapped trailhead does not necessarily mean there is no possible access. Transit stops are included where a bus serves a specific named long-distance hiking route, even when part of that route follows pavement—for example, Trinity Transit access to the Bigfoot Trail in Hayfork.
+The lack of a mapped trailhead does not necessarily mean there is no possible access.
 
-The dataset generally does not include every stop located four to ten miles from National Forest land when there is no identified trailhead or named walking route. The protected-lands and transit layers can help research these more marginal connections. CalTopo's FSTopo layer and the Strava Heatmap may also help distinguish official trails from routes that are actually in use.
+If interested in a particular area, turn on the protected land layer, and transit layer for nearby agencies. Many rural agencies allow for flag stops, where you can ask the driver to drop you off at a specific point along the road where there is no stop, or wave them down along the route to pick you up. CalTopo's FSTopo layer and the Strava Heatmap may also help distinguish official trails that have been abandoned from maintained routes that are actually in use.
+
+If you are planning to make a flag stop in a rural area, call the agency beforehand to let them know the approximate area so that they can let the driver know to expect you. The protected-lands and transit layers can help research these more marginal connections. 
+
+In addition to access to trails and unpaved forest roads, the map includes some trailhead access to long-distance named hiking routes, like the Bigfoot Trail in Hayfork, even though the part of the route that is served follows paved roads.
 
 ## Data sources
 
