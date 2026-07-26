@@ -11,7 +11,7 @@ export function HikePage({ slug }: { slug: string }) {
 
   return <article className="page container hike-page">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/hikes">Hikes</a><span aria-hidden="true">/</span><span>{hike.title}</span></nav>
-    <p className="page-context">{place?.title ?? 'Hike guide'}</p><h1>{hike.title}</h1>{hike.blurb && <p className="page-lede">{hike.blurb}</p>}
+    {place && <p className="page-context">{place.title}</p>}<h1>{hike.title}</h1>{hike.blurb && <p className="page-lede">{hike.blurb}</p>}
     {hike.image && <img className="hike-hero-image" src={`/assets/${hike.image}`} alt={`Landscape along ${hike.title}`} />}
     <ul className="summary-grid hike-summary" aria-label="Hike summary"><li><strong>{hike.length}</strong><span>Distance</span></li><li><strong>{difficulty}</strong><span>Difficulty</span></li><li><strong>{hike.travel.served === 'daily' ? 'All week' : hike.travel.served}</strong><span>Transit service</span></li><li><strong>{hike.trailhead_ids.length || 'Unmatched'}</strong><span>Trailheads</span></li></ul>
     {hike.travel.served !== 'daily' && <p className="notice content-panel"><strong>Plan ahead:</strong> This trailhead is not served seven days a week. Check current schedules before leaving.</p>}

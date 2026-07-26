@@ -43,7 +43,7 @@ export function GpxMap({ file, title, compact = false }: { file: string; title: 
             setActiveIndex(event.coordinate ? nearestRouteSample(parsed.samples, event.coordinate) : undefined)
           }
           if (event.type === 'layer-progress' && event.layer.sourceId === 'route' && event.layer.status === 'ready') {
-            setStatus('Route loaded. Use the map and elevation profile to inspect the hike.')
+            setStatus('')
             requestAnimationFrame(() => {
               controller?.updateSize()
               controller?.fitToExtent(parsed.extent, { padding: [32, 32, 32, 32], maxZoom: 16 })

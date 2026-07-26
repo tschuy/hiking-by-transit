@@ -49,7 +49,7 @@ export function HomePage() {
         <div className="container">
           <div className="section-heading"><div><h2 id="places-title">Explore places</h2></div><p>Browse regions and destination parks together, with transit guidance, seasonal constraints, recommended hikes, and nearby trailheads.</p></div>
           <div className="places-grid">
-            {featuredPlaces.map((place, index) => <a className={`editorial-card region-theme-${index % 3 + 1}`} href={`/places/${place.slug}`} key={place.slug}><span className="card-context">{place.kind === 'park' ? 'Destination park' : 'California place'}</span><strong>{place.title}</strong><span>{place.blurb ?? 'Place guide'}</span><b>Explore this place <span aria-hidden="true">→</span></b></a>)}
+            {featuredPlaces.map((place) => <a className={`editorial-card${place.image ? ' editorial-card-with-image' : ''}`} href={`/places/${place.slug}`} key={place.slug}>{place.image && <img src={`/assets/${place.image}`} alt="" loading="lazy" />}<strong>{place.title}</strong>{place.blurb && <span>{place.blurb}</span>}<b>Explore this place <span aria-hidden="true">→</span></b></a>)}
           </div>
         </div>
       </section>

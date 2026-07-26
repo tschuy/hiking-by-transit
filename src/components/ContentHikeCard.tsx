@@ -1,13 +1,16 @@
 import type { HikeContent } from '../types/content'
+import { getPlaceContent } from '../data/content'
 
 export function ContentHikeCard({ hike }: { hike: HikeContent }) {
+  const place = getPlaceContent(hike.place_ids.at(-1) ?? '')
+
   return (
-    <article className="trail-card">
-      {hike.image ? <img className="card-photo" src={`/assets/${hike.image}`} alt="" loading="lazy" /> : <div className="card-landscape" aria-hidden="true"><span>▲</span></div>}
+    <article className={`trail-card${hike.image ? '' : ' trail-card-no-image'}`}>
+      {hike.image && <img className="card-photo" src={`/assets/${hike.image}`} alt="" loading="lazy" />}
       <div className="card-body">
-        <p className="card-context">{hike.place_ids.at(-1)?.replaceAll('-', ' ')}</p>
+        {place && <p className="card-context">{place.title}</p>}
         <h3><a href={`/hikes/${hike.slug}`}>{hike.title}</a></h3>
-        <p>{hike.blurb ?? 'Open for hike information and transit details.'}</p>
+        {hike.blurb && <p>{hike.blurb}</p>}
         <ul className="fact-list" aria-label="Hike details"><li>{hike.length}</li><li>{hike.difficulty_human ?? hike.difficulty}</li></ul>
       </div>
     </article>
