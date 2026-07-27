@@ -35,7 +35,7 @@ The protected-lands layer comes from GreenInfo Network's California Protected Ar
 
 [Download the July 2026 GeoPackage](/assets/gpkg/transit_accessible_trailheads_20260721.gpkg).
 
-## Included transit agencies
+## Included services
 
 ### Bay Area
 
