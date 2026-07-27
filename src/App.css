@@ -161,9 +161,14 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .map-catalog-stop { display: grid; gap: .25rem; padding-block: .65rem; }
 .map-catalog-stop + .map-catalog-stop { border-top: 1px solid var(--line); }
 .map-layer-swatch { flex: 0 0 auto; width: .8rem; height: .8rem; margin-top: .2rem; border: 1px solid rgb(0 0 0 / 22%); border-radius: 50%; }
-.popup-actions { display: grid; gap: .3rem; padding-top: .8rem; border-top: 1px solid #82958b; }
-.popup-actions a { color: #07583d; font-size: .84rem; font-weight: 850; text-decoration: none; }
-.popup-actions a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.selection-actions { display: flex; flex-wrap: wrap; align-items: baseline; gap: .55rem 1rem; margin-top: .9rem; }
+.selection-actions .map-action { color: #07583d; font-size: .84rem; font-weight: 800; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.selection-actions .map-action-hike-guide, .selection-actions .map-action-trailhead { flex-basis: 100%; padding: .72rem .85rem; text-decoration: none; border-radius: 8px; }
+.selection-actions .map-action-hike-guide { color: #fff; background: #174a37; }
+.selection-actions .map-action-hike-guide:hover { background: #0f3b2b; }
+.selection-actions .map-action-trailhead { color: #174a37; border: 1px solid #61766b; }
+.selection-actions .map-action-trailhead:hover { background: #edf1ec; border-color: #174a37; }
+.selection-actions .map-action:focus-visible { outline: 3px solid var(--clay); outline-offset: 3px; }
 .map-stage .ol-popup { padding: 1rem; border-color: var(--line); border-radius: 12px; }
 .map-stage .ol-popup h3 { margin: 0 1.5rem .5rem 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; }
 .map-stage .ol-popup h4 { margin: 0 1.5rem .5rem 0; }
@@ -193,7 +198,7 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .map-selection-hike .map-rich-description { margin-bottom: .9rem; }
 .map-selection-hike .map-rich-description > :first-child { margin-top: 0; }
 .map-selection-hike .map-rich-description > :last-child { margin-bottom: 0; }
-.map-selection-hike .popup-actions { margin-top: 0; padding-top: .7rem; }
+.map-selection-hike .selection-actions { margin-top: .7rem; }
 .map-selection-close { position: absolute; top: .45rem; right: .45rem; width: 44px; height: 44px; padding: 0; color: #315746; font-size: 1.4rem; line-height: 1; background: #edf1ec; border: 1px solid #b7c2bc; border-radius: 50%; cursor: pointer; }
 .map-selection-close:hover { color: #fff; background: #315746; }
 .map-companion { padding: 1.4rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
@@ -205,10 +210,11 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .map-result-list .selected button { border-radius: 8px 8px 0 0; }
 .map-result-details { display: grid; grid-template-columns: minmax(220px, 34%) 1fr; gap: 1rem; padding: 1rem; color: var(--ink); background: var(--cream); border: 1px solid var(--line); border-top: 0; border-radius: 0 0 8px 8px; }
 .map-result-details .map-feature-details { display: contents; }
-.map-result-details .map-rich-description, .map-result-details .popup-actions { min-width: 0; }
+.map-result-details .map-rich-description, .map-result-details .selection-actions { min-width: 0; }
+.map-result-details .selection-actions { grid-column: 2; }
 .map-result-details .map-rich-description, .map-result-details .map-rich-description p { color: var(--ink-soft); }
 .map-result-details .map-rich-description h3, .map-result-details .map-rich-description h4 { color: var(--heading); }
-.map-result-details .map-rich-description a, .map-result-details .popup-actions a { color: var(--forest); }
+.map-result-details .map-rich-description a, .map-result-details .selection-actions > .map-action:not(.map-action-hike-guide, .map-action-trailhead) { color: var(--forest); }
 .map-mini-map { grid-row: 1 / span 2; width: 100%; min-height: 190px; border: 1px solid var(--line); border-radius: 8px; }
 .map-pagination { display: flex; align-items: center; justify-content: center; gap: 1rem; }
 .map-pagination button { border: 1px solid var(--line); }
@@ -378,6 +384,7 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 @media (max-width: 800px) {
   .map-action-nearby-trails { display: none; }
   .map-result-details { grid-template-columns: 1fr; }
+  .map-result-details .selection-actions { grid-column: 1; }
   .map-mini-map { grid-row: auto; min-height: 180px; }
   .hero-section::after { background: linear-gradient(90deg, rgb(8 14 11 / 76%), rgb(8 14 11 / 42%)), linear-gradient(0deg, rgb(8 13 11 / 48%), transparent 52%); }
   .hero-section::before { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; height: 130px; content: ""; pointer-events: none; background: linear-gradient(180deg, transparent, rgb(16 22 19 / 92%) 72%, var(--paper)); }
@@ -467,8 +474,11 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .map-stage-has-selection .map-rich-description h3,
   .map-stage-has-selection .map-rich-description h4 { color: var(--heading); }
   .map-stage-has-selection .map-rich-description a,
-  .map-stage-has-selection .popup-actions a { color: var(--forest); }
-  .map-stage-has-selection .popup-actions { border-top-color: var(--line); }
+  .map-stage-has-selection .selection-actions > .map-action:not(.map-action-hike-guide, .map-action-trailhead) { color: var(--forest); }
+  .map-stage-has-selection .selection-actions .map-action-hike-guide { color: var(--warm-black); background: var(--forest); }
+  .map-stage-has-selection .selection-actions .map-action-hike-guide:hover { background: var(--moss); }
+  .map-stage-has-selection .selection-actions .map-action-trailhead { color: var(--heading); border-color: var(--forest); }
+  .map-stage-has-selection .selection-actions .map-action-trailhead:hover { background: var(--paper); }
   .map-stage-has-selection .map-selection-close { color: var(--heading); background: var(--forest-dark); border-color: var(--line); }
   .map-stage-has-selection .map-selection-close:hover { color: var(--paper); background: var(--forest); }
   .map-result-list button { align-items: flex-start; flex-direction: column; gap: .25rem; }

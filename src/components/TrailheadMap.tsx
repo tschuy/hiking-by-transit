@@ -75,18 +75,22 @@ function CatalogDetails({ trailhead }: { trailhead: CatalogTrailhead }) {
       const frequency = formatServiceFrequency(access)
       return <div className="map-catalog-stop" key={`${access.id}-${access.sourceFid}`}><strong>Stop: {access.stopName}</strong><p>{access.walkMinutes === null ? 'See access notes' : `${Math.round(access.walkMinutes)} min walk`}</p>{routes.length > 0 && <p>Served by {routes.join(', ')}</p>}{routes.length > 0 && frequency.length > 0 && <p>{frequency.join(' · ')}</p>}{access.notes && <p>{access.notes}</p>}</div>
     })}
-    {trailhead.hikeIds.map(getCatalogHike).map((hike) => hike && <p key={hike.id}><a href={`/hikes/${hike.slug}`}>Read hike guide: {hike.title} →</a></p>)}
   </div>
 }
 
 function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatureDetails; includeMiniMap?: boolean }) {
   const trailhead = feature.kind === 'trailhead' ? catalogTrailheadForFeature(feature.id) : undefined
+  const hikes = trailhead?.hikeIds.map(getCatalogHike).filter((hike) => hike !== undefined) ?? []
+  const hasActions = hikes.length > 0 || trailhead !== undefined || feature.actions.length > 0
   return <div className={`map-feature-details map-feature-details-${feature.kind}`}>
     {includeMiniMap && <MiniMap feature={feature} />}
     {trailhead ? <CatalogDetails trailhead={trailhead} /> : feature.description && <RichDescription html={feature.description} />}
     {feature.kind === 'cluster' && <p>This group contains {feature.clusterSize} trailheads of the same access type. Select it again to zoom in.</p>}
-    {feature.actions.length > 0 && <nav className="popup-actions" aria-label="Selection actions">{feature.actions.map((action) => <ActionLink action={action} key={`${action.kind}-${action.url}`} />)}</nav>}
-    {trailhead && <a className="map-action" href={`/trailheads/${trailhead.slug}`}>View trailhead details <span aria-hidden="true">→</span></a>}
+    {hasActions && <nav className="selection-actions" aria-label="Selection actions">
+      {hikes.map((hike) => <a className="map-action map-action-hike-guide" href={`/hikes/${hike.slug}`} key={hike.id}>Read hike guide: {hike.title} <span aria-hidden="true">→</span></a>)}
+      {trailhead && <a className="map-action map-action-trailhead" href={`/trailheads/${trailhead.slug}`}>View trailhead details <span aria-hidden="true">→</span></a>}
+      {feature.actions.map((action) => <ActionLink action={action} key={`${action.kind}-${action.url}`} />)}
+    </nav>}
   </div>
 }
 
@@ -105,7 +109,7 @@ function SelectionPanel({ feature, active, onClose }: { feature: MapFeatureDetai
   }
   return <aside className={`map-selection map-selection-${feature.kind}`} role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
     <button ref={closeRef} className="map-selection-close" type="button" onClick={close} aria-label="Close map details">×</button>
-    <p className="map-selection-context">{feature.kind === 'cluster' ? `${feature.clusterSize} nearby trailheads` : 'Map selection'}</p>
+    {feature.kind === 'cluster' && <p className="map-selection-context">{feature.clusterSize} nearby trailheads</p>}
     <h2>{feature.name}</h2>
     <FeatureDetails feature={feature} />
   </aside>
