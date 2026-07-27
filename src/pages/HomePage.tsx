@@ -50,7 +50,7 @@ export function HomePage() {
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">
-        <div className="section-heading"><div><h2 id="bay-area-title">Hike the Bay Area</h2><p className="bay-area-guide-note">Get outdoors with a curated selection of hikes, including detailed transit information.</p></div><p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p></div>
+        <div className="section-heading"><div><h2 id="bay-area-title">Hike the Bay Area</h2></div><p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p></div>
         <div className="bay-area-region-list">
           {bayAreaRegions.map((region) => {
             const regionHikes = homepageHikes.filter((hike) => hike.place_ids.includes(region.place_id))

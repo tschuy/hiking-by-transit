@@ -161,7 +161,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
 
   return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
     {!isScoped && <aside className="weekday-service-callout" aria-labelledby="weekday-service-title">
-      <div><strong id="weekday-service-title">Weekday-only trailheads</strong><p>Some buses run Monday–Friday only.</p></div>
+      <div><strong id="weekday-service-title">Weekday-only trailheads</strong></div>
       <label className="map-checkbox weekday-service-toggle"><input type="checkbox" checked={enabledLayers.has('bus-weekday-only')} onChange={(event) => setLayerEnabled('bus-weekday-only', event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: '#1a237e' }} aria-hidden="true" /><span>Include weekday-only buses</span></label>
     </aside>}
     <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
