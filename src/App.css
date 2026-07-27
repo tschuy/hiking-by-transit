@@ -16,6 +16,7 @@
 .hero-scroll-cue { display: none; }
 .hero-content { width: min(100%, 680px); }
 .page-context, .card-context, .event-date, .map-selection-context { margin: 0 0 .7rem; color: var(--ink-soft); font-size: .88rem; font-weight: 700; line-height: 1.4; }
+.page-context a { color: inherit; text-underline-offset: 3px; }
 h1, h2, h3 { margin-top: 0; color: var(--heading); font-family: Georgia, "Times New Roman", serif; line-height: 1.05; }
 h1 { max-width: 760px; margin-bottom: 1.25rem; font-size: clamp(3rem, 7vw, 5.8rem); letter-spacing: -.055em; }
 h2 { margin-bottom: 1rem; font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.04em; }
