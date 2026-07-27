@@ -1,13 +1,30 @@
+import { useEffect, useState } from 'react'
 import { SearchForm } from '../components/SearchForm'
 import { ContentHikeCard } from '../components/ContentHikeCard'
 import { HeroSlideshow } from '../components/HeroSlideshow'
 import { hikeContent, placeContent, postContent } from '../data/content'
 import trailMapIcon from '../assets/trail-map.svg'
 
+function shuffled<T>(items: T[]): T[] {
+  const result = [...items]
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1))
+    const current = result[index]
+    result[index] = result[swapIndex]
+    result[swapIndex] = current
+  }
+  return result
+}
+
 export function HomePage() {
+  const [homepageHikes, setHomepageHikes] = useState(hikeContent)
   const bayAreaRegions = placeContent.filter((place) => place.parent_id === 'bay-area')
   const featuredPlaces = placeContent.filter((place) => ['tahoe', 'north-coast', 'yosemite-national-park', 'channel-islands-national-park'].includes(place.place_id))
-  const bayAreaHikes = hikeContent.filter((hike) => hike.place_ids.includes('bay-area'))
+
+  useEffect(() => {
+    const timeout = window.setTimeout(() => setHomepageHikes(shuffled(hikeContent)), 0)
+    return () => window.clearTimeout(timeout)
+  }, [])
 
   return (
     <>
@@ -33,21 +50,24 @@ export function HomePage() {
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">
-        <div className="section-heading">
-          <div><h2 id="bay-area-title">Hike the Bay Area</h2></div>
-          <p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p>
-        </div>
-        <nav className="region-list" aria-label="Bay Area subregions">
-          {bayAreaRegions.map((region) => <a href={`/places/${region.slug}`} key={region.slug}>{region.title}<span aria-hidden="true"> →</span></a>)}
-        </nav>
-        <div className="card-grid home-hike-grid">
-          {bayAreaHikes.map((hike) => <ContentHikeCard key={hike.hike_id} hike={hike} />)}
+        <div className="section-heading"><div><h2 id="bay-area-title">Hike the Bay Area</h2><p className="bay-area-guide-note">Get outdoors with a curated selection of hikes, including detailed transit information.</p></div><p>Explore redwoods, wetlands, oak savannahs, and more in our regional backyard.</p></div>
+        <div className="bay-area-region-list">
+          {bayAreaRegions.map((region) => {
+            const regionHikes = homepageHikes.filter((hike) => hike.place_ids.includes(region.place_id))
+            if (regionHikes.length === 0) return null
+            return <section className="bay-area-region" aria-labelledby={`bay-area-${region.slug}`} key={region.slug}>
+              <div className="bay-area-region-heading"><h3 id={`bay-area-${region.slug}`}>{region.title}</h3><a className="button-link" href={`/places/${region.slug}`}>View All</a></div>
+              <div className="home-hike-carousel" role="region" aria-label={`${region.title} hike guides`} tabIndex={0}>
+                {regionHikes.map((hike) => <ContentHikeCard key={hike.hike_id} hike={hike} />)}
+              </div>
+            </section>
+          })}
         </div>
       </section>
 
       <section className="section section-tint" id="places" aria-labelledby="places-title">
         <div className="container">
-          <div className="section-heading"><div><h2 id="places-title">Explore places</h2></div><p>Browse regions and destination parks together, with transit guidance, seasonal constraints, recommended hikes, and nearby trailheads.</p></div>
+          <div className="section-heading"><div><h2 id="places-title">Explore destinations</h2></div><p>Get all the details for a car-free visit to California's National Parks and destinations like Lake Tahoe.</p></div>
           <div className="places-grid">
             {featuredPlaces.map((place) => <a className={`editorial-card${place.image ? ' editorial-card-with-image' : ''}`} href={`/places/${place.slug}`} key={place.slug}>{place.image && <img src={`/assets/${place.image}`} alt="" loading="lazy" />}<strong>{place.title}</strong>{place.blurb && <span>{place.blurb}</span>}<b>Explore this place <span aria-hidden="true">→</span></b></a>)}
           </div>

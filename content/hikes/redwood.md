@@ -35,9 +35,7 @@ gpx: redwood.gpx
 park-link: https://www.ebparks.org/parks/reinhardt-redwood
 highlight: true
 image: redwood.jpg
-blurb: Redwood Regional Park offers trails for all levels of skills and abilities, plus a huge selection of recreation options
-  including archery, a pool, a picnic area, and even the NASA Ames Visitor Center! Come enjoy the towering redwood groves
-  that once built Oakland and San Francisco, or hike out to the East Ridge for sweeping views over the Bay.
+blurb: Come enjoy the towering redwood groves that once built Oakland and San Francisco, or hike out to the East Ridge for sweeping views over the Bay.
 difficulty_human: easy to hard options available
 ---
 
