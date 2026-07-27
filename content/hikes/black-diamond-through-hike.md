@@ -51,8 +51,8 @@ gpx: black-diamond.gpx
 image: black-diamond.jpg
 blurb: Isolated valleys, each with their own strong identity, make up Black Diamond Mines, with windswept grassland, woodland,
   chaparral, and even evergreen forest. Mining history permeates the area.
-getting-there: Every other weekday County Connection 10 and every weekend County Connection 310 run to Clayton. Transfer at
-  Concord BART. To get back, use Tri Delta's on-demand <a href="https://trideltatransit.com/tri-myride/">Tri MyRide</a> service
+getting-there: Weekday County Connection 10 (hourly) and every weekend County Connection 310 (every 40 minutes) buses run to Clayton. Transfer at
+  Concord BART. To get back, either hike to Tri Delta 375/376 at Lone Tree Wy & Sutter Delta, use Tri Delta's on-demand <a href="https://trideltatransit.com/tri-myride/">Tri MyRide</a> service
   from Noakes Dr directly back to BART, or catch an Uber/Lyft.
 ---
 
