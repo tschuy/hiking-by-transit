@@ -81,7 +81,8 @@ Actions workflow verifies changes but does not deploy them.
 The authoritative trailhead data lives in
 `data/transit_accessible_trailheads.gpkg`; special-service KML sources live in
 `data/kml`. `npm run generate` validates those inputs, regenerates
-`src/data/catalog-v0.9.generated.json`, and copies the canonical KML into the
+`src/data/catalog-v0.9.generated.json`, rebuilds the five fixed-route map KML
+layers from that catalog, and copies the canonical special-service KML into the
 public asset tree. Generated files are committed so Cloudflare builds remain
 fast, reproducible, and independent of a Python geospatial environment.
 

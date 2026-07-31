@@ -7,10 +7,11 @@
     "packages/*"
   ],
   "scripts": {
-    "generate": "npm run generate:content && npm run generate:catalog",
+    "generate": "npm run generate:content && npm run generate:catalog && npm run generate:map-kml",
     "generate:content": "python3 scripts/generate-content.py",
     "generate:catalog": "python3 scripts/generate-trailhead-catalog.py",
-    "check:generated": "python3 scripts/generate-content.py --check && python3 scripts/generate-trailhead-catalog.py --check",
+    "generate:map-kml": "python3 scripts/generate-map-kml.py",
+    "check:generated": "python3 scripts/generate-content.py --check && python3 scripts/generate-trailhead-catalog.py --check && python3 scripts/generate-map-kml.py --check",
     "dev": "npm run build:olmap && vite",
     "build": "npm run build:olmap && npm run build:client && npm run build:ssr && npm run prerender && npm run check:prerender && npm run prepare:cloudflare",
     "build:olmap": "npm --workspace olmap run build",
