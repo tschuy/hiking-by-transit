@@ -173,7 +173,6 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
   const resultsHeadingId = useId()
   const mapPanelId = useId()
   const resultsPanelId = useId()
-
   return <section className={`map-explorer olmap-root${isHome ? ' home-map-explorer' : ''}`} aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
     {!isHome && <div className="map-toolbar">
       <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
@@ -198,7 +197,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
       </section>}
 
       {!isHome && <aside className="map-filters" aria-label="Map filters">
-        <div className="filter-heading"><div><h2>Filter the map</h2></div></div>
+        <div className="filter-heading"><div><h2>Filters</h2></div></div>
         <div className={`filter-columns${isScoped ? ' filter-columns-scoped' : ''}`}>
           <fieldset><legend>Trailhead access by type</legend>{trailheadGroups.map((group) => <div className="map-filter-group" key={group.label}><h3>{group.label}</h3>{group.members.map((name) => trailheadLayers.find((layer) => layer.name === name)).map((item) => item && <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: item.color }} aria-hidden="true" /><span>{item.label}</span></label>)}</div>)}</fieldset>
           <fieldset><legend>Transit and boundaries</legend>

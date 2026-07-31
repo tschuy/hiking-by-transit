@@ -8,7 +8,7 @@ export function TrailheadsPage() {
   const [includedServicesBody, methodologyConclusion = ''] = includedServices.split('## Planned services\n\n')
 
   return (
-    <section className="page container">
+    <section className="page container trailheads-page">
       <div className="section-heading trailhead-heading"><div><h1>Transit-accessible trailheads</h1><p className="page-lede">Explore all transit-accessible trailheads across California, including trailheads without a curated hike guide.</p></div></div>
 
       <TrailheadMap />
