@@ -123,7 +123,7 @@
       <Placemark>
         <name>Muir Woods Shuttle
 </name>
-        <description>Shuttles run seasonally (approximately April to September) from Larkspur and Sausalito ferry landings.&lt;br&gt;&lt;br&gt;https://gomuirwoods.com/muir/shuttleInfo</description>
+        <description>Shuttles run seasonally (approximately April to September) from Larkspur and Sausalito ferry landings.&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://gomuirwoods.com/muir/shuttleInfo&quot;&gt;Muir Woods Shuttle - Information and Reservations&lt;/a&gt;</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -133,7 +133,8 @@
       </Placemark>
       <Placemark>
         <name>Emerald Bay State Park</name>
-        <description>SEASONAL SERVICE - SUMMER ONLY&lt;br&gt;&lt;br&gt;https://www.keeptahoeblue.org/emerald-bay-shuttle/</description>
+        <description>SEASONAL SERVICE - SUMMER ONLY&lt;br&gt;&lt;br&gt;
+&lt;a href=&quot;https://tahoetransportation.org/route-30/&quot;&gt;TTD Route 30 - Emerald Bay Shuttle&lt;/a&gt;</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -143,7 +144,7 @@
       </Placemark>
       <Placemark>
         <name>Hidden Beach</name>
-        <description>0min from TTD 28 East Shore Express at Hidden Beach&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <description>0min from TTD 28 East Shore Express at Hidden Beach&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://tahoetransportation.org/2026-summer-service-to-sand-harbor/&quot;&gt;East Shore Express Service information&lt;/a&gt;</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -153,7 +154,7 @@
       </Placemark>
       <Placemark>
         <name>Sand Harbor State Park</name>
-        <description>0min from TTD 28 East Shore Express at Lake Tahoe Nevada State Park Sand Harbor&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <description>0min from TTD 28 East Shore Express at Lake Tahoe Nevada State Park Sand Harbor&lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY&lt;br&gt;&lt;br&gt;&lt;a href=&quot;https://tahoetransportation.org/2026-summer-service-to-sand-harbor/&quot;&gt;East Shore Express Service information&lt;/a&gt;</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -163,7 +164,7 @@
       </Placemark>
       <Placemark>
         <name>Sequoia National Park</name>
-        <description>Sequoia Shuttle runs seasonally (May to September) from Visalia to Sequoia National Park, connecting to internal shuttle buses at the Giant Forest Museum.&lt;br&gt;&lt;br&gt; https://www.sequoiashuttle.com/ &lt;br&gt;&lt;br&gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
+        <description>&amp;lt;a href=&amp;quot;https://www.sequoiashuttle.com/&amp;quot;&amp;gt;Sequoia Shuttle&amp;lt;/a&amp;gt; runs seasonally (May to September) from Visalia to Sequoia National Park, connecting to internal shuttle buses at the Giant Forest Museum.&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;SEASONAL SHUTTLE SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -173,7 +174,7 @@
       </Placemark>
       <Placemark>
         <name>Big Basin State Park</name>
-        <description>Santa Cruz METRO runs seasonal service on Line 35B from Cavallaro Transit Center in Scotts Valley to Big Basin State Park. &lt;br&gt;&lt;br&gt; https://scmetro.org/routes/route-35/ &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://scmetro.org/routes/route-35/&quot;&gt;Santa Cruz METRO runs seasonal service on Line 35B&lt;/a&gt; from Cavallaro Transit Center in Scotts Valley to Big Basin State Park.&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -183,7 +184,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Agnew Meadows</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -193,7 +194,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Starkweather Lake</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -203,7 +204,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Upper Soda Springs Campground</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -213,7 +214,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Minaret Falls Campground Turnoff</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -223,7 +224,7 @@
       </Placemark>
       <Placemark>
         <name>Devils Postpile National Monument</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -233,7 +234,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Sotcher Lake</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -243,7 +244,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Reds Meadow Campground</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
@@ -253,7 +254,7 @@
       </Placemark>
       <Placemark>
         <name>Inyo National Forest: Rainbow Falls Trailhead</name>
-        <description>Eastern Sierra Transit - Reds Meadow shuttle &lt;br&gt;&lt;br&gt; https://www.estransit.com/reds-meadow-shuttle &lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
+        <description>&lt;a href=&quot;https://www.estransit.com/reds-meadow-shuttle&quot;&gt;Eastern Sierra Transit - Reds Meadow shuttle&lt;/a&gt;&lt;br&gt;&lt;br&gt;SEASONAL SERVICE - SUMMER ONLY</description>
         <styleUrl>#icon-1502-000000-labelson</styleUrl>
         <Point>
           <coordinates>
