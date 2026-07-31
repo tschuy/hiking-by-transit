@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { SearchForm } from '../components/SearchForm'
 import { ContentHikeCard } from '../components/ContentHikeCard'
-import { HeroSlideshow } from '../components/HeroSlideshow'
+import { TrailheadMap } from '../components/TrailheadMap'
 import { hikeContent, placeContent, postContent } from '../data/content'
 import trailMapIcon from '../assets/trail-map.svg'
 
@@ -28,12 +28,12 @@ export function HomePage() {
 
   return (
     <>
-      <section className="hero-section">
-        <HeroSlideshow />
+      <section className="hero-section hero-section-map">
         <div className="container hero-grid">
           <div className="hero-content">
             <h1>Take transit to the trail.</h1>
             <p className="hero-copy">Find California hikes, parks, and trailheads you can reach by bus, train, or ferry.</p>
+            <SearchForm />
             <a className="hero-map-cta" href="/trailheads">
               <span className="hero-map-icon" aria-hidden="true">
                 <img src={trailMapIcon} alt="" />
@@ -41,12 +41,9 @@ export function HomePage() {
               <span className="hero-map-copy"><strong>Explore the map</strong><span>Browse transit-accessible hikes and trailheads across California</span></span>
               <span className="hero-map-arrow" aria-hidden="true">→</span>
             </a>
-            <SearchForm />
           </div>
         </div>
-        <a className="hero-scroll-cue" href="#bay-area-hikes">
-          <span>Recommended hikes</span><span aria-hidden="true">↓</span>
-        </a>
+        <div className="hero-trailhead-map"><TrailheadMap variant="home" /></div>
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">

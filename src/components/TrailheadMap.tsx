@@ -41,6 +41,7 @@ interface TrailheadMapProps {
   transitGroups?: string[]
   defaultTransitGroups?: string[]
   label?: string
+  variant?: 'full' | 'home'
 }
 
 function ActionLink({ action }: { action: MapAction }) {
@@ -158,11 +159,12 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
   </>
 }
 
-export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
+export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide', variant = 'full' }: TrailheadMapProps) {
+  const isHome = variant === 'home'
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
     zoomBy, selectFeature, clearSelection, retrySource,
-  } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
+  } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly: isHome })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
   const featureLookup = useMemo(() => new Map(state.visible.features.map((feature) => [feature.id, feature])), [state.visible.features])
@@ -172,14 +174,14 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
   const mapPanelId = useId()
   const resultsPanelId = useId()
 
-  return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
-    <div className="map-toolbar">
+  return <section className={`map-explorer olmap-root${isHome ? ' home-map-explorer' : ''}`} aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
+    {!isHome && <div className="map-toolbar">
       <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
         <button type="button" aria-controls={mapPanelId} aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
         <button type="button" aria-controls={resultsPanelId} aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
       </div>
       {!isScoped && <label className="map-checkbox weekday-service-toggle"><input type="checkbox" checked={enabledLayers.has('bus-weekday-only')} onChange={(event) => setLayerEnabled('bus-weekday-only', event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: '#1a237e' }} aria-hidden="true" /><span>Include weekday-only buses</span></label>}
-    </div>
+    </div>}
 
     <div className={`map-layout map-view-${viewMode}`}>
       <div className={`map-stage${state.selected ? ' map-stage-has-selection' : ''}`} id={mapPanelId} aria-hidden={viewMode === 'list'} inert={viewMode === 'list'}>
@@ -187,16 +189,15 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
         <p className="map-noscript">The interactive map requires JavaScript. Browse the <a href="/hikes">hike guides</a> or use the trailhead records instead.</p>
         {state.loading && <p className="map-status" role="status">Loading map data…</p>}
         {state.selected && <SelectionPanel feature={state.selected} active={viewMode === 'map'} onClose={clearSelection} onMapZoom={zoomBy} />}
-        <p className="map-instruction mobile-map-instruction">Use two fingers to pan the map.</p>
-        <p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p>
+        {!isHome && <><p className="map-instruction mobile-map-instruction">Use two fingers to pan the map.</p><p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p></>}
       </div>
 
-      <section className="map-companion" id={resultsPanelId} aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
+      {!isHome && <section className="map-companion" id={resultsPanelId} aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
         <div className="filter-heading"><div><h2 id={resultsHeadingId}>Trailhead results</h2></div><span aria-live="polite">{state.visible.total} result{state.visible.total === 1 ? '' : 's'}{state.visible.limited ? ', first 250 shown' : ''}</span></div>
         <ResultList features={visibleFeatures} selected={state.selected} onSelect={selectFeature} />
-      </section>
+      </section>}
 
-      <aside className="map-filters" aria-label="Map filters">
+      {!isHome && <aside className="map-filters" aria-label="Map filters">
         <div className="filter-heading"><div><h2>Filter the map</h2></div></div>
         <div className={`filter-columns${isScoped ? ' filter-columns-scoped' : ''}`}>
           <fieldset><legend>Trailhead access by type</legend>{trailheadGroups.map((group) => <div className="map-filter-group" key={group.label}><h3>{group.label}</h3>{group.members.map((name) => trailheadLayers.find((layer) => layer.name === name)).map((item) => item && <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: item.color }} aria-hidden="true" /><span>{item.label}</span></label>)}</div>)}</fieldset>
@@ -205,7 +206,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
             {displayedTransit.map((item) => <label className="map-checkbox" key={item.name}><input type="checkbox" checked={enabledLayers.has(item.name)} onChange={(event) => setLayerEnabled(item.name, event.target.checked)} /><span>{item.label}</span></label>)}
           </fieldset>
         </div>
-      </aside>
+      </aside>}
     </div>
 
     {state.configError && <div className="map-error" role="alert"><strong>Map unavailable</strong><span>{state.configError}</span><button type="button" onClick={() => window.location.reload()}>Retry map</button></div>}

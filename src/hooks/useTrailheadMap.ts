@@ -21,6 +21,7 @@ interface UseTrailheadMapOptions {
   scope: string
   transitGroups: string[]
   defaultTransitGroups: string[]
+  trailheadsOnly?: boolean
 }
 
 interface TrailheadMapUiState {
@@ -67,7 +68,7 @@ function validFeatureId(value: string | null): string | undefined {
   return value && value.length <= 500 && /^[\w:|.-]+$/.test(value) ? value : undefined
 }
 
-export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups }: UseTrailheadMapOptions) {
+export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly = false }: UseTrailheadMapOptions) {
   const centerLatitude = center?.latitude
   const centerLongitude = center?.longitude
   const centerZoom = center?.zoom
@@ -125,7 +126,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
         controller = createTrailheadMap({
           target,
           config,
-          dataSources: createMapSources(config, enabledLayersRef.current),
+          dataSources: createMapSources(config, enabledLayersRef.current).filter((source) => !trailheadsOnly || source.role === 'trailhead'),
           hikes: mapHikes,
           initialView: readInitialView(centerLatitude !== undefined && centerLongitude !== undefined && centerZoom !== undefined
             ? { latitude: centerLatitude, longitude: centerLongitude, zoom: centerZoom }
@@ -159,7 +160,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
       controller?.destroy()
       if (controllerRef.current === controller) controllerRef.current = null
     }
-  }, [centerLatitude, centerLongitude, centerZoom, scope, transitGroupKey])
+  }, [centerLatitude, centerLongitude, centerZoom, scope, transitGroupKey, trailheadsOnly])
 
   const setLayerEnabled = useCallback((layerId: string, enabled: boolean) => {
     setEnabledLayers((current) => {
