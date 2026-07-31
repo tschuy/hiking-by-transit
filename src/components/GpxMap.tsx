@@ -14,6 +14,7 @@ const routeConfig: ConfigFile = {
 }
 
 type MapTrailhead = Pick<CatalogTrailhead, 'id' | 'slug' | 'name' | 'entranceName' | 'coordinates'>
+const noTrailheads: MapTrailhead[] = []
 
 function routeAndTrailheadExtent(routeExtent: [number, number, number, number], trailheads: MapTrailhead[]): [number, number, number, number] {
   return trailheads.reduce<[number, number, number, number]>((extent, trailhead) => {
@@ -22,7 +23,7 @@ function routeAndTrailheadExtent(routeExtent: [number, number, number, number], 
   }, [...routeExtent])
 }
 
-export function GpxMap({ file, title, compact = false, trailheads = [] }: { file: string; title: string; compact?: boolean; trailheads?: MapTrailhead[] }) {
+export function GpxMap({ file, title, compact = false, trailheads = noTrailheads }: { file: string; title: string; compact?: boolean; trailheads?: MapTrailhead[] }) {
   const mapRef = useRef<HTMLDivElement>(null)
   const controllerRef = useRef<TrailheadMapController>(null)
   const mapId = useId()
