@@ -42,6 +42,7 @@ interface TrailheadMapProps {
   defaultTransitGroups?: string[]
   label?: string
   variant?: 'full' | 'home'
+  persistStateInUrl?: boolean
 }
 
 function ActionLink({ action }: { action: MapAction }) {
@@ -159,12 +160,12 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
   </>
 }
 
-export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide', variant = 'full' }: TrailheadMapProps) {
+export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide', variant = 'full', persistStateInUrl = false }: TrailheadMapProps) {
   const isHome = variant === 'home'
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
     zoomBy, selectFeature, clearSelection, retrySource,
-  } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly: isHome })
+  } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly: isHome, persistStateInUrl })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
   const featureLookup = useMemo(() => new Map(state.visible.features.map((feature) => [feature.id, feature])), [state.visible.features])

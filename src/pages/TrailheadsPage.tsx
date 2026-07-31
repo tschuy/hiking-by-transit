@@ -11,7 +11,7 @@ export function TrailheadsPage() {
     <section className="page container trailheads-page">
       <div className="section-heading trailhead-heading"><div><h1>Transit-accessible trailheads</h1><p className="page-lede">Explore all transit-accessible trailheads across California, including trailheads without a curated hike guide.</p></div></div>
 
-      <TrailheadMap />
+      <TrailheadMap persistStateInUrl />
 
       {methodology && <section className="map-methodology" aria-labelledby="map-methodology-title">
         <h2 id="map-methodology-title">{methodology.title}</h2>

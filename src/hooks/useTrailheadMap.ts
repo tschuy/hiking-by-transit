@@ -22,6 +22,7 @@ interface UseTrailheadMapOptions {
   transitGroups: string[]
   defaultTransitGroups: string[]
   trailheadsOnly?: boolean
+  persistStateInUrl?: boolean
 }
 
 interface TrailheadMapUiState {
@@ -34,15 +35,15 @@ interface TrailheadMapUiState {
 
 const emptyVisible: VisibleFeatureResult = { ids: [], total: 0, limited: false, features: [] }
 
-function readInitialLayers(transitGroups: string[]): Set<string> {
-  if (typeof window === 'undefined') return new Set([...trailheadLayerIds, ...transitGroups])
+function readInitialLayers(transitGroups: string[], persistStateInUrl: boolean): Set<string> {
+  if (!persistStateInUrl || typeof window === 'undefined') return new Set([...trailheadLayerIds, ...transitGroups])
   const requested = new URLSearchParams(window.location.search).getAll('layer').filter((layer) => validLayers.has(layer))
   if (requested.length) return new Set(requested)
   return new Set([...trailheadLayerIds, ...transitGroups])
 }
 
-function readInitialView(center?: UseTrailheadMapOptions['center']): Partial<TrailheadMapView> {
-  const params = new URLSearchParams(typeof window === 'undefined' ? '' : window.location.search)
+function readInitialView(center: UseTrailheadMapOptions['center'], persistStateInUrl: boolean): Partial<TrailheadMapView> {
+  const params = new URLSearchParams(!persistStateInUrl || typeof window === 'undefined' ? '' : window.location.search)
   const x = Number(params.get('x'))
   const y = Number(params.get('y'))
   const zoom = Number(params.get('z'))
@@ -68,7 +69,7 @@ function validFeatureId(value: string | null): string | undefined {
   return value && value.length <= 500 && /^[\w:|.-]+$/.test(value) ? value : undefined
 }
 
-export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly = false }: UseTrailheadMapOptions) {
+export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups, trailheadsOnly = false, persistStateInUrl = false }: UseTrailheadMapOptions) {
   const centerLatitude = center?.latitude
   const centerLongitude = center?.longitude
   const centerZoom = center?.zoom
@@ -83,11 +84,11 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
   enabledLayersRef.current = enabledLayers
 
   useEffect(() => {
-    const initialLayers = readInitialLayers(defaultTransitGroupKey ? defaultTransitGroupKey.split('|') : [])
+    const initialLayers = readInitialLayers(defaultTransitGroupKey ? defaultTransitGroupKey.split('|') : [], persistStateInUrl)
     enabledLayersRef.current = initialLayers
     setEnabledLayers(initialLayers)
-    setViewModeState(new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'map')
-  }, [defaultTransitGroupKey])
+    setViewModeState(persistStateInUrl && new URLSearchParams(window.location.search).get('view') === 'list' ? 'list' : 'map')
+  }, [defaultTransitGroupKey, persistStateInUrl])
 
   useEffect(() => {
     const target = targetRef.current
@@ -102,13 +103,13 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
       if (event.type === 'visible-features-change') setState((current) => ({ ...current, visible: event }))
       if (event.type === 'feature-select') {
         setState((current) => ({ ...current, selected: event.feature }))
-        replaceQuery((params) => params.set('selected', event.feature.id))
+        if (persistStateInUrl) replaceQuery((params) => params.set('selected', event.feature.id))
       }
       if (event.type === 'selection-clear') {
         setState((current) => ({ ...current, selected: undefined }))
-        replaceQuery((params) => params.delete('selected'))
+        if (persistStateInUrl) replaceQuery((params) => params.delete('selected'))
       }
-      if (event.type === 'move-end') replaceQuery((params) => {
+      if (event.type === 'move-end' && persistStateInUrl) replaceQuery((params) => {
         params.set('x', event.view.center[0].toFixed(2))
         params.set('y', event.view.center[1].toFixed(2))
         params.set('z', event.view.zoom.toFixed(2))
@@ -122,7 +123,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
         if (!response.ok) throw new Error(`Configuration request returned HTTP ${response.status}`)
         const config = validateConfig(await response.json())
         if (abortController.signal.aborted) return
-        const params = new URLSearchParams(window.location.search)
+        const params = new URLSearchParams(persistStateInUrl ? window.location.search : '')
         controller = createTrailheadMap({
           target,
           config,
@@ -130,7 +131,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
           hikes: mapHikes,
           initialView: readInitialView(centerLatitude !== undefined && centerLongitude !== undefined && centerZoom !== undefined
             ? { latitude: centerLatitude, longitude: centerLongitude, zoom: centerZoom }
-            : undefined),
+            : undefined, persistStateInUrl),
           initialSelectedFeatureId: validFeatureId(params.get('selected')),
           initialFilters: { showProtectedAreas: enabledLayersRef.current.has('cpad') },
           tileSource: {
@@ -160,26 +161,26 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
       controller?.destroy()
       if (controllerRef.current === controller) controllerRef.current = null
     }
-  }, [centerLatitude, centerLongitude, centerZoom, scope, transitGroupKey, trailheadsOnly])
+  }, [centerLatitude, centerLongitude, centerZoom, scope, transitGroupKey, trailheadsOnly, persistStateInUrl])
 
   const setLayerEnabled = useCallback((layerId: string, enabled: boolean) => {
     setEnabledLayers((current) => {
       const next = new Set(current)
       if (enabled) next.add(layerId); else next.delete(layerId)
-      replaceQuery((params) => {
+      if (persistStateInUrl) replaceQuery((params) => {
         params.delete('layer')
         mapLayerIds.filter((id) => next.has(id)).forEach((id) => params.append('layer', id))
       })
       return next
     })
     controllerRef.current?.setLayerVisibility(layerId === 'cpad' ? 'protected-areas' : layerId, enabled)
-  }, [])
+  }, [persistStateInUrl])
 
   const setViewMode = useCallback((mode: MapViewMode) => {
     setViewModeState(mode)
-    replaceQuery((params) => params.set('view', mode))
+    if (persistStateInUrl) replaceQuery((params) => params.set('view', mode))
     if (mode === 'map') requestAnimationFrame(() => controllerRef.current?.updateSize())
-  }, [])
+  }, [persistStateInUrl])
 
   return {
     targetRef,
