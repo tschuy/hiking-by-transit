@@ -182,12 +182,10 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .map-stage .ol-zoom button:active { background: var(--moss); }
 .map-stage .ol-control button:focus-visible { outline: 3px solid var(--clay); outline-offset: 2px; }
 .map-explorer { position: relative; }
-.weekday-service-callout { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 1rem; padding: .8rem 1rem; background: #202b25; border: 1px solid var(--forest); border-left: 3px solid var(--clay); border-radius: 10px; }
-.weekday-service-callout strong { display: block; color: var(--heading); font-size: .95rem; }
-.weekday-service-callout p:last-child { margin: .2rem 0 0; color: var(--ink-soft); font-size: .78rem; line-height: 1.4; }
-.weekday-service-toggle { flex: 0 0 auto; padding: .55rem .75rem; color: var(--ink); font-weight: 750; background: var(--paper); border: 1px solid var(--line); border-radius: 8px; }
+.map-toolbar { display: flex; align-items: stretch; justify-content: space-between; gap: .75rem; margin-bottom: .8rem; }
+.weekday-service-toggle { flex: 0 1 auto; padding: .45rem .75rem; color: var(--ink); font-weight: 750; background: #202b25; border: 1px solid var(--forest); border-radius: 8px; }
 .weekday-service-toggle:hover { border-color: var(--forest); }
-.map-view-switcher { display: inline-flex; gap: .25rem; margin-bottom: .8rem; padding: .25rem; background: var(--cream); border: 1px solid var(--line); border-radius: 8px; }
+.map-view-switcher { display: inline-flex; flex: 0 0 auto; gap: .25rem; padding: .25rem; background: var(--cream); border: 1px solid var(--line); border-radius: 8px; }
 .map-view-switcher button, .map-pagination button, .map-error button, .map-partial-errors button { min-height: 44px; padding: .55rem .8rem; color: var(--heading); font: inherit; font-weight: 800; background: transparent; border: 0; border-radius: 6px; cursor: pointer; }
 .map-view-switcher button:hover:not([aria-pressed="true"]) { background: var(--paper); }
 .map-view-switcher button[aria-pressed="true"] { color: var(--warm-black); background: var(--forest); }
@@ -464,15 +462,13 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .record-panel li { flex-direction: column; gap: .3rem; }
   .record-panel li span { text-align: left; }
   .filter-heading { align-items: flex-start; flex-direction: column; gap: .35rem; }
-  .weekday-service-callout { align-items: stretch; flex-direction: column; gap: .8rem; }
-  .weekday-service-toggle { align-self: stretch; }
-  .map-view-switcher { width: 100%; }
-  .map-view-switcher button { flex: 1; }
+  .map-toolbar { gap: .5rem; }
+  .weekday-service-toggle { min-width: 0; padding-inline: .6rem; font-size: .8rem; }
   .filter-columns { grid-template-columns: 1fr; gap: 1.5rem; }
   .trailhead-map-target { height: 500px; min-height: 380px; }
   .map-stage-has-selection { display: grid; grid-template-rows: minmax(220px, 1fr) auto auto; height: calc(100vh - 96px); height: calc(100svh - 96px); min-height: 540px; max-height: 720px; }
   .map-stage-has-selection .trailhead-map-target { width: 100%; height: 100%; min-height: 0; }
-  .map-stage-has-selection .map-selection { position: relative; inset: auto; width: 100%; max-height: min(45vh, 360px); max-height: min(45svh, 360px); overflow-y: auto; overscroll-behavior: contain; padding: 1rem 1.1rem 1.2rem; color: var(--ink); background: var(--cream); border: 0; border-top: 1px solid var(--line); border-radius: 0; box-shadow: none; scrollbar-color: var(--forest) var(--cream); }
+  .map-stage-has-selection .map-selection { position: relative; inset: auto; width: 100%; max-height: min(45vh, 360px); max-height: min(45svh, 360px); overflow-y: auto; overscroll-behavior-y: auto; touch-action: pan-y; padding: 1rem 1.1rem 1.2rem; color: var(--ink); background: var(--cream); border: 0; border-top: 1px solid var(--line); border-radius: 0; box-shadow: none; scrollbar-color: var(--forest) var(--cream); }
   .map-stage-has-selection .map-selection .map-selection-context { color: var(--ink-soft); }
   .map-stage-has-selection .map-selection h2 { color: var(--heading); }
   .map-stage-has-selection .map-selection p,

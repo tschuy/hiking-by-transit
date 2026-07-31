@@ -172,13 +172,12 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
   const resultsPanelId = useId()
 
   return <section className="map-explorer olmap-root" aria-label={`${label} trailhead explorer`} aria-busy={state.loading}>
-    {!isScoped && <aside className="weekday-service-callout" aria-labelledby="weekday-service-title">
-      <div><strong id="weekday-service-title">Weekday-only trailheads</strong></div>
-      <label className="map-checkbox weekday-service-toggle"><input type="checkbox" checked={enabledLayers.has('bus-weekday-only')} onChange={(event) => setLayerEnabled('bus-weekday-only', event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: '#1a237e' }} aria-hidden="true" /><span>Include weekday-only buses</span></label>
-    </aside>}
-    <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
-      <button type="button" aria-controls={mapPanelId} aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
-      <button type="button" aria-controls={resultsPanelId} aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
+    <div className="map-toolbar">
+      <div className="map-view-switcher" role="group" aria-label="Choose map or list view">
+        <button type="button" aria-controls={mapPanelId} aria-pressed={viewMode === 'map'} onClick={() => setViewMode('map')}>Map</button>
+        <button type="button" aria-controls={resultsPanelId} aria-pressed={viewMode === 'list'} onClick={() => setViewMode('list')}>List</button>
+      </div>
+      {!isScoped && <label className="map-checkbox weekday-service-toggle"><input type="checkbox" checked={enabledLayers.has('bus-weekday-only')} onChange={(event) => setLayerEnabled('bus-weekday-only', event.target.checked)} /><i className="map-layer-swatch" style={{ backgroundColor: '#1a237e' }} aria-hidden="true" /><span>Include weekday-only buses</span></label>}
     </div>
 
     <div className={`map-layout map-view-${viewMode}`}>
