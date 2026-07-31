@@ -1,8 +1,9 @@
-import { useId, useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
 import type { ChangeEvent, FocusEvent, FormEvent, KeyboardEvent } from 'react'
 import { searchSite } from '../search/search'
 
 export function SearchForm() {
+  const formRef = useRef<HTMLFormElement>(null)
   const inputId = useId()
   const listboxId = useId()
   const [query, setQuery] = useState('')
@@ -12,6 +13,19 @@ export function SearchForm() {
   const results = searchSite(query)
   const hasSearchableQuery = query.trim().length >= 2
   const showPanel = isOpen
+
+  useEffect(() => {
+    if (!isOpen) return
+    const dismiss = (event: PointerEvent) => {
+      if (event.target instanceof Node && !formRef.current?.contains(event.target)) {
+        setIsOpen(false)
+        setIsExpanded(false)
+        setActiveIndex(-1)
+      }
+    }
+    document.addEventListener('pointerdown', dismiss)
+    return () => document.removeEventListener('pointerdown', dismiss)
+  }, [isOpen])
 
   function handleChange(event: ChangeEvent<HTMLInputElement>) {
     setQuery(event.target.value)
@@ -54,14 +68,15 @@ export function SearchForm() {
   }
 
   function handleBlur(event: FocusEvent<HTMLFormElement>) {
-    if (!isExpanded && !event.currentTarget.contains(event.relatedTarget)) {
+    if (!event.currentTarget.contains(event.relatedTarget)) {
       setIsOpen(false)
+      setIsExpanded(false)
       setActiveIndex(-1)
     }
   }
 
   return (
-    <form className="search-form" role="search" onSubmit={handleSubmit} onBlur={handleBlur}>
+    <form ref={formRef} className="search-form" role="search" onSubmit={handleSubmit} onBlur={handleBlur}>
       <label htmlFor={inputId}>Search for a hike, trailhead, or place</label>
       <div className="search-combobox">
         <div className="search-row">
