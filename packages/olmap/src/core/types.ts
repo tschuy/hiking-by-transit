@@ -209,6 +209,7 @@ export interface TrailheadMapController {
   getState(): TrailheadMapState;
   setFilters(filters: Partial<TrailheadMapFilters>): void;
   setView(view: Partial<TrailheadMapView>): void;
+  zoomBy(delta: number): void;
   fitToExtent(extent: Extent, options?: FitToExtentOptions): void;
   selectFeature(id: string): void;
   activateFeature(id: string): void;

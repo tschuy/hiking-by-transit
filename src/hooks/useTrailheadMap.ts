@@ -187,6 +187,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
     viewMode,
     setViewMode,
     setLayerEnabled,
+    zoomBy: (delta: number) => controllerRef.current?.zoomBy(delta),
     selectFeature: (id: string) => controllerRef.current?.selectFeature(id),
     activateFeature: (id: string) => controllerRef.current?.activateFeature(id),
     clearSelection: () => controllerRef.current?.clearSelection(),

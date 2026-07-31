@@ -856,6 +856,11 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       if (nextView.zoom !== undefined) view.setZoom(nextView.zoom);
       state = { ...state, view: currentView() };
     },
+    zoomBy: (delta) => {
+      if (destroyed || !Number.isFinite(delta) || delta === 0) return;
+      view.cancelAnimations();
+      view.animate({ zoom: (view.getZoom() ?? 9) + delta, duration: options.reducedMotion ? 0 : 180 });
+    },
     fitToExtent: (extent, fitOptions) => {
       if (destroyed) return;
       view.fit(extent, {

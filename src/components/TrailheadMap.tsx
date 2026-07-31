@@ -94,7 +94,8 @@ function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatu
   </div>
 }
 
-function SelectionPanel({ feature, active, onClose }: { feature: MapFeatureDetails; active: boolean; onClose: () => void }) {
+function SelectionPanel({ feature, active, onClose, onMapZoom }: { feature: MapFeatureDetails; active: boolean; onClose: () => void; onMapZoom: (delta: number) => void }) {
+  const panelRef = useRef<HTMLElement>(null)
   const closeRef = useRef<HTMLButtonElement>(null)
   const returnFocusRef = useRef<HTMLElement | null>(null)
   useEffect(() => {
@@ -102,12 +103,23 @@ function SelectionPanel({ feature, active, onClose }: { feature: MapFeatureDetai
     returnFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null
     closeRef.current?.focus({ preventScroll: true })
   }, [active, feature.id])
+  useEffect(() => {
+    const panel = panelRef.current
+    if (!panel) return
+    const handleWheel = (event: WheelEvent) => {
+      if (!event.ctrlKey && !event.metaKey) return
+      event.preventDefault()
+      onMapZoom(event.deltaY < 0 ? 1 : -1)
+    }
+    panel.addEventListener('wheel', handleWheel, { passive: false })
+    return () => panel.removeEventListener('wheel', handleWheel)
+  }, [onMapZoom])
   const close = () => {
     const returnFocus = returnFocusRef.current
     onClose()
     requestAnimationFrame(() => returnFocus?.focus({ preventScroll: true }))
   }
-  return <aside className={`map-selection map-selection-${feature.kind}`} role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
+  return <aside ref={panelRef} className={`map-selection map-selection-${feature.kind}`} role="dialog" aria-modal="false" aria-label={`Details for ${feature.name}`} onKeyDown={(event) => { if (event.key === 'Escape') close() }}>
     <button ref={closeRef} className="map-selection-close" type="button" onClick={close} aria-label="Close map details">×</button>
     {feature.kind === 'cluster' && <p className="map-selection-context">{feature.clusterSize} nearby trailheads</p>}
     <h2>{feature.name}</h2>
@@ -148,7 +160,7 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
 export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
-    selectFeature, clearSelection, retrySource,
+    zoomBy, selectFeature, clearSelection, retrySource,
   } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
@@ -174,7 +186,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
         <div ref={targetRef} className="trailhead-map-target olmap-map" aria-label={isScoped ? `Interactive map of transit-accessible trailheads in ${label}` : 'Interactive map of transit-accessible trailheads statewide'} role="region" />
         <p className="map-noscript">The interactive map requires JavaScript. Browse the <a href="/hikes">hike guides</a> or use the trailhead records instead.</p>
         {state.loading && <p className="map-status" role="status">Loading map data…</p>}
-        {state.selected && <SelectionPanel feature={state.selected} active={viewMode === 'map'} onClose={clearSelection} />}
+        {state.selected && <SelectionPanel feature={state.selected} active={viewMode === 'map'} onClose={clearSelection} onMapZoom={zoomBy} />}
         <p className="map-instruction mobile-map-instruction">Use two fingers to pan the map.</p>
         <p className="map-instruction desktop-map-instruction">Drag to pan. Hold <kbd>Ctrl</kbd> or <kbd>⌘</kbd> while scrolling to zoom.</p>
       </div>
