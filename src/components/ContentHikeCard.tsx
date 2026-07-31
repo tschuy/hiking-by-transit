@@ -11,7 +11,7 @@ export function ContentHikeCard({ hike }: { hike: HikeContent }) {
         {place && <p className="card-context">{place.title}</p>}
         <h3><a href={`/hikes/${hike.slug}`}>{hike.title}</a></h3>
         {hike.blurb && <p>{hike.blurb}</p>}
-        <ul className="fact-list" aria-label="Hike details"><li>{hike.length}</li><li>{hike.difficulty_human ?? hike.difficulty}</li></ul>
+        <ul className="fact-list" aria-label="Hike details"><li className="travel-time">{hike.travel.out.time} from {hike.travel.origin}</li><li>{hike.length}</li><li>{hike.difficulty_human ?? hike.difficulty}</li></ul>
       </div>
     </article>
   )

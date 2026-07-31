@@ -100,6 +100,7 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .card-body h3 a:hover { text-decoration-color: currentColor; }
 .card-body > p:not(.card-context) { min-height: 4.6em; color: var(--ink-soft); line-height: 1.55; }
 .fact-list { display: flex; flex-wrap: wrap; gap: .45rem 1rem; padding: 1rem 0; margin: 0; list-style: none; color: var(--ink-soft); font-size: .83rem; font-weight: 700; border-top: 1px solid var(--line); }
+.fact-list .travel-time { flex-basis: 100%; color: var(--ink); }
 .transit-badge { display: inline-block; margin: .25rem .25rem 0 0; padding: .35rem .6rem; color: var(--warm-black); font-size: .76rem; font-weight: 800; background: var(--moss); border-radius: 999px; }
 .section-tint { background: var(--cream); }
 .link-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
