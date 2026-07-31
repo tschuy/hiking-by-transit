@@ -148,7 +148,7 @@ function ResultList({ features, selected, onSelect }: { features: VisibleFeature
 export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], defaultTransitGroups = transitGroups, label = 'Statewide' }: TrailheadMapProps) {
   const {
     targetRef, state, enabledLayers, viewMode, setViewMode, setLayerEnabled,
-    activateFeature, clearSelection, retrySource,
+    selectFeature, clearSelection, retrySource,
   } = useTrailheadMap({ center, scope, transitGroups, defaultTransitGroups })
   const isScoped = scope !== 'statewide'
   const displayedTransit = isScoped ? transitLayers.filter((layer) => transitGroups.includes(layer.name)) : transitLayers
@@ -181,7 +181,7 @@ export function TrailheadMap({ center, scope = 'statewide', transitGroups = [], 
 
       <section className="map-companion" id={resultsPanelId} aria-labelledby={resultsHeadingId} hidden={viewMode === 'map'}>
         <div className="filter-heading"><div><h2 id={resultsHeadingId}>Trailhead results</h2></div><span aria-live="polite">{state.visible.total} result{state.visible.total === 1 ? '' : 's'}{state.visible.limited ? ', first 250 shown' : ''}</span></div>
-        <ResultList features={visibleFeatures} selected={state.selected} onSelect={activateFeature} />
+        <ResultList features={visibleFeatures} selected={state.selected} onSelect={selectFeature} />
       </section>
 
       <aside className="map-filters" aria-label="Map filters">

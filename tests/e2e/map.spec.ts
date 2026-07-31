@@ -10,8 +10,13 @@ test('restores list URL state and synchronizes list selection with map details',
   await expect(listSwitch).toHaveAttribute('aria-pressed', 'true')
   const firstResult = page.locator('.map-result-list > li > button').first()
   await expect(firstResult).toBeVisible({ timeout: 20_000 })
+  const viewBeforeSelection = new URL(page.url()).searchParams
   await firstResult.click()
   await expect(firstResult).toHaveAttribute('aria-expanded', 'true')
+  const viewAfterSelection = new URL(page.url()).searchParams
+  expect(viewAfterSelection.get('x')).toBe(viewBeforeSelection.get('x'))
+  expect(viewAfterSelection.get('y')).toBe(viewBeforeSelection.get('y'))
+  expect(viewAfterSelection.get('z')).toBe(viewBeforeSelection.get('z'))
 
   await page.getByRole('button', { name: 'Map' }).click()
   const details = page.getByRole('dialog', { name: /details for/i })
