@@ -23,17 +23,17 @@ export function TrailheadPage({ slug }: { slug: string }) {
 
       <TrailheadAccessMap trailhead={trailhead} />
 
-      {trailhead.notes && <p className="notice content-panel">{trailhead.notes}</p>}
-      <section className="content-panel">
+      {(trailhead.notes || trailhead.noteParts.length > 0) && <div className="notice content-panel"><p>{trailhead.noteParts.length > 0 ? trailhead.noteParts.map((part, index) => part.type === 'link' ? <a href={part.href} key={`${part.href}-${index}`}>{part.label}</a> : part.type === 'break' ? <br key={`break-${index}`} /> : <span key={`text-${index}`}>{part.text}</span>) : trailhead.notes}</p></div>}
+      {trailhead.access.length > 0 && <section className="content-panel">
         <h2>Nearby stops</h2>
-        {trailhead.access.length ? <ul className="trailhead-stop-list">{trailhead.access.map((access) => {
+        <ul className="trailhead-stop-list">{trailhead.access.map((access) => {
           const routes = formatAccessRoutes(access)
           const frequency = formatServiceFrequency(access)
           return <li key={`${access.id}-${access.sourceFid}`}><strong>{access.stopName}</strong><p className="trailhead-stop-walk">{access.walkMinutes === null ? 'See access notes' : `${Math.round(access.walkMinutes)} min walk`}</p>{routes.length > 0 && <p className="trailhead-stop-routes">Served by {routes.join(', ')}</p>}{routes.length > 0 && frequency.length > 0 && <p className="trailhead-stop-frequency">{frequency.join(' · ')}</p>}{access.notes && <p>{access.notes}</p>}<a href={googleMapsUrl(access.coordinates)} target="_blank" rel="noreferrer">Open stop in Google Maps ↗</a></li>
-        })}</ul> : <p>Structured stop details are not available for this hand-maintained record. See the access notes above and confirm current service before traveling.</p>}
-      </section>
+        })}</ul>
+      </section>}
 
-      {relatedHikes.length > 0 ? <section className="record-panel"><h2>Recommended hikes from here</h2><ul>{relatedHikes.map((hike) => hike && <li key={hike.id}><a href={`/hikes/${hike.slug}`}><strong>{hike.title}</strong></a><span>{hike.lengthLabel} · {hike.difficulty}</span></li>)}</ul></section> : <p className="field-note">This reference record does not have a complete hike guide yet.</p>}
+      {relatedHikes.length > 0 && <section className="record-panel"><h2>Recommended hikes from here</h2><ul>{relatedHikes.map((hike) => hike && <li key={hike.id}><a href={`/hikes/${hike.slug}`}><strong>{hike.title}</strong></a><span>{hike.lengthLabel} · {hike.difficulty}</span></li>)}</ul></section>}
     </article>
   )
 }

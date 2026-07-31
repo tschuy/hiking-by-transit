@@ -13,6 +13,7 @@ import shutil
 import subprocess
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from html.parser import HTMLParser
 from pathlib import Path
 
 import geopandas as gpd
@@ -86,15 +87,49 @@ def git_revision() -> str:
     ).stdout.strip()
 
 
-def plain_kml_description(value: str | None) -> str | None:
+class DescriptionPartsParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts: list[dict[str, str]] = []
+        self.link_href: str | None = None
+        self.link_text: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag.lower() == "br":
+            self.parts.append({"type": "break"})
+        if tag.lower() == "a":
+            href = dict(attrs).get("href") or ""
+            if href.startswith(("/", "#", "https://", "http://", "mailto:")):
+                self.link_href = href
+                self.link_text = []
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag.lower() == "a" and self.link_href is not None:
+            label = "".join(self.link_text).strip()
+            if label:
+                self.parts.append({"type": "link", "href": self.link_href, "label": label})
+            self.link_href = None
+            self.link_text = []
+
+    def handle_data(self, data: str) -> None:
+        if self.link_href is not None:
+            self.link_text.append(data)
+        elif data:
+            self.parts.append({"type": "text", "text": data})
+
+
+def kml_description(value: str | None) -> tuple[str | None, list[dict[str, str]], list[dict[str, str]]]:
     if not value:
-        return None
+        return None, [], []
     value = html.unescape(value)
+    parser = DescriptionPartsParser()
+    parser.feed(value)
+    links = [{"href": part["href"], "label": part["label"]} for part in parser.parts if part["type"] == "link"]
     value = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"[ \t]+", " ", value)
     value = re.sub(r"\s*\n\s*", "\n", value).strip()
-    return value or None
+    return value or None, links, parser.parts
 
 
 def read_canonical_kml(copy_public: bool = True) -> tuple[list[dict], list[dict]]:
@@ -119,7 +154,8 @@ def read_canonical_kml(copy_public: bool = True) -> tuple[list[dict], list[dict]
             name = " ".join((placemark.findtext("kml:name", default="", namespaces=namespace)).split())
             coordinate_text = placemark.findtext("kml:Point/kml:coordinates", default="", namespaces=namespace).strip()
             coordinates = [float(value.strip()) for value in coordinate_text.split(",")[:2]]
-            description = plain_kml_description(placemark.findtext("kml:description", namespaces=namespace))
+            raw_description = placemark.findtext("kml:description", namespaces=namespace)
+            description, links, note_parts = kml_description(raw_description)
             identity = hashlib.sha256(f"{category}|{name}|{coordinates[0]:.8f}|{coordinates[1]:.8f}".encode()).hexdigest()[:12].upper()
             lowered = (description or "").lower()
             records.append({
@@ -127,6 +163,8 @@ def read_canonical_kml(copy_public: bool = True) -> tuple[list[dict], list[dict]
                 "name": name,
                 "coordinates": coordinates,
                 "notes": description,
+                "links": links,
+                "noteParts": note_parts,
                 "access": [],
                 "hikeIds": [],
                 "placeIds": [],
@@ -222,6 +260,8 @@ def main() -> None:
             "destinationNames": list(parsed_name.destination_names),
             "coordinates": [float(row.geometry.x), float(row.geometry.y)],
             "notes": text(row.get("notes")),
+            "links": [],
+            "noteParts": [],
             "access": access_records,
             "hikeIds": sorted(hike_ids_by_trailhead.get(trailhead_id, [])),
             "placeIds": sorted(place_ids_by_trailhead.get(trailhead_id, set())),

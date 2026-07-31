@@ -30,6 +30,8 @@ export interface CatalogTrailhead {
   destinationIds: string[]
   coordinates: [number, number]
   notes: string | null
+  links: Array<{ href: string; label: string }>
+  noteParts: Array<{ type: 'text'; text: string } | { type: 'link'; href: string; label: string } | { type: 'break' }>
   access: CatalogAccess[]
   hikeIds: string[]
   placeIds: string[]

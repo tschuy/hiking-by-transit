@@ -1,7 +1,7 @@
 import catalogJson from './catalog-v0.9.generated.json'
 import type { CatalogDestination, CatalogTrailhead, TrailheadCatalog } from '../types/catalog'
 
-export const trailheadCatalog = catalogJson as TrailheadCatalog
+export const trailheadCatalog = catalogJson as unknown as TrailheadCatalog
 export const catalogTrailheads = trailheadCatalog.trailheads
 export const catalogDestinations = trailheadCatalog.destinations
 

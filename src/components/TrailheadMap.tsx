@@ -67,9 +67,10 @@ function MiniMap({ feature }: { feature: MapFeatureDetails }) {
   return <iframe className="map-mini-map" title={`Small map showing ${feature.name}`} loading="lazy" src={`https://www.openstreetmap.org/export/embed.html?${params}`} />
 }
 
-function CatalogDetails({ trailhead }: { trailhead: CatalogTrailhead }) {
+function CatalogDetails({ trailhead, description }: { trailhead: CatalogTrailhead; description?: string }) {
+  const linkedDescription = description?.includes('<a ') ? description : undefined
   return <div className="map-catalog-details">
-    {trailhead.notes && <p>{trailhead.notes}</p>}
+    {linkedDescription ? <RichDescription html={linkedDescription} /> : trailhead.notes && <p>{trailhead.notes}</p>}
     {trailhead.access.map((access) => {
       const routes = formatAccessRoutes(access)
       const frequency = formatServiceFrequency(access)
@@ -84,7 +85,7 @@ function FeatureDetails({ feature, includeMiniMap = false }: { feature: MapFeatu
   const hasActions = hikes.length > 0 || trailhead !== undefined || feature.actions.length > 0
   return <div className={`map-feature-details map-feature-details-${feature.kind}`}>
     {includeMiniMap && <MiniMap feature={feature} />}
-    {trailhead ? <CatalogDetails trailhead={trailhead} /> : feature.description && <RichDescription html={feature.description} />}
+    {trailhead ? <CatalogDetails trailhead={trailhead} description={feature.description} /> : feature.description && <RichDescription html={feature.description} />}
     {feature.kind === 'cluster' && <p>This group contains {feature.clusterSize} trailheads of the same access type. Select it again to zoom in.</p>}
     {hasActions && <nav className="selection-actions" aria-label="Selection actions">
       {hikes.map((hike) => <a className="map-action map-action-hike-guide" href={`/hikes/${hike.slug}`} key={hike.id}>Read hike guide: {hike.title} <span aria-hidden="true">→</span></a>)}
