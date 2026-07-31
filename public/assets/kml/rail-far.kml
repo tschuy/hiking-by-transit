@@ -11,87 +11,13 @@
   </Style>
 
   <Placemark>
-    <name>Quarry Lakes Regional Park</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Union City</h4>
-<b>24 min walk</b><br>
-Served by BART Green, BART Orange
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail-far</styleUrl>
-    <Point>
-      <coordinates>-122.00684,37.5793266,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>San Bruno Mountain: Royce Way</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Colma</h4>
-<b>23 min walk</b><br>
-Served by BART Red, BART Yellow
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail-far</styleUrl>
-    <Point>
-      <coordinates>-122.4541179,37.6920739,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>Dry Creek Pioneer Regional Park: Dry Creek Staging Area</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Union City</h4>
-<b>30 min walk</b><br>
-Served by BART Green, BART Orange
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail-far</styleUrl>
-    <Point>
-      <coordinates>-122.0178945,37.6074311,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>Dublin Hills: Martin Canyon Creek Trailhead</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: West Dublin / Pleasanton</h4>
-<b>30 min walk</b><br>
-Served by BART Blue
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail-far</styleUrl>
-    <Point>
-      <coordinates>-121.9465416,37.704465,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
     <name>Briones Regional Park: Briones-to-Las Trampas Trail</name>
     <description>
 <![CDATA[
-
 <h4>Stop: Lafayette</h4>
 <b>28 min walk</b><br>
 Served by BART Yellow
 <ul><li>7 days a week: Frequent service</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
@@ -101,38 +27,34 @@ Served by BART Yellow
   </Placemark>
 
   <Placemark>
-    <name>Walter Costa Trail</name>
+    <name>Dry Creek Pioneer Regional Park: Dry Creek Staging Area</name>
     <description>
 <![CDATA[
-This is an access trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157 <br>
-<h4>Stop: Lafayette</h4>
-<b>21 min walk</b><br>
-Served by BART Yellow
+<h4>Stop: Union City</h4>
+<b>30 min walk</b><br>
+Served by BART Green, BART Orange
 <ul><li>7 days a week: Frequent service</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
     <Point>
-      <coordinates>-122.1402604,37.8887385,0</coordinates>
+      <coordinates>-122.0178945,37.6074311,0</coordinates>
     </Point>
   </Placemark>
 
   <Placemark>
-    <name>Peter Jakovina Trail</name>
+    <name>Dublin Hills Regional Open Space Preserve: Martin Canyon Creek Trailhead</name>
     <description>
 <![CDATA[
-This is a feeder trail to Briones Regional Park - http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157 <br>
-<h4>Stop: Lafayette</h4>
-<b>24 min walk</b><br>
-Served by BART Yellow
+<h4>Stop: West Dublin / Pleasanton</h4>
+<b>30 min walk</b><br>
+Served by BART Blue
 <ul><li>7 days a week: Frequent service</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
     <Point>
-      <coordinates>-122.1160416,37.8999003,0</coordinates>
+      <coordinates>-121.9465416,37.704465,0</coordinates>
     </Point>
   </Placemark>
 
@@ -140,14 +62,12 @@ Served by BART Yellow
     <name>Hill Slough Wildlife Area</name>
     <description>
 <![CDATA[
-
 <h4>Stop: Suisun-Fairfield</h4>
 Amtrak Capitol Corridor
 <br>
 <b>28 min walk</b><br>
 Served by Amtrak Capitol Corridor
 <ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
@@ -160,12 +80,10 @@ Served by Amtrak Capitol Corridor
     <name>Mare Island: San Pablo Bay</name>
     <description>
 <![CDATA[
-
 <h4>Stop: Mare Island Ferry Terminal</h4>
 <b>23 min walk</b><br>
 Served by San Francisco Bay Ferry VJO
 <ul><li>Weekday: Every 1–2 hours</li><li>Weekend: 6 trips a day</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
@@ -175,20 +93,90 @@ Served by San Francisco Bay Ferry VJO
   </Placemark>
 
   <Placemark>
-    <name>San Pedro Mountain: Woodoaks Trailhead</name>
+    <name>Peter Jakovina Trail</name>
     <description>
 <![CDATA[
+This is an access trail to Briones Regional Park. <a href="http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157">Check out the map of feeder trails here.</a>
+<br>
+<h4>Stop: Lafayette</h4>
+<b>24 min walk</b><br>
+Served by BART Yellow
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.1160416,37.8999003,0</coordinates>
+    </Point>
+  </Placemark>
 
+  <Placemark>
+    <name>Quarry Lakes Regional Recreation Area</name>
+    <description>
+<![CDATA[
+<h4>Stop: Union City</h4>
+<b>24 min walk</b><br>
+Served by BART Green, BART Orange
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.00684,37.5793266,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Bruno Mountain State Park: Royce Way</name>
+    <description>
+<![CDATA[
+<h4>Stop: Colma</h4>
+<b>23 min walk</b><br>
+Served by BART Red, BART Yellow
+<ul><li>7 days a week: Frequent service</li></ul>
+<h4>Stop: Orange St &amp; Chester St</h4>
+<b>5 min walk</b><br>
+Served by SamTrans 130
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.4541179,37.6920739,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain Preserve: Woodoaks Trailhead</name>
+    <description>
+<![CDATA[
 <h4>Stop: Marin Civic Center</h4>
 <b>27 min walk</b><br>
 Served by SMART
 <ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail-far</styleUrl>
     <Point>
       <coordinates>-122.5204723,38.0015823,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Walter Costa Trail</name>
+    <description>
+<![CDATA[
+This is an access trail to Briones Regional Park. <a href="http://lafayette.granicus.com/MetaViewer.php?view_id=3&clip_id=1670&meta_id=23157">Check out the map of feeder trails here.</a>
+<br>
+<h4>Stop: Lafayette</h4>
+<b>21 min walk</b><br>
+Served by BART Yellow
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail-far</styleUrl>
+    <Point>
+      <coordinates>-122.1402604,37.8887385,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>

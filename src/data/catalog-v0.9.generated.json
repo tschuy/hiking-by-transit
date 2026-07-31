@@ -1,6 +1,6 @@
 {
   "schemaVersion": "0.9",
-  "generatedAt": "2026-07-27T02:17:47.137924Z",
+  "generatedAt": "2026-07-31T03:50:18.236896Z",
   "source": {
     "gpkgPath": "data/transit_accessible_trailheads.gpkg",
     "gpkgSha256": "0b2efd0970314307f135c523bd880c9e42fe7a4f04e2e63dbeaa37249eeec154",
@@ -22,7 +22,7 @@
         "publicPath": "public/assets/kml/call-ahead.kml"
       }
     ],
-    "gitRevision": "02300345ea236b7accec956f538872e569b8d6fb"
+    "gitRevision": "43b1f02d6be0c74dbd946ef2d335a306bc8a8a18"
   },
   "counts": {
     "trailheads": 618,

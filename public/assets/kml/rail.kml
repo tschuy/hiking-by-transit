@@ -11,69 +11,13 @@
   </Style>
 
   <Placemark>
-    <name>Siesta Valley: De Laveaga Trail</name>
+    <name>Angel Island State Park</name>
     <description>
 <![CDATA[
-
-<h4>Stop: Orinda</h4>
-<b>10 min walk</b><br>
-Served by BART Yellow
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail</styleUrl>
-    <Point>
-      <coordinates>-122.1879308,37.8808028,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>MLK Jr Regional Park</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Coliseum</h4>
-<b>20 min walk</b><br>
-Served by BART Blue, BART Green, BART Orange
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail</styleUrl>
-    <Point>
-      <coordinates>-122.2110546,37.7506657,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>Lafayette Reservoir</name>
-    <description>
-<![CDATA[
-
-<h4>Stop: Lafayette</h4>
-<b>20 min walk</b><br>
-Served by BART Yellow
-<ul><li>7 days a week: Frequent service</li></ul>
-
-]]>
-    </description>
-    <styleUrl>#rail</styleUrl>
-    <Point>
-      <coordinates>-122.1400555,37.8877229,0</coordinates>
-    </Point>
-  </Placemark>
-
-  <Placemark>
-    <name>Angel Island</name>
-    <description>
-<![CDATA[
-
 <h4>Stop: Angel Island (No Service to Tiburon)</h4>
 <b>0 min walk</b><br>
 Served by Golden Gate Ferry AISF, Golden Gate Ferry TRIA
 <ul><li>Weekday: 6 trips a day</li><li>Weekend: 3 trips a day</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
@@ -86,12 +30,14 @@ Served by Golden Gate Ferry AISF, Golden Gate Ferry TRIA
     <name>Hamilton Wetlands</name>
     <description>
 <![CDATA[
-
 <h4>Stop: SMART Novato Hamilton</h4>
 <b>17 min walk</b><br>
 Served by SMART
 <ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
+<h4>Stop: Hamilton Theatre Parking Lot</h4>
+<b>15 min walk</b><br>
+Served by Marin Transit 49, Marin Transit 57
+<ul><li>7 days a week: Every 20–30 minutes</li></ul>
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
@@ -101,38 +47,34 @@ Served by SMART
   </Placemark>
 
   <Placemark>
-    <name>San Pedro Mountain: San Pablo Ave</name>
+    <name>Lafayette Reservoir</name>
     <description>
 <![CDATA[
-
-<h4>Stop: Marin Civic Center</h4>
-<b>17 min walk</b><br>
-Served by SMART
-<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
+<h4>Stop: Lafayette</h4>
+<b>20 min walk</b><br>
+Served by BART Yellow
+<ul><li>7 days a week: Frequent service</li></ul>
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
     <Point>
-      <coordinates>-122.528418,37.9946707,0</coordinates>
+      <coordinates>-122.1400555,37.8877229,0</coordinates>
     </Point>
   </Placemark>
 
   <Placemark>
-    <name>Sign Hill Trailhead (East)</name>
+    <name>Martin Luther King Jr. Regional Shoreline</name>
     <description>
 <![CDATA[
-
-<h4>Stop: South San Francisco</h4>
-<b>18 min walk</b><br>
-Served by Caltrain Express, Caltrain Limited, Caltrain Local Weekday, Caltrain Local Weekend
-<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
-
+<h4>Stop: Coliseum</h4>
+<b>20 min walk</b><br>
+Served by BART Blue, BART Green, BART Orange
+<ul><li>7 days a week: Frequent service</li></ul>
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
     <Point>
-      <coordinates>-122.411634,37.661148,0</coordinates>
+      <coordinates>-122.2110546,37.7506657,0</coordinates>
     </Point>
   </Placemark>
 
@@ -140,12 +82,10 @@ Served by Caltrain Express, Caltrain Limited, Caltrain Local Weekday, Caltrain L
     <name>Partridge Knolls Trail</name>
     <description>
 <![CDATA[
-
 <h4>Stop: SMART Novato San Marin</h4>
 <b>3 min walk</b><br>
 Served by SMART
 <ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
@@ -158,17 +98,67 @@ Served by SMART
     <name>Rush Creek Preserve</name>
     <description>
 <![CDATA[
-
 <h4>Stop: SMART Novato San Marin</h4>
 <b>12 min walk</b><br>
 Served by SMART
 <ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
-
 ]]>
     </description>
     <styleUrl>#rail</styleUrl>
     <Point>
       <coordinates>-122.56436530784397,38.11855072976077,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>San Pedro Mountain Preserve: San Pablo Ave</name>
+    <description>
+<![CDATA[
+<h4>Stop: Marin Civic Center</h4>
+<b>17 min walk</b><br>
+Served by SMART
+<ul><li>Weekday: Every 30–45 minutes</li><li>Weekend: About hourly</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.528418,37.9946707,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Siesta Valley: De Laveaga Trail</name>
+    <description>
+<![CDATA[
+<h4>Stop: Orinda</h4>
+<b>10 min walk</b><br>
+Served by BART Yellow
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.1879308,37.8808028,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>South San Francisco Sign Hill: Trailhead (East)</name>
+    <description>
+<![CDATA[
+<h4>Stop: South San Francisco</h4>
+<b>18 min walk</b><br>
+Served by Caltrain Express, Caltrain Limited, Caltrain Local Weekday, Caltrain Local Weekend
+<ul><li>Weekday: Every 20–30 minutes</li><li>Weekend: Every 30–45 minutes</li></ul>
+<h4>Stop: Grand Ave &amp; Spruce Ave</h4>
+<b>9 min walk</b><br>
+Served by SamTrans 130, SamTrans 141, South City Shuttle BLUE, South City Shuttle GREEN
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#rail</styleUrl>
+    <Point>
+      <coordinates>-122.411634,37.661148,0</coordinates>
     </Point>
   </Placemark>
 </Document></kml>
