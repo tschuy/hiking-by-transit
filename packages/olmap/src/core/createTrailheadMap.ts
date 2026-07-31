@@ -90,6 +90,45 @@ const TRAILHEAD_COLORS: Record<string, string> = {
 };
 const clusterStyleCache = new globalThis.Map<string, Style>();
 const trailheadStyleCache = new globalThis.Map<string, Style>();
+const selectedTrailheadStyleCache = new WeakMap<Style, Style>();
+
+function selectedTrailheadStyle(style: Style): Style {
+  const cached = selectedTrailheadStyleCache.get(style);
+  if (cached) return cached;
+  const selected = style.clone();
+  const image = selected.getImage();
+  if (image) {
+    const scale = image.getScale();
+    image.setScale(Array.isArray(scale) ? scale.map((value) => value * 1.9) : (scale ?? 1) * 1.9);
+  }
+  selected.setZIndex(1000);
+  selectedTrailheadStyleCache.set(style, selected);
+  return selected;
+}
+
+function selectedTrailheadStyles(styles: Style | Style[]): Style | Style[] {
+  return Array.isArray(styles) ? styles.map(selectedTrailheadStyle) : selectedTrailheadStyle(styles);
+}
+
+function positionedStyles(styles: Style | Style[], geometry: Geometry): Style[] {
+  return (Array.isArray(styles) ? styles : [styles]).map((style) => {
+    const positioned = style.clone();
+    positioned.setGeometry(geometry);
+    return positioned;
+  });
+}
+
+function centerPoint(features: MapFeature[]): Point | undefined {
+  const coordinates = features.flatMap((feature) => {
+    const geometry = feature.getGeometry();
+    return geometry instanceof Point ? [geometry.getCoordinates()] : [];
+  });
+  if (coordinates.length === 0) return undefined;
+  return new Point([
+    coordinates.reduce((sum, coordinate) => sum + coordinate[0], 0) / coordinates.length,
+    coordinates.reduce((sum, coordinate) => sum + coordinate[1], 0) / coordinates.length,
+  ]);
+}
 
 function trailheadStyle(sourceId: string, feature?: MapFeature): Style {
   const markerColor = feature?.get('marker_color');
@@ -513,9 +552,30 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
               const feature = candidate as MapFeature;
               const members = feature.get('features');
               if (Array.isArray(members)) {
-                if (members.length > 1) return clusterStyle(definition.id, members.length);
+                if (members.length > 1) {
+                  const mapMembers = members.filter((member): member is MapFeature => member instanceof Feature);
+                  const selectedMember = mapMembers.find((member) => String(member.getId()) === state.selectedFeatureId);
+                  if (!selectedMember) return clusterStyle(definition.id, members.length);
+                  const remainingMembers = mapMembers.filter((member) => member !== selectedMember);
+                  const selectedBaseStyle = selectedMember.getStyleFunction()?.(selectedMember, resolution) ?? trailheadStyle(definition.id, selectedMember);
+                  const selectedStyles = positionedStyles(selectedTrailheadStyles(selectedBaseStyle), selectedMember.getGeometry()!);
+                  if (remainingMembers.length === 1) {
+                    const remaining = remainingMembers[0];
+                    const remainingStyle = remaining.getStyleFunction()?.(remaining, resolution) ?? trailheadStyle(definition.id, remaining);
+                    return [...positionedStyles(remainingStyle, remaining.getGeometry()!), ...selectedStyles];
+                  }
+                  const remainingCenter = centerPoint(remainingMembers);
+                  const remainingCluster = clusterStyle(definition.id, remainingMembers.length);
+                  return remainingCenter
+                    ? [...positionedStyles(remainingCluster, remainingCenter), ...selectedStyles]
+                    : selectedStyles;
+                }
                 const member = members[0];
-                return member instanceof Feature ? member.getStyleFunction()?.(member, resolution) ?? trailheadStyle(definition.id, member as MapFeature) : undefined;
+                if (!(member instanceof Feature)) return undefined;
+                const memberStyle = member.getStyleFunction()?.(member, resolution) ?? trailheadStyle(definition.id, member as MapFeature);
+                return String(member.getId()) === state.selectedFeatureId
+                  ? selectedTrailheadStyles(memberStyle)
+                  : memberStyle;
               }
               const summary = normalizeFeatureSummary(presentationInput(feature, definition));
               const filterable = {
@@ -525,9 +585,11 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
                 properties: normalizeFeatureProperties(feature.getProperties()),
                 visibleOnMap: true,
               };
-              return featureMatchesFilters(filterable, state.filters)
-                ? feature.getStyleFunction()?.(feature, resolution) ?? trailheadStyle(definition.id, feature)
-                : undefined;
+              if (!featureMatchesFilters(filterable, state.filters)) return undefined;
+              const featureStyle = feature.getStyleFunction()?.(feature, resolution) ?? trailheadStyle(definition.id, feature);
+              return summary.id === state.selectedFeatureId
+                ? selectedTrailheadStyles(featureStyle)
+                : featureStyle;
             }
           : undefined,
       properties: { sourceId: definition.id, role: definition.role, groupIds: definition.groupIds ?? [] },
@@ -644,6 +706,9 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
     selectedDefinition = definition;
     const id = String(feature.getId());
     state = { ...state, selectedFeatureId: id };
+    for (const managed of vectorLayers.values()) {
+      if (managed.definition.role === 'trailhead') managed.layer.changed();
+    }
     const position = coordinate ?? mapCoordinate(feature);
     if (position) popupOverlay?.setPosition(position);
     emit({ type: 'feature-select', feature: normalizeFeatureDetails(presentationInput(feature, definition, coordinate)) });
@@ -656,6 +721,9 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
     pendingSelectionId = undefined;
     popupOverlay?.setPosition(undefined);
     state = { ...state, selectedFeatureId: undefined };
+    for (const managed of vectorLayers.values()) {
+      if (managed.definition.role === 'trailhead') managed.layer.changed();
+    }
     if (hadSelection || emitWhenEmpty) emit({ type: 'selection-clear' });
   }
 
