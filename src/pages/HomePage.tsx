@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { SearchForm } from '../components/SearchForm'
 import { ContentHikeCard } from '../components/ContentHikeCard'
+import { HeroSlideshow } from '../components/HeroSlideshow'
 import { TrailheadMap } from '../components/TrailheadMap'
 import { hikeContent, placeContent, postContent } from '../data/content'
 import trailMapIcon from '../assets/trail-map.svg'
@@ -18,6 +19,7 @@ function shuffled<T>(items: T[]): T[] {
 
 export function HomePage() {
   const [homepageHikes, setHomepageHikes] = useState(hikeContent)
+  const [heroBackdrop, setHeroBackdrop] = useState<'pending' | 'slideshow' | 'map'>('pending')
   const bayAreaRegions = placeContent.filter((place) => place.parent_id === 'bay-area')
   const featuredPlaces = placeContent.filter((place) => ['tahoe', 'north-coast', 'yosemite-national-park', 'channel-islands-national-park'].includes(place.place_id))
 
@@ -26,9 +28,18 @@ export function HomePage() {
     return () => window.clearTimeout(timeout)
   }, [])
 
+  useEffect(() => {
+    const query = window.matchMedia('(max-width: 520px)')
+    const update = () => setHeroBackdrop(query.matches ? 'slideshow' : 'map')
+    update()
+    query.addEventListener('change', update)
+    return () => query.removeEventListener('change', update)
+  }, [])
+
   return (
     <>
       <section className="hero-section hero-section-map">
+        {heroBackdrop === 'slideshow' && <HeroSlideshow />}
         <div className="container hero-grid">
           <div className="hero-content">
             <h1>Take transit to the trail.</h1>
@@ -43,7 +54,7 @@ export function HomePage() {
             </a>
           </div>
         </div>
-        <div className="hero-trailhead-map"><TrailheadMap variant="home" /></div>
+        {heroBackdrop === 'map' && <div className="hero-trailhead-map"><TrailheadMap variant="home" /></div>}
       </section>
 
       <section className="section container" id="bay-area-hikes" aria-labelledby="bay-area-title">
