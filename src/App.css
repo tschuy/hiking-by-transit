@@ -291,11 +291,14 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .hike-map-section-compact .elevation-profile figcaption { font-size: .75rem; }
 .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 .breadcrumbs { display: flex; gap: .6rem; margin-bottom: 3rem; color: var(--ink-soft); font-size: .9rem; }
-.summary-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 2.5rem 0; list-style: none; border-block: 1px solid var(--line); }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); padding: 0; margin: 2.5rem 0; list-style: none; border-block: 1px solid var(--line); }
 .summary-grid li { display: flex; flex-direction: column; gap: .3rem; padding: 1.4rem; border-right: 1px solid var(--line); }
 .summary-grid li:last-child { border: 0; }
 .summary-grid strong { color: var(--heading); font-size: 1.2rem; }
 .summary-grid span { color: var(--ink-soft); font-size: .8rem; }
+.hike-trailheads { max-width: 900px; display: grid; grid-template-columns: max-content minmax(0, 1fr); align-items: baseline; gap: .75rem 1rem; margin: 1rem 0 0; color: var(--ink-soft); line-height: 1.6; }
+.hike-trailheads > strong { color: var(--heading); font-size: .88rem; }
+.hike-trailheads a { color: var(--forest); font-weight: 750; text-underline-offset: 3px; }
 .content-panel { max-width: 760px; padding: 2rem; background: var(--cream); border-radius: var(--radius); }
 .content-panel h2 { font-size: 2rem; }
 .content-panel p { line-height: 1.65; }
@@ -395,9 +398,6 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .hero-slideshow img { object-position: 62% center; }
   .card-grid, .link-grid, .editorial-grid, .places-grid { grid-template-columns: 1fr 1fr; }
   .section-heading { display: block; }
-  .summary-grid { grid-template-columns: 1fr 1fr; }
-  .summary-grid li:nth-child(2) { border-right: 0; }
-  .summary-grid li:nth-child(-n + 2) { border-bottom: 1px solid var(--line); }
   .footer-inner { flex-direction: column; }
   .support-cta-inner { grid-template-columns: 1fr; }
   .trailhead-callout-inner { grid-template-columns: 1fr; }
@@ -447,8 +447,9 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .result-arrow { display: none; }
   .search-results-heading { align-items: flex-start; flex-direction: column; gap: .2rem; }
   .summary-grid { grid-template-columns: 1fr; }
-  .summary-grid li, .summary-grid li:nth-child(2) { border-right: 0; border-bottom: 1px solid var(--line); }
+  .summary-grid li { border-right: 0; border-bottom: 1px solid var(--line); }
   .summary-grid li:last-child { border-bottom: 0; }
+  .hike-trailheads { grid-template-columns: 1fr; gap: .25rem; }
   .trailhead-row { grid-template-columns: 1fr; }
   .post-card { grid-template-columns: 1fr; }
   .event-list { grid-template-columns: 1fr; }
