@@ -8,7 +8,7 @@ export function SiteHeader() {
           <ul className="nav-list">
             <li><a href="/trailheads">Trailhead map</a></li>
             <li><a href="/hikes">Hikes</a></li>
-            <li><a href="/places">Places</a></li>
+            <li><a href="/guides">Guides</a></li>
             <li><a href="/posts">Posts</a></li>
             <li><a href="/events">Events</a></li>
           </ul>

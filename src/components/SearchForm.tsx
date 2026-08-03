@@ -100,7 +100,7 @@ export function SearchForm() {
 
         {showPanel && <div className={`search-panel${isExpanded ? ' search-panel-expanded' : ''}`} id={listboxId} role="listbox" aria-label={isExpanded ? 'Search results' : 'Search suggestions'}>
           {isExpanded && hasSearchableQuery && results.length > 0 && <div className="search-results-heading" role="presentation"><strong>Search results</strong><span>All matches for “{query.trim()}”</span></div>}
-          {!hasSearchableQuery && <div className="search-message" role="option" aria-disabled="true">Type at least two characters to search hikes, places, trailheads, stops, and transit routes.</div>}
+          {!hasSearchableQuery && <div className="search-message" role="option" aria-disabled="true">Type at least two characters to search hikes, guides, trailheads, stops, and transit routes.</div>}
           {hasSearchableQuery && results.length === 0 && <div className="search-message" role="option" aria-disabled="true"><strong>No matches for “{query.trim()}”</strong><span>Try a place, park, trail name, transit agency, route, or stop.</span></div>}
           {results.map((result, index) => <a
             className="search-result"

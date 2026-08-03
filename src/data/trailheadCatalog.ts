@@ -19,7 +19,7 @@ export const getCatalogDestinationById = (id: string) => destinationById.get(id)
 export const getOwnedCatalogDestinations = (placeId: string) => catalogDestinations.filter((destination) => destination.placeId === placeId)
 export const getDestinationPath = (destination: CatalogDestination) => {
   const place = destination.placeId ? placeById.get(destination.placeId) : undefined
-  return place ? `/places/${place.slug}` : `/destinations/${destination.slug}`
+  return place ? `/guides/${place.slug}` : `/destinations/${destination.slug}`
 }
 export const getCatalogHike = (id: string) => hikeById.get(id)
 export const getCatalogPlace = (id: string) => placeById.get(id)

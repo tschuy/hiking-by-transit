@@ -9,6 +9,8 @@ describe('route resolution', () => {
     expect(prerenderPaths).toContain('/hikes')
     expect(prerenderPaths).toContain('/trailheads')
     expect(prerenderPaths).toContain('/destinations')
+    expect(prerenderPaths).toContain('/guides')
+    expect(prerenderPaths).not.toContain('/places')
     for (const pathname of prerenderPaths) {
       const { metadata } = resolveRoute(pathname)
       expect(metadata.title).not.toContain('Page not found')
@@ -24,7 +26,7 @@ describe('route resolution', () => {
   })
 
   it('resolves dynamic metadata and unknown slugs', () => {
-    expect(resolveRoute('/places/marin/').metadata.title).toBe('Marin · Hiking by Transit')
+    expect(resolveRoute('/guides/marin/').metadata.title).toBe('Marin · Hiking by Transit')
     expect(resolveRoute('/trailheads/siesta-valley-de-laveaga-trail').metadata.title).toContain('Siesta Valley')
     expect(resolveRoute('/not-a-real-page').metadata.title).toBe('Page not found · Hiking by Transit')
   })
@@ -39,18 +41,18 @@ describe('route resolution', () => {
 
   it('makes an owning place canonical for its generated destination', () => {
     const destinationRoute = resolveRoute('/destinations/yosemite-national-park')
-    expect(destinationRoute.metadata.canonicalPath).toBe('/places/yosemite-national-park')
-    expect(renderToStaticMarkup(destinationRoute.element)).toContain('href="/places/yosemite-national-park"')
-    const place = renderToStaticMarkup(resolveRoute('/places/yosemite-national-park').element)
+    expect(destinationRoute.metadata.canonicalPath).toBe('/guides/yosemite-national-park')
+    expect(renderToStaticMarkup(destinationRoute.element)).toContain('href="/guides/yosemite-national-park"')
+    const place = renderToStaticMarkup(resolveRoute('/guides/yosemite-national-park').element)
     expect(place).toContain('Transit-accessible entrances')
     expect(place).toContain('/trailheads/yosemite-national-park-yosemite-valley')
   })
 
   it('links place guides to their canonical prerendered paths', () => {
-    const peninsula = renderToStaticMarkup(resolveRoute('/places/peninsula').element)
-    expect(peninsula).toContain('href="/peninsula/samcoast"')
-    expect(prerenderPaths).toContain('/peninsula/samcoast')
-    expect(resolveRoute('/peninsula/samcoast').metadata.title).toContain('SamCoast')
+    const peninsula = renderToStaticMarkup(resolveRoute('/guides/peninsula').element)
+    expect(peninsula).toContain('href="/guides/samcoast"')
+    expect(prerenderPaths).toContain('/guides/samcoast')
+    expect(resolveRoute('/guides/samcoast').metadata.title).toContain('SamCoast')
   })
 
   it('keeps post structured data serializable and canonical', () => {
@@ -63,7 +65,7 @@ describe('route resolution', () => {
 
   it('selects relevant social images and falls back to the default preview', () => {
     expect(resolveRoute('/hikes/angel-island').metadata.socialImage).toBe('https://hikingbytransit.com/assets/angel-island.jpg')
-    expect(resolveRoute('/peninsula/samcoast').metadata.socialImage).toBe('https://hikingbytransit.com/assets/samcoast.jpg')
+    expect(resolveRoute('/guides/samcoast').metadata.socialImage).toBe('https://hikingbytransit.com/assets/samcoast.jpg')
     expect(resolveRoute('/trailheads').metadata.socialImage).toBe('https://hikingbytransit.com/assets/preview.png')
   })
 })

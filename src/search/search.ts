@@ -1,7 +1,7 @@
 import { eventContent, getGuidePath, guideContent, hikeContent, pageContent, placeContent, postContent, visiblePlaceContent } from '../data/content'
 import { catalogDestinations, catalogTrailheads, getCatalogDestinationById, getCatalogPlace, getCatalogTrailheadById, getDestinationPath, getOwnedCatalogDestinations } from '../data/trailheadCatalog'
 
-export type SearchResultType = 'Destination' | 'Event' | 'Guide' | 'Hike' | 'Page' | 'Place' | 'Post' | 'Trailhead'
+export type SearchResultType = 'Destination' | 'Event' | 'Guide' | 'Hike' | 'Page' | 'Post' | 'Trailhead'
 
 export interface SearchResult {
   id: string
@@ -34,11 +34,11 @@ const searchResults: SearchResult[] = [
     const accessTerms = destinationTrailheads.flatMap((trailhead) => trailhead.access.flatMap((access) => [access.stopName, ...access.routeIds]))
     return {
       id: `place-${place.slug}`,
-      type: 'Place',
+      type: 'Guide',
       badgeLabel: /national (?:park|and state parks)/i.test(place.title) ? 'National Park' : undefined,
       title: place.title,
       description: ownedDestinations.length > 0 ? `Destination guide · ${new Set(destinationTrailheads.map((trailhead) => trailhead.id)).size} transit-accessible trailheads` : place.blurb ?? `${place.kind} guide`,
-      href: `/places/${place.slug}`,
+      href: `/guides/${place.slug}`,
       searchableText: [place.title, place.blurb, place.kind, ...ownedDestinations.map((destination) => destination.name), ...destinationTrailheads.map((trailhead) => trailhead.name), ...accessTerms].filter(Boolean).join(' '),
     }
   }),
@@ -100,7 +100,6 @@ const resultTypePriority: Record<SearchResultType, number> = {
   Guide: 1,
   Hike: 1,
   Page: 1,
-  Place: 1,
   Post: 1,
   Trailhead: 2,
 }
@@ -143,7 +142,7 @@ export function searchSite(query: string, limit = Number.POSITIVE_INFINITY) {
                   : Number.POSITIVE_INFINITY
       const destinationTermMatchBoost = result.type === 'Destination' && score >= 4 ? 3 : 0
       const adjustedScore = score - destinationTermMatchBoost + (result.type === 'Trailhead' ? 4 : 0)
-      const matchTier = allTermsInTitle && result.type === 'Place'
+      const matchTier = allTermsInTitle && result.type === 'Guide'
         ? 0
         : allTermsInTitle && result.type === 'Destination'
           ? 1

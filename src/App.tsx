@@ -76,21 +76,21 @@ function metadata(title: string, canonicalPath: string, description = descriptio
 
 const legacyRedirects: Record<string, string> = {
     '/map': '/trailheads',
-    '/east-bay': '/places/east-bay',
-    '/marin': '/places/marin',
-    '/peninsula': '/places/peninsula',
-    '/san-francisco': '/places/san-francisco',
-    '/south-bay': '/places/south-bay',
-    '/trips': '/places',
+    '/east-bay': '/guides/east-bay',
+    '/marin': '/guides/marin',
+    '/peninsula': '/guides/peninsula',
+    '/san-francisco': '/guides/san-francisco',
+    '/south-bay': '/guides/south-bay',
+    '/trips': '/guides',
     '/docs/geopackage': '/about-data',
     '/settings': '/trailheads',
-    '/hikes/channel-islands': '/places/channel-islands-national-park',
-    '/hikes/redwood-national-park': '/places/redwood-national-and-state-parks',
-    '/hikes/tahoe': '/places/tahoe',
-    '/hikes/yosemite': '/places/yosemite-national-park',
-    '/hikes/china-camp': '/places/marin',
-    '/guides/getting-to-marin': '/marin/getting-to-marin',
-    '/guides/samcoast': '/peninsula/samcoast',
+    '/hikes/channel-islands': '/guides/channel-islands-national-park',
+    '/hikes/redwood-national-park': '/guides/redwood-national-and-state-parks',
+    '/hikes/tahoe': '/guides/tahoe',
+    '/hikes/yosemite': '/guides/yosemite-national-park',
+    '/hikes/china-camp': '/guides/marin',
+    '/marin/getting-to-marin': '/guides/getting-to-marin',
+    '/peninsula/samcoast': '/guides/samcoast',
 }
 
 export function resolveRoute(pathname: string): ResolvedRoute {
@@ -99,7 +99,8 @@ export function resolveRoute(pathname: string): ResolvedRoute {
 
   if (normalizedPath === '/') return { element: <HomePage />, metadata: metadata(siteName, '/', descriptions.home) }
   if (normalizedPath === '/hikes') return { element: <HikesPage />, metadata: metadata('Hikes', normalizedPath, descriptions.hikes) }
-  if (normalizedPath === '/places') return { element: <PlacesPage />, metadata: metadata('Places', normalizedPath, descriptions.places) }
+  if (normalizedPath === '/places') return { element: <RedirectPage to="/guides" />, metadata: metadata('Page moved', '/guides', descriptions.places) }
+  if (normalizedPath === '/guides') return { element: <PlacesPage />, metadata: metadata('Guides', normalizedPath, descriptions.places) }
   if (normalizedPath === '/destinations') return { element: <DestinationsPage />, metadata: metadata('Destinations', normalizedPath, descriptions.destinations) }
   if (normalizedPath === '/posts') return { element: <PostsPage />, metadata: metadata('Posts', normalizedPath, descriptions.posts) }
   if (normalizedPath === '/events') return { element: <EventsPage />, metadata: metadata('Events', normalizedPath, descriptions.events) }
@@ -108,10 +109,6 @@ export function resolveRoute(pathname: string): ResolvedRoute {
     const page = getPageContent(normalizedPath.slice(1))
     if (page) return { element: <ContentPage slug={page.slug} />, metadata: metadata(page.title, normalizedPath, plainText(page.body), undefined, contentImage(undefined, page.body)) }
   }
-  const specialGuides: Record<string, string> = { '/marin/getting-to-marin': 'getting-to-marin', '/peninsula/samcoast': 'samcoast' }
-  const specialGuide = specialGuides[normalizedPath] ? getGuideContent(specialGuides[normalizedPath]) : undefined
-  if (specialGuide) return { element: <GuidePage slug={specialGuide.slug} />, metadata: metadata(specialGuide.title, normalizedPath, plainText(specialGuide.body), undefined, contentImage(undefined, specialGuide.body)) }
-
   const eventMatch = normalizedPath.match(/^\/events\/([^/]+)$/)
   if (eventMatch) {
     const event = getEventContent(decodeURIComponent(eventMatch[1]))
@@ -154,15 +151,18 @@ export function resolveRoute(pathname: string): ResolvedRoute {
     }
   }
 
-  const placeMatch = normalizedPath.match(/^\/(?:places|parks|regions)\/([^/]+)$/)
-  if (placeMatch) {
-    const place = getPlaceContent(decodeURIComponent(placeMatch[1]))
-    if (place) return { element: <PlacePage slug={place.slug} />, metadata: metadata(place.title, normalizedPath, place.blurb ?? plainText(place.body), undefined, contentImage(place.image, place.body)) }
+  const legacyPlaceMatch = normalizedPath.match(/^\/(?:places|parks|regions)\/([^/]+)$/)
+  if (legacyPlaceMatch) {
+    const place = getPlaceContent(decodeURIComponent(legacyPlaceMatch[1]))
+    if (place) return { element: <RedirectPage to={`/guides/${place.slug}`} />, metadata: metadata('Page moved', `/guides/${place.slug}`, place.blurb ?? plainText(place.body)) }
   }
 
   const guideMatch = normalizedPath.match(/^\/guides\/([^/]+)$/)
   if (guideMatch) {
-    const guide = getGuideContent(decodeURIComponent(guideMatch[1]))
+    const slug = decodeURIComponent(guideMatch[1])
+    const place = getPlaceContent(slug)
+    if (place) return { element: <PlacePage slug={place.slug} />, metadata: metadata(place.title, normalizedPath, place.blurb ?? plainText(place.body), undefined, contentImage(place.image, place.body)) }
+    const guide = getGuideContent(slug)
     if (guide) return { element: <GuidePage slug={guide.slug} />, metadata: metadata(guide.title, normalizedPath, plainText(guide.body), undefined, contentImage(undefined, guide.body)) }
   }
 
@@ -170,10 +170,10 @@ export function resolveRoute(pathname: string): ResolvedRoute {
 }
 
 export const prerenderPaths = [...new Set([
-  '/', '/hikes', '/places', '/destinations', '/posts', '/events', '/trailheads',
+  '/', '/hikes', '/guides', '/destinations', '/posts', '/events', '/trailheads',
   ...pageContent.map((page) => `/${page.slug}`),
   ...hikeContent.map((hike) => `/hikes/${hike.slug}`),
-  ...placeContent.filter((place) => place.place_id !== 'california').map((place) => `/places/${place.slug}`),
+  ...placeContent.filter((place) => place.place_id !== 'california').map((place) => `/guides/${place.slug}`),
   ...guideContent.map((guide) => getGuidePath(guide.slug)),
   ...postContent.map((post) => post.url.replace(/\/$/, '') || '/'),
   ...eventContent.map((event) => event.url.replace(/\/$/, '')),

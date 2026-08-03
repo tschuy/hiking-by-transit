@@ -64,7 +64,7 @@ export function HomePage() {
             const regionHikes = homepageHikes.filter((hike) => hike.place_ids.includes(region.place_id))
             if (regionHikes.length === 0) return null
             return <section className="bay-area-region" aria-labelledby={`bay-area-${region.slug}`} key={region.slug}>
-              <div className="bay-area-region-heading"><h3 id={`bay-area-${region.slug}`}>{region.title}</h3><a className="button-link" href={`/places/${region.slug}`}>View All</a></div>
+              <div className="bay-area-region-heading"><h3 id={`bay-area-${region.slug}`}>{region.title}</h3><a className="button-link" href={`/guides/${region.slug}`}>View All</a></div>
               <div className="home-hike-carousel" role="region" aria-label={`${region.title} hike guides`} tabIndex={0}>
                 {regionHikes.map((hike) => <ContentHikeCard key={hike.hike_id} hike={hike} />)}
               </div>
@@ -77,7 +77,7 @@ export function HomePage() {
         <div className="container">
           <div className="section-heading"><div><h2 id="places-title">Explore destinations</h2></div><p>Get all the details for a car-free visit to California's National Parks and destinations like Lake Tahoe.</p></div>
           <div className="places-grid">
-            {featuredPlaces.map((place) => <a className={`editorial-card${place.image ? ' editorial-card-with-image' : ''}`} href={`/places/${place.slug}`} key={place.slug}>{place.image && <img src={`/assets/${place.image}`} alt="" loading="lazy" />}<strong>{place.title}</strong>{place.blurb && <span>{place.blurb}</span>}<b>Explore this place <span aria-hidden="true">→</span></b></a>)}
+            {featuredPlaces.map((place) => <a className={`editorial-card${place.image ? ' editorial-card-with-image' : ''}`} href={`/guides/${place.slug}`} key={place.slug}>{place.image && <img src={`/assets/${place.image}`} alt="" loading="lazy" />}<strong>{place.title}</strong>{place.blurb && <span>{place.blurb}</span>}<b>Explore this place <span aria-hidden="true">→</span></b></a>)}
           </div>
         </div>
       </section>

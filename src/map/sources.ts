@@ -5,13 +5,13 @@ import { enrichTrailheadKml } from '../data/trailheadCatalog'
 const placeRoutes: MapHike[] = [
   {
     id: 'crosstown-trail', slug: 'crosstown-trail', title: 'Crosstown Trail',
-    url: '/places/san-francisco#the-crosstown-trail', gpx: 'crosstown.gpx',
+    url: '/guides/san-francisco#the-crosstown-trail', gpx: 'crosstown.gpx',
     blurb: "Segments through San Francisco's hilltop parks.", length: 'Segments from 3–17mi',
     difficulty: 'easy', difficultyLabel: 'As easy or hard as you want it to be',
   },
   {
     id: 'double-cross-trail', slug: 'double-cross-trail', title: 'Double Cross Trail',
-    url: '/places/san-francisco#the-double-cross-trail', gpx: 'doublecross.gpx',
+    url: '/guides/san-francisco#the-double-cross-trail', gpx: 'doublecross.gpx',
     blurb: 'A cross-city route from Fort Funston through the southwest hills.', length: 'Segments up to 14mi',
     difficulty: 'easy', difficultyLabel: 'As easy or hard as you want it to be',
   },

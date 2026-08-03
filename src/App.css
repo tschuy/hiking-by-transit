@@ -368,6 +368,11 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .footer-inner nav a { color: var(--on-dark); font-size: .85rem; font-weight: 750; text-underline-offset: 4px; }
 .archive-action { display: inline-block; margin: -1rem 0 3rem; text-decoration: none; }
 .places-section + .archive-action { margin: 3rem 0 0; }
+.region-list { max-width: 900px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2.5rem; }
+.region-list a { min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .8rem; color: var(--heading); font-weight: 750; line-height: 1.35; text-decoration: none; border-bottom: 1px solid var(--line); }
+.region-list a span { flex: 0 0 auto; color: var(--clay); font-size: 1.15rem; transition: transform 150ms ease; }
+.region-list a:hover { color: var(--forest); }
+.region-list a:hover span { transform: translateX(3px); }
 .destination-directory-groups { columns: 3 280px; column-gap: 2.5rem; margin-top: 3rem; }
 .destination-directory-group { break-inside: avoid; margin-bottom: 2.5rem; }
 .destination-directory-group h2 { margin-bottom: .6rem; padding-bottom: .45rem; font-size: 1.8rem; border-bottom: 1px solid var(--line); }
@@ -467,6 +472,7 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .nav-list { justify-content: space-between; gap: .5rem; }
   .nav-list a { font-size: .8rem; }
   .card-grid, .link-grid, .editorial-grid, .places-grid { grid-template-columns: 1fr; }
+  .region-list { grid-template-columns: 1fr; }
   .home-hike-carousel { grid-auto-columns: min(84vw, 320px); }
   .search-row { display: block; }
   .hero-grid { min-height: max(620px, calc(100svh - 80px)); padding-block: 42px 108px; }

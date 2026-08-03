@@ -12,7 +12,7 @@ describe('site search', () => {
   it('ranks exact and prefix title matches before body matches', () => {
     const results = searchSite('Marin')
     expect(results[0]?.title).toBe('Marin')
-    expect(results.some((result) => result.href === '/places/marin')).toBe(true)
+    expect(results.some((result) => result.href === '/guides/marin')).toBe(true)
   })
 
   it('normalizes case and accents', () => {
@@ -64,8 +64,8 @@ describe('site search', () => {
     const results = searchSite('national park', 24)
     expect(results.some((result) => result.type === 'Destination' && result.title === 'Redwood National and State Parks')).toBe(true)
     expect(searchSite('national park', 5).some((result) => result.title === 'Redwood National and State Parks')).toBe(true)
-    const yosemiteIndex = results.findIndex((result) => result.type === 'Place' && result.title === 'Yosemite National Park')
-    const channelIslandsIndex = results.findIndex((result) => result.type === 'Place' && result.title === 'Channel Islands National Park')
+    const yosemiteIndex = results.findIndex((result) => result.type === 'Guide' && result.title === 'Yosemite National Park')
+    const channelIslandsIndex = results.findIndex((result) => result.type === 'Guide' && result.title === 'Channel Islands National Park')
     const sequoiaIndex = results.findIndex((result) => result.type === 'Destination' && result.title === 'Sequoia National Park')
     const redwoodIndex = results.findIndex((result) => result.type === 'Destination' && result.title === 'Redwood National and State Parks')
     expect(yosemiteIndex).toBeGreaterThanOrEqual(0)
@@ -79,7 +79,7 @@ describe('site search', () => {
 
   it('uses an owning place instead of a duplicate destination result', () => {
     const results = searchSite('Yosemite National Park')
-    expect(results.find((result) => result.type === 'Place' && result.href === '/places/yosemite-national-park')).toMatchObject({ badgeLabel: 'National Park' })
+    expect(results.find((result) => result.type === 'Guide' && result.href === '/guides/yosemite-national-park')).toMatchObject({ badgeLabel: 'National Park' })
     expect(results.some((result) => result.type === 'Destination' && result.title === 'Yosemite National Park')).toBe(false)
   })
 })
