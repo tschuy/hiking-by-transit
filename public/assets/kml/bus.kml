@@ -911,6 +911,22 @@ Served by AC Transit 31
   </Placemark>
 
   <Placemark>
+    <name>Dimond Canyon Park: Bridgeview Trailhead</name>
+    <description>
+<![CDATA[
+<h4>Stop: Mountain Blvd &amp; Snake Rd</h4>
+<b>12 min walk</b><br>
+Served by AC Transit 18, AC Transit V
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.20474721225281,37.81787714807549,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
     <name>Dimond Canyon Park: Sausal Creek</name>
     <description>
 <![CDATA[
@@ -1889,6 +1905,54 @@ Served by Santa Cruz METRO 35, Santa Cruz METRO 35X
   </Placemark>
 
   <Placemark>
+    <name>Hillside Natural Area: Forest Brown Trail</name>
+    <description>
+<![CDATA[
+<h4>Stop: San Pablo Av &amp; Schmidt Ln</h4>
+<b>14 min walk</b><br>
+Served by AC Transit 72, AC Transit 72M
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.30067651453126,37.91850427173847,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hillside Natural Area: Madera to Ridge Trail</name>
+    <description>
+<![CDATA[
+<h4>Stop: Arlington Blvd &amp; Madera Dr</h4>
+<b>4 min walk</b><br>
+Served by AC Transit 7
+<ul><li>7 days a week: Every 30–45 minutes</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.29999554994649,37.927464995876946,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Hillside Natural Area: Motorcycle Hill Trail</name>
+    <description>
+<![CDATA[
+<h4>Stop: El Cerrito del Norte BART Station</h4>
+<b>14 min walk</b><br>
+Served by GGT 580, GGT 580X
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 20–30 minutes</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.30779914671817,37.925136727734866,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
     <name>Hirschman Trail</name>
     <description>
 <![CDATA[
@@ -2208,7 +2272,7 @@ Served by AC Transit 18, AC Transit V
     </description>
     <styleUrl>#bus</styleUrl>
     <Point>
-      <coordinates>-122.20131,37.8159124,0</coordinates>
+      <coordinates>-122.20149400512142,37.815737426909884,0</coordinates>
     </Point>
   </Placemark>
 
@@ -2518,7 +2582,23 @@ Served by AC Transit 54
     </description>
     <styleUrl>#bus</styleUrl>
     <Point>
-      <coordinates>-122.1636536,37.7878935,0</coordinates>
+      <coordinates>-122.16367034954959,37.787674476734935,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Leona Heights Park: Merritt College Trailhead</name>
+    <description>
+<![CDATA[
+<h4>Stop: Campus Dr &amp; Merritt College</h4>
+<b>3 min walk</b><br>
+Served by AC Transit 54
+<ul><li>Weekday: Frequent service</li><li>Weekend: Every 20–30 minutes</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.16814135944074,37.79093258544199,0</coordinates>
     </Point>
   </Placemark>
 
@@ -5278,6 +5358,22 @@ Served by SamTrans 260
     <styleUrl>#bus</styleUrl>
     <Point>
       <coordinates>-122.300484,37.5107123,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Wildcat Canyon Regional Park: Alvarado Staging Area</name>
+    <description>
+<![CDATA[
+<h4>Stop: San Pablo Av &amp; Mc Bryde Av</h4>
+<b>14 min walk</b><br>
+Served by AC Transit 72
+<ul><li>7 days a week: Frequent service</li></ul>
+]]>
+    </description>
+    <styleUrl>#bus</styleUrl>
+    <Point>
+      <coordinates>-122.32226288123009,37.95133855907841,0</coordinates>
     </Point>
   </Placemark>
 

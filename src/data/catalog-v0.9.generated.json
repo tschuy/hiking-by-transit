@@ -1,9 +1,9 @@
 {
   "schemaVersion": "0.9",
-  "generatedAt": "2026-07-31T05:16:50.530720Z",
+  "generatedAt": "2026-08-03T06:26:46.430292Z",
   "source": {
     "gpkgPath": "data/transit_accessible_trailheads.gpkg",
-    "gpkgSha256": "681b8752e221cb19fad4425506a901c4eb15180358f16658e50256de46467e96",
+    "gpkgSha256": "248e285c89d326e2187b2eab28921d442dcfbc9936c6846e8be976d0d6cf23bf",
     "contentPath": "src/data/content.generated.json",
     "kmlSources": [
       {
@@ -22,14 +22,14 @@
         "publicPath": "public/assets/kml/call-ahead.kml"
       }
     ],
-    "gitRevision": "c584405dad7803ee423b363e35a168298cf9f5b3"
+    "gitRevision": "8ffae49c9d74eaa61573d6483261e44dcdb4b7fc"
   },
   "counts": {
-    "trailheads": 618,
-    "accessRecords": 614,
+    "trailheads": 624,
+    "accessRecords": 620,
     "hikes": 25,
     "places": 10,
-    "destinations": 288
+    "destinations": 290
   },
   "trailheads": [
     {
@@ -5537,7 +5537,7 @@
     },
     {
       "id": "TH_6636624",
-      "slug": "dimond-canyon-park-bridgeview-trailhead",
+      "slug": "dimond-canyon-park-bridgeview-trailhead-th-6636624",
       "name": "Dimond Canyon Park: Bridgeview Trailhead",
       "entranceName": "Bridgeview Trailhead",
       "coordinates": [
@@ -5600,6 +5600,69 @@
       ],
       "hikeIds": [],
       "placeIds": [],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_E0120EEF6D7B"
+      ]
+    },
+    {
+      "id": "TH_DCPBT",
+      "slug": "dimond-canyon-park-bridgeview-trailhead-th-dcpbt",
+      "name": "Dimond Canyon Park: Bridgeview Trailhead",
+      "entranceName": "Bridgeview Trailhead",
+      "coordinates": [
+        -122.20474721225281,
+        37.81787714807549
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 617,
+          "id": "ACC_TH_DCPBT_51668",
+          "stopId": "51668",
+          "stopName": "Mountain Blvd & Snake Rd",
+          "coordinates": [
+            -122.20891,
+            37.82435
+          ],
+          "walkMinutes": 12.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 185.2,
+            "saturday": 107.0,
+            "sunday": 107.0
+          },
+          "routeIds": [
+            "AC:18",
+            "AC:605",
+            "AC:660",
+            "AC:662",
+            "AC:677",
+            "AC:682",
+            "AC:683",
+            "AC:688",
+            "AC:696",
+            "AC:V"
+          ]
+        }
+      ],
+      "hikeIds": [
+        "hike-sausal-creek"
+      ],
+      "placeIds": [
+        "bay-area",
+        "east-bay"
+      ],
       "serviceDays": [
         "saturday",
         "sunday",
@@ -10130,6 +10193,158 @@
       ]
     },
     {
+      "id": "TH_4210389",
+      "slug": "hillside-natural-area-forest-brown-trail",
+      "name": "Hillside Natural Area: Forest Brown Trail",
+      "entranceName": "Forest Brown Trail",
+      "coordinates": [
+        -122.30067651453126,
+        37.91850427173847
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 620,
+          "id": "ACC_TH_4210389_51660",
+          "stopId": "51660",
+          "stopName": "San Pablo Av & Schmidt Ln",
+          "coordinates": [
+            -122.31021,
+            37.91391
+          ],
+          "walkMinutes": 14.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 95.0,
+            "saturday": 89.0,
+            "sunday": 89.0
+          },
+          "routeIds": [
+            "AC:667",
+            "AC:72",
+            "AC:72M",
+            "AC:800"
+          ]
+        }
+      ],
+      "hikeIds": [],
+      "placeIds": [],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_9CC631310166"
+      ]
+    },
+    {
+      "id": "TH_7583507",
+      "slug": "hillside-natural-area-madera-to-ridge-trail",
+      "name": "Hillside Natural Area: Madera to Ridge Trail",
+      "entranceName": "Madera to Ridge Trail",
+      "coordinates": [
+        -122.29999554994649,
+        37.927464995876946
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 621,
+          "id": "ACC_TH_7583507_51316",
+          "stopId": "51316",
+          "stopName": "Arlington Blvd & Madera Dr",
+          "coordinates": [
+            -122.29882,
+            37.92933
+          ],
+          "walkMinutes": 4.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 36.0,
+            "saturday": 34.0,
+            "sunday": 34.0
+          },
+          "routeIds": [
+            "AC:7"
+          ]
+        }
+      ],
+      "hikeIds": [],
+      "placeIds": [],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_9CC631310166"
+      ]
+    },
+    {
+      "id": "TH_4705928",
+      "slug": "hillside-natural-area-motorcycle-hill-trail",
+      "name": "Hillside Natural Area: Motorcycle Hill Trail",
+      "entranceName": "Motorcycle Hill Trail",
+      "coordinates": [
+        -122.30779914671817,
+        37.925136727734866
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 619,
+          "id": "ACC_TH_4705928_42151",
+          "stopId": "42151",
+          "stopName": "El Cerrito del Norte BART Station",
+          "coordinates": [
+            -122.3175,
+            37.92554
+          ],
+          "walkMinutes": 14.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 92.0,
+            "saturday": 63.0,
+            "sunday": 63.0
+          },
+          "routeIds": [
+            "GG:580",
+            "GG:580X",
+            "GG:704"
+          ]
+        }
+      ],
+      "hikeIds": [],
+      "placeIds": [],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_9CC631310166"
+      ]
+    },
+    {
       "id": "TH_2738429",
       "slug": "hirschman-trail",
       "name": "Hirschman Trail",
@@ -12383,8 +12598,8 @@
       "name": "Joaquin Miller Park: Palos Colorados Trailhead",
       "entranceName": "Palos Colorados Trailhead",
       "coordinates": [
-        -122.20131,
-        37.8159124
+        -122.20149400512142,
+        37.815737426909884
       ],
       "notes": null,
       "links": [],
@@ -12450,13 +12665,8 @@
           ]
         }
       ],
-      "hikeIds": [
-        "hike-sausal-creek"
-      ],
-      "placeIds": [
-        "bay-area",
-        "east-bay"
-      ],
+      "hikeIds": [],
+      "placeIds": [],
       "serviceDays": [
         "saturday",
         "sunday",
@@ -14328,8 +14538,8 @@
       "name": "Leona Canyon Open Space Regional Preserve: Merritt College Trailhead",
       "entranceName": "Merritt College Trailhead",
       "coordinates": [
-        -122.1636536,
-        37.7878935
+        -122.16367034954959,
+        37.787674476734935
       ],
       "notes": null,
       "links": [],
@@ -14369,6 +14579,60 @@
       "seasonalService": "unknown",
       "destinationIds": [
         "DEST_EE9099CA4A05"
+      ]
+    },
+    {
+      "id": "TH_LHPMCT",
+      "slug": "leona-heights-park-merritt-college-trailhead",
+      "name": "Leona Heights Park: Merritt College Trailhead",
+      "entranceName": "Merritt College Trailhead",
+      "coordinates": [
+        -122.16814135944074,
+        37.79093258544199
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 616,
+          "id": "ACC_TH_LHPMCT_51777",
+          "stopId": "51777",
+          "stopName": "Campus Dr & Merritt College",
+          "coordinates": [
+            -122.16716,
+            37.79041
+          ],
+          "walkMinutes": 3.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 131.0,
+            "saturday": 74.0,
+            "sunday": 74.0
+          },
+          "routeIds": [
+            "AC:54"
+          ]
+        }
+      ],
+      "hikeIds": [
+        "hike-leona-heights"
+      ],
+      "placeIds": [
+        "bay-area",
+        "east-bay"
+      ],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_A62B5101BF6B"
       ]
     },
     {
@@ -15387,8 +15651,13 @@
           ]
         }
       ],
-      "hikeIds": [],
-      "placeIds": [],
+      "hikeIds": [
+        "hike-headlands-marin-city"
+      ],
+      "placeIds": [
+        "bay-area",
+        "marin"
+      ],
       "serviceDays": [
         "saturday",
         "sunday",
@@ -19668,8 +19937,13 @@
           ]
         }
       ],
-      "hikeIds": [],
-      "placeIds": [],
+      "hikeIds": [
+        "hike-lafayette-briones-loop"
+      ],
+      "placeIds": [
+        "bay-area",
+        "east-bay"
+      ],
       "serviceDays": [
         "saturday",
         "sunday",
@@ -25074,8 +25348,13 @@
           ]
         }
       ],
-      "hikeIds": [],
-      "placeIds": [],
+      "hikeIds": [
+        "hike-san-bruno-mountain"
+      ],
+      "placeIds": [
+        "bay-area",
+        "peninsula"
+      ],
       "serviceDays": [
         "saturday",
         "sunday",
@@ -30394,6 +30673,61 @@
       ]
     },
     {
+      "id": "TH_WCPASA",
+      "slug": "wildcat-canyon-regional-park-alvarado-staging-area",
+      "name": "Wildcat Canyon Regional Park: Alvarado Staging Area",
+      "entranceName": "Alvarado Staging Area",
+      "coordinates": [
+        -122.32226288123009,
+        37.95133855907841
+      ],
+      "notes": null,
+      "links": [],
+      "noteParts": [],
+      "access": [
+        {
+          "sourceFid": 618,
+          "id": "ACC_TH_WCPASA_56456",
+          "stopId": "56456",
+          "stopName": "San Pablo Av & Mc Bryde Av",
+          "coordinates": [
+            -122.33093733846464,
+            37.94735066757823
+          ],
+          "walkMinutes": 14.0,
+          "walkSource": "routed",
+          "notes": null,
+          "gtfsSource": "http://api.511.org/transit/datafeeds",
+          "frequency": {
+            "weekday": 81.0,
+            "saturday": 77.0,
+            "sunday": 77.0
+          },
+          "routeIds": [
+            "AC:684",
+            "AC:72"
+          ]
+        }
+      ],
+      "hikeIds": [
+        "hike-wildcat-canyon"
+      ],
+      "placeIds": [
+        "bay-area",
+        "east-bay"
+      ],
+      "serviceDays": [
+        "saturday",
+        "sunday",
+        "weekday"
+      ],
+      "reservationRequirement": "unknown",
+      "seasonalService": "unknown",
+      "destinationIds": [
+        "DEST_62051D416E4D"
+      ]
+    },
+    {
       "id": "TH_174693",
       "slug": "wildcat-canyon-regional-park-clark-boas-trailhead",
       "name": "Wildcat Canyon Regional Park: Clark-Boas Trailhead",
@@ -31736,7 +32070,8 @@
       "name": "Dimond Canyon Park",
       "trailheadIds": [
         "TH_4924262",
-        "TH_6636624"
+        "TH_6636624",
+        "TH_DCPBT"
       ],
       "placeId": null
     },
@@ -32173,6 +32508,17 @@
       "placeId": null
     },
     {
+      "id": "DEST_9CC631310166",
+      "slug": "hillside-natural-area",
+      "name": "Hillside Natural Area",
+      "trailheadIds": [
+        "TH_4210389",
+        "TH_4705928",
+        "TH_7583507"
+      ],
+      "placeId": null
+    },
+    {
       "id": "DEST_6F29D0E30521",
       "slug": "horse-hill-preserve",
       "name": "Horse Hill Preserve",
@@ -32486,6 +32832,15 @@
       "name": "Leona Canyon Open Space Regional Preserve",
       "trailheadIds": [
         "TH_85016"
+      ],
+      "placeId": null
+    },
+    {
+      "id": "DEST_A62B5101BF6B",
+      "slug": "leona-heights-park",
+      "name": "Leona Heights Park",
+      "trailheadIds": [
+        "TH_LHPMCT"
       ],
       "placeId": null
     },
@@ -33938,7 +34293,8 @@
       "trailheadIds": [
         "TH_174693",
         "TH_2509145",
-        "TH_3290447"
+        "TH_3290447",
+        "TH_WCPASA"
       ],
       "placeId": null
     },
@@ -34138,7 +34494,8 @@
       "slug": "headlands-marin-city",
       "title": "Marin Headlands: Golden Gate Bridge to Marin City",
       "trailheadIds": [
-        "TH_2067202"
+        "TH_2067202",
+        "TH_7814461"
       ],
       "placeIds": [
         "bay-area",
@@ -34161,7 +34518,8 @@
       "slug": "lafayette-briones-loop",
       "title": "Briones: Walter Costa to Lafayette Ridge loop",
       "trailheadIds": [
-        "TH_8309812"
+        "TH_8309812",
+        "TH_8092970"
       ],
       "placeIds": [
         "bay-area",
@@ -34208,7 +34566,8 @@
       "slug": "leona-heights",
       "title": "Leona Heights: Laurel to Merritt College",
       "trailheadIds": [
-        "TH_2726841"
+        "TH_2726841",
+        "TH_LHPMCT"
       ],
       "placeIds": [
         "bay-area",
@@ -34381,7 +34740,8 @@
       "slug": "san-bruno-mountain",
       "title": "San Bruno Mountain State & County Park",
       "trailheadIds": [
-        "TH_3202293"
+        "TH_3202293",
+        "TH_5806071"
       ],
       "placeIds": [
         "bay-area",
@@ -34430,7 +34790,7 @@
       "title": "Dimond Canyon / Sausal Creek to Montclair",
       "trailheadIds": [
         "TH_4924262",
-        "TH_3278001"
+        "TH_DCPBT"
       ],
       "placeIds": [
         "bay-area",
@@ -34550,7 +34910,8 @@
       "slug": "wildcat-canyon",
       "title": "Wildcat Canyon Regional Park",
       "trailheadIds": [
-        "TH_3290447"
+        "TH_3290447",
+        "TH_WCPASA"
       ],
       "placeIds": [
         "bay-area",
@@ -34962,6 +35323,13 @@
     },
     {
       "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "AC:667",
+      "agencyId": "AC",
+      "shortName": "667",
+      "longName": "Korematsu - E.C. - No. Richmond"
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
       "id": "AC:669",
       "agencyId": "AC",
       "shortName": "669",
@@ -35004,6 +35372,13 @@
     },
     {
       "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "AC:684",
+      "agencyId": "AC",
+      "shortName": "684",
+      "longName": "El Cerrito - Arlington - Garvin"
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
       "id": "AC:688",
       "agencyId": "AC",
       "shortName": "688",
@@ -35039,6 +35414,13 @@
     },
     {
       "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "AC:72",
+      "agencyId": "AC",
+      "shortName": "72",
+      "longName": "CCC - San Pablo"
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
       "id": "AC:72M",
       "agencyId": "AC",
       "shortName": "72M",
@@ -35050,6 +35432,13 @@
       "agencyId": "AC",
       "shortName": "74",
       "longName": "San Pablo Dam - 23rd St."
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "AC:800",
+      "agencyId": "AC",
+      "shortName": "800",
+      "longName": "Rich - Oak Transbay All Nighter"
     },
     {
       "gtfsSource": "http://api.511.org/transit/datafeeds",
@@ -35442,6 +35831,20 @@
       "agencyId": "GG",
       "shortName": "580",
       "longName": "Del Norte BART Station - San Rafael"
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "GG:580X",
+      "agencyId": "GG",
+      "shortName": "580X",
+      "longName": "Del Norte BART Station - San Rafael Express"
+    },
+    {
+      "gtfsSource": "http://api.511.org/transit/datafeeds",
+      "id": "GG:704",
+      "agencyId": "GG",
+      "shortName": "704",
+      "longName": "Del Norte BART Station - San Francisco"
     },
     {
       "gtfsSource": "http://api.511.org/transit/datafeeds",

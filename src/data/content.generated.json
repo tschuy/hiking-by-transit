@@ -406,7 +406,8 @@
       "slug": "headlands-marin-city",
       "title": "Marin Headlands: Golden Gate Bridge to Marin City",
       "trailhead_ids": [
-        "TH_2067202"
+        "TH_2067202",
+        "TH_7814461"
       ],
       "place_ids": [
         "bay-area",
@@ -472,7 +473,8 @@
       "slug": "lafayette-briones-loop",
       "title": "Briones: Walter Costa to Lafayette Ridge loop",
       "trailhead_ids": [
-        "TH_8309812"
+        "TH_8309812",
+        "TH_8092970"
       ],
       "place_ids": [
         "bay-area",
@@ -597,7 +599,8 @@
       "slug": "leona-heights",
       "title": "Leona Heights: Laurel to Merritt College",
       "trailhead_ids": [
-        "TH_2726841"
+        "TH_2726841",
+        "TH_LHPMCT"
       ],
       "place_ids": [
         "bay-area",
@@ -750,7 +753,7 @@
       "difficulty": "hard",
       "length": "12.4mi (out and back)",
       "travel": {
-        "origin": "MacArthur BRT",
+        "origin": "MacArthur BART",
         "served": "daily",
         "out": {
           "time": "1h7min",
@@ -1005,7 +1008,8 @@
       "slug": "san-bruno-mountain",
       "title": "San Bruno Mountain State & County Park",
       "trailhead_ids": [
-        "TH_3202293"
+        "TH_3202293",
+        "TH_5806071"
       ],
       "place_ids": [
         "bay-area",
@@ -1132,7 +1136,7 @@
       "title": "Dimond Canyon / Sausal Creek to Montclair",
       "trailhead_ids": [
         "TH_4924262",
-        "TH_3278001"
+        "TH_DCPBT"
       ],
       "place_ids": [
         "bay-area",
@@ -1475,7 +1479,8 @@
       "slug": "wildcat-canyon",
       "title": "Wildcat Canyon Regional Park",
       "trailhead_ids": [
-        "TH_3290447"
+        "TH_3290447",
+        "TH_WCPASA"
       ],
       "place_ids": [
         "bay-area",
