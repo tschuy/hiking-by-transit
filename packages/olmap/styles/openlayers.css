@@ -1,1 +1,88 @@
 @import "ol/ol.css";
+
+.olmap-root .ol-zoom,
+.olmap-location-control {
+  left: .9rem;
+  padding: 4px;
+  border: 1px solid rgb(241 237 227 / 55%);
+  border-radius: 10px;
+  background: rgb(12 16 14 / 88%);
+  box-shadow: 0 5px 16px rgb(0 0 0 / 30%);
+}
+
+.olmap-location-control {
+  top: .9rem;
+}
+
+.olmap-root .ol-zoom {
+  top: 4.65rem;
+}
+
+.olmap-root .ol-zoom button,
+.olmap-location-control button {
+  min-width: 44px;
+  height: 44px;
+  margin: 0;
+  border-radius: 6px;
+  color: var(--warm-black, #0c100e);
+  background: var(--heading, #f1ede3);
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.olmap-root .ol-zoom button {
+  width: 44px;
+  font-size: 1.55rem;
+}
+
+.olmap-location-control button {
+  width: auto;
+  padding: .55rem .75rem;
+  font: 700 .875rem/1.15 system-ui, sans-serif;
+}
+
+.olmap-root .ol-zoom button + button {
+  margin-top: 4px;
+}
+
+.olmap-root .ol-zoom button:hover,
+.olmap-root .ol-zoom button:focus-visible,
+.olmap-location-control button:hover,
+.olmap-location-control button:focus-visible {
+  color: var(--warm-black, #0c100e);
+  background: var(--forest, #8eae98);
+}
+
+.olmap-root .ol-zoom button:active,
+.olmap-location-control button:active {
+  background: var(--moss, #98a27f);
+}
+
+.olmap-location-control.is-active button {
+  color: #fff;
+  background: #1677d2;
+}
+
+.olmap-location-control.is-pending button {
+  cursor: progress;
+  opacity: .75;
+}
+
+.olmap-location-control button:disabled {
+  cursor: not-allowed;
+}
+
+.home-map-explorer .ol-zoom {
+  top: auto;
+  right: .9rem;
+  bottom: 4.65rem;
+  left: auto;
+}
+
+.home-map-explorer .olmap-location-control {
+  top: auto;
+  right: .9rem;
+  bottom: .9rem;
+  left: auto;
+}

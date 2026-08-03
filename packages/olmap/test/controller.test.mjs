@@ -23,6 +23,7 @@ class FakeElement extends EventTarget {
     this.offsetWidth = 800;
     this.offsetHeight = 600;
     this.isConnected = true;
+    this.attributes = new Map();
   }
   appendChild(child) { child.parentNode = this; this.children.push(child); return child; }
   insertBefore(child) { return this.appendChild(child); }
@@ -33,12 +34,22 @@ class FakeElement extends EventTarget {
   getRootNode() { return this.ownerDocument; }
   getBoundingClientRect() { return { left: 0, top: 0, width: 800, height: 600, right: 800, bottom: 600 }; }
   getClientRects() { return [this.getBoundingClientRect()]; }
-  setAttribute() {}
-  removeAttribute() {}
-  hasAttribute() { return false; }
+  setAttribute(name, value) { this.attributes.set(name, String(value)); }
+  getAttribute(name) { return this.attributes.get(name) ?? null; }
+  removeAttribute(name) { this.attributes.delete(name); }
+  hasAttribute(name) { return this.attributes.has(name); }
   querySelectorAll() { return []; }
   get firstChild() { return this.children[0] ?? null; }
   get lastChild() { return this.children.at(-1) ?? null; }
+}
+
+function findElement(root, predicate) {
+  if (predicate(root)) return root;
+  for (const child of root.children) {
+    const found = findElement(child, predicate);
+    if (found) return found;
+  }
+  return undefined;
 }
 
 function installDomHarness() {
@@ -131,6 +142,40 @@ test('supports independent instances, commands, and idempotent destruction', asy
   second.destroy();
   assert.equal(first.getState().status, 'idle');
   assert.equal(second.getState().status, 'idle');
+});
+
+test('shows, updates, and removes the user location on request', async () => {
+  const fakeDocument = installDomHarness();
+  const originalNavigator = globalThis.navigator;
+  let success;
+  let clearedWatchId;
+  Object.defineProperty(globalThis, 'navigator', {
+    configurable: true,
+    value: {
+      userAgent: '',
+      geolocation: {
+        watchPosition: (nextSuccess) => { success = nextSuccess; return 42; },
+        clearWatch: (id) => { clearedWatchId = id; },
+      },
+    },
+  });
+  const target = new FakeElement(fakeDocument);
+  const controller = createTrailheadMap(options(target, []));
+  await controller.ready;
+  const button = findElement(target, (element) => element.textContent === 'Show location');
+  assert(button);
+  assert.equal(button.getAttribute('aria-pressed'), 'false');
+
+  button.dispatchEvent(new Event('click'));
+  assert.equal(typeof success, 'function');
+  success({ coords: { longitude: -122.27, latitude: 37.87 } });
+  assert.equal(button.getAttribute('aria-pressed'), 'true');
+
+  button.dispatchEvent(new Event('click'));
+  assert.equal(clearedWatchId, 42);
+  assert.equal(button.getAttribute('aria-pressed'), 'false');
+  controller.destroy();
+  Object.defineProperty(globalThis, 'navigator', { configurable: true, value: originalNavigator });
 });
 
 test('isolates source failures and lazily loads hidden transit', async () => {

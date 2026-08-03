@@ -1,4 +1,5 @@
 import Feature from 'ol/Feature.js';
+import Control from 'ol/control/Control.js';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import GPX from 'ol/format/GPX.js';
 import KML from 'ol/format/KML.js';
@@ -270,6 +271,20 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
     properties: { sourceId: 'route-position', role: 'route-position' },
   });
   layers.push(routePositionLayer);
+  const userLocationSource = new VectorSource<MapFeature>();
+  const userLocationLayer = new VectorLayer<MapVectorSource, MapFeature>({
+    source: userLocationSource,
+    zIndex: 1100,
+    style: new Style({
+      image: new CircleStyle({
+        radius: 8,
+        fill: new Fill({ color: '#1677d2' }),
+        stroke: new Stroke({ color: '#fff', width: 3 }),
+      }),
+    }),
+    properties: { sourceId: 'user-location', role: 'user-location' },
+  });
+  layers.push(userLocationLayer);
 
   let protectedAreaLayer: TileLayer<TileArcGISRest> | undefined;
   if (options.protectedAreaTileSource) {
@@ -300,6 +315,76 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       dragPan,
       new MouseWheelZoom({ condition: platformModifierKeyOnly }),
     ]),
+  });
+  const locationControlElement = document.createElement('div');
+  locationControlElement.className = 'olmap-location-control ol-unselectable ol-control';
+  const locationButton = document.createElement('button');
+  locationButton.type = 'button';
+  locationButton.textContent = 'Show location';
+  locationButton.title = 'Show location';
+  locationButton.setAttribute('aria-label', 'Show location');
+  locationButton.setAttribute('aria-pressed', 'false');
+  locationControlElement.appendChild(locationButton);
+  const locationControl = new Control({ element: locationControlElement });
+  map.addControl(locationControl);
+
+  let locationWatchId: number | undefined;
+  let locationPending = false;
+  let hasCenteredOnLocation = false;
+
+  function stopShowingLocation(): void {
+    if (locationWatchId !== undefined && typeof navigator !== 'undefined' && navigator.geolocation) {
+      navigator.geolocation.clearWatch(locationWatchId);
+    }
+    locationWatchId = undefined;
+    locationPending = false;
+    hasCenteredOnLocation = false;
+    userLocationSource.clear(true);
+    locationButton.disabled = false;
+    locationButton.setAttribute('aria-pressed', 'false');
+    locationControlElement.classList.remove('is-active', 'is-pending');
+  }
+
+  function startShowingLocation(): void {
+    if (locationPending || locationWatchId !== undefined) return;
+    if (typeof navigator === 'undefined' || !navigator.geolocation) {
+      locationButton.disabled = true;
+      return;
+    }
+    locationPending = true;
+    locationControlElement.classList.add('is-pending');
+    locationWatchId = navigator.geolocation.watchPosition(
+      ({ coords }) => {
+        if (destroyed) return;
+        const coordinate = fromLonLat([coords.longitude, coords.latitude]);
+        userLocationSource.clear(true);
+        userLocationSource.addFeature(new Feature(new Point(coordinate)));
+        locationPending = false;
+        locationButton.disabled = false;
+        locationButton.setAttribute('aria-pressed', 'true');
+        locationControlElement.classList.remove('is-pending');
+        locationControlElement.classList.add('is-active');
+        if (!hasCenteredOnLocation) {
+          hasCenteredOnLocation = true;
+          view.animate({
+            center: coordinate,
+            zoom: Math.max(view.getZoom() ?? 9, 14),
+            duration: options.reducedMotion ? 0 : 250,
+          });
+        }
+      },
+      (error) => {
+        stopShowingLocation();
+        locationButton.title = error.message || 'Show location';
+      },
+      { enableHighAccuracy: true, maximumAge: 30_000, timeout: 15_000 },
+    );
+  }
+
+  locationButton.addEventListener('click', () => {
+    locationButton.title = 'Show location';
+    if (locationPending || locationWatchId !== undefined) stopShowingLocation();
+    else startShowingLocation();
   });
   const popupOverlay = options.popupElement ? new Overlay({
     element: options.popupElement,
@@ -961,6 +1046,8 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       popupOverlay?.setPosition(undefined);
       if (popupOverlay) map.removeOverlay(popupOverlay);
       protectedAreaLayer?.getSource()?.clear();
+      stopShowingLocation();
+      map.removeControl(locationControl);
       routePositionSource.clear(true);
       baseSource.clear();
       map.setTarget(undefined);
