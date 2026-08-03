@@ -172,6 +172,7 @@ export interface TrailheadMapOptions {
   visibleFeatureLimit?: number;
   visibleFeaturesDebounceMs?: number;
   reducedMotion?: boolean;
+  userLocationView?: 'none' | 'fit-loaded';
   clustering?: Partial<ClusteringOptions>;
   onEvent?: (event: TrailheadMapEvent) => void;
 }

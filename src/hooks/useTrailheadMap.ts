@@ -147,6 +147,7 @@ export function useTrailheadMap({ center, scope, transitGroups, defaultTransitGr
           visibleFeatureLimit: 250,
           visibleFeaturesDebounceMs: 100,
           reducedMotion: window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+          userLocationView: persistStateInUrl ? 'none' : 'fit-loaded',
           onEvent: handleEvent,
         })
         controllerRef.current = controller

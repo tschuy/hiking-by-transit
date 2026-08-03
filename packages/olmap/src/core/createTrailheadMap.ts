@@ -366,11 +366,21 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
         locationControlElement.classList.add('is-active');
         if (!hasCenteredOnLocation) {
           hasCenteredOnLocation = true;
-          view.animate({
-            center: coordinate,
-            zoom: Math.max(view.getZoom() ?? 9, 14),
-            duration: options.reducedMotion ? 0 : 250,
-          });
+          if (options.userLocationView !== 'none') {
+            const extent = createEmpty();
+            extendExtent(extent, userLocationSource.getExtent());
+            for (const managed of vectorLayers.values()) {
+              if (!managed.loading && managed.source.getFeatures().length > 0) {
+                extendExtent(extent, managed.source.getExtent());
+              }
+            }
+            view.fit(extent, {
+              size: map.getSize(),
+              padding: [55, 55, 55, 55],
+              maxZoom: 16,
+              duration: options.reducedMotion ? 0 : 250,
+            });
+          }
         }
       },
       (error) => {
