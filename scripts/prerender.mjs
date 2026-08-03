@@ -7,6 +7,7 @@ const dist = path.join(root, 'dist')
 const serverEntry = path.join(root, 'dist-ssr', 'entry-server.js')
 const { prerenderPaths, renderPage } = await import(`${pathToFileURL(serverEntry).href}?v=${Date.now()}`)
 const template = await readFile(path.join(dist, 'index.html'), 'utf8')
+const canonicalUrls = new Set()
 
 function escapeHtml(value) {
   return value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;')
@@ -19,6 +20,7 @@ function outputFile(pathname) {
 for (const pathname of prerenderPaths) {
   const { appHtml, metadata } = renderPage(pathname)
   const canonicalUrl = `https://hikingbytransit.com${metadata.canonicalPath === '/' ? '/' : metadata.canonicalPath}`
+  canonicalUrls.add(canonicalUrl)
   const structuredData = metadata.structuredData
     ? `<script type="application/ld+json">${JSON.stringify(metadata.structuredData).replaceAll('<', '\\u003c')}</script>`
     : ''
@@ -51,5 +53,8 @@ const notFoundHtml = template
   .replace(/<meta name="description" content="[^"]*" \/>/, '<meta name="description" content="The requested Hiking by Transit page could not be found." />')
   .replace('<div id="root"></div>', `<div id="root">${notFound.appHtml}</div>`)
 await writeFile(path.join(dist, '404.html'), notFoundHtml)
+
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${[...canonicalUrls].sort().map((url) => `  <url><loc>${escapeHtml(url)}</loc></url>`).join('\n')}\n</urlset>\n`
+await writeFile(path.join(dist, 'sitemap.xml'), sitemap)
 
 console.log(`Prerendered ${prerenderPaths.length} routes.`)

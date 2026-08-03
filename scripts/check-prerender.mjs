@@ -5,7 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dist = path.join(root, 'dist')
 const serverEntry = path.join(root, 'dist-ssr', 'entry-server.js')
-const { prerenderPaths } = await import(`${pathToFileURL(serverEntry).href}?v=${Date.now()}`)
+const { prerenderPaths, renderPage } = await import(`${pathToFileURL(serverEntry).href}?v=${Date.now()}`)
 const failures = []
 
 for (const pathname of prerenderPaths) {
@@ -21,6 +21,15 @@ for (const pathname of prerenderPaths) {
 
 const notFoundHtml = await readFile(path.join(dist, '404.html'), 'utf8')
 if (!notFoundHtml.includes('<h1>Page not found</h1>')) failures.push('404.html: missing not-found content')
+
+const sitemap = await readFile(path.join(dist, 'sitemap.xml'), 'utf8')
+for (const pathname of prerenderPaths) {
+  const canonicalPath = renderPage(pathname).metadata.canonicalPath
+  const canonicalUrl = `https://hikingbytransit.com${canonicalPath === '/' ? '/' : canonicalPath}`
+  if (!sitemap.includes(`<loc>${canonicalUrl}</loc>`)) failures.push(`sitemap.xml: missing ${canonicalUrl}`)
+}
+const robots = await readFile(path.join(dist, 'robots.txt'), 'utf8')
+if (!robots.includes('Sitemap: https://hikingbytransit.com/sitemap.xml')) failures.push('robots.txt: missing sitemap declaration')
 
 if (failures.length) throw new Error(`Prerender verification failed:\n- ${failures.join('\n- ')}`)
 console.log(`Verified ${prerenderPaths.length} prerendered routes.`)
