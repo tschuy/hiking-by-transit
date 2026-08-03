@@ -8,12 +8,19 @@ describe('route resolution', () => {
     expect(prerenderPaths).toContain('/')
     expect(prerenderPaths).toContain('/hikes')
     expect(prerenderPaths).toContain('/trailheads')
+    expect(prerenderPaths).toContain('/destinations')
     for (const pathname of prerenderPaths) {
       const { metadata } = resolveRoute(pathname)
       expect(metadata.title).not.toContain('Page not found')
       expect(metadata.description.length).toBeGreaterThan(20)
       expect(metadata.canonicalPath).toMatch(/^\//)
     }
+  })
+
+  it('links generated destinations from the prerendered destination directory', () => {
+    const directory = renderToStaticMarkup(resolveRoute('/destinations').element)
+    expect(directory).toContain('href="/destinations/brushy-peak-regional-preserve"')
+    expect(directory).toContain('Brushy Peak Regional Preserve')
   })
 
   it('resolves dynamic metadata and unknown slugs', () => {

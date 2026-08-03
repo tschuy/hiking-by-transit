@@ -367,6 +367,15 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .footer-inner nav { display: flex; flex-wrap: wrap; gap: .65rem 1rem; }
 .footer-inner nav a { color: var(--on-dark); font-size: .85rem; font-weight: 750; text-underline-offset: 4px; }
 .archive-action { display: inline-block; margin: -1rem 0 3rem; text-decoration: none; }
+.places-section + .archive-action { margin: 3rem 0 0; }
+.destination-directory-groups { columns: 3 280px; column-gap: 2.5rem; margin-top: 3rem; }
+.destination-directory-group { break-inside: avoid; margin-bottom: 2.5rem; }
+.destination-directory-group h2 { margin-bottom: .6rem; padding-bottom: .45rem; font-size: 1.8rem; border-bottom: 1px solid var(--line); }
+.destination-directory-group ul { padding: 0; margin: 0; list-style: none; }
+.destination-directory-group li + li { border-top: 1px solid rgb(53 64 57 / 65%); }
+.destination-directory-group a { min-height: 52px; display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-block: .75rem; color: var(--heading); font-weight: 750; line-height: 1.35; text-decoration: none; }
+.destination-directory-group a:hover span { color: var(--forest); text-decoration: underline; text-underline-offset: 4px; }
+.destination-directory-group small { flex: 0 0 auto; color: var(--ink-soft); font-size: .72rem; font-weight: 600; white-space: nowrap; }
 .event-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .event-card { padding: clamp(1.4rem, 3vw, 2rem); background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius); }
 .event-card h2 { font-size: clamp(1.55rem, 3vw, 2.1rem); }

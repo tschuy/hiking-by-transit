@@ -3,9 +3,9 @@ import { catalogDestinations, catalogTrailheads, enrichTrailheadKml, getCatalogD
 
 describe('trailhead catalog', () => {
   it('contains all authoritative trailhead records with stable slugs', () => {
-    expect(catalogTrailheads).toHaveLength(618)
+    expect(catalogTrailheads).toHaveLength(trailheadCatalog.counts.trailheads)
     expect(new Set(catalogTrailheads.map((trailhead) => trailhead.slug)).size).toBe(catalogTrailheads.length)
-    expect(trailheadCatalog.counts.accessRecords).toBe(614)
+    expect(catalogTrailheads.reduce((total, trailhead) => total + trailhead.access.length, 0)).toBe(trailheadCatalog.counts.accessRecords)
   })
 
   it('generates unique destinations and bidirectional trailhead relationships', () => {

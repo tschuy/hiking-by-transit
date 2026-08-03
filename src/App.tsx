@@ -20,6 +20,7 @@ import { PostsPage } from './pages/PostsPage'
 import { TrailheadsPage } from './pages/TrailheadsPage'
 import { TrailheadPage } from './pages/TrailheadPage'
 import { DestinationPage } from './pages/DestinationPage'
+import { DestinationsPage } from './pages/DestinationsPage'
 import {
   eventContent, getEventContent, getGuideContent, getGuidePath, getHikeContent, getPageContent, getPlaceContent, getPostContent,
   guideContent, hikeContent, pageContent, placeContent, postContent,
@@ -99,6 +100,7 @@ export function resolveRoute(pathname: string): ResolvedRoute {
   if (normalizedPath === '/') return { element: <HomePage />, metadata: metadata(siteName, '/', descriptions.home) }
   if (normalizedPath === '/hikes') return { element: <HikesPage />, metadata: metadata('Hikes', normalizedPath, descriptions.hikes) }
   if (normalizedPath === '/places') return { element: <PlacesPage />, metadata: metadata('Places', normalizedPath, descriptions.places) }
+  if (normalizedPath === '/destinations') return { element: <DestinationsPage />, metadata: metadata('Destinations', normalizedPath, descriptions.destinations) }
   if (normalizedPath === '/posts') return { element: <PostsPage />, metadata: metadata('Posts', normalizedPath, descriptions.posts) }
   if (normalizedPath === '/events') return { element: <EventsPage />, metadata: metadata('Events', normalizedPath, descriptions.events) }
   if (normalizedPath === '/trailheads') return { element: <TrailheadsPage />, metadata: metadata('Trailhead map', normalizedPath, descriptions.trailheads) }
@@ -168,7 +170,7 @@ export function resolveRoute(pathname: string): ResolvedRoute {
 }
 
 export const prerenderPaths = [...new Set([
-  '/', '/hikes', '/places', '/posts', '/events', '/trailheads',
+  '/', '/hikes', '/places', '/destinations', '/posts', '/events', '/trailheads',
   ...pageContent.map((page) => `/${page.slug}`),
   ...hikeContent.map((hike) => `/hikes/${hike.slug}`),
   ...placeContent.filter((place) => place.place_id !== 'california').map((place) => `/places/${place.slug}`),

@@ -29,5 +29,6 @@ export function PlacesPage() {
   return <section className="page container"><h1>Places</h1><p className="page-lede">Explore beyond. Learn how to visit California's National Parks and famous outdoor destinations.</p>
     <section className="places-section" aria-labelledby="destination-guides-title"><h2 id="destination-guides-title">Destination guides</h2><div className="places-grid">{destinationGuides.map((place) => <PlaceCard place={place} key={place.place_id} />)}</div></section>
     <section className="places-section" aria-labelledby="regions-title"><h2 id="regions-title">Regions</h2><div className="places-grid">{regions.map((place) => <PlaceCard place={place} key={place.place_id} />)}</div></section>
+    <a className="archive-action button-link" href="/destinations">Explore destinations</a>
   </section>
 }
