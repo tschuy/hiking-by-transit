@@ -5,6 +5,7 @@ slug: wildcat-canyon
 title: Wildcat Canyon Regional Park
 trailhead_ids:
 - TH_3290447
+- TH_WCPASA
 place_ids:
 - bay-area
 - east-bay

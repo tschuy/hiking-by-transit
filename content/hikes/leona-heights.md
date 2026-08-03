@@ -5,6 +5,7 @@ slug: leona-heights
 title: 'Leona Heights: Laurel to Merritt College'
 trailhead_ids:
 - TH_2726841
+- TH_LHPMCT
 place_ids:
 - bay-area
 - east-bay

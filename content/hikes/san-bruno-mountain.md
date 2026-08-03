@@ -5,6 +5,7 @@ slug: san-bruno-mountain
 title: San Bruno Mountain State & County Park
 trailhead_ids:
 - TH_3202293
+- TH_5806071
 place_ids:
 - bay-area
 - peninsula

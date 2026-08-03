@@ -5,6 +5,7 @@ slug: headlands-marin-city
 title: 'Marin Headlands: Golden Gate Bridge to Marin City'
 trailhead_ids:
 - TH_2067202
+- TH_7814461
 place_ids:
 - bay-area
 - marin

@@ -18,7 +18,7 @@ tags:
 difficulty: hard
 length: 12.4mi (out and back)
 travel:
-  origin: MacArthur BRT
+  origin: MacArthur BART
   served: daily
   out:
     time: 1h7min

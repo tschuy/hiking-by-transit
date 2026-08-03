@@ -5,6 +5,7 @@ slug: lafayette-briones-loop
 title: 'Briones: Walter Costa to Lafayette Ridge loop'
 trailhead_ids:
 - TH_8309812
+- TH_8092970
 place_ids:
 - bay-area
 - east-bay

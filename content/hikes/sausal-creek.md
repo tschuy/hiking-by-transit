@@ -5,7 +5,7 @@ slug: sausal-creek
 title: Dimond Canyon / Sausal Creek to Montclair
 trailhead_ids:
 - TH_4924262
-- TH_3278001
+- TH_DCPBT
 place_ids:
 - bay-area
 - east-bay
