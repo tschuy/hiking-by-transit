@@ -195,6 +195,7 @@ export type TrailheadMapEvent =
   | ({ type: 'visible-features-change' } & VisibleFeatureResult)
   | { type: 'feature-hover'; feature?: MapFeatureSummary; pixel?: Coordinate }
   | { type: 'feature-select'; feature: MapFeatureDetails }
+  | { type: 'features-select'; features: MapFeatureDetails[] }
   | { type: 'selection-clear' }
   | { type: 'layer-visibility-change'; layerId: string; visible: boolean }
   | { type: 'route-position-change'; coordinate?: Coordinate };

@@ -303,7 +303,8 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
 .getting-there-infobox p { margin: 0; line-height: 1.65; }
 .getting-there-infobox a { color: var(--forest); font-weight: 800; }
 .hike-map-section { margin-top: clamp(60px, 8vw, 100px); }
-.compact-heading { align-items: center; margin-bottom: 1.25rem; }
+.compact-heading { display: grid; grid-template-columns: minmax(0, 1fr) max-content; align-items: center; gap: 1rem; margin-bottom: 1.25rem; }
+.compact-heading a { justify-self: end; }
 .hike-gpx-map { width: 100%; height: 520px; overflow: hidden; background: #1d2923; border: 1px solid var(--line); border-radius: var(--radius); }
 .hike-gpx-map .ol-viewport { width: 100%; height: 100%; }
 .hike-gpx-map .ol-layer img { max-width: none; }
@@ -443,6 +444,8 @@ h3 { margin-bottom: .75rem; font-size: 1.55rem; }
   .hero-slideshow img { object-position: 62% center; }
   .card-grid, .link-grid, .editorial-grid, .places-grid { grid-template-columns: 1fr 1fr; }
   .section-heading { display: block; }
+  .compact-heading { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+  .compact-heading a { justify-self: start; }
   .footer-inner { flex-direction: column; }
   .support-cta-inner { grid-template-columns: 1fr; }
   .trailhead-callout-inner { grid-template-columns: 1fr; }

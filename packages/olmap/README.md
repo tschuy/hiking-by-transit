@@ -149,7 +149,12 @@ matching count, selection retention, and per-feature `visibleOnMap`,
 emitting host events.
 
 The core never renders popup or filter markup. Hosts consume structured
-`feature-hover`, `feature-select`, loading, error, filter, and layer events. The
+`feature-hover`, `feature-select`, `features-select`, loading, error, filter,
+and layer events. A pointer click emits `feature-select` for the active feature,
+followed by `features-select` containing every distinct hit. Candidates are
+ordered as trailheads or clusters, hikes, transit stops, transit routes, then
+protected areas. Multiple geometries for the same transit `route_id` and source
+are represented once. Programmatic selection emits only `feature-select`. The
 application sanitizes any source description markup before rendering it.
 
 Consumers of the optional default stylesheet must place the map and related UI

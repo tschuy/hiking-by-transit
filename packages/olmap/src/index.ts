@@ -39,6 +39,7 @@ export type {
 } from './core/types';
 export { createClusterId, sortedClusterMemberIds } from './core/clustering';
 export type { ClusterIdentityInput } from './core/clustering';
+export { orderSelectedFeatures } from './core/selection';
 export {
   cloneFilters,
   collectVisibleFeatures,

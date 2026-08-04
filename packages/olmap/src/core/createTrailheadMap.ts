@@ -28,6 +28,7 @@ import type { ConfigFile, RouteConfig } from '../config/schema';
 import { clearDataSourceCache, DataSourceUnavailableError, loadDataSource } from '../data/loaders';
 import { normalizeSourceProperties } from '../data/normalize';
 import { createClusterId, sortedClusterMemberIds } from './clustering';
+import { orderSelectedFeatures } from './selection';
 import type { SourceMetadata } from '../data/types';
 import { cloneFilters, collectVisibleFeatures, dataSourceMatchesFilters, featureMatchesFilters, mergeFilters } from './filters';
 import {
@@ -41,6 +42,7 @@ import {
   type Coordinate,
   type ClusteringOptions,
   type MapDataSource,
+  type MapFeatureDetails,
   type MapFeatureKind,
   type MapHike,
   type LayerLoadState,
@@ -887,17 +889,26 @@ export function createTrailheadMap(options: TrailheadMapOptions): TrailheadMapCo
       });
     }),
     map.on('click', (event) => {
-      let result = map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => resolveRenderedFeature(candidate, layer));
-      if (!result) {
-        const nearby = new globalThis.Map<string, { feature: MapFeature; definition: MapDataSource }>();
-        map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
-          const resolved = resolveRenderedFeature(candidate, layer);
-          if (resolved) nearby.set(String(resolved.feature.getId()), resolved);
-          return undefined;
-        }, { hitTolerance: 14 });
-        if (nearby.size === 1) result = nearby.values().next().value;
+      const hits: Array<{ feature: MapFeature; definition: MapDataSource; details: MapFeatureDetails }> = [];
+      map.forEachFeatureAtPixel(event.pixel, (candidate, layer) => {
+        const resolved = resolveRenderedFeature(candidate, layer);
+        if (resolved) {
+          hits.push({
+            ...resolved,
+            details: normalizeFeatureDetails(
+              presentationInput(resolved.feature, resolved.definition, [event.coordinate[0], event.coordinate[1]]),
+            ),
+          });
+        }
+        return undefined;
+      }, { hitTolerance: 5 });
+      const features = orderSelectedFeatures(hits.map(({ details }) => details));
+      const active = features[0];
+      if (active) {
+        const result = hits.find(({ details }) => details.id === active.id);
+        if (result) activate(result.feature, result.definition);
+        emit({ type: 'features-select', features });
       }
-      if (result) activate(result.feature, result.definition);
     }),
     map.on('moveend', () => {
       state = { ...state, view: currentView() };

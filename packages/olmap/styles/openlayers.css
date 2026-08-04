@@ -12,6 +12,11 @@
 
 .olmap-location-control {
   top: .9rem;
+  padding: 3px;
+  border-color: rgb(255 255 255 / 45%);
+  border-radius: 8px;
+  background: rgb(20 31 26 / 86%);
+  box-shadow: 0 3px 12px rgb(0 0 0 / 25%);
 }
 
 .olmap-root .ol-zoom {
@@ -36,10 +41,14 @@
   font-size: 1.55rem;
 }
 
-.olmap-location-control button {
+.olmap-root .olmap-location-control button {
   width: auto;
-  padding: .55rem .75rem;
-  font: 700 .875rem/1.15 system-ui, sans-serif;
+  min-width: 0;
+  height: 44px;
+  padding: .45rem .65rem;
+  color: #17372b;
+  background: #fffdf7;
+  font: 700 .8rem/1 system-ui, sans-serif;
 }
 
 .olmap-root .ol-zoom button + button {
@@ -71,6 +80,22 @@
 
 .olmap-location-control button:disabled {
   cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  .olmap-root .olmap-location-control {
+    padding: 2px;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 24%);
+  }
+
+  .olmap-root .olmap-location-control button {
+    min-width: 0;
+    height: 44px;
+    padding: .35rem .6rem;
+    border-radius: 5px;
+    font: 700 .8rem/1 system-ui, sans-serif;
+  }
 }
 
 .home-map-explorer .ol-zoom {

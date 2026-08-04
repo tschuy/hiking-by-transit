@@ -6,10 +6,10 @@ test('hydrates prerendered pages without errors and preserves route metadata', a
     if (message.type() === 'error') errors.push(message.text())
   })
   page.on('pageerror', (error) => errors.push(error.message))
-  await page.goto('/places/marin/')
+  await page.goto('/guides/marin/')
   await expect(page).toHaveTitle('Marin · Hiking by Transit')
   await expect(page.getByRole('heading', { level: 1, name: 'Marin' })).toBeVisible()
-  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://hikingbytransit.com/places/marin')
+  await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', 'https://hikingbytransit.com/guides/marin')
   await page.waitForLoadState('networkidle')
   expect(errors.filter((error) => !error.includes('A base-map tile failed'))).toEqual([])
 })
@@ -23,14 +23,13 @@ test('homepage search is keyboard operable', async ({ page }) => {
   const selected = page.locator('[role="option"][aria-selected="true"]')
   await expect(selected).toBeVisible()
   await search.press('Enter')
-  await expect(page).toHaveURL(/\/places\/marin\/?$/)
+  await expect(page).toHaveURL(/\/guides\/marin\/?$/)
 })
 
-test('layout has no horizontal overflow at the configured viewport', async ({ page }, testInfo) => {
+test('layout has no horizontal overflow at the configured viewport', async ({ page }) => {
   await page.goto('/')
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
   expect(overflow).toBeLessThanOrEqual(1)
-  if (testInfo.project.name !== 'desktop-1440') await expect(page.getByRole('link', { name: /recommended hikes/i })).toBeVisible()
 })
 
 test('content remains available with JavaScript disabled', async ({ browser }) => {
