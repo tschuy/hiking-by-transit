@@ -1,9 +1,9 @@
 {
   "schemaVersion": "0.9",
-  "generatedAt": "2026-08-03T06:26:46.430292Z",
+  "generatedAt": "2026-08-07T00:10:38.169149Z",
   "source": {
     "gpkgPath": "data/transit_accessible_trailheads.gpkg",
-    "gpkgSha256": "248e285c89d326e2187b2eab28921d442dcfbc9936c6846e8be976d0d6cf23bf",
+    "gpkgSha256": "ab84566b81e3ee4c24e9eae8934e58338a64233b64ab5deb275069b543460349",
     "contentPath": "src/data/content.generated.json",
     "kmlSources": [
       {
@@ -22,7 +22,7 @@
         "publicPath": "public/assets/kml/call-ahead.kml"
       }
     ],
-    "gitRevision": "8ffae49c9d74eaa61573d6483261e44dcdb4b7fc"
+    "gitRevision": "2714982dd5738176a3b699b6a5670568a203cc5f"
   },
   "counts": {
     "trailheads": 624,
@@ -24707,7 +24707,7 @@
         -122.367801,
         37.4945095
       ],
-      "notes": "OPENING SOON - <a href=\"https://www.sfpuc.gov/construction-contracts/construction-projects/Southern-Skyline-Boulevard-Ridge-Trail-Extension \">CHECK CONSTRUCTION PROGRESS ON SF WATER WEBSITE</a>.<br><br>DAY-USE PERMIT REQUIRED: apply on SF Water website.",
+      "notes": "<a href=\"https://www.sfpuc.gov/skyline-watershed-ridge-trail\">Free permit required, valid for the calendar year</a> for groups up to six people. Screenshot or print the permit and carry it with you.",
       "links": [],
       "noteParts": [],
       "access": [
